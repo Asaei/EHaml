@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="plEnabled.Text" xml:space="preserve">
+    <value>فعال</value>
+  </data>
+  <data name="plLanguage.Text" xml:space="preserve">
+    <value>زبان</value>
+  </data>
+  <data name="viewTypeLabel.Text" xml:space="preserve">
+    <value>نوع نمایش :</value>
+  </data>
+  <data name="PortalDefaultEnabled.Text" xml:space="preserve">
+    <value>- &lt;em&gt;زبان پیش فرض پورتال را نمی توانید غیرفعال نمایید&lt;/em&gt;</value>
+  </data>
+  <data name="Fallback.Text" xml:space="preserve">
+    <value>زبان جایگزین</value>
+  </data>
+  <data name="siteDefaultLabel.Help" xml:space="preserve">
+    <value>شما در این بخش می توانید زبان پیش فرض سایت را انتخاب نمایید. در صورتی که زبان هنوز فعال نشده است، بعد از انتخاب در این بخش به صورت خودکار فعال می گردد. همچنین زمانی که یکبار بومی سازی محتوا فعال گردد امکان تغییر وجود ندارد.</value>
+  </data>
+  <data name="siteDefaultLabel.Text" xml:space="preserve">
+    <value>پیش فرض سایت :</value>
+  </data>
+  <data name="viewTypeLabel.Help" xml:space="preserve">
+    <value>نوع نمایش برای زبان را در این بخش انتخاب نمایید</value>
+  </data>
+  <data name="plEnabled.Help" xml:space="preserve">
+    <value>در ذیل می توانید زبان های سایت را فعال یا غیرفعال نمایید.</value>
+  </data>
+  <data name="Host.Help" xml:space="preserve">
+    <value>ریسورس ها را برای نصب، ویرایش کنید.</value>
+  </data>
+  <data name="Host.Text" xml:space="preserve">
+    <value>میزبان</value>
+  </data>
+  <data name="plLanguage.Help" xml:space="preserve">
+    <value>در ذیل لیست زبان های در دسترس را می بینید</value>
+  </data>
+  <data name="Portal.Help" xml:space="preserve">
+    <value>ویرایش ریسورس های این پرتال </value>
+  </data>
+  <data name="Portal.Text" xml:space="preserve">
+    <value>سایت</value>
+  </data>
+  <data name="System.Help" xml:space="preserve">
+    <value>ویرایش ریسورس های سیستم</value>
+  </data>
+  <data name="System.Text" xml:space="preserve">
+    <value>سیستم</value>
+  </data>
+  <data name="Culture.Header" xml:space="preserve">
+    <value>زبان</value>
+  </data>
+  <data name="Active.Header" xml:space="preserve">
+    <value>فعال</value>
+  </data>
+  <data name="Enabled.Header" xml:space="preserve">
+    <value>فعال</value>
+  </data>
+  <data name="Static.Header" xml:space="preserve">
+    <value>ریسورس های استاتیک </value>
+  </data>
+  <data name="Content.Header" xml:space="preserve">
+    <value>بومی سازی محتوا</value>
+  </data>
+  <data name="Edit.Text" xml:space="preserve">
+    <value>ویرایش این زبان</value>
+  </data>
+  <data name="Available.Text" xml:space="preserve">
+    <value>زبان های موجود</value>
+  </data>
+  <data name="AddLanguage.Text" xml:space="preserve">
+    <value>افزودن یک زبان جدید</value>
+  </data>
+  <data name="Update.Text" xml:space="preserve">
+    <value>بروزرسانی </value>
+  </data>
+  <data name="CreateLocalizedPages.Text" xml:space="preserve">
+    <value>ایجاد صفحات در این زبان</value>
+  </data>
+  <data name="CreateLanguage.Text" xml:space="preserve">
+    <value>ایجاد بسته زبانی</value>
+  </data>
+  <data name="EnabledPublishedMessage.Text" xml:space="preserve">
+    <value>&lt;em&gt;یک زبان باید پیش از استفاده فعال شود. همچنین پیش از غیرفعال کردن زبان ، باید آن را از حالت استفاده خارج کنید.&lt;/em&gt;</value>
+  </data>
+  <data name="EnableLocalization.Text" xml:space="preserve">
+    <value>فعالسازی محتوای بومی شده</value>
+  </data>
+  <data name="InstallLanguage.Text" xml:space="preserve">
+    <value>نصب بسته زبانی</value>
+  </data>
+  <data name="PortalDefaultPublished.Text" xml:space="preserve">
+    <value>- &lt;em&gt;شما نمی توانید زبان پیش فرض سایت را  از حالت استفاده خارج سازید. &lt;/em&gt;</value>
+  </data>
+  <data name="Settings.Text" xml:space="preserve">
+    <value>ویرایش</value>
+  </data>
+  <data name="TranslationStatus.Text" xml:space="preserve">
+    <value>برای رفتن به صفحه خلاصه ترجمه این زبان بر روی این لینک کلیک نمایید</value>
+  </data>
+  <data name="Verify.Text" xml:space="preserve">
+    <value>بررسی صحت فایل های ریسورس زبان</value>
+  </data>
+  <data name="LanguageSettings.Text" xml:space="preserve">
+    <value>تنظیمات زبان</value>
+  </data>
+  <data name="TimeZones.Text" xml:space="preserve">
+    <value>ویرایشگر منطقه زمانی :</value>
+  </data>
+  <data name="LocalizePages.Text" xml:space="preserve">
+    <value>هیچ یک از صفحات</value>
+  </data>
+  <data name="TranslatedPages.Text" xml:space="preserve">
+    <value>صفحات ترجمه شده</value>
+  </data>
+  <data name="TranslationSummary.Text" xml:space="preserve">
+    <value>وضعیت ترجمه</value>
+  </data>
+  <data name="HostOnly.Text" xml:space="preserve">
+    <value>کاربر میزبان الزامی می باشد</value>
+  </data>
+  <data name="HostOnlyMessage.Text" xml:space="preserve">
+    <value>بر اساس مدل امنیتی دات نت نیوک، تنها کاربر میزبان مجوز ایجاد زبان جدید را دارد. شما به عنوان مدیر سایت می توانید زبان های موجود را مدیریت نمایید. برای ایجاد زبان های بیشتر با کاربر میزبان سایت خود تماس بگیرید.</value>
+  </data>
+  <data name="systemDefaultLabel.Help" xml:space="preserve">
+    <value>زبان پیش فرض سیستم،  زبانی است که در زمانی که دیگر زبان ها در دسترس نیستند مورد استفاده قرار می گیرد. </value>
+  </data>
+  <data name="systemDefaultLabel.Text" xml:space="preserve">
+    <value>پیش فرض سیستم :</value>
+  </data>
+  <data name="detectBrowserLable.Help" xml:space="preserve">
+    <value>آیا می خواهید زبان براساس زبان مشخص شده در مرورگر کاربر انتخاب شود؟</value>
+  </data>
+  <data name="detectBrowserLable.Text" xml:space="preserve">
+    <value>فعال نمودن تشخیص زبان مرورگر</value>
+  </data>
+  <data name="Publish.Header" xml:space="preserve">
+    <value>انتشار</value>
+  </data>
+  <data name="PublishTranslatedPages.Text" xml:space="preserve">
+    <value> انتشار صفحاتی که به عنوان ترجمه شده در این زبان علامتگذاری شده اند  </value>
+  </data>
+  <data name="Publish.Confirm" xml:space="preserve">
+    <value>تمام صفحات ترجمه شده در زبان  {0} انتشار داده شدند. </value>
+  </data>
+  <data name="ModuleHelp.Text" xml:space="preserve">
+    <value>&lt;P&gt;ماژول فعالساز زبان</value>
+  </data>
+  <data name="allowUserCulture.Help">
+    <value>وقتی فعال باشد به کابر امکان انتخاب زبان دیگری غیر از زبان محتوا، برای اینترفیس را میدهد.</value>
+  </data>
+  <data name="allowUserCulture.Text">
+    <value>اجازه به کاربران برای انتخاب زبان اینترفیس?</value>
+  </data>
+  <data name="InstallAvailabeLanguage.Text">
+    <value>نصب بسته زبان های موجود روی پورتال </value>
+  </data>
+</root>

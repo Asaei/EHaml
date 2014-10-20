@@ -1,0 +1,189 @@
+﻿if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsUserPremissionSettings' and column_name = 'AddPerArticle')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsUserPremissionSettings] ADD AddPerArticle bit NOT NULL DEFAULT(0)
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsRolePremissionSettings' and column_name = 'AddPerArticle')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionSettings] ADD AddPerArticle bit NOT NULL DEFAULT(0)
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNews' and column_name = 'HasPermissions')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNews] ADD HasPermissions bit NOT NULL DEFAULT(0)
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNews' and column_name = 'EventArticle')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNews] ADD EventArticle bit NOT NULL DEFAULT(0)
+END
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsNewTags]') AND type in (N'U'))
+BEGIN
+	SET ANSI_NULLS ON
+	SET QUOTED_IDENTIFIER ON
+	CREATE TABLE [dbo].[EasyDNNNewsNewTags](
+		[TagID] [int] IDENTITY(1,1) NOT NULL,
+		[Name] [nvarchar](50) NOT NULL,
+		[PortalID] [int] NOT NULL,
+		[DateCreated] [datetime] NOT NULL,
+		CONSTRAINT [PK_EasyDNNNewsItemTags] PRIMARY KEY CLUSTERED ([TagID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF),
+		CONSTRAINT [IX_EasyDNNNewsItemTags] UNIQUE NONCLUSTERED ([PortalID] ASC,[Name] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsTagsItems]') AND type in (N'U'))
+BEGIN
+	SET ANSI_NULLS ON
+	SET QUOTED_IDENTIFIER ON
+	CREATE TABLE [dbo].[EasyDNNNewsTagsItems](
+		[ArticleID] [int] NOT NULL,
+		[TagID] [int] NOT NULL,
+		[DateAdded] [datetime] NOT NULL,
+		CONSTRAINT [PK_EasyDNNNewsTagsItems] PRIMARY KEY CLUSTERED ([ArticleID] ASC,[TagID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleUserPermissions]') AND type in (N'U'))
+BEGIN
+	SET ANSI_NULLS ON
+	SET QUOTED_IDENTIFIER ON
+	CREATE TABLE [dbo].[EasyDNNNewsArticleUserPermissions](
+		[ArticleUserItemID] [int] IDENTITY(1,1) NOT NULL,
+		[ArticleID] [int] NOT NULL,
+		[UserID] [int] NULL,
+		[Show] [bit] NOT NULL,
+		[Edit] [bit] NOT NULL,
+	 CONSTRAINT [PK_EasyDNNNewsArticleUserPermissions_1] PRIMARY KEY CLUSTERED ([ArticleUserItemID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF),
+	 CONSTRAINT [IX_EasyDNNNewsArticleUserPermissions] UNIQUE NONCLUSTERED ([ArticleID] ASC,[UserID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleRolePermissions]') AND type in (N'U'))
+BEGIN
+	SET ANSI_NULLS ON
+	SET QUOTED_IDENTIFIER ON
+	CREATE TABLE [dbo].[EasyDNNNewsArticleRolePermissions](
+		[ArticleID] [int] NOT NULL,
+		[RoleID] [int] NOT NULL,
+		[Show] [bit] NOT NULL,
+		[Edit] [bit] NOT NULL,
+		CONSTRAINT [PK_EasyDNNNewsArticleRolePermissions] PRIMARY KEY CLUSTERED ([ArticleID] ASC,[RoleID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsNewTags_DateCreated]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsNewTags]'))
+Begin
+	IF NOT EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_EasyDNNNewsNewTags_DateCreated]') AND type = 'D')
+	BEGIN
+	ALTER TABLE [dbo].[EasyDNNNewsNewTags] ADD  CONSTRAINT [DF_EasyDNNNewsNewTags_DateCreated]  DEFAULT (getdate()) FOR [DateCreated]
+	END
+End
+GO
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsTagsItems_DateAdded]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsTagsItems]'))
+Begin
+	IF NOT EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_EasyDNNNewsTagsItems_DateAdded]') AND type = 'D')
+	BEGIN
+	ALTER TABLE [dbo].[EasyDNNNewsTagsItems] ADD  CONSTRAINT [DF_EasyDNNNewsTagsItems_DateAdded]  DEFAULT (getdate()) FOR [DateAdded]
+	END
+End
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsArticleRolePermissions_EasyDNNNewsArticleRolePermissions]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleRolePermissions]'))
+ALTER TABLE [dbo].[EasyDNNNewsArticleRolePermissions]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsArticleRolePermissions_EasyDNNNewsArticleRolePermissions] FOREIGN KEY([ArticleID])
+REFERENCES [dbo].[EasyDNNNews] ([ArticleID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsArticleRolePermissions_EasyDNNNewsArticleRolePermissions]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleRolePermissions]'))
+ALTER TABLE [dbo].[EasyDNNNewsArticleRolePermissions] CHECK CONSTRAINT [FK_EasyDNNNewsArticleRolePermissions_EasyDNNNewsArticleRolePermissions]
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsArticleRolePermissions_Roles]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleRolePermissions]'))
+ALTER TABLE [dbo].[EasyDNNNewsArticleRolePermissions]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsArticleRolePermissions_Roles] FOREIGN KEY([RoleID])
+REFERENCES {databaseOwner}{objectQualifier}Roles ([RoleID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsArticleRolePermissions_Roles]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleRolePermissions]'))
+ALTER TABLE [dbo].[EasyDNNNewsArticleRolePermissions] CHECK CONSTRAINT [FK_EasyDNNNewsArticleRolePermissions_Roles]
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsArticleUserPermissions_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleUserPermissions]'))
+ALTER TABLE [dbo].[EasyDNNNewsArticleUserPermissions]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsArticleUserPermissions_EasyDNNNews] FOREIGN KEY([ArticleID])
+REFERENCES [dbo].[EasyDNNNews] ([ArticleID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsArticleUserPermissions_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleUserPermissions]'))
+ALTER TABLE [dbo].[EasyDNNNewsArticleUserPermissions] CHECK CONSTRAINT [FK_EasyDNNNewsArticleUserPermissions_EasyDNNNews]
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsArticleUserPermissions_Users]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleUserPermissions]'))
+ALTER TABLE [dbo].[EasyDNNNewsArticleUserPermissions]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsArticleUserPermissions_Users] FOREIGN KEY([UserID])
+REFERENCES {databaseOwner}{objectQualifier}Users ([UserID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsArticleUserPermissions_Users]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleUserPermissions]'))
+ALTER TABLE [dbo].[EasyDNNNewsArticleUserPermissions] CHECK CONSTRAINT [FK_EasyDNNNewsArticleUserPermissions_Users]
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsTagsItems_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsTagsItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsTagsItems]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsTagsItems_EasyDNNNews] FOREIGN KEY([ArticleID])
+REFERENCES [dbo].[EasyDNNNews] ([ArticleID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsTagsItems_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsTagsItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsTagsItems] CHECK CONSTRAINT [FK_EasyDNNNewsTagsItems_EasyDNNNews]
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsTagsItems_EasyDNNNewsNewTags]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsTagsItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsTagsItems]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsTagsItems_EasyDNNNewsNewTags] FOREIGN KEY([TagID])
+REFERENCES [dbo].[EasyDNNNewsNewTags] ([TagID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsTagsItems_EasyDNNNewsNewTags]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsTagsItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsTagsItems] CHECK CONSTRAINT [FK_EasyDNNNewsTagsItems_EasyDNNNewsNewTags]
+GO
+
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsEventsData]') AND type in (N'U'))
+BEGIN
+	SET ANSI_NULLS ON
+	SET QUOTED_IDENTIFIER ON
+	CREATE TABLE [dbo].[EasyDNNNewsEventsData](
+		[ArticleID] [int] NOT NULL,
+		[StartDate] [datetime] NOT NULL,
+		[EndDate] [datetime] NOT NULL,
+		[WhloeDay] [bit] NOT NULL,
+		CONSTRAINT [PK_easynewsEvent] PRIMARY KEY CLUSTERED ([ArticleID] ASC) WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_easynewsEvent_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsEventsData]'))
+ALTER TABLE [dbo].[EasyDNNNewsEventsData]  WITH CHECK ADD  CONSTRAINT [FK_easynewsEvent_EasyDNNNews] FOREIGN KEY([ArticleID])
+REFERENCES [dbo].[EasyDNNNews] ([ArticleID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_easynewsEvent_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsEventsData]'))
+ALTER TABLE [dbo].[EasyDNNNewsEventsData] CHECK CONSTRAINT [FK_easynewsEvent_EasyDNNNews]
+GO
+
+BEGIN TRY
+ALTER TABLE [dbo].[EasyDNNNewsCategories] DROP CONSTRAINT [FK_EasyDNNNewsCategories_EasyDNNNews]
+END TRY
+BEGIN CATCH
+END CATCH
+BEGIN TRY
+ALTER TABLE [dbo].[EasyDNNNewsCategories]  WITH NOCHECK ADD  CONSTRAINT [FK_EasyDNNNewsCategories_EasyDNNNews] FOREIGN KEY([ArticleID])
+REFERENCES [dbo].[EasyDNNNews] ([ArticleID])
+ON DELETE CASCADE
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsCategories_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsCategories]'))
+ALTER TABLE [dbo].[EasyDNNNewsCategories] CHECK CONSTRAINT [FK_EasyDNNNewsCategories_EasyDNNNews]
+END TRY
+BEGIN CATCH
+END CATCH
+BEGIN TRY
+ALTER TABLE [dbo].[EasyDNNNewsModuleCategoryItems] DROP CONSTRAINT [FK_EasyDNNNewsModuleCategory_EasyDNNNewsCategoryList]
+END TRY
+BEGIN CATCH
+END CATCH
+BEGIN TRY
+ALTER TABLE [dbo].[EasyDNNNewsModuleCategoryItems]  WITH NOCHECK ADD  CONSTRAINT [FK_EasyDNNNewsModuleCategory_EasyDNNNewsCategoryList] FOREIGN KEY([CategoryID])
+REFERENCES [dbo].[EasyDNNNewsCategoryList] ([CategoryID])
+ON DELETE CASCADE
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsModuleCategory_EasyDNNNewsCategoryList]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsModuleCategoryItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsModuleCategoryItems] CHECK CONSTRAINT [FK_EasyDNNNewsModuleCategory_EasyDNNNewsCategoryList]
+END TRY
+BEGIN CATCH
+END CATCH

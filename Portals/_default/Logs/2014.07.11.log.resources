@@ -1,0 +1,9 @@
+2014-07-11 05:03:27,977 [srv20079][Thread:10][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The length of the URL for this request exceeds the configured maxUrlLength value.
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2014-07-11 06:47:52,981 [srv20079][Thread:8][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The length of the URL for this request exceeds the configured maxUrlLength value.
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2014-07-11 17:37:25,738 [srv20079][Thread:10][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)

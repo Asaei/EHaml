@@ -1,0 +1,35 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+ 
+
+/** ALTER Table **/
+
+ 
+/** DNNGo_LayerSlider3D_Content  **/
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNGo_LayerSlider3D_Content]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+		ALTER TABLE {databaseOwner}[{objectQualifier}DNNGo_LayerSlider3D_Content] ADD
+		[StartTime] [datetime] NOT NULL CONSTRAINT DF_{objectQualifier}DNNGo_LayerSlider3D_Content_StartTime DEFAULT getdate(),
+		[EndTime] [datetime] NOT NULL CONSTRAINT DF_{objectQualifier}DNNGo_LayerSlider3D_Content_EndTime DEFAULT Dateadd(yyyy,10,getdate())
+
+END
+
+ 
+
+
+
+ 
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/
+
+
+

@@ -1,0 +1,807 @@
+﻿/****** New DB Tables******/
+/****** Object:  Table [dbo].[EasyDNNNewsArticleGalleryItems]    Script Date: 02/07/2013 17:25:19 ******/
+/****** Object:  ForeignKey [FK_EasyDNNNewsArticleGalleryItems_EasyDNNNews]    Script Date: 02/07/2013 17:25:19 ******/
+/****** Object:  ForeignKey [FK_EasyDNNNewsArticleGalleryItems_EasyGallery]    Script Date: 02/07/2013 17:25:19 ******/
+/****** Object:  Table [dbo].[EasyDNNNewsLightboxSettings]    Script Date: 02/07/2013 20:35:47 ******/
+/****** Object:  Table [dbo].[EasyDNNNewsAudioGallerySettings]    Script Date: 02/13/2013 16:37:26 ******/
+/****** Object:  Table [dbo].[EasyDNNNewsVideoGallerySettings]    Script Date: 02/13/2013 16:37:26 ******/
+/****** Object:  Table [dbo].[EasyDNNNewsChameleonSettings]    Script Date: 02/07/2013 20:35:47 ******/
+/****** Object:  Table [dbo].[EasyDNNNewsChameleonNestedSettings]    Script Date: 02/11/2013 20:35:47 ******/
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleGalleryItems]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[EasyDNNNewsArticleGalleryItems](
+	[ArticleID] [int] NOT NULL,
+	[GalleryID] [int] NOT NULL,
+	[Position] [int] NOT NULL,
+	CONSTRAINT [PK_EasyDNNNewsArticleGalleryItems] PRIMARY KEY CLUSTERED  ( [ArticleID] ASC, [GalleryID] ASC )WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+)
+END
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsArticleGalleryItems_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleGalleryItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsArticleGalleryItems]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsArticleGalleryItems_EasyDNNNews] FOREIGN KEY([ArticleID])
+REFERENCES [dbo].[EasyDNNNews] ([ArticleID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsArticleGalleryItems_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleGalleryItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsArticleGalleryItems] CHECK CONSTRAINT [FK_EasyDNNNewsArticleGalleryItems_EasyDNNNews]
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsArticleGalleryItems_EasyGallery]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleGalleryItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsArticleGalleryItems]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsArticleGalleryItems_EasyGallery] FOREIGN KEY([GalleryID])
+REFERENCES [dbo].[EasyGallery] ([GalleryID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsArticleGalleryItems_EasyGallery]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleGalleryItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsArticleGalleryItems] CHECK CONSTRAINT [FK_EasyDNNNewsArticleGalleryItems_EasyGallery]
+GO
+
+/****** Object:  Table [dbo].[EasyDNNNewsLightboxSettings]    Script Date: 02/13/2013 16:37:26 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsLightboxSettings]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[EasyDNNNewsLightboxSettings](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[PortalID] [int] NOT NULL,
+	[ModuleID] [int] NULL,
+	[ArticleID] [int] NULL,
+	[ThumbWidth] [int] NOT NULL,
+	[ThumbHeight] [int] NOT NULL,
+	[ItemsPerPage] [int] NOT NULL,
+	[NumOfColumns] [int] NOT NULL,
+	[PagerType] [nvarchar](50) NOT NULL,
+	[GalleryTheme] [nvarchar](50) NOT NULL,
+	[LightboxTheme] [nvarchar](50) NOT NULL,
+	[ShowTitle] [bit] NOT NULL,
+	[ShowDescription] [bit] NOT NULL,
+	[ShowLightBoxTitle] [bit] NOT NULL,
+	[ShowLightBoxDescription] [bit] NOT NULL,
+	[Responsive] [bit] NOT NULL,
+CONSTRAINT [PK_EasyDNNNewsLightboxSettings] PRIMARY KEY CLUSTERED ([Id] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF),
+CONSTRAINT [IX_EasyDNNNewsLightboxSettings] UNIQUE NONCLUSTERED ([PortalID] ASC,[ModuleID] ASC,[ArticleID] ASC)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+)
+END
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAudioGallerySettings]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[EasyDNNNewsAudioGallerySettings](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[PortalID] [int] NOT NULL,
+	[ModuleID] [int] NULL,
+	[ArticleID] [int] NULL,
+	[ThumbWidth] [int] NOT NULL,
+	[ThumbHeight] [int] NOT NULL,
+	[ItemsPerPage] [int] NOT NULL,
+	[NumOfColumns] [int] NOT NULL,
+	[PagerType] [nvarchar](50) NOT NULL,
+	[GalleryTheme] [nvarchar](50) NOT NULL,
+	[ShowTitle] [bit] NOT NULL,
+	[ShowDescription] [bit] NOT NULL
+CONSTRAINT [PK_EasyDNNNewsAudioGallerySettings] PRIMARY KEY CLUSTERED ([Id] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF),
+CONSTRAINT [IX_EasyDNNNewsAudioGallerySettings] UNIQUE NONCLUSTERED ([PortalID] ASC,[ModuleID] ASC,[ArticleID] ASC)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+)
+END
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsVideoGallerySettings]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[EasyDNNNewsVideoGallerySettings](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[PortalID] [int] NOT NULL,
+	[ModuleID] [int] NULL,
+	[ArticleID] [int] NULL,
+	[ThumbWidth] [int] NOT NULL,
+	[ThumbHeight] [int] NOT NULL,
+	[ItemsPerPage] [int] NOT NULL,
+	[NumOfColumns] [int] NOT NULL,
+	[PagerType] [nvarchar](50) NOT NULL,
+	[GalleryTheme] [nvarchar](50) NOT NULL,
+	[ShowTitle] [bit] NOT NULL,
+	[ShowDescription] [bit] NOT NULL
+CONSTRAINT [PK_EasyDNNNewsVideoGallerySettings] PRIMARY KEY CLUSTERED ([Id] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF),
+CONSTRAINT [IX_EasyDNNNewsVideoGallerySettings] UNIQUE NONCLUSTERED ([PortalID] ASC,[ModuleID] ASC,[ArticleID] ASC)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+)
+END
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsChameleonSettings]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[EasyDNNNewsChameleonSettings](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[PortalID] [int] NOT NULL,
+	[ModuleID] [int] NULL,
+	[ArticleID] [int] NULL,
+	[MainImageWidth] [int] NOT NULL,
+	[MainImageHeight] [int] NOT NULL,
+	[Template] [nvarchar](50) NOT NULL,
+	[Theme] [nvarchar](50) NOT NULL,
+	[ThemeStyle] [nvarchar](50) NOT NULL,
+	[Responsive] [bit] NOT NULL,
+	[CSSThemeDisplayStyle] [nvarchar](50) NOT NULL,
+	[AudioPlayPlace] [nvarchar](50) NOT NULL,
+	[VideoPlayPlace] [nvarchar](50) NOT NULL,
+	[NothngOnClick] [bit] NOT NULL,
+	[ShowGalleryTitle] [bit] NOT NULL,
+	[ShowGalleryDescription] [bit] NOT NULL,
+	[ShowNavigation] [bit] NOT NULL,
+	[ShowPlayPause] [bit] NOT NULL,
+	[ThumbDirection] [nvarchar](50) NOT NULL,
+	[CategoryDirection] [nvarchar](50) NOT NULL,
+	[ThumbPanelInOut] [nvarchar](50) NOT NULL,
+	[ThumbPanelLRTB] [nvarchar](50) NOT NULL,
+	[CategoryHeight] [int] NOT NULL,
+	[CategoryWidth] [int] NOT NULL,
+	[CategoryY] [int] NOT NULL,
+	[CategoryX] [int] NOT NULL,
+	[CategoryInOut] [nvarchar](50) NOT NULL,
+	[CategoryLRTB] [nvarchar](50) NOT NULL,
+	[GalleryCaptionHeight] [int] NOT NULL,
+	[GalleryCaptionWidth] [int] NOT NULL,
+	[GalleryCaptionY] [int] NOT NULL,
+	[GalleryCaptionX] [int] NOT NULL,
+	[GalleryCaptionInOut] [nvarchar](50) NOT NULL,
+	[GalleryCaptionLRTB] [nvarchar](50) NOT NULL,
+	[CaptionHeight] [int] NOT NULL,
+	[CaptionWidth] [int] NOT NULL,
+	[CaptionY] [int] NOT NULL,
+	[CaptionX] [int] NOT NULL,
+	[CaptionInOut] [nvarchar](50) NOT NULL,
+	[CaptionLRTB] [nvarchar](50) NOT NULL,
+	[ImapgePanelTopY] [int] NOT NULL,
+	[ImapgePanelTopX] [int] NOT NULL,
+	[ImapgePanelWidth] [int] NOT NULL,
+	[ImapgePanelHeight] [int] NOT NULL,
+	[ThumbPanelWidth] [int] NOT NULL,
+	[ThumbPanelHeight] [int] NOT NULL,
+	[ThumbPanelY] [int] NOT NULL,
+	[ThumbPanelX] [int] NOT NULL,
+	[ShowTwitter] [bit] NOT NULL,
+	[ShowGooglePlus] [bit] NOT NULL,
+	[ShowFacebook] [bit] NOT NULL,
+	[NestedSortingType] [nvarchar](10) NOT NULL,
+	[NestedSorting] [nvarchar](25) NOT NULL,
+	[SocialSharingButtons] [bit] NOT NULL,
+	[LightboxSocialSharing] [bit] NOT NULL,
+	[LightboxShowPrint] [bit] NOT NULL,
+	[LightboxShowEmail] [bit] NOT NULL,
+	[LightboxType] [nvarchar](25) NOT NULL,
+	[LightboxTitle] [bit] NOT NULL,
+	[LightboxDescription] [bit] NOT NULL,
+	[LightboxOpacity] [int] NOT NULL,
+	[LightboxPadding] [int] NOT NULL,
+	[OverlayGallery] [bit] NOT NULL,
+	[ShowTitle] [bit] NOT NULL,
+	[ShowDescription] [bit] NOT NULL,
+	[ShowMediaTitle] [bit] NOT NULL,
+	[ShowMediaDescription] [bit] NOT NULL,
+	[ShowMediaTitleThumbnail] [bit] NOT NULL,
+	[OpenMediaUrl] [bit] NOT NULL,
+	[NewWindow] [bit] NOT NULL,
+	[ASSInterval] [int] NOT NULL,
+	[RandomizeMedia] [bit] NOT NULL,
+	[SSImageWidth] [decimal](10, 2) NOT NULL,
+	[SSImageHeight] [int] NOT NULL,
+	[SSThumbImageWidth] [int] NOT NULL,
+	[SSThumbImageHeight] [int] NOT NULL,
+	[SliderEffect] [nvarchar](50) NOT NULL,
+	[SSAutoSlide] [bit] NOT NULL,
+	[SSAutoSlidePause] [nvarchar](50) NOT NULL,
+	[OverlayColor] [bit] NOT NULL,
+	[TGImageWidth] [int] NOT NULL,
+	[TGImageHeight] [int] NOT NULL,
+	[TGCSSFile] [nvarchar](50) NOT NULL,
+	[NGShowName] [bit] NOT NULL,
+	[NGShowdescription] [bit] NOT NULL,
+	[NGThumbWidth] [int] NOT NULL,
+	[NGThumbHeight] [int] NOT NULL,
+	[VGSkin] [nvarchar](50) NOT NULL,
+	[PlayOnLoad] [bit] NOT NULL,
+	[AudioPlayOnLoad] [bit] NOT NULL,
+	[MediaSorting] [nvarchar](25) NOT NULL,
+	[MediaSortingAscType] [nvarchar](10) NOT NULL,
+	[UseFlowPlayer] [bit] NOT NULL,
+	[CategoryHeightResponsive] [bit] NOT NULL,
+	[CategoryWidthResponsive] [bit] NOT NULL,
+	[CategoryYResponsive] [bit] NOT NULL,
+	[CategoryXResponsive] [bit] NOT NULL,
+	[GalleryCaptionHeightResponsive] [bit] NOT NULL,
+	[GalleryCaptionWidthResponsive] [bit] NOT NULL,
+	[GalleryCaptionYResponsive] [bit] NOT NULL,
+	[GalleryCaptionXResponsive] [bit] NOT NULL,
+	[CaptionHeightResponsive] [bit] NOT NULL,
+	[CaptionWidthResponsive] [bit] NOT NULL,
+	[CaptionYResponsive] [bit] NOT NULL,
+	[CaptionXResponsive] [bit] NOT NULL,
+	[ImapgePanelTopYResponsive] [bit] NOT NULL,
+	[ImapgePanelTopXResponsive] [bit] NOT NULL,
+	[ImapgePanelWidthResponsive] [bit] NOT NULL,
+	[ImapgePanelHeightResponsive] [bit] NOT NULL,
+	[ThumbPanelWidthResponsive] [bit] NOT NULL,
+	[ThumbPanelHeightResponsive] [bit] NOT NULL,
+	[ThumbPanelYResponsive] [bit] NOT NULL,
+	[ThumbPanelXResponsive] [bit] NOT NULL,
+	[SSImageWidthResponsive] [bit] NOT NULL,
+	[SSImageHeightResponsive] [bit] NOT NULL,
+	[MainImageResizeMode] [int] NOT NULL,
+ CONSTRAINT [PK_EasyDNNNewsChameleonSettings] PRIMARY KEY CLUSTERED  ( [Id] ASC )WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF),
+ CONSTRAINT [IX_EasyDNNNewsChameleonSettings] UNIQUE NONCLUSTERED  ( [PortalID] ASC, [ModuleID] ASC,[ArticleID] ASC )WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF))
+END
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsChameleonNestedSettings]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[EasyDNNNewsChameleonNestedSettings](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[PortalID] [int] NOT NULL,
+	[ModuleID] [int] NULL,
+	[ArticleID] [int] NULL,
+	[MainImageWidth] [int] NOT NULL,
+	[MainImageHeight] [int] NOT NULL,
+	[Template] [nvarchar](50) NOT NULL,
+	[Theme] [nvarchar](50) NOT NULL,
+	[ThemeStyle] [nvarchar](50) NOT NULL,
+	[Responsive] [bit] NOT NULL,
+	[CSSThemeDisplayStyle] [nvarchar](50) NOT NULL,
+	[AudioPlayPlace] [nvarchar](50) NOT NULL,
+	[VideoPlayPlace] [nvarchar](50) NOT NULL,
+	[NothngOnClick] [bit] NOT NULL,
+	[ShowGalleryTitle] [bit] NOT NULL,
+	[ShowGalleryDescription] [bit] NOT NULL,
+	[ShowNavigation] [bit] NOT NULL,
+	[ShowPlayPause] [bit] NOT NULL,
+	[ThumbDirection] [nvarchar](50) NOT NULL,
+	[CategoryDirection] [nvarchar](50) NOT NULL,
+	[ThumbPanelInOut] [nvarchar](50) NOT NULL,
+	[ThumbPanelLRTB] [nvarchar](50) NOT NULL,
+	[CategoryHeight] [int] NOT NULL,
+	[CategoryWidth] [int] NOT NULL,
+	[CategoryY] [int] NOT NULL,
+	[CategoryX] [int] NOT NULL,
+	[CategoryInOut] [nvarchar](50) NOT NULL,
+	[CategoryLRTB] [nvarchar](50) NOT NULL,
+	[GalleryCaptionHeight] [int] NOT NULL,
+	[GalleryCaptionWidth] [int] NOT NULL,
+	[GalleryCaptionY] [int] NOT NULL,
+	[GalleryCaptionX] [int] NOT NULL,
+	[GalleryCaptionInOut] [nvarchar](50) NOT NULL,
+	[GalleryCaptionLRTB] [nvarchar](50) NOT NULL,
+	[CaptionHeight] [int] NOT NULL,
+	[CaptionWidth] [int] NOT NULL,
+	[CaptionY] [int] NOT NULL,
+	[CaptionX] [int] NOT NULL,
+	[CaptionInOut] [nvarchar](50) NOT NULL,
+	[CaptionLRTB] [nvarchar](50) NOT NULL,
+	[ImapgePanelTopY] [int] NOT NULL,
+	[ImapgePanelTopX] [int] NOT NULL,
+	[ImapgePanelWidth] [int] NOT NULL,
+	[ImapgePanelHeight] [int] NOT NULL,
+	[ThumbPanelWidth] [int] NOT NULL,
+	[ThumbPanelHeight] [int] NOT NULL,
+	[ThumbPanelY] [int] NOT NULL,
+	[ThumbPanelX] [int] NOT NULL,
+	[ShowTwitter] [bit] NOT NULL,
+	[ShowGooglePlus] [bit] NOT NULL,
+	[ShowFacebook] [bit] NOT NULL,
+	[NestedSortingType] [nvarchar](10) NOT NULL,
+	[NestedSorting] [nvarchar](25) NOT NULL,
+	[SocialSharingButtons] [bit] NOT NULL,
+	[LightboxSocialSharing] [bit] NOT NULL,
+	[LightboxShowPrint] [bit] NOT NULL,
+	[LightboxShowEmail] [bit] NOT NULL,
+	[LightboxType] [nvarchar](25) NOT NULL,
+	[LightboxTitle] [bit] NOT NULL,
+	[LightboxDescription] [bit] NOT NULL,
+	[LightboxOpacity] [int] NOT NULL,
+	[LightboxPadding] [int] NOT NULL,
+	[OverlayGallery] [bit] NOT NULL,
+	[ShowTitle] [bit] NOT NULL,
+	[ShowDescription] [bit] NOT NULL,
+	[ShowMediaTitle] [bit] NOT NULL,
+	[ShowMediaDescription] [bit] NOT NULL,
+	[ShowMediaTitleThumbnail] [bit] NOT NULL,
+	[OpenMediaUrl] [bit] NOT NULL,
+	[NewWindow] [bit] NOT NULL,
+	[ASSInterval] [int] NOT NULL,
+	[RandomizeMedia] [bit] NOT NULL,
+	[SSImageWidth] [int] NOT NULL,
+	[SSImageHeight] [int] NOT NULL,
+	[SSThumbImageWidth] [int] NOT NULL,
+	[SSThumbImageHeight] [int] NOT NULL,
+	[SliderEffect] [nvarchar](50) NOT NULL,
+	[SSAutoSlide] [bit] NOT NULL,
+	[SSAutoSlidePause] [nvarchar](50) NOT NULL,
+	[OverlayColor] [bit] NOT NULL,
+	[TGImageWidth] [int] NOT NULL,
+	[TGImageHeight] [int] NOT NULL,
+	[TGCSSFile] [nvarchar](50) NOT NULL,
+	[NGShowName] [bit] NOT NULL,
+	[NGShowdescription] [bit] NOT NULL,
+	[NGThumbWidth] [int] NOT NULL,
+	[NGThumbHeight] [int] NOT NULL,
+	[VGSkin] [nvarchar](50) NOT NULL,
+	[PlayOnLoad] [bit] NOT NULL,
+	[AudioPlayOnLoad] [bit] NOT NULL,
+	[MediaSorting] [nvarchar](25) NOT NULL,
+	[MediaSortingAscType] [nvarchar](10) NOT NULL,
+	[UseFlowPlayer] [bit] NOT NULL,
+	[CategoryHeightResponsive] [bit] NOT NULL,
+	[CategoryWidthResponsive] [bit] NOT NULL,
+	[CategoryYResponsive] [bit] NOT NULL,
+	[CategoryXResponsive] [bit] NOT NULL,
+	[GalleryCaptionHeightResponsive] [bit] NOT NULL,
+	[GalleryCaptionWidthResponsive] [bit] NOT NULL,
+	[GalleryCaptionYResponsive] [bit] NOT NULL,
+	[GalleryCaptionXResponsive] [bit] NOT NULL,
+	[CaptionHeightResponsive] [bit] NOT NULL,
+	[CaptionWidthResponsive] [bit] NOT NULL,
+	[CaptionYResponsive] [bit] NOT NULL,
+	[CaptionXResponsive] [bit] NOT NULL,
+	[ImapgePanelTopYResponsive] [bit] NOT NULL,
+	[ImapgePanelTopXResponsive] [bit] NOT NULL,
+	[ImapgePanelWidthResponsive] [bit] NOT NULL,
+	[ImapgePanelHeightResponsive] [bit] NOT NULL,
+	[ThumbPanelWidthResponsive] [bit] NOT NULL,
+	[ThumbPanelHeightResponsive] [bit] NOT NULL,
+	[ThumbPanelYResponsive] [bit] NOT NULL,
+	[ThumbPanelXResponsive] [bit] NOT NULL,
+	[SSImageWidthResponsive] [bit] NOT NULL,
+	[SSImageHeightResponsive] [bit] NOT NULL,
+	[MainImageResizeMode] [int] NOT NULL,
+ CONSTRAINT [PK_EasyDNNNewsChameleonNestedSettings] PRIMARY KEY CLUSTERED  ( [Id] ASC )WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF),
+ CONSTRAINT [IX_EasyDNNNewsChameleonNestedSettings] UNIQUE NONCLUSTERED  ( [PortalID] ASC, [ModuleID] ASC,[ArticleID] ASC )WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF))
+END
+GO
+
+
+/****** Object:  ForeignKey [FK_EasyDNNNewsChameleonSettings_EasyDNNNews]    Script Date: 02/07/2013 20:35:47 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsChameleonSettings_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsChameleonSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsChameleonSettings]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsChameleonSettings_EasyDNNNews] FOREIGN KEY([ArticleID])
+REFERENCES [dbo].[EasyDNNNews] ([ArticleID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsChameleonSettings_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsChameleonSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsChameleonSettings] CHECK CONSTRAINT [FK_EasyDNNNewsChameleonSettings_EasyDNNNews]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsChameleonSettings_Modules]    Script Date: 02/07/2013 20:35:47 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsChameleonSettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsChameleonSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsChameleonSettings]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsChameleonSettings_Modules] FOREIGN KEY([ModuleID])
+REFERENCES {databaseOwner}{objectQualifier}Modules ([ModuleID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsChameleonSettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsChameleonSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsChameleonSettings] CHECK CONSTRAINT [FK_EasyDNNNewsChameleonSettings_Modules]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsChameleonSettings_Portals]    Script Date: 02/07/2013 20:35:47 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsChameleonSettings_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsChameleonSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsChameleonSettings]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsChameleonSettings_Portals] FOREIGN KEY([PortalID])
+REFERENCES {databaseOwner}{objectQualifier}Portals ([PortalID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsChameleonSettings_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsChameleonSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsChameleonSettings] CHECK CONSTRAINT [FK_EasyDNNNewsChameleonSettings_Portals]
+
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsChameleonNestedSettings_EasyDNNNews]    Script Date: 02/07/2013 20:35:47 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsChameleonNestedSettings_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsChameleonNestedSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsChameleonNestedSettings]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsChameleonNestedSettings_EasyDNNNews] FOREIGN KEY([ArticleID])
+REFERENCES [dbo].[EasyDNNNews] ([ArticleID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsChameleonNestedSettings_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsChameleonNestedSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsChameleonNestedSettings] CHECK CONSTRAINT [FK_EasyDNNNewsChameleonNestedSettings_EasyDNNNews]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsChameleonNestedSettings_Modules]    Script Date: 02/07/2013 20:35:47 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsChameleonNestedSettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsChameleonNestedSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsChameleonNestedSettings]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsChameleonNestedSettings_Modules] FOREIGN KEY([ModuleID])
+REFERENCES {databaseOwner}{objectQualifier}Modules ([ModuleID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsChameleonNestedSettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsChameleonNestedSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsChameleonNestedSettings] CHECK CONSTRAINT [FK_EasyDNNNewsChameleonNestedSettings_Modules]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsChameleonNestedSettings_Portals]    Script Date: 02/07/2013 20:35:47 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsChameleonNestedSettings_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsChameleonNestedSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsChameleonNestedSettings]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsChameleonNestedSettings_Portals] FOREIGN KEY([PortalID])
+REFERENCES {databaseOwner}{objectQualifier}Portals ([PortalID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsChameleonNestedSettings_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsChameleonNestedSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsChameleonNestedSettings] CHECK CONSTRAINT [FK_EasyDNNNewsChameleonNestedSettings_Portals]
+GO
+
+
+/****** Object:  Default [DF_EasyDNNNewsLightboxSettings_ThumbWidth]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsLightboxSettings_ThumbWidth]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsLightboxSettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsLightboxSettings_ThumbWidth]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] ADD  CONSTRAINT [DF_EasyDNNNewsLightboxSettings_ThumbWidth]  DEFAULT ((100)) FOR [ThumbWidth]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_EasyDNNNewsLightboxSettings_ThumbHeight]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsLightboxSettings_ThumbHeight]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsLightboxSettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsLightboxSettings_ThumbHeight]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] ADD  CONSTRAINT [DF_EasyDNNNewsLightboxSettings_ThumbHeight]  DEFAULT ((100)) FOR [ThumbHeight]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_EasyDNNNewsLightboxSettings_ItemsPerPage]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsLightboxSettings_ItemsPerPage]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsLightboxSettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsLightboxSettings_ItemsPerPage]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] ADD  CONSTRAINT [DF_EasyDNNNewsLightboxSettings_ItemsPerPage]  DEFAULT ((20)) FOR [ItemsPerPage]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_EasyDNNNewsLightboxSettings_NumOfColumns]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsLightboxSettings_NumOfColumns]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsLightboxSettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsLightboxSettings_NumOfColumns]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] ADD  CONSTRAINT [DF_EasyDNNNewsLightboxSettings_NumOfColumns]  DEFAULT ((4)) FOR [NumOfColumns]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_EasyDNNNewsLightboxSettings_PagerType]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsLightboxSettings_PagerType]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsLightboxSettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsLightboxSettings_PagerType]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] ADD  CONSTRAINT [DF_EasyDNNNewsLightboxSettings_PagerType]  DEFAULT (N'Numeric') FOR [PagerType]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_EasyDNNNewsLightboxSettings_GalleryTheme]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsLightboxSettings_GalleryTheme]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsLightboxSettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsLightboxSettings_GalleryTheme]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] ADD  CONSTRAINT [DF_EasyDNNNewsLightboxSettings_GalleryTheme]  DEFAULT (N'EDG_0_Shadow.css') FOR [GalleryTheme]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_EasyDNNNewsLightboxSettings_LightboxTheme]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsLightboxSettings_LightboxTheme]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsLightboxSettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsLightboxSettings_LightboxTheme]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] ADD  CONSTRAINT [DF_EasyDNNNewsLightboxSettings_LightboxTheme]  DEFAULT (N'light_rounded') FOR [LightboxTheme]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_EasyDNNNewsLightboxSettings_ShowTitle]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsLightboxSettings_ShowTitle]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsLightboxSettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsLightboxSettings_ShowTitle]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] ADD  CONSTRAINT [DF_EasyDNNNewsLightboxSettings_ShowTitle]  DEFAULT ((0)) FOR [ShowTitle]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_EasyDNNNewsLightboxSettings_ShowDescription]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsLightboxSettings_ShowDescription]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsLightboxSettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsLightboxSettings_ShowDescription]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] ADD  CONSTRAINT [DF_EasyDNNNewsLightboxSettings_ShowDescription]  DEFAULT ((0)) FOR [ShowDescription]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_EasyDNNNewsLightboxSettings_ShowLightBoxTitle]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsLightboxSettings_ShowLightBoxTitle]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsLightboxSettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsLightboxSettings_ShowLightBoxTitle]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] ADD  CONSTRAINT [DF_EasyDNNNewsLightboxSettings_ShowLightBoxTitle]  DEFAULT ((0)) FOR [ShowLightBoxTitle]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_EasyDNNNewsLightboxSettings_ShowLightBoxDescription]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsLightboxSettings_ShowLightBoxDescription]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsLightboxSettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsLightboxSettings_ShowLightBoxDescription]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] ADD  CONSTRAINT [DF_EasyDNNNewsLightboxSettings_ShowLightBoxDescription]  DEFAULT ((0)) FOR [ShowLightBoxDescription]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_EasyDNNNewsLightboxSettings_Responsive]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsLightboxSettings_Responsive]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsLightboxSettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsLightboxSettings_Responsive]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] ADD  CONSTRAINT [DF_EasyDNNNewsLightboxSettings_Responsive]  DEFAULT ((0)) FOR [Responsive]
+END
+
+
+End
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsLightboxSettings_EasyDNNNews]    Script Date: 02/13/2013 16:37:26 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsLightboxSettings_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsLightboxSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsLightboxSettings_EasyDNNNews] FOREIGN KEY([ArticleID])
+REFERENCES [dbo].[EasyDNNNews] ([ArticleID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsLightboxSettings_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsLightboxSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] CHECK CONSTRAINT [FK_EasyDNNNewsLightboxSettings_EasyDNNNews]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsLightboxSettings_Modules]    Script Date: 02/13/2013 16:37:26 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsLightboxSettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsLightboxSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsLightboxSettings_Modules] FOREIGN KEY([ModuleID])
+REFERENCES {databaseOwner}{objectQualifier}Modules ([ModuleID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsLightboxSettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsLightboxSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] CHECK CONSTRAINT [FK_EasyDNNNewsLightboxSettings_Modules]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsLightboxSettings_Portals]    Script Date: 02/13/2013 16:37:26 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsLightboxSettings_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsLightboxSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsLightboxSettings_Portals] FOREIGN KEY([PortalID])
+REFERENCES {databaseOwner}{objectQualifier}Portals ([PortalID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsLightboxSettings_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsLightboxSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] CHECK CONSTRAINT [FK_EasyDNNNewsLightboxSettings_Portals]
+GO
+
+/****** Object:  Default [DF_EasyDNNNewsAudioGallerySettings_ThumbWidth]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsAudioGallerySettings_ThumbWidth]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAudioGallerySettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsAudioGallerySettings_ThumbWidth]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsAudioGallerySettings] ADD  CONSTRAINT [DF_EasyDNNNewsAudioGallerySettings_ThumbWidth]  DEFAULT ((100)) FOR [ThumbWidth]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_EasyDNNNewsAudioGallerySettings_ThumbHeight]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsAudioGallerySettings_ThumbHeight]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAudioGallerySettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsAudioGallerySettings_ThumbHeight]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsAudioGallerySettings] ADD  CONSTRAINT [DF_EasyDNNNewsAudioGallerySettings_ThumbHeight]  DEFAULT ((100)) FOR [ThumbHeight]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_EasyDNNNewsAudioGallerySettings_ItemsPerPage]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsAudioGallerySettings_ItemsPerPage]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAudioGallerySettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsAudioGallerySettings_ItemsPerPage]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsAudioGallerySettings] ADD  CONSTRAINT [DF_EasyDNNNewsAudioGallerySettings_ItemsPerPage]  DEFAULT ((20)) FOR [ItemsPerPage]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_EasyDNNNewsAudioGallerySettings_NumOfColumns]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsAudioGallerySettings_NumOfColumns]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAudioGallerySettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsAudioGallerySettings_NumOfColumns]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsAudioGallerySettings] ADD  CONSTRAINT [DF_EasyDNNNewsAudioGallerySettings_NumOfColumns]  DEFAULT ((4)) FOR [NumOfColumns]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_EasyDNNNewsAudioGallerySettings_PagerType]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsAudioGallerySettings_PagerType]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAudioGallerySettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsAudioGallerySettings_PagerType]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsAudioGallerySettings] ADD  CONSTRAINT [DF_EasyDNNNewsAudioGallerySettings_PagerType]  DEFAULT (N'Numeric') FOR [PagerType]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_EasyDNNNewsAudioGallerySettings_GalleryTheme]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsAudioGallerySettings_GalleryTheme]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAudioGallerySettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsAudioGallerySettings_GalleryTheme]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsAudioGallerySettings] ADD  CONSTRAINT [DF_EasyDNNNewsAudioGallerySettings_GalleryTheme]  DEFAULT (N'EDG_0_Shadow.css') FOR [GalleryTheme]
+END
+
+
+End
+GO
+
+/****** Object:  Default [DF_EasyDNNNewsAudioGallerySettings_ShowTitle]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsAudioGallerySettings_ShowTitle]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAudioGallerySettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsAudioGallerySettings_ShowTitle]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsAudioGallerySettings] ADD  CONSTRAINT [DF_EasyDNNNewsAudioGallerySettings_ShowTitle]  DEFAULT ((0)) FOR [ShowTitle]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_EasyDNNNewsAudioGallerySettings_ShowDescription]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsAudioGallerySettings_ShowDescription]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAudioGallerySettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsAudioGallerySettings_ShowDescription]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsAudioGallerySettings] ADD  CONSTRAINT [DF_EasyDNNNewsAudioGallerySettings_ShowDescription]  DEFAULT ((0)) FOR [ShowDescription]
+END
+
+
+End
+GO
+
+/****** Object:  ForeignKey [FK_EasyDNNNewsAudioGallerySettings_EasyDNNNews]    Script Date: 02/13/2013 16:37:26 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAudioGallerySettings_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAudioGallerySettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsAudioGallerySettings]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsAudioGallerySettings_EasyDNNNews] FOREIGN KEY([ArticleID])
+REFERENCES [dbo].[EasyDNNNews] ([ArticleID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAudioGallerySettings_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAudioGallerySettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsAudioGallerySettings] CHECK CONSTRAINT [FK_EasyDNNNewsAudioGallerySettings_EasyDNNNews]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAudioGallerySettings_Modules]    Script Date: 02/13/2013 16:37:26 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAudioGallerySettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAudioGallerySettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsAudioGallerySettings]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsAudioGallerySettings_Modules] FOREIGN KEY([ModuleID])
+REFERENCES {databaseOwner}{objectQualifier}Modules ([ModuleID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAudioGallerySettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAudioGallerySettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsAudioGallerySettings] CHECK CONSTRAINT [FK_EasyDNNNewsAudioGallerySettings_Modules]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAudioGallerySettings_Portals]    Script Date: 02/13/2013 16:37:26 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAudioGallerySettings_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAudioGallerySettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsAudioGallerySettings]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsAudioGallerySettings_Portals] FOREIGN KEY([PortalID])
+REFERENCES {databaseOwner}{objectQualifier}Portals ([PortalID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAudioGallerySettings_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAudioGallerySettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsAudioGallerySettings] CHECK CONSTRAINT [FK_EasyDNNNewsAudioGallerySettings_Portals]
+GO
+/****** Object:  Default [DF_EasyDNNNewsVideoGallerySettings_ThumbWidth]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsVideoGallerySettings_ThumbWidth]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsVideoGallerySettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsVideoGallerySettings_ThumbWidth]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsVideoGallerySettings] ADD  CONSTRAINT [DF_EasyDNNNewsVideoGallerySettings_ThumbWidth]  DEFAULT ((100)) FOR [ThumbWidth]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_EasyDNNNewsVideoGallerySettings_ThumbHeight]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsVideoGallerySettings_ThumbHeight]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsVideoGallerySettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsVideoGallerySettings_ThumbHeight]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsVideoGallerySettings] ADD  CONSTRAINT [DF_EasyDNNNewsVideoGallerySettings_ThumbHeight]  DEFAULT ((100)) FOR [ThumbHeight]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_EasyDNNNewsVideoGallerySettings_ItemsPerPage]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsVideoGallerySettings_ItemsPerPage]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsVideoGallerySettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsVideoGallerySettings_ItemsPerPage]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsVideoGallerySettings] ADD  CONSTRAINT [DF_EasyDNNNewsVideoGallerySettings_ItemsPerPage]  DEFAULT ((20)) FOR [ItemsPerPage]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_EasyDNNNewsVideoGallerySettings_NumOfColumns]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsVideoGallerySettings_NumOfColumns]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsVideoGallerySettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsVideoGallerySettings_NumOfColumns]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsVideoGallerySettings] ADD  CONSTRAINT [DF_EasyDNNNewsVideoGallerySettings_NumOfColumns]  DEFAULT ((4)) FOR [NumOfColumns]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_EasyDNNNewsVideoGallerySettings_PagerType]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsVideoGallerySettings_PagerType]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsVideoGallerySettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsVideoGallerySettings_PagerType]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsVideoGallerySettings] ADD  CONSTRAINT [DF_EasyDNNNewsVideoGallerySettings_PagerType]  DEFAULT (N'Numeric') FOR [PagerType]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_EasyDNNNewsVideoGallerySettings_GalleryTheme]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsVideoGallerySettings_GalleryTheme]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsVideoGallerySettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsVideoGallerySettings_GalleryTheme]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsVideoGallerySettings] ADD  CONSTRAINT [DF_EasyDNNNewsVideoGallerySettings_GalleryTheme]  DEFAULT (N'EDG_0_Shadow.css') FOR [GalleryTheme]
+END
+
+
+End
+GO
+
+/****** Object:  Default [DF_EasyDNNNewsVideoGallerySettings_ShowTitle]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsVideoGallerySettings_ShowTitle]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsVideoGallerySettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsVideoGallerySettings_ShowTitle]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsVideoGallerySettings] ADD  CONSTRAINT [DF_EasyDNNNewsVideoGallerySettings_ShowTitle]  DEFAULT ((0)) FOR [ShowTitle]
+END
+
+
+End
+GO
+/****** Object:  Default [DF_EasyDNNNewsVideoGallerySettings_ShowDescription]    Script Date: 02/13/2013 16:37:26 ******/
+IF Not EXISTS (SELECT * FROM sys.default_constraints WHERE object_id = OBJECT_ID(N'[dbo].[DF_EasyDNNNewsVideoGallerySettings_ShowDescription]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsVideoGallerySettings]'))
+Begin
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsVideoGallerySettings_ShowDescription]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsVideoGallerySettings] ADD  CONSTRAINT [DF_EasyDNNNewsVideoGallerySettings_ShowDescription]  DEFAULT ((0)) FOR [ShowDescription]
+END
+
+
+End
+GO
+
+/****** Object:  ForeignKey [FK_EasyDNNNewsVideoGallerySettings_EasyDNNNews]    Script Date: 02/13/2013 16:37:26 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsVideoGallerySettings_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsVideoGallerySettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsVideoGallerySettings]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsVideoGallerySettings_EasyDNNNews] FOREIGN KEY([ArticleID])
+REFERENCES [dbo].[EasyDNNNews] ([ArticleID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsVideoGallerySettings_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsVideoGallerySettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsVideoGallerySettings] CHECK CONSTRAINT [FK_EasyDNNNewsVideoGallerySettings_EasyDNNNews]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsVideoGallerySettings_Modules]    Script Date: 02/13/2013 16:37:26 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsVideoGallerySettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsVideoGallerySettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsVideoGallerySettings]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsVideoGallerySettings_Modules] FOREIGN KEY([ModuleID])
+REFERENCES {databaseOwner}{objectQualifier}Modules ([ModuleID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsVideoGallerySettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsVideoGallerySettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsVideoGallerySettings] CHECK CONSTRAINT [FK_EasyDNNNewsVideoGallerySettings_Modules]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsVideoGallerySettings_Portals]    Script Date: 02/13/2013 16:37:26 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsVideoGallerySettings_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsVideoGallerySettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsVideoGallerySettings]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsVideoGallerySettings_Portals] FOREIGN KEY([PortalID])
+REFERENCES {databaseOwner}{objectQualifier}Portals ([PortalID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsVideoGallerySettings_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsVideoGallerySettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsVideoGallerySettings] CHECK CONSTRAINT [FK_EasyDNNNewsVideoGallerySettings_Portals]

@@ -1,0 +1,310 @@
+#EDN_NewsTwo.NewsTwo_Style_Red a {
+  color: #e00303;
+  text-decoration: none;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red a:hover {
+  text-decoration: underline;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red .edn_module_box > .edn_module_title .rss, #EDN_NewsTwo.NewsTwo_Style_Red.calendar .callendar_table_container > .edn_module_title .rss, #EDN_NewsTwo.NewsTwo_Style_Red.calendar .archive_list > .edn_module_title .rss {
+  background-image: url(../images/common/red/calendar_action_buttons.png);
+}
+#EDN_NewsTwo.NewsTwo_Style_Red .edn_module_box > .edn_module_title .rss.sidebar-news-module-rss, #EDN_NewsTwo.NewsTwo_Style_Red.calendar .callendar_table_container > .edn_module_title .rss.sidebar-news-module-rss, #EDN_NewsTwo.NewsTwo_Style_Red.calendar .archive_list > .edn_module_title .rss.sidebar-news-module-rss {
+  background-image: url(../images/common/red/calendar_action_buttons.png);
+}
+#EDN_NewsTwo.NewsTwo_Style_Red .edn_module_box > .edn_module_title .export, #EDN_NewsTwo.NewsTwo_Style_Red.calendar .callendar_table_container > .edn_module_title .export, #EDN_NewsTwo.NewsTwo_Style_Red.calendar .archive_list > .edn_module_title .export {
+  background-image: url(../images/common/red/calendar_action_buttons.png);
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.category_menu ul li div .category:hover {
+  color: #e00303;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.category_menu ul li.opened > div > a.category {
+  color: #e00303;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.category_menu ul li.active > div > a.category {
+  color: #e00303;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.category_menu ul li .articlecount {
+  background: #e00303;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.category_menu ul li .articlecount:hover {
+  background: #a1a1a1;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.category_menu ul li .rss {
+  background-image: url(../images/common/red/calendar_action_buttons.png);
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.tag_cloud .tags a:hover {
+  color: white;
+  background: #e00303;
+  border-color: #e00303;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.tag_cloud .tags a:hover span {
+  border-color: #b20505;
+  color: #980101;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .top_calendar_actions > a {
+  background-image: url(../images/common/red/calendar_action_buttons.png);
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .callendar_table_container .calendar_table .month_selection td.next_prev_months a {
+  background-image: url(../images/common/red/callendar-arrows.png);
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .callendar_table_container .calendar_table .month_selection td.next_prev_months:first-child a {
+  background-image: url(../images/common/red/callendar-arrows.png);
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .callendar_table_container .calendar_table td.week_days {
+  background-color: #e00303;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .callendar_table_container .calendar_table td.day a:hover {
+  background-color: #e00303;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .callendar_table_container .calendar_table td.has_posts a {
+  background-color: #ebebeb;
+  background-image: url(../images/common/red/day_has_posts-bg.png);
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .callendar_table_container .calendar_table td.has_posts a:hover {
+  background-color: #e00303;
+  background-image: url(../images/common/today-has-posts.png);
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .callendar_table_container .calendar_table td.has_posts.today a {
+  background-color: #e00303;
+  background-image: url(../images/common/today-has-posts.png);
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .callendar_table_container .calendar_table td.has_events a {
+  background-color: #ffc000;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .callendar_table_container .calendar_table td.has_events.other_month a:hover {
+  background-color: #e00303 !important;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .callendar_table_container .calendar_table td.today a {
+  background-color: #e00303;
+  color: white;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .callendar_table_container.advanced .calendar_table .day > a {
+  color: #111111 !important;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .callendar_table_container.advanced .calendar_table .day > a:hover {
+  background-color: #e00303 !important;
+  color: white !important;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .callendar_table_container.advanced .calendar_table .day.has_posts > a {
+  background-image: url(../images/common/red/day_has_posts-bg.png) !important;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .callendar_table_container.advanced .calendar_table .day.has_posts > a:hover {
+  background-color: #e00303 !important;
+  background-image: url(../images/common/today-has-posts.png) !important;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .callendar_table_container.advanced .calendar_table .day.has_posts.today > a {
+  background-color: #e00303 !important;
+  background-image: url(../images/common/today-has-posts.png) !important;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .callendar_table_container.advanced .calendar_table .day.has_events > a {
+  background-color: #ffd202 !important;
+  color: #2f2f2f !important;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .callendar_table_container.advanced .calendar_table .day.has_events > a:hover {
+  background-color: #e00303 !important;
+  color: white !important;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .callendar_table_container.advanced .calendar_table .day.has_events.other_month > a {
+  background: #fff8d5 !important;
+  color: #b2b2b2 !important;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .callendar_table_container.advanced .calendar_table .day.has_events.other_month > a:hover {
+  background: #e00303 !important;
+  color: white !important;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .callendar_table_container.advanced .calendar_table .day.today > a {
+  color: white !important;
+  background-color: #e00303 !important;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .callendar_table_container.advanced .calendar_table .day.selected > a {
+  background-color: #e00303 !important;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .callendar_table_container.advanced .calendar_table .day > ul > li > a {
+  background: #f9f9f9;
+  color: #3c3c3c !important;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .callendar_table_container.advanced .calendar_table .day > ul > li.event > a {
+  background: white !important;
+  color: #3c3c3c !important;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .archive_list ul li a:hover {
+  background-color: #f9f9f9;
+  color: #e00303;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .archive_list ul li ul li {
+  padding: 0px;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .events ul li a {
+  background: url(../images/common/red/event_clock.png) no-repeat 9px 11px;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .events ul li a:hover {
+  color: #e00303;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.calendar .events ul li span {
+  color: #707070;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article h2 a:hover {
+  color: #e00303;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article.sidebar_box a:hover {
+  color: white;
+  background-color: #d20101;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article.sidebar_box a:hover img {
+  border-color: #b30000;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article-details a {
+  color: #e00303;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article-details .event_date,
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article-details .event_location {
+  background-image: url(../images/common/red/event-location-icons.png);
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article-details .event_date .export {
+  background: url(../images/common/red/event-location-icons.png) no-repeat 0 -41px;
+  color: #e00303;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article-details .event_date .export:hover {
+  text-decoration: underline;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article-details .in_article_image .image_title {
+  color: #d20101;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article-details .details-wraper .author-details {
+  background: url(../images/common/red/bg-red.png);
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article-details .details-wraper .author-details img {
+  border: solid 1px #c10202;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article-details .details-wraper .author-details .author-display-name .author_rss {
+  background: url(../images/common/red/red-rss.png) no-repeat 0 0;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article-details .details-wraper .author-details .other-posty-by a {
+  color: #ed0100;
+  text-decoration: none;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article-details .article_documents h2 {
+  color: #252525;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article-details .meta-details a {
+  color: #464646;
+  text-decoration: none;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article-details .meta-details a:hover {
+  text-decoration: underline;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article-details .meta-details p {
+  padding-bottom: 3px;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article-details .meta-details p.newstwo-tags a:hover {
+  background: #e00303;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article-details .related_articles h2 {
+  color: #252525;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article-details .related_articles ul li a {
+  color: #2f2f2f;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article-details .related_articles ul li a:hover {
+  color: #e00303;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article-details .edn_article_gallery {
+  overflow: hidden;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article-details .edn_article_gallery > ul > li img:hover {
+  border-color: #e00303;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article-details .article_comments .add_comment .add_article_box table td.right .submit {
+  background-color: #d20101;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article-details .article_comments .add_comment .add_article_box table td.right .submit:hover {
+  background-color: #720000;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article-details .article_comments .comment_list .comment .right_side .comment_details .author {
+  color: #e00303;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article-details .article_comments .comment_list .comment .right_side .actions a:hover {
+  color: #e00303;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red.news .article_rss_wrapper a {
+  background: url(../images/common/red/red-rss.png) no-repeat 0 2px transparent;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red .meta-text-wraper .meta_text div.rating .article_rating div.EDN_article_rateit div.rateit-range, #EDN_NewsTwo.NewsTwo_Style_Red .meta-text-wraper .meta_text div.rating.rating div.EDN_article_rateit div.rateit-range {
+  background: url(../images/common/red/rate_stars.png);
+}
+#EDN_NewsTwo.NewsTwo_Style_Red .meta-text-wraper .meta_text div.rating .article_rating div.EDN_article_rateit div.rateit-hover, #EDN_NewsTwo.NewsTwo_Style_Red .meta-text-wraper .meta_text div.rating.rating div.EDN_article_rateit div.rateit-hover {
+  background: url(../images/common/red/rate_stars.png) left -32px;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red .meta-text-wraper .meta_text div.rating .article_rating div.EDN_article_rateit div.rateit-selected, #EDN_NewsTwo.NewsTwo_Style_Red .meta-text-wraper .meta_text div.rating.rating div.EDN_article_rateit div.rateit-selected {
+  background: url(../images/common/red/rate_stars.png) left -16px;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red .user_dashboard a {
+  color: #2f2f2f;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red .user_dashboard a:hover {
+  color: #cc0000;
+  text-decoration: none;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red .article_pager span,
+#EDN_NewsTwo.NewsTwo_Style_Red .article_pagination span {
+  color: white;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red .article_pager a,
+#EDN_NewsTwo.NewsTwo_Style_Red .article_pagination a {
+  color: #aaaaaa;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red .article_pager a:hover,
+#EDN_NewsTwo.NewsTwo_Style_Red .article_pagination a:hover {
+  background: #efefef;
+  text-decoration: none;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red .article_pager a.active,
+#EDN_NewsTwo.NewsTwo_Style_Red .article_pagination a.active {
+  background: #aaaaaa;
+  color: white;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red .featured-multi.no-image {
+  color: #2f2f2f;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red .featured-multi .admin_actions a {
+  color: #e00303;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red .featured-multi.no-image .admin_actions a {
+  color: #e00303;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red .two-articles-row .article-two-in-row .admin_actions a {
+  color: #e00303;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red .one-article-row .article-one-in-row .admin_actions a {
+  color: #e00303;
+}
+#EDN_NewsTwo.NewsTwo_Style_Red .three-articles-row .article-three-in-row .admin_actions a {
+  color: #e00303;
+}
+
+.EDN_search.NewsTwo.Red ul li span a:hover {
+  color: #e00303;
+}
+
+.EDN_search.NewsTwo.Red ul li span a:hover {
+  color: #e00303;
+}
+
+.qtip.edn_calendarbox_NewsTwo.Red > .qtip-content > .title span {
+  color: #2f2f2f;
+}
+.qtip.edn_calendarbox_NewsTwo.Red > .qtip-content > .wrapper > .article > p.title a {
+  color: #d51212;
+}
+.qtip.edn_calendarbox_NewsTwo.Red > .qtip-content > .wrapper > .article > p.title a:hover {
+  color: #2f2f2f;
+}
+.qtip.edn_calendarbox_NewsTwo.Red > .qtip-content > .wrapper > .article > a {
+  color: #e00303;
+}
+.qtip.edn_calendarbox_NewsTwo.Red > .qtip-content > .wrapper > .article > a:hover {
+  text-decoration: underline;
+}
+.qtip.edn_calendarbox_NewsTwo.Red > .qtip-content > .wrapper > .article_list > li > a:hover {
+  color: #e00303;
+}

@@ -1,0 +1,31 @@
+2014-05-05 10:39:30,405 [srv20079][Thread:23][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-05-05 10:39:30,485 [srv20079][Thread:23][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=1109&error=An unexpected error has occurred
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-05-05 13:38:36,180 [srv20079][Thread:11][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The length of the URL for this request exceeds the configured maxUrlLength value.
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2014-05-05 15:21:37,936 [srv20079][Thread:11][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The length of the URL for this request exceeds the configured maxUrlLength value.
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2014-05-05 15:25:55,840 [srv20079][Thread:11][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The length of the URL for this request exceeds the configured maxUrlLength value.
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2014-05-05 17:31:13,713 [srv20079][Thread:31][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The length of the URL for this request exceeds the configured maxUrlLength value.
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)
+2014-05-05 17:33:27,420 [srv20079][Thread:31][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The length of the URL for this request exceeds the configured maxUrlLength value.
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)

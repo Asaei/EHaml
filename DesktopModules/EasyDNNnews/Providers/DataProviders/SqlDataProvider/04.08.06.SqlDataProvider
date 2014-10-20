@@ -1,0 +1,113 @@
+﻿/**** Create Tables ****/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSocialSecurity]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[EasyDNNNewsSocialSecurity](
+	[ArticleID] [int] NOT NULL,
+	[SecurityKey] [nvarchar](50) NOT NULL,
+	CONSTRAINT [PK_EasyDNNNewsSocialSecurity] PRIMARY KEY CLUSTERED ([ArticleID] ASC,[SecurityKey] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+)
+END
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSocialGroupItems]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[EasyDNNNewsSocialGroupItems](
+	[RoleID] [int] NOT NULL,
+	[ArticleID] [int] NOT NULL,
+	CONSTRAINT [PK_EasyDNNNewsSocialGroupItems] PRIMARY KEY CLUSTERED  ([RoleID] ASC,[ArticleID] ASC )WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+)
+END
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsSocialGroupItems_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSocialGroupItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsSocialGroupItems]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsSocialGroupItems_EasyDNNNews] FOREIGN KEY([ArticleID])
+REFERENCES [dbo].[EasyDNNNews] ([ArticleID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsSocialGroupItems_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSocialGroupItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsSocialGroupItems] CHECK CONSTRAINT [FK_EasyDNNNewsSocialGroupItems_EasyDNNNews]
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsSocialGroupItems_Roles]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSocialGroupItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsSocialGroupItems]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsSocialGroupItems_Roles] FOREIGN KEY([RoleID])
+REFERENCES {databaseOwner}{objectQualifier}Roles ([RoleID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsSocialGroupItems_Roles]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSocialGroupItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsSocialGroupItems] CHECK CONSTRAINT [FK_EasyDNNNewsSocialGroupItems_Roles]
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsSocialSecurity_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSocialSecurity]'))
+ALTER TABLE [dbo].[EasyDNNNewsSocialSecurity]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsSocialSecurity_EasyDNNNews] FOREIGN KEY([ArticleID])
+REFERENCES [dbo].[EasyDNNNews] ([ArticleID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsSocialSecurity_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSocialSecurity]'))
+ALTER TABLE [dbo].[EasyDNNNewsSocialSecurity] CHECK CONSTRAINT [FK_EasyDNNNewsSocialSecurity_EasyDNNNews]
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSocialSharingTemp]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[EasyDNNNewsSocialSharingTemp](
+	[NewsModuleID] [int] NOT NULL,
+	[ArticleID] [int] NOT NULL,
+	[SocialNetwork] [tinyint] NOT NULL,
+	[SocialGroupID] [int] NOT NULL,
+	CONSTRAINT [PK_EasyDNNNewsSocialSharingTemp] PRIMARY KEY CLUSTERED  ([NewsModuleID] ASC,[ArticleID] ASC,[SocialNetwork] ASC,[SocialGroupID] ASC)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+)
+END
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsSocialSharingTemp_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSocialSharingTemp]'))
+ALTER TABLE [dbo].[EasyDNNNewsSocialSharingTemp]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsSocialSharingTemp_EasyDNNNews] FOREIGN KEY([ArticleID])
+REFERENCES [dbo].[EasyDNNNews] ([ArticleID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsSocialSharingTemp_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSocialSharingTemp]'))
+ALTER TABLE [dbo].[EasyDNNNewsSocialSharingTemp] CHECK CONSTRAINT [FK_EasyDNNNewsSocialSharingTemp_EasyDNNNews]
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsSocialSharingTemp_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSocialSharingTemp]'))
+ALTER TABLE [dbo].[EasyDNNNewsSocialSharingTemp]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsSocialSharingTemp_Modules] FOREIGN KEY([NewsModuleID])
+REFERENCES {databaseOwner}{objectQualifier}Modules ([ModuleID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsSocialSharingTemp_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSocialSharingTemp]'))
+ALTER TABLE [dbo].[EasyDNNNewsSocialSharingTemp] CHECK CONSTRAINT [FK_EasyDNNNewsSocialSharingTemp_Modules]
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsSocialSharingTemp_Roles]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSocialSharingTemp]'))
+ALTER TABLE [dbo].[EasyDNNNewsSocialSharingTemp]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsSocialSharingTemp_Roles] FOREIGN KEY([SocialGroupID])
+REFERENCES {databaseOwner}{objectQualifier}Roles ([RoleID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsSocialSharingTemp_Roles]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSocialSharingTemp]'))
+ALTER TABLE [dbo].[EasyDNNNewsSocialSharingTemp] CHECK CONSTRAINT [FK_EasyDNNNewsSocialSharingTemp_Roles]
+GO
+
+/**** Update tables ****/
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsModuleSettings' and column_name = 'ModuleToOpenUserActivity')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsModuleSettings] ADD ModuleToOpenUserActivity int NOT NULL DEFAULT(0)
+END
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsModuleSettings' and column_name = 'ModuleToOpenGroupActivity')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsModuleSettings] ADD ModuleToOpenGroupActivity int NOT NULL DEFAULT(0)
+END
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsPortalSettings' and column_name = 'ModuleToOpenUserActivity')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsPortalSettings] ADD ModuleToOpenUserActivity int NOT NULL DEFAULT(0)
+END
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsPortalSettings' and column_name = 'ModuleToOpenGroupActivity')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsPortalSettings] ADD ModuleToOpenGroupActivity int NOT NULL DEFAULT(0)
+END
+BEGIN TRY
+	 INSERT INTO EasyDNNNewsSocialSecurity SELECT [ArticleID], 'E' FROM [dbo].[EasyDNNNews];
+END TRY
+BEGIN CATCH
+END CATCH

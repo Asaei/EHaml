@@ -1,0 +1,134 @@
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\bin\MyDnn_EHaml.dll
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\bin\MyDnn_EHaml.pdb
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\bin\ClientDependency.Core.dll
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\bin\DotNetNuke.dll
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\bin\DotNetNuke.Web.Client.dll
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\bin\DotNetNuke.Web.dll
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\bin\System.Net.Http.dll
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\bin\System.Net.Http.Formatting.dll
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\bin\System.Web.Http.dll
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\bin\Telerik.Web.UI.dll
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\bin\PetaPoco.dll
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\bin\Lucene.Net.dll
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\bin\DotNetNuke.Services.Syndication.dll
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\bin\DotNetNuke.Instrumentation.dll
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\bin\SharpZipLib.dll
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\bin\Lucene.Net.Contrib.FastVectorHighlighter.dll
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\bin\DotNetNuke.WebControls.dll
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\bin\DotNetNuke.WebUtility.dll
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\bin\CountryListBox.dll
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\bin\Microsoft.ApplicationBlocks.Data.dll
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\bin\WebFormsMvp.dll
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\bin\DotNetNuke.HttpModules.dll
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\bin\System.Web.Http.WebHost.dll
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\bin\dotnetnuke.log4net.dll
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\bin\System.Net.Http.xml
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\bin\System.Net.Http.Formatting.xml
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\bin\System.Web.Http.xml
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\obj\Debug\MyDnn_EHaml.dll
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\obj\Debug\MyDnn_EHaml.pdb
+D:\Work\MyDnn\Modules\EHaml\MyDnn_EHaml\MyDnn_EHaml\obj\Debug\MyDnn_EHaml.csprojResolveAssemblyReference.cache
+D:\Work\MyDnn\Portals\Old\EHaml\DesktopModules\MyDnn_EHaml\bin\MyDnn_EHaml.dll.config
+D:\Work\MyDnn\Portals\Old\EHaml\DesktopModules\MyDnn_EHaml\bin\MyDnn_EHaml.dll
+D:\Work\MyDnn\Portals\Old\EHaml\DesktopModules\MyDnn_EHaml\bin\MyDnn_EHaml.pdb
+D:\Work\MyDnn\Portals\Old\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Net.Http.dll
+D:\Work\MyDnn\Portals\Old\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Net.Http.Formatting.dll
+D:\Work\MyDnn\Portals\Old\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Web.Http.dll
+D:\Work\MyDnn\Portals\Old\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Web.Http.WebHost.dll
+D:\Work\MyDnn\Portals\Old\EHaml\DesktopModules\MyDnn_EHaml\bin\Newtonsoft.Json.dll
+D:\Work\MyDnn\Portals\Old\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Net.Http.xml
+D:\Work\MyDnn\Portals\Old\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Net.Http.Formatting.xml
+D:\Work\MyDnn\Portals\Old\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Web.Http.xml
+D:\Work\MyDnn\Portals\Old\EHaml\DesktopModules\MyDnn_EHaml\obj\Debug\MyDnn_EHaml.dll
+D:\Work\MyDnn\Portals\Old\EHaml\DesktopModules\MyDnn_EHaml\obj\Debug\MyDnn_EHaml.pdb
+D:\Work\MyDnn\Portals\Old\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Web.Http.WebHost.xml
+A:\EHaml\DesktopModules\MyDnn_EHaml\bin\MyDnn_EHaml.dll.config
+A:\EHaml\DesktopModules\MyDnn_EHaml\bin\MyDnn_EHaml.dll
+A:\EHaml\DesktopModules\MyDnn_EHaml\bin\MyDnn_EHaml.pdb
+A:\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Net.Http.dll
+A:\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Net.Http.Formatting.dll
+A:\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Web.Http.dll
+A:\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Web.Http.WebHost.dll
+A:\EHaml\DesktopModules\MyDnn_EHaml\bin\Newtonsoft.Json.dll
+A:\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Net.Http.xml
+A:\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Net.Http.Formatting.xml
+A:\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Web.Http.xml
+A:\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Web.Http.WebHost.xml
+A:\EHaml\DesktopModules\MyDnn_EHaml\obj\Debug\MyDnn_EHaml.dll
+A:\EHaml\DesktopModules\MyDnn_EHaml\obj\Debug\MyDnn_EHaml.pdb
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\MyDnn_EHaml.dll.config
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\MyDnn_EHaml.dll
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\MyDnn_EHaml.pdb
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\ClientDependency.Core.dll
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\DotNetNuke.dll
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\DotNetNuke.Web.Client.dll
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\DotNetNuke.Web.dll
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Net.Http.dll
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Net.Http.Formatting.dll
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Web.Http.dll
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\Telerik.Web.UI.dll
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\PetaPoco.dll
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\Lucene.Net.dll
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\DotNetNuke.Services.Syndication.dll
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\DotNetNuke.Instrumentation.dll
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\SharpZipLib.dll
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\Lucene.Net.Contrib.FastVectorHighlighter.dll
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\DotNetNuke.WebControls.dll
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\DotNetNuke.WebUtility.dll
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\CountryListBox.dll
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\Microsoft.ApplicationBlocks.Data.dll
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\WebFormsMvp.dll
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\DotNetNuke.HttpModules.dll
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Web.Http.WebHost.dll
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\Newtonsoft.Json.dll
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Net.Http.xml
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Net.Http.Formatting.xml
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Web.Http.xml
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\obj\Debug\MyDnn_EHaml.dll
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\obj\Debug\MyDnn_EHaml.pdb
+D:\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\obj\Debug\MyDnn_EHaml.csprojResolveAssemblyReference.cache
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\MyDnn_EHaml.dll.config
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\MyDnn_EHaml.dll
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\MyDnn_EHaml.pdb
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\ClientDependency.Core.dll
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\DotNetNuke.dll
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\DotNetNuke.Web.Client.dll
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\DotNetNuke.Web.dll
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Net.Http.dll
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Net.Http.Formatting.dll
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Web.Http.dll
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\Telerik.Web.UI.dll
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\PetaPoco.dll
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\Lucene.Net.dll
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\DotNetNuke.Services.Syndication.dll
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\DotNetNuke.Instrumentation.dll
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\SharpZipLib.dll
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\Lucene.Net.Contrib.FastVectorHighlighter.dll
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\DotNetNuke.WebControls.dll
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\DotNetNuke.WebUtility.dll
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\CountryListBox.dll
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\Microsoft.ApplicationBlocks.Data.dll
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\WebFormsMvp.dll
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\DotNetNuke.HttpModules.dll
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Web.Http.WebHost.dll
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\Newtonsoft.Json.dll
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Net.Http.xml
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Net.Http.Formatting.xml
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\bin\System.Web.Http.xml
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\obj\Debug\MyDnn_EHaml.dll
+D:\Personal Folder\Work\MyDnn\Portals\EHaml\DesktopModules\MyDnn_EHaml\obj\Debug\MyDnn_EHaml.pdb
+D:\Work\DNN\Potals\EHaml\Portal\Primary\DesktopModules\MyDnn_EHaml\bin\MyDnn_EHaml.dll.config
+D:\Work\DNN\Potals\EHaml\Portal\Primary\DesktopModules\MyDnn_EHaml\bin\MyDnn_EHaml.dll
+D:\Work\DNN\Potals\EHaml\Portal\Primary\DesktopModules\MyDnn_EHaml\bin\MyDnn_EHaml.pdb
+D:\Work\DNN\Potals\EHaml\Portal\Primary\DesktopModules\MyDnn_EHaml\bin\System.Net.Http.dll
+D:\Work\DNN\Potals\EHaml\Portal\Primary\DesktopModules\MyDnn_EHaml\bin\System.Net.Http.Formatting.dll
+D:\Work\DNN\Potals\EHaml\Portal\Primary\DesktopModules\MyDnn_EHaml\bin\System.Web.Http.dll
+D:\Work\DNN\Potals\EHaml\Portal\Primary\DesktopModules\MyDnn_EHaml\bin\System.Web.Http.WebHost.dll
+D:\Work\DNN\Potals\EHaml\Portal\Primary\DesktopModules\MyDnn_EHaml\bin\Newtonsoft.Json.dll
+D:\Work\DNN\Potals\EHaml\Portal\Primary\DesktopModules\MyDnn_EHaml\bin\System.Net.Http.xml
+D:\Work\DNN\Potals\EHaml\Portal\Primary\DesktopModules\MyDnn_EHaml\bin\System.Net.Http.Formatting.xml
+D:\Work\DNN\Potals\EHaml\Portal\Primary\DesktopModules\MyDnn_EHaml\bin\System.Web.Http.xml
+D:\Work\DNN\Potals\EHaml\Portal\Primary\DesktopModules\MyDnn_EHaml\bin\System.Web.Http.WebHost.xml
+D:\Work\DNN\Potals\EHaml\Portal\Primary\DesktopModules\MyDnn_EHaml\obj\Debug\MyDnn_EHaml.dll
+D:\Work\DNN\Potals\EHaml\Portal\Primary\DesktopModules\MyDnn_EHaml\obj\Debug\MyDnn_EHaml.pdb
+D:\Work\DNN\Potals\EHaml\Portal\Primary\DesktopModules\MyDnn_EHaml\obj\Debug\MyDnn_EHaml.csprojResolveAssemblyReference.cache

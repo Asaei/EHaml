@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="agreeToTerms.text" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Ik ga akkoord met de &lt;a href="{0}" target="_blank"&gt;voorwaarden&lt;/a&gt;</value>
+  </data>
+  <data name="agreeToTermsPopup1.text" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Ik ga akkoord</value>
+  </data>
+  <data name="agreeToTermsPopup2.text" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">&lt;a href="{0}"&gt;met de voorwaarden&lt;/a&gt;</value>
+  </data>
+  <data name="button.pleaseWait" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Even wachten...</value>
+  </data>
+  <data name="button.selectFile" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Kies een bestand...</value>
+  </data>
+  <data name="jquery.datepicker.closeText" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Klaar</value>
+  </data>
+  <data name="jquery.datepicker.currentText" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Vandaag</value>
+  </data>
+  <data name="jquery.datepicker.dateFormat" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">mm/dd/yy</value>
+  </data>
+  <data name="jquery.datepicker.dayNames" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">["Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag"]</value>
+  </data>
+  <data name="jquery.datepicker.dayNamesMin" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">["Zo","Ma","Di","Woe","Do","Vr","Za"]</value>
+  </data>
+  <data name="jquery.datepicker.dayNamesShort" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">["Zon", "Maa", "Din", "Woe", "Don", "Vri", "Zat"]</value>
+  </data>
+  <data name="jquery.datepicker.firstDay" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">0</value>
+  </data>
+  <data name="jquery.datepicker.isRTL" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">false</value>
+  </data>
+  <data name="jquery.datepicker.monthNames" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">["Januari","Februari","Maart","April","Mei","Juni",
+			"Juli","Augustus","September","October","November","December"]</value>
+  </data>
+  <data name="jquery.datepicker.monthNamesShort" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">["Jan", "Feb", "Maa", "Apr", "Mei", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]</value>
+  </data>
+  <data name="jquery.datepicker.nextText" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Volgende</value>
+  </data>
+  <data name="jquery.datepicker.prevText" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Vorige</value>
+  </data>
+  <data name="jquery.datepicker.weekHeader" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Wk</value>
+  </data>
+  <data name="message.pleaseWait" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Even wachten...</value>
+  </data>
+  <data name="validation.captcha" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Ongeldige code.</value>
+  </data>
+  <data name="validation.date" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Vul een geldige datum in.</value>
+  </data>
+  <data name="validation.dateISO" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Vul een geldige datum in (ISO).</value>
+  </data>
+  <data name="validation.dateUS" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Datum moet in het formaat mm/dd/yyyy ingevuld worden.</value>
+  </data>
+  <data name="validation.digits" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Alleen cijfers gebruiken</value>
+  </data>
+  <data name="validation.email" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Vul een geldig emailadres in.</value>
+  </data>
+  <data name="validation.equalTo" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Vul dezelfde waarde nog een keer in.</value>
+  </data>
+  <data name="validation.letters" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Alleen letters zijn toegestaan.</value>
+  </data>
+  <data name="validation.max" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Vul een waarde lager of gelijk aan {0} in.</value>
+  </data>
+  <data name="validation.maxlength" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Vul niet meer dan {0} tekens in.</value>
+  </data>
+  <data name="validation.min" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Vul een waarde groter of gelijk aan {0} in.</value>
+  </data>
+  <data name="validation.minlength" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Vul minimaal {0} teken(s) in.</value>
+  </data>
+  <data name="validation.nowhitespace" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Spaties zijn niet toegestaan.</value>
+  </data>
+  <data name="validation.number" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Voer een geldig nummer in.</value>
+  </data>
+  <data name="validation.phoneUS" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Vul een telefoonnummer  in het volgende formaat in: (###) ###-####.</value>
+  </data>
+  <data name="validation.range" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Vul een waarde tussen {0} en {1} in.</value>
+  </data>
+  <data name="validation.rangelength" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Vul een waarde van minimaal {0} en {1} tekens in.</value>
+  </data>
+  <data name="validation.remote" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Verander dit veld.</value>
+  </data>
+  <data name="validation.required" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Dit veld is verplicht.</value>
+  </data>
+  <data name="validation.required-cblist" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Minimaal één item is verplicht.</value>
+  </data>
+  <data name="validation.required-file" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Bestand is verplicht</value>
+  </data>
+  <data name="validation.requiredServerMessage" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Er ontbreekt een verplicht veld {0}.</value>
+  </data>
+  <data name="validation.url" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Vul een geldige url in.</value>
+  </data>
+  <data name="wysiwyg.bold" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Vet</value>
+  </data>
+  <data name="wysiwyg.code" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Stuk tekst</value>
+  </data>
+  <data name="wysiwyg.indent" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Inspringen</value>
+  </data>
+  <data name="wysiwyg.italic" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Schuin</value>
+  </data>
+  <data name="wysiwyg.outdent" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Inspringen verkleinen</value>
+  </data>
+  <data name="wysiwyg.removeFormat" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Verwijder codering</value>
+  </data>
+  <data name="wysiwyg.strikeThrough" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Doorhalen</value>
+  </data>
+  <data name="wysiwyg.underline" lastModified="2014-05-22 21:07:24">
+    <value xml:space="preserve">Onderstrepen</value>
+  </data>
+</root>

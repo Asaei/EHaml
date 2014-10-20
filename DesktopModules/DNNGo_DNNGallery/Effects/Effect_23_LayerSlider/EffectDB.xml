@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectDB>
+    <Name>
+      <![CDATA[Effect_23_LayerSlider]]>
+    </Name>
+    <Description>
+      <![CDATA[This is a dnn module content slider using the parallax-effect. You can create as many layers and sublayers as you want. You can use images or any other HTML elements, including Flash movies as layers. The script is very user-friendly, you can add global settings or local (per slide) settings to each layer or sublayer. You can change delay times, easing types, durations and much more.]]>
+    </Description>
+    <Version>
+      <![CDATA[02.00.03]]>
+    </Version>
+    <Thumbnails>
+      <![CDATA[http://www.dnngo.net/DesktopModules/DNNGo_DNNGallery/Effects/Effect_23_LayerSlider/preview.jpg]]>
+    </Thumbnails>
+    <EffectScript>
+      <![CDATA[layerslider.css,layerslider.kreaturamedia.jquery.js]]>
+    </EffectScript>
+    <GlobalScript>
+      <![CDATA[jquery.easing.js]]>
+    </GlobalScript>
+    <DisplayByNormal>
+      <![CDATA[Subtitle,Thumbnails,Picture,Description,UrlLink,Options]]>
+    </DisplayByNormal>
+    <DisplayByModule>
+      <![CDATA[Description,ViewType]]>
+    </DisplayByModule>
+    <DemoUrl>
+      <![CDATA[http://www.dnngo.net/OurModules/DNNGallery/LayerSlider.aspx]]>
+    </DemoUrl>
+  </EffectDB>
+</DNNGo_DNNGallery>

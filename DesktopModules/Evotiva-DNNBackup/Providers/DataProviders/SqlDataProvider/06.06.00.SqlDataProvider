@@ -1,0 +1,146 @@
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS ON 
+GO
+
+if NOT exists (select * from dbo.syscolumns 
+	where id=object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_Schedule') and name='DayOfWeek')
+	ALTER TABLE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_Schedule 
+		ADD DayOfWeek [varchar](10) 
+GO
+
+UPDATE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_Schedule
+   SET DayOfWeek = 'Any'
+ WHERE  DayOfWeek is null
+GO
+	
+ALTER TABLE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_Schedule 
+	ALTER COLUMN DayOfWeek [varchar](10) NOT NULL
+GO
+
+if NOT exists (select * from dbo.syscolumns 
+	where id=object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_Schedule') and name='LastBkpFilesRun')
+	ALTER TABLE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_Schedule 
+		ADD LastBkpFilesRun [datetime] NULL
+GO
+
+if exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSave') 
+	 and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	DROP PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSave
+GO
+CREATE PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSave
+	@ScheduleID [int]
+	,@ModuleID [int]
+	,@Description [varchar](200)
+	,@BkpDatabase [bit]
+	,@BkpFiles [bit]
+	,@TrnFTP [bit]
+	,@TrnAmazonS3 [bit]
+	,@TrnAzure [bit]
+	,@TrnCloudFiles [bit]
+	,@TrnDropbox [bit]
+	,@TimeLapse [int]
+	,@TimeLapseMeasurement [varchar](2) 
+	,@DayOfWeek [varchar](10)
+	,@RetainHistoryNum [int]
+	,@ValidTimeToStart [varchar](5)	
+	,@ValidTimeToStartTolerance [int]
+	,@Enabled [bit]
+	,@LastRun [datetime] 
+	,@NextRun [datetime]
+	,@LastBkpFilesRun [datetime]
+AS
+IF (@ScheduleID = -1)
+BEGIN
+	INSERT INTO {databaseOwner}{objectQualifier}Evotiva_DNNBackup_Schedule
+		(ModuleID
+		,Description 
+		,BkpDatabase
+		,BkpFiles
+		,TrnFTP
+		,TrnAmazonS3
+		,TrnAzure
+		,TrnCloudFiles
+		,TrnDropbox
+		,TimeLapse 
+		,TimeLapseMeasurement 
+		,DayOfWeek
+		,RetainHistoryNum 
+		,ValidTimeToStart
+		,ValidTimeToStartTolerance
+		,Enabled 
+		,LastRun 
+		,NextRun 
+		,LastBkpFilesRun
+		)
+	VALUES
+		(@ModuleID
+		,@Description 
+		,@BkpDatabase
+		,@BkpFiles
+		,@TrnFTP
+		,@TrnAmazonS3
+		,@TrnAzure
+		,@TrnCloudFiles
+		,@TrnDropbox
+		,@TimeLapse 
+		,@TimeLapseMeasurement 
+		,@DayOfWeek
+		,@RetainHistoryNum 
+		,@ValidTimeToStart
+		,@ValidTimeToStartTolerance
+		,@Enabled 
+		,@LastRun 
+		,@NextRun 
+		,@LastBkpFilesRun
+		)
+	select SCOPE_IDENTITY()
+END
+ELSE
+BEGIN
+	UPDATE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_Schedule
+	 SET ModuleID    = @ModuleID 
+		,Description = @Description
+		,BkpDatabase = @BkpDatabase
+		,BkpFiles = @BkpFiles
+		,TrnFTP   = @TrnFTP
+		,TrnAmazonS3 = @TrnAmazonS3
+		,TrnAzure = @TrnAzure
+		,TrnCloudFiles = @TrnCloudFiles
+		,TrnDropbox = @TrnDropbox
+		,TimeLapse    = @TimeLapse
+		,TimeLapseMeasurement  = @TimeLapseMeasurement
+		,DayOfWeek = @DayOfWeek
+		,RetainHistoryNum  = @RetainHistoryNum
+		,ValidTimeToStart  = @ValidTimeToStart
+		,ValidTimeToStartTolerance = @ValidTimeToStartTolerance
+		,Enabled  = @Enabled
+		,LastRun  = @LastRun
+		,NextRun  = @NextRun
+		,LastBkpFilesRun = @LastBkpFilesRun
+	 WHERE  ScheduleID = @ScheduleID
+	 SELECT @ScheduleID
+END
+GO
+
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/

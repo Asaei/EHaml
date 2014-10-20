@@ -1,0 +1,98 @@
+<token>
+    <name>FbLike</name>
+    <desc>This Gadget embeds FaceBook Like button on current page.</desc>
+    <cacheTimeSeconds>86400</cacheTimeSeconds>
+    <docurl>http://developers.facebook.com/docs/reference/plugins/like</docurl>
+    
+    <src>
+        <type>string</type>
+        <text>
+            <iframe src="http://www.facebook.com/plugins/like.php?href={{url|{0}&amp;/urlescape}}layout={{layout|{0}&amp;}}show_faces={{showfaces|{0}&amp;}}width={{width|{0}&amp;}}action={{verb|{0}&amp;}}colorscheme={{colorscheme|{0}&amp;}}height={{height|{0} }}" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"></iframe>
+        </text>
+    </src>
+    
+    <parser>
+        <type>string</type>
+        <replace>false</replace>
+        <decodeHtml>false</decodeHtml>
+    </parser>
+    
+    <param>
+        <name>Url</name>
+        <type>string</type>
+        <desc>URL to Like. If not specified it uses the URL of the webpage.</desc>
+        <default>[URL:FullUrl]</default>
+        <required>false</required>
+    </param>
+    
+    <param>
+        <name>Layout</name>
+        <type>enum</type>
+        <values>standard,button_count,box_count</values><!-- only for enums, comma separated list -->
+        <desc>
+            <ul style = "margin-top: 0px; margin-bottom: 0px;">
+                <li>standard - displays social text to the right of the button and friends' profile photos below. Minimum width: 225 pixels. Default width: 450 pixels. Height: 35 pixels (without photos) or 80 pixels (with photos).</li>
+                <li>button_count - displays the total number of likes to the right of the button. Minimum width: 90 pixels. Default width: 90 pixels. Height: 20 pixels.</li>
+                <li>box_count - displays the total number of likes above the button. Minimum width: 55 pixels. Default width: 55 pixels. Height: 65 pixels.</li>
+            </ul>
+        </desc>
+        <required>false</required>
+        <default>standard</default>
+    </param>
+    
+    <param>
+        <name>ShowFaces</name>
+        <type>enum</type>
+        <values>true,false</values><!-- only for enums, comma separated list -->
+        <desc>Specifies whether to display profile photos below the button (standard layout only).</desc>
+        <default>true</default>
+        <required>false</required>
+    </param>
+    
+    <param>
+        <name>Width</name>
+        <type>int</type>
+        <desc>The width of the Like button.</desc>
+        <required>false</required>
+        <default>450</default>
+    </param>
+    
+    <param>
+        <name>Height</name>
+        <type>int</type>
+        <desc>The height of the Like button.</desc>
+        <required>false</required>
+        <default>80</default>
+    </param>
+    
+    <param>
+        <name>Verb</name>
+        <type>enum</type>
+        <values>like,recommend</values><!-- only for enums, comma separated list -->
+        <desc>The verb to display on the button.</desc>
+        <default>like</default>
+        <required>false</required>
+    </param>
+
+    <param>
+        <name>ColorScheme</name>
+        <type>enum</type>
+        <values>light,dark</values><!-- only for enums, comma separated list -->
+        <desc>The color scheme for the like button.</desc>
+        <default>light</default>
+        <required>false</required>
+    </param>
+    
+    
+    <example>
+        <codeSnippet>[Social:FbLike]</codeSnippet>
+        <desc>Shows Facebook Like button with default settings.</desc>
+    </example>
+    
+    <example>
+        <codeSnippet>[Social:FbLike(Layout=button_count,Verb=recommend,ColorScheme=dark)]</codeSnippet>
+        <desc>Shows Facebook Like button in dark theme with count on the right of the button, no tweets from other users, display Recommend instead of Like.</desc>
+    </example>
+    
+    
+</token>

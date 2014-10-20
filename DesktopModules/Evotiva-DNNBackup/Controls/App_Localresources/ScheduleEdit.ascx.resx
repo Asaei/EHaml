@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblRetainHistoryNum.Help" xml:space="preserve">
+    <value>Example: Select "10" to keep the ten most recent schedule history rows.</value>
+  </data>
+  <data name="lblRetainHistoryNum.Text" xml:space="preserve">
+    <value>Retain Schedule History</value>
+  </data>
+  <data name="lblSchedDesciption.Help" xml:space="preserve">
+    <value>Schedule Job Description.</value>
+  </data>
+  <data name="lblSchedDesciption.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="lblSchedEnabled.Help" xml:space="preserve">
+    <value>Check to enable the schedule.</value>
+  </data>
+  <data name="lblSchedEnabled.Text" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="lblTimeLapse.Help" xml:space="preserve">
+    <value>Example: "1" and select "Days" to run task every 24 hours.</value>
+  </data>
+  <data name="lblTimeLapse.Text" xml:space="preserve">
+    <value>Time Lapse</value>
+  </data>
+  <data name="lblTimeToStart.Help" xml:space="preserve">
+    <value>Optional: Preferred start time for the task.</value>
+  </data>
+  <data name="lblTimeToStart.Text" xml:space="preserve">
+    <value>Start Time</value>
+  </data>
+  <data name="lblTimeToStartTolerance.Help" xml:space="preserve">
+    <value>Optional: Time range (+/-) for the task to run based on the configured preferred start time for the task.</value>
+  </data>
+  <data name="lblTimeToStartTolerance.Text" xml:space="preserve">
+    <value>Start Time Threshold</value>
+  </data>
+  <data name="lblTrnAmazonS3.Help" xml:space="preserve">
+    <value>Enable this setting to transfer the backup file(s) to the configured Amazon's S3 bucket. Note: See the 'OffSite' configuration page for configuration details.</value>
+  </data>
+  <data name="lblTrnAmazonS3.Text" xml:space="preserve">
+    <value>Amazon S3 Transfer</value>
+  </data>
+  <data name="lblTrnFTP.Help" xml:space="preserve">
+    <value>Enable this setting to transfer the backup file(s) via FTP to the configured FTP server. Note: See the 'OffSite' configuration page for configuration details.</value>
+  </data>
+  <data name="lblTrnFTP.Text" xml:space="preserve">
+    <value>FTP Transfer</value>
+  </data>
+  <data name="PortalFilesScheduleEdit.Text" xml:space="preserve">
+    <value>Scheduled Backup Settings</value>
+  </data>
+  <data name="ScheduleEdit.Text" xml:space="preserve">
+    <value>Schedule Settings</value>
+  </data>
+  <data name="15Minutes.Text" xml:space="preserve">
+    <value>15 Minutes</value>
+  </data>
+  <data name="1Hour.Text" xml:space="preserve">
+    <value>1 Hour</value>
+  </data>
+  <data name="2Hours.Text" xml:space="preserve">
+    <value>2 Hours</value>
+  </data>
+  <data name="30Minutes.Text" xml:space="preserve">
+    <value>30 Minutes</value>
+  </data>
+  <data name="4Hours.Text" xml:space="preserve">
+    <value>4 Hours</value>
+  </data>
+  <data name="Any.Text" xml:space="preserve">
+    <value>Any</value>
+  </data>
+  <data name="lblTrnCloudFiles.Help" xml:space="preserve">
+    <value>Enable this setting to transfer the backup file(s) to the configured Rackspace's CloudFiles container. Note: See the 'OffSite' configuration page for configuration details.</value>
+  </data>
+  <data name="lblTrnCloudFiles.Text" xml:space="preserve">
+    <value>CloudFiles Transfer</value>
+  </data>
+  <data name="lblBkpDatabase.Help" xml:space="preserve">
+    <value>Enable this setting to perform the database backup according to its configured database backup settings.</value>
+  </data>
+  <data name="lblBkpDatabase.Text" xml:space="preserve">
+    <value>Database Backup</value>
+  </data>
+  <data name="lblBkpFiles.Help" xml:space="preserve">
+    <value>Enable this setting to perform the files backup according to its configured files backup settings.</value>
+  </data>
+  <data name="lblBkpFiles.Text" xml:space="preserve">
+    <value>Files Backup</value>
+  </data>
+  <data name="lblTrnDropbox.Help" xml:space="preserve">
+    <value>Enable this setting to transfer the backup file(s) to the configured Dropbox folder. Note: See the 'OffSite' configuration page for configuration details.</value>
+  </data>
+  <data name="lblTrnDropbox.Text" xml:space="preserve">
+    <value>Dropbox Tranfer</value>
+  </data>
+  <data name="lblTrnAzure.Help" xml:space="preserve">
+    <value>Enable this setting to transfer the backup file(s) to the configured Windows Azure Container. Note: See the 'OffSite' configuration page for configuration details.</value>
+  </data>
+  <data name="lblTrnAzure.Text" xml:space="preserve">
+    <value>Windows Azure Transfer</value>
+  </data>
+  <data name="DayAny.Text" xml:space="preserve">
+    <value>Any</value>
+  </data>
+  <data name="DayFriday.Text" xml:space="preserve">
+    <value>Friday</value>
+  </data>
+  <data name="DayMonday.Text" xml:space="preserve">
+    <value>Monday</value>
+  </data>
+  <data name="DaySaturday.Text" xml:space="preserve">
+    <value>Saturday</value>
+  </data>
+  <data name="DaySunday.Text" xml:space="preserve">
+    <value>Sunday</value>
+  </data>
+  <data name="DayThursday.Text" xml:space="preserve">
+    <value>Thursday</value>
+  </data>
+  <data name="DayTuesday.Text" xml:space="preserve">
+    <value>Tuesday</value>
+  </data>
+  <data name="DayWednesday.Text" xml:space="preserve">
+    <value>Wednesday</value>
+  </data>
+  <data name="lblDayOfWeek.Help" xml:space="preserve">
+    <value>Option to run this job on a specific day of the week. This makes sense just for 'weekly' backups.</value>
+  </data>
+  <data name="lblDayOfWeek.Text" xml:space="preserve">
+    <value>Run on Day of Week</value>
+  </data>
+  <data name="lblLastRun.Help" xml:space="preserve">
+    <value>The last date-time this job was run.</value>
+  </data>
+  <data name="lblLastRun.Text" xml:space="preserve">
+    <value>Last Run</value>
+  </data>
+  <data name="lblNextRun.Help" xml:space="preserve">
+    <value>The next date-time this job will be run.</value>
+  </data>
+  <data name="lblNextRun.Text" xml:space="preserve">
+    <value>Next Run</value>
+  </data>
+</root>

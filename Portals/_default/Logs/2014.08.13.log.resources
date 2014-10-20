@@ -1,0 +1,26 @@
+2014-08-13 19:20:58,264 [srv20079][Thread:15][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at MyDnn_EHaml.Util.UpdatePoorsantTable(NameValueCollection poorsantNameBValue, DataClassesDataContext context)
+   at MyDnn_EHaml.Util.UpdateSettings(String KendoTheme, String FontLabel, String LabelFontSize, Color LabelFontColor, String TextBoxFontSize, Color TextBoxFontColor, Color TextBoxBackgroundColor, String TextBoxWidth, String TextBoxHeight, String NahveyeBarkhordBaBedehkarha, String NahveyeBarkhordBaBedehkarhaValue, String TedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji, String TedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji, NameValueCollection poorsantNameBValue, String ShomareTerminal, String ShomarePazirande, String KelideEkhtesasi, String AddressePazgashtAzBank, String txtOnvanePishnahad, String txtMatnePishnahad, String txtOnvaneTaeidPishnahad, String txtMatneTaeidPishnahad, String txtOnvaneEMailLinkeTaeed, String txtMatneEMailLinkeTaeed, String txtMatnePishnahadSMS, String txtMatneTaeidPishnahadSMS)
+   at MyDnn_EHaml.MyDnn_EHaml_Settings.Settings.lnkUpdate_Click(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-08-13 19:20:58,350 [srv20079][Thread:15][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=1145&error=An unexpected error has occurred&content=0
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at MyDnn_EHaml.Util.UpdatePoorsantTable(NameValueCollection poorsantNameBValue, DataClassesDataContext context)
+   at MyDnn_EHaml.Util.UpdateSettings(String KendoTheme, String FontLabel, String LabelFontSize, Color LabelFontColor, String TextBoxFontSize, Color TextBoxFontColor, Color TextBoxBackgroundColor, String TextBoxWidth, String TextBoxHeight, String NahveyeBarkhordBaBedehkarha, String NahveyeBarkhordBaBedehkarhaValue, String TedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji, String TedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji, NameValueCollection poorsantNameBValue, String ShomareTerminal, String ShomarePazirande, String KelideEkhtesasi, String AddressePazgashtAzBank, String txtOnvanePishnahad, String txtMatnePishnahad, String txtOnvaneTaeidPishnahad, String txtMatneTaeidPishnahad, String txtOnvaneEMailLinkeTaeed, String txtMatneEMailLinkeTaeed, String txtMatnePishnahadSMS, String txtMatneTaeidPishnahadSMS)
+   at MyDnn_EHaml.MyDnn_EHaml_Settings.Settings.lnkUpdate_Click(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-08-13 19:23:16,152 [srv20079][Thread:26][ERROR] DotNetNuke.Services.FileSystem.FileServerHandler - System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at DotNetNuke.Services.FileSystem.FileManager.WriteFileToHttpContext(IFileInfo file, ContentDisposition contentDisposition)
+   at DotNetNuke.Services.FileSystem.FileServerHandler.ProcessRequest(HttpContext context)
+2014-08-13 19:23:16,203 [srv20079][Thread:26][ERROR] DotNetNuke.Services.FileSystem.FileServerHandler - System.Threading.ThreadAbortException: Thread was being aborted.
+   at DotNetNuke.Services.FileSystem.FileServerHandler.ProcessRequest(HttpContext context)

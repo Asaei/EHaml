@@ -1,0 +1,6 @@
+﻿IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.COLUMNS where TABLE_NAME='LiveTabs' and COLUMN_NAME='InitiallyCollapsed')
+BEGIN
+ALTER TABLE {databaseOwner}LiveTabs ADD InitiallyCollapsed bit NOT NULL DEFAULT '0'
+	
+END
+GO

@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectSettings>
+    <Setting>
+      <Name><![CDATA[width]]></Name>
+      <Alias><![CDATA[Width]]></Alias>
+      <Width><![CDATA[80]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[700]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[px]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[height]]></Name>
+      <Alias><![CDATA[Height]]></Alias>
+      <Width><![CDATA[80]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[300]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[px]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[item_width]]></Name>
+      <Alias><![CDATA[Item Width]]></Alias>
+      <Width><![CDATA[80]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[300]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[px]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[item_height]]></Name>
+      <Alias><![CDATA[Item Height]]></Alias>
+      <Width><![CDATA[80]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[200]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[px]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[autoScrollingMode]]></Name>
+      <Alias><![CDATA[Auto ScrollMode]]></Alias>
+      <Width><![CDATA[120]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[onStart]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[onStart,always,hover]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[ScrollDirection]]></Name>
+      <Alias><![CDATA[Scroll Direction]]></Alias>
+      <Width><![CDATA[120]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[endlessLoopRight]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[endlessLoopRight,endlessLoopLeft]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[ScrollingStep]]></Name>
+      <Alias><![CDATA[Auto Scrolling Step]]></Alias>
+      <Width><![CDATA[80]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[1]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[px]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[ScrollingInterval]]></Name>
+      <Alias><![CDATA[Auto Scrolling Interval]]></Alias>
+      <Width><![CDATA[80]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[10]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[ms]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[touchScrolling]]></Name>
+      <Alias><![CDATA[Touch Scrolling]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[AnimationDuration]]></Name>
+      <Alias><![CDATA[Scroll Animation Duration]]></Alias>
+      <Width><![CDATA[80]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[1000]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Easing for when the scrollToElement method is used]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    </Setting>
+
+    <!--setting start-->
+    <Setting>
+      <Name>
+        <![CDATA[ animation_speed ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ LightBox animation speed ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ normal ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--控件类型:text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[ fast,slow,normal ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[  ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+
+
+    <!--setting start-->
+    <Setting>
+      <Name>
+        <![CDATA[ theme ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ LightBox theme ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ pp_default ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--控件类型:text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[ pp_default,light_rounded,dark_rounded,light_square,dark_square,facebook ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[  ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+
+
+
+
+
+    <!--setting start-->
+    <Setting>
+      <Name>
+        <![CDATA[ autoplay_slideshow ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ LightBox autoplay ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ false ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--控件类型:text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[  ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+
+
+    <!--setting start-->
+    <Setting>
+      <Name>
+        <![CDATA[ overlay_gallery ]]>
+      </Name>
+      <Alias>
+        <![CDATA[ LightBox overlay gallery ]]>
+      </Alias>
+      <DefaultValue>
+        <![CDATA[ false ]]>
+      </DefaultValue>
+      <Width>
+        <![CDATA[120]]>
+      </Width>
+      <Rows>
+        <![CDATA[1]]>
+      </Rows>
+      <!--控件类型:text,time,CheckBox,ListBox,RadioButton,DropDownList-->
+      <ControlType>
+        <![CDATA[ DropDownList ]]>
+      </ControlType>
+      <ListContent>
+        <![CDATA[ true,false ]]>
+      </ListContent>
+      <Description>
+        <![CDATA[  ]]>
+      </Description>
+      <Required>
+        <![CDATA[ true ]]>
+      </Required>
+      <Verification>
+        <![CDATA[ number ]]>
+      </Verification>
+    </Setting>
+  </EffectSettings>
+</DNNGo_DNNGallery>
+
+
+

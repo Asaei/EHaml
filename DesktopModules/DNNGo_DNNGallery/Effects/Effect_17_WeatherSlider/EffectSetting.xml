@@ -1,0 +1,581 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectSettings>
+    <Setting>
+      <Name><![CDATA[width]]></Name>
+      <Alias><![CDATA[Width]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[100%]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[% or px]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+    </Setting>
+
+    <Setting>
+      <Name><![CDATA[height]]></Name>
+      <Alias><![CDATA[Height]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[350]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[px]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    </Setting>
+    
+    
+    
+    <Setting>
+      <Name><![CDATA[CSSanimations]]></Name>
+      <Alias><![CDATA[CSS Animations]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Enables or disables CSS3 animations (snow, rain, wind, lightnings).Note, that CSS3 animations will work only in Google Chrome, Apple Safari and Mozilla Firefox browsers. In other browsers the script will animate weather elements using jQuery.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[JSanimations]]></Name>
+      <Alias><![CDATA[JS Animations]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[If CSSanimations and JSanimations are both disabled, the script won't animate snow, rain, wind and lightnings.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[snow]]></Name>
+      <Alias><![CDATA[Snow]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can switch off the animation of snow.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[rain]]></Name>
+      <Alias><![CDATA[Rain]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can switch off the animation of rain.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+
+    <Setting>
+      <Name><![CDATA[wind]]></Name>
+      <Alias><![CDATA[Wind]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can switch off the animation of wind.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[lightnings]]></Name>
+      <Alias><![CDATA[Lightnings]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can switch off the animation of lightnings.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[windyWeather]]></Name>
+      <Alias><![CDATA[Windy Weather]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[18]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can set the minimum value (in kmph) of the windy weather. If the wind speed of the current weather is higher than the value, the script will animate the background.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[windDirection]]></Name>
+      <Alias><![CDATA[Wind Direction]]></Alias>
+      <Width><![CDATA[120]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[auto]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[auto,left,right]]></ListContent>
+      <Description><![CDATA[You can set the direction of the background animation if the weather is windy.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[icyTemp]]></Name>
+      <Alias><![CDATA[Icy Temp]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[-1]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can set the temperature (in °C) of icy weather. If the current temperature is lower than the value, the script will show the icy layer.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[measurement]]></Name>
+      <Alias><![CDATA[Measurement]]></Alias>
+      <Width><![CDATA[120]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[metric]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[metric,imperial]]></ListContent>
+      <Description><![CDATA[The type of the measurement.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[daytime_day]]></Name>
+      <Alias><![CDATA[Daytime Day]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[7]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[The script tries automatically determine whether is day or night. If fails, it will use these settings. With this you can specify the interval when it is daytime.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[daytime_night]]></Name>
+      <Alias><![CDATA[Daytime Night]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[19]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[The script tries automatically determine whether is day or night. If fails, it will use these settings. With this you can specify the interval when it is daytime.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[infoDuration]]></Name>
+      <Alias><![CDATA[Info Duration]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[450]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[The duration of the animation of infobox.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[infoEasingType_1]]></Name>
+      <Alias><![CDATA[InfoEasingType 1]]></Alias>
+      <Width><![CDATA[120]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[easeOutBack]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[linear,swing,easeInQuad,easeOutQuad,easeInOutQuad,easeInCubic,  easeOutCubic,easeInOutCubic,easeInQuart,easeOutQuart,easeInOutQuart,easeInQuint,easeOutQuint,easeInOutQuint,easeInSine,easeOutSine,easeInOutSine,easeInExpo,easeOutExpo,easeInOutExpo,easeInCirc,easeOutCirc,easeInOutCirc,easeInElastic,easeOutElastic,easeInOutElastic,easeInBack,easeOutBack,easeInOutBack,easeInBounce,easeOutBounce,easeInOutBounce]]></ListContent>
+      <Description><![CDATA[The easing types of the animation of infobox.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[infoEasingType_2]]></Name>
+      <Alias><![CDATA[InfoEasingType 2]]></Alias>
+      <Width><![CDATA[120]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[easeInBack]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[linear,swing,easeInQuad,easeOutQuad,easeInOutQuad,easeInCubic,  easeOutCubic,easeInOutCubic,easeInQuart,easeOutQuart,easeInOutQuart,easeInQuint,easeOutQuint,easeInOutQuint,easeInSine,easeOutSine,easeInOutSine,easeInExpo,easeOutExpo,easeInOutExpo,easeInCirc,easeOutCirc,easeInOutCirc,easeInElastic,easeOutElastic,easeInOutElastic,easeInBack,easeOutBack,easeInOutBack,easeInBounce,easeOutBounce,easeInOutBounce]]></ListContent>
+      <Description><![CDATA[The easing types of the animation of infobox.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[reduction]]></Name>
+      <Alias><![CDATA[Reduction]]></Alias>
+      <Width><![CDATA[120]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[auto]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[0,1,auto]]></ListContent>
+      <Description><![CDATA[The script automatically scales everything (graphic elements, font sizes, etc) depending on the width and height of the container. You can override it with a number between 0 and 1.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[keybNav]]></Name>
+      <Alias><![CDATA[Keyb Nav]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[If true, than you can navigate with left and right arrow keys.Note, that if there are more than one sliders on the same page you should disable this setting.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[touchNav]]></Name>
+      <Alias><![CDATA[Touch Nav]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[If true, than you can navigate with swiping your finger over the slider on touch screen mobile devices.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[responsive]]></Name>
+      <Alias><![CDATA[Responsive]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Enable this option to turn WeatherSlider into a responsive slider.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[enableSearchField]]></Name>
+      <Alias><![CDATA[Enable Search Field]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can show / hide the search field.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[enableWeatherInfo]]></Name>
+      <Alias><![CDATA[Enable Weather Info]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can show / hide the weather infobox.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[enableForecast]]></Name>
+      <Alias><![CDATA[Enable Forecast]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can show / hide the 3 days forecast feature.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[slideDelay]]></Name>
+      <Alias><![CDATA[Slide Delay]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[0]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Auto slideshow. If you enter a value, WeatherSlider will change slides (locations) automatically. The value is in ms so if you need to change slides in 5 secs you should add 5000 to the value (0 means false, auto slideshow off).]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[refreshInterval]]></Name>
+      <Alias><![CDATA[refreshInterval]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[0]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Auto refresh. If you enter a value, WeatherSlider will refresh the weather conditions in the current location automatically. The value is in ms so if you need to refresh in 5 secs you should add 5000 to the value (0 means false, auto refresh off).]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[timeFormat]]></Name>
+      <Alias><![CDATA[Time Format]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[12]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can switch between 12 and 24 hour time formats.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[showLoc]]></Name>
+      <Alias><![CDATA[Show Loc]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can show / hide current location.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[showTime]]></Name>
+      <Alias><![CDATA[Show Time]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can show / hide current time.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[showCond]]></Name>
+      <Alias><![CDATA[Show Cond]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can show / hide current weather condition information.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[showTemp]]></Name>
+      <Alias><![CDATA[Show Temp]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can show / hide current temperature information.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[showLow]]></Name>
+      <Alias><![CDATA[Show Low]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can show / hide low temperature information.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[showHigh]]></Name>
+      <Alias><![CDATA[Show High]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can show / hide high temperature information.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[showHum]]></Name>
+      <Alias><![CDATA[Show Hum]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can show / hide humidity information.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[showPrec]]></Name>
+      <Alias><![CDATA[Show Prec]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can show / hide precipitation information.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[showWind]]></Name>
+      <Alias><![CDATA[Show Wind]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can show / hide wind information.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[showPress]]></Name>
+      <Alias><![CDATA[Show Press]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can show / hide pressure information.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[showVis]]></Name>
+      <Alias><![CDATA[Show Vis]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can show / hide visibility information.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[showFDay]]></Name>
+      <Alias><![CDATA[Show F Day]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can show / hide the name of the day in the forecast.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[showFCond]]></Name>
+      <Alias><![CDATA[Show F Cond]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can show / hide weather conditions in the forecast.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[showFLow]]></Name>
+      <Alias><![CDATA[Show F Low]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can show / hide low temperature information in the forecast.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[showFHigh]]></Name>
+      <Alias><![CDATA[Show F High]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[true]]></DefaultValue>
+      <ControlType><![CDATA[CheckBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can show / hide high temperature information in the forecast.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[WWOAPIKey]]></Name>
+      <Alias><![CDATA[WWO API Key]]></Alias>
+      <Width><![CDATA[150]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[bcfd972130073802122311]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description>
+        <![CDATA[Important! You must sign up to get your own WorlWeatherOnline API key!
+<br/> Please do NOT use our API key, except for testing only!
+<br/> The registraion for your API key is free:
+<br/> http://www.worldweatheronline.com/register.aspx]]>
+      </Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+    </Setting>
+    
+    
+    
+ 
+  </EffectSettings>
+</DNNGo_DNNGallery>
+
+
+

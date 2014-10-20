@@ -1,0 +1,256 @@
+
+.ui-helper-hidden {
+    display: none;
+}
+.ui-helper-hidden-accessible {
+    left: -1e+8px;
+    position: absolute;
+}
+.ui-helper-reset {
+    border: 0 none;
+    font-size: 100%;
+    line-height: 1.3;
+    list-style: none outside none;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    text-decoration: none;
+}
+.ui-helper-clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.ui-helper-clearfix {
+    display: inline-block;
+}
+* html .ui-helper-clearfix {
+    height: 1%;
+}
+.ui-helper-clearfix {
+    display: block;
+}
+.ui-helper-zfix {
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.ui-state-disabled {
+    cursor: default !important;
+}
+.ui-icon {
+    background-repeat: no-repeat;
+    display: block;
+    overflow: hidden;
+    text-indent: -99999px;
+}
+.ui-widget-overlay {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.ui-widget {
+    font-family: tahoma,sans-serif;
+    font-size: 1.1em;
+}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    font-family: tahoma,sans-serif;
+    font-size: 1em;
+}
+.ui-widget-content {
+    background: url("images/back.png") repeat-x scroll 0 0 #E8E8E8;
+    border: 1px solid #AAAAAA;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.7);
+    color: #222222;
+    margin-top:10px;
+}
+.ui-widget-content a {
+}
+.ui-widget-header {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #222222;
+    font-weight: bold;
+}
+.ui-widget-header a {
+    color: #222222;
+}
+.ui-state-default, .ui-widget-content .ui-state-default {
+    background: url("images/tabicon.png") no-repeat scroll -218px 0 transparent !important;
+    border-bottom: medium none;
+    border-image: none;
+    border-left: medium none;
+    border-right: medium none;
+    color: #a3a3a3;
+    font-weight: normal;
+    outline: medium none;
+    height:45px;
+}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+    color: #555555;
+    outline: medium none;
+    text-decoration: none;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus {
+}
+.ui-state-hover a{
+    color: #212121;
+    outline: medium none;
+    text-decoration: none;
+}
+.ui-state-hover a:hover {
+    color: #d70006;
+    text-decoration: underline;
+}
+.ui-state-active,.ui-widget-content .ui-state-active {
+    background: url("images/tabicon.png") no-repeat scroll 0 0 transparent !important;
+    border: medium none !important;
+    color: #212121;
+    font-weight: normal;
+    outline: medium none;
+}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+    color: #212121;
+    outline: medium none;
+    text-decoration: none;
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight {
+    background: url("images/ui-bg_glass_55_fbf9ee_1x400.png") repeat-x scroll 50% 50% #FBF9EE;
+    border: 1px solid #FCEFA1;
+    color: #363636;
+}
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a {
+    color: #363636;
+}
+.ui-state-error, .ui-widget-content .ui-state-error {
+    background: url("images/ui-bg_glass_95_fef1ec_1x400.png") repeat-x scroll 50% 50% #FEF1EC;
+    border: 1px solid #CD0A0A;
+    color: #CD0A0A;
+}
+.ui-state-error a, .ui-widget-content .ui-state-error a {
+    color: #CD0A0A;
+}
+.ui-state-error-text, .ui-widget-content .ui-state-error-text {
+    color: #CD0A0A;
+}
+.ui-state-disabled, .ui-widget-content .ui-state-disabled {
+    background-image: none;
+    opacity: 0.35;
+}
+.ui-priority-primary, .ui-widget-content .ui-priority-primary {
+    font-weight: bold;
+}
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary {
+    font-weight: normal;
+    opacity: 0.7;
+}
+.ui-icon {
+    background-image: url("images/ui-icons_222222_256x240.png");
+    height: 16px;
+    width: 16px;
+}
+.ui-widget-content .ui-icon {
+    background-image: url("images/ui-icons_222222_256x240.png");
+}
+.ui-widget-header .ui-icon {
+    background-image: url("images/ui-icons_222222_256x240.png");
+}
+.ui-state-default .ui-icon {
+    background-image: url("images/ui-icons_888888_256x240.png");
+}
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+    background-image: url("images/ui-icons_454545_256x240.png");
+}
+.ui-state-active .ui-icon {
+    background-image: url("images/ui-icons_454545_256x240.png");
+}
+.ui-state-highlight .ui-icon {
+    background-image: url("images/ui-icons_2e83ff_256x240.png");
+}
+.ui-state-error .ui-icon, .ui-state-error-text .ui-icon {
+    background-image: url("images/ui-icons_cd0a0a_256x240.png");
+}
+.ui-corner-tl {
+}
+.ui-corner-tr {
+}
+.ui-corner-bl {
+}
+.ui-corner-br {
+}
+.ui-corner-top {
+}
+.ui-corner-bottom {
+}
+.ui-corner-right {
+}
+.ui-corner-left {
+}
+.ui-corner-all {
+}
+.ui-widget-overlay {
+    background: url("images/ui-bg_flat_0_aaaaaa_40x100.png") repeat-x scroll 50% 50% #AAAAAA;
+    opacity: 0.3;
+}
+.ui-widget-shadow {
+    background: url("images/ui-bg_flat_0_aaaaaa_40x100.png") repeat-x scroll 50% 50% #AAAAAA;
+    margin: -8px 0 0 -8px;
+    opacity: 0.3;
+    padding: 8px;
+}
+.ui-tabs {
+    padding: 0.2em;
+}
+.ui-tabs .ui-tabs-nav {
+    list-style: none outside none;
+    padding: 0.2em 0.2em 0;
+    position: relative;
+}
+.ui-tabs .ui-tabs-nav li {
+    float: right;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.ui-tabs .ui-tabs-nav li a {
+    color: #A1A1A1;
+    float: right;
+    font-family: bkoodak;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+    border-bottom-width: 0;
+    padding-bottom: 1px;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a {
+    cursor: text;
+}
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a {
+    cursor: pointer;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a {
+    color:#fff;
+}
+.ui-tabs .ui-tabs-panel {
+    background: none repeat scroll 0 0 transparent;
+    border-width: 0;
+    display: block;
+    padding: 1em 1.4em;
+}
+.ui-tabs .ui-tabs-hide {
+    display: none !important;
+}
+.ui-widget-content div ,.ui-widget-content ul {box-shadow:none;}
+.mright.ui-tabs .mright.ui-tabs-nav li.mright{margin:0 !important;}

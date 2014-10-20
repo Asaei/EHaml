@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddFileExtensionNotAllowed.Text" xml:space="preserve">
+    <value>فایل با پسوند  '{0}' مجاز نمی باشد. فایل اضافه نشد. </value>
+  </data>
+  <data name="AddFileNoSpaceAvailable.Text" xml:space="preserve">
+    <value>پورتال فضای کافی برای ذخیره فایل را ندارد. فایل اضافه نشد.</value>
+  </data>
+  <data name="AddFilePermissionsNotMet.Text" xml:space="preserve">
+    <value>دسترسی موردنیاز وجود ندارد. فایل اضافه نشد.</value>
+  </data>
+  <data name="AddFileUnderlyingSystemError.Text" xml:space="preserve">
+    <value>خطایی در سیستم رخ داده است. فایل اضافه نشد.</value>
+  </data>
+  <data name="AddFolderAlreadyExists.Text" xml:space="preserve">
+    <value>آدرس ارائه شده برای فایل موجود است. پوشه اضافه نشد.</value>
+  </data>
+  <data name="AddFolderParentCannotBeFound.Text" xml:space="preserve">
+    <value>پوشه والد قابل شناسایی نمی باشد.</value>
+  </data>
+  <data name="AddFolderUnderlyingSystemError.Text" xml:space="preserve">
+    <value>سیستم دچار خطا شده است. پوشه اضافه نشد. </value>
+  </data>
+  <data name="AmbiguousController.Text" xml:space="preserve">
+    <value>Multiple types were found that match the controller named '{0}' in namespaces {1}.</value>
+  </data>
+  <data name="ArgumentCannotBeNullOrEmpty.Text" xml:space="preserve">
+    <value>متغیر '{0}' نمی تواند null یا خالی باشد. </value>
+  </data>
+  <data name="ControllerNotFound.Text" xml:space="preserve">
+    <value>Unable to locate a controller for {0}.  Searched in namespaces: {1}.</value>
+  </data>
+  <data name="CopyFileNoSpaceAvailable.Text" xml:space="preserve">
+    <value>وبسایت فضای کافی برای ذخیره فایل مشخص شده ندارد. فایل کپی نشد.</value>
+  </data>
+  <data name="CopyFilePermissionsNotMet.Text" xml:space="preserve">
+    <value>دسترسی ها وجود ندارد. فایل کپی نشد.</value>
+  </data>
+  <data name="CopyFileUnderlyingSystemError.Text" xml:space="preserve">
+    <value>The underlying system throw an exception. The file has not been copied.</value>
+  </data>
+  <data name="DeleteFileUnderlyingSystemError.Text" xml:space="preserve">
+    <value>سیستم دچار خطا شده است. فایل حذف نشد.</value>
+  </data>
+  <data name="DeleteFolderUnderlyingSystemError.Text" xml:space="preserve">
+    <value>سیستم دچار خطا شده است. پوشه اضافه نشد.</value>
+  </data>
+  <data name="InvalidZipFile.Text" xml:space="preserve">
+    <value>فایل مشخص شده فایل فشرده شده zip نمی باشد.</value>
+  </data>
+  <data name="MoveFolderCannotComplete.Text" xml:space="preserve">
+    <value>این عملیات نمی تواند کامل شود.</value>
+  </data>
+  <data name="MoveFolderUnderlyingSystemError.Text" xml:space="preserve">
+    <value>The underlying system threw an exception. The move operation cannot be completed. A manual folder synchronization may be necessary.</value>
+  </data>
+  <data name="MsgAttachmentsNotAllowed.Text" xml:space="preserve">
+    <value>فایل های ضمیمه مجاز نیستند.</value>
+  </data>
+  <data name="MsgBodyRequiredError.Text" xml:space="preserve">
+    <value>قسمت اصلی نمی تواند پوچ یا خالی باشد.</value>
+  </data>
+  <data name="MsgEmptyToListFoundError.Text" xml:space="preserve">
+    <value>Empty To List found while analyzing User and Roles List.</value>
+  </data>
+  <data name="MsgMessageOrRecipientNotFound.Text" xml:space="preserve">
+    <value>یا پیام وجود ندارد و یا گیرنده پیام حاضر به دریافت این پیام نیست.</value>
+  </data>
+  <data name="MsgMessageRequiredError.Text" xml:space="preserve">
+    <value>The message object supplied cannot be null.</value>
+  </data>
+  <data name="MsgOnlyHostOrAdminOrGroupOwnerCanSendToRoleError.Text" xml:space="preserve">
+    <value>فقط مدیر ارشد، مدیران سایت و یا گروه های مالک می توانند به نقش های سایت پیام ارسال نمایند.</value>
+  </data>
+  <data name="MsgRecipientLimitExceeded.Text" xml:space="preserve">
+    <value>تعداد گیرندگان از حد مجاز بیشتر شده است. برای ارسال پیامف لطفا برخی از گیرندگان را از لیست حذف نمایید.</value>
+  </data>
+  <data name="MsgRolesOrUsersRequiredError.Text" xml:space="preserve">
+    <value>نقش ها و کاربران نمی توانند دارای لیست خالی باشند.</value>
+  </data>
+  <data name="MsgSenderRequiredError.Text" xml:space="preserve">
+    <value>یا ارسال کننده خالی است و یا  Sender.UserID منفی است.</value>
+  </data>
+  <data name="MsgSubjectOrBodyRequiredError.Text" xml:space="preserve">
+    <value>عنوان و متن نمی تواند خالی باشد.</value>
+  </data>
+  <data name="MsgSubjectTooBigError.Text" xml:space="preserve">
+    <value>عنوان ارائه شده بسیار طولانی است. حداکثر {0} کاراکتر و در حال حاضر {1} استفاده شده.</value>
+  </data>
+  <data name="MsgThrottlingIntervalNotMet.Text" xml:space="preserve">
+    <value>اکنون پیام را نمی توان ارسال نمود، مانند مدیر سایت حداقل {0} دقیقه مابین ارسال پیام به یک کاربر زمان نیاز دارید.</value>
+  </data>
+  <data name="MsgToListTooBigError.Text" xml:space="preserve">
+    <value>لیست ارائه داده شده بسیار طولانی است. بیشترین مقدار {0} و در حال حاضر {1} استفاده شده است.</value>
+  </data>
+  <data name="NoNetworkAvailableError.Text" xml:space="preserve">
+    <value>اتصال به شبکه نیاز است و الان هیچ شبکه ای در دسترس نیست.</value>
+  </data>
+  <data name="PropertyCannotBeNegative.Text" xml:space="preserve">
+    <value>خصوصیت  '{1}' در شی ء'{0}' نمی تواند منفی باشد.</value>
+  </data>
+  <data name="PropertyCannotBeNull.Text" xml:space="preserve">
+    <value>خصوصیت  '{1}' در شی ء'{0}' نمی تواند خالی باشد.</value>
+  </data>
+  <data name="PropertyCannotBeNullOrEmpty.Text" xml:space="preserve">
+    <value>خصوصیت  '{1}' در شی ء'{0}' نمی تواند خالی یا null باشد.</value>
+  </data>
+  <data name="RenameFileAlreadyExists.Text" xml:space="preserve">
+    <value>در این پوشه فایلی با همین نام موجود است. امکان تغییر نام فایل وجود ندارد. </value>
+  </data>
+  <data name="RenameFileUnderlyingSystemError.Text" xml:space="preserve">
+    <value>سیستم دچار خطا شده است. فایل تغییر نام داده نشد..</value>
+  </data>
+  <data name="RenameFolderAlreadyExists.Text" xml:space="preserve">
+    <value>این فایل از قبل موجود است. نام پوشه عوض نشد.</value>
+  </data>
+  <data name="RenameFolderUnderlyingSystemError.Text" xml:space="preserve">
+    <value>سیستم دچار خطا شده است. پوشه تغییر نام داده نشد..</value>
+  </data>
+  <data name="TabModuleNotExist.Text" xml:space="preserve">
+    <value>ماژول مشخص شده وجود ندارد.</value>
+  </data>
+  <data name="UnderlyingSystemError.Text" xml:space="preserve">
+    <value>سیستم دچار خطا شده است. </value>
+  </data>
+  <data name="UserRelationshipBlockedError.Text" xml:space="preserve">
+    <value>درخواست کاربر '{0}' برای رابطه ی '{1}' از طرف کاربر '{2}' رد شد.</value>
+  </data>
+  <data name="UserRelationshipDoesNotExistError.Text" xml:space="preserve">
+    <value>UserRelationshipID '{0}' وجود ندارد.</value>
+  </data>
+  <data name="UserRelationshipExistsError.Text" xml:space="preserve">
+    <value>Relationship already exists for Initiating User '{0}' Target User '{1}' RelationshipID '{2}'.</value>
+  </data>
+  <data name="UserRelationshipForDifferentPortalError.Text" xml:space="preserve">
+    <value>Website ID '{0}' of Initiating User is different from Website ID '{1}' of Target  User.</value>
+  </data>
+  <data name="UserRelationshipForSameUsersError.Text" xml:space="preserve">
+    <value>Initiating and Target Users cannot have same UserID '{0}'.</value>
+  </data>
+  <data name="ValueCannotBeNegative.Text" xml:space="preserve">
+    <value>متغیر '{0}' نمی تواند منفی باشد.</value>
+  </data>
+  <data name="ValueMustBeOfType.Text" xml:space="preserve">
+    <value>متغیر '{0}' می بایست از نوع '{1}' باشد.</value>
+  </data>
+  <data name="WriteFileToResponsePermissionsNotMet.Text" xml:space="preserve">
+    <value>مجوزهای دسترسی معتبر نیست. امکان دانلود فایل وجود ندارد. </value>
+  </data>
+  <data name="TabNotInPortal.Text">
+    <value>صفحه مشخص شده در سایت وجود ندارد.</value>
+  </data>
+</root>

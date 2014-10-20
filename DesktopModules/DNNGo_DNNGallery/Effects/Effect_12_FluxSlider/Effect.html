@@ -1,0 +1,29 @@
+﻿<!--[if lte IE 8]>
+ 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<div id="fluxslider${ModuleID}" class="$ThemeName" style=" width:${xf.ViewXmlSetting("width",600)}px; height:${xf.ViewXmlSetting("height",400)}px;">	
+    #if($DataList.Count > 0) 
+            #foreach($DataItem in $DataList)
+               <a target="${xf.ViewLinkTarget($DataItem)}" href="${xf.ViewLinkUrl($DataItem.UrlLink)}" title="$DataItem.Title"><img src="${xf.ViewLinkUrl($DataItem.Picture)}" alt="$DataItem.Title"  title="$DataItem.Title"/></a> 
+             #end 
+    #end 
+</div>
+
+
+<script type="text/javascript" charset="utf-8">
+    jQuery(function ($) 
+     {
+	    window.fluxslider${ModuleID} = new flux.slider('#fluxslider${ModuleID}', {
+            width: ${xf.ViewXmlSetting("width",600)},
+            height: ${xf.ViewXmlSetting("height",400)},
+            autoplay: ${xf.ViewXmlSetting("autoplay","true")},
+            delay: ${xf.ViewXmlSetting("delay",4000)},
+            pagination: ${xf.ViewXmlSetting("pagination","true")},
+            controls: ${xf.ViewXmlSetting("controls","true")},
+            captions: ${xf.ViewXmlSetting("captions","true")},
+            transitions: [${xf.ViewXmlSetting("transitions","'bars3d','zip','cube','tiles3d','concentric','blinds3d','slide','blocks2','turn','bars','blinds','blocks','warp'")}]
+	    });
+	});
+</script>
+
+ 

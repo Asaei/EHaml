@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Date added.HeaderText" xml:space="preserve">
+    <value>زمان اضافه کردن</value>
+  </data>
+  <data name="GroupID.HeaderText" xml:space="preserve">
+    <value>شناسه گروه</value>
+  </data>
+  <data name="btnAddNewGroupResource1.Text" xml:space="preserve">
+    <value>افزودن گروه  جدید</value>
+  </data>
+  <data name="btnAddNewProfileResource1.Text" xml:space="preserve">
+    <value>افزودن پروفایل جدید</value>
+  </data>
+  <data name="btnCancelResource1.Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="btnGroupCancelResource1.Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="btnUpdateGroupResource1.Text" xml:space="preserve">
+    <value>بروزرسانی گروه</value>
+  </data>
+  <data name="btnUpdateProfileResource1.Text" xml:space="preserve">
+    <value>بروزرسانی پروفایل</value>
+  </data>
+  <data name="Label10Resource1.Text" xml:space="preserve">
+    <value>آدرس LinkedIn:</value>
+  </data>
+  <data name="Label11Resource1.Text" xml:space="preserve">
+    <value>ایمیل تماس گروه:</value>
+  </data>
+  <data name="lbAuthorProfilesResource1.Text" xml:space="preserve">
+    <value>پروفایل های نویسنده</value>
+  </data>
+  <data name="lbDeleteGroupResource1.ToolTip" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="lbDeleteProfileResource1.ToolTip" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="lbEditGroupResource1.ToolTip" xml:space="preserve">
+    <value>ویرایش</value>
+  </data>
+  <data name="lbEditProfileResource1.ToolTip" xml:space="preserve">
+    <value>ویرایش</value>
+  </data>
+  <data name="lblAddEditProfileResource1.Text" xml:space="preserve">
+    <value>افزودن پروفایل نویسنده جدید</value>
+  </data>
+  <data name="lblDisplayNameResource1.Text" xml:space="preserve">
+    <value>نام نمایشی:</value>
+  </data>
+  <data name="lblFacebookURLResource1.Text" xml:space="preserve">
+    <value>آدرس Facebook:</value>
+  </data>
+  <data name="lblFirstNameInfoResource1.Text" xml:space="preserve">
+    <value>نام:</value>
+  </data>
+  <data name="lblFooterSelectNumberOfRowsResource1.Text" xml:space="preserve">
+    <value>تعداد سطرها:</value>
+  </data>
+  <data name="lblFooterSelectNumberOfRowsResource2.Text" xml:space="preserve">
+    <value>تعداد سطرها:</value>
+  </data>
+  <data name="lblFullBioResource1.Text" xml:space="preserve">
+    <value>اطلاعات کامل:</value>
+  </data>
+  <data name="lblGooglePlusResource1.Text" xml:space="preserve">
+    <value>آدرس Google+:</value>
+  </data>
+  <data name="lblGrouopNameResource1.Text" xml:space="preserve">
+    <value>نام گروه:</value>
+  </data>
+  <data name="lblGroupFacebookURLResource1.Text" xml:space="preserve">
+    <value>آدرس Facebook:</value>
+  </data>
+  <data name="lblGroupGoogleURLResource1.Text" xml:space="preserve">
+    <value>آدرس Google+:</value>
+  </data>
+  <data name="lblGroupImageResource1.Text" xml:space="preserve">
+    <value>تصویر گروه:</value>
+  </data>
+  <data name="lblGroupInfoResource1.Text" xml:space="preserve">
+    <value>اطلاعات جزئی:</value>
+  </data>
+  <data name="lblGroupResource1.Text" xml:space="preserve">
+    <value>افزودن گروه  جدید</value>
+  </data>
+  <data name="lblGroupTwitterURLResource1.Text" xml:space="preserve">
+    <value>آدرس Twitter:</value>
+  </data>
+  <data name="lblLastNameInfoResource1.Text" xml:space="preserve">
+    <value>نام خانوادگی:</value>
+  </data>
+  <data name="lblLinkedInURLResource1.Text" xml:space="preserve">
+    <value>آدرس LinkedIn:</value>
+  </data>
+  <data name="lblProfileGroupResource1.Text" xml:space="preserve">
+    <value>گروه پروفایل:</value>
+  </data>
+  <data name="lblProfileImageResource1.Text" xml:space="preserve">
+    <value>تصویر:</value>
+  </data>
+  <data name="lblShortInfoResource1.Text" xml:space="preserve">
+    <value>اطلاعات جزئی:</value>
+  </data>
+  <data name="lblTwitterURLResource1.Text" xml:space="preserve">
+    <value>آدرس Twitter:</value>
+  </data>
+  <data name="lbPowerOffResource1.ToolTip" xml:space="preserve">
+    <value>بستن</value>
+  </data>
+  <data name="lbProfileGropusResource1.Text" xml:space="preserve">
+    <value>گروه ها پروفایل</value>
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ListItemResource10.Text" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="ListItemResource11.Text" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="ListItemResource12.Text" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="ListItemResource13.Text" xml:space="preserve">
+    <value>100</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="ListItemResource4.Text" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="ListItemResource5.Text" xml:space="preserve">
+    <value>100</value>
+  </data>
+  <data name="ListItemResource6.Text" xml:space="preserve">
+    <value>انتخاب نقش</value>
+  </data>
+  <data name="ListItemResource7.Text" xml:space="preserve">
+    <value>انتخاب نویسنده</value>
+  </data>
+  <data name="ListItemResource7.Value" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ListItemResource8.Text" xml:space="preserve">
+    <value>انتخاب گروه</value>
+  </data>
+  <data name="ListItemResource9.Text" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="rfvGroupContactEmailResource1.ErrorMessage" xml:space="preserve">
+    <value>لطفا یک ایمیل معتبر وارد نمایید</value>
+  </data>
+  <data name="rfvGroupNameResource1.ErrorMessage" xml:space="preserve">
+    <value>لطفا نام گروه را وارد نمایید</value>
+  </data>
+  <data name="Position.HeaderText" xml:space="preserve">
+    <value>مکان</value>
+  </data>
+  <data name="UserID.HeaderText" xml:space="preserve">
+    <value>شناسه کاربر</value>
+  </data>
+  <data name="Short Info.HeaderText" xml:space="preserve">
+    <value>اطلاعات جزئی</value>
+  </data>
+  <data name="Image.HeaderText" xml:space="preserve">
+    <value>تصویر</value>
+  </data>
+  <data name="Group name.HeaderText" xml:space="preserve">
+    <value>نام گروه</value>
+  </data>
+  <data name="Info.HeaderText" xml:space="preserve">
+    <value>اطلاعات</value>
+  </data>
+  <data name="AuthorProfiles.Text" xml:space="preserve">
+    <value>پروفایل های نویسنده</value>
+  </data>
+  <data name="lblSelectUSer.Text" xml:space="preserve">
+    <value>انتخاب کاربر:</value>
+  </data>
+  <data name="ddlSelectGroupItem.Text">
+    <value>انتخاب گروه</value>
+  </data>
+  <data name="imgGroupDown.Text">
+    <value>پایین</value>
+  </data>
+  <data name="imgGroupUp.Text">
+    <value>بالا</value>
+  </data>
+  <data name="lblEditGroup.Text">
+    <value>ویرایش گروه</value>
+  </data>
+  <data name="lblEditProfile.Text">
+    <value>ویرایش پروفایل نویسنده</value>
+  </data>
+  <data name="lblGroupAdded.Text">
+    <value>گروه اضافه شد.</value>
+  </data>
+  <data name="lblGroupAddedError.Text">
+    <value>خطا هنگام افزودن گروه</value>
+  </data>
+  <data name="lblGroupUpdated.Text">
+    <value>گروه بروزرسانی شد</value>
+  </data>
+  <data name="lblGroupUpdateError.Text">
+    <value>خطا هنگام بروزرسانی گروه.</value>
+  </data>
+  <data name="lblProfileAdded.Text">
+    <value>پروفایل افزوده شد</value>
+  </data>
+  <data name="lblProfileAddedError.Text">
+    <value>خطا هنگام افزودن پروفایل.</value>
+  </data>
+  <data name="lblProfileUpdated.Text">
+    <value>پروفایل بروزرسانی شد</value>
+  </data>
+  <data name="lblProfileUpdateError.Text">
+    <value>خطا هنگام بروزرسانی پروفایل</value>
+  </data>
+  <data name="strArticleCount.Text">
+    <value>تعداد مطالب:</value>
+  </data>
+  <data name="strDisplayName.Text">
+    <value>نام نمایشی:</value>
+  </data>
+  <data name="strFirstName.Text">
+    <value>نام:</value>
+  </data>
+  <data name="strLastName.Text">
+    <value>نام خانوادگی:</value>
+  </data>
+  <data name="strUserID.Text">
+    <value>Id:</value>
+  </data>
+  <data name="strUserName.Text">
+    <value>نام کاربری:</value>
+  </data>
+</root>

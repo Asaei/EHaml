@@ -1,0 +1,10 @@
+﻿IF  EXISTS (SELECT * FROM INFORMATION_SCHEMA.COLUMNS where TABLE_NAME='LiveTabs' and COLUMN_NAME='SkinInfo')
+BEGIN
+ALTER TABLE  {databaseOwner}LiveTabs
+ DROP CONSTRAINT DF_LiveTabs_SkinInfo
+
+ALTER TABLE  {databaseOwner}LiveTabs
+ DROP COLUMN SkinInfo
+
+End
+GO

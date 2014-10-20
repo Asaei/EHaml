@@ -1,0 +1,44 @@
+<token>
+    <name>LiveRates</name>
+    <desc>Embeds a list of currencies.</desc>
+    <cacheTimeSeconds>86400</cacheTimeSeconds>
+    <docurl>http://www.gocurrency.com/add-converter.htm</docurl>
+    
+    <src>
+        <type>string</type>
+        <text>
+            <a href="http://www.gocurrency.com" id="gocurrencytable" style = "display: none;">Currency Converter</a>
+            <script src="http://gocurrency.com/v2/table_t.php?cur={{List|{0} }}&amp;v=1"> </script>
+            <style>
+                td.colHeadR, td.data, td.dataText, td.dataC, td.dataUp, td.dataDown, td.para, td.dataCurrency, td.dataNumCurrency {
+                    font-size: 12px;
+                }
+            </style>
+        </text>
+    </src>
+    
+    <param>
+        <name>List</name>
+        <type>string</type>
+        <desc>List of currencies IDs to display. Separate them by semicolon.</desc>
+        <default>USD;EUR;GBP;JPY;CAD;AUD</default>
+        <required>false</required>
+    </param>
+    
+    <parser>
+        <type>string</type>
+        <replace>false</replace>
+        <decodeHtml>false</decodeHtml>
+    </parser>
+    
+    <example>
+        <codeSnippet>[Financial:LiveRates]</codeSnippet>
+        <desc>Displays currency rates for default currencies (USD;EUR;GBP;JPY;CAD;AUD).</desc>
+    </example>
+    
+    <example>
+        <codeSnippet>[Financial:LiveRates(List="USD;EUR;GBP")]</codeSnippet>
+        <desc>Displays currency rates for selected 3 currencies.</desc>
+    </example>
+    
+</token>

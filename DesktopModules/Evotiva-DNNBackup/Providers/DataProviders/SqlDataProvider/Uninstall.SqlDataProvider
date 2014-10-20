@@ -1,0 +1,258 @@
+/************************************************************/
+/*****         Uninstall SqlDataProvider                *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS ON 
+GO
+
+/* -- Drop Scheduled Task -- */
+DELETE FROM {databaseOwner}{objectQualifier}Schedule WHERE TypeFullName like 'Evotiva.DNN.Modules.DNNBackup%'
+GO
+
+/* -- Drop Scheduler Tables  -- */
+
+if exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleHistory') 
+     and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+	DROP TABLE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleHistory 
+GO
+	
+if exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSettings') 
+     and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+	DROP TABLE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSettings
+GO
+
+if exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_Schedule') 
+     and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+	DROP TABLE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_Schedule
+GO
+
+/* -- Drop Scheduler Procedures -- */
+
+if exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSave') 
+     and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	DROP PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSave
+GO
+
+if exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleDelete') 
+     and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	DROP PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleDelete
+GO
+
+if exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleDatabaseGet') 
+     and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	DROP PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleDatabaseGet
+GO
+
+if exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleFilesGet') 
+     and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	DROP PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleFilesGet
+GO
+
+if exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleGetAll') 
+     and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	DROP PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleGetAll
+GO
+
+if exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleGetAllToRun') 
+     and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	DROP PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleGetAllToRun
+GO
+
+if exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleGet') 
+     and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	DROP PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleGet
+GO
+
+if exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSettingsGet') 
+     and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	DROP PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSettingsGet
+GO
+
+if exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSettingSave') 
+     and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	DROP PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSettingSave
+GO
+
+if exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleHistoryAdd') 
+     and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	DROP PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleHistoryAdd
+GO
+
+if exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleHistoryGet') 
+     and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	DROP PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleHistoryGet
+GO
+
+/* -- Drop Helper Objects   -- */
+
+-- Views
+
+if exists (select * from dbo.sysobjects where id = object_id('{databaseOwner}{objectQualifier}EvotivaINFORMATION_SCHEMA_COLUMNS') and OBJECTPROPERTY(id, N'IsView') = 1)
+	drop view {databaseOwner}{objectQualifier}EvotivaINFORMATION_SCHEMA_COLUMNS
+GO
+if exists (select * from dbo.sysobjects where id = object_id('{objectQualifier}EvotivaINFORMATION_SCHEMA_COLUMNS') and OBJECTPROPERTY(id, N'IsView') = 1)
+	drop view {objectQualifier}EvotivaINFORMATION_SCHEMA_COLUMNS
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id('{databaseOwner}{objectQualifier}EvotivaINFORMATION_SCHEMA_KEY_COLUMN_USAGE') and OBJECTPROPERTY(id, N'IsView') = 1)
+	drop view {databaseOwner}{objectQualifier}EvotivaINFORMATION_SCHEMA_KEY_COLUMN_USAGE
+GO
+if exists (select * from dbo.sysobjects where id = object_id('{objectQualifier}EvotivaINFORMATION_SCHEMA_KEY_COLUMN_USAGE') and OBJECTPROPERTY(id, N'IsView') = 1)
+	drop view {objectQualifier}EvotivaINFORMATION_SCHEMA_KEY_COLUMN_USAGE
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id('{databaseOwner}{objectQualifier}EvotivaINFORMATION_SCHEMA_REFERENTIAL_CONSTRAINTS') and OBJECTPROPERTY(id, N'IsView') = 1)
+	drop view {databaseOwner}{objectQualifier}EvotivaINFORMATION_SCHEMA_REFERENTIAL_CONSTRAINTS
+GO
+if exists (select * from dbo.sysobjects where id = object_id('{objectQualifier}EvotivaINFORMATION_SCHEMA_REFERENTIAL_CONSTRAINTS') and OBJECTPROPERTY(id, N'IsView') = 1)
+	drop view {objectQualifier}EvotivaINFORMATION_SCHEMA_REFERENTIAL_CONSTRAINTS
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id('{databaseOwner}{objectQualifier}EvotivaINFORMATION_SCHEMA_TABLE_CONSTRAINTS') and OBJECTPROPERTY(id, N'IsView') = 1)
+	drop view {databaseOwner}{objectQualifier}EvotivaINFORMATION_SCHEMA_TABLE_CONSTRAINTS
+GO
+if exists (select * from dbo.sysobjects where id = object_id('{objectQualifier}EvotivaINFORMATION_SCHEMA_TABLE_CONSTRAINTS') and OBJECTPROPERTY(id, N'IsView') = 1)
+	drop view {objectQualifier}EvotivaINFORMATION_SCHEMA_TABLE_CONSTRAINTS
+GO
+
+
+-- Functions
+
+if exists (select * from dbo.sysobjects where id = object_id('{databaseOwner}{objectQualifier}EvotivaEmptyImage') and xtype ='FN')
+	drop function {databaseOwner}{objectQualifier}EvotivaEmptyImage
+GO
+if exists (select * from dbo.sysobjects where id = object_id('{objectQualifier}EvotivaEmptyImage') and xtype ='FN')
+	drop function {objectQualifier}EvotivaEmptyImage
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id('{databaseOwner}{objectQualifier}EvotivaEmptyText') and xtype ='FN')
+	drop function {databaseOwner}{objectQualifier}EvotivaEmptyText
+GO
+if exists (select * from dbo.sysobjects where id = object_id('{objectQualifier}EvotivaEmptyText') and xtype ='FN')
+	drop function {objectQualifier}EvotivaEmptyText
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id('{databaseOwner}{objectQualifier}EvotivaEmptyNText') and xtype ='FN')
+	drop function {databaseOwner}{objectQualifier}EvotivaEmptyNText
+GO
+if exists (select * from dbo.sysobjects where id = object_id('{objectQualifier}EvotivaEmptyNText') and xtype ='FN')
+	drop function {objectQualifier}EvotivaEmptyNText
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id('{databaseOwner}{objectQualifier}EvotivaEmptyBinary') and xtype ='FN')
+	drop function {databaseOwner}{objectQualifier}EvotivaEmptyBinary
+GO
+if exists (select * from dbo.sysobjects where id = object_id('{objectQualifier}EvotivaEmptyBinary') and xtype ='FN')
+	drop function {objectQualifier}EvotivaEmptyBinary
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id('{databaseOwner}{objectQualifier}EvotivaEmptyXML') and xtype ='FN')
+	drop function {databaseOwner}{objectQualifier}EvotivaEmptyXML
+GO
+if exists (select * from dbo.sysobjects where id = object_id('{objectQualifier}EvotivaEmptyXML') and xtype ='FN')
+	drop function {objectQualifier}EvotivaEmptyXML
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id('{databaseOwner}{objectQualifier}EvotivaScriptTable') and xtype ='FN')
+	drop function {databaseOwner}{objectQualifier}EvotivaScriptTable
+GO
+if exists (select * from dbo.sysobjects where id = object_id('{objectQualifier}EvotivaScriptTable') and xtype ='FN')
+	drop function {objectQualifier}EvotivaScriptTable
+GO
+
+-- Procs
+
+if exists (select * from dbo.sysobjects where id = object_id('{databaseOwner}{objectQualifier}EvotivaScriptC') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}EvotivaScriptC
+GO
+if exists (select * from dbo.sysobjects where id = object_id('{objectQualifier}EvotivaScriptC') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {objectQualifier}EvotivaScriptC
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id('{databaseOwner}{objectQualifier}EvotivaScriptV') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}EvotivaScriptV
+GO
+if exists (select * from dbo.sysobjects where id = object_id('{objectQualifier}EvotivaScriptV') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {objectQualifier}EvotivaScriptV
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id('{databaseOwner}{objectQualifier}EvotivaScriptY') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}EvotivaScriptY
+GO
+if exists (select * from dbo.sysobjects where id = object_id('{objectQualifier}EvotivaScriptY') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {objectQualifier}EvotivaScriptY
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id('{databaseOwner}{objectQualifier}EvotivaScriptT') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}EvotivaScriptT
+GO
+if exists (select * from dbo.sysobjects where id = object_id('{objectQualifier}EvotivaScriptT') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {objectQualifier}EvotivaScriptT
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id('{databaseOwner}{objectQualifier}EvotivaScriptP') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}EvotivaScriptP
+GO
+if exists (select * from dbo.sysobjects where id = object_id('{objectQualifier}EvotivaScriptP') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {objectQualifier}EvotivaScriptP
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id('{databaseOwner}{objectQualifier}EvotivaScriptI') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}EvotivaScriptI
+GO
+if exists (select * from dbo.sysobjects where id = object_id('{objectQualifier}EvotivaScriptI') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {objectQualifier}EvotivaScriptI
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id('{databaseOwner}{objectQualifier}EvotivaScriptD') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}EvotivaScriptD
+GO
+if exists (select * from dbo.sysobjects where id = object_id('{objectQualifier}EvotivaScriptD') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {objectQualifier}EvotivaScriptD
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id('{databaseOwner}{objectQualifier}EvotivaScriptD') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}EvotivaScriptR
+GO
+if exists (select * from dbo.sysobjects where id = object_id('{objectQualifier}EvotivaScriptR') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {objectQualifier}EvotivaScriptR
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id('{databaseOwner}{objectQualifier}EvotivaScriptD') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {databaseOwner}{objectQualifier}EvotivaScriptS
+GO
+if exists (select * from dbo.sysobjects where id = object_id('{objectQualifier}EvotivaScriptS') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure {objectQualifier}EvotivaScriptS
+GO
+
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/

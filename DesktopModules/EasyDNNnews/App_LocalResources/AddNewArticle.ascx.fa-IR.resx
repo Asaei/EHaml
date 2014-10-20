@@ -1,0 +1,1095 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BoundFieldResource1.HeaderText" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="btnGenerateURLResource1.Text" xml:space="preserve">
+    <value>ایجاد آدرس لینک</value>
+  </data>
+  <data name="btnGenerateURLResource2.Text" xml:space="preserve">
+    <value>ایجاد آدرس لینک</value>
+  </data>
+  <data name="btnGIShowMediaResource1.Text" xml:space="preserve">
+    <value>نمایش رسانه گالری</value>
+  </data>
+  <data name="btnUploadImageResource1.Text" xml:space="preserve">
+    <value>تنظیم به عنوان عکس مطلب</value>
+  </data>
+  <data name="btnUploadImageResource2.Text" xml:space="preserve">
+    <value>تنظیم به عنوان عکس مطلب</value>
+  </data>
+  <data name="cbGIIntegrateGalleryResource1.Text" xml:space="preserve">
+    <value>یکپارچه سازی این مطلب با گالری:</value>
+  </data>
+  <data name="cvGINumber0Resource1.ErrorMessage" xml:space="preserve">
+    <value>لطفا عدد را وارد نمایید.</value>
+  </data>
+  <data name="cvGINumberResource1.ErrorMessage" xml:space="preserve">
+    <value>لطفا عدد را وارد نمایید.</value>
+  </data>
+  <data name="cvGIThumbnailHeightResource1.ErrorMessage" xml:space="preserve">
+    <value>لطفا عدد را وارد نمایید.</value>
+  </data>
+  <data name="cvGIThumbnailWidthResource1.ErrorMessage" xml:space="preserve">
+    <value>لطفا عدد را وارد نمایید.</value>
+  </data>
+  <data name="ImageFieldResource1.HeaderText" xml:space="preserve">
+    <value>Thumbnail</value>
+  </data>
+  <data name="lblArticleAuthorNameResource1.Text" xml:space="preserve">
+    <value>نویسنده:</value>
+  </data>
+  <data name="lblArticleAuthorNameResource2.Text" xml:space="preserve">
+    <value>نویسنده:</value>
+  </data>
+  <data name="lblCategorySelectErrorResource1.Text" xml:space="preserve">
+    <value>لطفا دسته را انتخاب نمایید.</value>
+  </data>
+  <data name="lblCategorySelectErrorResource2.Text" xml:space="preserve">
+    <value>لطفا دسته را انتخاب نمایید.</value>
+  </data>
+  <data name="lblTwitterPasswordResource1.Text" xml:space="preserve">
+    <value>رمزعبور Twitter:</value>
+  </data>
+  <data name="lblTwitterPasswordResource2.Text" xml:space="preserve">
+    <value>رمزعبور Twitter:</value>
+  </data>
+  <data name="lblTwitterUsernameResource1.Text" xml:space="preserve">
+    <value>نام کاربری Twitter:</value>
+  </data>
+  <data name="lblTwitterUsernameResource2.Text" xml:space="preserve">
+    <value>نام کاربری Twitter:</value>
+  </data>
+  <data name="lbSetArticleImageResource1.Text" xml:space="preserve">
+    <value>تنظیم بعنوان عکس مطلب اصلی</value>
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>Text/HTML</value>
+  </data>
+  <data name="ListItemResource10.Text" xml:space="preserve">
+    <value>Below article</value>
+  </data>
+  <data name="ListItemResource11.Text" xml:space="preserve">
+    <value>Text/HTML</value>
+  </data>
+  <data name="ListItemResource12.Text" xml:space="preserve">
+    <value>صفحه</value>
+  </data>
+  <data name="ListItemResource13.Text" xml:space="preserve">
+    <value>فایل</value>
+  </data>
+  <data name="ListItemResource14.Text" xml:space="preserve">
+    <value>لینک</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>صفحه</value>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>فایل</value>
+  </data>
+  <data name="ListItemResource4.Text" xml:space="preserve">
+    <value>لینک</value>
+  </data>
+  <data name="ListItemResource5.Text" xml:space="preserve">
+    <value>انتخاب دسته</value>
+  </data>
+  <data name="ListItemResource6.Text" xml:space="preserve">
+    <value>عددی</value>
+  </data>
+  <data name="ListItemResource7.Text" xml:space="preserve">
+    <value>فلش های جهتی (بعدی، قبلی)</value>
+  </data>
+  <data name="ListItemResource8.Text" xml:space="preserve">
+    <value>پیکان ها (جلو، عقب، اولین، آخرین)</value>
+  </data>
+  <data name="ListItemResource9.Text" xml:space="preserve">
+    <value>Above article</value>
+  </data>
+  <data name="rfvArticleResource1.ErrorMessage" xml:space="preserve">
+    <value>این فیلد ضروری است.</value>
+  </data>
+  <data name="rfvArticleResource2.ErrorMessage" xml:space="preserve">
+    <value>این فیلد ضروری است.</value>
+  </data>
+  <data name="rfvGIItemsPerPage0Resource1.ErrorMessage" xml:space="preserve">
+    <value>این فیلد ضروری است.</value>
+  </data>
+  <data name="rfvGIItemsPerPageResource1.ErrorMessage" xml:space="preserve">
+    <value>این فیلد ضروری است.</value>
+  </data>
+  <data name="rfvGIThumbanilHeightResource1.ErrorMessage" xml:space="preserve">
+    <value>این فیلد ضروری است.</value>
+  </data>
+  <data name="rfvGIThumbanilWidthResource1.ErrorMessage" xml:space="preserve">
+    <value>این فیلد ضروری است.</value>
+  </data>
+  <data name="rfvTitleResource1.ErrorMessage" xml:space="preserve">
+    <value>این فیلد ضروری است.</value>
+  </data>
+  <data name="rfvTitleResource2.ErrorMessage" xml:space="preserve">
+    <value>این فیلد ضروری است.</value>
+  </data>
+  <data name="rfvTitleUrlResource1.ErrorMessage" xml:space="preserve">
+    <value>این فیلد ضروری است.</value>
+  </data>
+  <data name="rfvTitleUrlResource2.ErrorMessage" xml:space="preserve">
+    <value>این فیلد ضروری است.</value>
+  </data>
+  <data name="tbGIItemsPerPageResource1.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tbGIThumbnailHeightResource1.Text" xml:space="preserve">
+    <value>100</value>
+  </data>
+  <data name="tbGIThumbnailWidthResource1.Text" xml:space="preserve">
+    <value>100</value>
+  </data>
+  <data name="tbNumberOfColumnsResource1.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="TemplateFieldResource2.HeaderText" xml:space="preserve">
+    <value>نوع</value>
+  </data>
+  <data name="TemplateFieldResource3.HeaderText" xml:space="preserve">
+    <value>درج درون مطلب</value>
+  </data>
+  <data name="lblActiveArticle.Help" xml:space="preserve">
+    <value>انتشار مطلب:</value>
+  </data>
+  <data name="lblActiveArticle.Text" xml:space="preserve">
+    <value>انتشار مطلب:</value>
+  </data>
+  <data name="lblAddToTwitter.Help" xml:space="preserve">
+    <value>افزودن پست به twitter:</value>
+  </data>
+  <data name="lblAddToTwitter.Text" xml:space="preserve">
+    <value>افزودن پست به twitter:</value>
+  </data>
+  <data name="lblAllowAnonymousComments.Help" xml:space="preserve">
+    <value>تمام نظرات ناشناخته:</value>
+  </data>
+  <data name="lblAllowAnonymousComments.Text" xml:space="preserve">
+    <value>تمام نظرات ناشناخته:</value>
+  </data>
+  <data name="lblAllowComments.Help" xml:space="preserve">
+    <value>اجازه نظردهی:</value>
+  </data>
+  <data name="lblAllowComments.Text" xml:space="preserve">
+    <value>اجازه نظردهی:</value>
+  </data>
+  <data name="lblArticleAuthor.Help" xml:space="preserve">
+    <value>نام نویسنده مطلب:</value>
+  </data>
+  <data name="lblArticleAuthor.Text" xml:space="preserve">
+    <value>نویسنده:</value>
+  </data>
+  <data name="lblArticleCategory.Help" xml:space="preserve">
+    <value>دسته مطلب:</value>
+  </data>
+  <data name="lblArticleCategory.Text" xml:space="preserve">
+    <value>دسته:</value>
+  </data>
+  <data name="lblArticleDetailsTemplate.Text" xml:space="preserve">
+    <value>پوشه جزئیات مطلب:</value>
+  </data>
+  <data name="lblArticleDetailsTheme.Text" xml:space="preserve">
+    <value>تم جزئیات مطلب:</value>
+  </data>
+  <data name="lblArticleImage.Help" xml:space="preserve">
+    <value>تصویر:</value>
+  </data>
+  <data name="lblArticleImage.Text" xml:space="preserve">
+    <value>تصویر مطلب:</value>
+  </data>
+  <data name="lblArticleLinkUrl.Help" xml:space="preserve">
+    <value>آدرس لینک عنوان مطلب:</value>
+  </data>
+  <data name="lblArticleLinkUrl.Text" xml:space="preserve">
+    <value>آدرس لینک عنوان مطلب:</value>
+  </data>
+  <data name="lblArticleSubCategory.Help" xml:space="preserve">
+    <value>زیردسته:</value>
+  </data>
+  <data name="lblArticleSubCategory.Text" xml:space="preserve">
+    <value>زیردسته مطلب:</value>
+  </data>
+  <data name="lblArticleSummary.Help" xml:space="preserve">
+    <value>خلاصه مطلب:</value>
+  </data>
+  <data name="lblArticleSummary.Text" xml:space="preserve">
+    <value>خلاصه:</value>
+  </data>
+  <data name="lblArticleText.Help" xml:space="preserve">
+    <value>جزئیات مطلب:</value>
+  </data>
+  <data name="lblArticleText.Text" xml:space="preserve">
+    <value>جزئیات مطلب:</value>
+  </data>
+  <data name="lblArticleTitle.Help" xml:space="preserve">
+    <value>عنوان مطلب:</value>
+  </data>
+  <data name="lblArticleTitle.Text" xml:space="preserve">
+    <value>عنوان:</value>
+  </data>
+  <data name="lblDetailType.Help" xml:space="preserve">
+    <value>نوع جزئیات مطلب:</value>
+  </data>
+  <data name="lblDetailType.Text" xml:space="preserve">
+    <value>نوع جزئیات مطلب:</value>
+  </data>
+  <data name="lblExpireDate.Help" xml:space="preserve">
+    <value>زمان انقضا. باید بزرگتر از زمان انتشار باشد.</value>
+  </data>
+  <data name="lblExpireDate.Text" xml:space="preserve">
+    <value>زمان انقضا:</value>
+  </data>
+  <data name="lblFeaturedArticle.Help" xml:space="preserve">
+    <value>مطلب برتر:</value>
+  </data>
+  <data name="lblFeaturedArticle.Text" xml:space="preserve">
+    <value>مطلب برتر:</value>
+  </data>
+  <data name="lblGalleryIntegration.Help" xml:space="preserve">
+    <value>یکپارچه سازی EasyDNNGallery:</value>
+  </data>
+  <data name="lblGalleryIntegration.Text" xml:space="preserve">
+    <value>یکپارچه سازی EasyDNNGallery:</value>
+  </data>
+  <data name="lblGIGalleryPosition.Help" xml:space="preserve">
+    <value>مکان گالری:</value>
+  </data>
+  <data name="lblGIGalleryPosition.Text" xml:space="preserve">
+    <value>مکان گالری:</value>
+  </data>
+  <data name="lblGIGalleryTheme.Help" xml:space="preserve">
+    <value>تم گالری:</value>
+  </data>
+  <data name="lblGIGalleryTheme.Text" xml:space="preserve">
+    <value>تم گالری:</value>
+  </data>
+  <data name="lblGIItemsPerPage.Help" xml:space="preserve">
+    <value>آیتم ها در صفحه:</value>
+  </data>
+  <data name="lblGIItemsPerPage.Text" xml:space="preserve">
+    <value>آیتم ها در صفحه:</value>
+  </data>
+  <data name="lblGINumberOfColumns.Help" xml:space="preserve">
+    <value>تعداد ستون ها:</value>
+  </data>
+  <data name="lblGINumberOfColumns.Text" xml:space="preserve">
+    <value>تعداد ستون ها:</value>
+  </data>
+  <data name="lblGIPagerStyle.Help" xml:space="preserve">
+    <value>style صفحه بندی:</value>
+  </data>
+  <data name="lblGIPagerStyle.Text" xml:space="preserve">
+    <value>style صفحه بندی:</value>
+  </data>
+  <data name="lblGIThumbHeight.Help" xml:space="preserve">
+    <value>ارتفاع Thumbnail:</value>
+  </data>
+  <data name="lblGIThumbHeight.Text" xml:space="preserve">
+    <value>ارتفاع Thumbnail:</value>
+  </data>
+  <data name="lblGIThumbWidth.Help" xml:space="preserve">
+    <value>عرض Thumbnail:</value>
+  </data>
+  <data name="lblGIThumbWidth.Text" xml:space="preserve">
+    <value>عرض Thumbnail:</value>
+  </data>
+  <data name="lblPublishDate.Help" xml:space="preserve">
+    <value>زمان انتشار:</value>
+  </data>
+  <data name="lblPublishDate.Text" xml:space="preserve">
+    <value>زمان انتشار:</value>
+  </data>
+  <data name="ListItemResource15.Text" xml:space="preserve">
+    <value>گالری Lightbox</value>
+  </data>
+  <data name="ListItemResource16.Text" xml:space="preserve">
+    <value>گالری صدا</value>
+  </data>
+  <data name="Actions.HeaderText">
+    <value>عمل ها</value>
+  </data>
+  <data name="Addasarticlemap.Text">
+    <value>افزودن بعنوان نقشه مطلب</value>
+  </data>
+  <data name="AddExistingTags.Text">
+    <value>افزودن تگ های موجود</value>
+  </data>
+  <data name="AddGoogleMapslocation.Text">
+    <value>افزودن مکان نقشه گوگل</value>
+  </data>
+  <data name="Addmap.Text">
+    <value>افزودن نقشه</value>
+  </data>
+  <data name="Addmapmarker.Text">
+    <value>افزودن نشانه گذار نقشه</value>
+  </data>
+  <data name="Addmarker.Text">
+    <value>افزودن نشانه گذاری</value>
+  </data>
+  <data name="AddNewArticleTitle.Text">
+    <value>افزودن مطلب</value>
+  </data>
+  <data name="AdvancedSettings.Text">
+    <value>تنظیمات پیشرفته</value>
+  </data>
+  <data name="Articledetailtype.Text">
+    <value>نوع جزئیات مطلب</value>
+  </data>
+  <data name="Articleto.Text">
+    <value>مطلب به:</value>
+  </data>
+  <data name="Atitleisrequired.Text">
+    <value>عنوان ضروری است</value>
+  </data>
+  <data name="Author.HeaderText">
+    <value>نویسنده</value>
+  </data>
+  <data name="Backtoediting.Text">
+    <value>بازگشت به ویرایش</value>
+  </data>
+  <data name="btnAddNewArticle.Text">
+    <value>&lt;span&gt;ذخیره مطلب&lt;/span&gt;</value>
+  </data>
+  <data name="btnCancel.Text">
+    <value>&lt;span&gt;انصراف&lt;/span&gt;</value>
+  </data>
+  <data name="btnDocUpload.Text">
+    <value>&lt;span&gt;آپلود&lt;/span&gt;</value>
+  </data>
+  <data name="btnIntegGallery.Text">
+    <value>افزودن گالری به مطلب</value>
+  </data>
+  <data name="btnOpenEasyDnnGallery.Text">
+    <value>باز کردن گالری</value>
+  </data>
+  <data name="Cancel.Text">
+    <value>انصراف</value>
+  </data>
+  <data name="Categories.Text">
+    <value>دسته ها</value>
+  </data>
+  <data name="cbAllDayEventResource1.Text">
+    <value>رویداد تمام روزها</value>
+  </data>
+  <data name="cbShowEndDate.Text">
+    <value>نمایش زمان اتمام</value>
+  </data>
+  <data name="cbShowMainArticleImage.Text">
+    <value>نمایش عکس اصلی مطلب</value>
+  </data>
+  <data name="Centeronmap.Text">
+    <value>مرکز در نقشه</value>
+  </data>
+  <data name="Close.Text">
+    <value>بستن</value>
+  </data>
+  <data name="Confirm.Text">
+    <value>تائید</value>
+  </data>
+  <data name="CopyAndPaste.Text">
+    <value>این توکن ها را به فیلد اصلی مطلب کپی و پیست کنید.</value>
+  </data>
+  <data name="CopyAndPAsteContent.Text">
+    <value>این توکن ها را به بخشی از مطلب اصلی کپی و پیست کنید</value>
+  </data>
+  <data name="Croptosize.Text">
+    <value>برش به اندازه</value>
+  </data>
+  <data name="Customizegalleryitemtoken.Text">
+    <value>سفارشی سازی توکن آیتم گالری</value>
+  </data>
+  <data name="Date.HeaderText">
+    <value>زمان آپلود</value>
+  </data>
+  <data name="Description.HeaderText">
+    <value>توضیح</value>
+  </data>
+  <data name="DOCUMENTSincluded.Text">
+    <value>اسناد مشمول در مطلب</value>
+  </data>
+  <data name="Edit article.HeaderText">
+    <value>ویرایش مطلب</value>
+  </data>
+  <data name="Edit.Text">
+    <value>ویرایش</value>
+  </data>
+  <data name="Editmap.Text">
+    <value>ویرایش نقشه</value>
+  </data>
+  <data name="Enablescrollwheelzoom.Text">
+    <value>فعال کردن زوم با اسکرول ماوس</value>
+  </data>
+  <data name="Entervideourl.Text">
+    <value>وارد کردن آدرس ویدئو...</value>
+  </data>
+  <data name="Filename.HeaderText">
+    <value>نام فایل</value>
+  </data>
+  <data name="Galleriesincluded.Text">
+    <value>گالری های مشمول در مطلب</value>
+  </data>
+  <data name="GalleryPanel.Text">
+    <value>پنل گالری</value>
+  </data>
+  <data name="GalleryWithArticle.Text">
+    <value>این گالری همراه مطلب نمایش داده خواهد شد</value>
+  </data>
+  <data name="Generalsettings.Text">
+    <value>تنظیمات اصلی</value>
+  </data>
+  <data name="Generatetoken.Text">
+    <value>ایجاد توکن</value>
+  </data>
+  <data name="Height.Text">
+    <value>ارتفاع</value>
+  </data>
+  <data name="hlOpenGallery.Text">
+    <value>باز کردن مدیریت رسانه</value>
+  </data>
+  <data name="HTMoptional.Text">
+    <value>HTML: (اختیاری)</value>
+  </data>
+  <data name="Hybrid.Text">
+    <value>Hybrid</value>
+  </data>
+  <data name="ibAddImages.Text">
+    <value>افزودن گالری</value>
+  </data>
+  <data name="Itemtokensettings.Text">
+    <value>تنظیمات توکن آیتم</value>
+  </data>
+  <data name="Latitude.Text">
+    <value>Latitude:</value>
+  </data>
+  <data name="lbAllAddedTags.Text">
+    <value>تمام تگ ها</value>
+  </data>
+  <data name="lbArticleGalleryImages.Text">
+    <value>مطلب</value>
+  </data>
+  <data name="lbCustomAddEmedVideoToGallery.Text">
+    <value>افزودن ویدئو</value>
+  </data>
+  <data name="lbCustomGallery.Text">
+    <value>سفارشی</value>
+  </data>
+  <data name="lbDisplayArticleGallery.Text">
+    <value>افزودن گالری</value>
+  </data>
+  <data name="lblAddPerArticlePermission.Text">
+    <value>دسترسی ها در مقاله:</value>
+  </data>
+  <data name="lblAllowComments.HelpText">
+    <value>مجوز نظرات:</value>
+  </data>
+  <data name="lblApprovingMessage.Text">
+    <value>مطلب شما نیاز به تائید دارد. و تا زمانی که تائید نشده قابل نمایش نخواهد بود.</value>
+  </data>
+  <data name="lblArticleCommentsTemplate.HelpText">
+    <value>template نظرات مطلب:</value>
+  </data>
+  <data name="lblArticleCommentsTemplate.Text">
+    <value>template نظرات مطلب:</value>
+  </data>
+  <data name="lblArticleCommentsTheme.HelpText">
+    <value>تم نظرات:</value>
+  </data>
+  <data name="lblArticleCommentsTheme.Text">
+    <value>تم نظرات:</value>
+  </data>
+  <data name="lblArticleCSSStyle.HelpText">
+    <value>style نمایش:</value>
+  </data>
+  <data name="lblArticleCSSStyle.Text">
+    <value>style نمایش:</value>
+  </data>
+  <data name="lblArticleDetailsTemplate.HelpText">
+    <value>template جزئیات مطلب:</value>
+  </data>
+  <data name="lblArticleDetailsTheme.HelpText">
+    <value>Article details theme:</value>
+  </data>
+  <data name="lblArticleTags.HelpText">
+    <value>تگ های مطلب را با کاما از هم جدا کنید ( , ):</value>
+  </data>
+  <data name="lblArticleTags.Text">
+    <value>تگ ها ی مطلب:</value>
+  </data>
+  <data name="lblArticleTitleURL.HelpText">
+    <value>URL مطلب</value>
+  </data>
+  <data name="lblArticleTitleURL.Text">
+    <value>URL مطلب</value>
+  </data>
+  <data name="lbLastAddedTags.Text">
+    <value>جدیدترین مورد اضافه شده</value>
+  </data>
+  <data name="lblAuthorAlias.HelpText">
+    <value>نام مستعار نویسنده:</value>
+  </data>
+  <data name="lblAuthorAlias.Text">
+    <value>نام مستعار نویسنده:</value>
+  </data>
+  <data name="lblCategorySelect.Text">
+    <value>انتخاب دسته: </value>
+  </data>
+  <data name="lblCategorySelectError.Text">
+    <value>لطفا یک دسته انتخاب نمایید</value>
+  </data>
+  <data name="lblChameleonLayout.HelpText">
+    <value>layout گالری:</value>
+  </data>
+  <data name="lblChameleonLayout.Text">
+    <value>layout گالری:</value>
+  </data>
+  <data name="lblChameleonLayoutTheme.HelpText">
+    <value>تم Chameleon:</value>
+  </data>
+  <data name="lblChameleonLayoutTheme.Text">
+    <value>تم Chameleon:</value>
+  </data>
+  <data name="lblChameleonLayoutThemeStyle.HelpText">
+    <value>style تم Chameleon :</value>
+  </data>
+  <data name="lblChameleonLayoutThemeStyle.Text">
+    <value>style تم Chameleon :</value>
+  </data>
+  <data name="lblChOwner.Text">
+    <value>عوض کردن مالک:</value>
+  </data>
+  <data name="lblContent.HelpText">
+    <value>محتوای اصلی مطلب:</value>
+  </data>
+  <data name="lblContent.Text">
+    <value>شرح مطلب:</value>
+  </data>
+  <data name="lblCustomAddEmbedToGallery.Text">
+    <value>افزودن ویدئو از YouTube یا Vimeo:</value>
+  </data>
+  <data name="lblDocUploadDescription.Text">
+    <value>توضیح سند:</value>
+  </data>
+  <data name="lblDocUploadSelectFile.Text">
+    <value>انتخاب یک سند:</value>
+  </data>
+  <data name="lblDocUploadTitle.Text">
+    <value>عنوان سند:</value>
+  </data>
+  <data name="lblEventDateError.Text">
+    <value>تاریخ اتمام باید کوچک تر از تاریخ شروع باشد.</value>
+  </data>
+  <data name="lblEventEndDateTime.HelpText">
+    <value>تاریخ اتمام:</value>
+  </data>
+  <data name="lblEventEndDateTime.Text">
+    <value>تاریخ اتمام:</value>
+  </data>
+  <data name="lblEventStartDateTime.HelpText">
+    <value>تاریخ شروع:</value>
+  </data>
+  <data name="lblEventStartDateTime.Text">
+    <value>تاریخ شروع:</value>
+  </data>
+  <data name="lblExpireDate.HelpText">
+    <value>تاریخ انقضا. باید از تاریخ انتشار بزرگتر باشد.</value>
+  </data>
+  <data name="lblExpireDateError.Text">
+    <value>تاریخ اشتباه است.</value>
+  </data>
+  <data name="lblExpireDateErrorResource1.Text">
+    <value>تاریخ اشتباه است.</value>
+  </data>
+  <data name="lblFeaturedArticle.HelpText">
+    <value>برتر کردن این مقاله</value>
+  </data>
+  <data name="lblFixedResponsiveLayout.HelpText">
+    <value>layout ثابت و یا  واکنش گرا:</value>
+  </data>
+  <data name="lblFixedResponsiveLayout.Text">
+    <value>layout ثابت و یا  واکنش گرا:</value>
+  </data>
+  <data name="lblGalleryHeight.HelpText">
+    <value>ارتفاع گالری:</value>
+  </data>
+  <data name="lblGalleryHeight.Text">
+    <value>ارتفاع گالری:</value>
+  </data>
+  <data name="lblGallerySelect.Text">
+    <value>انتخاب گالری: </value>
+  </data>
+  <data name="lblGalleryWidth.HelpText">
+    <value>عرض گالری:</value>
+  </data>
+  <data name="lblGalleryWidth.Text">
+    <value>عرض گالری:</value>
+  </data>
+  <data name="lblGalSetThenumberOfItems0.Text">
+    <value>تنظیم تعداد آتیم ها در هر صفحه:</value>
+  </data>
+  <data name="lblGIDisplayItemDescription.HelpText">
+    <value>نمایش توضیحات آیتم:</value>
+  </data>
+  <data name="lblGIDisplayItemDescription.Text">
+    <value>نمایش توضیحات آیتم:</value>
+  </data>
+  <data name="lblGIDisplayItemDescriptionLightBox.HelpText">
+    <value>نمایش توضیحات آیتم در Lightbox:</value>
+  </data>
+  <data name="lblGIDisplayItemDescriptionLightBox.Text">
+    <value>نمایش توضیحات آیتم در Lightbox:</value>
+  </data>
+  <data name="lblGIDisplayItemTitle.HelpText">
+    <value>نمایش عنوان آیتم:</value>
+  </data>
+  <data name="lblGIDisplayItemTitle.Text">
+    <value>نمایش عنوان آیتم:</value>
+  </data>
+  <data name="lblGIDisplayItemTitleLightBOx.HelpText">
+    <value>نمایش عنوان آیتم در Lightbox:</value>
+  </data>
+  <data name="lblGIDisplayItemTitleLightBOx.Text">
+    <value>نمایش عنوان آیتم در Lightbox:</value>
+  </data>
+  <data name="lblGIGalleryPosition.HelpText">
+    <value>مکان گالری:</value>
+  </data>
+  <data name="lblGIGalleryPositionDown.Text">
+    <value>مکان گالری:</value>
+  </data>
+  <data name="lblGIGalleryTheme.HelpText">
+    <value>تم گالری:</value>
+  </data>
+  <data name="lblGIGalleryTheme2.Text">
+    <value>تم گالری:</value>
+  </data>
+  <data name="lblGIGalleryType.HelpText">
+    <value>نوع نمایش اصلی:</value>
+  </data>
+  <data name="lblGIGalleryType.Text">
+    <value>نوع نمایش اصلی:</value>
+  </data>
+  <data name="lblGIItemsPerPage.HelpText">
+    <value>تعداد آیتم ها در هر صفحه:</value>
+  </data>
+  <data name="lblGIItemsPerPage2.Text">
+    <value>تعداد آیتم ها در هر صفحه:</value>
+  </data>
+  <data name="lblGINumberOfColumns.HelpText">
+    <value>تعداد ستون ها:</value>
+  </data>
+  <data name="lblGINumberOfColumns2.Text">
+    <value>تعداد ستون ها:</value>
+  </data>
+  <data name="lblGIThumbHeight.HelpText">
+    <value>ارتفاع Thumbnail:</value>
+  </data>
+  <data name="lblGIThumbHeight2.Text">
+    <value>ارتفاع Thumbnail:</value>
+  </data>
+  <data name="lblGIThumbWidth.HelpText">
+    <value>عرض Thumbnail:</value>
+  </data>
+  <data name="lblGIThumbWidth2.HelpText">
+    <value>عرض Thumbnail:</value>
+  </data>
+  <data name="lblIsArticleEvent.Text">
+    <value>افزودن بعنوان رویداد:</value>
+  </data>
+  <data name="lblMetaDescription.HelpText">
+    <value>META description</value>
+  </data>
+  <data name="lblMetaDescription.Text">
+    <value>META description</value>
+  </data>
+  <data name="lblMetaKeywords.HelpText">
+    <value>META keywords</value>
+  </data>
+  <data name="lblMetaKeywords.Text">
+    <value>META keywords</value>
+  </data>
+  <data name="lblowner.Text">
+    <value>مالک مطلب:</value>
+  </data>
+  <data name="lblPostToFacebook.Text">
+    <value>Facebook</value>
+  </data>
+  <data name="lblPostToJournal.Text">
+    <value>ارسال به دیوار کاربری</value>
+  </data>
+  <data name="lblPostToTwitter.Text">
+    <value>Twitter</value>
+  </data>
+  <data name="lblPubDateError.Text">
+    <value>تاریخ اشتباه.</value>
+  </data>
+  <data name="lblPublishDate.HelpText">
+    <value>تاریخ انتشار:</value>
+  </data>
+  <data name="lblSelectDetailTarget.Text">
+    <value>انتخاب مقصد:</value>
+  </data>
+  <data name="lblShowToUnauthorizedUser.Text">
+    <value>کاربران دسته بندی نشده:</value>
+  </data>
+  <data name="lblSocialSecurityGroups.Text">
+    <value>گروه ها:</value>
+  </data>
+  <data name="lblSocialSecuritySelect.Text">
+    <value>نمایش:</value>
+  </data>
+  <data name="lblSubtitle.Help">
+    <value>زیرعنوان:</value>
+  </data>
+  <data name="lblSubtitle.Text">
+    <value>زیرعنوان:</value>
+  </data>
+  <data name="lblTitle.HelpText">
+    <value>عنوان</value>
+  </data>
+  <data name="lblTitle.Text">
+    <value>عنوان</value>
+  </data>
+  <data name="lblUseDefaultTemplate.HelpText">
+    <value>استفاده از template پیش فرض</value>
+  </data>
+  <data name="lblUseDefaultTemplate.Text">
+    <value>استفاده از template پیش فرض</value>
+  </data>
+  <data name="lblUsernameToAdd.Text">
+    <value>افزودن کاربر با نام کاربری:</value>
+  </data>
+  <data name="lbMostPopularTags.Text">
+    <value>محبوب ها در ابتدا</value>
+  </data>
+  <data name="lbRemoveDisplayArticleGallery.Text">
+    <value>عدم نمایش گالری</value>
+  </data>
+  <data name="lbSetArticleImageArtGallery.Text">
+    <value>تنظیم بعنوان عکس اصلی مقاله</value>
+  </data>
+  <data name="lbSharedArticleGalleryImages.Text">
+    <value>به اشتراک گذاشته شده</value>
+  </data>
+  <data name="lbUsernameAdd.Text">
+    <value>افزودن</value>
+  </data>
+  <data name="lbUserPremissionRemove.Text">
+    <value>حذف کردن</value>
+  </data>
+  <data name="Leftclear.Text">
+    <value>خالی رها کردن</value>
+  </data>
+  <data name="Leftwrap.Text">
+    <value>Left wrap</value>
+  </data>
+  <data name="liAudiogallery.Text">
+    <value>گالری صوتی</value>
+  </data>
+  <data name="liBottom.Text">
+    <value>مکان پایین</value>
+  </data>
+  <data name="liDraftArticle.Text">
+    <value>ذخیره بعنوان پیش نویس</value>
+  </data>
+  <data name="liFile.Text">
+    <value>فایل</value>
+  </data>
+  <data name="liFixed.Text">
+    <value>Layout ثابت</value>
+  </data>
+  <data name="liImage.Text">
+    <value>تصویر</value>
+  </data>
+  <data name="liLightbox.Text">
+    <value>گالری Lightbox</value>
+  </data>
+  <data name="liLink.Text">
+    <value>لینک</value>
+  </data>
+  <data name="Linktext.Text">
+    <value>متن لینک</value>
+  </data>
+  <data name="liNone.Text">
+    <value>هیچ</value>
+  </data>
+  <data name="liPage.Text">
+    <value>صفحه</value>
+  </data>
+  <data name="liPublishArticle.Text">
+    <value>انتشار مطلب</value>
+  </data>
+  <data name="liResponsive.Text">
+    <value>Layout واکنش گرا</value>
+  </data>
+  <data name="liSelectAuthor.Text">
+    <value>انتخاب نویسنده</value>
+  </data>
+  <data name="liSelectCategory.Text">
+    <value>انتخاب دسته</value>
+  </data>
+  <data name="liSelectGallery.Text">
+    <value>انتخاب گالری</value>
+  </data>
+  <data name="liSelectRole.Text">
+    <value>انتخاب نقش</value>
+  </data>
+  <data name="liTop.Text">
+    <value>مکان بالا</value>
+  </data>
+  <data name="liVideo.Text">
+    <value>ویدئو</value>
+  </data>
+  <data name="liVideogallery.Text">
+    <value>گالری ویدئو</value>
+  </data>
+  <data name="Longitude.Text">
+    <value>Longitude:</value>
+  </data>
+  <data name="Mainarticleimage.Text">
+    <value>تصویر اصلی مطلب</value>
+  </data>
+  <data name="Mainarticlemap.Text">
+    <value>نقشه اصلی مطلب</value>
+  </data>
+  <data name="Mainarticlemapisnotset.Text">
+    <value>نقشه اصلی مطلب تنظیم نشده است</value>
+  </data>
+  <data name="Mainarticlemapisset.Text">
+    <value>نقشه اصلی مطلب تنظیم شده است</value>
+  </data>
+  <data name="Mapeditor.Text">
+    <value>ویرایشگر نقشه</value>
+  </data>
+  <data name="Mapmarkers.Text">
+    <value>نشانه گذاری های نقشه</value>
+  </data>
+  <data name="Maptype.Text">
+    <value>نوع نقشه:</value>
+  </data>
+  <data name="None.Text">
+    <value>هیچ</value>
+  </data>
+  <data name="Note.Text">
+    <value>توجه: اگر این متن را تنظیم نکنید، توکن ها بعنوان متن لینک استاندارد رندر نخواهند شد.</value>
+  </data>
+  <data name="NotWithArticle.Text">
+    <value>این گالری در داخل این مطلب نشان داده نخواهد شد</value>
+  </data>
+  <data name="Onclickaction.Text">
+    <value>عمل هنگام کلیک</value>
+  </data>
+  <data name="Openiteminlightbox.Text">
+    <value>باز شدن در lightbox</value>
+  </data>
+  <data name="Permissionsperarticleoverride.Text">
+    <value>سطح دسترسی ها مقاله بر هر سطح دسترسی دیگری اولیت دارد</value>
+  </data>
+  <data name="Position.Text">
+    <value>مکان:</value>
+  </data>
+  <data name="Post.Text">
+    <value>ارسال</value>
+  </data>
+  <data name="Proportional.Text">
+    <value>متناسب</value>
+  </data>
+  <data name="RedirecttosetURL.Text">
+    <value>تغییر مسیر برای تنظیم URL رسانه</value>
+  </data>
+  <data name="Remove.Text">
+    <value>حذف</value>
+  </data>
+  <data name="RemoveArticleImage.Text">
+    <value>&lt;strong&gt;این تصویر&lt;/strong&gt; بعنوان تصویر اصلی مطلب انتخاب شده است&lt;/p&gt;</value>
+  </data>
+  <data name="ResetarticleURL.Text">
+    <value>تنظیم مجدد URL مطلب</value>
+  </data>
+  <data name="Rightwrap.Text">
+    <value>Right wrap</value>
+  </data>
+  <data name="Roadmap.Text">
+    <value>نقشه راه</value>
+  </data>
+  <data name="Roles.HeaderText">
+    <value>نقش ها</value>
+  </data>
+  <data name="Satellite.Text">
+    <value>ماهواره ای</value>
+  </data>
+  <data name="Searchforlocation.Text">
+    <value>جستجو برای یک مکان:</value>
+  </data>
+  <data name="security.Text">
+    <value>امنیت:</value>
+  </data>
+  <data name="SEOsettings.Text">
+    <value>تنظیمات سئو</value>
+  </data>
+  <data name="Showastandardtextlink.Text">
+    <value>نمایش یعنوان متن اصلی لینک</value>
+  </data>
+  <data name="Showdescription.Text">
+    <value>نمایش توضیح</value>
+  </data>
+  <data name="ShowHidetokenlist.Text">
+    <value>نمایش /عدم نمایش لیست توکن ها</value>
+  </data>
+  <data name="Showtitle.Text">
+    <value>نمایش عنوان</value>
+  </data>
+  <data name="Sizing.Text">
+    <value>تعیین اندازه</value>
+  </data>
+  <data name="Social.Text">
+    <value>شبکه اجتماعی</value>
+  </data>
+  <data name="StartUpload.Text">
+    <value>شروع آپلود</value>
+  </data>
+  <data name="Terrain.Text">
+    <value>زمین</value>
+  </data>
+  <data name="Thegalleryisempty.Text">
+    <value>این گالری خالی است</value>
+  </data>
+  <data name="Title.HeaderText">
+    <value>عنوان</value>
+  </data>
+  <data name="Title.Text">
+    <value>عنوان</value>
+  </data>
+  <data name="View article.HeaderText">
+    <value>نمایش مطلب</value>
+  </data>
+  <data name="Viewsettings.Text">
+    <value>نمایش تنظیمات</value>
+  </data>
+  <data name="Width.Text">
+    <value>عرض</value>
+  </data>
+  <data name="Zoom.Text">
+    <value>زوم:</value>
+  </data>
+</root>

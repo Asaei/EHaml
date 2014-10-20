@@ -1,0 +1,90 @@
+﻿<%@ Page Language="C#" AutoEventWireup="false" CodeBehind="RestoreWizardLoader.aspx.cs"
+    Inherits="Evotiva.RestoreWizardLoader.RestoreWizardLoader" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server" ID="HeadRestore">
+    <title>Evotiva .:. DNNBackup | Restore Wizard Loader</title>
+    <style type="text/css">
+        Body, A
+        {
+            color: black;
+            font-family: Verdana, Arial, Helvetica, Sans Serif;
+            font-size: 8pt;
+            font-weight: normal;
+        }
+        HR
+        {
+            color: #ededed;
+            height: 1pt;
+            text-align: left;
+        }
+        H1
+        {
+            color: Black;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        
+        H2
+        {
+            color: Black;
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+        
+        H3
+        {
+            color: Black;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .Normal
+        {
+            color: black;
+            font-family: Verdana, Arial, Helvetica, Sans Serif;
+            font-size: 8pt;
+            font-weight: normal;
+        }
+        .NormalBold
+        {
+            color: black;
+            font-family: Verdana, Arial, Helvetica, Sans Serif;
+            font-size: 8pt;
+            font-weight: bold;
+        }
+        .NormalRed
+        {
+            color: red;
+            font-family: Verdana, Arial, Helvetica, Sans Serif;
+            font-size: 8pt;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <h1><asp:Label ID="lblTitle" runat="server" /></h1>
+        <p>By <a target="_blank" href="http://www.evotiva.com/">Evotiva</a></p>
+        <p>
+            This tool allows you to auto-install the latest version available of the 
+            <a target="_blank" href="http://www.evotiva.com/downloads.aspx">'Restore Pack'</a> (DNNBackup Restore Wizard).
+        </p>
+        <p><asp:Label ID="lblLatestVersionInfo" runat="server" /></p>
+        <asp:Label ID="lblLicenseInfo" runat="server" />
+        <p>
+            <br />
+            <asp:Button runat="server" ID="cmdInstallRestorePack" Text=" Install the Restore Pack " OnClientClick="javascript:return confirm('Are you sure?');"/>            
+            <br />
+            <br />
+            <b>Warning:</b> Files will be overwritten.<br />
+            <br />
+        </p>
+    </div>
+    <hr />
+    <p><asp:Label ID="lblErrorMessage" runat="server" CssClass="NormalRed" /></p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,265 @@
+body {
+    background: #f4f4f4 url(images/body_bg.jpg) repeat-x 0 0; 
+    width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+    color: black;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px; 
+	line-height:18px; 
+    font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	display:block;
+	color: #4B70A0;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-weight:bold;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+h1 { font-size: 22px; line-height: 28px; letter-spacing:-0.03em; margin-top:8px; margin-bottom: 10px; }
+h2 { font-size: 20px; line-height: 26px; letter-spacing:-0.03em; margin-top:8px; margin-bottom: 10px; }
+h3 { font-size: 18px; line-height: 20px; letter-spacing:-1px; margin-top:8px; margin-bottom: 10px; }
+h4 { font-size: 16px; line-height: 20px; letter-spacing:-1px; }
+h5 { font-size: 14px; line-height: 18px; }
+
+td { vertical-align: top; }
+
+.Normal, .NormalTextbox {
+    color: black;
+    font-weight: normal;
+}
+
+.NormalBold {
+    color: black;
+    font-weight: bold;
+}
+
+a.CommandButton:link, a.CommandButton:visited {
+    color: #CB2027;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.CommandButton:hover {
+    color: #3E81B5;
+    text-decoration: underline;
+}
+
+.NormalRed {
+    color: red;
+    font-weight: bold;
+}
+
+.Help {
+    color: black;
+    font-weight: normal;
+    padding-left: 20px;
+}
+
+.FeedBack {
+    background-color: transparent;
+    border: black 1px solid;
+    color: black;
+    font-weight: normal;
+}
+
+
+.Wizard, .Error {
+    height: 300px;
+    width: 750px;
+}
+
+.WizardButton {
+    background-color: Transparent;
+    border: solid 1px #999999;
+    color: #990000;
+    font-size: 1.0em;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+}
+
+A.WizardButton:link, A.WizardButton:visited, A.WizardButton:active, A.WizardButton:hover {
+    color: #990000;
+    text-decoration: none;
+}
+
+.WizardButtonDisabled {
+    background-color: #eeeeee;
+    border: solid 1px #999999;
+    color: #990000;
+    font-size: 1.0em;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+}
+
+A.WizardButtonDisabled:link, A.WizardButtonDisabled:visited, A.WizardButtonDisabled:active, A.WizardButtonDisabled:hover {
+    color: Silver;
+    text-decoration: none;
+}
+
+A:link {
+    color: #4B70A0;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+A:visited {
+    color: #4B70A0;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+A:active {
+    color: #4B70A0;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+A:hover {
+    color: #cc0000;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+HR {
+    color: #ededed;
+    height: 1pt;
+    text-align: left
+}
+
+/* styles used in the FileManager */
+
+.FileManager {
+    border-bottom: black 1px solid;
+    border-left: black 1px solid;
+    border-right: black 1px solid;
+    border-top: black 1px solid;
+    height: 400px;
+}
+
+.FileManager_ToolBar {
+    border-bottom: black 1px solid;
+    height: 25px;
+}
+
+.FileManager_Explorer {
+    background-color: White;
+    border: dimgray 1px solid;
+    height: 100%;
+    margin: 2px 2px 2px 2px;
+}
+
+.FileManager_FileList {
+    background-color: White;
+    border: dimgray 1px solid;
+    height: 100%;
+    margin: 2px 2px 2px 2px;
+    overflow: auto;
+}
+
+.FileManager_MessageBox {
+    background-color: White;
+    padding: 25px 25px 25px 25px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.FileManager_Header {
+    background-color: #9EBFF6;
+    border-bottom: dimgray 1px solid;
+    color: #E7E7FF;
+    font-size: 11px;
+    font-weight: bold;
+    height: 25px;
+}
+
+.FileManager_Pager {
+    background-color: #EEEEEE;
+    border-top: dimgray 1px solid;
+    font-size: 11px;
+    font-weight: bold;
+    height: 25px;
+}
+
+.FileManager_StatusBar {
+    background-color: #dedfde;
+    font-size: 11px;
+    font-weight: normal;
+    height: 25px;
+    margin: 2px 2px 2px 2px;
+}
+
+.FileManager_Item {
+    background-color: #F8F8F8;
+    border-bottom: black 1px dashed;
+    border-top: black 1px dashed;
+    color: Black;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.FileManager_AltItem {
+    background-color: #EEEEEE;
+    border-style: none;
+    color: Black;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.FileManager_SelItem {
+    background-color: #99ffff;
+    border-style: none;
+    color: White;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.FileManagerTreeNode {
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.FileManagerTreeNodeSelected {
+    background-color: #dcdcdc;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+A.FileManagerTreeNode:link, A.FileManagerTreeNodeSelected:link {
+    color: #003366;
+    text-decoration: none;
+}
+
+A.FileManagerTreeNode:visited, A.FileManagerTreeNodeSelected:visited {
+    color: #003366;
+    text-decoration: none;
+}
+
+A.FileManagerTreeNode:hover, A.FileManagerTreeNodeSelected:hover {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+A.FileManagerTreeNode:active, A.FileManagerTreeNodeSelected:active {
+    color: #003366;
+    text-decoration: none;
+}
+
+ul { padding-top: 10px; }
+
+li { padding-top: 10px; }
+
+ul.compress { padding-top: 0px; }
+
+li.compress { padding-top: 0px; }

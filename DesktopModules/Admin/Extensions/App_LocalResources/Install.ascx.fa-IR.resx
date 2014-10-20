@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="LogTitle.Text" xml:space="preserve">
+    <value>لاگ های نصب پکیج</value>
+  </data>
+  <data name="Cancel.Text" xml:space="preserve">
+    <value>لغو</value>
+  </data>
+  <data name="InvalidExt.Text" xml:space="preserve">
+    <value>پسوند فایل غیرمجاز - {0}</value>
+  </data>
+  <data name="ModuleHelp.Text" xml:space="preserve">
+    <value>&lt;h1&gt;در مورد نصب پکیج&lt;/h1&gt;&lt;p&gt;می توانید پکیج را در پرتال آپلود نموده و نصب کنید.&lt;/p&gt;</value>
+  </data>
+  <data name="NoFile.Text" xml:space="preserve">
+    <value>باید فایلی را برای آپلود انتخاب کنید - دکمه انتخاب فایل را برای انتخاب فایل از سیستم خود کلیک کنید.</value>
+  </data>
+  <data name="InstallCustomPackage.Text" xml:space="preserve">
+    <value>نصب {0} ابزار جدید</value>
+  </data>
+  <data name="InstallPackage.Text" xml:space="preserve">
+    <value>نصب پکیج</value>
+  </data>
+  <data name="UploadPackage.Text" xml:space="preserve">
+    <value>آپلود پکیج</value>
+  </data>
+  <data name="AcceptLicense.Text" xml:space="preserve">
+    <value>آیا لایسنس را قبول دارید؟</value>
+  </data>
+  <data name="Introduction.Help" xml:space="preserve">
+    <value>دات نت نیوک می تواند به روش های مختلفی توسعه یابد. از طریق این ویزارد می توانید پکیج های توسعه را آپلود و نصب کنید.</value>
+  </data>
+  <data name="Introduction.Title" xml:space="preserve">
+    <value>آپلود پکیج ابزار جدید</value>
+  </data>
+  <data name="ZipCriticalError.Text" xml:space="preserve">
+    <value> خطای اساسی در خواندن فایل زیپ</value>
+  </data>
+  <data name="ZipError.Text" xml:space="preserve">
+    <value>خطا در خواندن فایل زیپ</value>
+  </data>
+  <data name="AcceptTerms.Text" xml:space="preserve">
+    <value>برای نصب این پکیج باید لایسنس و شرایط استفاده آن را بپذیرید</value>
+  </data>
+  <data name="InstallError.Text" xml:space="preserve">
+    <value>خطا در بارگذاری ابزار از فولدر موقت</value>
+  </data>
+  <data name="InstallResults.Help" xml:space="preserve">
+    <value>برای مشاهده نتایج نصب پکیج لیست زیر را ببینید.</value>
+  </data>
+  <data name="InstallResults.Title" xml:space="preserve">
+    <value>گزارش نصب پکیج</value>
+  </data>
+  <data name="PackageInfo.Help" xml:space="preserve">
+    <value>اطلاعات زیر از فایل مانیفست پکیج به دست آمده است. </value>
+  </data>
+  <data name="PackageInfo.Title" xml:space="preserve">
+    <value>اطلاعات پکیج</value>
+  </data>
+  <data name="License.Help" xml:space="preserve">
+    <value>پیش از ادامه باید شرایط استفاده از این ابزار را بپذیرید لطفا شرایط را مطالعه نموده و گزینه پذیرش شرایط را تیک بزنید.</value>
+  </data>
+  <data name="License.Title" xml:space="preserve">
+    <value>بازبینی لایسنس</value>
+  </data>
+  <data name="ReleaseNotes.Help" xml:space="preserve">
+    <value>می توانید یادداشت زمان انتشار پکیج را مشاهده کنید.</value>
+  </data>
+  <data name="ReleaseNotes.Title" xml:space="preserve">
+    <value>یادداشت زمان انتشار</value>
+  </data>
+  <data name="IgnoreWhiteList.Text" xml:space="preserve">
+    <value>محدودیت فایل ها نادیده گرفته شود؟</value>
+  </data>
+  <data name="IgnoreRestrictedFilesWarning.Text" xml:space="preserve">
+    <value>هشدار:  شما اخطار وجود فایل های غیرمجاز را نادیده گرفته اید. این عمل می تواند به یک تهدید عملیاتی در مورد سایت شما منجر شود.تنها در صورتی این کار را انجام دهید که پکیجی که قصد نصب آن را دارید از منبع مطمئنی دریافت کرده باشید.</value>
+  </data>
+  <data name="RepairInstall.Text" xml:space="preserve">
+    <value>نصب مورد تصحیح قرار گیرد؟</value>
+  </data>
+  <data name="InvalidFiles.Text" xml:space="preserve">
+    <value>این پکیج شامل فایل هایی با پسوند غیرمجاز است. ({0})</value>
+  </data>
+  <data name="PackageInstalled.Text" xml:space="preserve">
+    <value>این پکیج قبلا نصب شده است.</value>
+  </data>
+  <data name="RepairInstallWarning.Text" xml:space="preserve">
+    <value>هشدار: شما می خواهید نصب این پکیج را تصحیح کنید. این عمل باعث رونویسی فایل های پکیج موجود می شود.</value>
+  </data>
+  <data name="Return.Text" xml:space="preserve">
+    <value>بازگشت</value>
+  </data>
+  <data name="LegacySkin.Text" xml:space="preserve">
+    <value>پوسته / کانتینر به ارث برده شده:</value>
+  </data>
+  <data name="NoManifest.Text" xml:space="preserve">
+    <value>به نظر می رسد پکیجی که قصد نصب آن را دارید، یک ابزار استاندارد دات نت نیوک نمی باشد،چون دارای فایل مانیفست نمی باشد. برخی پوسته ها و کانتینرهای قدیمی دارای فایل مانیفست نمی باشند. در صورتی که این پکیج پوسته یا کانتینر است، لطفا گزینه مناسب را انتخاب نموده و دکمه "بعدی" را کلیک کنید.</value>
+  </data>
+  <data name="Container.Text" xml:space="preserve">
+    <value>کانتینر</value>
+  </data>
+  <data name="None.Text" xml:space="preserve">
+    <value>یک پوسته یا کانتینر نیست.</value>
+  </data>
+  <data name="Skin.Text" xml:space="preserve">
+    <value>پوسته</value>
+  </data>
+  <data name="CoreLanguageError.Text" xml:space="preserve">
+    <value>زبان هسته ای که بسته زبان برای آن طراحی شده نصب نشده است.  پیش نصب هرگونه بسته زبان ابزارها برای هر زبان، باید ابتدا خود زبان را نصب کنید.</value>
+  </data>
+  <data name="DependencyError.Text" xml:space="preserve">
+    <value>این بسته زبانی برای ابزاری طراحی شده است که هنوز نصب نشده است.</value>
+  </data>
+  <data name="IgnoreWhiteListHelp.Text" xml:space="preserve">
+    <value>نصب کننده لیستی از فایل های مجاز را که قابل نصب روی سایت هستند را دارد. در صورتی که از دریافت پکیجی مورد نظر از یک منبع مطمئن، می توانید این لیست را ندیده بگیرید.</value>
+  </data>
+  <data name="LegacySkinHelp.Text" xml:space="preserve">
+    <value>این نوع اسکین ها و کانتینرها می توانند از طریق نصب کننده، نصب شوند. اما از آنجایی که فایل مانیفست ندارند باید در هنگام نصب پوسته یا کانتینر بودن آنها را مشخص کنید. در صورتی که از به ارث برده شده بودن آنها اطمینان ندارید گزینه مناسب را انتخاب کنید.</value>
+  </data>
+  <data name="RepairInstallHelp.Text" xml:space="preserve">
+    <value>نصب کننده به طور پیشفرض، پکیج یا ورژن موجود را رونویسی نمی کند. در صورتی که می خواهید نصب کننده  فایل های نسخه موجود را تصحیح کند این گزینه را فعال کنید.در غیر این صورت، این نصب دیگر ادامه نمی یابد.</value>
+  </data>
+  <data name="BrowseFile.Text" xml:space="preserve">
+    <value>انتخاب فایل:</value>
+  </data>
+  <data name="BrowseFileHelp.Text" xml:space="preserve">
+    <value>از دکمه انتخاب فایل برای یافتن پکیجی که قصد نصب آن را دارید، استفاده نموده و دکمه "بعدی" را برای ادامه کلیک کنید.</value>
+  </data>
+  <data name="Warnings.Help" xml:space="preserve">
+    <value>اگر به این صفحه هدایت شده اید، بدین معناست که برای نصب پکیج نیاز به اطلاعات بیشتری هست.</value>
+  </data>
+  <data name="Warnings.Title" xml:space="preserve">
+    <value>نتایج آپلود</value>
+  </data>
+  <data name="AcceptLicense.Help" xml:space="preserve">
+    <value>در صورت موافق بودن با لایسنس این ماژول این گزینه را تیک بزنید</value>
+  </data>
+  <data name="ControlTitle_install.Text" xml:space="preserve">
+    <value>نصب ابزار</value>
+  </data>
+  <data name="FileSizeRestriction.Text" xml:space="preserve">
+    <value>حداکثر حجم قابل آپلود در این سایت {0} MB است. </value>
+  </data>
+</root>

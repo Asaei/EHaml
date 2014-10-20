@@ -1,0 +1,64 @@
+#EDN_NewsOne.NewsOne_Style_Red .edn_module_box > h1.edn_module_title, #EDN_NewsOne.NewsOne_Style_Red.tag_cloud > h1.edn_module_title, #EDN_NewsOne.NewsOne_Style_Red.calendar .callendar_table_container > h1.edn_module_title, #EDN_NewsOne.NewsOne_Style_Red.calendar .archive_list > h1.edn_module_title {
+  background: url(../images/red/module_title_background.png) repeat-x #b30000;
+}
+#EDN_NewsOne.NewsOne_Style_Red .edn_module_box > h1.edn_module_title span, #EDN_NewsOne.NewsOne_Style_Red.tag_cloud > h1.edn_module_title span, #EDN_NewsOne.NewsOne_Style_Red.calendar .callendar_table_container > h1.edn_module_title span, #EDN_NewsOne.NewsOne_Style_Red.calendar .archive_list > h1.edn_module_title span {
+  color: white;
+  text-shadow: none;
+}
+#EDN_NewsOne.NewsOne_Style_Red.category_menu .edn_module_box > .edn_category_menu_wrapper li > div > a.category:hover {
+  color: #b30000;
+}
+#EDN_NewsOne.NewsOne_Style_Red.calendar .callendar_table_container .calendar_table .month_selection {
+  background: url(../images/red/module_title_background.png) repeat-x #b30000;
+}
+#EDN_NewsOne.NewsOne_Style_Red.calendar .callendar_table_container .calendar_table .month_selection td {
+  color: white;
+  text-shadow: none;
+}
+#EDN_NewsOne.NewsOne_Style_Red.calendar .callendar_table_container .calendar_table .month_selection td.next_prev_months a {
+  color: white !important;
+  text-shadow: none;
+}
+#EDN_NewsOne.NewsOne_Style_Red.calendar .callendar_table_container .calendar_table .month_selection td.next_prev_months a:hover {
+  text-shadow: 0 0 1px white;
+}
+#EDN_NewsOne.NewsOne_Style_Red.calendar .callendar_table_container .calendar_table .day.today {
+  background: url(../images/red/module_title_background.png) repeat-x #b30000;
+}
+#EDN_NewsOne.NewsOne_Style_Red.calendar .callendar_table_container.advanced .calendar_table .day.today {
+  background: url("../images/common/calendar/day_bg.png") repeat-x scroll left bottom transparent;
+}
+#EDN_NewsOne.NewsOne_Style_Red.calendar .callendar_table_container.advanced .calendar_table .day.today > a {
+  background: url(../images/red/module_title_background.png) repeat-x 0 -17px #b30000;
+}
+#EDN_NewsOne.NewsOne_Style_Red.calendar .callendar_table_container.advanced .calendar_table .day.selected {
+  background: url("../images/common/calendar/day_bg.png") repeat-x scroll left bottom transparent;
+}
+#EDN_NewsOne.NewsOne_Style_Red.calendar .callendar_table_container.advanced .calendar_table .day.selected > a {
+  background: url(../images/common/calendar/day_bg.png) repeat-x left -4px #929292;
+}
+#EDN_NewsOne.NewsOne_Style_Red.calendar .archive_list.events .edn_module_title > a.export {
+  background: url(../images/common/export_icalendar_white_outline.png);
+}
+#EDN_NewsOne.NewsOne_Style_Red.calendar .archive_list li a:hover {
+  color: #b30000;
+}
+#EDN_NewsOne.NewsOne_Style_Red.tag_cloud .tags a:hover {
+  color: #b30000;
+}
+#EDN_NewsOne.NewsOne_Style_Red.news .article .meta_text a, #EDN_NewsOne.NewsOne_Style_Red.search .article .meta_text a {
+  color: #b30000;
+}
+#EDN_NewsOne.NewsOne_Style_Red.news .article.in_list h1 a:hover, #EDN_NewsOne.NewsOne_Style_Red.search .article.in_list h1 a:hover {
+  color: #b30000;
+}
+#EDN_NewsOne.NewsOne_Style_Red.news .article.details .main_content a, #EDN_NewsOne.NewsOne_Style_Red.search .article.details .main_content a {
+  color: #b30000;
+}
+#EDN_NewsOne.NewsOne_Style_Red.news .article.details .article_comments .add_comment .add_article_box table td.right .submit:hover, #EDN_NewsOne.NewsOne_Style_Red.search .article.details .article_comments .add_comment .add_article_box table td.right .submit:hover {
+  background-color: #b30000;
+}
+
+.EDN_search.NewsOne.Red ul li span a:hover {
+  color: #b50909;
+}

@@ -1,0 +1,119 @@
+﻿/************************************************************/
+/*****              SQLDataProvider                     *****/
+/*****              LiveTabs               *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+
+
+/****** Object:  Table {databaseOwner}[LiveTabs]    Script Date: 06/14/2012 18:25:59 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}[FK_LiveTabs_Modules]') AND parent_object_id = OBJECT_ID(N'{databaseOwner}[LiveTabs]'))
+ALTER TABLE {databaseOwner}[LiveTabs] DROP CONSTRAINT [FK_LiveTabs_Modules]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_LiveTabs_Width]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[LiveTabs] DROP CONSTRAINT [DF_LiveTabs_Width]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_LiveTabs_Height]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[LiveTabs] DROP CONSTRAINT [DF_LiveTabs_Height]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_LiveTabs_Rotate]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[LiveTabs] DROP CONSTRAINT [DF_LiveTabs_Rotate]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_LiveTabs_RotateTime]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[LiveTabs] DROP CONSTRAINT [DF_LiveTabs_RotateTime]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_LiveTabs_Sortable]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[LiveTabs] DROP CONSTRAINT [DF_LiveTabs_Sortable]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_LiveTabs_SelectOnMouseover]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[LiveTabs] DROP CONSTRAINT [DF_LiveTabs_SelectOnMouseover]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_LiveTabs_Persistence]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[LiveTabs] DROP CONSTRAINT [DF_LiveTabs_Persistence]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_LiveTabs_IntelligentTabLinks]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[LiveTabs] DROP CONSTRAINT [DF_LiveTabs_IntelligentTabLinks]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_LiveTabs_HideTab]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[LiveTabs] DROP CONSTRAINT [DF_LiveTabs_HideTab]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_LiveTabs_HideSingleTab]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[LiveTabs] DROP CONSTRAINT [DF_LiveTabs_HideSingleTab]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_LiveTabs_Theme]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[LiveTabs] DROP CONSTRAINT [DF_LiveTabs_Theme]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_LiveTabs_Skin]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[LiveTabs] DROP CONSTRAINT [DF_LiveTabs_Skin]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_LiveTabs_FxFade]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[LiveTabs] DROP CONSTRAINT [DF_LiveTabs_FxFade]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_LiveTabs_FxSlide]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[LiveTabs] DROP CONSTRAINT [DF_LiveTabs_FxSlide]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_LiveTabs_FxCustom]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[LiveTabs] DROP CONSTRAINT [DF_LiveTabs_FxCustom]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_LiveTabs_TrackClicks]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[LiveTabs] DROP CONSTRAINT [DF_LiveTabs_TrackClicks]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_LiveTabs_TrackCategory]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[LiveTabs] DROP CONSTRAINT [DF_LiveTabs_TrackCategory]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_LiveTabs_TrackAction]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[LiveTabs] DROP CONSTRAINT [DF_LiveTabs_TrackAction]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_LiveTabs_TrackLabel]') AND type = 'D')
+BEGIN
+ALTER TABLE {databaseOwner}[LiveTabs] DROP CONSTRAINT [DF_LiveTabs_TrackLabel]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[LiveTabs]') AND type in (N'U'))
+DROP TABLE {databaseOwner}[LiveTabs]
+GO
+/****** Object:  Table {databaseOwner}[LiveTabs_Tab]    Script Date: 06/14/2012 18:25:59 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[LiveTabs_Tab]') AND type in (N'U'))
+DROP TABLE {databaseOwner}[LiveTabs_Tab]
+GO
+

@@ -1,0 +1,387 @@
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS ON 
+GO
+
+--
+-- TABLES
+--
+--drop table Evotiva_DNNBackup_ScheduleHistory
+--drop table Evotiva_DNNBackup_ScheduleSettings
+--drop table Evotiva_DNNBackup_Schedule
+
+if NOT exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_Schedule') 
+     and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_Schedule (
+		[ScheduleID] [int] IDENTITY(1,1) NOT NULL, -- pk
+		[ModuleID] [int] NOT NULL,  --fk
+		[Description] [varchar](200) NOT NULL, -- brief free text
+		[BkpDatabase] [bit] NOT NULL, -- backup database?
+		[BkpFiles] [bit] NOT NULL, -- backup file?
+		[TrnFTP] [bit] NOT NULL, -- FTP transfer?
+		[TrnAmazonS3] [bit] NOT NULL, -- S3 transfer?
+		[TimeLapse] [int] NOT NULL,
+		[TimeLapseMeasurement] [varchar](2) NOT NULL, -- d, m, h,...
+		[RetainHistoryNum] [int] NOT NULL,
+		[ValidTimeToStart] [varchar](5) NULL, -- ej. 14:30 (hora en 24hrs)
+		[ValidTimeToStartTolerance] [int] NULL, -- minutos +/- aceptados para [ValidTimeToStart]
+		[Enabled] [bit] NOT NULL,
+		[LastRun] [datetime] NULL, -- last date-time run
+		[NextRun] [datetime] NULL -- next date-time run. It is editable
+	) 
+
+	ALTER TABLE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_Schedule 
+	ADD CONSTRAINT [PK_{objectQualifier}Evotiva_DNNBackup_Schedule] 
+	PRIMARY KEY CLUSTERED 
+		(
+			[ScheduleID]
+		) 
+
+	ALTER TABLE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_Schedule
+	ADD CONSTRAINT [FK_{objectQualifier}Evotiva_DNNBackup_Schedule_{objectQualifier}Modules] 
+	FOREIGN KEY([ModuleID])
+	REFERENCES {databaseOwner}{objectQualifier}Modules ([ModuleID])
+	ON DELETE CASCADE
+	
+END
+GO
+
+if NOT exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSettings') 
+     and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSettings (
+		[ScheduleID] [int] NOT NULL,
+		[SettingName] [nvarchar](50) NOT NULL,
+		[SettingValue] [nvarchar](2000) NOT NULL
+	) 
+
+	ALTER TABLE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSettings
+	ADD CONSTRAINT [PK_{objectQualifier}Evotiva_DNNBackup_ScheduleSettings] 
+	PRIMARY KEY CLUSTERED 
+	(
+		[ScheduleID],
+		[SettingName]
+	 ) 
+	 
+	ALTER TABLE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSettings
+	ADD CONSTRAINT [FK_{objectQualifier}Evotiva_DNNBackup_ScheduleSettings_{objectQualifier}Evotiva_DNNBackup_Schedule] 
+	FOREIGN KEY([ScheduleID])
+	REFERENCES {databaseOwner}{objectQualifier}Evotiva_DNNBackup_Schedule ([ScheduleID])
+	ON DELETE CASCADE 
+END
+GO
+
+if NOT exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleHistory') 
+     and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleHistory (
+		[ScheduleHistoryID] [int] IDENTITY(1,1) NOT NULL, -- pk
+		[ScheduleID] [int] NOT NULL, -- fk
+		[StartDate] [datetime] NOT NULL,
+		[EndDate] [datetime] NULL,
+		[Succeeded] [bit]  NULL,
+		[LogNotes] [ntext] NULL
+	) 
+	
+	ALTER TABLE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleHistory
+	ADD CONSTRAINT [PK_{objectQualifier}Evotiva_DNNBackup_ScheduleHistory] 
+	PRIMARY KEY CLUSTERED 	
+	(
+		[ScheduleHistoryID] 
+	 ) 
+	 
+	ALTER TABLE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleHistory
+	ADD CONSTRAINT [FK_{objectQualifier}Evotiva_DNNBackup_ScheduleHistory_{objectQualifier}Evotiva_DNNBackup_Schedule] 
+	FOREIGN KEY([ScheduleID])
+	REFERENCES {databaseOwner}{objectQualifier}Evotiva_DNNBackup_Schedule ([ScheduleID])
+	ON DELETE CASCADE 
+	
+	CREATE NONCLUSTERED INDEX IX_{objectQualifier}Evotiva_DNNBackup_ScheduleHistory_StartDate 
+	    ON {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleHistory
+		(
+		ScheduleID,
+		StartDate
+		) 
+END
+GO
+
+--
+-- PROCEDURES
+--
+
+if exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSave') 
+     and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	DROP PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSave
+GO
+CREATE PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSave
+	@ScheduleID [int]
+	,@ModuleID [int]
+	,@Description [varchar](200)
+	,@BkpDatabase [bit]
+	,@BkpFiles [bit]
+	,@TrnFTP [bit]
+	,@TrnAmazonS3 [bit]
+	,@TimeLapse [int]
+	,@TimeLapseMeasurement [varchar](2) 
+	,@RetainHistoryNum [int]
+	,@ValidTimeToStart [varchar](5)	
+	,@ValidTimeToStartTolerance [int]
+	,@Enabled [bit]
+	,@LastRun [datetime] 
+	,@NextRun [datetime]
+AS
+IF (@ScheduleID = -1)
+BEGIN
+	INSERT INTO {databaseOwner}{objectQualifier}Evotiva_DNNBackup_Schedule
+		(ModuleID
+		,Description 
+		,BkpDatabase
+		,BkpFiles
+		,TrnFTP
+		,TrnAmazonS3
+		,TimeLapse 
+		,TimeLapseMeasurement 
+		,RetainHistoryNum 
+		,ValidTimeToStart
+		,ValidTimeToStartTolerance
+		,Enabled 
+		,LastRun 
+		,NextRun 
+		)
+	VALUES
+		(@ModuleID
+		,@Description 
+		,@BkpDatabase
+		,@BkpFiles
+		,@TrnFTP
+		,@TrnAmazonS3
+		,@TimeLapse 
+		,@TimeLapseMeasurement 
+		,@RetainHistoryNum 
+		,@ValidTimeToStart
+		,@ValidTimeToStartTolerance
+		,@Enabled 
+		,@LastRun 
+		,@NextRun 
+		)
+	select SCOPE_IDENTITY()
+END
+ELSE
+BEGIN
+	UPDATE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_Schedule
+	 SET ModuleID    = @ModuleID 
+		,Description = @Description
+		,BkpDatabase = @BkpDatabase
+		,BkpFiles = @BkpFiles
+		,TrnFTP   = @TrnFTP
+		,TrnAmazonS3 = @TrnAmazonS3
+		,TimeLapse    = @TimeLapse
+		,TimeLapseMeasurement  = @TimeLapseMeasurement
+		,RetainHistoryNum  = @RetainHistoryNum
+		,ValidTimeToStart  = @ValidTimeToStart
+		,ValidTimeToStartTolerance = @ValidTimeToStartTolerance
+		,Enabled  = @Enabled
+		,LastRun  = @LastRun
+		,NextRun  = @NextRun
+	 WHERE  ScheduleID = @ScheduleID
+	 SELECT @ScheduleID
+END
+GO
+
+if exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleDelete') 
+     and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	DROP PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleDelete
+GO
+CREATE PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleDelete
+	@ScheduleID [int]
+AS
+	DELETE FROM {databaseOwner}{objectQualifier}Evotiva_DNNBackup_Schedule
+	WHERE ScheduleID = @ScheduleID
+GO
+ 
+if exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleDatabaseGet') 
+     and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	DROP PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleDatabaseGet
+GO
+CREATE PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleDatabaseGet
+AS
+	SELECT * FROM {databaseOwner}{objectQualifier}Evotiva_DNNBackup_Schedule
+	WHERE BkpDatabase = 1
+GO
+
+if exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleFilesGet') 
+     and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	DROP PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleFilesGet
+GO
+CREATE PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleFilesGet
+AS
+	SELECT * FROM {databaseOwner}{objectQualifier}Evotiva_DNNBackup_Schedule
+	WHERE BkpFiles = 1
+GO
+
+if exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleGetAll') 
+     and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	DROP PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleGetAll
+GO
+CREATE PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleGetAll
+AS
+	SELECT * FROM {databaseOwner}{objectQualifier}Evotiva_DNNBackup_Schedule
+GO
+
+if exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleGetAllToRun') 
+     and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	DROP PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleGetAllToRun
+GO
+CREATE PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleGetAllToRun
+	@NextRun [datetime]
+AS
+	SELECT * FROM {databaseOwner}{objectQualifier}Evotiva_DNNBackup_Schedule
+	 WHERE [Enabled] = 1
+	   AND (NextRun < @NextRun OR NextRun is null)
+GO
+
+if exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleGet') 
+     and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	DROP PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleGet
+GO
+CREATE PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleGet
+	@ScheduleID [int]
+AS
+	SELECT * FROM {databaseOwner}{objectQualifier}Evotiva_DNNBackup_Schedule
+	WHERE ScheduleID = @ScheduleID
+GO
+
+if exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSettingsGet') 
+     and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	DROP PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSettingsGet
+GO
+CREATE PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSettingsGet
+	@ScheduleID [int]
+AS
+	SELECT * FROM {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSettings
+	WHERE ScheduleID = @ScheduleID
+GO
+
+if exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSettingSave') 
+     and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	DROP PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSettingSave
+GO
+CREATE PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSettingSave
+	@ScheduleID [int]
+	,@SettingName [nvarchar](50)
+	,@SettingValue [nvarchar](2000)
+AS
+DECLARE @count [int]
+SELECT @count = COUNT(1) 
+  FROM {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSettings 
+ WHERE ScheduleID  = @ScheduleID AND SettingName = @SettingName 
+IF (@count <= 0)
+BEGIN
+	INSERT INTO {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSettings
+		(ScheduleID
+		,SettingName
+		,SettingValue
+		)
+	VALUES
+		(@ScheduleID
+		,@SettingName
+		,@SettingValue
+		)
+	select SCOPE_IDENTITY()
+END
+ELSE
+BEGIN
+	UPDATE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleSettings
+	 SET  SettingValue = @SettingValue
+	 WHERE ScheduleID  = @ScheduleID
+	   AND SettingName = @SettingName 
+END
+GO
+
+if exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleHistoryAdd') 
+     and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	DROP PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleHistoryAdd
+GO
+CREATE PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleHistoryAdd
+	@RetainHistoryNum [int]
+	,@ScheduleID [int]
+	,@StartDate [datetime]
+	,@EndDate [datetime]
+	,@Succeeded [bit] 
+	,@LogNotes [ntext]
+AS
+	-- Insert Log
+	INSERT INTO {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleHistory
+		([ScheduleID]
+		,[StartDate]
+		,[EndDate]
+		,[Succeeded]
+		,[LogNotes])
+	VALUES
+		(@ScheduleID
+		,@StartDate
+		,@EndDate
+		,@Succeeded
+		,@LogNotes)
+		
+	-- Delete lod entries
+	DELETE FROM {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleHistory
+	WHERE 
+		{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleHistory.ScheduleID = @ScheduleID
+	  AND 
+		@RetainHistoryNum <> -1
+	  AND	
+		(SELECT COUNT(1) 
+		   FROM {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleHistory sh
+		  WHERE sh.ScheduleID = @ScheduleID 
+		    AND sh.StartDate >= {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleHistory.StartDate
+		) > @RetainHistoryNum
+GO
+
+if exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleHistoryGet') 
+     and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	DROP PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleHistoryGet
+GO
+CREATE PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleHistoryGet
+	@ScheduleID [int]
+AS
+	SELECT * FROM {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleHistory
+	WHERE ScheduleID = @ScheduleID
+	ORDER BY StartDate DESC
+GO
+
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/

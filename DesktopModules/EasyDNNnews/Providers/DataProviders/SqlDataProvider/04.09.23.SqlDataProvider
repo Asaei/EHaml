@@ -1,0 +1,52 @@
+﻿/****** Created script for delete duplicates from EasyDNNNewsGallery table and insert into EasyDNNNewsArticleGalleryItems table ******/
+/****** Created script for delete duplicates from EasyDNNNewsGallery table ******/
+/****** Created script for insert lightbox settings from old newsgallery items table ******/
+
+BEGIN TRY
+;WITH cte AS
+	(SELECT ROW_NUMBER() OVER (PARTITION BY ArticleID, GalleryID ORDER BY ( SELECT 0)) AS RN FROM [dbo].[EasyDNNNewsGallery])
+DELETE FROM cte WHERE  RN > 1
+END TRY
+BEGIN CATCH
+END CATCH
+
+DELETE FROM [dbo].[EasyDNNNewsGallery] WHERE ArticleID NOT IN (SELECT ArticleID From [dbo].[EasyDNNNews]);
+DELETE FROM [dbo].[EasyDNNNewsGallery] WHERE GalleryID NOT IN (SELECT GalleryID From [dbo].[EasyGallery]);
+
+BEGIN TRANSACTION;
+BEGIN TRY
+SET NOCOUNT ON;
+With cte As
+	(
+	SELECT ArticleID, GalleryID, ROW_NUMBER() OVER (PARTITION BY ArticleID ORDER BY ItenID ASC) AS Position FROM [dbo].[EasyDNNNewsGallery]
+	)
+	INSERT INTO [dbo].[EasyDNNNewsArticleGalleryItems] (ArticleID, GalleryID, Position) SELECT ArticleID, GalleryID, Position FROM cte
+END TRY
+BEGIN CATCH
+	IF @@TRANCOUNT > 0
+		ROLLBACK TRANSACTION;
+END CATCH;
+IF @@TRANCOUNT > 0
+	COMMIT TRANSACTION;	
+
+BEGIN TRY
+INSERT INTO EasyDNNNewsLightboxSettings 
+SELECT DISTINCT n.PortalID
+	  ,null AS ModuleID
+	  ,ng.[ArticleID]
+      ,ng.[ThumbWidth] AS ThumbWidth
+      ,ng.[ThumbHeight] AS ThumbHeight
+      ,ng.[Param1] AS ItemsPerPage
+      ,ng.[Param2] AS NumOfColumns
+      ,ng.[Param3] AS PagerType
+      ,ng.[Param4] AS GalleryTheme
+      ,'light_rounded' AS LightboxTheme
+      ,CAST(ng.[ShowTitle] AS Bit) AS ShowTitle
+      ,CAST(ng.[ShowDescription] AS Bit) AS ShowDescription
+      ,CAST(ng.[ShowLightBoxTitle] AS Bit) AS ShowLightBoxTitle
+      ,CAST(ng.[ShowLightBoxDescription] AS Bit) AS ShowLightBoxDescription
+      ,CAST(ng.[Responsive] AS Bit) AS Responsive
+  FROM EasyDNNNewsGallery as ng INNER JOIN EasyDNNNews as n ON ng.ArticleID = n.ArticleID
+END TRY
+BEGIN CATCH
+END CATCH

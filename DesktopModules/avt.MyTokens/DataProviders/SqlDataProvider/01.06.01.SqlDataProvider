@@ -1,0 +1,62 @@
+﻿
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtMyTokens2_Tokens] ADD DefaultValue nvarchar(255) NULL
+GO
+
+
+--------------------------------------------------------------------------------------------
+
+
+ALTER procedure {databaseOwner}[{objectQualifier}avtMyTokens2_AddToken]
+
+	@tokenName		nvarchar(255),
+	@tokenDesc		ntext,
+	@tokenSrc		ntext,
+	@tokenParse		ntext,
+	@cacheTimeSec	int,
+	@namespaceId	int,
+    @defVal         nvarchar(255)
+
+as
+
+INSERT INTO {databaseOwner}[{objectQualifier}avtMyTokens2_Tokens] (TokenName, TokenDescription, TokenSource, TokenParse, CacheTimeSec, NamespaceId, DefaultValue)
+	VALUES (@tokenName, @tokenDesc, @tokenSrc, @tokenParse, @cacheTimeSec, @namespaceId, @defVal)
+
+SELECT SCOPE_IDENTITY()
+
+GO
+
+--------------------------------------------------------------------------------------------
+
+ALTER procedure {databaseOwner}[{objectQualifier}avtMyTokens2_UpdateToken]
+
+	@tokenID		int,
+	@tokenName		nvarchar(255),
+	@tokenDesc		ntext,
+	@tokenSrc		ntext,
+	@tokenParse		ntext,
+	@cacheTimeSec	int,
+	@namespaceId	int,
+    @defVal         nvarchar(255)
+
+as
+
+
+UPDATE {databaseOwner}[{objectQualifier}avtMyTokens2_Tokens] 
+SET 
+	TokenName = @tokenName, 
+	TokenDescription = @tokenDesc, 
+	TokenSource = @tokenSrc,
+	TokenParse = @tokenParse,
+	CacheTimeSec = @cacheTimeSec,
+	NamespaceId = @namespaceId,
+    DefaultValue = @defVal
+WHERE TokenID = @tokenID
+
+GO
+

@@ -1,0 +1,273 @@
+﻿
+-- Namespaces Table
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE {databaseOwner}[{objectQualifier}avtMyTokens2_Namespaces](
+	[NamespaceId] [int] IDENTITY(1,1) NOT NULL,
+	[PortalId] [int] NULL,
+	[NamespaceName] [nvarchar](255) NOT NULL,
+	[NamespaceDescription] [ntext] NULL,
+ CONSTRAINT [PK_{objectQualifier}avtMyTokens2_Sources] PRIMARY KEY CLUSTERED 
+(
+	[NamespaceId] ASC
+)
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtMyTokens2_Namespaces]  WITH CHECK ADD  CONSTRAINT [FK_{objectQualifier}avtMyToken2_Namespaces_{objectQualifier}Portals] FOREIGN KEY([PortalId])
+REFERENCES {databaseOwner}[{objectQualifier}Portals] ([PortalID])
+ON DELETE CASCADE
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtMyTokens2_Namespaces] CHECK CONSTRAINT [FK_{objectQualifier}avtMyToken2_Namespaces_{objectQualifier}Portals]
+GO
+
+
+-- Tokens Table
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE {databaseOwner}[{objectQualifier}avtMyTokens2_Tokens](
+	[TokenID] [int] IDENTITY(1,1) NOT NULL,
+	[TokenName] [nvarchar](255) NOT NULL,
+	[TokenDescription] [ntext] NOT NULL,
+	[TokenSource] [ntext] NOT NULL,
+	[TokenParse] [ntext] NOT NULL,
+	[CacheTimeSec] [int] NOT NULL,
+	[NamespaceId] [int] NOT NULL,
+ CONSTRAINT [PK_{objectQualifier}avtCustok_Tokens] PRIMARY KEY CLUSTERED 
+(
+	[TokenID] ASC
+)
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtMyTokens2_Tokens]  WITH CHECK ADD  CONSTRAINT [FK_{objectQualifier}avtMyTokens2_Tokens_{objectQualifier}avtMyTokens2_Namespaces] FOREIGN KEY([NamespaceId])
+REFERENCES {databaseOwner}[{objectQualifier}avtMyTokens2_Namespaces] ([NamespaceId])
+ON DELETE CASCADE
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtMyTokens2_Tokens] CHECK CONSTRAINT [FK_{objectQualifier}avtMyTokens2_Tokens_{objectQualifier}avtMyTokens2_Namespaces]
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtMyTokens2_Tokens] ADD  CONSTRAINT [DF_{objectQualifier}avtMyTokens2_Tokens_CacheTime]  DEFAULT ((3600)) FOR [CacheTimeSec]
+GO
+
+
+--------------------------------------------------------------------------------------------
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtMyTokens2_AddNamespace]
+
+	@portalId		int,
+	@name		nvarchar(255),
+	@desc		ntext
+
+as
+
+IF @portalId < 0
+	SET @portalId = NULL
+
+INSERT INTO {databaseOwner}[{objectQualifier}avtMyTokens2_Namespaces] (PortalId, NamespaceName, NamespaceDescription)
+	VALUES (@portalID, @name, @desc)
+
+SELECT SCOPE_IDENTITY()
+
+GO
+
+--------------------------------------------------------------------------------------------
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtMyTokens2_AddToken]
+
+	@tokenName		nvarchar(255),
+	@tokenDesc		ntext,
+	@tokenSrc		ntext,
+	@tokenParse		ntext,
+	@cacheTimeSec	int,
+	@namespaceId	int
+
+as
+
+INSERT INTO {databaseOwner}[{objectQualifier}avtMyTokens2_Tokens] (TokenName, TokenDescription, TokenSource, TokenParse, CacheTimeSec, NamespaceId)
+	VALUES (@tokenName, @tokenDesc, @tokenSrc, @tokenParse, @cacheTimeSec, @namespaceId)
+
+SELECT SCOPE_IDENTITY()
+
+GO
+
+--------------------------------------------------------------------------------------------
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtMyTokens2_DeleteNamespace]
+
+	@nsID		int
+
+as
+
+DELETE FROM {databaseOwner}[{objectQualifier}avtMyTokens2_Namespaces] WHERE NamespaceId = @nsID
+
+GO
+
+--------------------------------------------------------------------------------------------
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtMyTokens2_DeleteToken]
+
+	@tokenID		int
+
+as
+
+DELETE FROM {databaseOwner}[{objectQualifier}avtMyTokens2_Tokens] WHERE TokenID = @tokenID
+
+GO
+
+
+--------------------------------------------------------------------------------------------
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtMyTokens2_GetNamespaces]
+
+	@portalID		int
+
+as
+
+SELECT * FROM {databaseOwner}[{objectQualifier}avtMyTokens2_Namespaces] 
+WHERE PortalID = @portalID OR PortalID IS NULL
+Order By NamespaceName
+
+GO
+
+--------------------------------------------------------------------------------------------
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtMyTokens2_GetToken]
+
+	@tokenID		int
+
+as
+
+SELECT *  FROM {databaseOwner}[{objectQualifier}avtMyTokens2_Tokens] WHERE TokenID = @tokenID
+
+GO
+
+--------------------------------------------------------------------------------------------
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtMyTokens2_GetTokensByNs]
+
+	@nsID		int
+
+as
+
+SELECT * FROM {databaseOwner}[{objectQualifier}avtMyTokens2_Tokens] 
+	WHERE NamespaceId = @nsID
+
+GO
+
+--------------------------------------------------------------------------------------------
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtMyTokens2_UpdateNamespace]
+
+	@nsID		int,
+	@portalID	int,
+	@name		nvarchar(255),
+	@desc		ntext
+
+as
+
+IF @portalId < 0
+	SET @portalId = NULL
+
+
+UPDATE {databaseOwner}[{objectQualifier}avtMyTokens2_Namespaces]
+SET 
+	PortalId = @portalID, 
+	NamespaceName = @name, 
+	NamespaceDescription = @desc
+WHERE NamespaceId = @nsID
+
+GO
+
+--------------------------------------------------------------------------------------------
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtMyTokens2_UpdateToken]
+
+	@tokenID		int,
+	@tokenName		nvarchar(255),
+	@tokenDesc		ntext,
+	@tokenSrc		ntext,
+	@tokenParse		ntext,
+	@cacheTimeSec	int,
+	@namespaceId	int
+
+as
+
+
+UPDATE {databaseOwner}[{objectQualifier}avtMyTokens2_Tokens] 
+SET 
+	TokenName = @tokenName, 
+	TokenDescription = @tokenDesc, 
+	TokenSource = @tokenSrc,
+	TokenParse = @tokenParse,
+	CacheTimeSec = @cacheTimeSec,
+	NamespaceId = @namespaceId
+WHERE TokenID = @tokenID
+
+GO
+
+
+

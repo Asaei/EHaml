@@ -1,0 +1,82 @@
+<token>
+    <name>AjaxFeed</name>
+    <desc>Google AJAX Feed API allows to embed a Dynamic Feed Control on your web page and let your users see customized views of the feeds.</desc>
+    <cacheTimeSeconds>86400</cacheTimeSeconds>
+    <docurl>http://www.google.com/uds/solutions/wizards/dynamicfeed.html</docurl>
+    
+    <src>
+        <type>string</type>
+        <text>
+
+          <div id="feed-control"><span style="color:#676767;font-size:11px;margin:10px;padding:4px;">Loading...</span></div>
+
+          <!-- Google Ajax Api -->
+          <script src="http://www.google.com/jsapi?key=notsupplied-wizard" type="text/javascript"></script>
+
+          <!-- Dynamic Feed Control and Stylesheet -->
+          <script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js" type="text/javascript"></script>
+          <style type="text/css">@import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css");</style>
+
+          <script type="text/javascript">
+            function LoadDynamicFeedControl() {
+                var strFeeds = "{{Feeds|{0} }}".split(";");
+                
+                var feeds = [];
+                for (var i = 0; i &lt; strFeeds.length; i++) {
+                    feeds.push({ title:strFeeds[i].substr(strFeeds[i].indexOf("#")+1), url:strFeeds[i].substr(0, strFeeds[i].indexOf("#")) });
+                }
+                
+                var mode = "{{displaymode|{0} }}";
+                var options = {
+                    stacked :  mode == "VerticalStacked",
+                    horizontal :  mode == "Horizontal",
+                    title : ""
+                }
+
+                new GFdynamicFeedControl(feeds, 'feed-control', options);
+            }
+            // Load the feeds API and set the onload callback.
+            google.load('feeds', '1');
+            google.setOnLoadCallback(LoadDynamicFeedControl);
+          </script>
+
+        </text>
+    </src>
+    
+    <parser>
+        <type>string</type>
+        <replace>false</replace>
+        <decodeHtml>false</decodeHtml>
+    </parser>
+    
+    <param>
+        <name>Feeds</name>
+        <type>string</type>
+        <desc>List of feed URLs to aggregate items from separate with semicolon. Include bookmark at end of the feed to set a title, for example: site.com/rss.xml#<b>My Title</b></desc>
+        <required>true</required>
+    </param>
+    
+    <param>
+        <name>DisplayMode</name>
+        <type>enum</type>
+        <desc>
+            Number and position of articles to display. 
+            Horizontal - only one article is show at a time and it changes every few seconds. 
+            Vertical - show 4 articles from one source, then switch to 4 articles from next source and so on.
+            VerticalStacked - show 4 articles from each source upfront.
+        </desc>
+        <values>Horizontal,Vertical,VerticalStacked</values><!-- only for enums, comma separated list -->
+        <required>false</required>
+        <default>VerticalStacked</default>
+    </param>
+    
+    <example>
+        <codeSnippet>[News:AjaxFeed(DisplayMode=Horizontal,Feeds="http://rss.people.com/web/people/rss/topheadlines/index.xml#People.com Celebrity News;http://www.eonline.com/syndication/feeds/rssfeeds/topstories.xml#E! Online Entertainment News")]</codeSnippet>
+        <desc>Rotates one headline from the two RSS sources.</desc>
+    </example>
+    <example>
+        <codeSnippet>[News:AjaxFeed(Feeds="http://rss.people.com/web/people/rss/topheadlines/index.xml#People.com Celebrity News;http://www.eonline.com/syndication/feeds/rssfeeds/topstories.xml#E! Online Entertainment News")]</codeSnippet>
+        <desc>Embeds celebrity news by merging two sources (RSS Feeds) and stack 4 from eacb source.</desc>
+    </example>
+    
+</token>

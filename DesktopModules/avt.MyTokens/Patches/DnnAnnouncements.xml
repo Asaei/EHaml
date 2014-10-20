@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<patch>
+    <for>
+        <module-name>DNN_Announcements</module-name>
+        <keys>
+            <key></key>
+        </keys>
+    </for>
+    <patcher>avt.MyTokens.Patching.SimplePatcher,avt.MyTokens.Core</patcher>
+    <code-vb>
+        <init>
+        </init>
+        <pre-render>
+        <![CDATA[
+            litAnnouncements.Text = Tokenize(litAnnouncements.Text, ModuleConfiguration, False, False)
+        ]]>
+        </pre-render>
+    </code-vb>
+	<code-cs>
+        <init>
+        </init>
+        <pre-render>
+        <![CDATA[
+            litAnnouncements.Text = Tokenize(litAnnouncements.Text, ModuleConfiguration, false, false);
+        ]]>
+        </pre-render>
+    </code-cs>
+</patch>

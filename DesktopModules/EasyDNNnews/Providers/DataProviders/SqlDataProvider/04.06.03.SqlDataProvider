@@ -1,0 +1,30 @@
+﻿/****** Object:  StoredProcedure [dbo].[EasyDNNNewsShowCategoriesByPermissions]    Script Date: 06/12/2012 11:45:37 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsShowCategoriesByPermissions]') AND type in (N'P', N'PC'))
+BEGIN
+drop procedure [dbo].[EasyDNNNewsShowCategoriesByPermissions]
+END
+GO
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE [dbo].[EasyDNNNewsShowCategoriesByPermissions]
+    @UserID int,
+    @PortalID int,
+    @ModuleID int
+AS 
+CREATE TABLE #tempCat([CategoryID] int);
+SET NOCOUNT ON
+INSERT #tempCat SELECT DISTINCT CategoryID
+FROM [dbo].[EasyDNNNewsRolePremissionsShowCategories] AS rpsc
+  INNER JOIN [dbo].[EasyDNNNewsRolePremissionSettings] AS rps ON rps.PremissionSettingsID = rpsc.PremissionSettingsID
+   INNER JOIN {databaseOwner}{objectQualifier}UserRoles AS ur ON ur.RoleID = rps.RoleID
+    WHERE ur.UserID = @UserID AND rps.ModuleID = @ModuleID AND rps.PortalID = @PortalID;
+INSERT #tempCat SELECT CategoryID
+FROM [dbo].[EasyDNNNewsUserPremissionsShowCategories] AS upsc
+  INNER JOIN [dbo].[EasyDNNNewsUserPremissionSettings] AS ups ON upsc.PremissionSettingsID = ups.PremissionSettingsID
+   WHERE ups.PortalID = @PortalID AND ups.ModuleID = @ModuleID AND ups.UserID = @UserID;
+
+SELECT DISTINCT CategoryID FROM #tempCat;
+DROP TABLE #tempCat;                              
+' 

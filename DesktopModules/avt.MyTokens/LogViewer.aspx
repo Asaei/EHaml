@@ -1,0 +1,1 @@
+<%@ Page Language="c#" AutoEventWireup="True" Explicit="True" Inherits="avt.MyTokens.LogViewer" CodeBehind="LogViewer.aspx.cs" %>

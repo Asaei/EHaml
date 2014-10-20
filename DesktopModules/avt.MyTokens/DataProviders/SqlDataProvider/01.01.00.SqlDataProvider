@@ -1,0 +1,173 @@
+﻿-- DROP EVERYTHING
+IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[FK_{objectQualifier}avtMyTokens_Tokens_{objectQualifier}Modules]') AND OBJECTPROPERTY(id, N'IsForeignKey') = 1)
+ALTER TABLE  {databaseOwner}[{objectQualifier}avtMyTokens_Tokens]  DROP CONSTRAINT [FK_{objectQualifier}avtMyTokens_Tokens_{objectQualifier}Modules]
+GO
+
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens_Tokens]') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
+DROP TABLE  {databaseOwner}[{objectQualifier}avtMyTokens_Tokens]
+GO
+
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens_DeleteToken]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens_DeleteToken]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens_GetToken]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens_GetToken]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens_UpdateToken]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens_UpdateToken]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens_CheckName]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens_CheckName]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens_AddToken]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens_AddToken]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens_GetPortalTokens]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens_GetPortalTokens]
+GO
+
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtMyTokens_GetPortalTokens]
+
+	@portalID		int
+
+as
+
+SELECT * FROM {databaseOwner}{objectQualifier}avtMyTokens_Tokens WHERE PortalID = @portalID
+
+
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE {databaseOwner}[{objectQualifier}avtMyTokens_Tokens](
+	[TokenID] [int] IDENTITY(1,1) NOT NULL,
+	[PortalID] [int] NOT NULL,
+	[TokenName] [nvarchar](255) NOT NULL,
+	[TokenDescription] [ntext] NOT NULL,
+	[TokenType] [int] NOT NULL,
+	[TokenRule] [ntext] NOT NULL,
+	[TokenData] [ntext] NOT NULL,
+	[IsGlobal] [int] NOT NULL CONSTRAINT [DF_{objectQualifier}avtMyTokens_Tokens_IsGlobal]  DEFAULT ((1)),
+ CONSTRAINT [PK_{objectQualifier}avtMyTokens_Tokens] PRIMARY KEY CLUSTERED 
+(
+	[TokenID] ASC
+)
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtMyTokens_DeleteToken]
+
+	@tokenID		int
+
+as
+
+DELETE FROM {databaseOwner}{objectQualifier}avtMyTokens_Tokens WHERE TokenID = @tokenID
+
+
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtMyTokens_GetToken]
+
+	@tokenID		int
+
+as
+
+SELECT *  FROM {databaseOwner}{objectQualifier}avtMyTokens_Tokens WHERE TokenID = @tokenID
+
+
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtMyTokens_UpdateToken]
+
+	@tokenID		int,
+	@tokenName		nvarchar(255),
+	@tokenDesc		ntext,
+	@tokenType		int,
+	@tokenRule		ntext,
+	@tokenData		ntext
+
+as
+
+UPDATE {databaseOwner}{objectQualifier}avtMyTokens_Tokens 
+SET 
+	TokenName = @tokenName, 
+	TokenDescription = @tokenDesc, 
+	TokenType = @tokenType, 
+	TokenRule = @tokenRule,
+	TokenData = @tokenData
+WHERE TokenID = @tokenID
+
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtMyTokens_CheckName]
+
+	@portalID			int,
+	@tokenNameToCheck	nvarchar(255),
+	@exceptThisTokenID	int
+
+as
+
+IF @exceptThisTokenID <= 0
+BEGIN
+	IF EXISTS (SELECT TokenID FROM {databaseOwner}{objectQualifier}avtMyTokens_Tokens WHERE TokenName = @tokenNameToCheck AND PortalID = @portalID)
+		SELECT 0
+	ELSE
+		SELECT 1
+END
+ELSE
+BEGIN
+	IF EXISTS (SELECT TokenID FROM {databaseOwner}{objectQualifier}avtMyTokens_Tokens WHERE TokenName = @tokenNameToCheck AND PortalID = @portalID AND TokenID != @exceptThisTokenID)
+		SELECT 0
+	ELSE
+		SELECT 1
+END
+
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtMyTokens_AddToken]
+
+	@portalID		int,
+	@tokenName		nvarchar(255),
+	@tokenDesc		ntext,
+	@tokenType		int,
+	@tokenRule		ntext,
+	@tokenData		ntext
+
+as
+
+INSERT INTO {databaseOwner}{objectQualifier}avtMyTokens_Tokens (PortalID, TokenName, TokenDescription, TokenType, TokenRule, TokenData)
+	VALUES (@portalID, @tokenName, @tokenDesc, @tokenType, @tokenRule, @tokenData)
+SELECT SCOPE_IDENTITY()
+
+GO

@@ -1,0 +1,43 @@
+﻿
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- Add a primary key for the avtMyTokens2_ExternalApi table
+------------------------------------------------------------------------------------------------------------------
+
+IF NOT EXISTS (select * from INFORMATION_SCHEMA.COLUMNS where table_name = '{objectQualifier}avtMyTokens2_ExternalApi' and column_name = 'Id')
+	ALTER TABLE {databaseOwner}[{objectQualifier}avtMyTokens2_ExternalApi] ADD Id int NOT NULL IDENTITY (1,1) PRIMARY KEY
+GO
+
+-- Add Secret for Api Keys - we use this for passthru authentication
+------------------------------------------------------------------------------------------------------------------
+
+IF NOT EXISTS (select * from INFORMATION_SCHEMA.COLUMNS where table_name = '{objectQualifier}avtMyTokens2_ExternalApiKeys' and column_name = 'SecretKey')
+	ALTER TABLE {databaseOwner}[{objectQualifier}avtMyTokens2_ExternalApiKeys] ADD SecretKey nvarchar(MAX) NULL
+GO
+
+-- Drop CRUD procs for Api keys - we've switched these to orm
+------------------------------------------------------------------------------------------------------------------
+
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens2_DeleteApiKey]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens2_DeleteApiKey]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens2_GetApiKeys]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens2_GetApiKeys]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens2_GetApiSettings]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens2_GetApiSettings]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens2_SetupApi]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens2_SetupApi]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens2_UpdateApiKey]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens2_UpdateApiKey]
+GO
+
+
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------

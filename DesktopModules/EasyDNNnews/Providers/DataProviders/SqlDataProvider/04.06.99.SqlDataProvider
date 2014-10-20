@@ -1,0 +1,93 @@
+﻿BEGIN TRANSACTION;
+DECLARE @RowsToProcess int;
+DECLARE @CurrentRow int;
+DECLARE @UserID int;
+DECLARE @RoleID int;
+DECLARE @PortalID int;
+DECLARE @PremissionSettingsID int;
+
+IF OBJECT_ID('tempdb..#UserPermissions') IS NOT NULL
+BEGIN
+DROP TABLE #UserPermissions;
+END
+
+CREATE TABLE #UserPermissions
+( 
+	RowID int not null primary key identity(1,1),
+	UserID int not null,
+	PortalID int not null,
+	PremissionSettingsID int not null
+)
+IF OBJECT_ID('tempdb..#RolePermissions') IS NOT NULL
+BEGIN
+DROP TABLE #RolePermissions;
+END
+
+CREATE TABLE #RolePermissions
+( 
+	RowID int not null primary key identity(1,1),
+	RoleID int not null,
+	PortalID int not null,
+	PremissionSettingsID int not null
+)
+SET NOCOUNT ON 
+BEGIN TRY
+IF EXISTS (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsUserPremissionSettings' and column_name = 'AddEditArticles')
+BEGIN
+	INSERT INTO #UserPermissions (UserID, PortalID, PremissionSettingsID) SELECT up.[UserID],up.[PortalID],up.[PremissionSettingsID] FROM [dbo].[EasyDNNNewsUserPremissionSettings] as up WHERE up.AddEditArticles = 'False' ORDER BY PortalID;
+	SET @RowsToProcess=@@ROWCOUNT;
+	SET @CurrentRow = 0
+	WHILE @CurrentRow < @RowsToProcess
+	BEGIN TRY
+		SET @CurrentRow = @CurrentRow + 1;
+		SELECT @UserID = up.UserID, @PortalID = up.PortalID, @PremissionSettingsID = up.PremissionSettingsID FROM #UserPermissions as up WHERE up.RowID=@CurrentRow;
+		UPDATE [dbo].[EasyDNNNewsUserPremissionSettings] SET [AddArticleToAll] = 'False' WHERE UserID = @UserID AND PortalID = @PortalID;
+		DELETE FROM [dbo].[EasyDNNNewsUserPremissionsAddToCategories] WHERE PremissionSettingsID = @PremissionSettingsID;
+	END TRY
+	BEGIN CATCH    
+	END CATCH
+	ALTER TABLE EasyDNNNewsUserPremissionSettings
+	DROP COLUMN AddEditArticles; 
+END
+IF EXISTS (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsRolePremissionSettings' and column_name = 'AddEditArticles')
+BEGIN
+	INSERT INTO #RolePermissions (RoleID, PortalID, PremissionSettingsID) SELECT rp.[RoleID],rp.[PortalID],rp.[PremissionSettingsID] FROM [dbo].[EasyDNNNewsRolePremissionSettings] as rp WHERE rp.AddEditArticles = 'False' ORDER BY PortalID;
+	SET @RowsToProcess=@@ROWCOUNT;
+	SET @CurrentRow = 0
+	WHILE @CurrentRow < @RowsToProcess
+	BEGIN TRY
+		SET @CurrentRow = @CurrentRow + 1;
+		SELECT @RoleID = rp.RoleID, @PortalID = rp.PortalID, @PremissionSettingsID = rp.PremissionSettingsID FROM #RolePermissions as rp WHERE rp.RowID=@CurrentRow;
+		UPDATE [dbo].[EasyDNNNewsRolePremissionSettings] SET [AddArticleToAll] = 'False' WHERE RoleID = @RoleID AND PortalID = @PortalID;
+		DELETE FROM [dbo].[EasyDNNNewsRolePremissionsAddToCategories] WHERE PremissionSettingsID = @PremissionSettingsID;
+	END TRY
+	BEGIN CATCH    
+	END CATCH
+	ALTER TABLE EasyDNNNewsRolePremissionSettings
+	DROP COLUMN AddEditArticles;
+END
+END TRY
+BEGIN CATCH
+    SELECT 
+         ERROR_NUMBER() AS ErrorNumber
+        ,ERROR_SEVERITY() AS ErrorSeverity
+        ,ERROR_STATE() AS ErrorState
+        ,ERROR_PROCEDURE() AS ErrorProcedure
+        ,ERROR_LINE() AS ErrorLine
+        ,ERROR_MESSAGE() AS ErrorMessage;
+
+    IF @@TRANCOUNT > 0
+        ROLLBACK TRANSACTION;
+END CATCH;
+
+IF @@TRANCOUNT > 0
+    COMMIT TRANSACTION;
+    
+IF OBJECT_ID('tempdb..#UserPermissions') IS NOT NULL
+BEGIN
+DROP TABLE #UserPermissions;
+END
+IF OBJECT_ID('tempdb..#RolePermissions') IS NOT NULL
+BEGIN
+DROP TABLE #RolePermissions;
+END  

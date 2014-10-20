@@ -1,0 +1,34 @@
+﻿<div class="last-estelams">
+    <div class="div-rotated">
+        
+        
+        <div class="eh-last-item" onclick="replyToInquiry([ID],'[InquiryType]');">
+            <div class="right-sd">
+                <h2 class="eh-last-ostan-item">[StartingPoint]</h2>
+                <h2 class="eh-last-shahr-item">[StartingPoint]</h2>
+            </div>
+            <div class="left-sd">
+                <h2 class="eh-last-ostan-item">[Destination]</h2>
+                <h2 class="eh-last-shahr-item">[Destination]</h2>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".eh-last-ostan-item").each(function () {
+            var val = $(this).html().split(":")[0];
+            $(this).html(val);
+        });
+        $(".eh-last-shahr-item").each(function () {
+            var val = $(this).html().split(":")[1];
+            $(this).html(val);
+        });
+    });
+
+    function replyToInquiry(id, ctlName) {
+        window.location = '/default.aspx?tabid=113&mid=1433&ctl=ReplyToInquiry_' + ctlName + '&InqId=' + id;
+    }
+</script>

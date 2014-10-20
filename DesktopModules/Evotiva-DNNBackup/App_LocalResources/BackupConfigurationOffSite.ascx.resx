@@ -1,0 +1,673 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnFTPTest.Text" xml:space="preserve">
+    <value>Test FTP Connection</value>
+  </data>
+  <data name="ControlTitle_backupconfigurationglobal.Text" xml:space="preserve">
+    <value>Backup Configuration - OffSite Backup Settings</value>
+  </data>
+  <data name="FTPMissingServerOrUser.Text" xml:space="preserve">
+    <value>You should specify at least the FTP server name and user name.</value>
+  </data>
+  <data name="FtpStuff.Text" xml:space="preserve">
+    <value>(S)FTP Options</value>
+  </data>
+  <data name="FTPTestError.Text" xml:space="preserve">
+    <value>&lt;br /&gt;FTP connection test completed with errors:&lt;br /&gt;</value>
+  </data>
+  <data name="FTPTestOK.Text" xml:space="preserve">
+    <value>&lt;br /&gt;FTP connection test successfully completed.</value>
+  </data>
+  <data name="lblFtpPassiveMode.Help" xml:space="preserve">
+    <value>Use passive mode data connection (otherwise active mode will be used).
+Note that active and passive refer to the operation of the FTP server, not the client.</value>
+  </data>
+  <data name="lblFtpPassiveMode.Text" xml:space="preserve">
+    <value>Use Passive Mode</value>
+  </data>
+  <data name="lblFtpPassword.Help" xml:space="preserve">
+    <value>Password (credentials) for the FTP server.</value>
+  </data>
+  <data name="lblFtpPassword.Text" xml:space="preserve">
+    <value>FTP Password</value>
+  </data>
+  <data name="lblFtpPasswordConfirm.Help" xml:space="preserve">
+    <value>Retype the ftp password.</value>
+  </data>
+  <data name="lblFtpPasswordConfirm.Text" xml:space="preserve">
+    <value>Confirm password</value>
+  </data>
+  <data name="lblFtpRemoteFolder.Help" xml:space="preserve">
+    <value>Where to upload the files on the remote folder (e.g. /backupfiles/mysitebackup).
+Note: you can leave this setting empty to upload to the default folder.</value>
+  </data>
+  <data name="lblFtpRemoteFolder.Text" xml:space="preserve">
+    <value>Remote Folder</value>
+  </data>
+  <data name="lblFtpServer.Help" xml:space="preserve">
+    <value>FTP server name or IP address (e.g. ftp.myothersite.com)</value>
+  </data>
+  <data name="lblFtpServer.Text" xml:space="preserve">
+    <value>FTP Server</value>
+  </data>
+  <data name="lblFtpUser.Help" xml:space="preserve">
+    <value>User (credentials) for the FTP server.</value>
+  </data>
+  <data name="lblFtpUser.Text" xml:space="preserve">
+    <value>FTP User</value>
+  </data>
+  <data name="lblPerformFtpTransfer.Help" xml:space="preserve">
+    <value>Enable this setting to transfer the backup file(s) via FTP to the configured FTP server.
+Note: An existing file will be overwritten / Old files will not be purged.</value>
+  </data>
+  <data name="lblPerformFtpTransfer.Text" xml:space="preserve">
+    <value>FTP Transfer Enabled</value>
+  </data>
+  <data name="valFtpPasswordMatch.Text" xml:space="preserve">
+    <value>&lt;br /&gt;FTP Password doesn't match.</value>
+  </data>
+  <data name="valBackupFileMaxCount.Text" xml:space="preserve">
+    <value>&lt;br /&gt;&lt;br /&gt;Should be greater or equal than zero</value>
+  </data>
+  <data name="FeatureUnavailable.Text" xml:space="preserve">
+    <value>Feature unavailable in your current environment.</value>
+  </data>
+  <data name="valCompressionBuffer.Text" xml:space="preserve">
+    <value>&lt;br /&gt;Valid buffer sizes are from 64 to 20480 bytes.</value>
+  </data>
+  <data name="valEmailAddress.Text" xml:space="preserve">
+    <value>&lt;br /&gt;The email address is not valid.</value>
+  </data>
+  <data name="AmazonS3Stuff.Text" xml:space="preserve">
+    <value>Amazon S3 Options</value>
+  </data>
+  <data name="AmazonS3TestError.Text" xml:space="preserve">
+    <value>&lt;br /&gt;Amazon S3 connection test completed with errors:&lt;br /&gt;</value>
+  </data>
+  <data name="AmazonS3TestOK.Text" xml:space="preserve">
+    <value>&lt;br /&gt;Amazon S3 connection test successfully completed.</value>
+  </data>
+  <data name="btnAmazonS3Test.Text" xml:space="preserve">
+    <value>Test Amazon S3 Connection</value>
+  </data>
+  <data name="lblAmazonAccessKeyID.Help" xml:space="preserve">
+    <value>Your Amazon's Access Key.</value>
+  </data>
+  <data name="lblAmazonAccessKeyID.Text" xml:space="preserve">
+    <value>Access Key ID</value>
+    <comment>.</comment>
+  </data>
+  <data name="lblAmazonBucketName.Help" xml:space="preserve">
+    <value>Type the name of an already created Bucket. E.g. "mybucketname". Use any Amazon S3 GUI front-end application to configure your buckets, permissions, etc. e.g. you can use CloudBerry S3 Explorer Freeware from www.cloudberrylab.com, S3Fox Organizer(S3Fox) from www.s3fox.net, etc.</value>
+  </data>
+  <data name="lblAmazonBucketName.Text" xml:space="preserve">
+    <value>Bucket Name</value>
+  </data>
+  <data name="lblAmazonFileNamePattern.Help" xml:space="preserve">
+    <value>This is how the files will be named in you Amazon S3 bucket. The [backupfile] token will be replaced with the backup file name. You can also specify 'folders'. e.g. DNNBackup/[backupfile]</value>
+  </data>
+  <data name="lblAmazonFileNamePattern.Text" xml:space="preserve">
+    <value>Backup File Name Pattern (S3 key name)</value>
+  </data>
+  <data name="lblAmazonS3Info.Text" xml:space="preserve">
+    <value>&lt;ul&gt;
+&lt;li&gt;Don't have an Amazon S3 account?  &lt;a  href="http://aws.amazon.com/s3/" target="_blank" class="CommandButton"&gt;Create an account&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;You can manage your account, access keys and review account activity online at &lt;a href="http://aws.amazon.com/account" target="_blank" class="CommandButton"&gt;http://aws.amazon.com/account&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;NOTE: DNNBackup will upload your backup file(s) to an already created account and 'bucket'. You can manage your account, buckets permissions, etc. from any Amazon S3 GUI front-end application, like  &lt;a  target="_blank" class="CommandButton" href="https://console.aws.amazon.com/s3/home"&gt;AWS Management Console:&lt;/a&gt;, CloudBerry S3 Explorer Freeware &lt;a href="http://www.cloudberrylab.com" target="_blank" class="CommandButton"&gt;www.cloudberrylab.com&lt;/a&gt;, S3Fox Organizer(S3Fox) &lt;a href="http://www.s3fox.net" target="_blank" class="CommandButton"&gt;www.s3fox.net&lt;/a&gt;, etc.&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="lblAmazonS3UseSSL.Help" xml:space="preserve">
+    <value>Use SSL (secure connection)</value>
+  </data>
+  <data name="lblAmazonS3UseSSL.Text" xml:space="preserve">
+    <value>Use SSL</value>
+  </data>
+  <data name="lblAmazonSecretAccessKey.Help" xml:space="preserve">
+    <value>Your Amazon's Secret Access Key. For your protection, you should never share your secret access keys with anyone.</value>
+  </data>
+  <data name="lblAmazonSecretAccessKey.Text" xml:space="preserve">
+    <value>Secret Access Key</value>
+  </data>
+  <data name="lblAmazonSecretAccessKeyConfirm.Text" xml:space="preserve">
+    <value>Confirm Secret Access Key</value>
+  </data>
+  <data name="lblPerformAmazonS3Transfer.Help" xml:space="preserve">
+    <value>Enable this setting to transfer the backup file(s) to the configured Amazon's S3 bucket. Note: An existing file will be overwritten / Old files will not be purged.</value>
+  </data>
+  <data name="lblPerformAmazonS3Transfer.Text" xml:space="preserve">
+    <value>Amazon S3 Transfer Enabled</value>
+  </data>
+  <data name="valAmazonSecretAccessKeyMatch.Text" xml:space="preserve">
+    <value>&lt;br /&gt;Amazon's Secret Access Key doesn't match.</value>
+  </data>
+  <data name="valRequiredAmazonAccessKeyID.Text" xml:space="preserve">
+    <value>&lt;br /&gt;Please type your Access Key ID.</value>
+  </data>
+  <data name="valRequiredAmazonBucketName.Text" xml:space="preserve">
+    <value>&lt;br /&gt;Please type the Bucket Name.</value>
+  </data>
+  <data name="valRequiredAmazonSecretAccessKey.Text" xml:space="preserve">
+    <value>&lt;br /&gt;Please type your Secret Access Key.</value>
+  </data>
+  <data name="lblAmazonBucketNameNotice.Text" xml:space="preserve">
+    <value>Note: To conform with DNS requirements, bucket name (3 to 255 characters long) must contain lowercase letters only.</value>
+  </data>
+  <data name="lblDeleteFileAfterFTP.Help" xml:space="preserve">
+    <value>To save space, deletes the local file(s) after the FTP transfer was completed.</value>
+  </data>
+  <data name="lblDeleteFileAfterFTP.Text" xml:space="preserve">
+    <value>Delete local file</value>
+  </data>
+  <data name="lblDeleteFileAfterS3.Help" xml:space="preserve">
+    <value>To save space, deletes the local file(s) after the S3 transfer was completed.</value>
+  </data>
+  <data name="lblDeleteFileAfterS3.Text" xml:space="preserve">
+    <value>Delete local file</value>
+  </data>
+  <data name="btnCloudFilesTest.Text" xml:space="preserve">
+    <value>Test CouldFiles Connection</value>
+  </data>
+  <data name="CloudFilesStuff.Text" xml:space="preserve">
+    <value>Rackspace CloudFiles Options</value>
+  </data>
+  <data name="CloudFilesTestError.Text" xml:space="preserve">
+    <value>&lt;br /&gt;Rackspace CloudFiles connection test completed with errors:&lt;br /&gt;</value>
+  </data>
+  <data name="CloudFilesTestOK.Text" xml:space="preserve">
+    <value>&lt;br /&gt;Rackspace CloudFiles connection test successfully completed.</value>
+  </data>
+  <data name="lblCloudFilesAPIKey.Help" xml:space="preserve">
+    <value>Your Rackspace CloudFiles API Key</value>
+  </data>
+  <data name="lblCloudFilesAPIKey.Text" xml:space="preserve">
+    <value>API Key</value>
+  </data>
+  <data name="lblCloudFilesContainerName.Help" xml:space="preserve">
+    <value>Type the name of an already created Container. E.g. "mycontainername". Manage your containers from the Rackspace's Manager Console.</value>
+  </data>
+  <data name="lblCloudFilesContainerName.Text" xml:space="preserve">
+    <value>Container Name</value>
+  </data>
+  <data name="lblCloudFilesContainerNameNotice.Text" xml:space="preserve">
+    <value>Note: container name cannot contain a forward slash, “/” character and must be less than 256 bytes in length.</value>
+  </data>
+  <data name="lblCloudFilesFileNamePattern.Help" xml:space="preserve">
+    <value>This is how the files will be named in you CloudFiles container. The [backupfile] token will be replaced with the backup file name. You can also specify 'folders'. e.g. DNNBackup/[backupfile]</value>
+  </data>
+  <data name="lblCloudFilesFileNamePattern.Text" xml:space="preserve">
+    <value>Backup File Name Pattern</value>
+  </data>
+  <data name="lblCloudFilesInfo.Text" xml:space="preserve">
+    <value>&lt;ul&gt;
+&lt;li&gt;Don't have a Rackspace CloudFiles account?  &lt;a  href="https://www.rackspacecloud.com/signup" target="_blank" class="CommandButton"&gt;Create an account&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;NOTE: DNNBackup will upload your backup file(s) to an already created account and 'container'. You can manage your account, container permissions, etc. from your Rackspace's Manager Console &lt;a href="https://manage.rackspacecloud.com" target="_blank" class="CommandButton"&gt;https://manage.rackspacecloud.com&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="lblCloudFilesUserName.Help" xml:space="preserve">
+    <value>Your Rackspace CloudFiles Username</value>
+  </data>
+  <data name="lblCloudFilesUserName.Text" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="lblDeleteFileAfterCloudFiles.Help" xml:space="preserve">
+    <value>To save space, deletes the local file(s) after the CouldFiles transfer was completed.</value>
+  </data>
+  <data name="lblDeleteFileAfterCloudFiles.Text" xml:space="preserve">
+    <value>Delete local file</value>
+  </data>
+  <data name="lblPerformCloudFilesTransfer.Help" xml:space="preserve">
+    <value>Enable this setting to transfer the backup file(s) to the configured CloudFiles' container. Note: An existing file will be overwritten / Old files will not be purged.</value>
+  </data>
+  <data name="lblPerformCloudFilesTransfer.Text" xml:space="preserve">
+    <value>CloudFiles Transfer Enabled</value>
+  </data>
+  <data name="valRequiredCloudFilesAPIKey.Text" xml:space="preserve">
+    <value>&lt;br /&gt;Please type your API key.</value>
+  </data>
+  <data name="valRequiredCloudFilesContainerName.Text" xml:space="preserve">
+    <value>&lt;br /&gt;Please type the Container Name.</value>
+  </data>
+  <data name="valRequiredCloudFilesUserName.Text" xml:space="preserve">
+    <value>&lt;br /&gt;Please type the Username.</value>
+  </data>
+  <data name="lblFtpServerPort.Help" xml:space="preserve">
+    <value>FTP port (21 is the standard FTP port, and 22 is the standard SFTP port).</value>
+  </data>
+  <data name="lblFtpServerPort.Text" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="valFtpServerPort.Text" xml:space="preserve">
+    <value>&lt;br /&gt;Please set a valid port number.</value>
+  </data>
+  <data name="cmdEstablishConnection.Text" xml:space="preserve">
+    <value>Establish Connection</value>
+  </data>
+  <data name="cmdRequestConnection.Text" xml:space="preserve">
+    <value>Request Connection</value>
+  </data>
+  <data name="DropBoxAuthorizationMessage.Text" xml:space="preserve">
+    <value>&lt;h3&gt;DropBox Configuration&lt;/h3&gt;
+        &lt;p&gt;Next Steps:&lt;/p&gt;
+        &lt;ul&gt;        
+        &lt;li&gt;You can close this window.&lt;/li&gt;
+        &lt;li&gt;Click on the '&lt;b&gt;Establish Connection&lt;/b&gt;' link found on the configuration page (that you should have already open).&lt;/li&gt;
+        &lt;li&gt;Save the Settings just configured by clicking  on the '&lt;b&gt;Update&lt;/b&gt;' link found on the configuration page.&lt;/li&gt;
+        &lt;/ul&gt;</value>
+  </data>
+  <data name="DropboxConnectionMissing.Message" xml:space="preserve">
+    <value>&lt;p&gt;Your web site is not yet connected with your DropBox account. &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Click on the &lt;b&gt;'Request Connection'&lt;/b&gt; link.  A new window, on DropBox's web site will be opened.&lt;/li&gt;
+&lt;li&gt;A 'The app .... would like to connect with your Dropbox' dialog will be presented. Click on 'Allow' to start the authorization process that will grant your web site access to your DropBox account.&lt;/li&gt;
+&lt;li&gt;Click on the '&lt;b&gt;Establish Connection&lt;/b&gt;' link found on this page.&lt;/li&gt;
+&lt;li&gt;Save the Settings by clicking on the 'Update' link found on this page.&lt;/li&gt;
+&lt;/ol&gt;
+</value>
+  </data>
+  <data name="DropboxConnectionMissingAppKeyAndSecret.Message" xml:space="preserve">
+    <value>Please configure your 'App key' and 'App secret' (get them at &lt;a  href="https://www.dropbox.com/developers/apps" target="_blank"&gt;https://www.dropbox.com/developers/apps&lt;/a&gt;). Then click on 'Update' and reload this form to continue with the authorization process.&lt;br /&gt;
+Note: Read the long text find above for complete information about the authorization process.</value>
+  </data>
+  <data name="DropboxConnectionOK.Message" xml:space="preserve">
+    <value>Established</value>
+  </data>
+  <data name="DropboxMissingCredentials.Text" xml:space="preserve">
+    <value>Please check the provided DropBox Credentials. &lt;br /&gt;If you haven't signed up for DropBox, please follow this procedure:&lt;br /&gt;
+&lt;b&gt;1)&lt;/b&gt; Go to &lt;a target="_blank" href="https://www.dropbox.com/developers/apps"&gt;https://www.dropbox.com/developers/apps&lt;/a&gt;, and login with your current DropBox account, or create a new account if you do not have any.&lt;br/&gt;
+&lt;b&gt;2)&lt;/b&gt; Click on "Create an App" &lt;br /&gt;
+&lt;b&gt;3)&lt;/b&gt; Give the new Application a name (like "example.com", where example.com is the web site you are connection to DropBox), and a Description (like "example.com connection").&lt;br /&gt;
+&lt;b&gt;4)&lt;/b&gt; Take note of the "App key" and "App secret" that DropBox created for you, and set them in this form.&lt;br /&gt;
+Note: Don't worry about the "Additional Information", you can leave it blank.&lt;br /&gt;</value>
+  </data>
+  <data name="DropboxStuff.Text" xml:space="preserve">
+    <value>Dropbox Options</value>
+  </data>
+  <data name="lblDeleteFileAfterDropbox.Help" xml:space="preserve">
+    <value>To save space, deletes the local file(s) after the Dropbox transfer was completed.</value>
+  </data>
+  <data name="lblDeleteFileAfterDropbox.Text" xml:space="preserve">
+    <value>Delete local file</value>
+  </data>
+  <data name="lblDropBoxAppKey.Help" xml:space="preserve">
+    <value>The DropBox's "App key" you'll use to connect this web site.</value>
+  </data>
+  <data name="lblDropBoxAppKey.Text" xml:space="preserve">
+    <value>App key</value>
+  </data>
+  <data name="lblDropBoxAppSecret.Help" xml:space="preserve">
+    <value>The DropBox's "App secret" realated with the "App key".</value>
+  </data>
+  <data name="lblDropBoxAppSecret.Text" xml:space="preserve">
+    <value>App secret</value>
+  </data>
+  <data name="lblDropBoxConnectionStatus.Help" xml:space="preserve">
+    <value>Tells if for the given "App key" and "App secret", a connection with DropBox has been already established or not.</value>
+  </data>
+  <data name="lblDropBoxConnectionStatus.Text" xml:space="preserve">
+    <value>Connection Status</value>
+  </data>
+  <data name="lblDropBoxFolder.Help" xml:space="preserve">
+    <value>The Dropbox foder where the backup files will be saved. It should be like e.g. /mydropboxfolder.</value>
+  </data>
+  <data name="lblDropBoxFolder.Text" xml:space="preserve">
+    <value>Dropbox Target Folder</value>
+  </data>
+  <data name="lblDropboxInfo.Text" xml:space="preserve">
+    <value>&lt;p&gt;Don't have a &lt;b&gt;DropBox &lt;/b&gt; account?  &lt;a  href="https://www.dropbox.com" target="_blank" class="CommandButton"&gt;Click here to create an account&lt;/a&gt;.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you have a DropBox account, you'll have to &lt;b&gt;Generate an 'App key' and 'App secret' &lt;/b&gt; values for this web site to connect with DropBox.&lt;br /&gt;
+This is DropBox's policy regarding API connections from web sites/application. This web site will do not store and will don't even ask you for your DropBox user name and password.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;How to generate an 'App key' and 'App secret'&lt;/b&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to &lt;a  href="https://www.dropbox.com/developers/apps" target="_blank"&gt;https://www.dropbox.com/developers/apps&lt;/a&gt;, and login with your current DropBox account (or create a new account if you do not have any).&lt;/li&gt;
+&lt;li&gt;Click on "Create App".&lt;/li&gt;
+&lt;li&gt;Choose 'Dropbox API app', and then choose 'Files and datastores'.&lt;/li&gt;
+&lt;li&gt;For 'Can your app be limited to its own, private folder?' choose 'Yes' or 'No' depending on your preferences.&lt;/li&gt;
+&lt;li&gt;Give the new Application a name (like "example.com", where example.com is the web site you are connecting to DropBox), and a Description (like "example.com connection").&lt;/li&gt;
+&lt;li&gt;Take note of the "App key" and "App secret" that DropBox created for you, and set them in this form.&lt;br /&gt;
+Note: Don't worry about the "Additional Information".&lt;/li&gt;
+&lt;li&gt;Save the Settings by clicking on the 'Update' link found on this page, and re-open this form (Click on the pencil for this Folder Type on the 'Folder Type Definitions' dialog) to continue with the authorization process.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Once you have your  'App key' and 'App secret'  keys, you can connect this web site to your DropBox account.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;How to connect this web site with DropBox&lt;/b&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Click on the &lt;b&gt;'Request Connection'&lt;/b&gt; link.  A new window, on DropBox's web site will be opened.&lt;/li&gt;
+&lt;li&gt;A 'The app .... would like to connect with your Dropbox' dialog will be presented. Click on 'Allow' to start the authorization process that will grant your web site access to your DropBox account.&lt;/li&gt;
+&lt;li&gt;Click on the '&lt;b&gt;Establish Connection&lt;/b&gt;' link found on this page.&lt;/li&gt;
+&lt;li&gt;Save the Settings by clicking on the 'Update' link found on this page.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;b&gt;NOTE:&lt;/b&gt; files over 300MB cannot be uploaded due to a Dropbox API limitation.&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="lblPerformDropboxTransfer.Help" xml:space="preserve">
+    <value>Enable this setting to transfer the backup file(s) to the configured Dropbox folder. Note: An existing file will be overwritten / Old files will not be purged. In addition, notice that files over 300MB cannot be uploaded due to a Dropbox API limitation.</value>
+  </data>
+  <data name="lblPerformDropboxTransfer.Text" xml:space="preserve">
+    <value>Dropbox Transfer Enabled</value>
+  </data>
+  <data name="valDropBoxAppKey.Text" xml:space="preserve">
+    <value>Please type your Access Key ID.</value>
+  </data>
+  <data name="valDropBoxAppSecret.Text" xml:space="preserve">
+    <value>Please type your Secret Access Key.</value>
+  </data>
+  <data name="valDropBoxFolder.Text" xml:space="preserve">
+    <value>Please specify a Dropbox folder (e.g.: /DNNBackup).</value>
+  </data>
+  <data name="DropboxConnectionFailedToEstablish.Message" xml:space="preserve">
+    <value>Failed to establish the connection to Dropbox. Remeber to 'Request Connection' first, and that the request expires within minutes.&lt;br /&gt;Error details: {0}</value>
+  </data>
+  <data name="DropboxConnectionFailedToGetAuthorizationURL.Message" xml:space="preserve">
+    <value>Failed to get the Authorization URL. Please verify your App Key and App Secret are valid.&lt;br /&gt;Error details: {0}</value>
+  </data>
+  <data name="cmdClearConnection.Text" xml:space="preserve">
+    <value>Clear Connection</value>
+  </data>
+  <data name="DropboxClearConnection.Message" xml:space="preserve">
+    <value>Please remember to click on "Update" to confirm the drop action.   Note: To really drop the connection, you must unauthorize the Application from your Dropbox account.</value>
+  </data>
+  <data name="DropboxConnectionFailedToClear.Message" xml:space="preserve">
+    <value>Failed to clear the Dropbox connection.</value>
+  </data>
+  <data name="AzureStuff.Text" xml:space="preserve">
+    <value>Windows Azure Options</value>
+  </data>
+  <data name="lblAzureAccessKey.Help" xml:space="preserve">
+    <value>Your Windows Azures's primary or secondary Access Key Access Key. For your protection, you should never share it with anyone.</value>
+  </data>
+  <data name="lblAzureAccessKey.Text" xml:space="preserve">
+    <value>Access Key</value>
+  </data>
+  <data name="lblAzureAccountName.Help" xml:space="preserve">
+    <value>Your Windows Azure Storage's Account Name.</value>
+  </data>
+  <data name="lblAzureAccountName.Text" xml:space="preserve">
+    <value>Account Name</value>
+  </data>
+  <data name="lblAzureContainerName.Help" xml:space="preserve">
+    <value>It is a container for objects stored in Windows Azure Storage.</value>
+  </data>
+  <data name="lblAzureContainerName.Text" xml:space="preserve">
+    <value>Container Name</value>
+  </data>
+  <data name="lblAzureInfo.Text" xml:space="preserve">
+    <value>&lt;ul&gt;
+
+&lt;li&gt;Concerning DNNBackup, and regarding all the services provided under the 'Windows Azure' name, you just need a 'Storage Account'.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+
+&lt;li&gt;Don't have an &lt;b&gt;Windows Azure Storage&lt;/b&gt; account?  &lt;a  href="http://www.microsoft.com/windowsazure/" target="_blank" class="CommandButton"&gt;Click here to create an account&lt;/a&gt;, and &lt;a href="http://msdn.microsoft.com/en-us/library/windowsazure/gg433066.aspx" target="_blank" &gt;click here to learn about How to Create a Storage Account for a Windows Azure Subscription&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;
+&lt;/li&gt;
+
+&lt;li&gt;You can manage your account at &lt;a href="https://windows.azure.com/default.aspx" target="_blank" class="CommandButton"&gt;https://windows.azure.com/default.aspx&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;
+&lt;/li&gt;
+
+&lt;li&gt;Once you have created a '&lt;b&gt;Storage account&lt;/b&gt;' within you '&lt;b&gt;Azure Subscription&lt;/b&gt;', you can start creating '&lt;b&gt;Containers&lt;/b&gt;', which will hold your files (a.k.a '&lt;b&gt;Blobs&lt;/b&gt;').&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+
+&lt;li&gt;From any Windows Azure GUI front-end application (like the &lt;a target="_blank" class="CommandButton" href="http://azurestorageexplorer.codeplex.com/"&gt;Azure Storage Explorer&lt;/a&gt;, or &lt;a  target="_blank" class="CommandButton" href="http://www.cloudberrylab.com/free-microsoft-azure-explorer.aspx"&gt;CloudBerry Explorer for Azure&lt;/a&gt;), you can create/configure/manage your containers, permissions, files, and other settings.&lt;br /&gt;&lt;br /&gt;
+&lt;/li&gt;
+
+&lt;/ul&gt;</value>
+  </data>
+  <data name="lblAzureUseSSL.Help" xml:space="preserve">
+    <value>Use SSL (secure connection).</value>
+  </data>
+  <data name="lblAzureUseSSL.Text" xml:space="preserve">
+    <value>Use SSL</value>
+  </data>
+  <data name="lblDeleteFileAfterAzure.Help" xml:space="preserve">
+    <value>To save space, deletes the local file(s) after the Windows Azure transfer was completed.</value>
+  </data>
+  <data name="lblDeleteFileAfterAzure.Text" xml:space="preserve">
+    <value>Delete local file</value>
+  </data>
+  <data name="lblPerformAzureTransfer.Help" xml:space="preserve">
+    <value>Enable this setting to transfer the backup file(s) to the configured Azure's container. Note: An existing file will be overwritten / Old files will not be purged.</value>
+  </data>
+  <data name="lblPerformAzureTransfer.Text" xml:space="preserve">
+    <value>Windows Azure Transfer Enabled</value>
+  </data>
+  <data name="AzureTestError.Text" xml:space="preserve">
+    <value>&lt;br /&gt;Windows Azure connection test completed with errors:&lt;br /&gt;</value>
+  </data>
+  <data name="AzureTestOK.Text" xml:space="preserve">
+    <value>&lt;br /&gt;Windows Azure connection test successfully completed.</value>
+  </data>
+  <data name="btnAzureTest.Text" xml:space="preserve">
+    <value>Test Windows Azure Connection</value>
+  </data>
+  <data name="lblAzureFileNamePattern.Help" xml:space="preserve">
+    <value>This is how the files will be named in you Windows Azure Container. The [backupfile] token will be replaced with the backup file name. You can also specify 'folders'. e.g. DNNBackup/[backupfile]</value>
+  </data>
+  <data name="lblAzureFileNamePattern.Text" xml:space="preserve">
+    <value>Backup File Name Pattern</value>
+  </data>
+  <data name="valAzureAccessKey.Text" xml:space="preserve">
+    <value>&lt;br /&gt;Please type your Access Key.</value>
+  </data>
+  <data name="valAzureAccountName.Text" xml:space="preserve">
+    <value>&lt;br /&gt;Please type your Account Name.</value>
+  </data>
+  <data name="valInvalidAzureContainerName.Text" xml:space="preserve">
+    <value>Container names must be 3-63 characters in lenght and may contain lower-case alphanumeric characters and dashes. Dashes must be preceded and followed by an alphanumeric character.</value>
+  </data>
+  <data name="valRequiredAzureContainerName.Text" xml:space="preserve">
+    <value>&lt;br /&gt;Please type the Container Name.</value>
+  </data>
+  <data name="lblUseSFTP.Help" xml:space="preserve">
+    <value>Use Secure FTP (FTP over SSH) instead of the standard FTP protocol.</value>
+  </data>
+  <data name="lblUseSFTP.Text" xml:space="preserve">
+    <value>Use SFTP</value>
+  </data>
+  <data name="BoxStuff.Text" xml:space="preserve">
+    <value>Box Options</value>
+  </data>
+  <data name="cmdClearConnectionBox.Message" xml:space="preserve">
+    <value>Please remember to click on "Update" to confirm the drop action.   Note: To really drop the connection, you must unauthorize the Application from your Box account.</value>
+  </data>
+  <data name="lblBoxFolder.Help" xml:space="preserve">
+    <value>The Box foder where the backup files will be saved. It should be e.g. like /myboxfolder.</value>
+  </data>
+  <data name="lblBoxFolder.Text" xml:space="preserve">
+    <value>Box Target Folder</value>
+  </data>
+  <data name="lblBoxInfo.Text" xml:space="preserve">
+    <value>&lt;p&gt;Don't have a &lt;b&gt;Box&lt;/b&gt; account?  &lt;a  href="https://www.box.com" target="_blank" class="CommandButton"&gt;Click here to create an account&lt;/a&gt;.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you have a Box account, you'll have to &lt;bCreate a new application&lt;/b&gt; for this web site to connect with your Box account.&lt;br /&gt;
+This is Box's policy regarding API connections from web sites/application. This web site will do not store and will don't even ask you for your BoxNet user name and password.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;How to Create a new application&lt;/b&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to &lt;a  href="http://www.box.com/developers/services" target="_blank"&gt;http://www.box.com/developers/services&lt;/a&gt;, and login with your current Box account (or create a new account if you do not have any).&lt;/li&gt;
+&lt;li&gt;Click on "Create new application" found below 'Developer Tools'.&lt;/li&gt;
+&lt;li&gt;Give the new Application a name (like "example.com", where example.com is the web site you are connecting to Box), a Description (like "example.com connection"), and an email address.&lt;/li&gt;
+&lt;li&gt;Take note of the "API key" Box created for you, and set it in this form.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Save the Settings by clicking on the 'Update' link found on this page, and re-open this form (Click on the pencil for this Folder Type on the 'Folder Type Definitions' dialog) to continue with the authorization process.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Once you have your  'Api Key', you can connect this web site to your Box account.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;How to connect this web site with Box&lt;/b&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Click on the &lt;b&gt;'Request Connection'&lt;/b&gt; link.  A new window, on BoxNet's web site will be opened.&lt;/li&gt;
+&lt;li&gt;A '... is requesting that you log into your Box' dialog will be presented. Login into your account to start the authorization process that will grant your web site access to your Box account..&lt;/li&gt;
+&lt;li&gt;Click on the '&lt;b&gt;Establish Connection&lt;/b&gt;' link found on this page.&lt;/li&gt;
+&lt;li&gt;Save the Settings by clicking on the 'Update' link found on this page.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;b&gt;How to disconnect this web site from Box (how to disallow this web site from accessing your Box account)&lt;/b&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Use the 'Clear Connection' link found on this page to remove the link between Box and this web site.&lt;/li&gt;
+&lt;li&gt;You can also delete the Box Application from 'My Applications' (&lt;a  href="http://www.box.com/services/browse/my" target="_blank"&gt;http://www.box.com/services/browse/my&lt;/a&gt;)&lt;/li&gt;
+&lt;/ol&gt;</value>
+  </data>
+  <data name="lblBoxNetApplicationAPIKey.Help" xml:space="preserve">
+    <value>The Box's "Application API Key" you'll use to connect this web site.</value>
+  </data>
+  <data name="lblBoxNetApplicationAPIKey.Text" xml:space="preserve">
+    <value>Application API Key</value>
+  </data>
+  <data name="lblBoxNetAuthorizationToken.Help" xml:space="preserve">
+    <value>The Box's "Authorization token" realated with the "API key".</value>
+  </data>
+  <data name="lblBoxNetConnectionStatus.Help" xml:space="preserve">
+    <value>Tells if for the given "API key", a connection with BoxNet has been already established or not.</value>
+  </data>
+  <data name="lblBoxNetConnectionStatus.Text" xml:space="preserve">
+    <value>Connection Status</value>
+  </data>
+  <data name="lblDeleteFileAfterBox.Help" xml:space="preserve">
+    <value>To save space, deletes the local file(s) after the Box transfer was completed.</value>
+  </data>
+  <data name="lblDeleteFileAfterBox.Text" xml:space="preserve">
+    <value>Delete local file</value>
+  </data>
+  <data name="lblPerformBoxTransfer.Help" xml:space="preserve">
+    <value>Enable this setting to transfer the backup file(s) to the configured Box folder. Note: An existing file will be overwritten / Old files will not be purged. In addition, notice that you'll need a paid Box account in order to upload files &gt;25Mb (any backup will be larger than this).</value>
+  </data>
+  <data name="lblPerformBoxTransfer.Text" xml:space="preserve">
+    <value>Box Transfer Enabled</value>
+  </data>
+  <data name="valBoxNetApplicationAPIKey.ErrorMessage" xml:space="preserve">
+    <value>Please type your Box Application API Key.</value>
+  </data>
+  <data name="valBoxNetAuthorizationToken.ErrorMessage" xml:space="preserve">
+    <value>Please type your Box Authorization Token.</value>
+  </data>
+  <data name="BoxNetCannotEstablishConnection.Message" xml:space="preserve">
+    <value>The connection to Box could not be established. Error: </value>
+  </data>
+  <data name="BoxNetCannotGetAuthorizationURL.Message" xml:space="preserve">
+    <value>The Authorization URL could not be generated. Please verify the BoxNet application was created, and the provided App Key and Secret are valid. Error:</value>
+  </data>
+  <data name="BoxNetConnectionFailedToClear.Message" xml:space="preserve">
+    <value>Failed to clear the Box connection.</value>
+  </data>
+  <data name="lblCloudFilesAccountLocation.Help" xml:space="preserve">
+    <value>To access the Authentication Service, you must know whether your account is US-based or UK-based.</value>
+  </data>
+  <data name="lblCloudFilesAccountLocation.Text" xml:space="preserve">
+    <value>Account Location</value>
+  </data>
+</root>

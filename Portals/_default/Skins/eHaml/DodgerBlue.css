@@ -1,0 +1,17 @@
+/*--------- Quovolve Style ----------*/
+.quovolve-box { padding-top:0px; width: 250px;float: right;margin-left:20px;overflow:hidden;height:250px;}
+.quovolve-box ul { clear: both;list-style: none; margin: 0;padding:5px 0;}
+.quovolve-box ul li { list-style:none;padding: 10px; margin:0; position: relative;}
+.quovolve-box ul li p { margin: 0; line-height:18px;font-family:Tahoma;}
+.quovolve-box ul li cite { background:none; border-radius: 2px; position:absolute; left:10px; bottom: -80px;color: #333;display: block;font-size: 14px;font-style: normal;padding: 2px 6px 3px;margin:0;z-index: 900; font-weight:normal;}
+.quovolve-box ul li cite img { float:left; padding-right:10px;}
+.quovolve-box ul li cite span { float:left; display:inline-block; padding-top:15px;}
+.quovolve-box ul li cite:before { background:url(images/quovolve_bottom.jpg) no-repeat center top; content: ""; height:15px; left: 25%; position: absolute; top: -16px;width: 31px;}
+.quovolve-box .quovolve-nav .nav-numbers { height: 6px;margin: 0;width: 100%;padding:0;}
+.quovolve-box .quovolve-nav .nav-numbers li { float: left;list-style: none;margin-right: 3px;}
+.quovolve-box .quovolve-nav .nav-numbers li a { background: none; border:1px solid #bbb; border-radius: 100% 100% 100% 100%;display: block;height: 6px;text-indent: -9999px;width: 6px;}
+.quovolve-box .quovolve-nav .nav-numbers li.active a { background: none repeat scroll 0 0 #58A7DF;}
+.quovolve-box .quovolve-nav .nav-numbers li a:hover { background: none repeat scroll 0 0 #58A7DF;}
+.quovolve-box ul.quovolve { background:#f6f6f6; border:1px solid #e5e5e5; border-radius:4px; font-family: Georgia,Times,serif;font-style: italic;margin: 10px 0 0;}
+ul.quovolve p,ul.quovolve div,ul.quovolve span, ul.quovolve li,ul.quovolve a, ul.quovolve dt, ul.quovolve dd,ul.quovolve h1, ul.quovolve h2, ul.quovolve h3, ul.quovolve h4, ul.quovolve h5, ul.quovolve h6{ color: #888;}
+

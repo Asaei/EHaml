@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EHamlDB" Class="MyInquiryDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.;Initial Catalog=EHamlDB;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="EHamlDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.MyDnn_EHaml_Inquiry" Member="MyDnn_EHaml_Inquiries">
+    <Type Name="MyDnn_EHaml_Inquiry">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InquiryDetail_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InquiryType" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MyDnn_EHaml_User_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifieDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ExpireDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsExtend" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsTender" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="StartingPoint" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Destination" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AcceptedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ServantUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsReallyNeed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ActionDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LoadType" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="MyDnn_EHaml_User_MyDnn_EHaml_Inquiry" Member="MyDnn_EHaml_User" ThisKey="MyDnn_EHaml_User_Id" OtherKey="Id" Type="MyDnn_EHaml_User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_Inquiry_Dn" Member="MyDnn_EHaml_Inquiry_Dns">
+    <Type Name="MyDnn_EHaml_Inquiry_Dn">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HSCode" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="NoVaTedadVaJoziyatContiner" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IsTHCDarMabda" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsTHCDarMagsad" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsTarkhisiyeDarMagsad" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsKhahaneErsaleEstelamBeKharej" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_Inquiry_Rl" Member="MyDnn_EHaml_Inquiry_Rls">
+    <Type Name="MyDnn_EHaml_Inquiry_Rl">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="VagoneMoredeNiyaz" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IsHazineyeBargiriDarMabda" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="EmptyingCharges" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FileListAdlBandi" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_Inquiry_Zaban" Member="MyDnn_EHaml_Inquiry_Zabans">
+    <Type Name="MyDnn_EHaml_Inquiry_Zaban">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NoeHaml" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="HSCode" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BarAsase" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ValueBarAsase" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IsHazineyeOdatekontiner" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FileListAdlBandi" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MogeiyateTahvilDadan" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EmptyingCharges" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsKhahaneErsaleEstelamBeKharej" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_Inquiry_Zadghal" Member="MyDnn_EHaml_Inquiry_Zadghals">
+    <Type Name="MyDnn_EHaml_Inquiry_Zadghal">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="WithInsurance" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FileListAdlBandi" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MogeiyateTahvilDadan" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PackingType" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EmptyingCharges" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FileArzesheBar" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="NoVaTedadeVasileyeHaml" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_Inquiry_ZadghanT" Member="MyDnn_EHaml_Inquiry_ZadghanTs">
+    <Type Name="MyDnn_EHaml_Inquiry_ZadghanT">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="WithInsurance" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="EmptyingCharges" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="NoVaTedadeVasileyeHaml" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FileArzesheBar" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_NoeContiner" Member="MyDnn_EHaml_NoeContiners">
+    <Type Name="MyDnn_EHaml_NoeContiner">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NoeContiner" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_NoeVasileyeHaml" Member="MyDnn_EHaml_NoeVasileyeHamls">
+    <Type Name="MyDnn_EHaml_NoeVasileyeHaml">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="VasileyeHamlName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_ReplyToInquiry_Dn" Member="MyDnn_EHaml_ReplyToInquiry_Dns">
+    <Type Name="MyDnn_EHaml_ReplyToInquiry_Dn">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GeymateVahedVaKolBajoziyat" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IsTHCDarMabda" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsTHCDarMagsad" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsTarkhisiyeDarMagsad" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_ReplyToInquiry_Rl" Member="MyDnn_EHaml_ReplyToInquiry_Rls">
+    <Type Name="MyDnn_EHaml_ReplyToInquiry_Rl">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GeymaqteKolBarAsaseAdl" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="EmptyingCharges" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsHazineyeBargiriDarMabda" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_ReplyToInquiry_Zaban" Member="MyDnn_EHaml_ReplyToInquiry_Zabans">
+    <Type Name="MyDnn_EHaml_ReplyToInquiry_Zaban">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsOdateCantinereKhali" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Barasase" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BarasaseValue" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="GeymaqteKolBarAsaseAdl" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="IsTakhliyeDarMagsad" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_ReplyToInquiry_ZadghalT" Member="MyDnn_EHaml_ReplyToInquiry_ZadghalTs">
+    <Type Name="MyDnn_EHaml_ReplyToInquiry_ZadghalT">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NoVaTedadeVasileyeHaml" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_ReplyToInquiry_Zadghan" Member="MyDnn_EHaml_ReplyToInquiry_Zadghans">
+    <Type Name="MyDnn_EHaml_ReplyToInquiry_Zadghan">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="KerayeyePishnahadi" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="NoVaTedadeVasileyeHaml" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_ReplyToInquiry_Dl" Member="MyDnn_EHaml_ReplyToInquiry_Dls">
+    <Type Name="MyDnn_EHaml_ReplyToInquiry_Dl">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GeymateVahedVaKolBajoziyat" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="BarAsase" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="IsTHCDarMagsad" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsTarkhisiyeDarMagsad" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="GeymateKoleDakheli" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_Inquiry_ZDF" Member="MyDnn_EHaml_Inquiry_ZDFs">
+    <Type Name="MyDnn_EHaml_Inquiry_ZDF">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HSCode" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="VazneKoleMahmoole" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="MogeiyateTahvilDadan" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_ReplyToInquiry_ZDF" Member="MyDnn_EHaml_ReplyToInquiry_ZDFs">
+    <Type Name="MyDnn_EHaml_ReplyToInquiry_ZDF">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MogeiyateTahvilDadanJ" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="GeymatePishnahadi" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Barasase" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ValueBarAsase" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_ReplyToInquiry_Dghco" Member="MyDnn_EHaml_ReplyToInquiry_Dghcos">
+    <Type Name="MyDnn_EHaml_ReplyToInquiry_Dghco">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GeymaqteKolBarAsaseAdl" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="IsBargiriRooyeKasshidarMabda" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsTarkhisiyeDarMagsad" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EmptyingCharges" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_ReplyToInquiry_Hl" Member="MyDnn_EHaml_ReplyToInquiry_Hls">
+    <Type Name="MyDnn_EHaml_ReplyToInquiry_Hl">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GeymaqteKolBarAsaseAdl" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_ReplyToInquiry_Tj" Member="MyDnn_EHaml_ReplyToInquiry_Tjs">
+    <Type Name="MyDnn_EHaml_ReplyToInquiry_Tj">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AnjameAmaliyatBeVasileye" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="GeymaqteKolBarAsaseAdl" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_ReplyToInquiry_Tk" Member="MyDnn_EHaml_ReplyToInquiry_Tks">
+    <Type Name="MyDnn_EHaml_ReplyToInquiry_Tk">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GeymateVahedVaKolBajoziyat" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="GeymatePishnahadi" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="AnjameAmaliyatBeVasileye" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_ReplyToInquiry_Ts" Member="MyDnn_EHaml_ReplyToInquiry_Ts">
+    <Type Name="MyDnn_EHaml_ReplyToInquiry_T">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FormePasokheGeymateTakhliyeSangin" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AnjameAmaliyatBeVasileye" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_ReplyToInquiry_Tr" Member="MyDnn_EHaml_ReplyToInquiry_Trs">
+    <Type Name="MyDnn_EHaml_ReplyToInquiry_Tr">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GeymateKoleAmaliyat" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="MogeiyateTahvilDadan" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MogeiyateTahvilGereftan" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_ReplyToInquiry_ChandVajhiSabok" Member="MyDnn_EHaml_ReplyToInquiry_ChandVajhiSaboks">
+    <Type Name="MyDnn_EHaml_ReplyToInquiry_ChandVajhiSabok">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsTHCDarMabda" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsBargiriDarMabda" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsHazineyeTarkhisDarMabda" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsKoleHazinehayeBandari" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsHazineyeTarkhisDarMagsad" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsTHCDarMagsad" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsAkhseTarkhisiyeDarMagsad" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsBime" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsHazineyeOdat" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsTakhliyeDarMagsad" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_ReplyToInquiry_ChandVajhiSangin" Member="MyDnn_EHaml_ReplyToInquiry_ChandVajhiSangins">
+    <Type Name="MyDnn_EHaml_ReplyToInquiry_ChandVajhiSangin">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsTHCDarMabda" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsBargiriDarMabda" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsHazineyeTarkhisDarMabda" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsKoleHazinehayeBandari" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsHazineyeTarkhisDarMagsad" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsTHCDarMagsad" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsAkhseTarkhisiyeDarMagsad" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsBime" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsTakhliyeDarMagsad" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_DarsadePoorsant" Member="MyDnn_EHaml_DarsadePoorsants">
+    <Type Name="MyDnn_EHaml_DarsadePoorsant">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InquiryType" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DarsadePoorsant" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_BankTransactionDetail" Member="MyDnn_EHaml_BankTransactionDetails">
+    <Type Name="MyDnn_EHaml_BankTransactionDetail">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InquiryReplyToInquiry_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Khadamatresan_EHaml_User_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Status" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_UserRank" Member="MyDnn_EHaml_UserRanks">
+    <Type Name="MyDnn_EHaml_UserRank">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MyDnn_EHaml_User_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Power" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Quality" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Type" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_User_VaziyateBedehkari" Member="MyDnn_EHaml_User_VaziyateBedehkaris">
+    <Type Name="MyDnn_EHaml_User_VaziyateBedehkari">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MyDnn_EHaml_User_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TarikheShoorooeBedehkari" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TedadeAmaliyateShameleBedehkari" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_User" Member="MyDnn_EHaml_Users">
+    <Type Name="MyDnn_EHaml_User">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PortalUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PersonalityType" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="Type" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="Company" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ActivityField" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IsApprove" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="AppCode" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="MyDnn_EHaml_User_MyDnn_EHaml_Inquiry" Member="MyDnn_EHaml_Inquiries" ThisKey="Id" OtherKey="MyDnn_EHaml_User_Id" Type="MyDnn_EHaml_Inquiry" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_ReplyToInquiry" Member="MyDnn_EHaml_ReplyToInquiries">
+    <Type Name="MyDnn_EHaml_ReplyToInquiry">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ReplyToInquiryDetail_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReplyToInquiryType" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MyDnn_EHaml_User_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="KoleModatZamaneHaml" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ZamaneAmadegiBarayeShooroo" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="GozareshAmaliyat" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="GeymateKol" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Pishbini" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CreateDate" AutoSync="OnInsert" Type="System.DateTime" DbType="DateTime NOT NULL" IsReadOnly="true" IsDbGenerated="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[MyDnn_EHaml_ Bank]" Member="MyDnn_EHaml__Banks">
+    <Type Name="MyDnn_EHaml__Bank">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EHaml_User_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Type" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Approve" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="MyDnn_EHaml_BankTransactionDetail_Id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Date" AutoSync="OnInsert" Type="System.DateTime" DbType="DateTime NOT NULL" IsReadOnly="true" IsDbGenerated="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_Inquiry_ReplyToInquiry" Member="MyDnn_EHaml_Inquiry_ReplyToInquiries">
+    <Type Name="MyDnn_EHaml_Inquiry_ReplyToInquiry">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InquiryId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReplyToInquiryId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Status" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="CreateDate" AutoSync="OnInsert" Type="System.DateTime" DbType="DateTime NOT NULL" IsReadOnly="true" IsDbGenerated="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_NazarSanji_KhadamatBeSaheb" Member="MyDnn_EHaml_NazarSanji_KhadamatBeSahebs">
+    <Type Name="MyDnn_EHaml_NazarSanji_KhadamatBeSaheb">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Inquiry_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReplyToInquiry_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ertebatat" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SehateEtelaateEstelam" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PardakhteDaghighVaBeMoghe" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NazareKoli" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ERTEID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MyDnn_EHaml_NazarSanji_SahebBeKhadamat" Member="MyDnn_EHaml_NazarSanji_SahebBeKhadamats">
+    <Type Name="MyDnn_EHaml_NazarSanji_SahebBeKhadamat">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Inquiry_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReplyToInquiry_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ertebatat" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DeghatDarAnjameMasooliyat" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PaybandiBeGofteha" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PaybandiBeTaahodeZamani" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PaybandiBeTaahodeGeymati" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NazareKoli" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ERTEID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

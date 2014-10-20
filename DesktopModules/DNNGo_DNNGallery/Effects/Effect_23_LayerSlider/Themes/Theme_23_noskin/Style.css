@@ -1,0 +1,36 @@
+/* LayerSlider No Skin */
+
+
+
+.ls-Theme_23_noskin {
+}
+
+.ls-Theme_23_noskin .ls-bottom-nav-wrapper {
+	display: none;
+}
+
+.ls-Theme_23_noskin .ls-nav-sides,
+.ls-Theme_23_noskin .ls-bottom-slidebuttons a,
+.ls-Theme_23_noskin .ls-nav-prev,
+.ls-Theme_23_noskin .ls-nav-next,
+.ls-Theme_23_noskin .ls-nav-start,
+.ls-Theme_23_noskin .ls-nav-stop {
+	display: none;
+}
+
+.ls-Theme_23_noskin .ls-thumbnail {
+	top: 0px;
+}
+
+.ls-Theme_23_noskin .ls-thumbnail-inner {
+	padding: 5px;
+	margin-left: -5px;
+}
+
+.ls-Theme_23_noskin .ls-thumbnail-slide a {
+	margin-right: 5px;
+}
+
+.ls-Theme_23_noskin .ls-nothumb {
+	background: #eee;
+}

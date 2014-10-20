@@ -1,0 +1,14 @@
+﻿
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+IF NOT EXISTS (select * from INFORMATION_SCHEMA.COLUMNS where table_name = '{objectQualifier}avtMyTokens2_Tokens' and column_name = 'CacheLayer')
+	ALTER TABLE {databaseOwner}[{objectQualifier}avtMyTokens2_Tokens] ADD CacheLayer int Default 0 NOT NULL 
+GO
+
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------

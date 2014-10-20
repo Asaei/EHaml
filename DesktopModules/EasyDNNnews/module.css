@@ -1,0 +1,21 @@
+﻿.user_dashboard a {
+    float: right !important;
+    font: bold 11px tahoma !important;
+}
+
+.user_dashboard a {
+    background-position: right top !important;
+    padding-right:25px !important;
+    padding-left:0 !important;
+}
+.admin_action.edit {
+    font-family:Tahoma !important;
+    font-size:12px !important;
+    font-weight:normal !important;
+    text-decoration:none !important;
+}
+.admin_action.edit {
+    background-position: right top !important;
+    padding-right:15px !important;
+    padding-left:0 !important;
+}

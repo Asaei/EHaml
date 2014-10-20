@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<patch>
+    <for>
+        <module-name>DNN_Links</module-name>
+        <keys>
+            <key></key>
+        </keys>
+    </for>
+    <patcher>avt.MyTokens.Patching.SimplePatcher,avt.MyTokens.Core</patcher>
+    <code-vb>
+        <init>
+        </init>
+        <pre-render>
+        <![CDATA[
+            For Each dlItem As Control In lstLinks.Items
+				For Each ctrl As Control In dlItem.Controls
+					If TypeOf ctrl Is HyperLink Then
+						
+						Dim lnk as HyperLink = TryCast(ctrl, HyperLink)
+						If lnk.ClientID.IndexOf("editLink") > -1 Then
+							Continue For
+						End If
+						
+						lnk.Text = Tokenize(lnk.Text, ModuleConfiguration, False, False)
+						lnk.ToolTip = Tokenize(lnk.ToolTip, ModuleConfiguration, False, False)
+						lnk.NavigateUrl = Tokenize(lnk.NavigateUrl, ModuleConfiguration, False, False)
+					
+					Else If TypeOf ctrl Is System.Web.UI.HtmlControls.HtmlAnchor Then
+						Dim lnk as System.Web.UI.HtmlControls.HtmlAnchor = TryCast(ctrl, System.Web.UI.HtmlControls.HtmlAnchor)					
+						lnk.InnerHtml = Tokenize(lnk.InnerHtml, ModuleConfiguration, False, False)
+						lnk.Attributes("href") = Tokenize(lnk.Attributes("href"), ModuleConfiguration, False, False)
+						lnk.Attributes("alt") = Tokenize(lnk.Attributes("alt"), ModuleConfiguration, False, False)
+					End If
+				Next
+			Next
+        ]]>
+        </pre-render>
+    </code-vb>
+	<code-cs min-version="99.99.99">
+        <init>
+        </init>
+        <pre-render>
+        <![CDATA[
+            foreach (DataListItem dlItem in lstLinks.Items) {
+				foreach (Control ctrl in dlItem.Controls) {
+					if (ctrl is HyperLink) {
+						HyperLink lnk = ctrl as HyperLink;
+						lnk.Text = Tokenize(lnk.Text, ModuleConfiguration, false, false);
+						lnk.ToolTip = Tokenize(lnk.ToolTip, ModuleConfiguration, false, false);
+						lnk.NavigateUrl = Tokenize(lnk.NavigateUrl, ModuleConfiguration, false, false);
+					}
+				}
+			}
+
+        ]]>
+        </pre-render>
+    </code-cs>
+</patch>

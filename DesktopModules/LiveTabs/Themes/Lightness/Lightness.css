@@ -1,0 +1,73 @@
+/* Layout helpers
+----------------------------------*/
+.livetabslightness .ui-helper-hidden { display: none; }
+.livetabslightness .ui-helper-hidden-accessible { position: absolute; left: -99999999px; }
+.livetabslightness .ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.livetabslightness .ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.livetabslightness .ui-helper-clearfix { display: inline-block; }
+/* required comment for clearfix to work in Opera \*/
+* html .ui-helper-clearfix { height:1%; }
+.livetabslightness .ui-helper-clearfix { display:block; }
+/* end clearfix */
+.livetabslightness .ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+/* Interaction Cues
+----------------------------------*/
+.livetabslightness .ui-state-disabled { cursor: default !important; }
+/* states and images */
+.livetabslightness .ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+/* Overlays */
+.livetabslightness .ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+/* Component containers
+----------------------------------*/
+.livetabslightness .ui-widget { font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; font-size: 1.1em; }
+.livetabslightness .ui-widget input, .livetabslightness .ui-widget select, .livetabslightness .ui-widget textarea, .livetabslightness .ui-widget button { font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; font-size: 1em; }
+.livetabslightness .ui-widget-content { border: 1px solid #dddddd; background: #eeeeee url(images/ui-bg_highlight-soft_100_eeeeee_1x100.png) 50% top repeat-x; color: #333333; }
+.livetabslightness .ui-widget-content a {  }
+.livetabslightness .ui-widget-header { border: 1px solid #e78f08; background: #f6a828 url(images/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x; color: #ffffff; font-weight: bold; }
+.livetabslightness .ui-widget-header a { color: #ffffff; }
+/* Interaction states
+----------------------------------*/
+.livetabslightness .ui-state-default, .livetabslightness .ui-widget-content .ui-state-default { border: 1px solid #cccccc; background: #f6f6f6 url(images/ui-bg_glass_100_f6f6f6_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #1c94c4; outline: none; }
+.livetabslightness .ui-state-default a, .livetabslightness .ui-state-default a:link, .livetabslightness .ui-state-default a:visited { color: #1c94c4; text-decoration: none; outline: none; }
+.livetabslightness .ui-state-hover, .livetabslightness .ui-widget-content .ui-state-hover, .livetabslightness .ui-state-focus, .livetabslightness .ui-widget-content .ui-state-focus { border: 1px solid #fbcb09; background: #fdf5ce url(images/ui-bg_glass_100_fdf5ce_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #c77405; outline: none; }
+.livetabslightness .ui-state-hover a, .livetabslightness .ui-state-hover a:hover { color: #c77405; text-decoration: none; outline: none; }
+.livetabslightness .ui-state-active, .livetabslightness .ui-widget-content .ui-state-active { border: 1px solid #fbd850; background: #ffffff url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #eb8f00; outline: none; }
+.livetabslightness .ui-state-active a, .livetabslightness .ui-state-active a:link, .livetabslightness .ui-state-active a:visited { color: #eb8f00; outline: none; text-decoration: none; }
+/* Interaction Cues
+----------------------------------*/
+.livetabslightness .ui-state-highlight, .livetabslightness .ui-widget-content .ui-state-highlight {border: 1px solid #fed22f; background: #ffe45c url(images/ui-bg_highlight-soft_75_ffe45c_1x100.png) 50% top repeat-x; color: #363636; }
+.livetabslightness .ui-state-highlight a, .livetabslightness .ui-widget-content .ui-state-highlight a { color: #363636; }
+.livetabslightness .ui-state-error, .livetabslightness .ui-widget-content .ui-state-error {border: 1px solid #cd0a0a; background: #b81900 url(images/ui-bg_diagonals-thick_18_b81900_40x40.png) 50% 50% repeat; color: #ffffff; }
+.livetabslightness .ui-state-error a, .livetabslightness .ui-widget-content .ui-state-error a { color: #ffffff; }
+.livetabslightness .ui-state-error-text, .livetabslightness .ui-widget-content .ui-state-error-text { color: #ffffff; }
+.livetabslightness .ui-state-disabled, .livetabslightness .ui-widget-content .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+.livetabslightness .ui-priority-primary, .livetabslightness .ui-widget-content .ui-priority-primary { font-weight: bold; }
+.livetabslightness .ui-priority-secondary, .livetabslightness .ui-widget-content .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+/* states and images */
+.livetabslightness .ui-icon { width: 16px; height: 16px; background-image: url(images/ui-icons_222222_256x240.png); }
+.livetabslightness .ui-widget-content .ui-icon {background-image: url(images/ui-icons_222222_256x240.png); }
+.livetabslightness .ui-widget-header .ui-icon {background-image: url(images/ui-icons_ffffff_256x240.png); }
+.livetabslightness .ui-state-default .ui-icon { background-image: url(images/ui-icons_ef8c08_256x240.png); }
+.livetabslightness .ui-state-hover .ui-icon, .livetabslightness .ui-state-focus .ui-icon {background-image: url(images/ui-icons_ef8c08_256x240.png); }
+.livetabslightness .ui-state-active .ui-icon {background-image: url(images/ui-icons_ef8c08_256x240.png); }
+.livetabslightness .ui-state-highlight .ui-icon {background-image: url(images/ui-icons_228ef1_256x240.png); }
+.livetabslightness .ui-state-error .ui-icon, .livetabslightness .ui-state-error-text .ui-icon {background-image: url(images/ui-icons_ffd27a_256x240.png); }
+/* Corner radius */
+.livetabslightness .ui-corner-all, .livetabslightness .ui-corner-top, .livetabslightness .ui-corner-left, .livetabslightness .ui-corner-tl { -moz-border-radius-topleft: 4px; -webkit-border-top-left-radius: 4px; -khtml-border-top-left-radius: 4px; border-top-left-radius: 4px; }
+.livetabslightness .ui-corner-all, .livetabslightness .ui-corner-top, .livetabslightness .ui-corner-right, .livetabslightness .ui-corner-tr { -moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px; -khtml-border-top-right-radius: 4px; border-top-right-radius: 4px; }
+.livetabslightness .ui-corner-all, .livetabslightness .ui-corner-bottom, .livetabslightness .ui-corner-left, .livetabslightness .ui-corner-bl { -moz-border-radius-bottomleft: 4px; -webkit-border-bottom-left-radius: 4px; -khtml-border-bottom-left-radius: 4px; border-bottom-left-radius: 4px; }
+.livetabslightness .ui-corner-all, .livetabslightness .ui-corner-bottom, .livetabslightness .ui-corner-right, .livetabslightness .ui-corner-br { -moz-border-radius-bottomright: 4px; -webkit-border-bottom-right-radius: 4px; -khtml-border-bottom-right-radius: 4px; border-bottom-right-radius: 4px; }
+/* Overlays */
+.livetabslightness .ui-widget-overlay { background: #666666 url(images/ui-bg_diagonals-thick_20_666666_40x40.png) 50% 50% repeat; opacity: .50;filter:Alpha(Opacity=50); }
+.livetabslightness .ui-widget-shadow { margin: -5px 0 0 -5px; padding: 5px; background: #000000 url(images/ui-bg_flat_10_000000_40x100.png) 50% 50% repeat-x; opacity: .20;filter:Alpha(Opacity=20); -moz-border-radius: 5px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; }
+/* Tabs
+----------------------------------*/
+.livetabslightness .ui-tabs { padding: .2em; zoom: 1; }
+.livetabslightness .ui-tabs .ui-tabs-nav { list-style: none; position: relative; padding: .2em .2em 0; }
+.livetabslightness .ui-tabs .ui-tabs-nav li { list-style: none; position: relative; float: left; margin: 0 .2em -1px 0; padding: 0; }
+.livetabslightness .ui-tabs .ui-tabs-nav li a { float: left; text-decoration: none; padding: .5em 2em; }
+.livetabslightness .ui-tabs .ui-tabs-nav li.ui-tabs-selected, .livetabslightness .ui-tabs .ui-tabs-nav li.ui-tabs-active { padding-bottom: 1px; border-bottom-width: 0; }
+.livetabslightness .ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .livetabslightness .ui-tabs .ui-tabs-nav li.ui-tabs-active a, .livetabslightness .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .livetabslightness .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.livetabslightness .ui-tabs .ui-tabs-nav li a, .livetabslightness .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a, .livetabslightness .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.livetabslightness .ui-tabs .ui-tabs-panel { padding: 1em 1.4em; display: block; border-width: 0; background: none; }
+.livetabslightness .ui-tabs .ui-tabs-hide { display: none !important; }

@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ModuleHelp.Text" xml:space="preserve">
+    <value>دو نوع پورتال با استفاده از این application می توانید ایجاد نمایید : &lt;br&gt;&lt;br&gt;&lt;li&gt;&lt;b&gt;پورتال های والد &lt;/b&gt; وب سایت هایی که دارای آدرس های مجزا و مستقل هستند (مانند : www.domain.com ).  برای ای منظور می بایست یک نام دامنه از اراائه دهندگان خدمات اینترنت خریداری نمایید و با ثبت اطلاعات در DNS سرورهای 1 و 2 آن با اطلاعات IPهاست خود از آن استفاده نمایید. یک نمونه از پورتال والد &lt;b&gt;www.mydomain.com&lt;/b&gt; می باشد. همچنین شما می توانید از آدرس IPسایت خود برای دسترسی به آن استفاده نمایید، بدون ذکر نام سایت مانند (&lt;b&gt;65.174.86.217&lt;/b&gt; ). درصورتی که شما می خواهید چندین نام دامین را به پورتال خود متصل نمایید می توانید آن ها را با کاما از هم جدا نمایید (برای مثال &lt;b&gt;www.domain1.com,www.domain2.com&lt;/b&gt; ).تا زمانی که تمام تنظیمات و اطلاعات دامین را در اختیار ندارید از ایجاد پورتال والد جلوگیری نمایید. &lt;br&gt;&lt;br&gt;&lt;li&gt;&lt;b&gt;پورتال های فرزند&lt;/b&gt; پورتال های فرزند زیرهاست هایی هستند که ایجاد می گردند. اساسا این پورتال ها به اینصورت می باشند که پوشه هایی در وب سرور برای دسترسی از آدرس نام پوشه و نام دامنه والد می توان استفاده نمود( برای مثال : www.domain.com/directory ). یک پورتال فرزند می تواند به راحتی در هر زمان با تغییر در داده های مستعار پورتال به پورتال والد تبدیل شود.&lt;br&gt;&lt;br&gt;*توجه : پورتال هایی که ایجاد می شوند از خصوصیات پیش فرض که در ماژول تنظیمات میزبان یا فایل الگوی انتخاب شده، تعریف شده اند استفاده می نمایید( HostFee, HostSpace, DemoPeriod ) . بعد از ایجاد پورتال این تنظیمات را می توان در مدیریت،بخش ماژول تنظیمات سایت ویرایش نمود.&lt;br&gt;&lt;br&gt;</value>
+  </data>
+  <data name="plType.Text" xml:space="preserve">
+    <value>نوع پورتال :</value>
+  </data>
+  <data name="plType.Help" xml:space="preserve">
+    <value>با استفاده از این Application می توانید دو نوع پورتال ایجاد نمایید. (برای مشاهده جزییات بیشتر راهنمای ماژول که در منوی Action وجود دارد مراجعه نمایید.)</value>
+  </data>
+  <data name="DemoMessage.Text" xml:space="preserve">
+    <value>ورود به پورتال دمو به شما امکان ایجاد پورتال خودتان و کسب تجربیات برای تنظمیات پیشرفته را می دهد {0}. درتمام مدت (دوره دمو و بعد از آن) شما می توانید پورتال دمو خود را به صورت پورتال ثبت شده تغییر دهید. برای این کار می بایست به صورت مدیر وارد سایت شده و با گزینه ی انتخاب ثبت پورتال جدید یا گسترش پورتال، پورتال خود را ثبت نمایید. پورتال های ثبت شده امکان استفاده از نام دامنه خود را دارند.   (برای مثال. www.yourdomain.com ) &lt;br&gt;&lt;br&gt;&lt;b&gt;*نکته :&lt;/b&gt; نام سایت شما می بایست یک نام ساده باشد و نمی تواند دارای فضای خالی یا علامت های نگارشی باشد. لینک پورتال شما به صورت  &lt;b&gt; {1}/portalname&lt;/b&gt; می شود.&lt;br&gt;&lt;br&gt;</value>
+  </data>
+  <data name="AdminMissing.Text" xml:space="preserve">
+    <value>فایل admin.template شما وجود ندارد، می بایست مجدد آن را بارگذاری نمایید.&lt;br&gt;</value>
+  </data>
+  <data name="PortalMissing.Text" xml:space="preserve">
+    <value>فایل portal.template سایت شما موجود نمی باشد و می بایست مجدد کپی گردد.&lt;br&gt;</value>
+  </data>
+  <data name="plPortalName.Text" xml:space="preserve">
+    <value>نام پورتال : </value>
+  </data>
+  <data name="plPortalName.Help" xml:space="preserve">
+    <value>نام سایت/پورتال را وارد نمایید</value>
+  </data>
+  <data name="valPortalName.ErrorMessage" xml:space="preserve">
+    <value>نام پورتال الزامی می باشد</value>
+  </data>
+  <data name="plTitle.Text" xml:space="preserve">
+    <value>عنوان :</value>
+  </data>
+  <data name="plTitle.Help" xml:space="preserve">
+    <value>برای سایت خود عنوانی را وارد نمایید </value>
+  </data>
+  <data name="plDescription.Text" xml:space="preserve">
+    <value>شرح :</value>
+  </data>
+  <data name="plDescription.Help" xml:space="preserve">
+    <value>برای سایت خود شرحی را وارد نمایید</value>
+  </data>
+  <data name="plKeyWords.Text" xml:space="preserve">
+    <value>کلیمات کلیدی :</value>
+  </data>
+  <data name="plKeyWords.Help" xml:space="preserve">
+    <value>کلیمات کلیدی موردنظر را به وسیله ی کاما از هم جدا نموده و وارد نمایید. این کلیمات در ابتدای صفحه قرار می گیرند و به موتورهای جستجو برای ایندکس نمودن سایت کمک می نمایند.</value>
+  </data>
+  <data name="plTemplate.Text" xml:space="preserve">
+    <value>الگو :</value>
+  </data>
+  <data name="plTemplate.Help" xml:space="preserve">
+    <value>برای پورتال جدید الگویی انتهاب نمایید</value>
+  </data>
+  <data name="plFirstName.Text" xml:space="preserve">
+    <value>نام :</value>
+  </data>
+  <data name="plFirstName.Help" xml:space="preserve">
+    <value>نام خود را وارد نمایید</value>
+  </data>
+  <data name="plLastName.Text" xml:space="preserve">
+    <value>نام خانوادگی :</value>
+  </data>
+  <data name="plLastName.Help" xml:space="preserve">
+    <value>نام خانوادگی خود را وارد نمایید</value>
+  </data>
+  <data name="valFirstName.ErrorMessage" xml:space="preserve">
+    <value>نام الزامی می باشد</value>
+  </data>
+  <data name="valLastName.ErrorMessage" xml:space="preserve">
+    <value>نام خانوادگی الزامی می باشد</value>
+  </data>
+  <data name="plUsername.Text" xml:space="preserve">
+    <value>نام کاربری :</value>
+  </data>
+  <data name="plUsername.Help" xml:space="preserve">
+    <value>نام کاربری برای مدیریت سایت خود وارد نمایید</value>
+  </data>
+  <data name="plPassword.Text" xml:space="preserve">
+    <value>رمزعبور :</value>
+  </data>
+  <data name="plPassword.Help" xml:space="preserve">
+    <value>برای مدیریت این سایت رمزعبوری وارد نمایید</value>
+  </data>
+  <data name="plConfirm.Text" xml:space="preserve">
+    <value>تکرار :</value>
+  </data>
+  <data name="plConfirm.Help" xml:space="preserve">
+    <value>رمزعبور خود را مجدد تکرار نمایید. </value>
+  </data>
+  <data name="valUsername.ErrorMessage" xml:space="preserve">
+    <value>نام کاربری الزامی می باشد</value>
+  </data>
+  <data name="valPassword.ErrorMessage" xml:space="preserve">
+    <value>رمزعبور الزامی می باشد</value>
+  </data>
+  <data name="valConfirm.ErrorMessage" xml:space="preserve">
+    <value>تکرار رمزعبور الزامی می باشد</value>
+  </data>
+  <data name="plEmail.Text" xml:space="preserve">
+    <value>ایمیل :</value>
+  </data>
+  <data name="plEmail.Help" xml:space="preserve">
+    <value>ایمیل مدیریت این سایت را وارد نمایید</value>
+  </data>
+  <data name="valEmail.ErrorMessage" xml:space="preserve">
+    <value>ایمیل الزامی می باشد</value>
+  </data>
+  <data name="cmdUpdate.Text" xml:space="preserve">
+    <value>ایجاد پورتال</value>
+  </data>
+  <data name="Note.Text" xml:space="preserve">
+    <value>&lt;strong&gt;*نکته :&lt;/strong&gt; بعد از ایجاد پورتال شما برای ورود به صورت مدیرسایت می بایست از اطلاعات زیر استفاده نمایید.</value>
+  </data>
+  <data name="InvalidTemplate.Text" xml:space="preserve">
+    <value>{0} فایل قالب پورتال نامعتبر است</value>
+  </data>
+  <data name="InvalidName.Text" xml:space="preserve">
+    <value>نام مستعار پورتال نمی بایست شامل فاصله و علامت ها باشد</value>
+  </data>
+  <data name="InvalidPassword.Text" xml:space="preserve">
+    <value>مفدار رمزعبوری که وارد نموده اید یکسان نیست</value>
+  </data>
+  <data name="ChildExists.Text" xml:space="preserve">
+    <value>نام فرزند پرتالی که وارد نموده اید وجود دارد،لطفا نام دیگری برای پورتال فرزند وارد نمایید.</value>
+  </data>
+  <data name="CreateError.Text" xml:space="preserve">
+    <value>درهنگام ایجاد پورتال خطایی رخ داده است، این خطا ممکن است به دلیل رمزعبور نادرست برا ی کاربر موجود می باشد. برای ادامه لطفا جزییات حساب را بررسی و مجددا سعی نمایید.</value>
+  </data>
+  <data name="PortalSetup.Text" xml:space="preserve">
+    <value>تنظیم نمودن پورتال</value>
+  </data>
+  <data name="SecuritySettings.Text" xml:space="preserve">
+    <value>تنظیمات امنیتی </value>
+  </data>
+  <data name="plPortalAlias.Text" xml:space="preserve">
+    <value>نام مستعار پورتال :</value>
+  </data>
+  <data name="plPortalAlias.Help" xml:space="preserve">
+    <value>نام مستعار این پورتال را وارد نمایید</value>
+  </data>
+  <data name="plHomeDirectory.Text" xml:space="preserve">
+    <value>پوشه اصلی :</value>
+  </data>
+  <data name="plHomeDirectory.Help" xml:space="preserve">
+    <value>پوشه اصلی این پورتال را وارد نمایید</value>
+  </data>
+  <data name="Customize.Text" xml:space="preserve">
+    <value>سفارشی</value>
+  </data>
+  <data name="valTemplate.ErrorMessage" xml:space="preserve">
+    <value>لطفا فایل الگو را انتخاب نمایید</value>
+  </data>
+  <data name="Parent.Text" xml:space="preserve">
+    <value>والد</value>
+  </data>
+  <data name="Child.Text" xml:space="preserve">
+    <value>فرزند</value>
+  </data>
+  <data name="AutoGenerate.Text" xml:space="preserve">
+    <value>ایجاد خودکار</value>
+  </data>
+  <data name="ControlTitle_signup.Text" xml:space="preserve">
+    <value>ثبت نام</value>
+  </data>
+  <data name="SendMail.Error" xml:space="preserve">
+    <value>در هنگام ارسال ایمیل تایید خطایی رخ داده است - {0}.  اگرچه وب سایت ایجاد شده است. &lt;a href='{1}'&gt;برای دسترسی به سایت جدید اینجا کلیک نمایید. &lt;/a&gt;</value>
+  </data>
+  <data name="AddPortal.Text" xml:space="preserve">
+    <value>افزودن پرتال جدید</value>
+  </data>
+  <data name="InvalidHomeFolder.Text" xml:space="preserve">
+    <value>پوشه ای که مشخص نموده اید معتبر نمی باشد. </value>
+  </data>
+  <data name="DuplicatePortalAlias.Text" xml:space="preserve">
+    <value>نام مستعاری که شما انتخاب نموده اید قبلا ثبت شده است، لطفا نام دیگری انتخاب نمایید.</value>
+  </data>
+  <data name="UnknownSendMail.Error" xml:space="preserve">
+    <value>در هنگام ارسال ایمیل تایید خطایی رخ داده است .اگرچه وب سایت ایجاد شده است. &lt;a href='{0}'{1}&gt;برای دسترسی به سایت جدید اینجا کلیک نمایید. &lt;/a&gt;</value>
+  </data>
+  <data name="ValidationResults.Text" xml:space="preserve">
+    <value>نتایج بررسی </value>
+  </data>
+  <data name="plAnswer.Help" xml:space="preserve">
+    <value>به سوال زیر پاسخ دهید </value>
+  </data>
+  <data name="plAnswer.Text" xml:space="preserve">
+    <value>پاسخ امنیتی :</value>
+  </data>
+  <data name="plQuestion.Help" xml:space="preserve">
+    <value>سوالی را برای زمانی که درخواست رمزعبور دارید وارد نمایید </value>
+  </data>
+  <data name="plQuestion.Text" xml:space="preserve">
+    <value>سوال امینیتی :</value>
+  </data>
+  <data name="valEmail2.ErrorMessage" xml:space="preserve">
+    <value>آدرس ایمیل واردشده نامعتبر است</value>
+  </data>
+  <data name="DuplicateWithTab.Text" xml:space="preserve">
+    <value>صفحه ای همنام با نام مستعار سایت شما وجود دارد، لطفا نام مستعار سایت را تغییر دهید.</value>
+  </data>
+  <data name="useCurrentLabel.Help" xml:space="preserve">
+    <value>این گزینه را برای تعیین کاربر ارشد فعلی به عنوان مدیر سایت انتخاب کنید. در صورت عدم انتخاب این گزینه میتوانید حساب کابر مورد نظر خود را برای مدیر سایت وارد کنید.</value>
+  </data>
+  <data name="useCurrentLabel.Text" xml:space="preserve">
+    <value>تعیین کاربر فعلی به عنوان مدیر</value>
+  </data>
+  <data name="valPortalAlias.ErrorMessage" xml:space="preserve">
+    <value>نام مستعار سایت الزامی است.</value>
+  </data>
+</root>

@@ -1,0 +1,138 @@
+﻿@using DotNetNuke.Web.DDRMenu;
+@using System.Dynamic;
+@inherits DotNetNuke.Web.Razor.DotNetNukeWebPage<dynamic>
+
+@{ var root = Model.Source.root; }
+
+
+@helper RenderRootNodes(IList<MenuNode> nodes)
+{
+    <div class="static-menu">
+        <div class="content-pane">
+            @if (nodes.Count > 0)
+            {
+                <ul class="menu">
+                    @foreach (var node in nodes)
+                    {
+                        var homeSelected = "";
+                        if (node.First)
+                        {
+                            if (DotNetNuke.Entities.Portals.PortalController.GetCurrentPortalSettings().HomeTabId == DotNetNuke.Entities.Tabs.TabController.CurrentPage.TabID)
+                            {
+                                homeSelected = "selected";
+                            }
+                        }
+
+                        if (node.Depth == 0)
+                        {
+                        <li id="@node.Description" class="@homeSelected">
+                            <span>@node.Text</span>
+                            <em></em>
+                        </li>
+                        }
+                    }
+                </ul>
+                <div class="logo-panel" >
+                    <a href="/default.aspx" title="سایت Ehaml" id="dnn_dnnLOGO_hypLogo"><img style="border-width:0px;" alt="سایت Ehaml" src="/Portals/0/Logo.png" id="dnn_dnnLOGO_imgLogo"></a>
+                </div>                
+            }
+        </div>
+    </div>
+}
+
+@helper RenderNodes(IList<MenuNode> nodes)
+{
+    <div class="dynamic-menu landMenu">
+        <div class="content-pane">
+            @if (nodes.Count > 0)
+            {
+                foreach (var node in nodes)
+                {
+                    var ulID = node.Description + "Menu";
+                    <ul class="childmenu" id="@ulID" style="display:none;">
+                    <li>
+                        <a href="/default.aspx">صفحه اصلی</a>
+                    </li>
+                    @foreach (var childNodes in node.Children)
+                    {
+                        var lidata = "";
+                        if (childNodes.Selected) { lidata = "data-nodeselect=" + node.Description + " class=ehamlselectedMenu"; }
+                        <li @lidata>
+                            @if (childNodes.Enabled)
+                            {
+                                <a href="@childNodes.Url">@childNodes.Text</a>
+                            }
+                            else
+                            {
+                                @childNodes.Text
+                            }
+                            @RenderChildNodes(childNodes.Children, node.Description)
+                        </li>
+                    }
+                    </ul>
+                }
+            }
+        </div>
+    </div>
+}
+
+@helper RenderChildNodes(IList<MenuNode> nodes, string desc)
+{
+    if (nodes.Count > 0)
+    {
+        <div class="ehaml-mega-menu">
+            <ul>
+            @foreach (var node in nodes)
+            {
+                var lidata = "";
+                if (node.Selected) { lidata = "data-nodeselect=" + desc + " class=ehamlselectedMenu"; }
+                <li @lidata>
+                    @if (node.Enabled)
+                    {
+                        <a href="@node.Url">@node.Text</a>
+                    }
+                    else
+                    {
+                        @node.Text
+                    }
+                    @RenderChildNodes(node.Children, desc)
+                </li>
+            }
+        </ul>
+        </div>
+    }
+}
+
+@RenderRootNodes(root.Children)
+@RenderNodes(root.Children)
+
+@*<script type="text/javascript">
+    (function ($) {
+        $().ready(function () {
+            if ($(".ehamlselectedMenuTMP").length > 0) {
+                liID = $(".ehamlselectedMenu").attr("data-nodeselect");
+                $("#" + liID).addClass("selected");
+                $(".menu-bar .dynamic-menu").attr("class", "dynamic-menu");
+                $(".menu-bar .dynamic-menu").addClass(liID + "Menu");
+            }
+            if ($("#" + $("ul.menu li.selected").attr("id") + "Menu").length > 0) $("#" + $("ul.menu li.selected").attr("id") + "Menu").show();
+
+            $(".childmenu > li TMP").mouseenter(function (e) {
+                var subMenu = $(">div", $(this));
+                if (subMenu.length > 0) {
+                    var offset = subMenu.offset();
+                    //subMenu.css("left", parseInt(e.pageX) - 550  + "px");
+                }
+                subMenu.fadeIn(200);
+                $(".childmenu > li > div").hide();
+                subMenu.show();
+
+                e.stopPropagation();
+            });
+            $(".childmenu > li > div TMP").mouseleave(function (e) {
+                var subMenu = $(this);
+                subMenu.fadeOut(300);
+            });
+        });
+    })(jQuery);
+</script>*@

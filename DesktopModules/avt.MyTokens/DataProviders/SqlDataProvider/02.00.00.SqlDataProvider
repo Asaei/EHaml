@@ -1,0 +1,17 @@
+﻿
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtMyTokens2_Tokens] ADD LastModifiedDate DateTime Default getdate() NOT NULL
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtMyTokens2_Tokens] ADD LastModifiedBy int Default -1 NOT NULL 
+GO
+
+
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------

@@ -1,0 +1,103 @@
+﻿/****** Object:  Table {databaseOwner}[LiveTabs]    Script Date: 01/20/2012 09:29:11 ******/
+
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES where TABLE_NAME = '{objectQualifier}LiveTabs')
+BEGIN
+EXEC sp_rename '{databaseOwner}{objectQualifier}LiveTabs', 'LiveTabs'
+END
+GO
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.COLUMNS where TABLE_NAME='LiveTabs' and COLUMN_NAME='modID')
+BEGIN
+EXECUTE sp_rename N'{databaseOwner}LiveTabs.modID', N'Tmp_ModuleId', 'COLUMN' 
+EXECUTE sp_rename N'{databaseOwner}LiveTabs.Tmp_ModuleId', N'ModuleId', 'COLUMN' 
+END
+GO
+
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.COLUMNS where TABLE_NAME='LiveTabs' and COLUMN_NAME='Width' and COLUMN_NAME='Height' and COLUMN_NAME='Effect' and COLUMN_NAME='Sortable')
+BEGIN
+ALTER TABLE {databaseOwner}LiveTabs ADD
+	[Width] [int] NULL ,
+	[Height] [int] NULL ,
+	[SelectOnMouseover] [bit] NOT NULL CONSTRAINT DF_LiveTabs_SelectOnMouseover DEFAULT 0,
+	[Persistence] [bit] NOT NULL CONSTRAINT DF_LiveTabs_Persistence DEFAULT 0,
+	[IntelligentTabLinks] [bit] NOT NULL CONSTRAINT DF_LiveTabs_IntelligentTabLinks DEFAULT 0,
+	[Theme] [nvarchar](50) NOT NULL CONSTRAINT DF_LiveTabs_Theme DEFAULT '',
+	[Effect] [nvarchar](50) NOT NULL CONSTRAINT DF_LiveTabs_Effect DEFAULT 'none',
+	[TrackClicks] [bit] NOT NULL CONSTRAINT DF_LiveTabs_TrackClicks DEFAULT 0,
+	[TrackCategory] [nvarchar](MAX) NOT NULL CONSTRAINT DF_LiveTabs_TrackCategory DEFAULT '',
+	[TrackAction] [nvarchar](MAX) NOT NULL CONSTRAINT DF_LiveTabs_TrackAction DEFAULT '',
+	[TrackLabel] [nvarchar](MAX) NOT NULL CONSTRAINT DF_LiveTabs_TrackLabel DEFAULT '',
+	[TrackingCode] [nvarchar](MAX)  NULL,
+	[Orientation] [nvarchar](50) NOT NULL CONSTRAINT DF_LiveTabs_Orientation DEFAULT '',
+	[EnableThemeScript] [bit] NOT NULL CONSTRAINT DF_LiveTabs_EnableThemeScript DEFAULT 0,
+	[SkinInfo] [nvarchar](MAX) NOT NULL CONSTRAINT DF_LiveTabs_SkinInfo DEFAULT '',
+	[Collapse] [bit] NOT NULL CONSTRAINT DF_LiveTabs_Collapse DEFAULT 0,
+	[SelectedTab] [nvarchar](MAX) NULL,
+	[LoadOnDemand] [bit] NOT NULL CONSTRAINT DF_LiveTabs_LoadOnDemand DEFAULT 0,
+	[TabMode] [nvarchar](255) NOT NULL CONSTRAINT DF_LiveTabs_TabMode DEFAULT '',
+	[FeedUrl] [nvarchar](255) NULL,
+	[MaxTitleLength] [int] NOT NULL CONSTRAINT DF_LiveTabs_MaxTitleLength DEFAULT 0,
+	[CacheTime] [int] NOT NULL CONSTRAINT DF_LiveTabs_CacheTime DEFAULT 0,
+	[TitleLengthUnit] [nvarchar](50) NOT NULL CONSTRAINT DF_LiveTabs_TitleLengthUnit DEFAULT '',
+	[ConnectionString] [nvarchar](255) NULL,
+	[SqlQuery] [nvarchar](MAX) NULL,
+	[UseToken] [nvarchar](50) NULL,
+	[NavigationWidth] [int] NOT NULL CONSTRAINT DF_LiveTabs_NavigationWidth DEFAULT 0,
+	[MaxTabs] [int] NOT NULL CONSTRAINT DF_LiveTabs_MaxTabs DEFAULT 0
+END
+GO
+
+
+/****** Object:  Table [dbo].[LiveTabs_Tab]    Script Date: 06/12/2012 09:29:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[LiveTabs_Tab]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[LiveTabs_Tab](
+	[TabId] [int] IDENTITY(1,1) NOT NULL,
+	[ModuleId] [int] NOT NULL,
+	[Permissions] [nvarchar](max) NOT NULL,
+	[EmbeddedModule] [nvarchar](max) NOT NULL,
+	[Locale] [nvarchar](255) NOT NULL,
+	[TabName] [nvarchar](max) NOT NULL,
+	[TabHeader] [nvarchar](max) NULL,
+	[Content] [nvarchar](max) NULL,
+	[SearchSummary] [nvarchar](max) NOT NULL,
+	[Searchable] [bit] NOT NULL,
+	[SortOrder] [int] NOT NULL,
+	[LegacyTabId] [int] NULL,
+	[NavigateUrl] [varchar](255) NULL,
+	[BreakLine] [nvarchar](max) NOT NULL,
+	[LoadOnDemand] [bit] NOT NULL,
+ CONSTRAINT [PK_LiveTabs_Tab] PRIMARY KEY CLUSTERED 
+(
+	[TabId] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+END
+GO
+
+Delete from {databaseOwner}{objectQualifier}modulecontrols where ControlKey = 'Settings' AND ModuleDefId = (select ModuleDefId from {databaseOwner}{objectQualifier}moduledefinitions where friendlyname = 'Live Tabs')
+
+/****** Object:  Stored Procedure {databaseOwner}{objectQualifier}LiveTabsGet    Script Date: Tuesday, October 10, 2006 ******/
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}LiveTabsGet') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}LiveTabsGet
+GO
+
+/****** Object:  Stored Procedure {databaseOwner}{objectQualifier}LiveTabsAdd    Script Date: Tuesday, October 10, 2006 ******/
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}LiveTabsAdd') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}LiveTabsAdd
+GO
+
+/****** Object:  Stored Procedure {databaseOwner}{objectQualifier}LiveTabsUpdate    Script Date: Tuesday, October 10, 2006 ******/
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}LiveTabsUpdate') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}LiveTabsUpdate
+GO
+
+/****** Object:  Stored Procedure {databaseOwner}{objectQualifier}LiveTabsDelete    Script Date: Tuesday, October 10, 2006 ******/
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}LiveTabsDelete') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}LiveTabsDelete
+GO

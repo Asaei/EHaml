@@ -1,0 +1,239 @@
+﻿
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE {databaseOwner}[{objectQualifier}avtMyTokens2_ExternalApi](
+	[PortalId] [int] NULL,
+	[FilterIPs] [ntext] NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtMyTokens2_ExternalApi]  WITH CHECK ADD  CONSTRAINT [FK_{objectQualifier}avtMyTokens2_ExternalApi_{objectQualifier}Portals] FOREIGN KEY([PortalId])
+REFERENCES {databaseOwner}[{objectQualifier}Portals] ([PortalID])
+ON DELETE CASCADE
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtMyTokens2_ExternalApi] CHECK CONSTRAINT [FK_{objectQualifier}avtMyTokens2_ExternalApi_{objectQualifier}Portals]
+GO
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE {databaseOwner}[{objectQualifier}avtMyTokens2_ExternalApiKeys](
+	[ApiAccessKey] [uniqueidentifier] NOT NULL,
+	[PortalId] [int] NULL,
+	[Caption] [nvarchar](100) NULL,
+	[AuthMode] [nvarchar](50) NOT NULL,
+	[UserName] [nvarchar](100) NULL,
+	[FilterIPs] [ntext] NULL,
+	[DateAdded] [datetime] NOT NULL,
+ CONSTRAINT [PK_{objectQualifier}avtMyTokens2_ExternalApiKeys] PRIMARY KEY CLUSTERED 
+(
+	[ApiAccessKey] ASC
+)
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtMyTokens2_ExternalApiKeys]  WITH CHECK ADD  CONSTRAINT [FK_{objectQualifier}avtMyTokens2_ExternalApiKeys_{objectQualifier}Portals] FOREIGN KEY([PortalId])
+REFERENCES {databaseOwner}[{objectQualifier}Portals] ([PortalID])
+ON DELETE CASCADE
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtMyTokens2_ExternalApiKeys] CHECK CONSTRAINT [FK_{objectQualifier}avtMyTokens2_ExternalApiKeys_{objectQualifier}Portals]
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtMyTokens2_ExternalApiKeys] ADD  CONSTRAINT [DF_{objectQualifier}avtMyTokens2_ExternalApiKeys_DateAdded]  DEFAULT (getdate()) FOR [DateAdded]
+GO
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtMyTokens2_ClearGlobalSettings]
+
+as
+
+
+DELETE FROM {databaseOwner}{objectQualifier}avtMyTokens2_ExternalApi Where PortalId IS NULL
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+
+
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtMyTokens2_DeleteApiKey]
+
+	@ApiAccessKey	uniqueidentifier
+	
+
+as
+ 
+DELETE FROM {databaseOwner}{objectQualifier}avtMyTokens2_ExternalApiKeys 
+WHERE ApiAccessKey = @ApiAccessKey
+
+GO
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+
+
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtMyTokens2_GetApiKeys]
+
+	@portalId	int
+	
+
+as
+
+if (@portalId < 0)
+	SELECT * FROM {databaseOwner}{objectQualifier}avtMyTokens2_ExternalApiKeys 
+	Order By DateAdded
+ELSE
+	SELECT * FROM {databaseOwner}{objectQualifier}avtMyTokens2_ExternalApiKeys 
+	WHERE PortalId = @portalId
+	Order By DateAdded
+
+GO
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtMyTokens2_GetApiSettings]
+
+	@portalId	int
+	
+
+as
+ 
+IF @portalId < 0
+	SELECT * FROM {databaseOwner}{objectQualifier}avtMyTokens2_ExternalApi
+	WHERE PortalId IS NULL
+ELSE
+	SELECT * FROM {databaseOwner}{objectQualifier}avtMyTokens2_ExternalApi
+	WHERE PortalId = @portalId
+
+GO
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtMyTokens2_SetupApi]
+
+	@portalId	int,
+	@filterIPs	ntext
+
+as
+
+IF @portalId < 0
+	SET @portalId = NULL
+
+IF EXISTS(SELECT PortalId from {databaseOwner}{objectQualifier}avtMyTokens2_ExternalApi where PortalId = @portalId OR (PortalId IS NULL and @portalId IS NULL))
+	UPDATE {databaseOwner}{objectQualifier}avtMyTokens2_ExternalApi SET FilterIPs = @filterIPs Where PortalId = @portalId OR (PortalId IS NULL and @portalId IS NULL)
+ELSE
+	INSERT INTO {databaseOwner}{objectQualifier}avtMyTokens2_ExternalApi VALUES (@portalId, @filterIPs)
+GO
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+
+
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtMyTokens2_UpdateApiKey]
+
+	@ApiAccessKey	uniqueidentifier,
+	@portalId		int,
+	@Caption		nvarchar(100),
+	@AuthMode		nvarchar(50),
+	@UserName		nvarchar(100),
+	@FilterIPs		ntext
+	
+
+as
+ 
+IF EXISTS(SELECT ApiAccessKey FROM {databaseOwner}{objectQualifier}avtMyTokens2_ExternalApiKeys Where ApiAccessKey = @ApiAccessKey)
+	UPDATE {databaseOwner}{objectQualifier}avtMyTokens2_ExternalApiKeys 
+		SET Caption = @Caption, 
+			AuthMode = @AuthMode,
+			UserName = @UserName, 
+			FilterIPs = @FilterIPs,
+			PortalId = @portalId
+		WHERE ApiAccessKey = @ApiAccessKey
+ELSE
+	INSERT INTO {databaseOwner}{objectQualifier}avtMyTokens2_ExternalApiKeys(ApiAccessKey,PortalId,Caption,AuthMode,UserName,FilterIPs)
+		VALUES (@ApiAccessKey, @portalId, @Caption, @AuthMode, @UserName, @FilterIPs)
+GO
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------

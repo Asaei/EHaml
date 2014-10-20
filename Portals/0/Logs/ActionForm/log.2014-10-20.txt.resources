@@ -1,0 +1,12 @@
+11:10:41.276 | Errors | 0528daba | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | System.UnauthorizedAccessException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Access denied!
+   at DnnSharp.Common.Api.ApiContext.Execute(IHttpHandler handler, HttpContext httpContext, Action`2 log)
+
+12:10:38.993 | Errors | d6aa4997 | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | System.UnauthorizedAccessException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Access denied!
+   at DnnSharp.Common.Api.ApiContext.Execute(IHttpHandler handler, HttpContext httpContext, Action`2 log)
+
+18:10:27.500 | Errors | d943011a | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | System.UnauthorizedAccessException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Access denied!
+   at DnnSharp.Common.Api.ApiContext.Execute(IHttpHandler handler, HttpContext httpContext, Action`2 log)
+

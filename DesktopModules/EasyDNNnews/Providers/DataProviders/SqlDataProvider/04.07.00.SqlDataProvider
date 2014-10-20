@@ -1,0 +1,52 @@
+﻿/******  StoredProcedure [dbo].[EasyDNNNewsShowCategoriesByPermissions]	******/
+/******  StoredProcedure [dbo].[EasyDNNNewsAddEditCategoriesByPermissions]	******/
+
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsShowCategoriesByPermissions]') AND type in (N'P', N'PC'))
+BEGIN
+drop procedure [dbo].[EasyDNNNewsShowCategoriesByPermissions]
+END
+GO
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE [dbo].[EasyDNNNewsShowCategoriesByPermissions]
+    @UserID int,
+    @PortalID int,
+    @ModuleID int
+AS 
+CREATE TABLE #tempCat([CategoryID] int);
+SET NOCOUNT ON
+INSERT #tempCat SELECT DISTINCT CategoryID
+ FROM [dbo].[EasyDNNNewsRolePremissionsShowCategories] AS rpsc
+  INNER JOIN [dbo].[EasyDNNNewsRolePremissionSettings] AS rps ON rps.PremissionSettingsID = rpsc.PremissionSettingsID
+   INNER JOIN {databaseOwner}{objectQualifier}UserRoles AS ur ON ur.RoleID = rps.RoleID
+    WHERE ur.UserID = @UserID AND rps.ModuleID = @ModuleID AND rps.PortalID = @PortalID;
+INSERT #tempCat SELECT CategoryID
+ FROM [dbo].[EasyDNNNewsUserPremissionsShowCategories] AS upsc
+  INNER JOIN [dbo].[EasyDNNNewsUserPremissionSettings] AS ups ON upsc.PremissionSettingsID = ups.PremissionSettingsID
+   WHERE ups.PortalID = @PortalID AND ups.ModuleID = @ModuleID AND ups.UserID = @UserID;
+
+SELECT DISTINCT CategoryID FROM #tempCat;
+DROP TABLE #tempCat;'
+GO
+
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAddEditCategoriesByPermissions]') AND type in (N'P', N'PC'))
+BEGIN
+drop procedure [dbo].[EasyDNNNewsAddEditCategoriesByPermissions]
+END
+GO
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE [dbo].[EasyDNNNewsAddEditCategoriesByPermissions]
+    @UserID int,
+    @PortalID int,
+    @ModuleID int
+AS 
+SET NOCOUNT ON
+DECLARE @tempCat table (CategoryID int NOT NULL, CategoryName nvarchar(200));
+INSERT @tempCat SELECT DISTINCT cat.CategoryID, cat.CategoryName
+ FROM [dbo].[EasyDNNNewsCategoryList] as cat INNER JOIN [dbo].[EasyDNNNewsRolePremissionsAddToCategories] AS rpac ON cat.CategoryID = rpac.CategoryID
+  INNER JOIN [dbo].[EasyDNNNewsRolePremissionSettings] AS rps ON rpac.PremissionSettingsID = rps.PremissionSettingsID
+   INNER JOIN {databaseOwner}{objectQualifier}UserRoles AS ur ON ur.RoleID = rps.RoleID
+    WHERE ur.UserID = @UserID AND rps.ModuleID = @ModuleID AND rps.PortalID = @PortalID;
+INSERT INTO @tempCat SELECT cat.CategoryID, cat.CategoryName
+ FROM [dbo].[EasyDNNNewsCategoryList] as cat INNER JOIN [dbo].[EasyDNNNewsUserPremissionsAddToCategories] AS upac ON cat.CategoryID = upac.CategoryID
+  INNER JOIN [dbo].[EasyDNNNewsUserPremissionSettings] AS ups ON upac.PremissionSettingsID = ups.PremissionSettingsID
+   WHERE ups.PortalID = @PortalID AND ups.ModuleID = @ModuleID AND ups.UserID = @UserID;
+
+SELECT DISTINCT CategoryID, CategoryName FROM @tempCat;'

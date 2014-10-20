@@ -1,0 +1,80 @@
+/* Layout helpers
+----------------------------------*/
+.livetabsdarkness .ui-helper-hidden { display: none; }
+.livetabsdarkness .ui-helper-hidden-accessible { position: absolute; left: -99999999px; }
+.livetabsdarkness .ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.livetabsdarkness .ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.livetabsdarkness .ui-helper-clearfix { display: inline-block; }
+/* required comment for clearfix to work in Opera \*/
+* html .ui-helper-clearfix { height:1%; }
+.livetabsdarkness .ui-helper-clearfix { display:block; }
+/* end clearfix */
+.livetabsdarkness .ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+/* Interaction Cues
+----------------------------------*/
+.livetabsdarkness .ui-state-disabled { cursor: default !important; }
+/* Icons
+----------------------------------*/
+/* states and images */
+.livetabsdarkness .ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+/* Misc visuals
+----------------------------------*/
+/* Overlays */
+.livetabsdarkness .ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+/* Component containers
+----------------------------------*/
+.livetabsdarkness .ui-widget { font-family: Segoe UI, Arial, sans-serif; font-size: 1.1em; }
+.livetabsdarkness .ui-widget input, .livetabsdarkness .ui-widget select, .livetabsdarkness .ui-widget textarea, .livetabsdarkness .ui-widget button { font-family: Segoe UI, Arial, sans-serif; font-size: 1em; }
+.livetabsdarkness .ui-widget-content { border: 1px solid #666666; background: #000000 url(images/ui-bg_inset-soft_25_000000_1x100.png) 50% bottom repeat-x; color: #ffffff; }
+.livetabsdarkness .ui-widget-content a {  }
+.livetabsdarkness .ui-widget-header { border: 1px solid #333333; background: #333333 url(images/ui-bg_gloss-wave_25_333333_500x100.png) 50% 50% repeat-x; color: #ffffff; font-weight: bold; }
+.livetabsdarkness .ui-widget-header a { color: #ffffff; }
+/* Interaction states
+----------------------------------*/
+.livetabsdarkness .ui-state-default, .livetabsdarkness .ui-widget-content .ui-state-default { border: 1px solid #666666; background: #555555 url(images/ui-bg_glass_20_555555_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #eeeeee; outline: none; }
+.livetabsdarkness .ui-state-default a, .livetabsdarkness .ui-state-default a:link, .livetabsdarkness .ui-state-default a:visited { color: #eeeeee; text-decoration: none; outline: none; }
+.livetabsdarkness .ui-state-hover, .livetabsdarkness .ui-widget-content .ui-state-hover, .livetabsdarkness .ui-state-focus, .livetabsdarkness .ui-widget-content .ui-state-focus { border: 1px solid #59b4d4; background: #0078a3 url(images/ui-bg_glass_40_0078a3_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #ffffff; outline: none; }
+.livetabsdarkness .ui-state-hover a, .livetabsdarkness .ui-state-hover a:hover { color: #ffffff; text-decoration: none; outline: none; }
+.livetabsdarkness .ui-state-active, .livetabsdarkness .ui-widget-content .ui-state-active { border: 1px solid #ffaf0f; background: #f58400 url(images/ui-bg_inset-soft_30_f58400_1x100.png) 50% 50% repeat-x; font-weight: bold; color: #ffffff; outline: none; }
+.livetabsdarkness .ui-state-active a, .livetabsdarkness .ui-state-active a:link, .livetabsdarkness .ui-state-active a:visited { color: #ffffff; outline: none; text-decoration: none; }
+/* Interaction Cues
+----------------------------------*/
+.livetabsdarkness .ui-state-highlight, .livetabsdarkness .ui-widget-content .ui-state-highlight {border: 1px solid #cccccc; background: #eeeeee url(images/ui-bg_highlight-soft_80_eeeeee_1x100.png) 50% top repeat-x; color: #2e7db2; }
+.livetabsdarkness .ui-state-highlight a, .livetabsdarkness .ui-widget-content .ui-state-highlight a { color: #2e7db2; }
+.livetabsdarkness .ui-state-error, .livetabsdarkness .ui-widget-content .ui-state-error {border: 1px solid #ffb73d; background: #ffc73d url(images/ui-bg_glass_40_ffc73d_1x400.png) 50% 50% repeat-x; color: #111111; }
+.livetabsdarkness .ui-state-error a, .livetabsdarkness .ui-widget-content .ui-state-error a { color: #111111; }
+.livetabsdarkness .ui-state-error-text, .livetabsdarkness .ui-widget-content .ui-state-error-text { color: #111111; }
+.livetabsdarkness .ui-state-disabled, .livetabsdarkness .ui-widget-content .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+.livetabsdarkness .ui-priority-primary, .livetabsdarkness .ui-widget-content .ui-priority-primary { font-weight: bold; }
+.livetabsdarkness .ui-priority-secondary, .livetabsdarkness .ui-widget-content .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+/* Icons
+----------------------------------*/
+/* states and images */
+.livetabsdarkness .ui-icon { width: 16px; height: 16px; background-image: url(images/ui-icons_cccccc_256x240.png); }
+.livetabsdarkness .ui-widget-content .ui-icon {background-image: url(images/ui-icons_cccccc_256x240.png); }
+.livetabsdarkness .ui-widget-header .ui-icon {background-image: url(images/ui-icons_ffffff_256x240.png); }
+.livetabsdarkness .ui-state-default .ui-icon { background-image: url(images/ui-icons_cccccc_256x240.png); }
+.livetabsdarkness .ui-state-hover .ui-icon, .livetabsdarkness .ui-state-focus .ui-icon {background-image: url(images/ui-icons_ffffff_256x240.png); }
+.livetabsdarkness .ui-state-active .ui-icon {background-image: url(images/ui-icons_222222_256x240.png); }
+.livetabsdarkness .ui-state-highlight .ui-icon {background-image: url(images/ui-icons_4b8e0b_256x240.png); }
+.livetabsdarkness .ui-state-error .ui-icon, .livetabsdarkness .ui-state-error-text .ui-icon {background-image: url(images/ui-icons_a83300_256x240.png); }
+/* Corner radius */
+.livetabsdarkness .ui-corner-all, .livetabsdarkness .ui-corner-top, .livetabsdarkness .ui-corner-left, .livetabsdarkness .ui-corner-tl { -moz-border-radius-topleft: 6px; -webkit-border-top-left-radius: 6px; -khtml-border-top-left-radius: 6px; border-top-left-radius: 6px; }
+.livetabsdarkness .ui-corner-all, .livetabsdarkness .ui-corner-top, .livetabsdarkness .ui-corner-right, .livetabsdarkness .ui-corner-tr { -moz-border-radius-topright: 6px; -webkit-border-top-right-radius: 6px; -khtml-border-top-right-radius: 6px; border-top-right-radius: 6px; }
+.livetabsdarkness .ui-corner-all, .livetabsdarkness .ui-corner-bottom, .livetabsdarkness .ui-corner-left, .livetabsdarkness .ui-corner-bl { -moz-border-radius-bottomleft: 6px; -webkit-border-bottom-left-radius: 6px; -khtml-border-bottom-left-radius: 6px; border-bottom-left-radius: 6px; }
+.livetabsdarkness .ui-corner-all, .livetabsdarkness .ui-corner-bottom, .livetabsdarkness .ui-corner-right, .livetabsdarkness .ui-corner-br { -moz-border-radius-bottomright: 6px; -webkit-border-bottom-right-radius: 6px; -khtml-border-bottom-right-radius: 6px; border-bottom-right-radius: 6px; }
+/* Overlays */
+.livetabsdarkness .ui-widget-overlay { background: #5c5c5c url(images/ui-bg_flat_50_5c5c5c_40x100.png) 50% 50% repeat-x; opacity: .80;filter:Alpha(Opacity=80); }
+.livetabsdarkness .ui-widget-shadow { margin: -7px 0 0 -7px; padding: 7px; background: #cccccc url(images/ui-bg_flat_30_cccccc_40x100.png) 50% 50% repeat-x; opacity: .60;filter:Alpha(Opacity=60); -moz-border-radius: 8px; -webkit-border-radius: 8px; -khtml-border-radius: 8px; border-radius: 8px;}
+/* Tabs
+----------------------------------*/
+.livetabsdarkness .ui-tabs { padding: .2em; zoom: 1; }
+.livetabsdarkness .ui-tabs .ui-tabs-nav { list-style: none; position: relative; padding: .2em .2em 0; }
+.livetabsdarkness .ui-tabs .ui-tabs-nav li { list-style: none; position: relative; float: left; margin: 0 .2em -1px 0; padding: 0; }
+.livetabsdarkness .ui-tabs .ui-tabs-nav li a { float: left; text-decoration: none; padding: .5em 2em; }
+.livetabsdarkness .ui-tabs .ui-tabs-nav li.ui-tabs-selected, .livetabsdarkness .ui-tabs .ui-tabs-nav li.ui-tabs-active { padding-bottom: 1px; border-bottom-width: 0; }
+.livetabsdarkness .ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .livetabsdarkness .ui-tabs .ui-tabs-nav li.ui-tabs-active a, .livetabsdarkness .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .livetabsdarkness .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.livetabsdarkness .ui-tabs .ui-tabs-nav li a, .livetabsdarkness .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a, .livetabsdarkness .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.livetabsdarkness .ui-tabs .ui-tabs-panel { padding: 1em 1.4em; display: block; border-width: 0; background: none; }
+.livetabsdarkness .ui-tabs .ui-tabs-hide { display: none !important; }
+.livetabsdarkness .ui-tabs-panel p, .livetabsdarkness .ui-tabs-panel div {color:#ffffff;}

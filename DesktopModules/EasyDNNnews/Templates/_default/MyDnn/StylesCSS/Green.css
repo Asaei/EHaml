@@ -1,0 +1,91 @@
+#EDN_BlogOne.BlogOne_Style_Green h1.edn_module_title {
+  background: url(../img/styles/green/gradient_title_bg.png) repeat-x #94ca48;
+}
+#EDN_BlogOne.BlogOne_Style_Green h1.edn_module_title span {
+  text-shadow: 0 -1px 0 #75ba18;
+}
+#EDN_BlogOne.BlogOne_Style_Green a.open_article_btn {
+  background-image: url(../img/styles/grey/icons/more.png);
+  background-color: #578a2e;
+}
+#EDN_BlogOne.BlogOne_Style_Green .date_box {
+  background: #ffea00;
+}
+#EDN_BlogOne.BlogOne_Style_Green .date_box p {
+  color: black;
+}
+#EDN_BlogOne.BlogOne_Style_Green .date_box p.year {
+  background: #5e8c1f;
+  color: white;
+}
+#EDN_BlogOne.BlogOne_Style_Green .article .author_box span {
+  background-image: url(../img/styles/green/icons/person.png);
+  background-color: #7aa125;
+}
+#EDN_BlogOne.BlogOne_Style_Green .article .details p.categories span {
+  background-image: url(../img/styles/green/icons/category.png);
+  background-color: #9ecb3b;
+}
+#EDN_BlogOne.BlogOne_Style_Green .article .details p.tags span {
+  background-image: url(../img/styles/green/icons/tag.png);
+  background-color: #9ecb3b;
+}
+#EDN_BlogOne.BlogOne_Style_Green .article .details p.author span {
+  background-image: url(../img/styles/green/icons/person.png);
+  background-color: #9ecb3b;
+}
+#EDN_BlogOne.BlogOne_Style_Green .article.standalone .article_pagination span {
+  background: url(../img/styles/green/pagination_active_page_bg.png) repeat-x #82b406;
+  border: 1px solid #819869;
+  color: white;
+}
+#EDN_BlogOne.BlogOne_Style_Green.news .article_pager a.page.active {
+  background: url(../img/styles/green/pagination_active_page_bg.png) repeat-x #82b406;
+  border: 1px solid #819869;
+  color: white;
+}
+#EDN_BlogOne.BlogOne_Style_Green.search .search_input .input {
+  background-image: url(../img/styles/green/search_sprite.png);
+}
+#EDN_BlogOne.BlogOne_Style_Green.search .search_input .do_search {
+  background-image: url(../img/styles/green/search_sprite.png);
+}
+#EDN_BlogOne.BlogOne_Style_Green.search .search_input.button_outside .input {
+  background-image: url(../img/styles/green/search_sprite.png);
+}
+#EDN_BlogOne.BlogOne_Style_Green.search .search_input.button_outside .input input {
+  background-image: url(../img/styles/green/search_sprite.png);
+}
+#EDN_BlogOne.BlogOne_Style_Green.search .search_input.button_outside .do_search {
+  background-image: url(../img/styles/green/search_button_right.png);
+}
+#EDN_BlogOne.BlogOne_Style_Green.search .search_input.button_outside .do_search span {
+  background-image: url(../img/styles/green/search_sprite.png);
+}
+#EDN_BlogOne.BlogOne_Style_Green.category_menu ul.edn_category_menu_wrapper li div {
+  background-color: #cee6a2;
+}
+#EDN_BlogOne.BlogOne_Style_Green.category_menu ul.edn_category_menu_wrapper li.level_0 > div {
+  background-color: #dcecbb;
+}
+#EDN_BlogOne.BlogOne_Style_Green.calendar .callendar_table_container .calendar_table .month_selection {
+  background: url(../img/styles/green/calendar_title_bg.png) repeat-x #8cc531;
+}
+#EDN_BlogOne.BlogOne_Style_Green.calendar .callendar_table_container .calendar_table .month_selection td {
+  text-shadow: 0 -1px 0 #75ba18;
+}
+#EDN_BlogOne.BlogOne_Style_Green.calendar .callendar_table_container .calendar_table .day.has_posts {
+  background: #e5e5e5;
+}
+#EDN_BlogOne.BlogOne_Style_Green.calendar .callendar_table_container .calendar_table .day.selected {
+  background: #a1a1a1;
+}
+#EDN_BlogOne.BlogOne_Style_Green.calendar .callendar_table_container .calendar_table .day.selected a {
+  color: white !important;
+}
+#EDN_BlogOne.BlogOne_Style_Green.calendar .callendar_table_container .calendar_table .day.today {
+  background: #fff000;
+}
+#EDN_BlogOne.BlogOne_Style_Green.calendar .callendar_table_container .calendar_table .day.today a {
+  color: #5d5a1b !important;
+}

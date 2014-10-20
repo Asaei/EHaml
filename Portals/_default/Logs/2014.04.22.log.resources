@@ -1,0 +1,32 @@
+2014-04-22 10:11:34,149 [srv20079][Thread:32][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-22 10:11:34,236 [srv20079][Thread:46][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-22 10:11:50,409 [srv20079][Thread:25][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-22 10:11:50,436 [srv20079][Thread:25][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=107&error=An unexpected error has occurred
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-22 10:14:21,763 [srv20079][Thread:49][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-22 10:14:21,773 [srv20079][Thread:26][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

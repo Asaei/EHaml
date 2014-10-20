@@ -1,0 +1,37 @@
+﻿
+<div id="ImageScroll${ModuleID}" class="$ThemeName" style="width:${xf.ViewXmlSetting("width",700)}px; height:${xf.ViewXmlSetting("height",300)}px;">
+    #if($DataList.Count > 0) 
+        #foreach($DataItem in $DataList)
+		<a rel="${xf.ViewPrettyPhoto($DataItem)}" href="${xf.ViewLinkUrl($DataItem.UrlLink)}" target="${xf.ViewLinkTarget($DataItem)}" title="$DataItem.Description" ><img src="${xf.ViewLinkUrl($DataItem.Picture)}" alt="$DataItem.Title" id="$DataItem.ID" width="${xf.ViewXmlSetting("item_width",300)}" height="${xf.ViewXmlSetting("item_height",200)}" alt="$DataItem.Subtitle" /></a>
+        #end 
+    #end
+</div>
+
+<!-- Plugin initialization -->
+<script type="text/javascript">
+	// Initialize the plugin with no custom options
+    jQuery(document).ready(function () {
+        // None of the options are set
+        jQuery("div#ImageScroll${ModuleID}").smoothDivScroll({
+			// Autoscrolling
+            autoScrollingMode: '${xf.ViewXmlSetting("autoScrollingMode","onStart")}', // always, onStart or empty (no auto scrolling) String
+            autoScrollingDirection: '${xf.ViewXmlSetting("ScrollDirection","endlessLoopLeft")}', // right, left, backAndForth, endlessLoopRight, endlessLoopLeft String
+			autoScrollingStep: ${xf.ViewXmlSetting("ScrollingStep",1)}, // Pixels
+			autoScrollingInterval: ${xf.ViewXmlSetting("ScrollingInterval",10)}, // Milliseconds
+			manualContinuousScrolling: true,
+			// Touch scrolling
+			touchScrolling: ${xf.ViewXmlSetting("touchScrolling","true")},
+			// Easing for when the scrollToElement method is used
+			scrollToAnimationDuration: ${xf.ViewXmlSetting("AnimationDuration",1000)}, // Milliseconds
+            mousewheelScrolling: 'allDirections'
+        });
+
+       jQuery("#ImageScroll${ModuleID} a[rel^='prettyPhoto']").prettyPhoto({
+              animation_speed: '${xf.ViewXmlSetting("animation_speed","normal")}',
+              theme: '${xf.ViewXmlSetting("theme","pp_default")}',
+              slideshow: ${xf.ViewXmlSetting("slideshow",3000)},
+              autoplay_slideshow: ${xf.ViewXmlSetting("autoplay_slideshow","false")},
+              overlay_gallery: ${xf.ViewXmlSetting("overlay_gallery","false")} /* If set to true, a gallery will overlay the fullscreen image on mouse over */
+          });
+    });
+</script>

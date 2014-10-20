@@ -1,0 +1,64 @@
+/* Layout helpers
+----------------------------------*/
+.livetabshumanity .ui-helper-hidden { display: none; }
+.livetabshumanity .ui-helper-hidden-accessible { position: absolute; left: -99999999px; }
+.livetabshumanity .ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.livetabshumanity .ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.livetabshumanity .ui-helper-clearfix { display: inline-block; }
+/* required comment for clearfix to work in Opera \*/
+* html .ui-helper-clearfix { height:1%; }
+.livetabshumanity .ui-helper-clearfix { display:block; }
+/* end clearfix */
+.livetabshumanity .ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+/* Interaction Cues
+----------------------------------*/
+.livetabshumanity .ui-state-disabled { cursor: default !important; }
+/* states and images */
+.livetabshumanity .ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+/* Overlays */
+.livetabshumanity .ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+/* Component containers
+----------------------------------*/
+.livetabshumanity .ui-widget { font-family: Verdana,Arial,sans-serif; font-size: 1.1em; }
+.livetabshumanity .ui-widget input, .livetabshumanity .ui-widget select, .livetabshumanity .ui-widget textarea, .livetabshumanity .ui-widget button { font-family: Verdana,Arial,sans-serif; font-size: 1em; }
+.livetabshumanity .ui-widget-content { border: 1px solid #e0cfc2; background: #f4f0ec url(images/ui-bg_inset-soft_100_f4f0ec_1x100.png) 50% bottom repeat-x; color: #1e1b1d; }
+.livetabshumanity .ui-widget-content a { }
+.livetabshumanity .ui-widget-header { border: 1px solid #d49768; background: #cb842e url(images/ui-bg_glass_25_cb842e_1x400.png) 50% 50% repeat-x; color: #ffffff; font-weight: bold; }
+.livetabshumanity .ui-widget-header a { color: #ffffff; }
+/* Interaction states
+----------------------------------*/
+.livetabshumanity .ui-state-default, .livetabshumanity .ui-widget-content .ui-state-default { border: 1px solid #cdc3b7; background: #ede4d4 url(images/ui-bg_glass_70_ede4d4_1x400.png) 50% 50% repeat-x; font-weight: normal; color: #3f3731; outline: none; }
+.livetabshumanity .ui-state-default a, .livetabshumanity .ui-state-default a:link, .livetabshumanity .ui-state-default a:visited { color: #3f3731; text-decoration: none; outline: none; }
+.livetabshumanity .ui-state-hover, .livetabshumanity .ui-widget-content .ui-state-hover, .livetabshumanity .ui-state-focus, .livetabshumanity .ui-widget-content .ui-state-focus { border: 1px solid #f5ad66; background: #f5f0e5 url(images/ui-bg_glass_100_f5f0e5_1x400.png) 50% 50% repeat-x; font-weight: normal; color: #a46313; outline: none; }
+.livetabshumanity .ui-state-hover a, .livetabshumanity .ui-state-hover a:hover { color: #a46313; text-decoration: none; outline: none; }
+.livetabshumanity .ui-state-active, .livetabshumanity .ui-widget-content .ui-state-active { border: 1px solid #e0cfc2; background: #f4f0ec url(images/ui-bg_highlight-hard_100_f4f0ec_1x100.png) 50% 50% repeat-x; font-weight: normal; color: #b85700; outline: none; }
+.livetabshumanity .ui-state-active a, .livetabshumanity .ui-state-active a:link, .livetabshumanity .ui-state-active a:visited { color: #b85700; outline: none; text-decoration: none; }
+/* Interaction Cues
+----------------------------------*/
+.livetabshumanity .ui-state-highlight, .livetabshumanity .ui-widget-content .ui-state-highlight {border: 1px solid #d9bb73; background: #f5f5b5 url(images/ui-bg_highlight-hard_75_f5f5b5_1x100.png) 50% top repeat-x; color: #060200; }
+.livetabshumanity .ui-state-highlight a, .livetabshumanity .ui-widget-content .ui-state-highlight a { color: #060200; }
+.livetabshumanity .ui-state-error, .livetabshumanity .ui-widget-content .ui-state-error {border: 1px solid #f8893f; background: #fee4bd url(images/ui-bg_highlight-hard_65_fee4bd_1x100.png) 50% top repeat-x; color: #592003; }
+.livetabshumanity .ui-state-error a, .livetabshumanity .ui-widget-content .ui-state-error a { color: #592003; }
+.livetabshumanity .ui-state-error-text, .livetabshumanity .ui-widget-content .ui-state-error-text { color: #592003; }
+.livetabshumanity .ui-state-disabled, .livetabshumanity .ui-widget-content .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+.livetabshumanity .ui-priority-primary, .livetabshumanity .ui-widget-content .ui-priority-primary { font-weight: bold; }
+.livetabshumanity .ui-priority-secondary, .livetabshumanity .ui-widget-content .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+/* Corner radius */
+.livetabshumanity .ui-corner-all, .livetabshumanity .ui-corner-top, .livetabshumanity .ui-corner-left, .livetabshumanity .ui-corner-tl { -moz-border-radius-topleft: 6px; -webkit-border-top-left-radius: 6px; -khtml-border-top-left-radius: 6px; border-top-left-radius: 6px; }
+.livetabshumanity .ui-corner-all, .livetabshumanity .ui-corner-top, .livetabshumanity .ui-corner-right, .livetabshumanity .ui-corner-tr { -moz-border-radius-topright: 6px; -webkit-border-top-right-radius: 6px; -khtml-border-top-right-radius: 6px; border-top-right-radius: 6px; }
+.livetabshumanity .ui-corner-all, .livetabshumanity .ui-corner-bottom, .livetabshumanity .ui-corner-left, .livetabshumanity .ui-corner-bl { -moz-border-radius-bottomleft: 6px; -webkit-border-bottom-left-radius: 6px; -khtml-border-bottom-left-radius: 6px; border-bottom-left-radius: 6px; }
+.livetabshumanity .ui-corner-all, .livetabshumanity .ui-corner-bottom, .livetabshumanity .ui-corner-right, .livetabshumanity .ui-corner-br { -moz-border-radius-bottomright: 6px; -webkit-border-bottom-right-radius: 6px; -khtml-border-bottom-right-radius: 6px; border-bottom-right-radius: 6px; }
+/* Overlays */
+.livetabshumanity .ui-widget-overlay { background: #aaaaaa url(images/ui-bg_flat_75_aaaaaa_40x100.png) 50% 50% repeat-x; opacity: .30;filter:Alpha(Opacity=30); }
+.livetabshumanity .ui-widget-shadow { margin: -8px 0 0 -8px; padding: 8px; background: #aaaaaa url(images/ui-bg_flat_75_aaaaaa_40x100.png) 50% 50% repeat-x; opacity: .30;filter:Alpha(Opacity=30); -moz-border-radius: 8px; -webkit-border-radius: 8px; -khtml-border-radius: 8px; border-radius: 8px;}
+/* Tabs
+----------------------------------*/
+.livetabshumanity .ui-tabs { padding: .2em; zoom: 1; }
+.livetabshumanity .ui-tabs .ui-tabs-nav { list-style: none; position: relative; padding: .2em .2em 0; }
+.livetabshumanity .ui-tabs .ui-tabs-nav li { list-style: none; position: relative; float: left; margin: 0 .2em -1px 0; padding: 0; }
+.livetabshumanity .ui-tabs .ui-tabs-nav li a { float: left; text-decoration: none; padding: .5em 2em; }
+.livetabshumanity .ui-tabs .ui-tabs-nav li.ui-tabs-selected, .livetabshumanity .ui-tabs .ui-tabs-nav li.ui-tabs-active { padding-bottom: 1px; border-bottom-width: 0; }
+.livetabshumanity .ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .livetabshumanity .ui-tabs .ui-tabs-nav li.ui-tabs-active a, .livetabshumanity .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .livetabshumanity .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.livetabshumanity .ui-tabs .ui-tabs-nav li a, .livetabshumanity .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a, .livetabshumanity .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.livetabshumanity .ui-tabs .ui-tabs-panel { padding: 1em 1.4em; display: block; border-width: 0; background: none; }
+.livetabshumanity .ui-tabs .ui-tabs-hide { display: none !important; }

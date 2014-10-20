@@ -1,0 +1,278 @@
+﻿if not exists (select UpdateVersion from [dbo].[EasyDNNNewsUpdate] WHERE UpdateVersion = '05.01.00')
+BEGIN
+	INSERT INTO [dbo].[EasyDNNNewsUpdate]([UpdateVersion],[Finished]) VALUES(N'05.01.00',0)
+END
+GO
+/*** Remove tags that are not assigned to any article ***/
+
+;WITH NotExistingAtricleTags (TagID) AS(
+	SELECT DISTINCT nt.[TagID]
+	FROM [dbo].[EasyDNNNewsNewTags] AS nt LEFT OUTER JOIN [dbo].[EasyDNNNewsTagsItems] AS ti ON nt.TagID = ti.TagID
+	WHERE ti.TagID IS NULL
+ )
+ DELETE nt FROM [dbo].[EasyDNNNewsNewTags] AS nt INNER JOIN NotExistingAtricleTags AS neat ON nt.TagID = neat.TagID
+ GO
+/*** Alter template and theme column lenght on portal and module settings tables ***/
+/*** Alter template column on chameleon settings ***/
+
+if exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsModuleSettings' and column_name = 'ArticleDetailsTemplate')
+BEGIN
+	ALTER TABLE EasyDNNNewsModuleSettings ALTER COLUMN ArticleDetailsTemplate nvarchar(150)
+END
+if exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsModuleSettings' and column_name = 'ArticleListTemplate')
+BEGIN
+	ALTER TABLE EasyDNNNewsModuleSettings ALTER COLUMN ArticleListTemplate nvarchar(150)
+END
+if exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsModuleSettings' and column_name = 'TemplatesFolder')
+BEGIN
+	ALTER TABLE EasyDNNNewsModuleSettings ALTER COLUMN TemplatesFolder nvarchar(150)
+END
+if exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsModuleSettings' and column_name = 'ArticleListTheme')
+BEGIN
+	ALTER TABLE EasyDNNNewsModuleSettings ALTER COLUMN ArticleListTheme nvarchar(250)
+END
+if exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsModuleSettings' and column_name = 'TemplatesFolderDetails')
+BEGIN
+	ALTER TABLE EasyDNNNewsModuleSettings ALTER COLUMN TemplatesFolderDetails nvarchar(150)
+END
+if exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsModuleSettings' and column_name = 'ArticleDetailsTheme')
+BEGIN
+	ALTER TABLE EasyDNNNewsModuleSettings ALTER COLUMN ArticleDetailsTheme nvarchar(250)
+END
+if exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsModuleSettings' and column_name = 'ArticleCommentsTemplate')
+BEGIN
+	ALTER TABLE EasyDNNNewsModuleSettings ALTER COLUMN ArticleCommentsTemplate nvarchar(250)
+END
+if exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsModuleSettings' and column_name = 'ArticleDetailsDisplayStyle')
+BEGIN
+	ALTER TABLE EasyDNNNewsModuleSettings ALTER COLUMN ArticleDetailsDisplayStyle nvarchar(150)
+END
+if exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsModuleSettings' and column_name = 'CommentsTheme')
+BEGIN
+	ALTER TABLE EasyDNNNewsModuleSettings ALTER COLUMN CommentsTheme nvarchar(250)
+END
+
+if exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsPortalSettings' and column_name = 'ArticleDetailsTemplate')
+BEGIN
+	ALTER TABLE EasyDNNNewsPortalSettings ALTER COLUMN ArticleDetailsTemplate nvarchar(150)
+END
+if exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsPortalSettings' and column_name = 'ArticleListTemplate')
+BEGIN
+	ALTER TABLE EasyDNNNewsPortalSettings ALTER COLUMN ArticleListTemplate nvarchar(150)
+END
+if exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsPortalSettings' and column_name = 'TemplatesFolder')
+BEGIN
+	ALTER TABLE EasyDNNNewsPortalSettings ALTER COLUMN TemplatesFolder nvarchar(150)
+END
+if exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsPortalSettings' and column_name = 'ArticleListTheme')
+BEGIN
+	ALTER TABLE EasyDNNNewsPortalSettings ALTER COLUMN ArticleListTheme nvarchar(250)
+END
+if exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsPortalSettings' and column_name = 'TemplatesFolderDetails')
+BEGIN
+	ALTER TABLE EasyDNNNewsPortalSettings ALTER COLUMN TemplatesFolderDetails nvarchar(150)
+END
+if exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsPortalSettings' and column_name = 'ArticleDetailsTheme')
+BEGIN
+	ALTER TABLE EasyDNNNewsPortalSettings ALTER COLUMN ArticleDetailsTheme nvarchar(250)
+END
+if exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsPortalSettings' and column_name = 'ArticleCommentsTemplate')
+BEGIN
+	ALTER TABLE EasyDNNNewsPortalSettings ALTER COLUMN ArticleCommentsTemplate nvarchar(250)
+END
+if exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsPortalSettings' and column_name = 'ArticleDetailsDisplayStyle')
+BEGIN
+	ALTER TABLE EasyDNNNewsPortalSettings ALTER COLUMN ArticleDetailsDisplayStyle nvarchar(150)
+END
+if exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsPortalSettings' and column_name = 'CommentsTheme')
+BEGIN
+	ALTER TABLE EasyDNNNewsPortalSettings ALTER COLUMN CommentsTheme nvarchar(250)
+END
+
+if exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsChameleonNestedSettings' and column_name = 'Template')
+BEGIN
+	ALTER TABLE EasyDNNNewsChameleonNestedSettings ALTER COLUMN Template nvarchar(150)
+END
+if exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsChameleonSettings' and column_name = 'Template')
+BEGIN
+	ALTER TABLE EasyDNNNewsChameleonSettings ALTER COLUMN Template nvarchar(150)
+END
+/*** Alter template column on chameleon settings ***/
+GO
+
+/***
+Creates indexes for tables:
+ EasyDNNNews,
+ EasyDNNNewsUserPremissionSettings,
+ EasyDNNNewsRolePremissionSettings,
+ EasyDNNNewsCategories,
+ EasyDNNNewsCategoryList,
+ EasyDNNNewsComments
+ ***/
+
+/*** EasyDNNNews table indexes ***/
+
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_Wizard_Suggestion')
+    DROP INDEX IX_EasyDNNNews_Wizard_Suggestion ON EasyDNNNews;
+GO
+CREATE INDEX IX_EasyDNNNews_Wizard_Suggestion ON [dbo].[EasyDNNNews] ([PortalID], [HasPermissions], [HideDefaultLocale], [Approved], [Active], [PublishDate], [ExpireDate]) INCLUDE ([ArticleID], [UserID], [ArticleImage], [Featured])
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_Wizard_Suggestion2')
+    DROP INDEX IX_EasyDNNNews_Wizard_Suggestion2 ON EasyDNNNews;
+GO
+CREATE INDEX IX_EasyDNNNews_Wizard_Suggestion2 ON [dbo].[EasyDNNNews] ([PortalID], [HasPermissions], [EventArticle], [HideDefaultLocale], [PublishDate], [ExpireDate]) INCLUDE ([ArticleID], [UserID], [Approved], [Active])
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_Wizard_Suggestion3')
+    DROP INDEX IX_EasyDNNNews_Wizard_Suggestion3 ON EasyDNNNews;
+GO
+CREATE INDEX IX_EasyDNNNews_Wizard_Suggestion3 ON [dbo].[EasyDNNNews] ([PortalID], [HideDefaultLocale], [PublishDate], [ExpireDate]) INCLUDE ([ArticleID], [UserID])
+GO
+-- ovaj je naknadno dodani !!!
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_Wizard_Suggestion4')
+    DROP INDEX IX_EasyDNNNews_Wizard_Suggestion4 ON EasyDNNNews;
+GO
+CREATE INDEX IX_EasyDNNNews_Wizard_Suggestion4 ON [dbo].[EasyDNNNews] ([PortalID], [UserID], [Approved], [Active], [PublishDate], [ExpireDate])
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_PortalID_HasPermissions_HideDefaultLocale')
+    DROP INDEX IX_EasyDNNNews_PortalID_HasPermissions_HideDefaultLocale ON EasyDNNNews;
+GO
+CREATE NONCLUSTERED INDEX [IX_EasyDNNNews_PortalID_HasPermissions_HideDefaultLocale] ON [dbo].[EasyDNNNews] ([PortalID] ASC, [HasPermissions] ASC,[HideDefaultLocale] ASC)
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_PortalID')
+    DROP INDEX IX_EasyDNNNews_PortalID ON EasyDNNNews;
+GO
+CREATE NONCLUSTERED INDEX [IX_EasyDNNNews_PortalID] ON [dbo].[EasyDNNNews] ([PortalID] ASC)
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_UserID')
+    DROP INDEX IX_EasyDNNNews_UserID ON EasyDNNNews;
+GO
+CREATE NONCLUSTERED INDEX [IX_EasyDNNNews_UserID] ON [dbo].[EasyDNNNews] ([UserID] ASC)
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_Approved')
+    DROP INDEX IX_EasyDNNNews_Approved ON EasyDNNNews;
+GO
+CREATE NONCLUSTERED INDEX [IX_EasyDNNNews_Approved] ON [dbo].[EasyDNNNews] ([Approved] ASC)
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_Active')
+    DROP INDEX IX_EasyDNNNews_Active ON EasyDNNNews;
+GO
+CREATE NONCLUSTERED INDEX [IX_EasyDNNNews_Active] ON [dbo].[EasyDNNNews] ([Active] ASC)
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_HasPermissions')
+    DROP INDEX IX_EasyDNNNews_HasPermissions ON EasyDNNNews;
+GO
+CREATE NONCLUSTERED INDEX [IX_EasyDNNNews_HasPermissions] ON [dbo].[EasyDNNNews] ([HasPermissions] ASC)
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_EventArticle')
+    DROP INDEX IX_EasyDNNNews_EventArticle ON EasyDNNNews;
+GO
+CREATE NONCLUSTERED INDEX [IX_EasyDNNNews_EventArticle] ON [dbo].[EasyDNNNews] ([EventArticle] ASC)
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_Featured')
+    DROP INDEX IX_EasyDNNNews_Featured ON EasyDNNNews;
+GO
+CREATE NONCLUSTERED INDEX [IX_EasyDNNNews_Featured] ON [dbo].[EasyDNNNews] ([Featured] ASC)
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_FK_ArticleGalleryID')
+    DROP INDEX IX_EasyDNNNews_FK_ArticleGalleryID ON EasyDNNNews;
+GO
+IF EXISTS (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNews' and column_name = 'ArticleGalleryID') -- for v4
+	CREATE NONCLUSTERED INDEX [IX_EasyDNNNews_FK_ArticleGalleryID] ON [dbo].[EasyDNNNews] ([ArticleGalleryID] ASC)
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_PublishDate')
+    DROP INDEX IX_EasyDNNNews_PublishDate ON EasyDNNNews;
+GO
+CREATE NONCLUSTERED INDEX [IX_EasyDNNNews_PublishDate] ON [dbo].[EasyDNNNews] ([PublishDate] ASC)
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_ExpireDate')
+    DROP INDEX IX_EasyDNNNews_ExpireDate ON EasyDNNNews;
+GO
+CREATE NONCLUSTERED INDEX [IX_EasyDNNNews_ExpireDate] ON [dbo].[EasyDNNNews] ([ExpireDate] ASC)
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_HideDefaultLocale')
+    DROP INDEX IX_EasyDNNNews_HideDefaultLocale ON EasyDNNNews;
+GO
+IF EXISTS (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNews' and column_name = 'HideDefaultLocale') -- for v4
+	CREATE NONCLUSTERED INDEX [IX_EasyDNNNews_HideDefaultLocale] ON [dbo].[EasyDNNNews] ([HideDefaultLocale] ASC)
+GO
+ALTER INDEX ALL ON [dbo].[EasyDNNNews] REBUILD
+GO
+
+/*** EasyDNNNewsUserPremissionSettings table indexes ***/
+
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EDNUserPremissionSettings_FK_UserID')
+    DROP INDEX IX_EDNUserPremissionSettings_FK_UserID ON EasyDNNNewsUserPremissionSettings;
+GO
+CREATE NONCLUSTERED INDEX [IX_EDNUserPremissionSettings_FK_UserID] ON [dbo].[EasyDNNNewsUserPremissionSettings] ([UserID] ASC)
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EDNUserPremissionSettings_FK_ModuleID')
+    DROP INDEX IX_EDNUserPremissionSettings_FK_ModuleID ON EasyDNNNewsUserPremissionSettings;
+GO
+CREATE NONCLUSTERED INDEX [IX_EDNUserPremissionSettings_FK_ModuleID] ON [dbo].[EasyDNNNewsUserPremissionSettings] ([ModuleID] ASC)
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EDNUserPremissionSettings_FK_PortalID')
+    DROP INDEX IX_EDNUserPremissionSettings_FK_PortalID ON EasyDNNNewsUserPremissionSettings;
+GO
+CREATE NONCLUSTERED INDEX [IX_EDNUserPremissionSettings_FK_PortalID] ON [dbo].[EasyDNNNewsUserPremissionSettings] ([PortalID] ASC)
+GO
+ALTER INDEX ALL ON [dbo].[EasyDNNNewsUserPremissionSettings] REBUILD
+GO
+
+/*** EasyDNNNewsRolePremissionSettings table indexes ***/
+
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EDNRolePremissionSettings_FK_RoleID')
+    DROP INDEX IX_EDNRolePremissionSettings_FK_RoleID ON EasyDNNNewsRolePremissionSettings;
+GO
+CREATE NONCLUSTERED INDEX [IX_EDNRolePremissionSettings_FK_RoleID] ON [dbo].[EasyDNNNewsRolePremissionSettings] ([RoleID] ASC)
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EDNRolePremissionSettings_FK_ModuleID')
+    DROP INDEX IX_EDNRolePremissionSettings_FK_ModuleID ON EasyDNNNewsRolePremissionSettings;
+GO
+CREATE NONCLUSTERED INDEX [IX_EDNRolePremissionSettings_FK_ModuleID] ON [dbo].[EasyDNNNewsRolePremissionSettings] ([ModuleID] ASC)
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EDNRolePremissionSettings_FK_PortalID')
+    DROP INDEX IX_EDNRolePremissionSettings_FK_PortalID ON EasyDNNNewsRolePremissionSettings;
+GO
+CREATE NONCLUSTERED INDEX [IX_EDNRolePremissionSettings_FK_PortalID] ON [dbo].[EasyDNNNewsRolePremissionSettings] ([PortalID] ASC)
+GO
+ALTER INDEX ALL ON [dbo].[EasyDNNNewsRolePremissionSettings] REBUILD
+GO
+
+/*** EasyDNNNewsCategories table indexes ***/
+
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNewsCategories_FK_ArticleID')
+    DROP INDEX IX_EasyDNNNewsCategories_FK_ArticleID ON EasyDNNNewsCategories;
+GO
+CREATE NONCLUSTERED INDEX [IX_EasyDNNNewsCategories_FK_ArticleID] ON [dbo].[EasyDNNNewsCategories] ([ArticleID] ASC)
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNewsCategories_FK_CategoryID')
+    DROP INDEX IX_EasyDNNNewsCategories_FK_CategoryID ON EasyDNNNewsCategories;
+GO
+CREATE NONCLUSTERED INDEX [IX_EasyDNNNewsCategories_FK_CategoryID] ON [dbo].[EasyDNNNewsCategories] ([CategoryID] ASC)
+GO
+ALTER INDEX ALL ON [dbo].[EasyDNNNewsCategories] REBUILD
+GO
+
+/*** EasyDNNNewsCategoryList table indexes ***/
+
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNewsCategoryList_PortalID')
+    DROP INDEX IX_EasyDNNNewsCategoryList_PortalID ON EasyDNNNewsCategoryList;
+GO
+CREATE NONCLUSTERED INDEX [IX_EasyDNNNewsCategoryList_PortalID] ON [dbo].[EasyDNNNewsCategoryList] ([PortalID] ASC)
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNewsCategoryList_ParentCategory')
+    DROP INDEX IX_EasyDNNNewsCategoryList_ParentCategory ON EasyDNNNewsCategoryList;
+GO
+CREATE NONCLUSTERED INDEX [IX_EasyDNNNewsCategoryList_ParentCategory] ON [dbo].[EasyDNNNewsCategoryList] ([ParentCategory] ASC)
+GO
+ALTER INDEX ALL ON [dbo].[EasyDNNNewsCategoryList] REBUILD
+GO
+
+/*** EasyDNNNewsComments table indexes ***/
+
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNewsComments_FK_ArticleID')
+    DROP INDEX IX_EasyDNNNewsComments_FK_ArticleID ON EasyDNNNewsComments;
+GO
+CREATE NONCLUSTERED INDEX [IX_EasyDNNNewsComments_FK_ArticleID] ON [dbo].[EasyDNNNewsComments] ([ArticleID] ASC)
+GO
+ALTER INDEX ALL ON [dbo].[EasyDNNNewsComments] REBUILD

@@ -1,0 +1,825 @@
+2014-04-28 00:04:35,005 [srv20079][Thread:54][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=113&error=An unexpected error has occurred
+System.InvalidOperationException: Sequence contains no elements
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.Single[TSource](IQueryable`1 source)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.ReplyToInquiry_Ts.FillPageControllsShenasname(String inquiryId)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.ReplyToInquiry_Ts.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 04:03:05,372 [srv20079][Thread:8][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.InvalidOperationException: Sequence contains no elements
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.Single[TSource](IQueryable`1 source)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.ReplyToInquiry_Dghco.FillPageControllsShenasname(String inquiryId)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.ReplyToInquiry_Dghco.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 04:03:05,548 [srv20079][Thread:8][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=113&error=An unexpected error has occurred
+System.InvalidOperationException: Sequence contains no elements
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.Single[TSource](IQueryable`1 source)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.ReplyToInquiry_Dghco.FillPageControllsShenasname(String inquiryId)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.ReplyToInquiry_Dghco.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 09:22:19,630 [srv20079][Thread:27][ERROR] DotNetNuke.Services.FileSystem.FileServerHandler - System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at DotNetNuke.Services.FileSystem.FileManager.WriteFileToHttpContext(IFileInfo file, ContentDisposition contentDisposition)
+   at DotNetNuke.Services.FileSystem.FileServerHandler.ProcessRequest(HttpContext context)
+2014-04-28 09:22:19,910 [srv20079][Thread:27][ERROR] DotNetNuke.Services.FileSystem.FileServerHandler - System.Threading.ThreadAbortException: Thread was being aborted.
+   at DotNetNuke.Services.FileSystem.FileServerHandler.ProcessRequest(HttpContext context)
+2014-04-28 09:24:58,763 [srv20079][Thread:32][ERROR] DotNetNuke.Services.FileSystem.FileServerHandler - System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at DotNetNuke.Services.FileSystem.FileManager.WriteFileToHttpContext(IFileInfo file, ContentDisposition contentDisposition)
+   at DotNetNuke.Services.FileSystem.FileServerHandler.ProcessRequest(HttpContext context)
+2014-04-28 09:24:58,765 [srv20079][Thread:32][ERROR] DotNetNuke.Services.FileSystem.FileServerHandler - System.Threading.ThreadAbortException: Thread was being aborted.
+   at DotNetNuke.Services.FileSystem.FileServerHandler.ProcessRequest(HttpContext context)
+2014-04-28 09:25:11,633 [srv20079][Thread:32][ERROR] DotNetNuke.Services.FileSystem.FileServerHandler - System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at DotNetNuke.Services.FileSystem.FileManager.WriteFileToHttpContext(IFileInfo file, ContentDisposition contentDisposition)
+   at DotNetNuke.Services.FileSystem.FileServerHandler.ProcessRequest(HttpContext context)
+2014-04-28 09:25:11,636 [srv20079][Thread:32][ERROR] DotNetNuke.Services.FileSystem.FileServerHandler - System.Threading.ThreadAbortException: Thread was being aborted.
+   at DotNetNuke.Services.FileSystem.FileServerHandler.ProcessRequest(HttpContext context)
+2014-04-28 09:33:46,391 [srv20079][Thread:18][ERROR] DotNetNuke.Services.FileSystem.FileServerHandler - System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at DotNetNuke.Services.FileSystem.FileManager.WriteFileToHttpContext(IFileInfo file, ContentDisposition contentDisposition)
+   at DotNetNuke.Services.FileSystem.FileServerHandler.ProcessRequest(HttpContext context)
+2014-04-28 09:33:46,394 [srv20079][Thread:18][ERROR] DotNetNuke.Services.FileSystem.FileServerHandler - System.Threading.ThreadAbortException: Thread was being aborted.
+   at DotNetNuke.Services.FileSystem.FileServerHandler.ProcessRequest(HttpContext context)
+2014-04-28 11:41:19,387 [srv20079][Thread:54][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 11:41:19,418 [srv20079][Thread:51][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 11:41:26,858 [srv20079][Thread:40][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:41:26,950 [srv20079][Thread:40][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=106&error=An unexpected error has occurred
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:43:00,827 [srv20079][Thread:37][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 11:43:00,857 [srv20079][Thread:35][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 11:43:07,945 [srv20079][Thread:37][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:43:07,945 [srv20079][Thread:37][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=106&error=An unexpected error has occurred
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:43:54,342 [srv20079][Thread:37][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 11:43:54,386 [srv20079][Thread:51][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 11:44:03,717 [srv20079][Thread:20][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:44:03,718 [srv20079][Thread:20][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=106&error=An unexpected error has occurred
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:44:40,005 [srv20079][Thread:39][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 11:44:40,041 [srv20079][Thread:20][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 11:44:45,978 [srv20079][Thread:51][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:44:45,979 [srv20079][Thread:51][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=106&error=An unexpected error has occurred
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:46:48,263 [srv20079][Thread:20][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 11:46:48,289 [srv20079][Thread:59][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 11:46:57,304 [srv20079][Thread:50][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:46:57,305 [srv20079][Thread:50][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=107&error=An unexpected error has occurred
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:50:35,473 [srv20079][Thread:30][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 11:50:35,488 [srv20079][Thread:39][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 11:50:40,702 [srv20079][Thread:39][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:50:40,708 [srv20079][Thread:39][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=106&error=An unexpected error has occurred
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:51:33,793 [srv20079][Thread:50][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 11:51:33,840 [srv20079][Thread:50][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 11:51:39,647 [srv20079][Thread:50][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:51:39,648 [srv20079][Thread:50][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=106&error=An unexpected error has occurred
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:52:17,267 [srv20079][Thread:28][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.InvalidOperationException: Sequence contains no elements
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.Single[TSource](IQueryable`1 source)
+   at MyDnn_EHaml.Util.IsUserOk(Int32 userId, Int32 userType)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.MyDnn_EHaml_Inquiry_Zadghan.Inquiry_Zadghan.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:52:17,304 [srv20079][Thread:28][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=106&error=Sequence+contains+no+elements
+System.InvalidOperationException: Sequence contains no elements
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.Single[TSource](IQueryable`1 source)
+   at MyDnn_EHaml.Util.IsUserOk(Int32 userId, Int32 userType)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.MyDnn_EHaml_Inquiry_Zadghan.Inquiry_Zadghan.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:52:17,609 [srv20079][Thread:10][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.InvalidOperationException: Sequence contains no elements
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.Single[TSource](IQueryable`1 source)
+   at MyDnn_EHaml.Util.IsUserOk(Int32 userId, Int32 userType)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.MyDnn_EHaml_Inquiry_Zadghan.Inquiry_Zadghan.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:52:17,609 [srv20079][Thread:10][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=106&error=Sequence+contains+no+elements
+System.InvalidOperationException: Sequence contains no elements
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.Single[TSource](IQueryable`1 source)
+   at MyDnn_EHaml.Util.IsUserOk(Int32 userId, Int32 userType)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.MyDnn_EHaml_Inquiry_Zadghan.Inquiry_Zadghan.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:52:17,903 [srv20079][Thread:58][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.InvalidOperationException: Sequence contains no elements
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.Single[TSource](IQueryable`1 source)
+   at MyDnn_EHaml.Util.IsUserOk(Int32 userId, Int32 userType)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.MyDnn_EHaml_Inquiry_Zadghan.Inquiry_Zadghan.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:52:17,904 [srv20079][Thread:58][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=106&error=Sequence+contains+no+elements
+System.InvalidOperationException: Sequence contains no elements
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.Single[TSource](IQueryable`1 source)
+   at MyDnn_EHaml.Util.IsUserOk(Int32 userId, Int32 userType)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.MyDnn_EHaml_Inquiry_Zadghan.Inquiry_Zadghan.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:52:18,177 [srv20079][Thread:10][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.InvalidOperationException: Sequence contains no elements
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.Single[TSource](IQueryable`1 source)
+   at MyDnn_EHaml.Util.IsUserOk(Int32 userId, Int32 userType)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.MyDnn_EHaml_Inquiry_Zadghan.Inquiry_Zadghan.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:52:18,178 [srv20079][Thread:10][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=106&error=Sequence+contains+no+elements
+System.InvalidOperationException: Sequence contains no elements
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.Single[TSource](IQueryable`1 source)
+   at MyDnn_EHaml.Util.IsUserOk(Int32 userId, Int32 userType)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.MyDnn_EHaml_Inquiry_Zadghan.Inquiry_Zadghan.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:52:18,443 [srv20079][Thread:28][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.InvalidOperationException: Sequence contains no elements
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.Single[TSource](IQueryable`1 source)
+   at MyDnn_EHaml.Util.IsUserOk(Int32 userId, Int32 userType)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.MyDnn_EHaml_Inquiry_Zadghan.Inquiry_Zadghan.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:52:18,444 [srv20079][Thread:28][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=106&error=Sequence+contains+no+elements
+System.InvalidOperationException: Sequence contains no elements
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.Single[TSource](IQueryable`1 source)
+   at MyDnn_EHaml.Util.IsUserOk(Int32 userId, Int32 userType)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.MyDnn_EHaml_Inquiry_Zadghan.Inquiry_Zadghan.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:52:18,696 [srv20079][Thread:58][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.InvalidOperationException: Sequence contains no elements
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.Single[TSource](IQueryable`1 source)
+   at MyDnn_EHaml.Util.IsUserOk(Int32 userId, Int32 userType)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.MyDnn_EHaml_Inquiry_Zadghan.Inquiry_Zadghan.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:52:18,697 [srv20079][Thread:58][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=106&error=Sequence+contains+no+elements
+System.InvalidOperationException: Sequence contains no elements
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.Single[TSource](IQueryable`1 source)
+   at MyDnn_EHaml.Util.IsUserOk(Int32 userId, Int32 userType)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.MyDnn_EHaml_Inquiry_Zadghan.Inquiry_Zadghan.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:52:18,940 [srv20079][Thread:10][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.InvalidOperationException: Sequence contains no elements
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.Single[TSource](IQueryable`1 source)
+   at MyDnn_EHaml.Util.IsUserOk(Int32 userId, Int32 userType)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.MyDnn_EHaml_Inquiry_Zadghan.Inquiry_Zadghan.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:52:18,941 [srv20079][Thread:10][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=106&error=Sequence+contains+no+elements
+System.InvalidOperationException: Sequence contains no elements
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.Single[TSource](IQueryable`1 source)
+   at MyDnn_EHaml.Util.IsUserOk(Int32 userId, Int32 userType)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.MyDnn_EHaml_Inquiry_Zadghan.Inquiry_Zadghan.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:54:41,294 [srv20079][Thread:8][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 11:54:41,333 [srv20079][Thread:60][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 11:56:21,476 [srv20079][Thread:48][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 77.104.107.130
+	Port: 29674
+	Referer: http://ehaml.ir/Login?returnurl=/&popUp=true
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
+	ViewState: Zg6yzCJl5yUnUjyzVvKyhV/DUpBQvOKVNAUTQwGINgiQZFv6B5/QM05IQMYLxGb3uFcGXdJtZ3YMrnShgf1XyKeLy0saIJmbms/2aLbOaohy5q7nSrRWl7MqWyy6RNDkqkzE/e4LoDDASN2Yri6c5fVeEoXfnzh9a2CDWNcUnc9des62fYkJgeUq6ayTKU8gxoVp8/ngyqqnpSen3yKupjCeSiPanujkwamIPjHK+1aiXgLoUPh1qhmyXsBD6Lz3nckGrPF2NknLoV6/VVD9oxPXuw0agsc3m/fIDDBfpkuylRf6R06WPi8BFx6VmZTD+0HvoBue2viN2Wkr4k9jdZX/vh1/u1Ph9JV/DkbJw/6Bo2yGxLkveYUBrXS3C/BXBAWYb4yfn9CG0WVPMU4oxeMLZ4+QHF9ZGZg8MVATYOYLW7Hf3HXALKNjNf3IPrYEFMzT8TBRbP79c0mTDu0zASRxs/TR5nTpLpY2pAK+VSRiMf8cfLcSIuvVD24Vr0rx5FIyybbUxBAJOSutHZ7ZVxdwQtVAYgD8/6bwi9jIEpXvJeV06FOIRWiwG2HZYe4ZKV6z/h0J8+yjH1k/jEgZB8HkfPb8T8hw0iuIfJcuCTgIT/yzKEs71otkPVps+ybgWdCW0UUYfw0kXtiOKCPhRvSotafpe7wdXocuktBrI48QUJ/GDZepJQhm5lRg9FuXi2yUeI1yh4e90eQ/cBK6shDxkrvu7imCdTDVWSn1PxQtsSCJOh4ayNBxDQImpr2qeoTum/6Q6uQ4KAuB7rioC//rVuB2aLY6Q028FgX+i...
+   at System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:56:21,513 [srv20079][Thread:48][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.HttpException: Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 77.104.107.130
+	Port: 29674
+	Referer: http://ehaml.ir/Login?returnurl=/&popUp=true
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
+	ViewState: Zg6yzCJl5yUnUjyzVvKyhV/DUpBQvOKVNAUTQwGINgiQZFv6B5/QM05IQMYLxGb3uFcGXdJtZ3YMrnShgf1XyKeLy0saIJmbms/2aLbOaohy5q7nSrRWl7MqWyy6RNDkqkzE/e4LoDDASN2Yri6c5fVeEoXfnzh9a2CDWNcUnc9des62fYkJgeUq6ayTKU8gxoVp8/ngyqqnpSen3yKupjCeSiPanujkwamIPjHK+1aiXgLoUPh1qhmyXsBD6Lz3nckGrPF2NknLoV6/VVD9oxPXuw0agsc3m/fIDDBfpkuylRf6R06WPi8BFx6VmZTD+0HvoBue2viN2Wkr4k9jdZX/vh1/u1Ph9JV/DkbJw/6Bo2yGxLkveYUBrXS3C/BXBAWYb4yfn9CG0WVPMU4oxeMLZ4+QHF9ZGZg8MVATYOYLW7Hf3HXALKNjNf3IPrYEFMzT8TBRbP79c0mTDu0zASRxs/TR5nTpLpY2pAK+VSRiMf8cfLcSIuvVD24Vr0rx5FIyybbUxBAJOSutHZ7ZVxdwQtVAYgD8/6bwi9jIEpXvJeV06FOIRWiwG2HZYe4ZKV6z/h0J8+yjH1k/jEgZB8HkfPb8T8hw0iuIfJcuCTgIT/yzKEs71otkPVps+ybgWdCW0UUYfw0kXtiOKCPhRvSotafpe7wdXocuktBrI48QUJ/GDZepJQhm5lRg9FuXi2yUeI1yh4e90eQ/cBK6shDxkrvu7imCdTDVWSn1PxQtsSCJOh4ayNBxDQImpr2qeoTum/6Q6uQ4KAuB7rioC//rVuB2aLY6Q028FgX+i...
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- End of inner exception stack trace ---
+2014-04-28 11:57:06,486 [srv20079][Thread:10][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 11:57:06,520 [srv20079][Thread:8][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 11:57:12,963 [srv20079][Thread:58][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:57:12,964 [srv20079][Thread:58][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=107&error=An unexpected error has occurred
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:57:52,857 [srv20079][Thread:28][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 11:57:52,896 [srv20079][Thread:20][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 11:59:33,407 [srv20079][Thread:17][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 11:59:33,434 [srv20079][Thread:12][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 11:59:46,862 [srv20079][Thread:8][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 11:59:46,863 [srv20079][Thread:8][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=107&error=An unexpected error has occurred
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 12:06:30,651 [srv20079][Thread:8][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 12:06:30,682 [srv20079][Thread:34][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 12:07:03,220 [srv20079][Thread:20][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 12:07:03,221 [srv20079][Thread:20][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=107&error=An unexpected error has occurred
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 12:08:02,185 [srv20079][Thread:8][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 12:08:02,235 [srv20079][Thread:30][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 12:47:57,142 [srv20079][Thread:20][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 12:47:57,186 [srv20079][Thread:28][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 13:09:52,867 [srv20079][Thread:10][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at MyDnn_EHaml.Util.UpdatePoorsantTable(NameValueCollection poorsantNameBValue, InquiryDataClassesDataContext context)
+   at MyDnn_EHaml.Util.UpdateSettings(String KendoTheme, String FontLabel, String LabelFontSize, Color LabelFontColor, String TextBoxFontSize, Color TextBoxFontColor, Color TextBoxBackgroundColor, String TextBoxWidth, String TextBoxHeight, String NahveyeBarkhordBaBedehkarha, String NahveyeBarkhordBaBedehkarhaValue, String TedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji, String TedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji, NameValueCollection poorsantNameBValue, String ShomareTerminal, String ShomarePazirande, String KelideEkhtesasi, String AddressePazgashtAzBank, String txtOnvanePishnahad, String txtMatnePishnahad, String txtOnvaneTaeidPishnahad, String txtMatneTaeidPishnahad, String txtOnvaneEMailLinkeTaeed, String txtMatneEMailLinkeTaeed, String txtMatnePishnahadSMS, String txtMatneTaeidPishnahadSMS)
+   at MyDnn_EHaml.MyDnn_EHaml_Settings.Settings.lnkUpdate_Click(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 13:09:52,868 [srv20079][Thread:10][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=1145&error=An unexpected error has occurred&content=0
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at MyDnn_EHaml.Util.UpdatePoorsantTable(NameValueCollection poorsantNameBValue, InquiryDataClassesDataContext context)
+   at MyDnn_EHaml.Util.UpdateSettings(String KendoTheme, String FontLabel, String LabelFontSize, Color LabelFontColor, String TextBoxFontSize, Color TextBoxFontColor, Color TextBoxBackgroundColor, String TextBoxWidth, String TextBoxHeight, String NahveyeBarkhordBaBedehkarha, String NahveyeBarkhordBaBedehkarhaValue, String TedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji, String TedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji, NameValueCollection poorsantNameBValue, String ShomareTerminal, String ShomarePazirande, String KelideEkhtesasi, String AddressePazgashtAzBank, String txtOnvanePishnahad, String txtMatnePishnahad, String txtOnvaneTaeidPishnahad, String txtMatneTaeidPishnahad, String txtOnvaneEMailLinkeTaeed, String txtMatneEMailLinkeTaeed, String txtMatnePishnahadSMS, String txtMatneTaeidPishnahadSMS)
+   at MyDnn_EHaml.MyDnn_EHaml_Settings.Settings.lnkUpdate_Click(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 13:10:09,852 [srv20079][Thread:34][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at MyDnn_EHaml.Util.UpdatePoorsantTable(NameValueCollection poorsantNameBValue, InquiryDataClassesDataContext context)
+   at MyDnn_EHaml.Util.UpdateSettings(String KendoTheme, String FontLabel, String LabelFontSize, Color LabelFontColor, String TextBoxFontSize, Color TextBoxFontColor, Color TextBoxBackgroundColor, String TextBoxWidth, String TextBoxHeight, String NahveyeBarkhordBaBedehkarha, String NahveyeBarkhordBaBedehkarhaValue, String TedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji, String TedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji, NameValueCollection poorsantNameBValue, String ShomareTerminal, String ShomarePazirande, String KelideEkhtesasi, String AddressePazgashtAzBank, String txtOnvanePishnahad, String txtMatnePishnahad, String txtOnvaneTaeidPishnahad, String txtMatneTaeidPishnahad, String txtOnvaneEMailLinkeTaeed, String txtMatneEMailLinkeTaeed, String txtMatnePishnahadSMS, String txtMatneTaeidPishnahadSMS)
+   at MyDnn_EHaml.MyDnn_EHaml_Settings.Settings.lnkUpdate_Click(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 13:10:09,852 [srv20079][Thread:34][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=1145&error=An unexpected error has occurred&content=0
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at MyDnn_EHaml.Util.UpdatePoorsantTable(NameValueCollection poorsantNameBValue, InquiryDataClassesDataContext context)
+   at MyDnn_EHaml.Util.UpdateSettings(String KendoTheme, String FontLabel, String LabelFontSize, Color LabelFontColor, String TextBoxFontSize, Color TextBoxFontColor, Color TextBoxBackgroundColor, String TextBoxWidth, String TextBoxHeight, String NahveyeBarkhordBaBedehkarha, String NahveyeBarkhordBaBedehkarhaValue, String TedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji, String TedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji, NameValueCollection poorsantNameBValue, String ShomareTerminal, String ShomarePazirande, String KelideEkhtesasi, String AddressePazgashtAzBank, String txtOnvanePishnahad, String txtMatnePishnahad, String txtOnvaneTaeidPishnahad, String txtMatneTaeidPishnahad, String txtOnvaneEMailLinkeTaeed, String txtMatneEMailLinkeTaeed, String txtMatnePishnahadSMS, String txtMatneTaeidPishnahadSMS)
+   at MyDnn_EHaml.MyDnn_EHaml_Settings.Settings.lnkUpdate_Click(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 14:39:24,651 [srv20079][Thread:12][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 14:39:24,694 [srv20079][Thread:8][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-28 23:05:56,041 [srv20079][Thread:15][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.InvalidOperationException: Sequence contains no elements
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.Single[TSource](IQueryable`1 source)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.ReplyToInquiry_Hl.FillPageControllsShenasname(String inquiryId)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.ReplyToInquiry_Hl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 23:05:56,198 [srv20079][Thread:15][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=113&error=An unexpected error has occurred
+System.InvalidOperationException: Sequence contains no elements
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.Single[TSource](IQueryable`1 source)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.ReplyToInquiry_Hl.FillPageControllsShenasname(String inquiryId)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.ReplyToInquiry_Hl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 23:26:39,226 [srv20079][Thread:19][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 188.245.242.78
+	Port: 13949
+	Referer: http://ehaml.ir/Login?returnurl=/&popUp=true
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (Linux; U; Android 4.3; fa-ir; SM-N900 Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+	ViewState: E6wQJyq4GAD8mt1hojtOZccqhBs6+Ypj1rV8rOp18BbMIdcWot+txKhEGjhiLr2q8qPVcDI9WwtoA9V6IwqtpgPlXxYi8EQJ5kzI/yD6qxHQkeirw5YIyX5QshvvVLvX06tKAnWo/3eZblv9G8eDKOnIxBl9Tf4KgzknLFID9WDzXqsns1nhDVUeLciGELlfod9qa4HVMKXD4iQ+BgRuOJS+vq0ujdm7IpoSp8o9uev/B138NBGOqExeB9sMZDG36Vx8+nUBQ3eKJIrbVPeisCkErQNCWCBqlZ3dX5OYKyjeBsLhunbehUjRA2/h+VB4bDAyDmZVDUqGZHNezHreMBrcFnvwm7mwnwVeepAsriSAkYLKg/4TqwsahUBqFoH4LFFaZJK2bX6GWPt+HQdzYYfdZ0FsKH8H/1pfPCxbFVvR32XvEesBhk1W4YRvx40d7adsD10ghujarIx8HsG5fK/uKlidoiNpkyQWLpyRW2B8M8gIKN5U+Tfcvyh3RBlP733nnyov2jubkoSh0IW736Bb2bT5ENlVTPF3q+qsC/4GXDO5teNs3IKVqXpCYqohcsx3i7+2h9GYRDbh5hJn08hXGNMHm/6nUqt4sqoqU+PZ5lY/y/u0Qao3+9YdAxwapE5hEZIW6bPBARnEyUfp5wOIJkt4+o+wLbnlk0NDTsCdg9x8COYO8ep0ekp81O7ISnkE5/9BzBehNfUrQJ8mLCbMk6L9t9gw...
+   at System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-28 23:26:39,269 [srv20079][Thread:19][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.HttpException: Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 188.245.242.78
+	Port: 13949
+	Referer: http://ehaml.ir/Login?returnurl=/&popUp=true
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (Linux; U; Android 4.3; fa-ir; SM-N900 Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+	ViewState: E6wQJyq4GAD8mt1hojtOZccqhBs6+Ypj1rV8rOp18BbMIdcWot+txKhEGjhiLr2q8qPVcDI9WwtoA9V6IwqtpgPlXxYi8EQJ5kzI/yD6qxHQkeirw5YIyX5QshvvVLvX06tKAnWo/3eZblv9G8eDKOnIxBl9Tf4KgzknLFID9WDzXqsns1nhDVUeLciGELlfod9qa4HVMKXD4iQ+BgRuOJS+vq0ujdm7IpoSp8o9uev/B138NBGOqExeB9sMZDG36Vx8+nUBQ3eKJIrbVPeisCkErQNCWCBqlZ3dX5OYKyjeBsLhunbehUjRA2/h+VB4bDAyDmZVDUqGZHNezHreMBrcFnvwm7mwnwVeepAsriSAkYLKg/4TqwsahUBqFoH4LFFaZJK2bX6GWPt+HQdzYYfdZ0FsKH8H/1pfPCxbFVvR32XvEesBhk1W4YRvx40d7adsD10ghujarIx8HsG5fK/uKlidoiNpkyQWLpyRW2B8M8gIKN5U+Tfcvyh3RBlP733nnyov2jubkoSh0IW736Bb2bT5ENlVTPF3q+qsC/4GXDO5teNs3IKVqXpCYqohcsx3i7+2h9GYRDbh5hJn08hXGNMHm/6nUqt4sqoqU+PZ5lY/y/u0Qao3+9YdAxwapE5hEZIW6bPBARnEyUfp5wOIJkt4+o+wLbnlk0NDTsCdg9x8COYO8ep0ekp81O7ISnkE5/9BzBehNfUrQJ8mLCbMk6L9t9gw...
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- End of inner exception stack trace ---

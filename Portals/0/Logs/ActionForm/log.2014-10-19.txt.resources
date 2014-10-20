@@ -1,0 +1,20 @@
+11:10:58.387 | Errors | 08340c05 | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | System.UnauthorizedAccessException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Access denied!
+   at DnnSharp.Common.Api.ApiContext.Execute(IHttpHandler handler, HttpContext httpContext, Action`2 log)
+
+14:10:04.934 | Errors | 6615f145 | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | Invalid portal file to download
+   at avt.ActionForm.Core.Actions.RedirectToFileAction.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+
+14:10:07.939 | Errors | fa8a1c8c | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | Invalid portal file to download
+   at avt.ActionForm.Core.Actions.RedirectToFileAction.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+
+15:10:55.952 | Errors | b2dfdae9 | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | Invalid portal file to download
+   at avt.ActionForm.Core.Actions.RedirectToFileAction.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+
+15:10:49.620 | Errors | 8c65a1d7 | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | Invalid portal file to download
+   at avt.ActionForm.Core.Actions.RedirectToFileAction.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+

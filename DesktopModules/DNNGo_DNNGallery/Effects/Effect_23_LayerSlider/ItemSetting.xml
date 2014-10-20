@@ -1,0 +1,957 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectSettings>
+
+    <Setting>
+      <Name><![CDATA[b_slideDirection]]></Name>
+      <Alias><![CDATA[Background Slide Direction]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[right]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[left,right,top,bottom,fade]]></ListContent>
+      <Description><![CDATA[Slide direction. New layers will sliding FROM(!) this direction.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[Background Options]]></Group>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[b_slideoutdirection]]></Name>
+      <Alias><![CDATA[Background Slide Out Direction]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[right]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[left,right,top,bottom,fade]]></ListContent>
+      <Description><![CDATA[Slide direction. New layers will sliding FROM(!) this direction.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[Background Options]]></Group>
+    </Setting>
+    
+    <Setting>
+      <Name><![CDATA[b_slideDelay]]></Name>
+      <Alias><![CDATA[Background Slide Delay]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[2000]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Time before the next slide will be loading.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+      <Group><![CDATA[Background Options]]></Group>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[b_durationIn]]></Name>
+      <Alias><![CDATA[Background Duration In]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[1500]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Duration of the slide-in animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+      <Group><![CDATA[Background Options]]></Group>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[b_durationOut]]></Name>
+      <Alias><![CDATA[Background Duration Out]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[1500]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Duration of the slide-out animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+      <Group><![CDATA[Background Options]]></Group>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[b_easingIn]]></Name>
+      <Alias><![CDATA[Background Easing In]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[easeInOutQuint]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[linear,swing,easeInQuad,easeOutQuad,easeInOutQuad,easeInCubic,easeOutCubic,easeInOutCubic,easeInQuart,easeOutQuart,easeInOutQuart,easeInQuint,easeOutQuint,easeInOutQuint,easeInSine,easeOutSine,easeInOutSine,easeInExpo,easeOutExpo,easeInOutExpo,easeInCirc,easeOutCirc,easeInOutCirc,easeInElastic,easeOutElastic,easeInOutElastic,easeInBack,easeOutBack,easeInOutBack,easeInBounce,easeOutBounce,easeInOutBounce]]></ListContent>
+      <Description><![CDATA[Easing (type of transition) of the slide-in animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[Background Options]]></Group>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[b_easingOut]]></Name>
+      <Alias><![CDATA[Background Easing Out]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[easeInOutQuint]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[linear,swing,easeInQuad,easeOutQuad,easeInOutQuad,easeInCubic,easeOutCubic,easeInOutCubic,easeInQuart,easeOutQuart,easeInOutQuart,easeInQuint,easeOutQuint,easeInOutQuint,easeInSine,easeOutSine,easeInOutSine,easeInExpo,easeOutExpo,easeInOutExpo,easeInCirc,easeOutCirc,easeInOutCirc,easeInElastic,easeOutElastic,easeInOutElastic,easeInBack,easeOutBack,easeInOutBack,easeInBounce,easeOutBounce,easeInOutBounce]]></ListContent>
+      <Description><![CDATA[Easing (type of transition) of the slide-out animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[Background Options]]></Group>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[b_delayIn]]></Name>
+      <Alias><![CDATA[Background Delay In]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[0]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Delay time of the slide-in animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+      <Group><![CDATA[Background Options]]></Group>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[b_delayOut]]></Name>
+      <Alias><![CDATA[Background Delay Out]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[0]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Delay time of the slide-out animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+      <Group><![CDATA[Background Options]]></Group>
+    </Setting>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Setting>
+      <Name><![CDATA[Thumbnails_top]]></Name>
+      <Alias><![CDATA[Thumbnails Top]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[50]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[top of the thumbnails (in pixels).]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Thumbnails Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Thumbnails_left]]></Name>
+      <Alias><![CDATA[Thumbnails left]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[500]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[left of the thumbnails (in pixels).]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Thumbnails Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Thumbnails_slidedirection]]></Name>
+      <Alias><![CDATA[Thumbnails Slide Direction]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[left]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[left,right,top,bottom,fade]]></ListContent>
+      <Description><![CDATA[Slide direction. New layers will sliding FROM(!) this direction.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[Thumbnails Options]]></Group>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[Thumbnails_slideoutdirection]]></Name>
+      <Alias><![CDATA[Thumbnails Slide Out Direction]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[left]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[left,right,top,bottom,fade]]></ListContent>
+      <Description><![CDATA[Slide direction. New layers will sliding FROM(!) this direction.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+      <Group><![CDATA[Thumbnails Options]]></Group>
+    </Setting>
+    <Setting>
+      <Name><![CDATA[Thumbnails_durationin]]></Name>
+      <Alias><![CDATA[Thumbnails Duration In]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[2000]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Duration of the slide-in animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Thumbnails Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Thumbnails_durationout]]></Name>
+      <Alias><![CDATA[Thumbnails Duration Out]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[3000]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Duration of the slide-out animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Thumbnails Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Thumbnails_easingIn]]></Name>
+      <Alias><![CDATA[Thumbnails Easing In]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[easeOutCirc]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[linear,swing,easeInQuad,easeOutQuad,easeInOutQuad,easeInCubic,easeOutCubic,easeInOutCubic,easeInQuart,easeOutQuart,easeInOutQuart,easeInQuint,easeOutQuint,easeInOutQuint,easeInSine,easeOutSine,easeInOutSine,easeInExpo,easeOutExpo,easeInOutExpo,easeInCirc,easeOutCirc,easeInOutCirc,easeInElastic,easeOutElastic,easeInOutElastic,easeInBack,easeOutBack,easeInOutBack,easeInBounce,easeOutBounce,easeInOutBounce]]></ListContent>
+      <Description><![CDATA[Easing (type of transition) of the slide-in animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    <Group><![CDATA[Thumbnails Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Thumbnails_easingOut]]></Name>
+      <Alias><![CDATA[Thumbnails Easing Out]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[easeInOutExpo]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[linear,swing,easeInQuad,easeOutQuad,easeInOutQuad,easeInCubic,easeOutCubic,easeInOutCubic,easeInQuart,easeOutQuart,easeInOutQuart,easeInQuint,easeOutQuint,easeInOutQuint,easeInSine,easeOutSine,easeInOutSine,easeInExpo,easeOutExpo,easeInOutExpo,easeInCirc,easeOutCirc,easeInOutCirc,easeInElastic,easeOutElastic,easeInOutElastic,easeInBack,easeOutBack,easeInOutBack,easeInBounce,easeOutBounce,easeInOutBounce]]></ListContent>
+      <Description><![CDATA[Easing (type of transition) of the slide-out animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    <Group><![CDATA[Thumbnails Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Thumbnails_delayin]]></Name>
+      <Alias><![CDATA[Thumbnails Delay In]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[1000]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Delay time of the slide-in animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Thumbnails Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Thumbnails_delayOut]]></Name>
+      <Alias><![CDATA[Thumbnails Delay Out]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[0]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Delay time of the slide-out animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Thumbnails Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Thumbnails_showuntil]]></Name>
+      <Alias><![CDATA[Thumbnails Showuntil]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[1500]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Thumbnails Options]]></Group></Setting>
+    
+    
+    <Setting>
+      <Name><![CDATA[Title_top]]></Name>
+      <Alias><![CDATA[Title Top]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[50]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[top of the title (in pixels).]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Title Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Title_left]]></Name>
+      <Alias><![CDATA[Title left]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[80]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[left of the title (in pixels).]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Title Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Title_slidedirection]]></Name>
+      <Alias><![CDATA[Title Slide Direction]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[left]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[left,right,top,bottom,fade]]></ListContent>
+      <Description><![CDATA[Slide direction. New layers will sliding FROM(!) this direction.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    <Group><![CDATA[Title Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Title_slideoutdirection]]></Name>
+      <Alias><![CDATA[Title Slide Out Direction]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[left]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[left,right,top,bottom,fade]]></ListContent>
+      <Description><![CDATA[Slide direction. New layers will sliding FROM(!) this direction.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    <Group><![CDATA[Title Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Title_durationIn]]></Name>
+      <Alias><![CDATA[Title Duration In]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[2000]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Duration of the slide-in animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Title Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Title_durationOut]]></Name>
+      <Alias><![CDATA[Title Duration Out]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[2000]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Duration of the slide-out animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Title Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Title_easingIn]]></Name>
+      <Alias><![CDATA[Title Easing In]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[easeInOutQuint]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[linear,swing,easeInQuad,easeOutQuad,easeInOutQuad,easeInCubic,easeOutCubic,easeInOutCubic,easeInQuart,easeOutQuart,easeInOutQuart,easeInQuint,easeOutQuint,easeInOutQuint,easeInSine,easeOutSine,easeInOutSine,easeInExpo,easeOutExpo,easeInOutExpo,easeInCirc,easeOutCirc,easeInOutCirc,easeInElastic,easeOutElastic,easeInOutElastic,easeInBack,easeOutBack,easeInOutBack,easeInBounce,easeOutBounce,easeInOutBounce]]></ListContent>
+      <Description><![CDATA[Easing (type of transition) of the slide-in animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    <Group><![CDATA[Title Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Title_easingOut]]></Name>
+      <Alias><![CDATA[Title Easing Out]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[easeInOutQuint]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[linear,swing,easeInQuad,easeOutQuad,easeInOutQuad,easeInCubic,easeOutCubic,easeInOutCubic,easeInQuart,easeOutQuart,easeInOutQuart,easeInQuint,easeOutQuint,easeInOutQuint,easeInSine,easeOutSine,easeInOutSine,easeInExpo,easeOutExpo,easeInOutExpo,easeInCirc,easeOutCirc,easeInOutCirc,easeInElastic,easeOutElastic,easeInOutElastic,easeInBack,easeOutBack,easeInOutBack,easeInBounce,easeOutBounce,easeInOutBounce]]></ListContent>
+      <Description><![CDATA[Easing (type of transition) of the slide-out animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    <Group><![CDATA[Title Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Title_delayIn]]></Name>
+      <Alias><![CDATA[Title Delay In]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[0]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Delay time of the slide-in animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Title Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Title_delayOut]]></Name>
+      <Alias><![CDATA[Title Delay Out]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[0]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Delay time of the slide-out animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Title Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Title_showuntil]]></Name>
+      <Alias><![CDATA[Title Showuntil]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[1500]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Title Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Title_style]]></Name>
+      <Alias><![CDATA[Title Style]]></Alias>
+      <Width><![CDATA[300]]></Width>
+      <Rows><![CDATA[3]]></Rows>
+      <DefaultValue><![CDATA[olor: black;background: white;opacity: .9;	padding: 0px 10px;line-height: 40px;box-shadow: 0px 4px 10px -5px black;		text-shadow: none;font-size: 22px;border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px;]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can set the style of this element.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[Title Options]]></Group>
+    </Setting>
+
+
+    <Setting>
+      <Name><![CDATA[Subtitle_top]]></Name>
+      <Alias><![CDATA[Subtitle Top]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[100]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[top of the subtitle (in pixels).]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Subtitle Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Subtitle_left]]></Name>
+      <Alias><![CDATA[Subtitle left]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[80]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[left of the subtitle (in pixels).]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Subtitle Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Subtitle_slidedirection]]></Name>
+      <Alias><![CDATA[Subtitle Slide Direction]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[left]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[left,right,top,bottom,fade]]></ListContent>
+      <Description><![CDATA[Slide direction. New layers will sliding FROM(!) this direction.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    <Group><![CDATA[Subtitle Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Subtitle_slideoutdirection]]></Name>
+      <Alias><![CDATA[Subtitle Slide Out Direction]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[left]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[left,right,top,bottom,fade]]></ListContent>
+      <Description><![CDATA[Slide direction. New layers will sliding FROM(!) this direction.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    <Group><![CDATA[Subtitle Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Subtitle_durationIn]]></Name>
+      <Alias><![CDATA[Subtitle Duration In]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[2500]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Duration of the slide-in animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Subtitle Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Subtitle_durationOut]]></Name>
+      <Alias><![CDATA[Subtitle Duration Out]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[2500]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Duration of the slide-out animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Subtitle Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Subtitle_easingIn]]></Name>
+      <Alias><![CDATA[Subtitle Easing In]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[easeInOutQuint]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[linear,swing,easeInQuad,easeOutQuad,easeInOutQuad,easeInCubic,easeOutCubic,easeInOutCubic,easeInQuart,easeOutQuart,easeInOutQuart,easeInQuint,easeOutQuint,easeInOutQuint,easeInSine,easeOutSine,easeInOutSine,easeInExpo,easeOutExpo,easeInOutExpo,easeInCirc,easeOutCirc,easeInOutCirc,easeInElastic,easeOutElastic,easeInOutElastic,easeInBack,easeOutBack,easeInOutBack,easeInBounce,easeOutBounce,easeInOutBounce]]></ListContent>
+      <Description><![CDATA[Easing (type of transition) of the slide-in animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    <Group><![CDATA[Subtitle Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Subtitle_easingOut]]></Name>
+      <Alias><![CDATA[Subtitle Easing Out]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[easeInOutQuint]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[linear,swing,easeInQuad,easeOutQuad,easeInOutQuad,easeInCubic,easeOutCubic,easeInOutCubic,easeInQuart,easeOutQuart,easeInOutQuart,easeInQuint,easeOutQuint,easeInOutQuint,easeInSine,easeOutSine,easeInOutSine,easeInExpo,easeOutExpo,easeInOutExpo,easeInCirc,easeOutCirc,easeInOutCirc,easeInElastic,easeOutElastic,easeInOutElastic,easeInBack,easeOutBack,easeInOutBack,easeInBounce,easeOutBounce,easeInOutBounce]]></ListContent>
+      <Description><![CDATA[Easing (type of transition) of the slide-out animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    <Group><![CDATA[Subtitle Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Subtitle_delayIn]]></Name>
+      <Alias><![CDATA[Subtitle Delay In]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[0]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Delay time of the slide-in animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Subtitle Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Subtitle_delayOut]]></Name>
+      <Alias><![CDATA[Subtitle Delay Out]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[0]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Delay time of the slide-out animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Subtitle Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Subtitle_showuntil]]></Name>
+      <Alias><![CDATA[Subtitle Showuntil]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[1500]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Subtitle Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Subtitle_style]]></Name>
+      <Alias><![CDATA[Subtitle Style]]></Alias>
+      <Width><![CDATA[300]]></Width>
+      <Rows><![CDATA[3]]></Rows>
+      <DefaultValue><![CDATA[color: black;background: white;opacity: .9;padding: 0px 10px;line-height: 40px;box-shadow: 0px 4px 10px -5px black;text-shadow: none;font-size: 16px;border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px;]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can set the style of this element.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[Subtitle Options]]></Group>
+    </Setting>
+    
+    
+    <Setting>
+      <Name><![CDATA[Description_top]]></Name>
+      <Alias><![CDATA[Description Top]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[150]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[top of the description (in pixels).]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Description Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Description_left]]></Name>
+      <Alias><![CDATA[Description left]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[80]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[left of the description (in pixels).]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Description Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Description_slidedirection]]></Name>
+      <Alias><![CDATA[Description Slide Direction]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[left]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[left,right,top,bottom,fade]]></ListContent>
+      <Description><![CDATA[Slide direction. New layers will sliding FROM(!) this direction.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    <Group><![CDATA[Description Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Description_slideoutdirection]]></Name>
+      <Alias><![CDATA[Description Slide Out Direction]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[left]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[left,right,top,bottom,fade]]></ListContent>
+      <Description><![CDATA[Slide direction. New layers will sliding FROM(!) this direction.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    <Group><![CDATA[Description Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Description_durationIn]]></Name>
+      <Alias><![CDATA[Description Duration In]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[3000]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Duration of the slide-in animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Description Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Description_durationOut]]></Name>
+      <Alias><![CDATA[Description Duration Out]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[3000]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Duration of the slide-out animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Description Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Description_easingIn]]></Name>
+      <Alias><![CDATA[Description Duration Easing In]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[easeInOutQuint]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[linear,swing,easeInQuad,easeOutQuad,easeInOutQuad,easeInCubic,easeOutCubic,easeInOutCubic,easeInQuart,easeOutQuart,easeInOutQuart,easeInQuint,easeOutQuint,easeInOutQuint,easeInSine,easeOutSine,easeInOutSine,easeInExpo,easeOutExpo,easeInOutExpo,easeInCirc,easeOutCirc,easeInOutCirc,easeInElastic,easeOutElastic,easeInOutElastic,easeInBack,easeOutBack,easeInOutBack,easeInBounce,easeOutBounce,easeInOutBounce]]></ListContent>
+      <Description><![CDATA[Easing (type of transition) of the slide-in animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    <Group><![CDATA[Description Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Description_easingOut]]></Name>
+      <Alias><![CDATA[Description Duration Easing Out]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[easeInOutQuint]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[linear,swing,easeInQuad,easeOutQuad,easeInOutQuad,easeInCubic,easeOutCubic,easeInOutCubic,easeInQuart,easeOutQuart,easeInOutQuart,easeInQuint,easeOutQuint,easeInOutQuint,easeInSine,easeOutSine,easeInOutSine,easeInExpo,easeOutExpo,easeInOutExpo,easeInCirc,easeOutCirc,easeInOutCirc,easeInElastic,easeOutElastic,easeInOutElastic,easeInBack,easeOutBack,easeInOutBack,easeInBounce,easeOutBounce,easeInOutBounce]]></ListContent>
+      <Description><![CDATA[Easing (type of transition) of the slide-out animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    <Group><![CDATA[Description Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Description_delayIn]]></Name>
+      <Alias><![CDATA[Description Duration Delay In]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[0]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Delay time of the slide-in animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Description Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Description_delayOut]]></Name>
+      <Alias><![CDATA[Description Duration Delay Out]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[0]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Delay time of the slide-out animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Description Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Description_showuntil]]></Name>
+      <Alias><![CDATA[Description Showuntil]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[1500]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[Description Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[Description_style]]></Name>
+      <Alias><![CDATA[Description Style]]></Alias>
+      <Width><![CDATA[300]]></Width>
+      <Rows><![CDATA[3]]></Rows>
+      <DefaultValue><![CDATA[
+	  	color: #000;			
+		line-height: 20px;
+		font-size:14px;
+		width: 350px;]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can set the style of this element.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[Description Options]]></Group>
+    </Setting>
+    
+    
+    
+    <Setting>
+      <Name><![CDATA[More_top]]></Name>
+      <Alias><![CDATA[More link Top]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[220]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[top of the more link (in pixels).]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[More link Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[More_left]]></Name>
+      <Alias><![CDATA[More link left]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[80]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[left of the more link (in pixels).]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[More link Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[More_slidedirection]]></Name>
+      <Alias><![CDATA[More link Slide Direction]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[left]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[left,right,top,bottom,fade]]></ListContent>
+      <Description><![CDATA[Slide direction. New layers will sliding FROM(!) this direction.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    <Group><![CDATA[More link Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[More_slideoutdirection]]></Name>
+      <Alias><![CDATA[More link Slide Out Direction]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[left]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[left,right,top,bottom,fade]]></ListContent>
+      <Description><![CDATA[Slide direction. New layers will sliding FROM(!) this direction.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    <Group><![CDATA[More link Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[More_durationIn]]></Name>
+      <Alias><![CDATA[More link Duration In]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[3500]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Duration of the slide-in animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[More link Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[More_durationOut]]></Name>
+      <Alias><![CDATA[More link Duration Out]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[3500]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Duration of the slide-out animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[More link Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[More_easingIn]]></Name>
+      <Alias><![CDATA[More link Easing In]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[easeInOutQuint]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[linear,swing,easeInQuad,easeOutQuad,easeInOutQuad,easeInCubic,easeOutCubic,easeInOutCubic,easeInQuart,easeOutQuart,easeInOutQuart,easeInQuint,easeOutQuint,easeInOutQuint,easeInSine,easeOutSine,easeInOutSine,easeInExpo,easeOutExpo,easeInOutExpo,easeInCirc,easeOutCirc,easeInOutCirc,easeInElastic,easeOutElastic,easeInOutElastic,easeInBack,easeOutBack,easeInOutBack,easeInBounce,easeOutBounce,easeInOutBounce]]></ListContent>
+      <Description><![CDATA[Easing (type of transition) of the slide-in animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    <Group><![CDATA[More link Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[More_easingOut]]></Name>
+      <Alias><![CDATA[More link Easing Out]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[easeInOutQuint]]></DefaultValue>
+      <ControlType><![CDATA[DropDownList]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[linear,swing,easeInQuad,easeOutQuad,easeInOutQuad,easeInCubic,easeOutCubic,easeInOutCubic,easeInQuart,easeOutQuart,easeInOutQuart,easeInQuint,easeOutQuint,easeInOutQuint,easeInSine,easeOutSine,easeInOutSine,easeInExpo,easeOutExpo,easeInOutExpo,easeInCirc,easeOutCirc,easeInOutCirc,easeInElastic,easeOutElastic,easeInOutElastic,easeInBack,easeOutBack,easeInOutBack,easeInBounce,easeOutBounce,easeInOutBounce]]></ListContent>
+      <Description><![CDATA[Easing (type of transition) of the slide-out animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[]]></Verification>
+    <Group><![CDATA[More link Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[More_delayIn]]></Name>
+      <Alias><![CDATA[More link Delay In]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[0]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Delay time of the slide-in animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[More link Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[More_delayOut]]></Name>
+      <Alias><![CDATA[More link Delay Out]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[0]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[Delay time of the slide-out animation.]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[More link Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[More_showuntil]]></Name>
+      <Alias><![CDATA[More link Showuntil]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[1500]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[integer]]></Verification>
+    <Group><![CDATA[More link Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[More_Text]]></Name>
+      <Alias><![CDATA[More link Text]]></Alias>
+      <Width><![CDATA[100]]></Width>
+      <Rows><![CDATA[1]]></Rows>
+      <DefaultValue><![CDATA[More]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[]]></Description>
+      <Required><![CDATA[True]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+    <Group><![CDATA[More link Options]]></Group></Setting>
+    <Setting>
+      <Name><![CDATA[More_style]]></Name>
+      <Alias><![CDATA[More link style]]></Alias>
+      <Width><![CDATA[300]]></Width>
+      <Rows><![CDATA[3]]></Rows>
+      <DefaultValue><![CDATA[color: #000;			
+		line-height: 20px;
+		font-size:14px;
+		font-weight:bold;]]></DefaultValue>
+      <ControlType><![CDATA[TextBox]]></ControlType>
+      <Direction><![CDATA[Vertical]]></Direction>
+      <ListContent><![CDATA[]]></ListContent>
+      <Description><![CDATA[You can set the style of this element.]]></Description>
+      <Required><![CDATA[False]]></Required>
+      <Verification><![CDATA[optional]]></Verification>
+      <Group><![CDATA[More link Options]]></Group>
+    </Setting>
+    
+    
+  </EffectSettings>
+</DNNGo_DNNGallery>
+
+
+

@@ -1,0 +1,391 @@
+﻿/****** Object:  StoredProcedure [dbo].[EasyDNNnewsGroupsAndAuthors]    Script Date: 12/14/2012 16:39:26 ******/
+
+/****** Object:  ForeignKey [FK_EasyDNNNewsCategoryMenuImages_EasyDNNNewsCategoryList]    Script Date: 08/29/2012 14:33:40 ******/
+/****** Object:  ForeignKey [FK_EasyDNNNewsCategoryMenuImages_Modules]    Script Date: 08/29/2012 14:33:40 ******/
+/****** Create table EasyDNNNewsCategoryMenuImages *****/
+
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsCategoryMenuImages]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[EasyDNNNewsCategoryMenuImages](
+	[CategoryID] [int] NOT NULL,
+	[ModuleID] [int] NOT NULL,
+	[Width] [int] NOT NULL,
+	[Height] [int] NOT NULL,
+	[Created] [bit] NOT NULL,
+	[Resizing] [nvarchar](15) NOT NULL,
+	CONSTRAINT [PK_EasyDNNNewsCategoryMenuImages] PRIMARY KEY CLUSTERED ([CategoryID] ASC,[ModuleID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+)
+END
+GO
+
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsCategoryMenuImages_EasyDNNNewsCategoryList]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsCategoryMenuImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsCategoryMenuImages]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsCategoryMenuImages_EasyDNNNewsCategoryList] FOREIGN KEY([CategoryID])
+REFERENCES [dbo].[EasyDNNNewsCategoryList] ([CategoryID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsCategoryMenuImages_EasyDNNNewsCategoryList]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsCategoryMenuImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsCategoryMenuImages] CHECK CONSTRAINT [FK_EasyDNNNewsCategoryMenuImages_EasyDNNNewsCategoryList]
+GO
+
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsCategoryMenuImages_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsCategoryMenuImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsCategoryMenuImages]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsCategoryMenuImages_Modules] FOREIGN KEY([ModuleID])
+REFERENCES {databaseOwner}{objectQualifier}Modules ([ModuleID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsCategoryMenuImages_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsCategoryMenuImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsCategoryMenuImages] CHECK CONSTRAINT [FK_EasyDNNNewsCategoryMenuImages_Modules]
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsAuthorGroups' and column_name = 'LinkType')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsAuthorGroups] ADD LinkType tinyint NOT NULL DEFAULT(0)
+END
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsAuthorGroups' and column_name = 'GroupURL')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsAuthorGroups] ADD GroupURL nvarchar(1000) NULL
+END
+GO
+
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsAuthorProfile' and column_name = 'LinkType')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsAuthorProfile] ADD LinkType tinyint NOT NULL DEFAULT(0)
+END
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsAuthorProfile' and column_name = 'AuthorURL')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsAuthorProfile] ADD AuthorURL nvarchar(1000) NULL
+END
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNnewsGroupsAndAuthors]') AND type in (N'P', N'PC'))
+BEGIN
+drop procedure [dbo].[EasyDNNnewsGroupsAndAuthors]
+END
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE [dbo].[EasyDNNnewsGroupsAndAuthors]
+	@PortalID int,
+	@ModuleID int,
+	@NotInGroupPosition bit, -- 0 gore, 1 dolje
+	@DisplayAll bit = 1,
+	@RoleID int = -1
+AS 
+	DECLARE @i Int, @MaxI Int, @GroupID Int;
+    DECLARE @TableGroups Table ([PortalID] int not null
+      ,[GroupID] int not null
+      ,[GroupName] nvarchar(250) not null
+      ,[GroupInfo] nvarchar(4000) null
+      ,[GroupImage] nvarchar(1000) null
+      ,[FacebookURL] nvarchar(1000) null
+      ,[TwitterURL] nvarchar(1000) null
+      ,[GooglePlusURL] nvarchar(1000) null
+      ,[LinkedInURL] nvarchar(1000) null
+      ,[Parent] int null
+      ,[Level] int not null
+      ,[Position] int not null
+      ,[GroupLinkType] tinyint not null
+      ,[GroupURL] nvarchar(1000) null
+      ,[MyRowCount] Int Identity(1,1))
+    DECLARE @resultTable Table ([OrderBy] Int Identity(1,1), [UserID] int null
+      ,[Username] nvarchar(100) null
+      ,[FirstName] nvarchar(50) null
+      ,[LastName] nvarchar(50) null
+      ,[Email] nvarchar(256) null
+      ,[DisplayName] nvarchar(128) null
+	  ,[AuthorProfileID] int null
+      ,[ShortInfo] nvarchar(350) null
+      ,[ProfileImage] nvarchar(1000) null
+      ,[FacebookURL] nvarchar(1000) null
+      ,[TwitterURL] nvarchar(1000) null
+      ,[GooglePlusURL] nvarchar(1000) null
+      ,[LinkedInURL] nvarchar(1000) null
+      ,[DateAdded] datetime null
+      ,[Active] bit null
+      ,[ArticleCount] int null
+      ,[AuthorLinkType] tinyint null
+      ,[AuthorURL] nvarchar(1000) null
+      ,[GroupID] int null
+      ,[GroupName] nvarchar(250) null
+      ,[GroupInfo] nvarchar(4000) null
+      ,[GroupImage] nvarchar(1000) null
+      ,[GFacebookURL] nvarchar(1000) null
+      ,[GTwitterURL] nvarchar(1000) null
+      ,[GGooglePlusURL] nvarchar(1000) null
+      ,[GLinkedInURL] nvarchar(1000) null
+      ,[Parent] int null
+      ,[Level] int null
+      ,[Position] int null
+      ,[GroupLinkType] tinyint null
+      ,[GroupURL] nvarchar(1000) null)     
+  SET NOCOUNT ON
+  IF @RoleID <> -1
+  BEGIN
+   BEGIN
+		  Insert into @resultTable SELECT u.[UserID]
+			  ,u.[Username]
+			  ,u.[FirstName]
+			  ,u.[LastName]
+			  ,u.[Email]
+			  ,u.[DisplayName]
+			  ,ap.[AuthorProfileID]
+			  ,ap.[ShortInfo]
+			  ,ap.[ProfileImage]
+			  ,ap.[FacebookURL]
+			  ,ap.[TwitterURL]
+			  ,ap.[GooglePlusURL]
+			  ,ap.[LinkedInURL]
+			  ,ap.[DateAdded]
+			  ,ap.[Active]
+			  ,ap.[ArticleCount]
+			  ,ap.[LinkType] AS AuthorLinkType
+              ,ap.[AuthorURL]
+			  ,null,null,null,null,null,null,null,null,null,null,null,null,null
+		  FROM {databaseOwner}{objectQualifier}Users AS u INNER JOIN [dbo].[EasyDNNNewsAuthorProfile] AS ap ON u.UserID = ap.UserID INNER JOIN {databaseOwner}{objectQualifier}UserRoles AS ur ON ur.UserID = ap.UserID WHERE ap.PortalID = @PortalID AND ur.RoleID = @RoleID ORDER BY Username
+	  END
+  END
+  ELSE
+  BEGIN
+  IF @NotInGroupPosition = 0
+  BEGIN
+	IF @DisplayAll = 1
+	  BEGIN
+		  Insert into @resultTable SELECT u.[UserID]
+			  ,u.[Username]
+			  ,u.[FirstName]
+			  ,u.[LastName]
+			  ,u.[Email]
+			  ,u.[DisplayName]
+			  ,ap.[AuthorProfileID]
+			  ,ap.[ShortInfo]
+			  ,ap.[ProfileImage]
+			  ,ap.[FacebookURL]
+			  ,ap.[TwitterURL]
+			  ,ap.[GooglePlusURL]
+			  ,ap.[LinkedInURL]
+			  ,ap.[DateAdded]
+			  ,ap.[Active]
+			  ,ap.[ArticleCount]
+			  ,ap.[LinkType] AS AuthorLinkType
+              ,ap.[AuthorURL]
+			  ,null,null,null,null,null,null,null,null,null,null,null,null,null
+		  FROM {databaseOwner}{objectQualifier}Users AS u INNER JOIN [dbo].[EasyDNNNewsAuthorProfile] AS ap ON u.UserID = ap.UserID WHERE ap.PortalID = @PortalID AND ap.AuthorProfileID NOT IN (SELECT AuthorProfileID FROM [dbo].[EasyDNNNewsAutorGroupItems]) ORDER BY Username
+	  END
+	ELSE
+	  BEGIN
+	    Insert into @resultTable SELECT u.[UserID]
+			  ,u.[Username]
+			  ,u.[FirstName]
+			  ,u.[LastName]
+			  ,u.[Email]
+			  ,u.[DisplayName]
+			  ,ap.[AuthorProfileID]
+			  ,ap.[ShortInfo]
+			  ,ap.[ProfileImage]
+			  ,ap.[FacebookURL]
+			  ,ap.[TwitterURL]
+			  ,ap.[GooglePlusURL]
+			  ,ap.[LinkedInURL]
+			  ,ap.[DateAdded]
+			  ,ap.[Active]
+			  ,ap.[ArticleCount]
+			  ,ap.[LinkType] AS AuthorLinkType
+              ,ap.[AuthorURL]
+			  ,null,null,null,null,null,null,null,null,null,null,null,null,null
+		  FROM {databaseOwner}{objectQualifier}Users AS u INNER JOIN [dbo].[EasyDNNNewsAuthorProfile] AS ap ON u.UserID = ap.UserID INNER JOIN [dbo].[EasyDNNNewsModuleAuthorsItems] as mai ON mai.UserID = ap.UserID AND mai.ModuleID = @ModuleID WHERE ap.PortalID = @PortalID AND ap.AuthorProfileID NOT IN (SELECT AuthorProfileID FROM [dbo].[EasyDNNNewsAutorGroupItems] as agi INNER JOIN EasyDNNNewsModuleGroupItems as mgi ON agi.GroupId = mgi.GroupID WHERE mgi.ModuleID = @ModuleID) ORDER BY Username
+	  END
+  END
+  IF @DisplayAll = 1
+  BEGIN
+  Insert into @TableGroups SELECT nag.[PortalID]
+      ,nag.[GroupID]
+      ,nag.[GroupName]
+      ,nag.[GroupInfo]
+      ,nag.[GroupImage]
+      ,nag.[FacebookURL]
+      ,nag.[TwitterURL]
+      ,nag.[GooglePlusURL]
+      ,nag.[LinkedInURL]
+      ,nag.[Parent]
+      ,nag.[Level]
+      ,nag.[Position]
+      ,nag.[LinkType] as GroupLinkType
+      ,nag.[GroupURL]
+  FROM [dbo].[EasyDNNNewsAuthorGroups] AS nag WHERE nag.[GroupID] IN (SELECT DISTINCT nag.GroupID FROM [dbo].[EasyDNNNewsAuthorGroups] as nag INNER JOIN [dbo].[EasyDNNNewsAutorGroupItems] AS agi ON agi.GroupID = nag.GroupID WHERE nag.PortalID = @PortalID) ORDER BY Position;
+  END
+  ELSE
+  BEGIN
+    Insert into @TableGroups SELECT DISTINCT nag.[PortalID]
+      ,nag.[GroupID]
+      ,nag.[GroupName]
+      ,nag.[GroupInfo]
+      ,nag.[GroupImage]
+      ,nag.[FacebookURL]
+      ,nag.[TwitterURL]
+      ,nag.[GooglePlusURL]
+      ,nag.[LinkedInURL]
+      ,nag.[Parent]
+      ,nag.[Level]
+      ,nag.[Position]
+      ,nag.[LinkType] as GroupLinkType
+      ,nag.[GroupURL]
+  FROM [dbo].[EasyDNNNewsAuthorGroups] AS nag WHERE nag.[GroupID] IN (SELECT DISTINCT nag.GroupID FROM [dbo].[EasyDNNNewsAuthorGroups] as nag INNER JOIN [dbo].[EasyDNNNewsAutorGroupItems] AS agi
+   ON agi.GroupID = nag.GroupID INNER JOIN [dbo].[EasyDNNNewsModuleGroupItems] AS mgi ON nag.GroupID = mgi.GroupID
+    WHERE mgi.ModuleID = @ModuleID AND nag.PortalID = @PortalID) ORDER BY Position;
+  END
+  SELECT @MaxI = @@RowCount;
+  SELECT @i = 0;
+    While @i < @MaxI
+Begin
+SET @i = @i + 1;
+Select @GroupID = GroupID from @TableGroups Where MyRowCount = @i
+Insert into @resultTable SELECT
+       null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+      ,[GroupID]
+      ,[GroupName]
+      ,[GroupInfo]
+      ,[GroupImage]
+      ,[FacebookURL]
+      ,[TwitterURL]
+      ,[GooglePlusURL]
+      ,[LinkedInURL]
+      ,[Parent]
+      ,[Level]
+      ,[Position]
+      ,[GroupLinkType]
+      ,[GroupURL]
+      from @TableGroups WHERE MyRowCount = @i
+Insert into @resultTable SELECT u.[UserID]
+      ,u.[Username]
+      ,u.[FirstName]
+      ,u.[LastName]
+      ,u.[Email]
+      ,u.[DisplayName]
+	  ,ap.[AuthorProfileID]
+      ,ap.[ShortInfo]
+      ,ap.[ProfileImage]
+      ,ap.[FacebookURL]
+      ,ap.[TwitterURL]
+      ,ap.[GooglePlusURL]
+      ,ap.[LinkedInURL]
+      ,ap.[DateAdded]
+      ,ap.[Active]
+      ,ap.[ArticleCount]
+      ,ap.[LinkType] AS AuthorLinkType
+      ,ap.[AuthorURL]
+      ,null,null,null,null,null,null,null,null,null,null,null,null,null
+  FROM {databaseOwner}{objectQualifier}Users AS u INNER JOIN [dbo].[EasyDNNNewsAuthorProfile] AS ap ON u.UserID = ap.UserID INNER JOIN [dbo].[EasyDNNNewsAutorGroupItems] AS agi ON agi.AuthorProfileID = ap.AuthorProfileID WHERE agi.GroupID = @GroupID
+End
+  IF @NotInGroupPosition = 1
+   BEGIN
+	IF @DisplayAll = 1
+	  BEGIN
+		  Insert into @resultTable SELECT u.[UserID]
+			  ,u.[Username]
+			  ,u.[FirstName]
+			  ,u.[LastName]
+			  ,u.[Email]
+			  ,u.[DisplayName]
+			  ,ap.[AuthorProfileID]
+			  ,ap.[ShortInfo]
+			  ,ap.[ProfileImage]
+			  ,ap.[FacebookURL]
+			  ,ap.[TwitterURL]
+			  ,ap.[GooglePlusURL]
+			  ,ap.[LinkedInURL]
+			  ,ap.[DateAdded]
+			  ,ap.[Active]
+			  ,ap.[ArticleCount]
+			  ,ap.[LinkType] AS AuthorLinkType
+              ,ap.[AuthorURL]
+			  ,null,null,null,null,null,null,null,null,null,null,null,null,null
+		  FROM {databaseOwner}{objectQualifier}Users AS u INNER JOIN [dbo].[EasyDNNNewsAuthorProfile] AS ap ON u.UserID = ap.UserID WHERE ap.PortalID = @PortalID AND ap.AuthorProfileID NOT IN (SELECT AuthorProfileID FROM [dbo].[EasyDNNNewsAutorGroupItems]) ORDER BY Username
+	  END
+	ELSE
+	  BEGIN
+	    Insert into @resultTable SELECT u.[UserID]
+			  ,u.[Username]
+			  ,u.[FirstName]
+			  ,u.[LastName]
+			  ,u.[Email]
+			  ,u.[DisplayName]
+			  ,ap.[AuthorProfileID]
+			  ,ap.[ShortInfo]
+			  ,ap.[ProfileImage]
+			  ,ap.[FacebookURL]
+			  ,ap.[TwitterURL]
+			  ,ap.[GooglePlusURL]
+			  ,ap.[LinkedInURL]
+			  ,ap.[DateAdded]
+			  ,ap.[Active]
+			  ,ap.[ArticleCount]
+			  ,ap.[LinkType] AS AuthorLinkType
+              ,ap.[AuthorURL]
+			  ,null,null,null,null,null,null,null,null,null,null,null,null,null
+		  FROM {databaseOwner}{objectQualifier}Users AS u INNER JOIN [dbo].[EasyDNNNewsAuthorProfile] AS ap ON u.UserID = ap.UserID INNER JOIN [dbo].[EasyDNNNewsModuleAuthorsItems] as mai ON mai.UserID = ap.UserID AND mai.ModuleID = @ModuleID WHERE ap.PortalID = @PortalID AND ap.AuthorProfileID NOT IN (SELECT AuthorProfileID FROM [dbo].[EasyDNNNewsAutorGroupItems] as agi INNER JOIN EasyDNNNewsModuleGroupItems as mgi ON agi.GroupId = mgi.GroupID WHERE mgi.ModuleID = @ModuleID) ORDER BY Username
+	  END
+  END
+  END
+ SELECT * FROM @resultTable ORDER BY OrderBy;'
+GO
+
+
+BEGIN TRANSACTION;
+BEGIN TRY
+IF EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsRolePremissionsAddToCategories_EasyDNNNewsRolePremissionSettings1]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsRolePremissionsAddToCategories]'))
+BEGIN
+	ALTER TABLE [dbo].[EasyDNNNewsRolePremissionsAddToCategories] DROP [FK_EasyDNNNewsRolePremissionsAddToCategories_EasyDNNNewsRolePremissionSettings1]
+END
+
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionsAddToCategories] ADD  CONSTRAINT [FK_EasyDNNNewsRolePremissionsAddToCategories_EasyDNNNewsRolePremissionSettings1] FOREIGN KEY([PremissionSettingsID])
+REFERENCES [dbo].[EasyDNNNewsRolePremissionSettings] ([PremissionSettingsID]) ON DELETE CASCADE
+
+END TRY
+BEGIN CATCH
+    IF @@TRANCOUNT > 0
+        ROLLBACK TRANSACTION;
+END CATCH;
+
+IF @@TRANCOUNT > 0
+    COMMIT TRANSACTION;
+GO
+
+BEGIN TRANSACTION;
+BEGIN TRY
+
+IF EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsRolePremissionsAddToCategories_EasyDNNNewsCategoryList1]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsRolePremissionsAddToCategories]'))
+BEGIN
+	ALTER TABLE [dbo].[EasyDNNNewsRolePremissionsAddToCategories] DROP [FK_EasyDNNNewsRolePremissionsAddToCategories_EasyDNNNewsCategoryList1]
+END
+
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionsAddToCategories] ADD CONSTRAINT [FK_EasyDNNNewsRolePremissionsAddToCategories_EasyDNNNewsCategoryList1] FOREIGN KEY ([CategoryID])
+REFERENCES [dbo].[EasyDNNNewsCategoryList] ([CategoryID]) ON DELETE CASCADE
+
+END TRY
+BEGIN CATCH
+    IF @@TRANCOUNT > 0
+        ROLLBACK TRANSACTION;
+END CATCH;
+
+IF @@TRANCOUNT > 0
+    COMMIT TRANSACTION;
+GO
+
+BEGIN TRANSACTION;
+BEGIN TRY
+
+IF EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsUserPremissionsAddToCategories_EasyDNNNewsCategoryList1]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsUserPremissionsAddToCategories]'))
+BEGIN
+	ALTER TABLE [dbo].[EasyDNNNewsUserPremissionsAddToCategories] DROP [FK_EasyDNNNewsUserPremissionsAddToCategories_EasyDNNNewsCategoryList1]
+END
+
+ALTER TABLE [dbo].[EasyDNNNewsUserPremissionsAddToCategories] ADD CONSTRAINT [FK_EasyDNNNewsUserPremissionsAddToCategories_EasyDNNNewsCategoryList1] FOREIGN KEY ([CategoryID])
+REFERENCES [dbo].[EasyDNNNewsCategoryList] ([CategoryID]) ON DELETE CASCADE
+
+END TRY
+BEGIN CATCH
+    IF @@TRANCOUNT > 0
+        ROLLBACK TRANSACTION;
+END CATCH;
+
+IF @@TRANCOUNT > 0
+    COMMIT TRANSACTION;

@@ -1,0 +1,26 @@
+﻿SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsTagsLocalization]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[EasyDNNNewsTagsLocalization](
+	[TagID] [int] NOT NULL,
+	[LocaleCode] [nvarchar](20) NOT NULL,
+	[Name] [nvarchar](50) NOT NULL,
+	CONSTRAINT [PK_EasyDNNNewsTagsLocalization] PRIMARY KEY CLUSTERED ([TagID] ASC,[LocaleCode] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF))
+END
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsTagsLocalization_EasyDNNNewsNewTags]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsTagsLocalization]'))
+ALTER TABLE [dbo].[EasyDNNNewsTagsLocalization]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsTagsLocalization_EasyDNNNewsNewTags] FOREIGN KEY([TagID])
+REFERENCES [dbo].[EasyDNNNewsNewTags] ([TagID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsTagsLocalization_EasyDNNNewsNewTags]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsTagsLocalization]'))
+ALTER TABLE [dbo].[EasyDNNNewsTagsLocalization] CHECK CONSTRAINT [FK_EasyDNNNewsTagsLocalization_EasyDNNNewsNewTags]
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsCountForPageingByUserId]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsCountForPageingByUserId]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsForListDisplayByUserId]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsForListDisplayByUserId]

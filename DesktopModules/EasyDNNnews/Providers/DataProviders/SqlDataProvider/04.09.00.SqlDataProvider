@@ -1,0 +1,6 @@
+﻿BEGIN TRY
+	INSERT INTO EasyDNNNewsSocialSecurity
+	SELECT n.ArticleID, 'E' FROM EasyDNNNews as n WHERE n.ArticleID NOT IN (SELECT DISTINCT ArticleID FROM EasyDNNNewsSocialSecurity)
+END TRY
+BEGIN CATCH
+END CATCH

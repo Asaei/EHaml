@@ -1,0 +1,97 @@
+/* Layout helpers
+----------------------------------*/
+.livetabscupertino .ui-helper-hidden { display: none; }
+.livetabscupertino .ui-helper-hidden-accessible { position: absolute; left: -99999999px; }
+.livetabscupertino .ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.livetabscupertino .ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.livetabscupertino .ui-helper-clearfix { display: inline-block; }
+/* required comment for clearfix to work in Opera \*/
+* html .ui-helper-clearfix { height:1%; }
+.livetabscupertino .ui-helper-clearfix { display:block; }
+/* end clearfix */
+.livetabscupertino .ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+/* Interaction Cues
+----------------------------------*/
+.livetabscupertino .ui-state-disabled { cursor: default !important; }
+/* states and images */
+.livetabscupertino .ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+/* Overlays */
+.livetabscupertino .ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+/* Component containers
+----------------------------------*/
+.livetabscupertino .ui-widget { font-family: Lucida Grande, Lucida Sans, Arial, sans-serif; font-size: 1.1em; }
+.livetabscupertino .ui-widget input, .livetabscupertino .ui-widget select, .livetabscupertino .ui-widget textarea, .livetabscupertino .ui-widget button { font-family: Lucida Grande, Lucida Sans, Arial, sans-serif; font-size: 1em; }
+.livetabscupertino .ui-widget-content { border: 1px solid #dddddd; background: #f2f5f7 url(images/ui-bg_highlight-hard_100_f2f5f7_1x100.png) 50% top repeat-x; color: #362b36; }
+.livetabscupertino .ui-widget-content a {  }
+.livetabscupertino .ui-widget-header { border: 1px solid #aed0ea; background: #deedf7 url(images/ui-bg_highlight-soft_100_deedf7_1x100.png) 50% 50% repeat-x; color: #222222; font-weight: bold; }
+.livetabscupertino .ui-widget-header a { color: #222222; }
+/* Interaction states
+----------------------------------*/
+.livetabscupertino .ui-state-default, .livetabscupertino .ui-widget-content .ui-state-default { border: 1px solid #aed0ea; background: #d7ebf9 url(images/ui-bg_glass_80_d7ebf9_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #2779aa; outline: none; }
+.livetabscupertino .ui-state-default a, .livetabscupertino .ui-state-default a:link, .livetabscupertino .ui-state-default a:visited { color: #2779aa; text-decoration: none; outline: none; }
+.livetabscupertino .ui-state-hover, .livetabscupertino .ui-widget-content .ui-state-hover, .livetabscupertino .ui-state-focus, .livetabscupertino .ui-widget-content .ui-state-focus { border: 1px solid #74b2e2; background: #e4f1fb url(images/ui-bg_glass_100_e4f1fb_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #0070a3; outline: none; }
+.livetabscupertino .ui-state-hover a, .livetabscupertino .ui-state-hover a:hover { color: #0070a3; text-decoration: none; outline: none; }
+.livetabscupertino .ui-state-active, .livetabscupertino .ui-widget-content .ui-state-active { border: 1px solid #2694e8; background: #3baae3 url(images/ui-bg_glass_50_3baae3_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #ffffff; outline: none; }
+.livetabscupertino .ui-state-active a, .livetabscupertino .ui-state-active a:link, .livetabscupertino .ui-state-active a:visited { color: #ffffff; outline: none; text-decoration: none; }
+/* Interaction Cues
+----------------------------------*/
+.livetabscupertino .ui-state-highlight, .livetabscupertino .ui-widget-content .ui-state-highlight {border: 1px solid #f9dd34; background: #ffef8f url(images/ui-bg_highlight-soft_25_ffef8f_1x100.png) 50% top repeat-x; color: #363636; }
+.livetabscupertino .ui-state-highlight a, .livetabscupertino .ui-widget-content .ui-state-highlight a { color: #363636; }
+.livetabscupertino .ui-state-error, .livetabscupertino .ui-widget-content .ui-state-error {border: 1px solid #cd0a0a; background: #cd0a0a url(images/ui-bg_flat_15_cd0a0a_40x100.png) 50% 50% repeat-x; color: #ffffff; }
+.livetabscupertino .ui-state-error a, .livetabscupertino .ui-widget-content .ui-state-error a { color: #ffffff; }
+.livetabscupertino .ui-state-error-text, .livetabscupertino .ui-widget-content .ui-state-error-text { color: #ffffff; }
+.livetabscupertino .ui-state-disabled, .livetabscupertino .ui-widget-content .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+.livetabscupertino .ui-priority-primary, .livetabscupertino .ui-widget-content .ui-priority-primary { font-weight: bold; }
+.livetabscupertino .ui-priority-secondary, .livetabscupertino .ui-widget-content .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+/* states and images */
+.livetabscupertino .ui-icon { width: 16px; height: 16px; background-image: url(images/ui-icons_72a7cf_256x240.png); }
+.livetabscupertino .ui-widget-content .ui-icon {background-image: url(images/ui-icons_72a7cf_256x240.png); }
+.livetabscupertino .ui-widget-header .ui-icon {background-image: url(images/ui-icons_72a7cf_256x240.png); }
+.livetabscupertino .ui-state-default .ui-icon { background-image: url(images/ui-icons_3d80b3_256x240.png); }
+.livetabscupertino .ui-state-hover .ui-icon, .livetabscupertino .ui-state-focus .ui-icon {background-image: url(images/ui-icons_2694e8_256x240.png); }
+.livetabscupertino .ui-state-active .ui-icon {background-image: url(images/ui-icons_ffffff_256x240.png); }
+.livetabscupertino .ui-state-highlight .ui-icon {background-image: url(images/ui-icons_2e83ff_256x240.png); }
+.livetabscupertino .ui-state-error .ui-icon, .livetabscupertino .ui-state-error-text .ui-icon {background-image: url(images/ui-icons_ffffff_256x240.png); }
+/* Corner radius */
+.livetabscupertino .ui-corner-all, .livetabscupertino .ui-corner-top, .livetabscupertino .ui-corner-left, .livetabscupertino .ui-corner-tl { -moz-border-radius-topleft: 6px; -webkit-border-top-left-radius: 6px; -khtml-border-top-left-radius: 6px; border-top-left-radius: 6px; }
+.livetabscupertino .ui-corner-all, .livetabscupertino .ui-corner-top, .livetabscupertino .ui-corner-right, .livetabscupertino .ui-corner-tr { -moz-border-radius-topright: 6px; -webkit-border-top-right-radius: 6px; -khtml-border-top-right-radius: 6px; border-top-right-radius: 6px; }
+.livetabscupertino .ui-corner-all, .livetabscupertino .ui-corner-bottom, .livetabscupertino .ui-corner-left, .livetabscupertino .ui-corner-bl { -moz-border-radius-bottomleft: 6px; -webkit-border-bottom-left-radius: 6px; -khtml-border-bottom-left-radius: 6px; border-bottom-left-radius: 6px; }
+.livetabscupertino .ui-corner-all, .livetabscupertino .ui-corner-bottom, .livetabscupertino .ui-corner-right, .livetabscupertino .ui-corner-br { -moz-border-radius-bottomright: 6px; -webkit-border-bottom-right-radius: 6px; -khtml-border-bottom-right-radius: 6px; border-bottom-right-radius: 6px; }
+
+/* Overlays */
+.livetabscupertino .ui-widget-overlay { background: #eeeeee url(images/ui-bg_diagonals-thick_90_eeeeee_40x40.png) 50% 50% repeat; opacity: .80;filter:Alpha(Opacity=80); }
+.livetabscupertino .ui-widget-shadow { margin: -7px 0 0 -7px; padding: 7px; background: #000000 url(images/ui-bg_highlight-hard_70_000000_1x100.png) 50% top repeat-x; opacity: .30;filter:Alpha(Opacity=30); -moz-border-radius: 8px; -webkit-border-radius: 8px; -khtml-border-radius: 8px; border-radius: 8px; }
+/* Tabs
+----------------------------------*/
+.livetabscupertino .ui-tabs { padding: .2em; zoom: 1; }
+.livetabscupertino .ui-tabs .ui-tabs-nav { list-style: none; position: relative; padding: .2em .2em 0; }
+.livetabscupertino .ui-tabs .ui-tabs-nav li { list-style: none; position: relative; float: right
+; margin: 0 .2em -1px 0; padding: 0; }
+.livetabscupertino .ui-tabs .ui-tabs-nav li a { float: left; text-decoration: none; padding: .5em 2em; }
+.livetabscupertino .ui-tabs .ui-tabs-nav li.ui-tabs-selected, .livetabscupertino .ui-tabs .ui-tabs-nav li.ui-tabs-active { padding-bottom: 1px; border-bottom-width: 0; }
+.livetabscupertino .ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .livetabscupertino .ui-tabs .ui-tabs-nav li.ui-tabs-active a, .livetabscupertino .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .livetabscupertino .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.livetabscupertino .ui-tabs .ui-tabs-nav li a, .livetabscupertino .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a, .livetabscupertino .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.livetabscupertino .ui-tabs .ui-tabs-panel { padding: 1em 0; display: block; border-width: 0; background: none; }
+.livetabscupertino .ui-tabs .ui-tabs-hide { display: none !important; }
+
+/* add by mydnn*/
+
+.livetabscupertino .ui-tabs .ui-tabs-nav li a {
+  padding: 0.5em 2em;
+  font-family: tahoma;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.mtop.ui-tabs-nav.ui-helper-reset.ui-helper-clearfix.ui-widget-header.ui-corner-all {
+  min-height: 0;
+}
+
+.mtop.ui-state-default.ui-corner-top {
+  min-width: 190px;
+}
+
+.livetabscupertino .ui-tabs-anchor {
+  min-width: 155px;
+  text-align:center;
+}

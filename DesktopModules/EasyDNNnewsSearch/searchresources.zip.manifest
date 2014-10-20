@@ -1,0 +1,52 @@
+﻿<dotnetnuke type="ResourceFile" version="5.0">
+  <files>
+    <file>
+      <path>App_LocalResources/</path>
+      <name>EditEasyDNNNewsSearch.ascx.resx</name>
+    </file>
+    <file>
+      <path>App_LocalResources/</path>
+      <name>ViewEasyDNNNewsSearch.ascx.resx</name>
+    </file>
+    <file>
+      <path>Documentation/</path>
+      <name>Documentation.css</name>
+    </file>
+    <file>
+      <path>Documentation/</path>
+      <name>Documentation.html</name>
+    </file>
+    <file>
+      <path>Documentation/</path>
+      <name>logo.gif</name>
+    </file>
+    <file>
+      <path />
+      <name>ViewEasyDNNNewsSearch.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>EditEasyDNNNewsSearch.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>SearchAutoComplete.ashx</name>
+    </file>
+    <file>
+      <path>autocomplete/</path>
+      <name>indicator.gif</name>
+    </file>
+    <file>
+      <path>autocomplete/</path>
+      <name>jquery.autocomplete.css</name>
+    </file>
+    <file>
+      <path>autocomplete/</path>
+      <name>jquery.autocomplete.js</name>
+    </file>
+    <file>
+      <path>autocomplete/</path>
+      <name>jquery.autocomplete.min.js</name>
+    </file>
+  </files>
+</dotnetnuke>

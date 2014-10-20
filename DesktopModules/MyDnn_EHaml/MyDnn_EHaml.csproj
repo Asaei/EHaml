@@ -1,0 +1,906 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B5AB3EE4-BBF2-42AF-8751-FCC62F22E5A4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyDnn_EHaml</RootNamespace>
+    <AssemblyName>MyDnn_EHaml</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClientDependency.Core">
+      <HintPath>..\..\..\..\Portals\EHaml\bin\ClientDependency.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke">
+      <HintPath>..\..\..\..\Portals\EHaml\bin\DotNetNuke.dll</HintPath>
+    </Reference>
+    <Reference Include="dotnetnuke.log4net, Version=3.0.0.0, Culture=neutral, PublicKeyToken=53eb1fac7b60111f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Bin\dotnetnuke.log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.Web">
+      <HintPath>..\..\..\..\Portals\EHaml\bin\DotNetNuke.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.Web.Client">
+      <HintPath>..\..\..\..\Portals\EHaml\bin\DotNetNuke.Web.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Telerik.Web.UI, Version=2013.2.611.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Portals\EHaml\bin\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataClasses.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_DashboardHandler\View.ascx.cs">
+      <DependentUpon>View.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_DashboardHandler\View.ascx.designer.cs">
+      <DependentUpon>View.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Dashboard\UserInfo.ascx.cs">
+      <DependentUpon>UserInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Dashboard\UserInfo.ascx.designer.cs">
+      <DependentUpon>UserInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Dashboard\ReplyToInquiryShenasname.ascx.cs">
+      <DependentUpon>ReplyToInquiryShenasname.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Dashboard\ReplyToInquiryShenasname.ascx.designer.cs">
+      <DependentUpon>ReplyToInquiryShenasname.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Dashboard\ServantDashboard.ascx.cs">
+      <DependentUpon>ServantDashboard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Dashboard\ServantDashboard.ascx.designer.cs">
+      <DependentUpon>ServantDashboard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Dashboard\Settings.ascx.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Dashboard\Settings.ascx.designer.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Dashboard\Settings2.ascx.cs">
+      <DependentUpon>Settings2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Dashboard\Settings2.ascx.designer.cs">
+      <DependentUpon>Settings2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_ElamiyeDashboard\Elamiye_LoardDashboard.ascx.cs">
+      <DependentUpon>Elamiye_LoardDashboard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_ElamiyeDashboard\Elamiye_LoardDashboard.ascx.designer.cs">
+      <DependentUpon>Elamiye_LoardDashboard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_ElamiyeDashboard\Elamiye_ServentDashboard.ascx.cs">
+      <DependentUpon>Elamiye_ServentDashboard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_ElamiyeDashboard\Elamiye_ServentDashboard.ascx.designer.cs">
+      <DependentUpon>Elamiye_ServentDashboard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_ElamiyeDashboard\ReplyToElamiyeShenasname.ascx.cs">
+      <DependentUpon>ReplyToElamiyeShenasname.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_ElamiyeDashboard\ReplyToElamiyeShenasname.ascx.designer.cs">
+      <DependentUpon>ReplyToElamiyeShenasname.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_ElamiyeDashboard\Settings.ascx.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_ElamiyeDashboard\Settings.ascx.designer.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_ElamiyeDashboard\Settings2.ascx.cs">
+      <DependentUpon>Settings2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_ElamiyeDashboard\Settings2.ascx.designer.cs">
+      <DependentUpon>Settings2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Elamiye\ElamiyeSettings.ascx.cs">
+      <DependentUpon>ElamiyeSettings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Elamiye\ElamiyeSettings.ascx.designer.cs">
+      <DependentUpon>ElamiyeSettings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Elamiye\Elamiye_KhaliDaryayi.ascx.cs">
+      <DependentUpon>Elamiye_KhaliDaryayi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Elamiye\Elamiye_KhaliDaryayi.ascx.designer.cs">
+      <DependentUpon>Elamiye_KhaliDaryayi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Elamiye\Elamiye_KhaliJadei.ascx.cs">
+      <DependentUpon>Elamiye_KhaliJadei.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Elamiye\Elamiye_KhaliJadei.ascx.designer.cs">
+      <DependentUpon>Elamiye_KhaliJadei.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Elamiye\Elamiye_KhaliReyli.ascx.cs">
+      <DependentUpon>Elamiye_KhaliReyli.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Elamiye\Elamiye_KhaliReyli.ascx.designer.cs">
+      <DependentUpon>Elamiye_KhaliReyli.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Elamiye\Elamiye_List.ascx.cs">
+      <DependentUpon>Elamiye_List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Elamiye\Elamiye_List.ascx.designer.cs">
+      <DependentUpon>Elamiye_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Elamiye\ReplyToElamiye_KhaliDaryayi.ascx.cs">
+      <DependentUpon>ReplyToElamiye_KhaliDaryayi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Elamiye\ReplyToElamiye_KhaliDaryayi.ascx.designer.cs">
+      <DependentUpon>ReplyToElamiye_KhaliDaryayi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Elamiye\ReplyToElamiye_KhaliJadei.ascx.cs">
+      <DependentUpon>ReplyToElamiye_KhaliJadei.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Elamiye\ReplyToElamiye_KhaliJadei.ascx.designer.cs">
+      <DependentUpon>ReplyToElamiye_KhaliJadei.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Elamiye\ReplyToElamiye_KhaliReyli.ascx.cs">
+      <DependentUpon>ReplyToElamiye_KhaliReyli.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Elamiye\ReplyToElamiye_KhaliReyli.ascx.designer.cs">
+      <DependentUpon>ReplyToElamiye_KhaliReyli.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Finance\Finance.ascx.cs">
+      <DependentUpon>Finance.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Finance\Finance.ascx.designer.cs">
+      <DependentUpon>Finance.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_GeneralList\Settings.ascx.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_GeneralList\Settings.ascx.designer.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_GeneralList\View.ascx.cs">
+      <DependentUpon>View.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_GeneralList\View.ascx.designer.cs">
+      <DependentUpon>View.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Gozaresh\GozareshForm.ascx.cs">
+      <DependentUpon>GozareshForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Gozaresh\GozareshForm.ascx.designer.cs">
+      <DependentUpon>GozareshForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Gozaresh\GozareshFormView.ascx.cs">
+      <DependentUpon>GozareshFormView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Gozaresh\GozareshFormView.ascx.designer.cs">
+      <DependentUpon>GozareshFormView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Gozaresh\KhedmatSide.ascx.cs">
+      <DependentUpon>KhedmatSide.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Gozaresh\KhedmatSide.ascx.designer.cs">
+      <DependentUpon>KhedmatSide.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Gozaresh\SahebSide.ascx.cs">
+      <DependentUpon>SahebSide.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Gozaresh\SahebSide.ascx.designer.cs">
+      <DependentUpon>SahebSide.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_HandleBedehkari\Handle_Bedehkari.ascx.cs">
+      <DependentUpon>Handle_Bedehkari.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_HandleBedehkari\Handle_Bedehkari.ascx.designer.cs">
+      <DependentUpon>Handle_Bedehkari.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\InquirySettings.ascx.cs">
+      <DependentUpon>InquirySettings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\InquirySettings.ascx.designer.cs">
+      <DependentUpon>InquirySettings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Bazdid.ascx.cs">
+      <DependentUpon>Inquiry_Bazdid.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Bazdid.ascx.designer.cs">
+      <DependentUpon>Inquiry_Bazdid.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_ChandVajhiSabok.ascx.cs">
+      <DependentUpon>Inquiry_ChandVajhiSabok.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_ChandVajhiSabok.ascx.designer.cs">
+      <DependentUpon>Inquiry_ChandVajhiSabok.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_ChandVajhiSangin.ascx.cs">
+      <DependentUpon>Inquiry_ChandVajhiSangin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_ChandVajhiSangin.ascx.designer.cs">
+      <DependentUpon>Inquiry_ChandVajhiSangin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Dghco.ascx.cs">
+      <DependentUpon>Inquiry_Dghco.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Dghco.ascx.designer.cs">
+      <DependentUpon>Inquiry_Dghco.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Dl.ascx.cs">
+      <DependentUpon>Inquiry_Dl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Dl.ascx.designer.cs">
+      <DependentUpon>Inquiry_Dl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Dn.ascx.cs">
+      <DependentUpon>Inquiry_Dn.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Dn.ascx.designer.cs">
+      <DependentUpon>Inquiry_Dn.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Hl.ascx.cs">
+      <DependentUpon>Inquiry_Hl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Hl.ascx.designer.cs">
+      <DependentUpon>Inquiry_Hl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Hs.ascx.cs">
+      <DependentUpon>Inquiry_Hs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Hs.ascx.designer.cs">
+      <DependentUpon>Inquiry_Hs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_List.ascx.cs">
+      <DependentUpon>Inquiry_List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_List.ascx.designer.cs">
+      <DependentUpon>Inquiry_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Rl.ascx.cs">
+      <DependentUpon>Inquiry_Rl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Rl.ascx.designer.cs">
+      <DependentUpon>Inquiry_Rl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Tj.ascx.cs">
+      <DependentUpon>Inquiry_Tj.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Tj.ascx.designer.cs">
+      <DependentUpon>Inquiry_Tj.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Tk.ascx.cs">
+      <DependentUpon>Inquiry_Tk.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Tk.ascx.designer.cs">
+      <DependentUpon>Inquiry_Tk.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Tr.ascx.cs">
+      <DependentUpon>Inquiry_Tr.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Tr.ascx.designer.cs">
+      <DependentUpon>Inquiry_Tr.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Ts.ascx.cs">
+      <DependentUpon>Inquiry_Ts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Ts.ascx.designer.cs">
+      <DependentUpon>Inquiry_Ts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Zaban.ascx.cs">
+      <DependentUpon>Inquiry_Zaban.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Zaban.ascx.designer.cs">
+      <DependentUpon>Inquiry_Zaban.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Zadghal.ascx.cs">
+      <DependentUpon>Inquiry_Zadghal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Zadghal.ascx.designer.cs">
+      <DependentUpon>Inquiry_Zadghal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Zadghan.ascx.cs">
+      <DependentUpon>Inquiry_Zadghan.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_Zadghan.ascx.designer.cs">
+      <DependentUpon>Inquiry_Zadghan.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_ZDF.ascx.cs">
+      <DependentUpon>Inquiry_ZDF.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\Inquiry_ZDF.ascx.designer.cs">
+      <DependentUpon>Inquiry_ZDF.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Bazdid.ascx.cs">
+      <DependentUpon>ReplyToInquiry_Bazdid.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Bazdid.ascx.designer.cs">
+      <DependentUpon>ReplyToInquiry_Bazdid.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_ChandVajhiSabok.ascx.cs">
+      <DependentUpon>ReplyToInquiry_ChandVajhiSabok.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_ChandVajhiSabok.ascx.designer.cs">
+      <DependentUpon>ReplyToInquiry_ChandVajhiSabok.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_ChandVajhiSangi.ascx.cs">
+      <DependentUpon>ReplyToInquiry_ChandVajhiSangi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_ChandVajhiSangi.ascx.designer.cs">
+      <DependentUpon>ReplyToInquiry_ChandVajhiSangi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Dghco.ascx.cs">
+      <DependentUpon>ReplyToInquiry_Dghco.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Dghco.ascx.designer.cs">
+      <DependentUpon>ReplyToInquiry_Dghco.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Dl.ascx.cs">
+      <DependentUpon>ReplyToInquiry_Dl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Dl.ascx.designer.cs">
+      <DependentUpon>ReplyToInquiry_Dl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Dn.ascx.cs">
+      <DependentUpon>ReplyToInquiry_Dn.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Dn.ascx.designer.cs">
+      <DependentUpon>ReplyToInquiry_Dn.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Hl.ascx.cs">
+      <DependentUpon>ReplyToInquiry_Hl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Hl.ascx.designer.cs">
+      <DependentUpon>ReplyToInquiry_Hl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Hs.ascx.cs">
+      <DependentUpon>ReplyToInquiry_Hs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Hs.ascx.designer.cs">
+      <DependentUpon>ReplyToInquiry_Hs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Rl.ascx.cs">
+      <DependentUpon>ReplyToInquiry_Rl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Rl.ascx.designer.cs">
+      <DependentUpon>ReplyToInquiry_Rl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Tj.ascx.cs">
+      <DependentUpon>ReplyToInquiry_Tj.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Tj.ascx.designer.cs">
+      <DependentUpon>ReplyToInquiry_Tj.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Tk.ascx.cs">
+      <DependentUpon>ReplyToInquiry_Tk.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Tk.ascx.designer.cs">
+      <DependentUpon>ReplyToInquiry_Tk.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Tr.ascx.cs">
+      <DependentUpon>ReplyToInquiry_Tr.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Tr.ascx.designer.cs">
+      <DependentUpon>ReplyToInquiry_Tr.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Ts.ascx.cs">
+      <DependentUpon>ReplyToInquiry_Ts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Ts.ascx.designer.cs">
+      <DependentUpon>ReplyToInquiry_Ts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Zaban.ascx.cs">
+      <DependentUpon>ReplyToInquiry_Zaban.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Zaban.ascx.designer.cs">
+      <DependentUpon>ReplyToInquiry_Zaban.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Zadghal.ascx.cs">
+      <DependentUpon>ReplyToInquiry_Zadghal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Zadghal.ascx.designer.cs">
+      <DependentUpon>ReplyToInquiry_Zadghal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Dashboard\LordDashboard.ascx.cs">
+      <DependentUpon>LordDashboard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Dashboard\LordDashboard.ascx.designer.cs">
+      <DependentUpon>LordDashboard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_ZDF.ascx.cs">
+      <DependentUpon>ReplyToInquiry_ZDF.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_ZDF.ascx.designer.cs">
+      <DependentUpon>ReplyToInquiry_ZDF.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Register\Approve.ascx.cs">
+      <DependentUpon>Approve.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Register\Approve.ascx.designer.cs">
+      <DependentUpon>Approve.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Register\Register.ascx.cs">
+      <DependentUpon>Register.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Register\Register.ascx.designer.cs">
+      <DependentUpon>Register.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_List.ascx.cs">
+      <DependentUpon>ReplyToInquiry_List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_List.ascx.designer.cs">
+      <DependentUpon>ReplyToInquiry_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Zadghan.ascx.cs">
+      <DependentUpon>ReplyToInquiry_Zadghan.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Zadghan.ascx.designer.cs">
+      <DependentUpon>ReplyToInquiry_Zadghan.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Dashboard\NazarSanji_KhadamatBeSaheb.ascx.cs">
+      <DependentUpon>NazarSanji_KhadamatBeSaheb.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Dashboard\NazarSanji_KhadamatBeSaheb.ascx.designer.cs">
+      <DependentUpon>NazarSanji_KhadamatBeSaheb.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Dashboard\NazarSanji_SahebBeKhadamat.ascx.cs">
+      <DependentUpon>NazarSanji_SahebBeKhadamat.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Dashboard\NazarSanji_SahebBeKhadamat.ascx.designer.cs">
+      <DependentUpon>NazarSanji_SahebBeKhadamat.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Settings\Settings.ascx.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Settings\Settings.ascx.designer.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Subscribe\Subscribe.ascx.cs">
+      <DependentUpon>Subscribe.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Subscribe\Subscribe.ascx.designer.cs">
+      <DependentUpon>Subscribe.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Tasviye\Tasviye.ascx.cs">
+      <DependentUpon>Tasviye.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDnn_EHaml_Tasviye\Tasviye.ascx.designer.cs">
+      <DependentUpon>Tasviye.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepeaterTest.ascx.cs">
+      <DependentUpon>RepeaterTest.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RepeaterTest.ascx.designer.cs">
+      <DependentUpon>RepeaterTest.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnFromBank.aspx.cs">
+      <DependentUpon>ReturnFromBank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReturnFromBank.aspx.designer.cs">
+      <DependentUpon>ReturnFromBank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SendToBank.aspx.cs">
+      <DependentUpon>SendToBank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SendToBank.aspx.designer.cs">
+      <DependentUpon>SendToBank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Services\DashboardController.cs" />
+    <Compile Include="Services\ElamiyeController.cs" />
+    <Compile Include="Services\InquiriesController.cs" />
+    <Compile Include="Services\ReplyInDetailDTO.cs" />
+    <Compile Include="Services\RouteMapper.cs" />
+    <Compile Include="Services\TarhListItemDTO.cs" />
+    <Compile Include="Util.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="controls\labelcontrol.ascx" />
+    <Content Include="MyDnn_EHaml_DashboardHandler\View.ascx" />
+    <Content Include="MyDnn_EHaml_Dashboard\module.css" />
+    <Content Include="MyDnn_EHaml_Dashboard\UserInfo.ascx" />
+    <Content Include="MyDnn_EHaml_Dashboard\ReplyToInquiryShenasname.ascx" />
+    <Content Include="MyDnn_EHaml_Dashboard\ServantDashboard.ascx" />
+    <Content Include="MyDnn_EHaml_Dashboard\Settings.ascx" />
+    <Content Include="MyDnn_EHaml_Dashboard\Settings2.ascx" />
+    <Content Include="MyDnn_EHaml_ElamiyeDashboard\Elamiye_LoardDashboard.ascx" />
+    <Content Include="MyDnn_EHaml_ElamiyeDashboard\Elamiye_ServentDashboard.ascx" />
+    <Content Include="MyDnn_EHaml_ElamiyeDashboard\module.css" />
+    <Content Include="MyDnn_EHaml_ElamiyeDashboard\ReplyToElamiyeShenasname.ascx" />
+    <Content Include="MyDnn_EHaml_ElamiyeDashboard\Settings.ascx" />
+    <Content Include="MyDnn_EHaml_ElamiyeDashboard\Settings2.ascx" />
+    <Content Include="MyDnn_EHaml_Elamiye\ElamiyeSettings.ascx" />
+    <Content Include="MyDnn_EHaml_Elamiye\Elamiye_KhaliDaryayi.ascx" />
+    <Content Include="MyDnn_EHaml_Elamiye\Elamiye_KhaliJadei.ascx" />
+    <Content Include="MyDnn_EHaml_Elamiye\Elamiye_KhaliReyli.ascx" />
+    <Content Include="MyDnn_EHaml_Elamiye\Elamiye_List.ascx" />
+    <Content Include="MyDnn_EHaml_Elamiye\module.css" />
+    <Content Include="MyDnn_EHaml_Elamiye\ReplyToElamiye_KhaliDaryayi.ascx" />
+    <Content Include="MyDnn_EHaml_Elamiye\ReplyToElamiye_KhaliJadei.ascx" />
+    <Content Include="MyDnn_EHaml_Elamiye\ReplyToElamiye_KhaliReyli.ascx" />
+    <Content Include="MyDnn_EHaml_Finance\Finance.ascx" />
+    <Content Include="MyDnn_EHaml_Finance\module.css" />
+    <Content Include="MyDnn_EHaml_GeneralList\module.css" />
+    <Content Include="MyDnn_EHaml_GeneralList\Settings.ascx" />
+    <Content Include="MyDnn_EHaml_GeneralList\View.ascx" />
+    <Content Include="MyDnn_EHaml_Gozaresh\GozareshForm.ascx" />
+    <Content Include="MyDnn_EHaml_Gozaresh\GozareshFormView.ascx" />
+    <Content Include="MyDnn_EHaml_Gozaresh\KhedmatSide.ascx" />
+    <Content Include="MyDnn_EHaml_Gozaresh\SahebSide.ascx" />
+    <Content Include="MyDnn_EHaml_HandleBedehkari\Handle_Bedehkari.ascx" />
+    <Content Include="MyDnn_EHaml_HandleBedehkari\module.css" />
+    <Content Include="MyDnn_EHaml_Inquiries\InquirySettings.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\Inquiry_Bazdid.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\Inquiry_ChandVajhiSabok.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\Inquiry_ChandVajhiSangin.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\Inquiry_Dghco.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\Inquiry_Dl.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\Inquiry_Dn.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\Inquiry_Hl.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\Inquiry_Hs.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\Inquiry_List.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\Inquiry_Rl.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\Inquiry_Tj.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\Inquiry_Tk.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\Inquiry_Tr.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\Inquiry_Ts.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\Inquiry_Zaban.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\Inquiry_Zadghal.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\Inquiry_Zadghan.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\Inquiry_ZDF.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\module.css" />
+    <Content Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Bazdid.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_ChandVajhiSabok.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_ChandVajhiSangi.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Dghco.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Dl.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Dn.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Hl.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Hs.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Rl.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Tj.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Tk.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Tr.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Ts.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Zaban.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Zadghal.ascx" />
+    <Content Include="MyDnn_EHaml_Dashboard\LordDashboard.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_ZDF.ascx" />
+    <Content Include="MyDnn_EHaml_Register\Approve.ascx" />
+    <Content Include="MyDnn_EHaml_Register\module.css" />
+    <Content Include="MyDnn_EHaml_Register\Register.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyDnn_EHaml_Register\App_LocalResources\Register.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_List.ascx" />
+    <Content Include="MyDnn_EHaml_Inquiries\ReplyToInquiry_Zadghan.ascx" />
+    <Content Include="MyDnn_EHaml_Dashboard\NazarSanji_KhadamatBeSaheb.ascx" />
+    <Content Include="MyDnn_EHaml_Dashboard\NazarSanji_SahebBeKhadamat.ascx" />
+    <Content Include="MyDnn_EHaml_Settings\module.css" />
+    <Content Include="MyDnn_EHaml_Settings\Settings.ascx" />
+    <Content Include="MyDnn_EHaml_Subscribe\module.css" />
+    <Content Include="MyDnn_EHaml_Subscribe\Subscribe.ascx" />
+    <Content Include="MyDnn_EHaml_Tasviye\module.css" />
+    <Content Include="MyDnn_EHaml_Tasviye\Tasviye.ascx" />
+    <Content Include="RepeaterTest.ascx" />
+    <Content Include="ReturnFromBank.aspx" />
+    <Content Include="Scripts\kendo.web.min.js" />
+    <Content Include="Scripts\Util.js" />
+    <Content Include="SendToBank.aspx" />
+    <Content Include="Service References\ServiceReference1\MyDnn_EHaml.ServiceReference1.ArrayOfLong.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReference1\MyDnn_EHaml.ServiceReference1.MessagesBL.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="DataClasses.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Service References\ServiceReference1\send.disco" />
+    <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReference1\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Styles\kendo.common.min.css" />
+    <Content Include="Styles\kendo.default.min.css" />
+    <Content Include="Styles\kendo.rtl.min.css" />
+    <Content Include="web.config" />
+    <None Include="Service References\ServiceReference1\send.wsdl" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyDnn_EHaml_Inquiries\App_LocalResources\Inquiry_Zadghan.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyDnn_EHaml_Inquiries\App_LocalResources\Inquiry_Zadghal.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyDnn_EHaml_Inquiries\App_LocalResources\Inquiry_Zaban.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyDnn_EHaml_Inquiries\App_LocalResources\Inquiry_Rl.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyDnn_EHaml_Inquiries\App_LocalResources\Inquiry_Dn.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyDnn_EHaml_Dashboard\App_LocalResources\LordDashboard.ascx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyDnn_EHaml_Inquiries\App_LocalResources\Inquiry_Dl.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyDnn_EHaml_Inquiries\App_LocalResources\Inquiry_ZDF.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyDnn_EHaml_Inquiries\App_LocalResources\Inquiry_Dghco.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyDnn_EHaml_Inquiries\App_LocalResources\Inquiry_Hl.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyDnn_EHaml_Inquiries\App_LocalResources\Inquiry_Tj.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyDnn_EHaml_Inquiries\App_LocalResources\Inquiry_Tk.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyDnn_EHaml_Inquiries\App_LocalResources\Inquiry_Ts.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyDnn_EHaml_Inquiries\App_LocalResources\Inquiry_Tr.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyDnn_EHaml_Inquiries\App_LocalResources\Inquiry_ChandVajhiSabok.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyDnn_EHaml_Inquiries\App_LocalResources\Inquiry_ChandVajhiSangin.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyDnn_EHaml_Inquiries\App_LocalResources\Inquiry_Bazdid.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyDnn_EHaml_Inquiries\App_LocalResources\Inquiry_KhaliJadei.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyDnn_EHaml_Inquiries\App_LocalResources\Inquiry_Hs.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataClasses.dbml.layout">
+      <DependentUpon>DataClasses.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3388/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>IF NOT ($(ConfigurationName)) == (Debug) GOTO END
+cd $(ProjectDir)
+copy /y obj\debug\MyDnn_EHaml.dll  D:\Work\DNN\Potals\EHaml\Portal\Primary\bin
+
+:END</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

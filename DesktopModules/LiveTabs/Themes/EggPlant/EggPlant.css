@@ -1,0 +1,74 @@
+/* Layout helpers
+----------------------------------*/
+.livetabseggplant .ui-helper-hidden { display: none; }
+.livetabseggplant .ui-helper-hidden-accessible { position: absolute; left: -99999999px; }
+.livetabseggplant .ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.livetabseggplant .ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.livetabseggplant .ui-helper-clearfix { display: inline-block; }
+/* required comment for clearfix to work in Opera \*/
+* html .ui-helper-clearfix { height:1%; }
+.livetabseggplant .ui-helper-clearfix { display:block; }
+/* end clearfix */
+.livetabseggplant .ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+/* Interaction Cues
+----------------------------------*/
+.livetabseggplant .ui-state-disabled { cursor: default !important; }
+/* states and images */
+.livetabseggplant .ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+/* Overlays */
+.livetabseggplant .ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+/* Component containers
+----------------------------------*/
+.livetabseggplant .ui-widget { font-family: Lucida Grande, Lucida Sans, Arial, sans-serif; font-size: 1.1em; }
+.livetabseggplant .ui-widget input, .livetabseggplant .ui-widget select, .livetabseggplant .ui-widget textarea, .livetabseggplant .ui-widget button { font-family: Lucida Grande, Lucida Sans, Arial, sans-serif; font-size: 1em; }
+.livetabseggplant .ui-widget-content { border: 1px solid #7e7783; background: #3d3644 url(images/ui-bg_gloss-wave_30_3d3644_500x100.png) 50% top repeat-x; color: #ffffff; }
+.livetabseggplant .ui-widget-content a {  }
+.livetabseggplant .ui-widget-header { border: 1px solid #231d2b; background: #30273a url(images/ui-bg_highlight-soft_25_30273a_1x100.png) 50% 50% repeat-x; color: #ffffff; font-weight: bold; }
+.livetabseggplant .ui-widget-header a { color: #ffffff; }
+/* Interaction states
+----------------------------------*/
+.livetabseggplant .ui-state-default, .livetabseggplant .ui-widget-content .ui-state-default { border: 1px solid #dcd9de; background: #dcd9de url(images/ui-bg_highlight-soft_100_dcd9de_1x100.png) 50% 50% repeat-x; font-weight: bold; color: #665874; outline: none; }
+.livetabseggplant .ui-state-default a, .livetabseggplant .ui-state-default a:link, .livetabseggplant .ui-state-default a:visited { color: #665874; text-decoration: none; outline: none; }
+.livetabseggplant .ui-state-hover, .livetabseggplant .ui-widget-content .ui-state-hover, .livetabseggplant .ui-state-focus, .livetabseggplant .ui-widget-content .ui-state-focus { border: 1px solid #d1c5d8; background: #eae6ea url(images/ui-bg_highlight-soft_100_eae6ea_1x100.png) 50% 50% repeat-x; font-weight: bold; color: #734d99; outline: none; }
+.livetabseggplant .ui-state-hover a, .livetabseggplant .ui-state-hover a:hover { color: #734d99; text-decoration: none; outline: none; }
+.livetabseggplant .ui-state-active, .livetabseggplant .ui-widget-content .ui-state-active { border: 1px solid #7e7783; background: #5f5964 url(images/ui-bg_highlight-soft_45_5f5964_1x100.png) 50% 50% repeat-x; font-weight: bold; color: #ffffff; outline: none; }
+.livetabseggplant .ui-state-active a, .livetabseggplant .ui-state-active a:link, .livetabseggplant .ui-state-active a:visited { color: #ffffff; outline: none; text-decoration: none; }
+/* Interaction Cues
+----------------------------------*/
+.livetabseggplant .ui-state-highlight, .livetabseggplant .ui-widget-content .ui-state-highlight {border: 1px solid #ffdb1f; background: #fafafa url(images/ui-bg_flat_55_fafafa_40x100.png) 50% 50% repeat-x; color: #333333; }
+.livetabseggplant .ui-state-highlight a, .livetabseggplant .ui-widget-content .ui-state-highlight a { color: #333333; }
+.livetabseggplant .ui-state-error, .livetabseggplant .ui-widget-content .ui-state-error {border: 1px solid #994d53; background: #994d53 url(images/ui-bg_flat_55_994d53_40x100.png) 50% 50% repeat-x; color: #ffffff; }
+.livetabseggplant .ui-state-error a, .livetabseggplant .ui-widget-content .ui-state-error a { color: #ffffff; }
+.livetabseggplant .ui-state-error-text, .livetabseggplant .ui-widget-content .ui-state-error-text { color: #ffffff; }
+.livetabseggplant .ui-state-disabled, .livetabseggplant .ui-widget-content .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+.livetabseggplant .ui-priority-primary, .livetabseggplant .ui-widget-content .ui-priority-primary { font-weight: bold; }
+.livetabseggplant .ui-priority-secondary, .livetabseggplant .ui-widget-content .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+/* states and images */
+.livetabseggplant .ui-icon { width: 16px; height: 16px; background-image: url(images/ui-icons_ffffff_256x240.png); }
+.livetabseggplant .ui-widget-content .ui-icon {background-image: url(images/ui-icons_ffffff_256x240.png); }
+.livetabseggplant .ui-widget-header .ui-icon {background-image: url(images/ui-icons_a8a3ae_256x240.png); }
+.livetabseggplant .ui-state-default .ui-icon { background-image: url(images/ui-icons_8d78a5_256x240.png); }
+.livetabseggplant .ui-state-hover .ui-icon, .livetabseggplant .ui-state-focus .ui-icon {background-image: url(images/ui-icons_734d99_256x240.png); }
+.livetabseggplant .ui-state-active .ui-icon {background-image: url(images/ui-icons_454545_256x240.png); }
+.livetabseggplant .ui-state-highlight .ui-icon {background-image: url(images/ui-icons_8d78a5_256x240.png); }
+.livetabseggplant .ui-state-error .ui-icon, .livetabseggplant .ui-state-error-text .ui-icon {background-image: url(images/ui-icons_ebccce_256x240.png); }
+/* Corner radius */
+.livetabseggplant .ui-corner-all, .livetabseggplant .ui-corner-top, .livetabseggplant .ui-corner-left, .livetabseggplant .ui-corner-tl { -moz-border-radius-topleft: 6px; -webkit-border-top-left-radius: 6px; -khtml-border-top-left-radius: 6px; border-top-left-radius: 6px; }
+.livetabseggplant .ui-corner-all, .livetabseggplant .ui-corner-top, .livetabseggplant .ui-corner-right, .livetabseggplant .ui-corner-tr { -moz-border-radius-topright: 6px; -webkit-border-top-right-radius: 6px; -khtml-border-top-right-radius: 6px; border-top-right-radius: 6px; }
+.livetabseggplant .ui-corner-all, .livetabseggplant .ui-corner-bottom, .livetabseggplant .ui-corner-left, .livetabseggplant .ui-corner-bl { -moz-border-radius-bottomleft: 6px; -webkit-border-bottom-left-radius: 6px; -khtml-border-bottom-left-radius: 6px; border-bottom-left-radius: 6px; }
+.livetabseggplant .ui-corner-all, .livetabseggplant .ui-corner-bottom, .livetabseggplant .ui-corner-right, .livetabseggplant .ui-corner-br { -moz-border-radius-bottomright: 6px; -webkit-border-bottom-right-radius: 6px; -khtml-border-bottom-right-radius: 6px; border-bottom-right-radius: 6px; }
+/* Overlays */
+.livetabseggplant .ui-widget-overlay { background: #eeeeee url(images/ui-bg_flat_0_eeeeee_40x100.png) 50% 50% repeat-x; opacity: .80;filter:Alpha(Opacity=80); }
+.livetabseggplant .ui-widget-shadow { margin: -4px 0 0 -4px; padding: 4px; background: #aaaaaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x; opacity: .60;filter:Alpha(Opacity=60); -moz-border-radius: 0px; -webkit-border-radius: 0px; -khtml-border-radius: 0px; border-radius: 0px; }
+/* Tabs
+----------------------------------*/
+.livetabseggplant .ui-tabs { padding: .2em; zoom: 1; }
+.livetabseggplant .ui-tabs .ui-tabs-nav { list-style: none; position: relative; padding: .2em .2em 0; }
+.livetabseggplant .ui-tabs .ui-tabs-nav li { list-style: none; position: relative; float: left; margin: 0 .2em -1px 0; padding: 0; }
+.livetabseggplant .ui-tabs .ui-tabs-nav li a { float: left; text-decoration: none; padding: .5em 2em; }
+.livetabseggplant .ui-tabs .ui-tabs-nav li.ui-tabs-selected, .livetabseggplant .ui-tabs .ui-tabs-nav li.ui-tabs-active { padding-bottom: 1px; border-bottom-width: 0; }
+.livetabseggplant .ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .livetabseggplant .ui-tabs .ui-tabs-nav li.ui-tabs-active a, .livetabseggplant .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .livetabseggplant .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.livetabseggplant .ui-tabs .ui-tabs-nav li a, .livetabseggplant .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a, .livetabseggplant .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.livetabseggplant .ui-tabs .ui-tabs-panel { padding: 1em 1.4em; display: block; border-width: 0; background: none; }
+.livetabseggplant .ui-tabs .ui-tabs-hide { display: none !important; }
+.livetabseggplant .ui-tabs-panel p,.livetabseggplant .ui-tabs-panel div {color:#ffffff;}

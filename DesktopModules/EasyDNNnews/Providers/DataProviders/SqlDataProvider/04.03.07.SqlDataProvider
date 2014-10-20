@@ -1,0 +1,1 @@
+﻿ALTER TABLE EasyDNNNews ADD DetailTarget nvarchar(20) NULL DEFAULT('_self')

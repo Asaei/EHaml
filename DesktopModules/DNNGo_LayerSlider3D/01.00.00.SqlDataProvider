@@ -1,0 +1,77 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+/** Create Table **/
+
+ 
+/** DNNGo_LayerSlider3D_Content  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNGo_LayerSlider3D_Content]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}DNNGo_LayerSlider3D_Content](
+		[ID] [int] IDENTITY(1,1) NOT NULL,
+		[Title] [nvarchar](512) NOT NULL,
+		[Picture] [nvarchar](512) NULL,
+		[UrlLink] [nvarchar](512) NULL,
+		[UrlLinkTarget] [tinyint] NOT NULL,
+		[UrlLinkType] [tinyint] NOT NULL,
+		[Options] [ntext] NULL,
+		[Sort] [int] NOT NULL,
+		[ModuleId] [int] NOT NULL,
+		[PortalId] [int] NOT NULL,
+		[Status] [tinyint] NOT NULL,
+		[LastUser] [int] NOT NULL,
+		[LastIP] [nvarchar](50) NOT NULL,
+		[LastTime] [datetime] NOT NULL,
+	 CONSTRAINT [PK_DNNGo_LayerSlider3D_Content] PRIMARY KEY CLUSTERED 
+	(
+		[ID] ASC
+	)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+	) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+	  
+END
+GO
+
+
+/** DNNGo_LayerSlider3D_Item  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNGo_LayerSlider3D_Item]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}DNNGo_LayerSlider3D_Item](
+		[ID] [int] IDENTITY(1,1) NOT NULL,
+		[ContentID] [int] NOT NULL,
+		[Title] [nvarchar](512) NOT NULL,
+		[ItemType] [tinyint] NOT NULL,
+		[Options] [ntext] NULL,
+		[Picture] [nvarchar](512) NULL,
+		[Sort] [int] NOT NULL,
+		[ModuleId] [int] NOT NULL,
+		[PortalId] [int] NOT NULL,
+		[Status] [tinyint] NOT NULL,
+		[LastUser] [int] NOT NULL,
+		[LastIP] [nvarchar](50) NOT NULL,
+		[LastTime] [datetime] NOT NULL,
+	 CONSTRAINT [PK_DNNGo_LayerSlider3D_Item] PRIMARY KEY CLUSTERED 
+	(
+		[ID] ASC
+	)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+	) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+	  
+END
+
+
+
+
+ 
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/
+
+
+

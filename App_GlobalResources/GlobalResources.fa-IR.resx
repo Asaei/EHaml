@@ -1,0 +1,1189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SyndicateModule.Action" xml:space="preserve">
+    <value>اتحادیه</value>
+  </data>
+  <data name="ExportModule.Action" xml:space="preserve">
+    <value>استخراج محتوا</value>
+  </data>
+  <data name="ImportModule.Action" xml:space="preserve">
+    <value>ورود محتوا</value>
+  </data>
+  <data name="OnlineHelp.Action" xml:space="preserve">
+    <value>راهنمای آنلاین</value>
+  </data>
+  <data name="ModuleHelp.Action" xml:space="preserve">
+    <value>راهنما</value>
+  </data>
+  <data name="ModuleSettings.Action" xml:space="preserve">
+    <value>تنظیمات</value>
+  </data>
+  <data name="DeleteModule.Action" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="PrintModule.Action" xml:space="preserve">
+    <value>چاپ</value>
+  </data>
+  <data name="ClearCache.Action" xml:space="preserve">
+    <value>بازسازی</value>
+  </data>
+  <data name="MoveTop.Action" xml:space="preserve">
+    <value>ابتدا</value>
+  </data>
+  <data name="MoveUp.Action" xml:space="preserve">
+    <value>بالا</value>
+  </data>
+  <data name="MoveDown.Action" xml:space="preserve">
+    <value>پایین</value>
+  </data>
+  <data name="MoveBottom.Action" xml:space="preserve">
+    <value>انتها</value>
+  </data>
+  <data name="MovePane.Action" xml:space="preserve">
+    <value>به</value>
+  </data>
+  <data name="MoveRoot.Action" xml:space="preserve">
+    <value>انتقال</value>
+  </data>
+  <data name="//Admin.String" xml:space="preserve">
+    <value>مدیر</value>
+  </data>
+  <data name="//Admin//SiteSettings.String" xml:space="preserve">
+    <value>تنظیمات سایت</value>
+  </data>
+  <data name="//Admin//Tabs.String" xml:space="preserve">
+    <value>مدیریت صفحات</value>
+  </data>
+  <data name="//Admin//SecurityRoles.String" xml:space="preserve">
+    <value>نقش های امنیتی</value>
+  </data>
+  <data name="//Admin//UserAccounts.String" xml:space="preserve">
+    <value>مدیریت کاربران</value>
+  </data>
+  <data name="//Admin//Vendors.String" xml:space="preserve">
+    <value>فروشندگان</value>
+  </data>
+  <data name="//Admin//SiteLog.String" xml:space="preserve">
+    <value>گزارش عملیات سایت</value>
+  </data>
+  <data name="//Admin//Newsletters.String" xml:space="preserve">
+    <value>خبرنامه</value>
+  </data>
+  <data name="//Admin//FileManager.String" xml:space="preserve">
+    <value>مدیریت فایلها</value>
+  </data>
+  <data name="//Admin//RecycleBin.String" xml:space="preserve">
+    <value>سطل بازیابی</value>
+  </data>
+  <data name="//Admin//LogViewer.String" xml:space="preserve">
+    <value>نمایشگر رویدادها</value>
+  </data>
+  <data name="//Host//Skins.String" xml:space="preserve">
+    <value>پوسته ها</value>
+  </data>
+  <data name="//Host.String" xml:space="preserve">
+    <value>میزبان</value>
+  </data>
+  <data name="//Host//SQL.String" xml:space="preserve">
+    <value>دستورات SQL</value>
+  </data>
+  <data name="//Host//Schedule.String" xml:space="preserve">
+    <value>زمانبند</value>
+  </data>
+  <data name="//Host//Languages.String" xml:space="preserve">
+    <value>مدیریت زبان ها</value>
+  </data>
+  <data name="BannerType.Banner.String" xml:space="preserve">
+    <value>بنر</value>
+  </data>
+  <data name="BannerType.MicroButton.String" xml:space="preserve">
+    <value>دکمه کوچک </value>
+  </data>
+  <data name="BannerType.Button.String" xml:space="preserve">
+    <value>دکمه</value>
+  </data>
+  <data name="BannerType.Block.String" xml:space="preserve">
+    <value>بلاک</value>
+  </data>
+  <data name="BannerType.Skyscraper.String" xml:space="preserve">
+    <value>Skyscraper</value>
+  </data>
+  <data name="BannerType.Text.String" xml:space="preserve">
+    <value>متن</value>
+  </data>
+  <data name="BannerType.Script.String" xml:space="preserve">
+    <value>اسکریپت</value>
+  </data>
+  <data name="//Host//Lists.String" xml:space="preserve">
+    <value>لیست ها</value>
+  </data>
+  <data name="//Admin//Solutions.String" xml:space="preserve">
+    <value>مرورگر راهکارها</value>
+  </data>
+  <data name="View.Permission" xml:space="preserve">
+    <value>نمایش ماژول</value>
+  </data>
+  <data name="Edit.Permission" xml:space="preserve">
+    <value>ویرایش ماژول</value>
+  </data>
+  <data name="View Tab.Permission" xml:space="preserve">
+    <value>نمایش صفحه</value>
+  </data>
+  <data name="Edit Tab.Permission" xml:space="preserve">
+    <value>ویرایش صفحه</value>
+  </data>
+  <data name="View Folder.Permission" xml:space="preserve">
+    <value>نمایش فایل های داخل فولدر</value>
+  </data>
+  <data name="Write to Folder.Permission" xml:space="preserve">
+    <value>نوشتن در فولدر</value>
+  </data>
+  <data name="Browse Folder.Permission" xml:space="preserve">
+    <value>مرور فایل های داخل فولدر</value>
+  </data>
+  <data name="EMAIL_SMTP_TEST_SUBJECT.Text" xml:space="preserve">
+    <value>تست تنظیمات SMTP [Host:HostTitle]</value>
+  </data>
+  <data name="MESSAGE_PORTAL_PRIVACY.Text" xml:space="preserve">
+    <value>&lt;div align="left"&gt;
+[Portal:PortalName] is committed to protecting your privacy and developing 
+technology that gives you the most powerful and safe online experience. This 
+Statement of Privacy applies to the [Portal:PortalName] Web 
+site and governs data collection and usage. By using the [Portal:PortalName] 
+website, you consent to the data practices described in this statement.&lt;br&gt;&lt;br&gt; 
+&lt;span class="SubHead"&gt;Collection of your Personal Information&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+[Portal:PortalName] collects personally 
+identifiable information, such as your e-mail address, name, home or work 
+address or telephone number. [Portal:PortalName] also collects anonymous 
+demographic information, which is not unique to you, such as your ZIP code, 
+age, gender, preferences, interests and favorites.&lt;br&gt;&lt;br&gt;
+There is also information about your computer hardware and 
+software that is automatically collected by [Portal:PortalName]. This information 
+can include: your IP address, browser type, domain names, access times and 
+referring Web site addresses. This information is used by [Portal:PortalName] for 
+the operation of the service, to maintain quality of the service, and to 
+provide general statistics regarding use of the [Portal:PortalName] Web site.&lt;br&gt;&lt;br&gt; 
+Please keep in mind that if you directly disclose personally identifiable 
+information or personally sensitive data through [Portal:PortalName] public 
+message boards, this information may be collected and used by others. Note: 
+[Portal:PortalName] does not read any of your private online communications.&lt;br&gt;&lt;br&gt; 
+[Portal:PortalName] encourages you to review the privacy statements of Web sites 
+you choose to link to from [Portal:PortalName] so that you can understand how 
+those Web sites collect, use and share your information. [Portal:PortalName] is 
+not responsible for the privacy statements or other content on Web sites 
+outside of the [Portal:PortalName] and [Portal:PortalName] family of Web sites.&lt;br&gt;&lt;br&gt;
+&lt;span class="SubHead"&gt;Use of your Personal Information&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+[Portal:PortalName] collects and uses your personal 
+information to operate the [Portal:PortalName] Web site and deliver the services 
+you have requested. [Portal:PortalName] also uses your personally identifiable 
+information to inform you of other products or services available from 
+[Portal:PortalName] and its affiliates. [Portal:PortalName] may also contact you 
+via surveys to conduct research about your opinion of current services or of 
+potential new services that may be offered.&lt;br&gt;&lt;br&gt;
+[Portal:PortalName] does not sell, 
+rent or lease its customer lists to third parties. [Portal:PortalName] may, from 
+time to time, contact you on behalf of external business partners about a 
+particular offering that may be of interest to you. In those cases, your unique 
+personally identifiable information (e-mail, name, address, telephone number) 
+is not transferred to the third party. In addition, [Portal:PortalName] may share 
+data with trusted partners to help us perform statistical analysis, send you 
+email or postal mail, provide customer support, or arrange for deliveries. All 
+such third parties are prohibited from using your personal information except 
+to provide these services to [Portal:PortalName], and they are required to 
+maintain the confidentiality of your information.&lt;br&gt;&lt;br&gt;
+[Portal:PortalName] does not 
+use or disclose sensitive personal information, such as race, religion, or 
+political affiliations, without your explicit consent.&lt;br&gt;&lt;br&gt;
+[Portal:PortalName] keeps 
+track of the Web sites and pages our customers visit within [Portal:PortalName], 
+in order to determine what [Portal:PortalName] services are the most popular. 
+This data is used to deliver customized content and advertising within 
+[Portal:PortalName] to customers whose behavior indicates that they are 
+interested in a particular subject area.&lt;br&gt;&lt;br&gt;
+[Portal:PortalName] Web sites will 
+disclose your personal information, without notice, only if required to do so 
+by law or in the good faith belief that such action is necessary to: (a) 
+conform to the edicts of the law or comply with legal process served on 
+[Portal:PortalName] or the site; (b) protect and defend the rights or property of 
+[Portal:PortalName]; and, (c) act under exigent circumstances to protect the 
+personal safety of users of [Portal:PortalName], or the public.&lt;br&gt;&lt;br&gt;
+&lt;span class="SubHead"&gt;Use of Cookies&lt;/span&gt;&lt;br&gt;&lt;br&gt; 
+The [Portal:PortalName] Web site use "cookies" to help you personalize your 
+online experience. A cookie is a text file that is placed on your hard disk by 
+a Web page server. Cookies cannot be used to run programs or deliver viruses to 
+your computer. Cookies are uniquely assigned to you, and can only be read by a 
+web server in the domain that issued the cookie to you.&lt;br&gt;&lt;br&gt;
+One of the primary 
+purposes of cookies is to provide a convenience feature to save you time. The 
+purpose of a cookie is to tell the Web server that you have returned to a 
+specific page. For example, if you personalize [Portal:PortalName] pages, or 
+register with [Portal:PortalName] site or services, a cookie helps 
+[Portal:PortalName] to recall your specific information on subsequent visits. 
+This simplifies the process of recording your personal information, such as 
+billing addresses, shipping addresses, and so on. When you return to the same 
+[Portal:PortalName] Web site, the information you previously provided can be 
+retrieved, so you can easily use the [Portal:PortalName] features that you 
+customized.&lt;br&gt;&lt;br&gt;
+You have the ability to accept or decline cookies. Most Web 
+browsers automatically accept cookies, but you can usually modify your browser 
+setting to decline cookies if you prefer. If you choose to decline cookies, you 
+may not be able to fully experience the interactive features of the 
+[Portal:PortalName] services or Web sites you visit.&lt;br&gt;&lt;br&gt;
+&lt;span class="SubHead"&gt;Security of your Personal Information&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+[Portal:PortalName] secures your personal information from 
+unauthorized access, use or disclosure. [Portal:PortalName] secures the 
+personally identifiable information you provide on computer servers in a 
+controlled, secure environment, protected from unauthorized access, use or 
+disclosure. When personal information (such as a credit card number) is 
+transmitted to other Web sites, it is protected through the use of encryption, 
+such as the Secure Socket Layer (SSL) protocol.&lt;br&gt;&lt;br&gt;
+&lt;span class="SubHead"&gt;Changes to this Statement&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+[Portal:PortalName] will occasionally update this Statement of Privacy to reflect 
+company and customer feedback. [Portal:PortalName] encourages you to periodically 
+review this Statement to be informed of how [Portal:PortalName] is protecting 
+your information.&lt;br&gt;&lt;br&gt;
+&lt;span class="SubHead"&gt;Contact Information&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+[Portal:PortalName] welcomes your comments 
+regarding this Statement of Privacy. If you believe that [Portal:PortalName] has 
+not adhered to this Statement, please contact [Portal:PortalName] at &lt;a href="mailto:[Portal:Email]"&gt;[Portal:Email]&lt;/a&gt;. We 
+will use commercially reasonable efforts to promptly determine and remedy the 
+problem.
+&lt;br&gt;
+&lt;br&gt;
+&lt;/div&gt;
+		</value>
+  </data>
+  <data name="EMAIL_PORTAL_SIGNUP_SUBJECT.Text" xml:space="preserve">
+    <value>[Host:HostTitle] ایجاد پرتال</value>
+  </data>
+  <data name="EMAIL_PORTAL_SIGNUP_BODY.Text" xml:space="preserve">
+    <value>&lt;div class="EmailText" style="direction:rtl; text-align:right;font-family:Tahoma, Arial;font-size: 12px;color: #000000;"&gt;کاربر گرامی[User:DisplayName],&lt;br/&gt;
+
+حساب کاربری  وبسایت شما در پرتال، ایجاد شد. اطلاعات زیر را به دقت بخوانید و از آن محافظت کنید. &lt;br/&gt;
+
+آدرس وبسایت: [Portal:URL]&lt;br/&gt;
+نام کاربری: [User:UserName]&lt;br/&gt;
+کد تأیید: [User:VerificationCode]&lt;br/&gt; 
+
+با تشکر&lt;br/&gt;
+
+[Host:HostTitle]
+
+&lt;/div&gt;</value>
+  </data>
+  <data name="MESSAGE_PORTAL_TERMS.Text" xml:space="preserve">
+    <value>&lt;div align="right"&gt;&lt;span class="SubHead"&gt;توافقنامه بين كاربران و [Portal:PortalName]&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+[Portal:PortalName] يك سيستم مديريت محتوا مي باشد كه از چندين صفحه متنوع تشكيل شده است. اين وب سايت قوانين و مقرراتي را جهت استفاده كاربران از سايت تدوين نموده است كه كاربران مجاز به ويرايش آن نبوده و به منظور استفاده از سايت مي بايست با تمامي اين شرايط و نكات اشاره شده به آنها موافقت نمايند.&lt;br&gt;&lt;br&gt;
+
+&lt;span class="SubHead"&gt;تغيير و تحول در قوانين و شرايط استفاده از سايت&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+[Portal:PortalName] تمام حقوق مربوط به ويرايش شرايط استفاده، قوانين و نكات مطرح شده پيرامون آن را براي خود محفوظ مي دارد.&lt;br&gt;&lt;br&gt;
+
+&lt;span class="SubHead"&gt;لينك به سايت هاي ديگر&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+[Portal:PortalName] ممكن است شامل لينك هايي به سايت هاي ديگر باشد. سايت هاي لينك داده شده از درون سايت ما، تحت كنترل و نظارت ما نبوده و ما هيچ مسئوليتي را در قبال آنها به عهده نمي گيريم. [Portal:PortalName] اين لينك ها را تنها جهت ارائه تسهيلات به شما درون سايت قرار دده و محتواي هر لينك، ارتباط خاصي به سايت ما نداشته و ما مسئوليتي را در قبال آن نمي پذيريم.&lt;br&gt;&lt;br&gt;
+
+&lt;span class="SubHead"&gt;عدم استفاده نامشروع يا ممنوع&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+جهت استفاده از [Portal:PortalName] شما متضمن مي شويد كه تحت هيچ شرايطي از سايت ما در كارهاي نامشروع و ممنوع استفاده نمي نماييد. شما مجاز به استفاده از سايت [Portal:PortalName] تحت هيچ شرايطي كه موجب ايجاد صدمه، غيرفعال شدن سايت، ايجاد اختلال در ظاهر آن و يا صرفاً جهت لذت شخصي باشد نمي باشد.&lt;br&gt;&lt;br&gt;
+
+&lt;span class="SubHead"&gt;استفاده از امكانات ارتباط جمعي&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+[Portal:PortalName] ممكن است شامل سيستم هاي ارتباط جمعي نظير تالار گفتگو (انجمن)، چت روم، گروه هاي خبري، سيستم نظردهي، صفحات مربوط به اطلاعات شخصي و يا سيستم هاي مشابهي باشد كه امكان ارتباط شما با ساير كاربران را فراهم كرده باشد. در اينصورت شما تنها مجاز به ارسال و دريافت پيام و يا فايل هايي مي باشيد كه متناسب با آن سيستم ارتباط جمعي بوده و مي بايست نهايت دقت را نموده تا موجب بروز موارد زيرين نشويد:&lt;br&gt;&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;	بد نام كردن، سوء استفاده، حملات مخرب، تهديد و تجاوز به حقوق عمومي سايت و ساير كاربران.&lt;br&gt;
+&lt;li&gt;	انتشار‌، ارسال، بارگذاري و يا توزيع هرگونه مطلب نامتناسب، برحرمتي، تجاوز و تعدي، گفتار زشت و وقيح، تصاوير شرم آور و عناوين، نام و موارد نامشروح.&lt;br&gt;
+&lt;li&gt;	بارگذاري فايل ها يا مواردي كه به دور از عقل سليم بوده و يا با قوانين سايت مقايرت داشته باشد.&lt;br&gt;
+&lt;li&gt;	بارگذاري فايل هايي كه شامل ويروس بوده،‌ فايل هاي ناقص و خراب و يا هر فايل يا برنامه اي كه موجب بروز اختلال در عملكرد يك كامپيوتر ديگر گردد.&lt;br&gt;
+&lt;li&gt;	تبليغات يا پيشنهاد فروش و خريد هر چيز يا خدمات خاصي به منظور تجارت در سايت.&lt;br&gt;
+&lt;li&gt;	رهبري، هدايت و تشكيل گروه هاي هرمي در نظردهي ها، مسابقات و موارد مشابه.&lt;br&gt;
+&lt;li&gt;	توزيع فايل هايي كه قبلاً توسط يك كاربر ديگر در سايت قرار داده شده است به نام خود.&lt;br&gt;
+&lt;li&gt;	محدود كردن و يا محروم ساختن هر كاربري از استفاده و لذت بردن از خدمات عمومي و سرويس هاي ارتباط جمعي سايت.&lt;br&gt;
+&lt;li&gt;	برداشتن و جمع آوري اطلاعات شخصي افراد بدون جلب رضايت آنها.&lt;br&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;span class="SubHead"&gt;آئين نامه هاي قابل اجرا در مورد تجاوزات&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;	[Portal:PortalName]  هيچ وظيفه اي در مورد نظارت بر سيستم هاي ارتباط جمعي را به عهده نمي گيرد. اگرچه، ما اين حق را براي خود محفوظ مي داريم تا بر روي فايل ها و مطالب ارسالي كاربران بازبيني داشته و موارد خلاف قوانين سايت را حذف نماييم. همچنين ما اين حق را براي خود محفوظ مي داريم كه در هر زمان و به هر دليلي دسترسي يك كاربر را به قسمت هاي مختلف سايت نظير سيستم هاي ارتباط جمعي محدود نموده و يا آن كاربر را حتي بدون ذكر علت از ليست اعضاء سايت حذف نماييم.&lt;br&gt;
+&lt;li&gt;	[Portal:PortalName] اين حق را براي خود قائل شده كه در هر زمان بتواند هر اطلاعاتي را كه در مورد قوانين قابل اجرا در سايت مي باشد را اعلاك نمايد و يا متون انتشار يافته در سايت را ويرايش، ارسال را رد كرده و يا هر اطلاعات يا فايلي را در هر قسمت از وب سايت حذف نمايد.&lt;br&gt;
+&lt;li&gt;	همواره نهايت دقت را هنگام مطرح كردن اطلاعات شخصي خود، دوستان و يا بستگان در سيستم هاي ارتباط جمعي داشته باشيد.&lt;br&gt;
+&lt;li&gt;	برخي از اطلاعات و فايل هاي بارگذاري شده در سايت ممكن است به منظور استفاده محدود در اختيار شما قرار گذاشته شده باشد، در اينصورت شما موظف به رعايت اين حق بوده و نمي بايست از آن مورد خاص سوء استفاده نماييد.&lt;br&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;span class="SubHead"&gt;اطلاعات و فايل هاي ارائه شده در وب سايت و يا ارسال ها شده در وب سايت ما&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;	[Portal:PortalName] هيچ ادعائي نسبت به تملك اطلاعات و فايل هايي كه توسط شما درون سايت قرار گرفته ندارد (شامل بازخورد ها، پيشنهادها، مطالب ارسالي، بارگذاري فايل و يا ثبت هرگونه اطلاعات در سايت ما). اگرچه شما با ارسال مطلب، بارگذاري فايل و ثبت نظر، آن را به ما هديه داده ايد.&lt;br&gt;
+&lt;li&gt;	[Portal:PortalName] مجبور به پرداخت هيچ پاداش و يا هزينه اي در قبال ارسال هاي شما نيست. همچنين [Portal:PortalName] هيچ الزامي نسبت به پذيرفتن اطلاعات ثبت شده شما نخواهد داشت و حتي اين اجازه را دارد تا در هر زماني مطالب ارسالي شما را حذف نمايد.&lt;br&gt;
+&lt;li&gt;	شما با ارسال مطالب، بارگذاري فايل، ثبت و يا ارائه نظر كليه مسئوليت آن را به عهده گرفته و پاسخگو خواهيد باهيد.&lt;br&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;span class="SubHead"&gt;رفع مسئوليت&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+اطلاعات،‌ نرم افزار،‌ محصولات و خدمات ارائه شده در سايت ما ممكن است شامل خطاهاي گرافيكي و يا برنامه نويسي باشد. قابل ذكر است بصورت دوره اي تغييراتي به اين اطلاعات اعمال خواهد شد. همچنين [Portal:PortalName] و يا توليد كنندگان آن محصول ممكن است به منظور توسعه برنامه آن را ويرايش نمايند.&lt;br&gt;&lt;/div&gt;</value>
+  </data>
+  <data name="EMAIL_USER_REGISTRATION_ADMINISTRATOR_SUBJECT.Text" xml:space="preserve">
+    <value>ثبت نام کاربر جدید [Portal:PortalName] </value>
+  </data>
+  <data name="EMAIL_USER_REGISTRATION_ADMINISTRATOR_BODY.Text" xml:space="preserve">
+    <value>تاریخ: [Date:Current]نام : [Profile:FirstName]نام خانوادگی: [Profile:LastName]واحد : [Profile:Unit]خیابان : [Profile:Street]
+شهر: [Profile:City]استان: [Profile:Region]کشور: [Profile:Country]کدپستی: [Profile:PostalCode]
+شماره تلفن: [Profile:Telephone]
+ایمیل: [User:Email]
+</value>
+  </data>
+  <data name="EMAIL_USER_REGISTRATION_PRIVATE_SUBJECT.Text" xml:space="preserve">
+    <value>ثبت نام کاربر جدید [Portal:PortalName] </value>
+  </data>
+  <data name="EMAIL_USER_REGISTRATION_PRIVATE_BODY.Text" xml:space="preserve">
+    <value>&lt;div class="EmailText" style="direction:rtl; text-align:right;font-family:Tahoma, Arial;font-size: 12px;color: #000000;"&gt;کاربر گرامی [User:DisplayName],
+&lt;br/&gt;با تشکر از عضویت شما در سایت [Portal:PortalName]. &lt;br/&gt; لطفا اطلاعات زیر را به دقت بخواند و از آن محافظت کنید.
+
+آدرس پرتال&lt;br/&gt;: [Portal:URL] &lt;br/&gt;
+نام کاربری: [User:UserName] &lt;br/&gt; 
+رمزعبور: [Membership:Password] &lt;br/&gt; 
+اطلاعات حساب شما توسط مدیر سایت بررسی شده و فعال سازی آن به اطلاع شما خواهد رسید.&lt;br/&gt; 
+با تشکر از حمایت شما...&lt;br/&gt;
+
+[Portal:PortalName]
+
+ &lt;/div&gt;</value>
+  </data>
+  <data name="MESSAGE_REGISTRATION_INSTRUCTIONS.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EMAIL_ROLE_ASSIGNMENT_SUBJECT.Text" xml:space="preserve">
+    <value>به روز رسانی حساب کاربر در [Portal:PortalName] </value>
+  </data>
+  <data name="EMAIL_ROLE_ASSIGNMENT_BODY.Text" xml:space="preserve">
+    <value>&lt;div  class="EmailText" style="direction:rtl; text-align:right;text-align:right;font-family:Tahoma, Arial;font-size: 12px;color: #000000;"&gt;کاربر گرامی [User:DisplayName], &lt;br/&gt; 
+
+حساب کاربری شما در سایت  [Portal:PortalName]&lt;br/&gt; به روز رسانی شده است. نقش کاربری زیر به شما اعطا گشته است: [Custom:0]
+ [Custom:1]&lt;br/&gt; این نقش از تاریخ  [Custom:2]تا تاریخ [Custom:3]
+
+معتبر خواهد بود. با تشکر&lt;br/&gt; [Portal:PortalName]
+&lt;/div&gt;</value>
+  </data>
+  <data name="EMAIL_ROLE_UNASSIGNMENT_SUBJECT.Text" xml:space="preserve">
+    <value>به روز رسانی حساب کاربر در [Portal:PortalName]</value>
+  </data>
+  <data name="EMAIL_ROLE_UNASSIGNMENT_BODY.Text" xml:space="preserve">
+    <value>&lt;div class="EmailText" style="direction:rtl; text-align:right;font-family:Tahoma, Arial;font-size: 12px;color: #000000;"&gt;کاربر گرامی [User:DisplayName] &lt;br/&gt;,حساب کاربری شما در سایت [Portal:PortalName] به روز رسانی شده است. نقش کاربری زیر از شما گرفته شده است. &lt;br/&gt;  [Custom:0]
+[Custom:1]
+
+&lt;br/&gt;با تشکر.
+[Portal:PortalName]
+&lt;/div&gt;</value>
+  </data>
+  <data name="MESSAGE_LOGIN_INSTRUCTIONS.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MESSAGE_RETRIEVEPASSWORD_INSTRUCTIONS.Text" xml:space="preserve">
+    <value>به منظور دستيابي به كلمه عبور خود، شما مي بايست نام كاربري و پاسخ مربوط به سوالي كه از شما در هنگام ثبت نام پرسيده شده است را وارد نماييد.</value>
+  </data>
+  <data name="EMAIL_PASSWORD_REMINDER_SUBJECT.Text" xml:space="preserve">
+    <value>یادآور رمزعبور [Portal:PortalName] </value>
+  </data>
+  <data name="EMAIL_PASSWORD_REMINDER_BODY.Text" xml:space="preserve">
+    <value>&lt;div class="EmailText" style="direction:rtl; text-align:right;"&gt;کاربر گرامی[User:DisplayName],
+
+شما از[Portal:PortalName]درخواست بازسازی رمزعبور نموده اید
+با استفاده از اطلاعات زیر وارد پرتال شوید:
+
+آدرس پرتال: [Portal:URL]
+نام کاربری:   [User:Username]
+رمزعبور: [Membership:Password]
+
+با احترا، 
+[Portal:PortalName]
+
+*تذکر:در صورتی که شما درخواست بازسازی رمزعبور نداده اید، لطفا این پیام را نادیده بگیرید.
+&lt;/div&gt;</value>
+  </data>
+  <data name="EMAIL_PROFILE_UPDATED_SUBJECT.Text" xml:space="preserve">
+    <value>آگاه سازی از بروزرساني  مشخصات در [Portal:PortalName]</value>
+  </data>
+  <data name="EMAIL_PROFILE_UPDATED_BODY.Text" xml:space="preserve">
+    <value>&lt;div class="EmailText" style="direction:rtl; text-align:right;font-family:Tahoma, Arial;font-size: 12px;color: #000000;"&gt;کاربر گرامی[User:DisplayName],&lt;br/&gt;پروفایل شما در سایت  [Portal:PortalName] با موفقیت به روز رسانی شد. با تشکر ,
+[Portal:PortalName]
+
+</value>
+  </data>
+  <data name="EMAIL_USER_UNREGISTER_SUBJECT.Text" xml:space="preserve">
+    <value>کاربر ثبت نشده[Portal:PortalName]</value>
+  </data>
+  <data name="EMAIL_USER_UNREGISTER_BODY.Text" xml:space="preserve">
+    <value>تاریخ: [Date:Current]
+نام: [Profile:FirstName]
+نام خانوادگی: [Profile:LastName]
+واحد: [Profile:Unit]
+خیابان: [Profile:Street]
+شهر: [Profile:City]
+استان: [Profile:Region]
+کشور: [Profile:Country]
+کد پستی: [Profile:PostalCode]
+تلفن: [Profile:Telephone]
+ایمیل: [User:Email]
+		</value>
+  </data>
+  <data name="EMAIL_USER_REGISTRATION_VERIFIED_SUBJECT.Text" xml:space="preserve">
+    <value>ثبت نام کاربر جدید [Portal:PortalName]</value>
+  </data>
+  <data name="EMAIL_USER_REGISTRATION_VERIFIED_BODY.Text" xml:space="preserve">
+    <value>&lt;div class="EmailText" style="direction:rtl; text-align:right;text-align:right;font-family:Tahoma, Arial;font-size: 12px;color: #000000;"&gt;کاربر گرامی [User:DisplayName], &lt;br/&gt;
+
+شما در سایت [Portal:PortalName] عضو شده اید.لطفا اطلاعات زیر را به دقت بخواند و از آن محافظت کنید.
+
+
+
+آدرس پرتال: [Portal:URL] &lt;br/&gt; 
+نام کاربری: [User:UserName] &lt;br/&gt; 
+رمزعبور: [Membership:Password]&lt;br/&gt; 
+اطلاعات حساب شما توسط مدیر سایت بررسی شده و فعال سازی آن به اطلاع شما خواهد رسید. &lt;br/&gt;
+با تشکر از حمایت شما...
+
+[Portal:PortalName]&lt;/div&gt;</value>
+  </data>
+  <data name="EMAIL_USER_REGISTRATION_PUBLIC_SUBJECT.Text" xml:space="preserve">
+    <value>ثبت نام کاربر جدید [Portal:PortalName]</value>
+  </data>
+  <data name="EMAIL_USER_REGISTRATION_PUBLIC_BODY.Text" xml:space="preserve">
+    <value>&lt;div class="EmailText" style="direction:rtl; text-align:right;font-family:Tahoma, Arial;font-size: 12px;color: #000000;"&gt;کاربر گرامی [User:DisplayName],
+
+شما در سایت [Portal:PortalName] عضو شده اید. &lt;br/&gt; لطفا اطلاعات زیر را به دقت بخواند و از آن محافظت کنید.
+
+
+
+آدرس پرتال&lt;br/&gt;: [Portal:URL] &lt;br/&gt;
+نام کاربری: [User:UserName] &lt;br/&gt;
+رمزعبور: [Membership:Password] &lt;br/&gt;اطلاعات حساب شما توسط مدیر سایت بررسی شده و فعال سازی آن به اطلاع شما خواهد رسید.&lt;br/&gt;
+با تشکر از حمایت شما...
+
+[Portal:PortalName]
+
+
+&lt;/div&gt;</value>
+  </data>
+  <data name="EMAIL_AFFILIATE_NOTIFICATION_SUBJECT.Text" xml:space="preserve">
+    <value>[Portal:PortalName] آگاه سازی از عضویت</value>
+  </data>
+  <data name="EMAIL_AFFILIATE_NOTIFICATION_BODY.Text" xml:space="preserve">
+    <value>&lt;div class="EmailText" style="direction:rtl; text-align:right;font-family:Tahoma, Arial;font-size: 12px;color: #000000;"&gt;کاربر گرامی [Custom:0],&lt;br/&gt; حساب کاربری شما در سایت [Portal:PortalName] با موفقیت ایجاد &lt;br/&gt; گردید.
+به منظور دسترسی به سایت از لینک زیر استفاده نمایید:
+
+[Custom:1]
+
+با تشکر,
+&lt;br/&gt;[Portal:PortalName]&lt;/div&gt;</value>
+  </data>
+  <data name="//Admin//SiteWizard.String" xml:space="preserve">
+    <value>ویزارد سایت</value>
+  </data>
+  <data name="EMAIL_BANNER_NOTIFICATION_BODY.Text" xml:space="preserve">
+    <value>بنر: [Custom:0]
+توضیحات: [Custom:1]
+تصویر: [Custom:2]
+CPM/Cost: [Custom:3]
+نشانه ها: [Custom:4]
+تاریخ شروع: [Custom:5]
+بازدیدها: [Custom:7]
+کلیک ها: [Custom:8]</value>
+  </data>
+  <data name="EMAIL_BANNER_NOTIFICATION_SUBJECT.Text" xml:space="preserve">
+    <value>[Custom:0]</value>
+  </data>
+  <data name="EMAIL_VENDOR_REGISTRATION_ADMINISTRATOR_BODY.Text" xml:space="preserve">
+    <value>تاریخ: [Custom:0]
+نام فروشنده: [Custom:1]
+نام: [Custom:2]
+نام خانوادگی: [Custom:3]
+واحد: [Custom:4]
+خیابان: [Custom:5]
+شهر: [Custom:6]
+استان: [Custom:7]
+کشور: [Custom:8]
+کدپستی: [Custom:9]
+تلفن: [Custom:10]
+فاکس: [Custom:11]
+تلفن همراه: [Custom:12]
+ایمیل: [Custom:13]
+وبسایت:[Custom:14]</value>
+  </data>
+  <data name="EMAIL_VENDOR_REGISTRATION_ADMINISTRATOR_SUBJECT.Text" xml:space="preserve">
+    <value>نرم افزار فروشندگان [Portal:PortalName]</value>
+  </data>
+  <data name="EMAIL_VENDOR_REGISTRATION_BODY.Text" xml:space="preserve">
+    <value>&lt;div class="EmailText" style="direction:rtl; text-align:right;font-family:Tahoma, Arial;font-size: 12px;color: #000000;"&gt;کاربر گرامی [Custom:0] [Custom:1],&lt;br/&gt;
+ 
+شرکت شما با موفقیت نزد سایت [Portal:PortalName] ثبت گردید.&lt;br/&gt;
+ 
+با تشکر,
+ &lt;br/&gt;
+ [Portal.PortalName]&lt;/div&gt;</value>
+  </data>
+  <data name="EMAIL_VENDOR_REGISTRATION_SUBJECT.Text" xml:space="preserve">
+    <value>نرم افزار فروشندگان [Portal:PortalName]</value>
+  </data>
+  <data name="EMAIL_USER_LOCKOUT_SUBJECT.Text" xml:space="preserve">
+    <value>هشدار در مورد قفل شدن حساب کاربری [Portal:PortalName]</value>
+  </data>
+  <data name="EMAIL_USER_LOCKOUT_BODY.Text" xml:space="preserve">
+    <value>در تاریخ[Date:Current] جهت دسترسی به حساب کاربری ( username: [Custom:0] )  که  به دلایلی بلاک شده بود؛ تلاش هایی صورت گرفته است. این ایمیل جهت اطلاع رسانی و بررسی وضعیت ارسال شده است. با تشکر  ,
+[Portal:PortalName]
+</value>
+  </data>
+  <data name="404.Error" xml:space="preserve">
+    <value>&lt;div style="height: 100%; width: 90%;"&gt;
+    &lt;font color="red"&gt;&lt;b&gt;Domain Name {0} Does Not Exist In The Database&lt;/b&gt;&lt;/font&gt;
+    &lt;br /&gt;
+    &lt;br /&gt;
+    DotNetNuke supports multiple portals from a single database/codebase. It accomplishes
+    this by converting the URL of the client browser Request to a valid PortalID in
+    the Portals database table. The following steps describe the process:
+    &lt;br /&gt;
+    &lt;br /&gt;
+    &lt;ol style="text-align: left; list-style-type: decimal; list-style-position: outside;"&gt;
+        &lt;li&gt;&lt;strong&gt;Web Server Processing&lt;/strong&gt;&lt;br /&gt;
+            &lt;ul style="list-style-type: disc;"&gt;
+                &lt;li&gt;When a web server receives a Request from a client browser, it compares the file
+                    name extension on the target URL resource to its Application Extension Mappings
+                    defined in IIS.&lt;/li&gt;
+                &lt;li&gt;Based on the corresponding match, IIS then sends the Request to the defined Executable
+                    Path ( aspnet_asapi.dll in the case of ASP.NET Requests ).&lt;/li&gt;
+                &lt;li&gt;The aspnet_isapi.dll engine processes the Request in an ordered series of events
+                    beginning with Application_BeginRequest.&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;br /&gt;
+            &lt;br /&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;HttpModule.URLRewrite OnBeginRequest ( UrlRewriteModule.vb )&lt;/strong&gt;&lt;br /&gt;
+            &lt;ul style="list-style-type: disc;"&gt;
+                &lt;li&gt;The Request URL is parsed based on the "/" character&lt;/li&gt;
+                &lt;li&gt;A Domain Name is constructed using each of the relevant parsed URL segments.
+                    &lt;br /&gt;
+                    &lt;br /&gt;
+                    Examples:
+                    &lt;br /&gt;
+                    &lt;br /&gt;
+                    URL: http://www.domain.com/default.aspx = Domain Name: www.domain.com&lt;br /&gt;
+                    URL: http://209.75.24.131/default.aspx = Domain Name: 209.75.24.131&lt;br /&gt;
+                    URL: http://localhost/DotNetNuke/default.aspx = Domain Name: localhost/DotNetNuke&lt;br /&gt;
+                    URL: http://www.domain.com/virtualdirectory/default.aspx = Domain Name: www.domain.com/virtualdirectory&lt;br /&gt;
+                    URL: http://www.domain.com/directory/default.aspx = Domain Name: www.domain.com/directory&lt;br /&gt;
+                    &lt;br /&gt;
+                &lt;/li&gt;
+                &lt;li&gt;Using the Domain Name, the application queries the database ( Portals table - PortalAlias
+                    field ) to locate a matching record.
+                    &lt;br /&gt;
+                    &lt;br /&gt;
+                    Note: If there are multiple URLs which correspond to the same portal then the PortalAlias
+                    field must contain each valid Domain Name in a comma seperated list.
+                    &lt;br /&gt;
+                    &lt;br /&gt;
+                    Example:
+                    &lt;br /&gt;
+                    &lt;br /&gt;
+                    URL: http://localhost/DotNetNuke/default.aspx&lt;br /&gt;
+                    URL: http://MACHINENAME/DotNetNuke/default.aspx&lt;br /&gt;
+                    URL: http://209.32.134.65/DotNetNuke/default.aspx&lt;br /&gt;
+                    PortalAlias: localhost/DotNetNuke,MACHINENAME/DotNetNuke,209.32.134.65/DotNetNuke
+                    &lt;br /&gt;
+                    &lt;br /&gt;
+                    Note: If you are installing the application to a remote server you must modify the
+                    PortalAlias field value for the default record in the Portals table according to
+                    the rules defined above. &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/div&gt;</value>
+  </data>
+  <data name="500.Error" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="403_3.Error" xml:space="preserve">
+    <value>&lt;div style="height: 100%; width:90%;"&gt;&lt;h1&gt;DotNetNuke Configuration Error&lt;/h1&gt;{0}&lt;br/&gt;&lt;br/&gt;
+		Your DotNetNuke installation appears to have a security settings problem (most likely permissions). DotNetNuke has extensive file upload capabilities for content, modules, and 
+		skins. These features require custom security settings so that the application 
+		is able to create and remove files in your website.
+		&lt;br/&gt;
+		&lt;br/&gt;
+		Using Windows Explorer, browse to the root folder of the website ( 
+		C:\DotNetNuke by default ). Right-click the folder and select Sharing and 
+		Security from the popup menu ( please note that if you are using Windows XP you 
+		may need to &lt;a href="http://support.microsoft.com/default.aspx/kb/307874" target="_blank"&gt;Disable 
+		Simple File Sharing&lt;/a&gt; before these options are displayed ). Select the 
+		Security tab. Add the appropriate User Account and set the Permissions.
+		&lt;br/&gt;
+		&lt;br/&gt;
+		&lt;ul style="text-align: left; list-style-type: none; list-style-position: outside;"&gt;
+		  &lt;li&gt;
+		    &lt;strong&gt;If using Windows 2000 - IIS5&lt;/strong&gt;
+		    &lt;br/&gt;
+		    &lt;ol style="list-style-type: circle;"&gt;
+		      &lt;li&gt;the [SERVER]\ASPNET User Account must have Read, Write, and Change Control of the virtual root of your website.&lt;/li&gt;
+		    &lt;/ol&gt;
+		    &lt;br/&gt;
+		  &lt;/li&gt;
+		  &lt;li&gt;
+		    &lt;strong&gt;If using Windows 2003 - IIS6 or Vista/Windows 2008 - IIS7&lt;/strong&gt;
+		    &lt;br/&gt;
+		    &lt;ol style="list-style-type: circle;"&gt;
+		      &lt;li&gt;the NT AUTHORITY\NETWORK SERVICE User Account must have Read, Write, and Change Control of the virtual root of your website.&lt;/li&gt;
+		    &lt;/ol&gt;
+		  &lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;br/&gt;
+		&lt;br/&gt;
+		&lt;img alt="Image showing the security settings for the root folder of the website must be set to Read, Write and Change Control for the ASPNET or NT AUTHORITY/NETWORK SERVICE accounts." src="images/403-3.gif"&gt;
+  &lt;/div&gt;</value>
+  </data>
+  <data name="Error.Text" xml:space="preserve">
+    <value>خطایی رخ داده است.</value>
+  </data>
+  <data name="EMAIL_BulkMailConf_Subject.Text" xml:space="preserve">
+    <value>گزارش ایمیل گروهی برای '{0}'.</value>
+  </data>
+  <data name="EMAIL_BulkMailConf_Html_Body.Text" xml:space="preserve">
+    <value>&lt;h1&gt;گزارش Bulkmail &lt;/h1&gt;
+           عملیات در [Custom:0] آغاز شد.&lt;br&gt;
+           گیرندگان ایمیل: [Custom:1]&lt;br&gt;
+           متن ایمیل: [Custom:2]&lt;br&gt;
+           عملیات کامل شد: [Custom:3]&lt;br&gt;
+           [Custom:4|تعداد خطاها:{0}&lt;br&gt;]
+           &lt;br&gt;
+           گزارش وضعیت: &lt;br&gt;
+           &lt;pre&gt;[Custom:5]&lt;/pre&gt;
+           [Custom:6|&lt;hr&gt;&lt;b&gt;Recipients:&lt;/B&gt;&lt;br&gt;{0}]
+    </value>
+  </data>
+  <data name="EMAIL_BulkMailConf_Text_Body.Text" xml:space="preserve">
+    <value>آغاز عملیات در : [Custom:0]
+گیرندگان ایمیل:      [Custom:1]
+متن ایمیل:        [Custom:2]
+عملیات کامل شد:  [Custom:3]
+
+[Custom:4|تعداد خطاها:     {0}
+]گزارش وضعیت:
+[Custom:5]
+--------------------------------
+[Custom:6|گیرندگان:
+===========
+{0}]
+    </value>
+  </data>
+  <data name="NoErrorsSending.Text" xml:space="preserve">
+    <value>در طول ارسال هیچ خطایی رخ نداد.</value>
+  </data>
+  <data name="Return.Text" xml:space="preserve">
+    <value>بازگشت به سایت</value>
+  </data>
+  <data name="UnhandledError.Text" xml:space="preserve">
+    <value>خطایی رخ داده است.</value>
+  </data>
+  <data name="TokenReplaceUnknownObject.Text" xml:space="preserve">
+    <value>خطای دسترسی [{0}:{1}], {0} توکن منبع شی ناشناخته است.</value>
+  </data>
+  <data name="TokenReplaceRestrictedProperty.Text" xml:space="preserve">
+    <value>خطای دسترسی [{0}:{1}], دسترسی به {1} برای منبع داده{0} غیر مجاز است.</value>
+  </data>
+  <data name="TokenReplaceUnknownProperty.Text" xml:space="preserve">
+    <value>خطای دسترسی [{0}:{1}], {1} برای منبع داده ناشناخته است {0}.</value>
+  </data>
+  <data name="Can Deploy.Permission" xml:space="preserve">
+    <value>توسعه ماژول</value>
+  </data>
+  <data name="//Admin//Languages.String" xml:space="preserve">
+    <value>مدیریت زبان ها</value>
+  </data>
+  <data name="//Admin//Skins.String" xml:space="preserve">
+    <value>پوسته ها</value>
+  </data>
+  <data name="//Host//Vendors.String" xml:space="preserve">
+    <value>فروشندگان</value>
+  </data>
+  <data name="Authentication.String" xml:space="preserve">
+    <value>احراز هویت</value>
+  </data>
+  <data name="License.Text" xml:space="preserve">
+    <value>DotNetNuke® - http://www.dotnetnuke.com&lt;br/&gt;
+Copyright (c) 2002-2011&lt;br/&gt;
+by DotNetNuke Corporation
+&lt;br/&gt;&lt;br/&gt;
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated 
+documentation files (the "Software"), to deal in the Software without restriction, including without limitation 
+the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and 
+to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+&lt;br/&gt;&lt;br/&gt;
+The above copyright notice and this permission notice shall be included in all copies or substantial portions 
+of the Software.
+&lt;br/&gt;&lt;br/&gt;
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED 
+TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL 
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF 
+CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+DEALINGS IN THE SOFTWARE.</value>
+  </data>
+  <data name="//Admin//Extensions.String" xml:space="preserve">
+    <value>ابزارها</value>
+  </data>
+  <data name="//Host//Extensions.String" xml:space="preserve">
+    <value>ابزارها</value>
+  </data>
+  <data name="SkinLoadError.Text" xml:space="preserve">
+    <value>خطا در بارگذاری پوسته: {0},  خطا: {1}&lt;br/&gt;</value>
+  </data>
+  <data name="EMAIL_ROLE_UPDATE_SUBJECT.Text" xml:space="preserve">
+    <value>به روز رسانی حساب کاربری[Portal:PortalName]</value>
+  </data>
+  <data name="EMAIL_ROLE_UPDATE_BODY.Text" xml:space="preserve">
+    <value>&lt;div class="EmailText" style="direction:rtl; text-align:right;font-family:Tahoma, Arial;font-size: 12px;color: #000000;"&gt;کاربر گرامی[User:DisplayName] ,&lt;br/&gt;
+
+حساب کاربری شما در سایت  [Portal:PortalName] به روز رسانی شده است.نقش کاربری شما به  [Custom:0]
+ [Custom:1]
+تغییر کرده است. &lt;br/&gt;این نقش از تاریخ: [Custom:2]تا تاریخ  [Custom:3]
+
+معتبر خواهد بود. &lt;br/&gt;با تشکر 
+&lt;br/&gt; [Portal:PortalName]&lt;/div&gt;</value>
+  </data>
+  <data name="PurgeCacheUnsupported.Text" xml:space="preserve">
+    <value>این نحوه ذخیره سازی کش نیازی به ویژگی پاکسازی کش ندارد.</value>
+  </data>
+  <data name="NoLoginControl.Text" xml:space="preserve">
+    <value>به علت عدم وجود ماژول Login معتبر در صفحه تنظیم شده برای لاگین وب سایت و یا اعطا نشدن صحیح مجوز ها، شما به صفحه پیش فرض لاگین هدایت شده اید.</value>
+  </data>
+  <data name="EMAIL_USER_UPDATED_OWN_PASSWORD_BODY.Text" xml:space="preserve">
+    <value>&lt;div class="EmailText" style="direction:rtl; text-align:right;text-align:right;font-family:Tahoma, Arial;font-size: 12px;color: #000000;"&gt;کاربر گرامی [User:DisplayName], &lt;br/&gt;
+
+شما رمزعبور خود را در سایت[Portal:PortalName] تغییر داده اید.
+
+ می توانید با استفاده از اطلاعات زیر به سایت وارد شوید:
+آدرس وبسایت: [Portal:URL] &lt;br/&gt; 
+نام کاربری:   [User:Username]
+رمزعبور &lt;br/&gt;: [Membership:Password] &lt;br/&gt; 
+
+با احترام، &lt;br/&gt;
+[Portal:PortalName]&lt;/div&gt;</value>
+  </data>
+  <data name="ViewSource.Action" xml:space="preserve">
+    <value>نمایش منبع</value>
+  </data>
+  <data name="EnglishName.Text" xml:space="preserve">
+    <value>نام انگلیسی</value>
+  </data>
+  <data name="NativeName.Text" xml:space="preserve">
+    <value>نام محلی</value>
+  </data>
+  <data name="NeutralCulture.Text" xml:space="preserve">
+    <value>زبان خنثی</value>
+  </data>
+  <data name="DeLocalize.Action" xml:space="preserve">
+    <value>لغو بومی سازی</value>
+  </data>
+  <data name="Localize.Action" xml:space="preserve">
+    <value>بومی سازی</value>
+  </data>
+  <data name="Translate.Action" xml:space="preserve">
+    <value>علامت گذاری به عنوان ترجمه شده</value>
+  </data>
+  <data name="UnTranslate.Action" xml:space="preserve">
+    <value>یک خطا رخ داده است.</value>
+  </data>
+  <data name="SearchCrawler Admin.String" xml:space="preserve">
+    <value>مدیریت SearchCrawler </value>
+  </data>
+  <data name="Manage.Text" xml:space="preserve">
+    <value>مدیریت</value>
+  </data>
+  <data name="ModuleGenericActions.Action" xml:space="preserve">
+    <value>مدیر</value>
+  </data>
+  <data name="ModuleSpecificActions.Action" xml:space="preserve">
+    <value>ویرایش</value>
+  </data>
+  <data name="//AboutUs.String" xml:space="preserve">
+    <value>درباره ما</value>
+  </data>
+  <data name="//Admin//ContentStaging.String" xml:space="preserve">
+    <value>نمایش محتوا</value>
+  </data>
+  <data name="//Admin//GoogleAnalytics.String" xml:space="preserve">
+    <value>تحلیل گوگل</value>
+  </data>
+  <data name="//Admin//Pages.String" xml:space="preserve">
+    <value>مدیریت صفحات</value>
+  </data>
+  <data name="//Admin//SearchEngineSiteMap.String" xml:space="preserve">
+    <value>تنظیمات نقشه سایت</value>
+  </data>
+  <data name="//Admin//Taxonomy.String" xml:space="preserve">
+    <value>مدیریت لغات</value>
+  </data>
+  <data name="//GettingStarted.String" xml:space="preserve">
+    <value>آغاز کار</value>
+  </data>
+  <data name="//Host//ConfigurationManager.String" xml:space="preserve">
+    <value>مدیریت پیکربندی</value>
+  </data>
+  <data name="//Host//Dashboard.String" xml:space="preserve">
+    <value>داشبورد</value>
+  </data>
+  <data name="//Host//HTMLEditorManager.String" xml:space="preserve">
+    <value>پیکربندی ویرایشگر سایت</value>
+  </data>
+  <data name="//Host//ProfessionalFeatures.String" xml:space="preserve">
+    <value>خصوصیات حرفه ای</value>
+  </data>
+  <data name="//Host//ProfessionalFeatures//ActivateYourLicense.String" xml:space="preserve">
+    <value>فعال کردن لایسنس</value>
+  </data>
+  <data name="//Host//ProfessionalFeatures//ApplicationIntegrity.String" xml:space="preserve">
+    <value>یکپارچگی برنامه</value>
+  </data>
+  <data name="//Host//ProfessionalFeatures//HealthMonitoring.String" xml:space="preserve">
+    <value>نظارت بر سلامت</value>
+  </data>
+  <data name="//Host//ProfessionalFeatures//KnowledgeBase.String" xml:space="preserve">
+    <value>پایگاه دانش</value>
+  </data>
+  <data name="//Host//ProfessionalFeatures//LicenseManagement.String" xml:space="preserve">
+    <value>مدیریت لایسنس</value>
+  </data>
+  <data name="//Host//ProfessionalFeatures//ManageWebServers.String" xml:space="preserve">
+    <value>مدیریت وب سرورها</value>
+  </data>
+  <data name="//Host//ProfessionalFeatures//MySupportTickets.String" xml:space="preserve">
+    <value>تیکت های پشتیبانی</value>
+  </data>
+  <data name="//Host//ProfessionalFeatures//SearchCrawlerAdmin.String" xml:space="preserve">
+    <value>مدیریت جستجو</value>
+  </data>
+  <data name="//Host//ProfessionalFeatures//SecurityCenter.String" xml:space="preserve">
+    <value>مرکز امنیت</value>
+  </data>
+  <data name="//Host//ProfessionalFeatures//SharePointConnector.String" xml:space="preserve">
+    <value>اتصال به SharePoint </value>
+  </data>
+  <data name="//Host//ProfessionalFeatures//SoftwareandDocumentation.String" xml:space="preserve">
+    <value>نرم افزار و مستندات</value>
+  </data>
+  <data name="//Host//ProfessionalFeatures//SpecialOffers.String" xml:space="preserve">
+    <value>پیشنهادهای ویژه</value>
+  </data>
+  <data name="//Host//ProfessionalFeatures//TechnicalSupport.String" xml:space="preserve">
+    <value>پشتیبانی فنی</value>
+  </data>
+  <data name="//Host//ProfessionalFeatures//UserSwitcher.String" xml:space="preserve">
+    <value>سوئیچ کاربر</value>
+  </data>
+  <data name="//SearchResults.String" xml:space="preserve">
+    <value>نتایج جستجو</value>
+  </data>
+  <data name="//UserProfile.String" xml:space="preserve">
+    <value>پروفایل کاربر</value>
+  </data>
+  <data name="//Admin//GoogleAnalyticsPro.String" xml:space="preserve">
+    <value>تحلیل گوگل</value>
+  </data>
+  <data name="//Modules.Text" xml:space="preserve">
+    <value>ماژول ها</value>
+  </data>
+  <data name="//NewsPromotions.String" xml:space="preserve">
+    <value>اخبار</value>
+  </data>
+  <data name="//OurServices.String" xml:space="preserve">
+    <value>خدمات برتر</value>
+  </data>
+  <data name="//Pages.Text" xml:space="preserve">
+    <value>صفحات</value>
+  </data>
+  <data name="//Tools.Text" xml:space="preserve">
+    <value>دسترسی سریع</value>
+  </data>
+  <data name="EMAIL_BulkMailStart_Body.Text" xml:space="preserve">
+    <value>کاربر {1} ایمیل گروهی '{0}' را به  گیرندگان {2} ارسال نموده است. لطفا گزارش ارسال را از جهت ارسال های ناموفق  بررسی نمایید</value>
+  </data>
+  <data name="EMAIL_BulkMailStart_Subject.Text" xml:space="preserve">
+    <value>ایمیل گروهی '{0}' ارسال گردید</value>
+  </data>
+  <data name="//Admin//SiteRedirectionManagement.String" xml:space="preserve">
+    <value>مدیریت تغییر مسیر سایت</value>
+  </data>
+  <data name="//Host//ProfessionalFeatures//SiteGroups.String" xml:space="preserve">
+    <value>گروههای سایت</value>
+  </data>
+  <data name="//Admin//Lists.String" xml:space="preserve">
+    <value>لیست ها</value>
+  </data>
+  <data name="//Host//DeviceDetectionManagement.String" xml:space="preserve">
+    <value>مدیریت شناسایی دستگاه</value>
+  </data>
+  <data name="//ActivityFeed.String" xml:space="preserve">
+    <value>فعالیت ها</value>
+  </data>
+  <data name="//ActivityFeed//Friends.String" xml:space="preserve">
+    <value>دوستان</value>
+  </data>
+  <data name="//ActivityFeed//Messages.String" xml:space="preserve">
+    <value>پیام ها</value>
+  </data>
+  <data name="//ActivityFeed//MyProfile.String" xml:space="preserve">
+    <value>پروفایل من</value>
+  </data>
+  <data name="//Admin//DevicePreviewManagement.String" xml:space="preserve">
+    <value>مدیریت دستگاه های شناخته شده</value>
+  </data>
+  <data name="//Host//FileManager.String" xml:space="preserve">
+    <value>مدیریت فایل ها</value>
+  </data>
+  <data name="//Host//HostSettings.String" xml:space="preserve">
+    <value>تنظیمات میزبان</value>
+  </data>
+  <data name="//Host//ModuleDefinitions.String" xml:space="preserve">
+    <value>ابزارها</value>
+  </data>
+  <data name="//Host//SearchAdmin.String" xml:space="preserve">
+    <value>مدیریت جستجو</value>
+  </data>
+  <data name="//Host//SiteManagement.String" xml:space="preserve">
+    <value>مدیریت پورتال ها</value>
+  </data>
+  <data name="//Host//SuperuserAccounts.String" xml:space="preserve">
+    <value>مدیران ارشد</value>
+  </data>
+  <data name="AddFollowerRequestBody.Text" xml:space="preserve">
+    <value>شما هم اکنون  {0} را پیگیری کردید</value>
+  </data>
+  <data name="AddFollowerRequestSubject.Text" xml:space="preserve">
+    <value>{0} شما را پیگیری کرد</value>
+  </data>
+  <data name="AddFriendRequestBody.Text" xml:space="preserve">
+    <value>{0} مایل است با شما دوست شود. اگر قصد دارید دوستی وی را بپذیرید گزینه موافقم را کلیک نمائید در غیر اینصورت می توانید با کلیک روی گزینه مخفی نمودن پیام دیگر این درخواست را مشاهده نکنید</value>
+  </data>
+  <data name="AddFriendRequestSubject.Text" xml:space="preserve">
+    <value>درخواست دوستی  {0}  با شما!</value>
+  </data>
+  <data name="EMAIL_BODY_FORMAT.Text" xml:space="preserve">
+    <value>موضوع: {0}
+    
+{1}لطفا به این ایمیل پاس ندهید.</value>
+  </data>
+  <data name="EMAIL_SUBJECT_FORMAT.Text" xml:space="preserve">
+    <value>پیام جدید از {0}</value>
+  </data>
+  <data name="Relationship_Added.Text" xml:space="preserve">
+    <value>دوستی های اضافه شده {0}</value>
+  </data>
+  <data name="Relationship_Deleted.Text" xml:space="preserve">
+    <value>دوستی های حذف شده {0} : ID {1}</value>
+  </data>
+  <data name="Relationship_Updated.Text" xml:space="preserve">
+    <value>دوستی های بروزرسانی شده {0}</value>
+  </data>
+  <data name="RelationshipType_Added.Text" xml:space="preserve">
+    <value>نوع دوستی های اضافه شده {0}</value>
+  </data>
+  <data name="RelationshipType_Deleted.Text" xml:space="preserve">
+    <value>نوع دوستی های حذف شده {0} : ID {1}</value>
+  </data>
+  <data name="RelationshipType_Updated.Text" xml:space="preserve">
+    <value>نوع دوستی های بروزرسانی شده {0}</value>
+  </data>
+  <data name="UserRelationship_Added.Text" xml:space="preserve">
+    <value>Added UserRelationship ID {0} for UserID {1}, RelatedUserID {2}</value>
+  </data>
+  <data name="UserRelationship_Deleted.Text" xml:space="preserve">
+    <value>Deleted UserRelationship ID {0} for UserID {1}, RelatedUserID {2}</value>
+  </data>
+  <data name="UserRelationship_Updated.Text" xml:space="preserve">
+    <value>Updated UserRelationship ID {0} for UserID {1}, RelatedUserID {2}</value>
+  </data>
+  <data name="UserRelationshipPreference_Added.Text" xml:space="preserve">
+    <value>Added UserRelationshipPreference ID {0} for User ID {1} and Relationship ID {2}</value>
+  </data>
+  <data name="UserRelationshipPreference_Deleted.Text" xml:space="preserve">
+    <value>Deleted UserRelationshipPreference ID {0} for User ID {1} and Relationship ID {2}</value>
+  </data>
+  <data name="UserRelationshipPreference_Updated.Text" xml:space="preserve">
+    <value>Updated UserRelationshipPreference ID {0} for User ID {1} and Relationship ID {2}</value>
+  </data>
+  <data name="//Admin//SharePointConnector.String" xml:space="preserve">
+    <value>کانکتورهای شیرپوئینت</value>
+  </data>
+  <data name="ActivatingLicense.Text" xml:space="preserve">
+    <value>لایسنس فعالیت</value>
+  </data>
+  <data name="ApplicationUpgrades.Text" xml:space="preserve">
+    <value>آپگریدهای برنامه</value>
+  </data>
+  <data name="EMAIL_USER_UPDATED_OWN_PASSWORD_SUBJECT.Text" xml:space="preserve">
+    <value>[Portal:PortalName] رمزعبور بروزرسانی شد</value>
+  </data>
+  <data name="ExecutingScript.Text" xml:space="preserve">
+    <value>اجرای اسکریپت</value>
+  </data>
+  <data name="GeneralUpgrades.Text" xml:space="preserve">
+    <value>اجرای آپگریدهای اصلی</value>
+  </data>
+  <data name="LogClicks.Text" xml:space="preserve">
+    <value>ثبت تاریخ و زمان و هر کلیک برای کاربر</value>
+  </data>
+  <data name="LogEnd.Text" xml:space="preserve">
+    <value>انتها</value>
+  </data>
+  <data name="LogStart.Text" xml:space="preserve">
+    <value>ابتدا</value>
+  </data>
+  <data name="ModulePermissions.Action" xml:space="preserve">
+    <value>سطح دسترسی</value>
+  </data>
+  <data name="PortalLinks.Text" xml:space="preserve">
+    <value>لینک های پرتال</value>
+  </data>
+  <data name="TrackClicks.Text" xml:space="preserve">
+    <value>تعداد دفعاتی که روی این لینک کلیک شده است پیگیری شود</value>
+  </data>
+  <data name="//AboutUs//StyleGuide.String" xml:space="preserve">
+    <value>راهنمای استایل</value>
+  </data>
+  <data name="//Admin//AdvancedSettings.String" xml:space="preserve">
+    <value>تنظیمات پیکربندی پیشرفته</value>
+  </data>
+  <data name="//Home.String" xml:space="preserve">
+    <value>صفحه اصلی</value>
+  </data>
+  <data name="//Host//WhatsNew.String" xml:space="preserve">
+    <value>جدیدها</value>
+  </data>
+  <data name="DraggingHintText.Text" xml:space="preserve">
+    <value>Move mouse over a drop zone.</value>
+  </data>
+  <data name="DragModuleHint.Text" xml:space="preserve">
+    <value>کشیدن این ماژول به یک مکان جدید</value>
+  </data>
+  <data name="DropModuleHint.Text" xml:space="preserve">
+    <value>برای رها کردن ماژول در اینجا دکمه ماوس را رها کنید</value>
+  </data>
+  <data name="DropModuleTarget.Text" xml:space="preserve">
+    <value>ماژول را اینجا رها کنید</value>
+  </data>
+  <data name="MoveToPane.Action" xml:space="preserve">
+    <value>به {0}</value>
+  </data>
+  <data name="//ContactUs.String" xml:space="preserve">
+    <value>تماس با ما</value>
+  </data>
+</root>

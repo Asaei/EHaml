@@ -1,0 +1,1 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Handle_Bedehkari.ascx.cs" Inherits="MyDnn_EHaml.MyDnn_EHaml_HandleBedehkari.Handle_Bedehkari" %>

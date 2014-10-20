@@ -1,0 +1,51 @@
+<token>
+    <name>LinkedInProfileButton</name>
+    <desc>Show a button that links to a LinkedIn profile.</desc>
+    <cacheTimeSeconds>86400</cacheTimeSeconds>
+    <docurl>http://www.linkedin.com/profile?promoteProfile=</docurl>
+    
+    <src>
+        <type>string</type>
+        <text>
+            <a href="{{PublicUrl|{0} }}" title="View {{Name|{0} }}'s profile on LinkedIn">
+                <img src="http://www.linkedin.com/img/webpromo/{{Icon|{0} }}" border="0" alt="View {{Name|{0} }}'s profile on LinkedIn" />
+            </a>
+        </text>
+    </src>
+    
+    <parser>
+        <type>string</type>
+        <replace>false</replace>
+        <decodeHtml>false</decodeHtml>
+    </parser>
+    
+    <param>
+        <name>PublicUrl</name>
+        <type>string</type>
+        <desc>Link to user public profile. This link ussually appears on user profile.</desc>
+        <required>true</required>
+    </param>
+    
+    <param>
+        <name>Name</name>
+        <type>string</type>
+        <desc>Name of person that the url links to.</desc>
+        <required>true</required>
+    </param>
+    
+    <param>
+        <name>Icon</name>
+        <type>enum</type>
+        <values>btn_viewmy_160x33.png,btn_myprofile_160x33.png,btn_viewmy_160x25.png,btn_viewmy_120x33.png,btn_profile_greytxt_80x15.png,btn_liprofile_blue_80x15.png</values><!-- only for enums, comma separated list -->
+        <desc>Determines appearance of the button.</desc>
+        <required>false</required>
+        <default>btn_viewmy_160x33.png</default>
+    </param>
+    
+    
+    <example>
+        <codeSnippet>[Social:LinkedInProfileButton(PublicUrl="http://ro.linkedin.com/pub/bogdan-litescu/3/22a/2a2",Name="View Bogdan Litescu Profile")]</codeSnippet>
+        <desc>Link to my profile on LinkedIn.</desc>
+    </example>
+    
+</token>

@@ -1,0 +1,1118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdminUser.Text" xml:space="preserve">
+    <value>Portal Administrator</value>
+  </data>
+  <data name="AdminUserError.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='red'&gt;Administrator User Error:&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;{0}</value>
+  </data>
+  <data name="AuthSystemsTitle.Text" xml:space="preserve">
+    <value>Install Authentication Systems</value>
+  </data>
+  <data name="Auto.Text" xml:space="preserve">
+    <value>&lt;b&gt;Auto&lt;/b&gt; - The "Auto" installation method bypasses the Wizard completely and uses the legacy Auto-Install procedure.</value>
+  </data>
+  <data name="ChooseDatabase.Text" xml:space="preserve">
+    <value>Select Database:</value>
+  </data>
+  <data name="ChooseDbError.Text" xml:space="preserve">
+    <value>You must choose a Database Type</value>
+  </data>
+  <data name="ChooseInstall.Text" xml:space="preserve">
+    <value>&lt;h3&gt;Select Installation Method:&lt;/h3&gt;</value>
+  </data>
+  <data name="ChooseLanguage.Text" xml:space="preserve">
+    <value>&lt;h3&gt;Choose Language:&lt;/h3&gt;</value>
+  </data>
+  <data name="Complete.Text" xml:space="preserve">
+    <value>Installation of Database Complete</value>
+  </data>
+  <data name="CompleteDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;Thanks for using the Evotiva DNNBackup Restore Wizard.&lt;br /&gt;
+If you have already completed all the desired operations and your site is ready, you can &lt;a href="{0}"&gt;Go To You Site&lt;/a&gt; now.
+&lt;/p&gt;</value>
+  </data>
+  <data name="CompleteTitle.Text" xml:space="preserve">
+    <value>Finished</value>
+  </data>
+  <data name="Confirm.Text" xml:space="preserve">
+    <value>Confirm Password:</value>
+  </data>
+  <data name="ConfirmPassword.Text" xml:space="preserve">
+    <value>The confirm password entered is not the same as the password entered.</value>
+  </data>
+  <data name="ConnectError.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='red'&gt;Connection Error(s):&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;{0}</value>
+  </data>
+  <data name="ConnectSuccess.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='green'&gt;Connection Success&lt;/font&gt;&lt;/b&gt;</value>
+  </data>
+  <data name="Containers.Text" xml:space="preserve">
+    <value>Containers</value>
+  </data>
+  <data name="Database.Text" xml:space="preserve">
+    <value>Database:</value>
+  </data>
+  <data name="DatabaseConfigDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;You can configure the database settings used by DotNetNuke on this page.   If you are restoring this DotNetNuke instance in a "Hosting Account", your  hosting provider should have provided you with the information.&lt;/p&gt;
+&lt;p&gt;There are two options for SQL Server 2005/2008.  SQLServer 2005 and SQL Server 2008 support the use of Database Files.  In most situations you should choose the Database option. If you are using SQL Server 2005/2008 Express, you have also the option to use the File option.&lt;/p&gt;</value>
+  </data>
+  <data name="DatabaseConfigTitle.Text" xml:space="preserve">
+    <value>Configure Database Connection</value>
+  </data>
+  <data name="DatabaseFile.Text" xml:space="preserve">
+    <value>Filename:</value>
+  </data>
+  <data name="DatabaseFileHelp.Text" xml:space="preserve">
+    <value>Enter the name of the Database File (located in the App_Data Directory)</value>
+  </data>
+  <data name="DatabaseHelp.Text" xml:space="preserve">
+    <value>Enter the Database name</value>
+  </data>
+  <data name="DatabaseInstallDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;The installation of the database scripts should have started when this page loaded.  The Next button will be disabled until the Installation of the Scripts is complete.&lt;/p&gt;</value>
+  </data>
+  <data name="DatabaseInstallTitle.Text" xml:space="preserve">
+    <value>Run Database Installation Scripts</value>
+  </data>
+  <data name="DatabaseWarning.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='red'&gt;The Auto option has been disabled as the DotNetNuke Application cannot connect to a valid SQL Server database.  You can continue to use either of the other two Wizard options and configure the Database settings at the appropriate Wizard step.&lt;/font&gt;&lt;/b&gt;</value>
+  </data>
+  <data name="DNNIsRunning.Text" xml:space="preserve">
+    <value>&lt;h3&gt;Unauthorized restore request&lt;/h3&gt;
+&lt;font color="red"&gt;Restore wizard aborted:&lt;/font&gt; You have a running DNN site.&lt;br /&gt;Please call the Restore Wizard from the DNNBackup module installed in your site.&lt; br/&gt;
+You can override this security setting by unzipping and uploading the Restore Pack to the web root and launching the restore wizard from http://[yourwebsite]/backup.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;</value>
+  </data>
+  <data name="EmailErrorMessage.Text" xml:space="preserve">
+    <value>There has been an error trying to send the test email. The error is:&lt;br /&gt;{0}</value>
+  </data>
+  <data name="EmailTestMessageSubject.Text" xml:space="preserve">
+    <value>SMTP Configuration Test</value>
+  </data>
+  <data name="Failure.Text" xml:space="preserve">
+    <value>FAILURE</value>
+  </data>
+  <data name="FileCreate.Text" xml:space="preserve">
+    <value>Create File</value>
+  </data>
+  <data name="FileDelete.Text" xml:space="preserve">
+    <value>Delete File</value>
+  </data>
+  <data name="Finished.Text" xml:space="preserve">
+    <value>Finished (Goto Site)</value>
+  </data>
+  <data name="FirstName.Text" xml:space="preserve">
+    <value>First Name:</value>
+  </data>
+  <data name="FolderCreate.Text" xml:space="preserve">
+    <value>Create Folder</value>
+  </data>
+  <data name="FolderDelete.Text" xml:space="preserve">
+    <value>Delete Folder</value>
+  </data>
+  <data name="Full.Text" xml:space="preserve">
+    <value>&lt;b&gt;Custom&lt;/b&gt; - The "Custom" installation method provides you with the ability to completely customise your DotNetNuke installation. 
+Select this option if you wish to control which optional components get installed.</value>
+  </data>
+  <data name="HomePage.Text" xml:space="preserve">
+    <value>Home Page</value>
+  </data>
+  <data name="HostUserDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;In this page you should provide the information for the Host or SuperUser User Account.  
+This user has access to all portals created on the site, and care should be taken to provide a UserName/Password combination that is difficult to "hack" by malicious users.&lt;/p&gt;</value>
+  </data>
+  <data name="HostUserError.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='red'&gt;Host User Error:&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;{0}</value>
+  </data>
+  <data name="HostUserTitle.Text" xml:space="preserve">
+    <value>Configure Host Account</value>
+  </data>
+  <data name="HostWarning.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='red'&gt;Your Host Name contains illegal characters (only A-Z, 0-9, - and . are allowed).  You should modify the host name used.&lt;/font&gt;&lt;/b&gt;</value>
+  </data>
+  <data name="Install.Error" xml:space="preserve">
+    <value>There was a problem with the Installation of the Database.</value>
+  </data>
+  <data name="Install.Text" xml:space="preserve">
+    <value>Install Database Scripts</value>
+  </data>
+  <data name="InstallAuthSystemError.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='red'&gt;Error Installing Authentication System(s):&lt;/font&gt;&lt;/b&gt;&lt;br/&gt; {0}</value>
+  </data>
+  <data name="InstallComplete.Text" xml:space="preserve">
+    <value>Completed Installing Database Scripts </value>
+  </data>
+  <data name="InstallContainerError.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='red'&gt;Error installing Container:&lt;/font&gt;&lt;/b&gt;&lt;br/&gt; {0}</value>
+  </data>
+  <data name="InstallDatabase.Text" xml:space="preserve">
+    <value>Installing Database - Version {0}</value>
+  </data>
+  <data name="Installed.Text" xml:space="preserve">
+    <value>&lt;p&gt;DotNetNuke is already Installed on this system.&lt;/p&gt;</value>
+  </data>
+  <data name="InstallFailed.Text" xml:space="preserve">
+    <value>Failure installing Database Scripts</value>
+  </data>
+  <data name="Installing.Text" xml:space="preserve">
+    <value>Installing Database Scripts ...   </value>
+  </data>
+  <data name="InstallLanguageError.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='red'&gt;Error Installing Language(s):&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;{0}</value>
+  </data>
+  <data name="InstallModuleError.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='red'&gt;Error Installing Module(s):&lt;/font&gt;&lt;/b&gt;&lt;br/&gt; {0}</value>
+  </data>
+  <data name="InstallPortalError.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='red'&gt;Error Installing Portal:&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;{0}</value>
+  </data>
+  <data name="InstallProviderError.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='red'&gt;Error Installing Provider:&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;{0}</value>
+  </data>
+  <data name="InstallScript.Text" xml:space="preserve">
+    <value>Upgrading Database to Version {0}</value>
+  </data>
+  <data name="InstallSkinError.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='red'&gt;Error installing Skin:&lt;/font&gt;&lt;/b&gt;&lt;br/&gt; {0}</value>
+  </data>
+  <data name="Integrated.Text" xml:space="preserve">
+    <value>Integrated Security:</value>
+  </data>
+  <data name="IntegratedHelp.Text" xml:space="preserve">
+    <value>Check this if you are using SQL Server's Integrated Security, which means you will be using your Windows account to access SQL Server. If you have been given a UserId/Password to access your Database, leave this unchecked, and provide the UserId/Password combination.</value>
+  </data>
+  <data name="IntroDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;Welcome to the Evotiva DNN Backup Restore Wizard This wizard will guide you through the restore of your DotNetNuke Application.&lt;/p&gt;
+&lt;p&gt;You may navigate through the Wizard using the Next and Previous buttons.  
+On some pages you will see a third button "Test ...".  This button will allow you to test the configuration before you continue, to see the effects of changes.&lt;/p&gt;
+</value>
+  </data>
+  <data name="IntroTitle.Text" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="InValidEmail.Text" xml:space="preserve">
+    <value>The email address is invalid.</value>
+  </data>
+  <data name="Languages.Text" xml:space="preserve">
+    <value>Languages</value>
+  </data>
+  <data name="LanguagesDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;DotNetNuke is fully localizable.  On this page you can choose the languages you wish to install.&lt;/p&gt;
+</value>
+  </data>
+  <data name="LanguagesTitle.Text" xml:space="preserve">
+    <value>Install Language Packs</value>
+  </data>
+  <data name="LastName.Text" xml:space="preserve">
+    <value>Last Name:</value>
+  </data>
+  <data name="MachineKey.Error" xml:space="preserve">
+    <value>Machine Key Update Error</value>
+  </data>
+  <data name="MinUserNamelength.Text" xml:space="preserve">
+    <value>The minimum length for the user name is 4 characters</value>
+  </data>
+  <data name="Modules.Text" xml:space="preserve">
+    <value>Modules</value>
+  </data>
+  <data name="ModulesTitle.Text" xml:space="preserve">
+    <value>Install Optional Modules</value>
+  </data>
+  <data name="Next.Text" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="No.Text" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="NoContainers.Text" xml:space="preserve">
+    <value>No Optional Containers to Install</value>
+  </data>
+  <data name="NoLanguages.Text" xml:space="preserve">
+    <value>There are no languages to install.</value>
+  </data>
+  <data name="NoModules.Text" xml:space="preserve">
+    <value>There are no modules to install</value>
+  </data>
+  <data name="NoPackages.Text" xml:space="preserve">
+    <value>There are no authentication systems to install.</value>
+  </data>
+  <data name="NoPassword.Text" xml:space="preserve">
+    <value>You must provide a password for the user</value>
+  </data>
+  <data name="NoSkins.Text" xml:space="preserve">
+    <value>No Optional Skins to Install</value>
+  </data>
+  <data name="Oracle.Text" xml:space="preserve">
+    <value>Oracle Database</value>
+  </data>
+  <data name="Owner.Text" xml:space="preserve">
+    <value>Run as db Owner:</value>
+  </data>
+  <data name="OwnerHelp.Text" xml:space="preserve">
+    <value>Check this if you are running the database as Database Owner - if left unchecked you will be running as the User ID specified in your Connection String.</value>
+  </data>
+  <data name="Password.Text" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="PasswordHelp.Text" xml:space="preserve">
+    <value>Enter the Password for the Database</value>
+  </data>
+  <data name="PasswordLength.Text" xml:space="preserve">
+    <value>The password must be at least {0} characters.</value>
+  </data>
+  <data name="PasswordUser.Text" xml:space="preserve">
+    <value>You cannot set the Password to the same value as the User Name.</value>
+  </data>
+  <data name="Permissions.Text" xml:space="preserve">
+    <value>File Permissions Summary:</value>
+  </data>
+  <data name="PermissionsDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;DotNetNuke has extensive file upload capabilities for content, modules, and skins. These features require custom security settings so that the application is able to create and remove files in your website.&lt;/p&gt;
+&lt;p&gt;This page checks the current file permissions to ensure that these features will work correctly.&lt;/p&gt;
+&lt;p&gt; &lt;b&gt;Note: The test verifies the permissions in the backup root folder&lt;/b&gt;.  In most cases this is good enough, as child folders usually inherit their file and folder permissions from their parent.  
+However, occasionally this test will pass, but there would be a more restrictive permission set on one of the descendant files/folders.&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;IMPORTANT:&lt;/b&gt; On some environments, you may have to configure something like this on your web.config file (please check with your hosting provider):&lt;br /&gt;
+&amp;lt;system.web&amp;gt;&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;identity impersonate=&amp;quot;true&amp;quot; userName=&amp;quot;theuser&amp;quot; password=&amp;quot;thepassword&amp;quot; /&amp;gt;
+&lt;/p&gt;</value>
+  </data>
+  <data name="PermissionsError.Text" xml:space="preserve">
+    <value>&lt;img alt="Image showing the security settings for the root folder of the website must be set to Read, Write and Change Control for the ASPNET Identity." src="403-3.gif" align="right" hspace="10"/&gt;
+&lt;p&gt;&lt;b&gt;&lt;font color='red'&gt;Your site failed the permissions check.&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;
+Using Windows Explorer, browse to the root folder of the website ( {0} ). Right-click the folder and select Sharing and Security from the popup menu. Select the Security tab. Add the appropriate User Account (asp.net identity) and set the Permissions.
+&lt;br/&gt;&lt;br/&gt;
+&lt;b&gt;&lt;font color='red'&gt;Your current asp.net identity is: &lt;br /&gt;{1}&lt;/font&gt;&lt;/b&gt;&lt;br /&gt;This is the user account (or application pool identity) for which you should grant read and write permission on your web site root, and force these permissions on all the child files and folders.
+&lt;br/&gt;&lt;br/&gt;
+&lt;h3&gt;If using Windows 2000 - IIS5&lt;/h3&gt;
+&lt;p&gt;Typically, the {Server}\ASPNET User Account must have Read, Write, and Change Control of the virtual root of your website.&lt;/p&gt;
+&lt;h3&gt;If using Windows 2003, Windows Vista or Windows Server 2008 and  IIS6 or IIS7&lt;/h3&gt;
+&lt;p&gt;The NT AUTHORITY\NETWORK SERVICE User Account must have Read, Write, and Change Control of the virtual root of your Website.&lt;/p&gt;
+&lt;h3&gt;If using Windows 7 or Windows Server 2008 R2 and IIS7.5&lt;/h3&gt;
+&lt;p&gt;Typically, the IIS AppPool\[YourApplicationPoolName] User Account must have Read, Write, and Change Control of the virtual root of your Website.&lt;/p&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+&lt;b&gt;IMPORTANT:&lt;/b&gt; On some environments, you may have to configure something like this on your web.config file (please check with your hosting provider):&lt;br /&gt;
+&amp;lt;system.web&amp;gt;&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;identity impersonate=&amp;quot;true&amp;quot; userName=&amp;quot;theuser&amp;quot; password=&amp;quot;thepassword&amp;quot; /&amp;gt;
+&lt;br /&gt;&lt;br /&gt;</value>
+  </data>
+  <data name="PermissionsOk.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='green'&gt;Your site passed the permissions check.&lt;/font?&lt;/b&gt;</value>
+  </data>
+  <data name="PermissionsTitle.Text" xml:space="preserve">
+    <value>Checking File Permissions</value>
+  </data>
+  <data name="Portal.Text" xml:space="preserve">
+    <value>Portal Properties</value>
+  </data>
+  <data name="PortalDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;In this page you will configure the Host (or initial) Portal (website).&lt;/p&gt;
+&lt;p&gt;You will need to provide an administrator user account.  
+This user has access to all functionality of the portal, and as with the Host User care should be taken to provide a UserName/Password combination that is difficult to "hack" by malicious users.&lt;/p&gt;</value>
+  </data>
+  <data name="PortalTemplate.Text" xml:space="preserve">
+    <value>Template:</value>
+  </data>
+  <data name="PortalTitle.Text" xml:space="preserve">
+    <value>Portal Title:</value>
+  </data>
+  <data name="Previous.Text" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="Providers.Text" xml:space="preserve">
+    <value>Providers</value>
+  </data>
+  <data name="ProvidersTitle.Text" xml:space="preserve">
+    <value>Install Providers</value>
+  </data>
+  <data name="Qualifier.Text" xml:space="preserve">
+    <value>Object Qualifier:</value>
+  </data>
+  <data name="QualifierHelp.Text" xml:space="preserve">
+    <value>Enter an optional "prefix" to use for all your database objects - this helps ensure that there are no object name clashes.&lt;br /&gt;
+NOTE: You are allowed to change this setting just when recreating the database objects by 'Apply Data Providers'.</value>
+  </data>
+  <data name="ScriptError.Text" xml:space="preserve">
+    <value>See {0} for more information</value>
+  </data>
+  <data name="Server.Text" xml:space="preserve">
+    <value>Server:</value>
+  </data>
+  <data name="ServerHelp.Text" xml:space="preserve">
+    <value>Enter the Name or IP Address of the computer where the Database is located.
+</value>
+  </data>
+  <data name="SQLServer.Text" xml:space="preserve">
+    <value>SQL Server (ANY edition) 2000/2005/2008/2012+ Database [* Preferred option *]</value>
+  </data>
+  <data name="SQLServerXPress.Text" xml:space="preserve">
+    <value>Attached File (SQL Server Express edition only)</value>
+  </data>
+  <data name="Success.Text" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="TestDB.Text" xml:space="preserve">
+    <value>Test Database Connection</value>
+  </data>
+  <data name="TestPerm.Text" xml:space="preserve">
+    <value>Test Permissions</value>
+  </data>
+  <data name="TestSMTP.Text" xml:space="preserve">
+    <value>Test SMTP Settings</value>
+  </data>
+  <data name="Title.Text" xml:space="preserve">
+    <value>Evotiva DNNBackup - Restore Wizard</value>
+  </data>
+  <data name="Typical.Text" xml:space="preserve">
+    <value>&lt;b&gt;Typical&lt;/b&gt;  - The "Typical" installation method makes some "typical" choices for you.</value>
+  </data>
+  <data name="UpdateDetail.Text" xml:space="preserve">
+    <value>This software can routinely check for the latest important updates for your website.  
+These updates can include security updates, critical updates and patches. (No information is collected that can be used to identify you or contact you without your explicit consent.)</value>
+  </data>
+  <data name="UpdateTitle.Text" xml:space="preserve">
+    <value>Update Service - Help protect the Integrity of your Website</value>
+  </data>
+  <data name="Upgrade.Text" xml:space="preserve">
+    <value>&lt;p&gt;DotNetNuke version {0} is already Installed. Click the Next button to upgrade to the new version.&lt;/p&gt;</value>
+  </data>
+  <data name="UseConnectionString.Text" xml:space="preserve">
+    <value>For security reasons, the wizard will use your current connection string, as defined in the web.config file.&lt;br /&gt;
+If you want to specify a different connection string, please update it on the web.config file.</value>
+  </data>
+  <data name="UserHelp.Text" xml:space="preserve">
+    <value>Enter the UserID for the Database</value>
+  </data>
+  <data name="UserId.Text" xml:space="preserve">
+    <value>User ID:</value>
+  </data>
+  <data name="UserName.Text" xml:space="preserve">
+    <value>User Name:</value>
+  </data>
+  <data name="Yes.Text" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="AllFiles.Text" xml:space="preserve">
+    <value>All Files</value>
+  </data>
+  <data name="ApplyDatabaseProviders.Text" xml:space="preserve">
+    <value>Apply Data Providers:</value>
+  </data>
+  <data name="BackupLogFiles.Text" xml:space="preserve">
+    <value>Backup Log</value>
+  </data>
+  <data name="CheckedFilesAreSameType.Text" xml:space="preserve">
+    <value>Checked Files are of the same Type</value>
+  </data>
+  <data name="cmdRestore.Text" xml:space="preserve">
+    <value>Restore selected</value>
+  </data>
+  <data name="cmdReturn.Text" xml:space="preserve">
+    <value>Return</value>
+  </data>
+  <data name="ConfirmRestore.Text" xml:space="preserve">
+    <value>Confirm Restore?</value>
+  </data>
+  <data name="CreateDatabaseObjects.Text" xml:space="preserve">
+    <value>Create Database Objects:</value>
+  </data>
+  <data name="DatabaseRestoreDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;Select the file to be restored. It could be a DNNBackup 'native' (compressed or not) database backup file or it could be a DNNBackup 'script' database backup file.&lt;/p&gt;
+&lt;p&gt;The files list below filters the backup types ('native' and/or 'script') suitable for your current environment. E.g. it does not include 'native' backups if the configured database is remote (that is, the database and web  servers are not the same physical box), or if your connection string is an Express 'Database File'. &lt;/p&gt;
+&lt;p&gt;
+The list below (for 'Local Files') includes the database backup files (suitable for your environment) found in the {0} folder. If you select a remote file, it will be downloaded to this folder.&lt;br /&gt;Note: You can download any file clicking on its file name.&lt;/p&gt;</value>
+  </data>
+  <data name="DatabaseRestoreTitle.Text" xml:space="preserve">
+    <value>Select a Database Backup File</value>
+  </data>
+  <data name="Date.Header" xml:space="preserve">
+    <value>Date modified</value>
+  </data>
+  <data name="DbNativeCompressed.Text" xml:space="preserve">
+    <value>Native Compressed</value>
+  </data>
+  <data name="DbNativeDecompressed.Text" xml:space="preserve">
+    <value>Native Backup</value>
+  </data>
+  <data name="DbScript.Text" xml:space="preserve">
+    <value>Script Compressed</value>
+  </data>
+  <data name="DeleteFileImg.AlternateText" xml:space="preserve">
+    <value>Delete file</value>
+  </data>
+  <data name="EnsureDeleteFile.Text" xml:space="preserve">
+    <value>Confirm delete file?</value>
+  </data>
+  <data name="EnsureZipFile.Text" xml:space="preserve">
+    <value>Confirm compress file?</value>
+  </data>
+  <data name="Extension.Header" xml:space="preserve">
+    <value>Extension</value>
+  </data>
+  <data name="FileName.Header" xml:space="preserve">
+    <value>File name</value>
+  </data>
+  <data name="FilesBackup.Text" xml:space="preserve">
+    <value>Files Backup</value>
+  </data>
+  <data name="ItemsPerPage.Text" xml:space="preserve">
+    <value>Items Per Page:</value>
+  </data>
+  <data name="lblFilter.Text" xml:space="preserve">
+    <value>Filter Files:</value>
+  </data>
+  <data name="lblTitle.Text" xml:space="preserve">
+    <value>Backup Folder Browser</value>
+  </data>
+  <data name="LicenseDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;Upload a license key file (usually, it is a .TXT file) suitable for the current web site address (&lt;b&gt;{0}&lt;/b&gt;).&lt;/p&gt;</value>
+  </data>
+  <data name="LicenseError.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='red'&gt;License Error(s):&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;{0}</value>
+  </data>
+  <data name="LicenseInvalid.Message" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='red'&gt;Your License Key has invalid information.&lt;/font&gt;&lt;/b&gt;</value>
+  </data>
+  <data name="LicenseKeyTitle.Text" xml:space="preserve">
+    <value>License Key:</value>
+  </data>
+  <data name="LicenseSuccess.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='green'&gt;Your License Key is valid.&lt;/font&gt;&lt;/b&gt;</value>
+  </data>
+  <data name="LicenseTitle.Text" xml:space="preserve">
+    <value>License Key</value>
+  </data>
+  <data name="LicenseUpdateError.Text" xml:space="preserve">
+    <value>Error saving the License Key: {0}</value>
+  </data>
+  <data name="LicenseUpdateOk.Text" xml:space="preserve">
+    <value>The License Key was saved.</value>
+  </data>
+  <data name="Operation.Text" xml:space="preserve">
+    <value>Operation:</value>
+  </data>
+  <data name="OperationAllFiles.Text" xml:space="preserve">
+    <value>Tool: Browse all files in the backup folder</value>
+  </data>
+  <data name="OperationDatabaseBackup.Text" xml:space="preserve">
+    <value>Step 1: Database Restore (an Evotiva.DNNBackup 'Native' or 'Script' Database backup)</value>
+  </data>
+  <data name="OperationDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;Select which operation do you want to Restore Wizard to perform. &lt;br /&gt;&lt;br /&gt;
+Note: A typical full restore operation involves the steps 1 to 3.&lt;/p&gt;</value>
+  </data>
+  <data name="OperationFilesBackup.Text" xml:space="preserve">
+    <value>Step 3: Files Restore (an Evotiva.DNNBackup 'Files' backup)</value>
+  </data>
+  <data name="OperationTitle.Text" xml:space="preserve">
+    <value>Choose Operation</value>
+  </data>
+  <data name="OperationZipFiles.Text" xml:space="preserve">
+    <value>Tool: Unzip any Zip file</value>
+  </data>
+  <data name="RestoreLogFiles.Text" xml:space="preserve">
+    <value>Restore Log</value>
+  </data>
+  <data name="RestoreTablesData.Text" xml:space="preserve">
+    <value>Restore Table's Data:</value>
+  </data>
+  <data name="Size.Header" xml:space="preserve">
+    <value>Size (Kb)</value>
+  </data>
+  <data name="TestLicense.Text" xml:space="preserve">
+    <value>Test License Key</value>
+  </data>
+  <data name="Type.Header" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="DecompressFileDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;Select the DNNBackup Portal Files backup file to be unzipped.&lt;br /&gt;
+The list below (for 'Local Files') includes all the DNNBackup File backup files found in the {0} folder. If you select a remote file, it will be downloaded to this folder.&lt;/p&gt;
+&lt;p&gt;The files will be unzipped (restored) straight to their definitve location on the web site's root folder: {1}&lt;/p&gt;
+&lt;p&gt;Note: You can download any file clicking on its file name.&lt;/p&gt;</value>
+  </data>
+  <data name="DecompressFileTitle.Text" xml:space="preserve">
+    <value>Select a Files Backup to be Unzipped</value>
+  </data>
+  <data name="Unknown.Text" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="UserNotAuthorized.Text" xml:space="preserve">
+    <value>&lt;h3&gt;Unauthorized restore request&lt;/h3&gt;
+&lt;font color="red"&gt;Restore wizard aborted:&lt;/font&gt; The current portal user is not authorized to run this process.&lt;br /&gt;
+Please lauch the Restore Wizard from the DNNBackup module installed in your site, authenticated as an authorized user.&lt;br /&gt;
+Alternatively, you can override this security setting by unzipping and uploading the Restore Pack to the web root and launching the restore wizard from http://[yourwebsite]/backup.
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;</value>
+  </data>
+  <data name="ZipFileImg.AlternateText" xml:space="preserve">
+    <value>Compress file</value>
+  </data>
+  <data name="ZipFilePassword.Text" xml:space="preserve">
+    <value>Zip File Password:</value>
+  </data>
+  <data name="ZipFilePasswordHelp.Text" xml:space="preserve">
+    <value>(leave blank if the ZIP file does not have a password)</value>
+  </data>
+  <data name="ZipFileSelect.Text" xml:space="preserve">
+    <value>Select one file:</value>
+  </data>
+  <data name="ErrorFileSelected.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='red'&gt;Error testing the selected file:&lt;/font&gt;&lt;/b&gt;&lt;br/&gt; {0}</value>
+  </data>
+  <data name="FileSelectedInfo.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='green'&gt;Selected File: &lt;/font&gt;&lt;/b&gt; {0}</value>
+  </data>
+  <data name="NoFileSelected.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='red'&gt;No file was selected.&lt;/font&gt;&lt;/b&gt;</value>
+  </data>
+  <data name="TestZipFile.Text" xml:space="preserve">
+    <value>Test File</value>
+  </data>
+  <data name="BrowseAllFilesDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;Browse the whole content of the current backup folder.&lt;/p&gt;&lt;p&gt;You can download any file clicking on its file name.&lt;/p&gt;</value>
+  </data>
+  <data name="BrowseAllFilesTitle.Text" xml:space="preserve">
+    <value>Browse all files</value>
+  </data>
+  <data name="FileSelectedScriptContent.Text" xml:space="preserve">
+    <value>&lt;b&gt;Database (script) Backup file information:&lt;/b&gt;&lt;br /&gt;
+Backup Created on: {0}&lt;br /&gt;
+Source Site: {1}&lt;br /&gt;
+Source DNN Version:{2}&lt;br /&gt;
+Complete Backup: {3}&lt;br /&gt;
+{4} Tables: {5}&lt;br /&gt;
+{6}
+
+
+</value>
+  </data>
+  <data name="All.Text" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="DatabaseInformation.Text" xml:space="preserve">
+    <value>&lt;h3&gt;Database Information:&lt;/h3&gt;
+&lt;b&gt;&lt;TYPE&gt; database server:&lt;/b&gt; &lt;NAME&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;Database name:&lt;/b&gt; &lt;DATABASENAME&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;Server Information:&lt;/b&gt; &lt;VERSION&gt;&lt;br /&gt;</value>
+  </data>
+  <data name="ErrorFileSelectedNotZipOrBak.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='red'&gt;The selected file is unknown.&lt;/font&gt;&lt;/b&gt;&lt;br /&gt;
+Known files are:
+&lt;ul&gt;
+&lt;li&gt;*_Native.bak.zip : native compressed&lt;/li&gt;
+&lt;li&gt;*_Native.bak : native backup&lt;/li&gt;
+&lt;li&gt;*_Script.sql.zip : script compressed&lt;/li&gt;
+&lt;li&gt;*_Files.zip : files backup&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="FileSelectedFilesContent.Text" xml:space="preserve">
+    <value>&lt;b&gt;Files Backup file information:&lt;/b&gt;&lt;br /&gt;
+Backup Created on: {0}&lt;br /&gt;
+Source Site: {1}&lt;br /&gt;
+Source DNN Version:{2}&lt;br /&gt;
+Complete Backup: {3}&lt;br /&gt;
+
+
+</value>
+  </data>
+  <data name="None.Text" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="DecompressZipDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;Select the file to be unzipped. It could be any zip file.&lt;br /&gt;
+The list (for 'Local Files') includes all the zip files found in the {0} folder. If you select a remote file, it will be downloaded to this folder.&lt;/p&gt;
+&lt;p&gt;The file will be unzipped in the child folder: {1}&lt;/p&gt;
+&lt;p&gt;Note: You can download any file clicking on its file name.&lt;/p&gt;</value>
+  </data>
+  <data name="DecompressZipTitle.Text" xml:space="preserve">
+    <value>Select a Zip File to be Unzipped</value>
+  </data>
+  <data name="NoFileList.Text" xml:space="preserve">
+    <value>&lt;p&gt;&lt;b&gt;No files found.&lt;/b&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="ZipPasswordUpdateError.Text" xml:space="preserve">
+    <value>Error saving the Zip Password: {0}</value>
+  </data>
+  <data name="ZipPasswordUpdateOk.Text" xml:space="preserve">
+    <value>The Zip Password was saved.</value>
+  </data>
+  <data name="ApplyDatabaseProvidersHelp.Text" xml:space="preserve">
+    <value>If this information was included in your backup, by means of this setting you can recreate all the DNN (code and 3rd. party) database objects: tables, stored procedures, etc.&lt;br /&gt;
+Note: "Create Database Objects" is the preferred method to recreate the database objects (unless you would like to replace the 'Object Qualifier').</value>
+  </data>
+  <data name="CreateDatabaseObjectsHelp.Text" xml:space="preserve">
+    <value>If this information was included in your backup, by means of this setting you can recreate all the database objects (tables, stored procedures, etc.).</value>
+  </data>
+  <data name="DatabaseNative.Text" xml:space="preserve">
+    <value>'Native'</value>
+  </data>
+  <data name="DatabaseNativeDetail.Text" xml:space="preserve">
+    <value>that the database would be recreated from a native Sql Server backup file. This is always the preferred method to restore/clone a database. However, many ISPs does not allow you to this kind of backup or restore operations.&lt;br /&gt;&lt;br /&gt;
+Note: For some advanced operations (like moving just some tables/rows, SQL Server version upgrade/downgrade, replacing the ObjectQualifier, etc.), the 'Script' method will be always the way to go. The 'Native' method implies "all or nothing", while the "Script" method provides you some flexibility.</value>
+  </data>
+  <data name="DatabaseScript.Text" xml:space="preserve">
+    <value>'Script'</value>
+  </data>
+  <data name="DatabaseScriptDetail.Text" xml:space="preserve">
+    <value>that the database would be recreated from a custom backup file, based on 'sql' scripts, which will recreate the objects and/or data of the source database. 
+Note that 'Native' is always the preferred method to restore/clone a database, but many ISPs does not allow you to this kind of backup or restore operations.&lt;br /&gt;&lt;br /&gt;
+For some advanced operations (like moving just some tables/rows, SQL Server version upgrade/downgrade, replacing the ObjectQualifier, etc.), the 'Script' method will be always the way to go. The 'Native' method implies "all or nothing", while the "Script" method provides you some flexibility.</value>
+  </data>
+  <data name="ExecuteOperation.Text" xml:space="preserve">
+    <value>Execute Operation</value>
+  </data>
+  <data name="ReadyToGoDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;The Evotiva DNNBackup Restore Wizard has now all the information required to perform the selected operation.&lt;br /&gt;Please press the [Execute Operation] button to continue.&lt;/p&gt;</value>
+  </data>
+  <data name="ReadyToGoTitle.Text" xml:space="preserve">
+    <value>Ready to Restore</value>
+  </data>
+  <data name="ReadyToRestoreDatabase.Text" xml:space="preserve">
+    <value>&lt;p&gt;The Restore Wizard is ready to restore the database from the file &lt;b&gt;{0}&lt;/b&gt;.&lt;/p&gt;
+&lt;p&gt;This will be a &lt;b&gt;{1}&lt;/b&gt; database restore, which means {2}.&lt;/p&gt;</value>
+  </data>
+  <data name="ReadyToRestoreDatabaseScript.Text" xml:space="preserve">
+    <value>&lt;h3&gt;Main Settings&lt;/h3&gt;&lt;p&gt;Recreate Database Objects: &lt;b&gt;{0}&lt;/b&gt;&lt;br /&gt;
+Restore Table's Data: &lt;b&gt;{1}&lt;/b&gt;&lt;br /&gt;
+&lt;/p&gt;</value>
+  </data>
+  <data name="ReadyToDecompress.Text" xml:space="preserve">
+    <value>&lt;p&gt;The Restore Wizard is ready to &lt;b&gt;unzip&lt;/b&gt; the file &lt;b&gt;{0}&lt;/b&gt; in the "{1}" folder.&lt;/p&gt;</value>
+  </data>
+  <data name="RestoreSettingsDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;Choose the restore options for the selected database backup file. Some settings would be disabled depending on the options selected at backup time and/or the current environment.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; The Connection String, Database Owner and Object Qualifier set in your web.config file will be updated.&lt;/p&gt;</value>
+  </data>
+  <data name="RestoreSettingsTitle.Text" xml:space="preserve">
+    <value>Database Restore Settings</value>
+  </data>
+  <data name="RestoreTablesDataHelp.Text" xml:space="preserve">
+    <value>By means of this setting, your table's content will be recreated from the selected backup file. The tables should be created in advance. Therefore, if the database is empty, you must enable either the "Create Database Object" or "Apply Database Providers" setting.</value>
+  </data>
+  <data name="WebConfigNotice.Text" xml:space="preserve">
+    <value>&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; The Connection String, Database Owner and Object Qualifier set in your web.config file will be updated.&lt;br /&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="DNNNoRunning.Text" xml:space="preserve">
+    <value>&lt;p&gt;Your web site seems to be 'empty'.&lt;/p&gt;
+&lt;p&gt;This is the preferred configuration (no DNN already installed) when cloning a DNN instance into a new location, because you do not need a running DNN to restore/clone your site, the 'Restore Pack'  is enough.&lt;br /&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="DNNYesRunning.Text" xml:space="preserve">
+    <value>&lt;/p&gt;&lt;font color="red"&lt;b&gt;WARNING:&lt;/b&gt;&lt;/font&gt; Your web site seems to be already running a DNN (DotNetuke) site. 
+Depending on the selected restore action you could be &lt;b&gt;overwriting&lt;/b&gt; web site's files and database objects.&lt;/p&gt;
+&lt;p&gt;Note that to restore a full backup, you don't need to setup first a new DNN instance. The  &lt;a href="http://www.evotiva.com/downloads.aspx" target="_blank"&gt;'Restore Pack'&lt;/a&gt; and a full backup set is all that you need to recreate your site.&lt;/p&gt;</value>
+  </data>
+  <data name="NotZipFile.Text" xml:space="preserve">
+    <value>The selected file is not a ZIP file.</value>
+  </data>
+  <data name="GoToWizard2.Text" xml:space="preserve">
+    <value>Jump to the post-database restore Wizard</value>
+  </data>
+  <data name="HostPortalAlias.Text" xml:space="preserve">
+    <value>Note: The main (host) portal is (PortalId): &lt;b&gt;{0}&lt;/b&gt;.</value>
+  </data>
+  <data name="OperationSafeHostSettings.Text" xml:space="preserve">
+    <value>Step 2: Set a proper main Portal Alias and/or set safe Host Settings</value>
+  </data>
+  <data name="OperationSqlQuery.Text" xml:space="preserve">
+    <value>Tool: Database SQL Query </value>
+  </data>
+  <data name="PortalAliases.Text" xml:space="preserve">
+    <value>Portals in the Database</value>
+  </data>
+  <data name="SafeHostSettingsDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;From this page, you can set the proper 'Portal Alias' for the default portal in the DNN Instance.&lt;br /&gt;
+e.g. if you created the backup at www.mysourcewebsite.com and you are restoring at www.mytargetwebsite.com, you should set your default's site Portal Alias as www.mytargetwebsite.com.&lt;/p&gt;
+
+&lt;p&gt;Some Host Settings set in the source site, could be invalid in the new environment. e.g. HttpCompression settings.&lt;/p&gt;
+&lt;p&gt;This page show you the current settings and allows you to revert them to safe (default) values.&lt;/p&gt;
+&lt;p&gt;It is advised disable the scheduler ('SchedulerMode' host setting) just to be sure the portal loads OK the first time after restoring it, and f there is a problem, discard a scheduled task as its cause. In same cases a failing scheduled task can turn your DNN web site unavailable.&lt;/p&gt;
+&lt;p&gt;Later, from the DNN Host &gt; Host Settings &gt; Other Settings &gt; Scheduler Mode, you can configure/enable/disable the scheduler.&lt;/p&gt;
+</value>
+  </data>
+  <data name="SafeHostSettingsEmptyDB.Text" xml:space="preserve">
+    <value>&lt;p&gt;No portals information found on the current database.&lt;br /&gt;
+Maybe it's an empty database (database restore not yet run)?
+&lt;/p&gt;</value>
+  </data>
+  <data name="SafeHostSettingsTitle.Text" xml:space="preserve">
+    <value>Main Portal Alias and Safe Host Settings</value>
+  </data>
+  <data name="SetHostPortalAlias.Text" xml:space="preserve">
+    <value>Update the Portal Alias</value>
+  </data>
+  <data name="SqlQueryDetail.Text" xml:space="preserve">
+    <value>&lt;p&gt;
+    OPTIONAL: From this page you can execute SQL statements against the database.&lt;/p&gt;
+&lt;p&gt;
+    /*comments*/" and the {DatabaseOwner} and {ObjectQualifier} 'magic words' are supported.&lt;/p&gt;
+&lt;p&gt;
+    Sample query to update a portal's alias:&lt;br /&gt;
+    &lt;span class="bkp-normal" lang="en-us"&gt;&amp;nbsp;&lt;font face="Courier New"&gt;&amp;nbsp;&lt;font color="#009900"&gt;--&amp;nbsp;first&amp;nbsp;find&amp;nbsp;the
+        current alias(es)&amp;nbsp;&lt;br /&gt;
+        &amp;nbsp; &lt;/font&gt;&lt;span class="bkp-normal" lang="en-us"&gt;&lt;font face="Courier New"&gt;&lt;font
+            color="#0000ff"&gt;SELECT&lt;/font&gt;&lt;/font&gt;&lt;/span&gt; *&amp;nbsp;&lt;span class="bkp-normal" lang="en-us"&gt;&lt;font
+                face="Courier New"&gt;&lt;font color="#0000ff"&gt;FROM&lt;/font&gt;&lt;/font&gt;&lt;/span&gt; {databaseOwner}{objectQualifier}portalalias;
+        &lt;br /&gt;&lt;br /&gt;
+        &lt;font color="#009900"&gt;&amp;nbsp; --&amp;nbsp;then, update as needed:&amp;nbsp;&lt;br /&gt;
+        &lt;/font&gt;&lt;font color="#0000ff"&gt;&lt;span style="color: #009900"&gt;&amp;nbsp; -- replace &lt;/span&gt;&lt;strong&gt;
+            &lt;span style="color: #009900"&gt;www.mynewdomain.com&lt;br /&gt;
+            &lt;/span&gt;&lt;/strong&gt;&lt;span style="color: #009900"&gt;&amp;nbsp; -- replace &lt;/span&gt;&lt;strong&gt;&lt;span
+                style="color: #009900"&gt;1&lt;/span&gt;&lt;/strong&gt;&lt;span style="color: #009900"&gt; with the right
+                    value&lt;/span&gt;&lt;span style="color: #000000; font-family: Times New Roman"&gt;&amp;nbsp;&lt;/span&gt;&lt;br /&gt;
+        &lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;span class="bkp-normal" lang="en-us"&gt;&lt;font face="Courier New"&gt;&lt;font
+            color="#0000ff"&gt;&amp;nbsp;&amp;nbsp;UPDATE&lt;/font&gt; {databaseOwner}{objectQualifier}portalalias
+            &lt;font color="#0000ff"&gt;
+                &lt;br /&gt;
+                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; SET&lt;/font&gt; httpalias = 'www.mynewdomain.com'&amp;nbsp;&lt;font
+                    color="#0000ff"&gt;&lt;br /&gt;
+                    &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; WHERE&lt;/font&gt; portalaliasid =&amp;nbsp; 1; &lt;/font&gt;
+    &lt;/span&gt;
+&lt;/p&gt;</value>
+  </data>
+  <data name="SqlQueryTitle.Text" xml:space="preserve">
+    <value>SQL Query Utility</value>
+  </data>
+  <data name="CurrentHostSetting.Text" xml:space="preserve">
+    <value>Critical Host Settings configured in the Database</value>
+  </data>
+  <data name="HostPortalAliasNotFound.Text" xml:space="preserve">
+    <value>The Restore Wizard was unable to identify the main (host) portal configured in the target database.</value>
+  </data>
+  <data name="SafeHostSettings.Text" xml:space="preserve">
+    <value>Suggested Safe Host Settings</value>
+  </data>
+  <data name="AuxDB.Text" xml:space="preserve">
+    <value>Auxiliary Database</value>
+  </data>
+  <data name="AuxDBHelp.Text" xml:space="preserve">
+    <value>Auxiliary database to connect when restoring. e.g. tempdb, master, pubs, AdventureWorks, etc. NOTE: It should never be the same as the one to be restored.</value>
+  </data>
+  <data name="NoRecoveryRestore.Text" xml:space="preserve">
+    <value>No Recovery Restore</value>
+  </data>
+  <data name="NoRecoveryRestoreHelp.Text" xml:space="preserve">
+    <value>Enables the "NORECOVERY" option at restore time (http://msdn2.microsoft.com/en-us/library/ms179314.aspx).</value>
+  </data>
+  <data name="FilesBackupRestoreNotice.Text" xml:space="preserve">
+    <value>&lt;br /&gt;&lt;h3&gt;Important&lt;/h3&gt;
+&lt;p&gt;All files and folders will be restored to their proper location at the web site's root, and the (restored) web.config file will be updated with the current connection string, databaseOwner and objectQualifier.&lt;br /&gt;&lt;br /&gt;
+If you do not want this to happen, instead of 'Unzip an Evotiva.DNNBackup 'Files' backup' operation select 'Unzip any Zip file'.&lt;br /&gt;&lt;br /&gt;</value>
+  </data>
+  <data name="First.Text" xml:space="preserve">
+    <value>First</value>
+  </data>
+  <data name="Last.Text" xml:space="preserve">
+    <value>Last</value>
+  </data>
+  <data name="Pages.Text" xml:space="preserve">
+    <value>Page {0} of {1}</value>
+  </data>
+  <data name="WithReplaceRestore.Text" xml:space="preserve">
+    <value>Overwrite the existing database</value>
+  </data>
+  <data name="WithReplaceRestoreHelp.Text" xml:space="preserve">
+    <value>Enables "WITH REPLACE" option at restore time.</value>
+  </data>
+  <data name="IntegratedNativeHelp.Text" xml:space="preserve">
+    <value>Check this if you are using SQL Server's Integrated Security, which means you will be using your Windows account to access SQL Server.</value>
+  </data>
+  <data name="DatabaseExpressFileInformation.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color="red"&gt;NOTE: &lt;/font&gt;&lt;/b&gt;Due to IIS / SQL Server limitations, Native restores are not possible if you are using a SQL EXPRESS 'user instance' database file (\App_Data\Database.mdf).&lt;br /&gt; Please configure a regular connection string to enable this kind of restore operations. 
+See &lt;a  target="_blank" href="http://msdn.microsoft.com/en-us/library/ms190209.aspx"&gt;How to: Attach a Database (SQL Server Management Studio)&lt;/a&gt;</value>
+  </data>
+  <data name="IntegratedCredentialsHelp.Text" xml:space="preserve">
+    <value>Note that these settings are regarding the &lt;b&gt;AUXILIARY DATABASE&lt;/b&gt;, not your target/restore database:</value>
+  </data>
+  <data name="WithMoveRestore.Text" xml:space="preserve">
+    <value>Use current database files</value>
+  </data>
+  <data name="WithMoveRestoreHelp.Text" xml:space="preserve">
+    <value>Enables "WITH MOVE" option at restore time.</value>
+  </data>
+  <data name="CompleteDetailFiles.Text" xml:space="preserve">
+    <value>&lt;p&gt;Thanks for using the Evotiva DNNBackup Restore Wizard.&lt;br /&gt;
+&lt;br /&gt;&lt;b&gt;Note:&lt;/b&gt; Once you click the 'Finish' button you can restart the wizard to &lt;b&gt;restore a Files backup&lt;/b&gt;.&lt;/p&gt;</value>
+  </data>
+  <data name="Excluded.Text" xml:space="preserve">
+    <value>Excluded</value>
+  </data>
+  <data name="FinishedBack.Text" xml:space="preserve">
+    <value>Finished (Restart Wizard)</value>
+  </data>
+  <data name="Included.Text" xml:space="preserve">
+    <value>Included</value>
+  </data>
+  <data name="UploadConfirmation.Text" xml:space="preserve">
+    <value>Update the current license key with the contents of the selected file to be uploaded?</value>
+  </data>
+  <data name="UploadErrorFileNameEmpty.Text" xml:space="preserve">
+    <value>Please select a valid license file to upload (usually, it is a .TXT file).</value>
+  </data>
+  <data name="UploadErrorFileType.Text" xml:space="preserve">
+    <value>The chosen file is not of the expected file type. Note: a plain text file is expected,  not a ZIP or any other file format.</value>
+  </data>
+  <data name="Owner3Help.Text" xml:space="preserve">
+    <value>Checked means you are running the database as Database Owner. This setting was set on the source database (it is being read from the backup file).&lt;br /&gt;
+Note: For 'native' backups, this setting cannot be changed. &lt;br /&gt;If this setting is unchecked, the defined database user (owner) is expected to exists on the database.</value>
+  </data>
+  <data name="Qualifier3Help.Text" xml:space="preserve">
+    <value>Default "prefix" to use for all your database objects, as it was set on the source database (this setting was read from the backup file). &lt;br /&gt;
+Note: For 'native' backups, this setting cannot be updated.
+</value>
+  </data>
+  <data name="DisabledNativeBackupsHeader.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color="red"&gt;NOTE: &lt;/font&gt;&lt;/b&gt;One or more &lt;b&gt;'native'&lt;/b&gt; database backup files were found. They are disabled (not being included in the list of available files) because they cannot be restored due to one of the following reasons:&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;(A)&lt;/b&gt; The SQL Server is in another physical machine:&lt;br /&gt;
+SQL Server does not allow to restore a (native) backup located in another machine. If this is the case, you'll see "Database Server (Remote)" written above in this same page.&lt;br /&gt;
+&lt;b&gt;Solution&lt;/b&gt;: Restore the ‘ script’ kind of database backup. &lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;(B)&lt;/b&gt; You SQL Server is ‘ local’  (same physical machine), but you are trying to restore into a SQL Express ‘attached’  file:&lt;br /&gt;
+Due to IIS / SQL Server limitations, Native restores are not possible if you are using a SQL EXPRESS 'user instance' database file (\App_Data\Database.mdf).&lt;br /&gt;
+&lt;b&gt;Solution&lt;/b&gt;: To perform this kind of (native) restore, you can create a database in Management Studio (or any other tool), and set (in the restore wizard) the connection string as a regular SQL database.  See &lt;a  target="_blank" href="http://msdn.microsoft.com/en-us/library/ms190209.aspx"&gt;How to: Attach a Database (SQL Server Management Studio)&lt;/a&gt;. Alternatively, you can  restore the ‘ script’ kind of database backup.&lt;br /&gt;&lt;br /&gt;
+Disabled 'native' backup file(s):</value>
+  </data>
+  <data name="SelectADatabaseFile.Text" xml:space="preserve">
+    <value>Select a Database File to Restore</value>
+  </data>
+  <data name="RefreshWebServers.Text" xml:space="preserve">
+    <value>Refresh Web Servers</value>
+  </data>
+  <data name="SetWebServers.Text" xml:space="preserve">
+    <value>Set Active</value>
+  </data>
+  <data name="WebServers.Text" xml:space="preserve">
+    <value>Current Web Servers</value>
+  </data>
+  <data name="DatabaseOwnerMismatch.Text" xml:space="preserve">
+    <value>&lt;b&gt;&lt;font color='red'&gt;Database Owner (database user) mismatch:&lt;/font&gt;&lt;/b&gt;&lt;br /&gt;
+The current "{0}" database user (from the current database connection) is different as it was configured on the source server "{1}" (from the database backup).&lt;br /&gt;
+Based on your source site's configuration; for the restored DotNetNuke site to work property, you must connect to the database with the same "{1}" source user (you can choose whatever password).&lt;br /&gt;
+Depending on your current database user permissions on the database, you could be able to create the user running the following script from this Wizard, going back and choosing the "Database SQL Query" operation (Note: remember to enable the 'Run as Script' checkbox): &lt;br /&gt;
+&lt;pre&gt;
+CREATE LOGIN [{1}] WITH PASSWORD= N'&lt;b&gt;ThePassw0rdYouWant&lt;/b&gt;', CHECK_EXPIRATION=OFF, CHECK_POLICY= OFF;
+CREATE USER [{1}] FOR LOGIN [{1}];
+EXEC sp_addrolemember N'db_owner', N'{1}';
+GO
+&lt;/pre&gt; 
+If running the script from the Wizard fails, you should try this connecting to the database server with a user with more permissions or ask your ISP/Administrator to create the user for you (or you can use the SQL Server Management Studio' to do this).&lt;br /&gt;
+After the "{1}" user was successfully created, please restart this Wizard and on the "Configure Database Connection" page use this user (and its password).&lt;br /&gt;
+</value>
+  </data>
+  <data name="DatabaseScriptDetailOverwriteObjects.Text" xml:space="preserve">
+    <value>&lt;br /&gt;&lt;br /&gt;&lt;b&gt;Note:&lt;/b&gt; If the database is not currently 'empty' the wizard will try to delete its content (all database objects)  before restoring. In other words, &lt;font color="red"&gt;the current database objects and data will be lost&lt;/font&gt;</value>
+  </data>
+  <data name="DatabaseScriptDetailOverwriteTables.Text" xml:space="preserve">
+    <value>&lt;br /&gt;&lt;br /&gt;&lt;b&gt;Note:&lt;/b&gt; If the database tables being restored are not currently 'empty', the wizard will try to delete their content (all their rows)  before restoring. In other words, &lt;font color="red"&gt;the current content on the tables being restored will be lost&lt;/font&gt;</value>
+  </data>
+  <data name="NoDatabaseRestoreSettingSelected.Text" xml:space="preserve">
+    <value>&lt;font color='red'&gt;Please select at least one action to perform.&lt;/font&gt;</value>
+  </data>
+  <data name="GoToSite.Text" xml:space="preserve">
+    <value>Got To Site</value>
+  </data>
+  <data name="SSLEnabledPortals.Text" xml:space="preserve">
+    <value>Portals with SSL enabled</value>
+  </data>
+  <data name="SSLPortalsDisable.Text" xml:space="preserve">
+    <value>Disable SSL</value>
+  </data>
+  <data name="RestoreDataOnlyForScriptsLike.Text" xml:space="preserve">
+    <value>Only data for tables named like:</value>
+  </data>
+  <data name="RestoreDataOnlyForScriptsLikeHelp.Text" xml:space="preserve">
+    <value>You can use this filter to choose to restore data only for tables which names starts with this given text. &lt;br /&gt;
+For example: If you set "mytable", and 'Exact Match' is unchecked, you will match "mytable", "mytableone" and "mytabletwo".&lt;br /&gt; 
+Note: Do not include the database owner or object qualifier. Just the table's 'base' name. E.g. HtmlText (not dbo.HtmlText or dbo.dnn_HtmlText)&lt;br /&gt;
+If you select this option, by default 'create data providers' and 'apply data providers'  options will be unchecked, to prevent all tables (not just the selected one) be wiped out and recreated.</value>
+  </data>
+  <data name="DatabaseInfo.Text" xml:space="preserve">
+    <value>Source Database: </value>
+  </data>
+  <data name="DropBoxAuthorizationMessage.Text" xml:space="preserve">
+    <value>&lt;h3&gt;DropBox Configuration&lt;/h3&gt;
+        &lt;p&gt;Next Steps:&lt;/p&gt;
+        &lt;ul&gt;        
+        &lt;li&gt;You can close this window.&lt;/li&gt;
+        &lt;li&gt;Click on the '&lt;b&gt;Establish Connection&lt;/b&gt;' link found on the configuration page (that you should have already open).&lt;/li&gt;
+        &lt;li&gt;Save the Settings just configured by clicking  on the '&lt;b&gt;Update&lt;/b&gt;' link found on the configuration page.&lt;/li&gt;
+        &lt;/ul&gt;</value>
+  </data>
+  <data name="DropboxClearConnection.Message" xml:space="preserve">
+    <value>Please remember to click on "Update" to confirm the drop action.   Note: To really drop the connection, you must unauthorize the Application from your Dropbox account.</value>
+  </data>
+  <data name="DropboxConnectionFailedToClear.Message" xml:space="preserve">
+    <value>Failed to clear the Dropbox connection.</value>
+  </data>
+  <data name="DropboxConnectionFailedToEstablish.Message" xml:space="preserve">
+    <value>Failed to establish the connection to Dropbox. Remeber to 'Request Connection' first, and that the request expires within minutes.&lt;br /&gt;Error details: {0}</value>
+  </data>
+  <data name="DropboxConnectionFailedToGetAuthorizationURL.Message" xml:space="preserve">
+    <value>Failed to get the Authorization URL. Please verify your App Key and App Secret are valid.&lt;br /&gt;Error details: {0}</value>
+  </data>
+  <data name="DropboxConnectionMissing.Message" xml:space="preserve">
+    <value>&lt;p&gt;Your web site is not yet connected with your DropBox account. &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Click on the &lt;b&gt;'Request Connection'&lt;/b&gt; link.  A new window, on DropBox's web site will be opened.&lt;/li&gt;
+&lt;li&gt;A 'The app .... would like to connect with your Dropbox' dialog will be presented. Click on 'Allow' to start the authorization process that will grant your web site access to your DropBox account.&lt;/li&gt;
+&lt;li&gt;Click on the '&lt;b&gt;Establish Connection&lt;/b&gt;' link found on this page.&lt;/li&gt;
+&lt;li&gt;Save the Settings by clicking on the 'Update' link found on this page.&lt;/li&gt;
+&lt;/ol&gt;
+</value>
+  </data>
+  <data name="DropboxConnectionMissingAppKeyAndSecret.Message" xml:space="preserve">
+    <value>Please configure your 'App key' and 'App secret' (get them at &lt;a  href="https://www.dropbox.com/developers/apps" target="_blank"&gt;https://www.dropbox.com/developers/apps&lt;/a&gt;). Then click on 'Update' and reload this form to continue with the authorization process.&lt;br /&gt;
+Note: Read the long text find above for complete information about the authorization process.</value>
+  </data>
+  <data name="DropboxConnectionOK.Message" xml:space="preserve">
+    <value>Established</value>
+  </data>
+  <data name="DropboxMissingCredentials.Text" xml:space="preserve">
+    <value>Please check the provided DropBox Credentials. &lt;br /&gt;If you haven't signed up for DropBox, please follow this procedure:&lt;br /&gt;
+&lt;b&gt;1)&lt;/b&gt; Go to &lt;a target="_blank" href="https://www.dropbox.com/developers/apps"&gt;https://www.dropbox.com/developers/apps&lt;/a&gt;, and login with your current DropBox account, or create a new account if you do not have any.&lt;br/&gt;
+&lt;b&gt;2)&lt;/b&gt; Click on "Create an App" &lt;br /&gt;
+&lt;b&gt;3)&lt;/b&gt; Give the new Application a name (like "example.com", where example.com is the web site you are connection to DropBox), and a Description (like "example.com connection").&lt;br /&gt;
+&lt;b&gt;4)&lt;/b&gt; Take note of the "App key" and "App secret" that DropBox created for you, and set them in this form.&lt;br /&gt;
+Note: Don't worry about the "Additional Information", you can leave it blank.&lt;br /&gt;</value>
+  </data>
+  <data name="DropboxStuff.Text" xml:space="preserve">
+    <value>Dropbox Options</value>
+  </data>
+  <data name="PortalAliasLabel.Text" xml:space="preserve">
+    <value>Portal's Alias(es):</value>
+  </data>
+  <data name="PortalAliasUpdate.Text" xml:space="preserve">
+    <value>Do you want to update the Portal Alias w/ Id</value>
+  </data>
+  <data name="PortalLabel.Text" xml:space="preserve">
+    <value>Portal:</value>
+  </data>
+  <data name="ToBe.Text" xml:space="preserve">
+    <value>to be</value>
+  </data>
+  <data name="PortalAliasDefaultCurrent.Text" xml:space="preserve">
+    <value>Default Portal Alias: {0}</value>
+  </data>
+  <data name="PortalAliasSetDefault.Text" xml:space="preserve">
+    <value>In addition, set this Alias as the default for this Portal: </value>
+  </data>
+  <data name="SafeHostSettingsNote.Text" xml:space="preserve">
+    <value>NOTE: Once you have the restored site up and running, remember to set your preferred 'Scheduler Mode' setting in Host &gt; Host Settings &gt; Other Settings &gt; Scheduler Mode.</value>
+  </data>
+</root>

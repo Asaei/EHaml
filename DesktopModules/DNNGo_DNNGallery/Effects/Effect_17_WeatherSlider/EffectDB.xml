@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectDB>
+    <Name>
+      <![CDATA[Effect_17_WeatherSlider]]>
+    </Name>
+    <Description>
+      <![CDATA[]]>
+    </Description>
+    <Version>
+      <![CDATA[01.02.07]]>
+    </Version>
+    <Thumbnails>
+      <![CDATA[http://www.dnngo.net/DesktopModules/DNNGo_DNNGallery/Effects/Effect_17_WeatherSlider/preview.jpg]]>
+    </Thumbnails>
+    <EffectScript>
+      <![CDATA[style.css,jquery-animate-background-position.js,weatherslider.kreaturamedia.jquery.js]]>
+    </EffectScript>
+    <GlobalScript>
+      <![CDATA[jquery.easing.js]]>
+    </GlobalScript>
+    <DisplayByNormal>
+      <![CDATA[]]>
+    </DisplayByNormal>
+    <DisplayByModule>
+      <![CDATA[Description,ViewType]]>
+    </DisplayByModule>
+    <DemoUrl>
+      <![CDATA[http://www.dnngo.net/OurModules/DNNGallery/WeatherSlider.aspx]]>
+    </DemoUrl>
+  </EffectDB>
+</DNNGo_DNNGallery>

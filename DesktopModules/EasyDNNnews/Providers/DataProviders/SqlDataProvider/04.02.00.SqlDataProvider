@@ -1,0 +1,1 @@
+﻿ALTER TABLE EasyDNNNewsGallery ADD MainImageWidth int NULL, MainImageHeight int NULL, Template nvarchar(350) NULL

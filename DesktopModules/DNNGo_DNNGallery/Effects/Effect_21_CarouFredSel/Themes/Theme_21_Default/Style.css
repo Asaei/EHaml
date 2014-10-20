@@ -1,0 +1,90 @@
+﻿.Theme_21_Default{
+	margin:0px auto;	
+	position:relative;
+}
+.Theme_21_Default ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+}
+.Theme_21_Default li {
+	padding: 0;
+	margin:0px 6px;
+	display: block;
+	float: left;
+}
+.Theme_21_Default h3{
+	margin:8px 0px 5px 0px;
+}
+.Theme_21_Default .prev{
+	text-indent:-9999px;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 10px;
+	height: 17px;
+	background:url(images/arrow_l.png) 50% 50% no-repeat ;
+	display: block;
+	cursor: pointer;
+	bottom:0;
+	position:absolute;
+	left:5px;
+	outline:none;
+}
+.Theme_21_Default .prev:hover{
+	background-color: #EDEDED;	
+}
+.Theme_21_Default .next{
+	text-indent:-9999px;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 10px;
+	height: 17px;
+	background:url(images/arrow_r.png) 50% 50% no-repeat ;
+	display: block;
+	cursor: pointer;
+	bottom:0;
+	position:absolute;
+	right:5px;
+	outline:none;
+}
+.Theme_21_Default .next:hover{
+	background-color: #EDEDED;	
+}
+.Theme_21_Default .pager {
+	text-align: center;
+	height:16px;
+	line-height:16px;
+}
+.Theme_21_Default .pager a {
+	margin: 0 3px;
+	text-decoration: none;
+	display:inline-block;
+	width:16px;
+	height:16px;
+	background:url(images/bullets.png) 0px 0px no-repeat;
+	outline:none;
+	text-indent:-9999px;
+	overflow: hidden;
+	text-decoration: none;
+}
+*+html .Theme_21_Default .pager a{
+	display:inline;	
+}
+.Theme_21_Default .pager a.selected {
+	background:url(images/bullets.png) 0px -16px no-repeat;
+}
+.Theme_21_Default .timer {
+	background-color: #999;
+	height: 6px;
+	width: 0px;
+}
+.Theme_21_Default .carousel_image a{
+	display: block;	
+}
+.Theme_21_Default .image-zoom a{
+	background: url("images/zoom_icon.png") no-repeat  50% 50% ;
+}
+.Theme_21_Default .image-link a{
+	background: url("images/link_icon.png") no-repeat  50% 50% ;
+}

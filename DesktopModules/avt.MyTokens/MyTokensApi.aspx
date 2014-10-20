@@ -1,0 +1,1 @@
+<%@ Page Language="c#" AutoEventWireup="True" Explicit="True" Inherits="avt.MyTokens.MyTokensApi" CodeBehind="MyTokensApi.aspx.cs" %>

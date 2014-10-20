@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<patch>
+    <for>
+        <module-name>MLHTML</module-name>
+        <keys>
+            <key></key>
+        </keys>
+    </for>
+    <patcher>avt.MyTokens.Patching.SimplePatcher,avt.MyTokens.Core</patcher>
+    <builtin-tokens>true</builtin-tokens>
+    <code-vb>
+        <init>
+        <![CDATA[
+            Settings("MyTokensReplace") = False
+
+            If CType(Settings("MLHTML_ReplaceTokens"), String) <> "" Then
+                If CType(Settings("MLHTML_ReplaceTokens"), Boolean) = True Then
+                    Settings("MyTokensReplace") = True
+                End If
+            End If
+    
+            ' Prevent Standard Token Replacement
+            Settings("MLHTML_ReplaceTokens") = False
+        ]]>
+        </init>
+        <pre-render>
+        <![CDATA[
+            If CType(Settings("MyTokensReplace"), Boolean) = True Then
+                DirectCast(lblContent.Controls(0), LiteralControl).Text = Tokenize(DirectCast(lblContent.Controls(0), LiteralControl).Text, ModuleConfiguration, False, True)
+            End If
+        ]]>
+        </pre-render>
+    </code-vb>
+	
+	<code-cs>
+		<init />
+		<pre-render />
+	</code-cs>
+</patch>

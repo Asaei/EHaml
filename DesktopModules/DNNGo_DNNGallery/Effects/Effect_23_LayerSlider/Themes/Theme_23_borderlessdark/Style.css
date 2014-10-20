@@ -1,0 +1,188 @@
+/* LayerSlider Borderless Dark Skin */
+
+
+
+.ls-Theme_23_borderlessdark {
+	background: #4f4f4f;
+}
+
+.ls-Theme_23_borderlessdark .ls-playvideo {
+	width: 50px;
+	height: 50px;
+	margin-left: -25px;
+	margin-top: -25px;
+}
+
+.ls-Theme_23_borderlessdark .ls-playvideo,
+.ls-Theme_23_borderlessdark .ls-nav-sides,
+.ls-Theme_23_borderlessdark .ls-bottom-slidebuttons a,
+.ls-Theme_23_borderlessdark .ls-nav-prev,
+.ls-Theme_23_borderlessdark .ls-nav-next,
+.ls-Theme_23_borderlessdark .ls-nav-start,
+.ls-Theme_23_borderlessdark .ls-nav-stop {
+	background-image: url(images/skin.png);	
+}
+
+.ls-Theme_23_borderlessdark .ls-playvideo {
+	background-position: -300px -150px;
+}
+
+.ls-Theme_23_borderlessdark .ls-playvideo:hover,
+.ls-Theme_23_borderlessdark .ls-vpcontainer:hover .ls-playvideo {
+	background-position: -375px -150px;
+}
+
+.ls-Theme_23_borderlessdark .ls-nav-prev {
+	background-position: 0px 0px;
+}
+
+.ls-Theme_23_borderlessdark .ls-nav-prev:hover {
+	background-position: 0px -75px;
+}
+
+.ls-Theme_23_borderlessdark .ls-nav-next {
+	background-position: -150px 0px;
+}
+
+.ls-Theme_23_borderlessdark .ls-nav-next:hover {
+	background-position: -150px -75px;
+}
+
+.ls-Theme_23_borderlessdark .ls-nav-start {
+	background-position: -300px 0px;
+}
+
+.ls-Theme_23_borderlessdark .ls-nav-start:hover,
+.ls-Theme_23_borderlessdark .ls-nav-start-active {
+	background-position: -300px -75px;
+}
+
+.ls-Theme_23_borderlessdark .ls-nav-stop {
+	background-position: -450px 0px;
+}
+
+.ls-Theme_23_borderlessdark .ls-nav-stop:hover,
+.ls-Theme_23_borderlessdark .ls-nav-stop-active {
+	background-position: -450px -75px;
+}
+
+.ls-Theme_23_borderlessdark .ls-bottom-slidebuttons a {
+	background-position: 0px -150px;
+}
+
+.ls-Theme_23_borderlessdark .ls-bottom-slidebuttons a.ls-nav-active,
+.ls-Theme_23_borderlessdark .ls-bottom-slidebuttons a:hover {
+	background-position: -75px -150px;
+}
+
+.ls-Theme_23_borderlessdark .ls-nav-sideleft {
+	background-position: -150px -150px;	
+}
+
+.ls-Theme_23_borderlessdark .ls-nav-sideright {
+	background-position: -225px -150px;	
+}
+
+
+
+.ls-Theme_23_borderlessdark .ls-nav-prev,
+.ls-Theme_23_borderlessdark .ls-nav-next {
+	width: 50px;
+	height: 50px;
+	z-index: 10000;
+	top: 50%;
+	margin-top: -22px;	
+	position: absolute;
+}
+
+.ls-Theme_23_borderlessdark .ls-nav-prev {
+	left: 10px;	
+}
+
+.ls-Theme_23_borderlessdark .ls-nav-next {
+	right: 10px;	
+}
+
+
+
+.ls-Theme_23_borderlessdark .ls-bottom-slidebuttons,
+.ls-Theme_23_borderlessdark .ls-bottom-slidebuttons a,
+.ls-Theme_23_borderlessdark .ls-nav-start,
+.ls-Theme_23_borderlessdark .ls-nav-stop,
+.ls-Theme_23_borderlessdark .ls-nav-sides {
+	height: 36px;
+}
+
+.ls-Theme_23_borderlessdark .ls-bottom-slidebuttons,
+.ls-Theme_23_borderlessdark .ls-bottom-slidebuttons a,
+.ls-Theme_23_borderlessdark .ls-nav-start,
+.ls-Theme_23_borderlessdark .ls-nav-stop,
+.ls-Theme_23_borderlessdark .ls-nav-sides {
+	display: inline-block;
+}
+
+.ls-Theme_23_borderlessdark .ls-bottom-slidebuttons,
+.ls-Theme_23_borderlessdark .ls-nav-start,
+.ls-Theme_23_borderlessdark .ls-nav-stop,
+.ls-Theme_23_borderlessdark .ls-nav-sides {
+	top: -44px;
+}
+
+.ls-Theme_23_borderlessdark .ls-nav-start,
+.ls-Theme_23_borderlessdark .ls-nav-stop {
+	width: 24px;
+}
+
+.ls-Theme_23_borderlessdark .ls-bottom-slidebuttons a {
+	width: 20px;
+}
+
+.ls-Theme_23_borderlessdark .ls-nav-sides {
+	width: 13px;	
+}
+
+
+
+.ls-Theme_23_borderlessdark .ls-thumbnail-hover {
+	bottom: 45px;
+	padding: 3px;
+	margin-left: 1px;
+}
+
+.ls-Theme_23_borderlessdark .ls-thumbnail-hover-bg {
+	background: #4f4f4f;
+	box-shadow: 0px 2px 12px -4px black;
+	border-radius: 4px;
+}
+
+.ls-Theme_23_borderlessdark .ls-thumbnail-hover span {
+	border: 5px solid #4f4f4f;
+	margin-left: -5px;
+}
+
+
+
+.ls-Theme_23_borderlessdark .ls-thumbnail {
+	top: 15px;
+}
+
+.ls-Theme_23_borderlessdark .ls-thumbnail-inner {
+	padding: 2px;
+	margin-left: -2px;
+	background: #4f4f4f;
+	border-radius: 4px;
+}
+
+.ls-Theme_23_borderlessdark .ls-thumbnail-slide a {
+	margin-right: 2px;
+}
+
+.ls-Theme_23_borderlessdark .ls-nothumb {
+	background: #555;
+}
+
+
+
+.ls-Theme_23_borderlessdark .ls-shadow {
+	display: none;
+}

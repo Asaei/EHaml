@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Description.Help" xml:space="preserve">
+    <value>توضیحات پکیج</value>
+  </data>
+  <data name="Description.Text" xml:space="preserve">
+    <value>توضیحات:</value>
+  </data>
+  <data name="Name.Help" xml:space="preserve">
+    <value>نام پکیج  (مثل CompanyName.Name)</value>
+  </data>
+  <data name="Name.Text" xml:space="preserve">
+    <value>نام:</value>
+  </data>
+  <data name="PackageType.Help" xml:space="preserve">
+    <value>نوع پکیج:</value>
+  </data>
+  <data name="PackageType.Text" xml:space="preserve">
+    <value>نوع:</value>
+  </data>
+  <data name="Version.Help" xml:space="preserve">
+    <value>نسخه پکیج:</value>
+  </data>
+  <data name="Version.Text" xml:space="preserve">
+    <value>نسخه:</value>
+  </data>
+  <data name="FriendlyName.Help" xml:space="preserve">
+    <value>نام کاربرپسند پکیج</value>
+  </data>
+  <data name="FriendlyName.Text" xml:space="preserve">
+    <value>نام کاربر پسند:</value>
+  </data>
+  <data name="License.Help" xml:space="preserve">
+    <value>لایسنس پکیج</value>
+  </data>
+  <data name="License.Text" xml:space="preserve">
+    <value>لایسنس:</value>
+  </data>
+  <data name="ReleaseNotes.Help" xml:space="preserve">
+    <value>یادداشت زمان انتشار پکیج:</value>
+  </data>
+  <data name="ReleaseNotes.Text" xml:space="preserve">
+    <value>یادداشت زمان انتشار</value>
+  </data>
+  <data name="Name.Required" xml:space="preserve">
+    <value>وارد کردن نام الزامی است</value>
+  </data>
+  <data name="Version.Required" xml:space="preserve">
+    <value>وارد کردن نسخه الزامی است.</value>
+  </data>
+  <data name="PackageType.Required" xml:space="preserve">
+    <value>انتخاب نوع پکیج الزامی است.</value>
+  </data>
+  <data name="Version.Validation" xml:space="preserve">
+    <value>نسخه باید به این فرمت باشد: ##.##.##</value>
+  </data>
+  <data name="Owner.Help" xml:space="preserve">
+    <value>مالک پکیج</value>
+  </data>
+  <data name="Owner.Text" xml:space="preserve">
+    <value>مالک:</value>
+  </data>
+  <data name="Email.Help" xml:space="preserve">
+    <value>آدرس ایمیل نویسنده پکیج:</value>
+  </data>
+  <data name="Email.Text" xml:space="preserve">
+    <value>آدرس ایمیل</value>
+  </data>
+  <data name="Organization.Help" xml:space="preserve">
+    <value>سازمان مسئول پکیج</value>
+  </data>
+  <data name="Organization.Text" xml:space="preserve">
+    <value>سازمان:</value>
+  </data>
+  <data name="Url.Help" xml:space="preserve">
+    <value>آدرس Url نویسنده</value>
+  </data>
+  <data name="Url.Text" xml:space="preserve">
+    <value>Url:</value>
+  </data>
+  <data name="FriendlyName.Required" xml:space="preserve">
+    <value>وارد کردن نام کاربرپسند الزامی است.</value>
+  </data>
+  <data name="Email.Validation" xml:space="preserve">
+    <value>آدرس ایمیل باید معتبر باشد.</value>
+  </data>
+  <data name="IconFile.Help" xml:space="preserve">
+    <value>نام فایل آیکن پکیج</value>
+  </data>
+  <data name="IconFile.Text" xml:space="preserve">
+    <value>فایل آیکن:</value>
+  </data>
+  <data name="WebserviceFailure.Text" xml:space="preserve">
+    <value>اتصال به وب سرویس امکان پذیر نیست.</value>
+  </data>
+  <data name="WebservicePermission.Text" xml:space="preserve">
+    <value>وبسایت اجازه اتصال به وب سرویس را نمی دهد.</value>
+  </data>
+  <data name="deleteCredentials.Text" xml:space="preserve">
+    <value>تغییر تنظیمات فروشگاه</value>
+  </data>
+  <data name="deploy.Text" xml:space="preserve">
+    <value>توسعه:</value>
+  </data>
+  <data name="deploySuccess.Text" xml:space="preserve">
+    <value>ابزار - {0} - با موفقیت در سایت شما توسعه یافت. برای نصب ابزار جدید گزینه نصب ابزار را انتخاب کنید.</value>
+  </data>
+  <data name="extensionDescLabel.Help" xml:space="preserve">
+    <value>توضیحات ابزاری که برای توسعه انتخاب نموده اید.</value>
+  </data>
+  <data name="extensionDescLabel.Text" xml:space="preserve">
+    <value>شرح:</value>
+  </data>
+  <data name="extensionNamelabel.Help" xml:space="preserve">
+    <value>نام ابزاری که برای توسعه انتخاب نموده اید.</value>
+  </data>
+  <data name="extensionNamelabel.Text" xml:space="preserve">
+    <value>نام ابزار:</value>
+  </data>
+  <data name="extensionTypeLabel.Help" xml:space="preserve">
+    <value>نوع ابزاری که برای توسعه انتخاب نموده اید.</value>
+  </data>
+  <data name="extensionTypeLabel.Text" xml:space="preserve">
+    <value>نوع ابزار:</value>
+  </data>
+  <data name="feedEndpoint.Text" xml:space="preserve">
+    <value>catalog.dotnetnuke.com</value>
+  </data>
+  <data name="fetchExtensions.Text" xml:space="preserve">
+    <value>بازیابی لیست ابزارها</value>
+  </data>
+  <data name="PackageErrors.Text" xml:space="preserve">
+    <value>&lt;u&gt;پکیج های زیر اشتباه  هستند:&lt;/u&gt;&lt;br/&gt;</value>
+  </data>
+  <data name="PurchasedHelp.Text" xml:space="preserve">
+    <value>در این بخش می توانید ابزارهایی را که از اسنوکاورد خریداری نموده اید؛ببینید و آن ها را دانلود و توسعه دهید. برای مشاهده خریدها باید اطلاعات کاربری اسنوکاورد را وارد کنید.</value>
+  </data>
+  <data name="PurchasedTitle.Text" xml:space="preserve">
+    <value>ابزارهای خریداری شده</value>
+  </data>
+  <data name="setupCredentials.Text" xml:space="preserve">
+    <value>اطلاعات کاربری فروشگاه</value>
+  </data>
+  <data name="StoreFile.Text" xml:space="preserve">
+    <value>https://www.snowcovered.com/Snowcovered2/AppGalleryHandler.ashx?PortalID=0</value>
+  </data>
+  <data name="Title.Text" xml:space="preserve">
+    <value>دانلود و توسعه ابزار</value>
+  </data>
+  <data name="unexpectedRequest.Text" xml:space="preserve">
+    <value>تلاش برای دسترسی غیرمنتظره  به فایل خارجی</value>
+  </data>
+  <data name="updateCredentials.Text" xml:space="preserve">
+    <value>به روز رسانی اطلاعات فروشگاه</value>
+  </data>
+  <data name="download.Text">
+    <value>دانلود</value>
+  </data>
+  <data name="Help.Text">
+    <value>درخواستی برای دسترسی به یک فایل خارجی صورت گرفته است - در صورتی که مایل به پاسخ به این درخواست نمیباشید لغو را برای بازگشت به صفحه ابزار انتخاب نمایید و در غیر اینصورت یکی از گزینه های ذیل را انتخاب نمایید.</value>
+  </data>
+  <data name="install.Text">
+    <value>نصب ابزار</value>
+  </data>
+  <data name="NoData.Text">
+    <value>اطلاعاتی برای نمایش وجود ندارد</value>
+  </data>
+</root>

@@ -1,0 +1,611 @@
+﻿/*** Adding new fields ***/
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNews' and column_name = 'CleanArticleData')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNews] ADD CleanArticleData ntext NOT NULL DEFAULT('')
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNews' and column_name = 'ArticleFromRSS')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNews] ADD ArticleFromRSS bit NOT NULL DEFAULT (0)
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsGallery' and column_name = 'ChameleonTheme')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsGallery] ADD ChameleonTheme nvarchar(350) NULL
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsGallery' and column_name = 'ChameleonThemeStyle')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsGallery] ADD ChameleonThemeStyle nvarchar(350) NULL
+END
+GO
+/*** Adding new fields ***/
+/*** Creating new Tables***/
+/****** Object:  Table [dbo].[EasyDNNNewsModuleSearchable]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsModuleSearchable]') AND type in (N'U'))
+BEGIN
+	SET ANSI_NULLS ON
+	SET QUOTED_IDENTIFIER ON
+	CREATE TABLE [dbo].[EasyDNNNewsModuleSearchable](
+		[ModuleID] [int] NOT NULL,
+		[isSearchable] [bit] NOT NULL,
+		CONSTRAINT [PK_EasyDNNNewsModuleSearchable] PRIMARY KEY CLUSTERED ([ModuleID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+/****** Object:  Table [dbo].[EasyDNNnewsGoogleMapsData]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNnewsGoogleMapsData]') AND type in (N'U'))
+BEGIN
+	SET ANSI_NULLS ON
+	SET QUOTED_IDENTIFIER ON
+	CREATE TABLE [dbo].[EasyDNNnewsGoogleMapsData](
+		[GoogleMapID] [int] IDENTITY(1,1) NOT NULL,
+		[PortalID] [int] NOT NULL,
+		[UserID] [int] NOT NULL,
+		[Global] [bit] NOT NULL,
+		[DateAdded] [datetime] NOT NULL,
+		[Latitude] [nvarchar](50) NOT NULL,
+		[Longitude] [nvarchar](50) NOT NULL,
+		[MapType] [nvarchar](20) NOT NULL,
+		[MapZoom] [int] NOT NULL,
+		[Scrollwheel] [nvarchar](10) NOT NULL,
+		[MapWidth] [int] NOT NULL,
+		[MapHeight] [int] NOT NULL,
+		[PointData] [ntext] NOT NULL,
+		[FullToken] [ntext] NOT NULL,
+		[Position] [int] NULL,
+		CONSTRAINT [PK_EasyDNNnewsGoogleMapsData] PRIMARY KEY CLUSTERED ([GoogleMapID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+/****** Object:  Table [dbo].[EasyDNNnewsGoogleMapsAPI]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNnewsGoogleMapsAPI]') AND type in (N'U'))
+BEGIN
+	SET ANSI_NULLS ON
+	SET QUOTED_IDENTIFIER ON
+	CREATE TABLE [dbo].[EasyDNNnewsGoogleMapsAPI](
+		[PortalID] [int] NOT NULL,
+		[GoogleAPIKey] [nvarchar](300) NOT NULL,
+		CONSTRAINT [PK_EasyDNNnewsGoogleMapsAPI] PRIMARY KEY CLUSTERED ([PortalID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsUpdate]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsUpdate]') AND type in (N'U'))
+BEGIN
+	SET ANSI_NULLS ON
+	SET QUOTED_IDENTIFIER ON
+	CREATE TABLE [dbo].[EasyDNNNewsUpdate](
+		[UpdateID] [int] IDENTITY(1,1) NOT NULL,
+		[UpdateVersion] [nvarchar](20) NOT NULL,
+		[Finished] [bit] NOT NULL,
+		CONSTRAINT [PK_EasyDNNNewsUpdate] PRIMARY KEY CLUSTERED ([UpdateID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsRSSFeedImport]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsRSSFeedImport]') AND type in (N'U'))
+BEGIN
+	SET ANSI_NULLS ON
+	SET QUOTED_IDENTIFIER ON
+	CREATE TABLE [dbo].[EasyDNNNewsRSSFeedImport](
+		[RSSID] [int] IDENTITY(1,1) NOT NULL,
+		[PortalID] [int] NOT NULL,
+		[RSSURL] [nvarchar](1000) NOT NULL,
+		[UserID] [int] NOT NULL,
+		[CategoryID] [int] NOT NULL,
+		[Active] [bit] NOT NULL,
+		[PortalHomeDir] [nvarchar](1000) NOT NULL,
+		[DownloadImages] [bit] NOT NULL,
+		[LimitArticlesNumber] [int] NOT NULL,
+		CONSTRAINT [PK_EasyDNNNewsRSSFeedImport] PRIMARY KEY CLUSTERED ([RSSID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsRSSArticle]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsRSSArticle]') AND type in (N'U'))
+BEGIN
+	SET ANSI_NULLS ON
+	SET QUOTED_IDENTIFIER ON
+	CREATE TABLE [dbo].[EasyDNNNewsRSSArticle](
+		[RSSID] [int] NOT NULL,
+		[ArticleID] [int] NOT NULL,
+		[PortalID] [int] NOT NULL,
+		[CheckType] [nvarchar](5) NOT NULL,
+		[CheckData] [nvarchar](1000) NOT NULL,
+		[FeedType] [nvarchar](10) NOT NULL,
+		CONSTRAINT [PK_EasyDNNNewsRSSArticle] PRIMARY KEY CLUSTERED ([RSSID] ASC, [ArticleID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsModuleCategoryItems]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsModuleCategoryItems]') AND type in (N'U'))
+BEGIN
+	SET ANSI_NULLS ON
+	SET QUOTED_IDENTIFIER ON
+	CREATE TABLE [dbo].[EasyDNNNewsModuleCategoryItems](
+		[ModuleID] [int] NOT NULL,
+		[CategoryID] [int] NOT NULL,
+		CONSTRAINT [PK_EasyDNNNewsModuleCategoryItems] PRIMARY KEY CLUSTERED ([ModuleID] ASC, [CategoryID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsModuleAuthorsItems]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsModuleAuthorsItems]') AND type in (N'U'))
+BEGIN
+	SET ANSI_NULLS ON
+	SET QUOTED_IDENTIFIER ON
+	CREATE TABLE [dbo].[EasyDNNNewsModuleAuthorsItems](
+		[ModuleID] [int] NOT NULL,
+		[UserID] [int] NOT NULL,
+		CONSTRAINT [PK_EasyDNNNewsModuleAuthorsItems] PRIMARY KEY CLUSTERED ([ModuleID] ASC, [UserID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsAuthorProfile]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorProfile]') AND type in (N'U'))
+BEGIN
+	SET ANSI_NULLS ON
+	SET QUOTED_IDENTIFIER ON
+	CREATE TABLE [dbo].[EasyDNNNewsAuthorProfile](
+		[AuthorProfileID] [int] IDENTITY(1,1) NOT NULL,
+		[PortalID] [int] NOT NULL,
+		[UserID] [int] NOT NULL,
+		[ShortInfo] [nvarchar](350) NULL,
+		[FullInfo] [nvarchar](4000) NULL,
+		[ProfileImage] [nvarchar](1000) NULL,
+		[FacebookURL] [nvarchar](1000) NULL,
+		[TwitterURL] [nvarchar](1000) NULL,
+		[GooglePlusURL] [nvarchar](1000) NULL,
+		[LinkedInURL] [nvarchar](1000) NULL,
+		[DateAdded] [datetime] NOT NULL,
+		[Active] [bit] NOT NULL,
+		[ArticleCount] [int] NOT NULL,
+		CONSTRAINT [PK_EasyDNNNewsAuthorProfile] PRIMARY KEY CLUSTERED ([AuthorProfileID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF),
+		CONSTRAINT [IX_EasyDNNNewsAuthorProfile] UNIQUE NONCLUSTERED ([PortalID] ASC,[UserID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsAuthorGroups]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorGroups]') AND type in (N'U'))
+BEGIN
+	SET ANSI_NULLS ON
+	SET QUOTED_IDENTIFIER ON
+	CREATE TABLE [dbo].[EasyDNNNewsAuthorGroups](
+		[PortalID] [int] NOT NULL,
+		[GroupID] [int] IDENTITY(1,1) NOT NULL,
+		[GroupName] [nvarchar](250) NOT NULL,
+		[GroupInfo] [nvarchar](4000) NULL,
+		[GroupImage] [nvarchar](1000) NULL,
+		[FacebookURL] [nvarchar](1000) NULL,
+		[TwitterURL] [nvarchar](1000) NULL,
+		[GooglePlusURL] [nvarchar](1000) NULL,
+		[LinkedInURL] [nvarchar](1000) NULL,
+		[Parent] [int] NULL,
+		[Level] [int] NOT NULL,
+		[Position] [int] NOT NULL,
+		[GroupContactEmail] [nvarchar](100) NULL,
+		CONSTRAINT [PK_EasyDNNNewsProfileGroups] PRIMARY KEY CLUSTERED ([GroupID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsArticleGoogleMapConnection]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleGoogleMapConnection]') AND type in (N'U'))
+BEGIN
+	SET ANSI_NULLS ON
+	SET QUOTED_IDENTIFIER ON
+	CREATE TABLE [dbo].[EasyDNNNewsArticleGoogleMapConnection](
+		[ArticleID] [int] NOT NULL,
+		[GoogleMapID] [int] NOT NULL,
+		CONSTRAINT [PK_EasyDNNNewsArticleGoogleMapConnection] PRIMARY KEY CLUSTERED ([ArticleID] ASC, [GoogleMapID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsModuleGroupItems]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsModuleGroupItems]') AND type in (N'U'))
+BEGIN
+	SET ANSI_NULLS ON
+	SET QUOTED_IDENTIFIER ON
+	CREATE TABLE [dbo].[EasyDNNNewsModuleGroupItems](
+		[ModuleID] [int] NOT NULL,
+		[GroupID] [int] NOT NULL,
+		CONSTRAINT [PK_EasyDNNNewsModuleGroupItems] PRIMARY KEY CLUSTERED ([ModuleID] ASC, [GroupID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsAutorGroupItems]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAutorGroupItems]') AND type in (N'U'))
+BEGIN
+	SET ANSI_NULLS ON
+	SET QUOTED_IDENTIFIER ON
+	CREATE TABLE [dbo].[EasyDNNNewsAutorGroupItems](
+		[AuthorProfileID] [int] NOT NULL,
+		[GroupID] [int] NOT NULL,
+		[DateAdded] [datetime] NOT NULL,
+		CONSTRAINT [PK_EasyDNNNewsAutorGroupItems_1] PRIMARY KEY CLUSTERED ([AuthorProfileID] ASC, [GroupID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsAuthorProfileImages]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorProfileImages]') AND type in (N'U'))
+BEGIN
+	SET ANSI_NULLS ON
+	SET QUOTED_IDENTIFIER ON
+	CREATE TABLE [dbo].[EasyDNNNewsAuthorProfileImages](
+		[UserID] [int] NOT NULL,
+		[ModuleID] [int] NOT NULL,
+		[Width] [int] NOT NULL,
+		[Height] [int] NOT NULL,
+		[Created] [bit] NOT NULL,
+		[Resizing] [nvarchar](15) NOT NULL,
+		CONSTRAINT [PK_EasyDNNNewsAuthorProfileImages] PRIMARY KEY CLUSTERED ([UserID] ASC, [ModuleID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsAuthorGroupImages]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorGroupImages]') AND type in (N'U'))
+BEGIN
+	SET ANSI_NULLS ON
+	SET QUOTED_IDENTIFIER ON
+	CREATE TABLE [dbo].[EasyDNNNewsAuthorGroupImages](
+		[GroupID] [int] NOT NULL,
+		[ModuleID] [int] NOT NULL,
+		[Width] [int] NOT NULL,
+		[Height] [int] NOT NULL,
+		[Created] [bit] NOT NULL,
+		[Resizing] [nvarchar](15) NOT NULL,
+		CONSTRAINT [PK_EasyDNNNewsAuthorGroupImages] PRIMARY KEY CLUSTERED ([GroupID] ASC, [ModuleID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+END
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsArticleGoogleMapConnection_EasyDNNNews]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsArticleGoogleMapConnection_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleGoogleMapConnection]'))
+ALTER TABLE [dbo].[EasyDNNNewsArticleGoogleMapConnection]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsArticleGoogleMapConnection_EasyDNNNews] FOREIGN KEY([ArticleID])
+REFERENCES [dbo].[EasyDNNNews] ([ArticleID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsArticleGoogleMapConnection_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleGoogleMapConnection]'))
+ALTER TABLE [dbo].[EasyDNNNewsArticleGoogleMapConnection] CHECK CONSTRAINT [FK_EasyDNNNewsArticleGoogleMapConnection_EasyDNNNews]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsArticleGoogleMapConnection_EasyDNNnewsGoogleMapsData]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsArticleGoogleMapConnection_EasyDNNnewsGoogleMapsData]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleGoogleMapConnection]'))
+ALTER TABLE [dbo].[EasyDNNNewsArticleGoogleMapConnection]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsArticleGoogleMapConnection_EasyDNNnewsGoogleMapsData] FOREIGN KEY([GoogleMapID])
+REFERENCES [dbo].[EasyDNNnewsGoogleMapsData] ([GoogleMapID])
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsArticleGoogleMapConnection_EasyDNNnewsGoogleMapsData]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleGoogleMapConnection]'))
+ALTER TABLE [dbo].[EasyDNNNewsArticleGoogleMapConnection] CHECK CONSTRAINT [FK_EasyDNNNewsArticleGoogleMapConnection_EasyDNNnewsGoogleMapsData]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAuthorGroupImages_EasyDNNNewsAuthorGroups]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorGroupImages_EasyDNNNewsAuthorGroups]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorGroupImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorGroupImages]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsAuthorGroupImages_EasyDNNNewsAuthorGroups] FOREIGN KEY([GroupID])
+REFERENCES [dbo].[EasyDNNNewsAuthorGroups] ([GroupID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorGroupImages_EasyDNNNewsAuthorGroups]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorGroupImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorGroupImages] CHECK CONSTRAINT [FK_EasyDNNNewsAuthorGroupImages_EasyDNNNewsAuthorGroups]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAuthorGroupImages_Modules]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorGroupImages_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorGroupImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorGroupImages]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsAuthorGroupImages_Modules] FOREIGN KEY([ModuleID])
+REFERENCES {databaseOwner}{objectQualifier}Modules ([ModuleID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorGroupImages_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorGroupImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorGroupImages] CHECK CONSTRAINT [FK_EasyDNNNewsAuthorGroupImages_Modules]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAuthorGroups_Portals]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorGroups_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorGroups]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorGroups]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsAuthorGroups_Portals] FOREIGN KEY([PortalID])
+REFERENCES {databaseOwner}{objectQualifier}Portals ([PortalID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorGroups_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorGroups]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorGroups] CHECK CONSTRAINT [FK_EasyDNNNewsAuthorGroups_Portals]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAuthorProfiles_Users]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorProfiles_Users]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorProfile]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorProfile]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsAuthorProfiles_Users] FOREIGN KEY([UserID])
+REFERENCES {databaseOwner}{objectQualifier}Users ([UserID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorProfiles_Users]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorProfile]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorProfile] CHECK CONSTRAINT [FK_EasyDNNNewsAuthorProfiles_Users]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAuthorProfileImages_Modules]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorProfileImages_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorProfileImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorProfileImages]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsAuthorProfileImages_Modules] FOREIGN KEY([ModuleID])
+REFERENCES {databaseOwner}{objectQualifier}Modules ([ModuleID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorProfileImages_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorProfileImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorProfileImages] CHECK CONSTRAINT [FK_EasyDNNNewsAuthorProfileImages_Modules]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAuthorProfileImages_Users]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorProfileImages_Users]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorProfileImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorProfileImages]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsAuthorProfileImages_Users] FOREIGN KEY([UserID])
+REFERENCES {databaseOwner}{objectQualifier}Users ([UserID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorProfileImages_Users]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorProfileImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorProfileImages] CHECK CONSTRAINT [FK_EasyDNNNewsAuthorProfileImages_Users]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorGroups1]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorGroups1]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAutorGroupItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsAutorGroupItems]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorGroups1] FOREIGN KEY([GroupID])
+REFERENCES [dbo].[EasyDNNNewsAuthorGroups] ([GroupID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorGroups1]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAutorGroupItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsAutorGroupItems] CHECK CONSTRAINT [FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorGroups1]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorProfile]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorProfile]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAutorGroupItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsAutorGroupItems]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorProfile] FOREIGN KEY([AuthorProfileID])
+REFERENCES [dbo].[EasyDNNNewsAuthorProfile] ([AuthorProfileID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorProfile]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAutorGroupItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsAutorGroupItems] CHECK CONSTRAINT [FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorProfile]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsModuleAuthorsItems_Users]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsModuleAuthorsItems_Users]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsModuleAuthorsItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsModuleAuthorsItems]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsModuleAuthorsItems_Users] FOREIGN KEY([UserID])
+REFERENCES {databaseOwner}{objectQualifier}Users ([UserID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsModuleAuthorsItems_Users]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsModuleAuthorsItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsModuleAuthorsItems] CHECK CONSTRAINT [FK_EasyDNNNewsModuleAuthorsItems_Users]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsModuleCategory_EasyDNNNewsCategoryList]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsModuleCategory_EasyDNNNewsCategoryList]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsModuleCategoryItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsModuleCategoryItems]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsModuleCategory_EasyDNNNewsCategoryList] FOREIGN KEY([CategoryID])
+REFERENCES [dbo].[EasyDNNNewsCategoryList] ([CategoryID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsModuleCategory_EasyDNNNewsCategoryList]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsModuleCategoryItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsModuleCategoryItems] CHECK CONSTRAINT [FK_EasyDNNNewsModuleCategory_EasyDNNNewsCategoryList]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsModuleGroupItems_EasyDNNNewsAuthorGroups]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsModuleGroupItems_EasyDNNNewsAuthorGroups]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsModuleGroupItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsModuleGroupItems]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsModuleGroupItems_EasyDNNNewsAuthorGroups] FOREIGN KEY([GroupID])
+REFERENCES [dbo].[EasyDNNNewsAuthorGroups] ([GroupID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsModuleGroupItems_EasyDNNNewsAuthorGroups]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsModuleGroupItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsModuleGroupItems] CHECK CONSTRAINT [FK_EasyDNNNewsModuleGroupItems_EasyDNNNewsAuthorGroups]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsRSSArticle_EasyDNNNews]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsRSSArticle_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsRSSArticle]'))
+ALTER TABLE [dbo].[EasyDNNNewsRSSArticle]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsRSSArticle_EasyDNNNews] FOREIGN KEY([ArticleID])
+REFERENCES [dbo].[EasyDNNNews] ([ArticleID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsRSSArticle_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsRSSArticle]'))
+ALTER TABLE [dbo].[EasyDNNNewsRSSArticle] CHECK CONSTRAINT [FK_EasyDNNNewsRSSArticle_EasyDNNNews]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsRSSArticle_EasyDNNNewsRSSFeedImport]    Script Date: 05/12/2012 09:49:28 ******/
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsRSSArticle_EasyDNNNewsRSSFeedImport]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsRSSArticle]'))
+ALTER TABLE [dbo].[EasyDNNNewsRSSArticle]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsRSSArticle_EasyDNNNewsRSSFeedImport] FOREIGN KEY([RSSID])
+REFERENCES [dbo].[EasyDNNNewsRSSFeedImport] ([RSSID])
+ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsRSSArticle_EasyDNNNewsRSSFeedImport]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsRSSArticle]'))
+ALTER TABLE [dbo].[EasyDNNNewsRSSArticle] CHECK CONSTRAINT [FK_EasyDNNNewsRSSArticle_EasyDNNNewsRSSFeedImport]
+GO
+
+/******* *****/
+if not exists (select UpdateVersion from [dbo].[EasyDNNNewsUpdate] WHERE UpdateVersion = '04.05.00')
+BEGIN
+	INSERT INTO [dbo].[EasyDNNNewsUpdate]([UpdateVersion],[Finished]) VALUES(N'04.05.00',0)
+END
+GO
+/**** *****/
+
+/****** Object:  StoredProcedure [dbo].[EasyDNNnewsArticleArchive]    Script Date: 05/12/2012 11:45:37 ******/
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNnewsArticleArchive]') AND type in (N'P', N'PC'))
+BEGIN
+drop procedure [dbo].[EasyDNNnewsArticleArchive]
+END
+GO
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE [dbo].[EasyDNNnewsArticleArchive]
+(
+@ArticleID int,
+--@DelOldest bit,
+@numOfHistory int   
+)
+AS
+	DECLARE @HistoryEntryID int;
+	SET @HistoryEntryID = 0;
+	DECLARE @oldestValue int;
+	SET @oldestValue = 1;
+	DECLARE @latestValue int;
+	SET @latestValue = 0;
+	DECLARE @numOfHistoryDB int;
+	SET @numOfHistoryDB = 0;
+	DECLARE @delCount int;
+	SET @delCount = 0;
+BEGIN TRANSACTION;
+BEGIN TRY
+        SET NOCOUNT ON;      
+        BEGIN
+		IF @numOfHistory = 0
+			BEGIN
+				DELETE FROM [dbo].[EasyDNNNewsArchive] WHERE ArticleID = @ArticleID;
+			END
+        ELSE
+			BEGIN
+				SELECT @numOfHistoryDB = Count(HistoryVersion) FROM EasyDNNNewsArchive WHERE ArticleID=@ArticleID;
+				--IF @numOfHistoryDB < @numOfHistory
+				--	BEGIN
+				--		 -- normalno copy article
+				--	END
+				IF @numOfHistoryDB = @numOfHistory
+					BEGIN
+						SELECT @oldestValue = min(HistoryVersion) FROM [dbo].[EasyDNNNewsArchive] WHERE ArticleID = @ArticleID;
+						IF @oldestValue <> NULL
+						BEGIN
+							DELETE FROM [dbo].[EasyDNNNewsArchive] WHERE ArticleID = @ArticleID AND HistoryVersion = @oldestValue;
+						END
+					END
+				ELSE IF @numOfHistoryDB > @numOfHistory
+					BEGIN
+						-- ako treba brisati više historia
+						SET @delCount = @numOfHistoryDB - @numOfHistory + 1
+						DELETE FROM [dbo].[EasyDNNNewsArchive] WHERE ArticleID = @ArticleID AND HistoryEntryID IN
+						 (SELECT TOP(@delCount) HistoryEntryID FROM [dbo].[EasyDNNNewsArchive] WHERE ArticleID = @ArticleID ORDER BY HistoryVersion ASC);
+					END
+			END
+				
+  --      IF(@DelOldest = 1)
+  --      BEGIN
+
+		--END
+		IF @numOfHistory <> 0
+		BEGIN
+			SELECT @latestValue = max(HistoryVersion) FROM [dbo].[EasyDNNNewsArchive] WHERE ArticleID = @ArticleID;
+			IF @latestValue IS NULL
+				BEGIN
+					SET @latestValue = 1;
+				END
+			ELSE
+				BEGIN
+					SET @latestValue = @latestValue + 1;
+				END		
+			BEGIN
+			INSERT INTO [dbo].[EasyDNNNewsArchive] SELECT n.[PortalID]
+      ,n.[UserID]
+      ,n.[Title]
+      ,n.[SubTitle]
+      ,n.[Summary]
+      ,n.[Article]
+      ,n.[ArticleImage]
+      ,n.[DateAdded]
+      ,n.[LastModified]
+      ,n.[PublishDate]
+      ,n.[ExpireDate]
+      ,n.[Approved]
+      ,n.[Featured]
+      ,n.[NumberOfViews]
+      ,n.[RatingValue]
+      ,n.[RatingCount]
+      ,n.[AllowComments]
+      ,n.[AllowAnonymousComments]
+      ,n.[Active]
+      ,n.[TitleLink]
+      ,n.[DetailType]
+      ,n.[DetailTypeData]
+      ,n.[GalleryIntegration]
+      ,n.[DetailsTemplate]
+      ,n.[DetailsTheme]
+      ,n.[GalleryPosition]
+      ,n.[GalleryDisplayType]
+      ,n.[ShowMainImage]
+      ,n.[ShowMainImageFront]
+      ,n.[CommentsTheme]
+      ,n.[ArticleImageFolder]
+      ,n.[OriginalImage]
+      ,n.[NumberOfComments]
+      ,n.[ArtGalleryID]
+      ,n.[ShowArtGAllery]
+      ,n.[ShowAdsense]
+      ,[HistoryVersion] = @latestValue
+      ,n.[ArticleID] FROM [dbo].[EasyDNNNews] AS n WHERE ArticleID = @ArticleID;
+			END		
+        END    
+        END
+END TRY
+BEGIN CATCH
+    SELECT 
+         ERROR_NUMBER() AS ErrorNumber
+        ,ERROR_SEVERITY() AS ErrorSeverity
+        ,ERROR_STATE() AS ErrorState
+        ,ERROR_PROCEDURE() AS ErrorProcedure
+        ,ERROR_LINE() AS ErrorLine
+        ,ERROR_MESSAGE() AS ErrorMessage;
+    IF @@TRANCOUNT > 0
+        ROLLBACK TRANSACTION;
+END CATCH;
+
+IF @@TRANCOUNT > 0
+    COMMIT TRANSACTION;
+' 
+GO
+
+/****** Object:  StoredProcedure [dbo].[EasyDNNNewsGetCategoryAutoAdd]    Script Date: 05/12/2012 11:45:37 ******/
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetCategoryAutoAdd]') AND type in (N'P', N'PC'))
+BEGIN
+drop procedure [dbo].[EasyDNNNewsGetCategoryAutoAdd]
+END
+GO
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE [dbo].[EasyDNNNewsGetCategoryAutoAdd]
+	@PortalID int,
+    @ModuleID int
+AS 
+	WITH hierarchy
+AS
+(
+SELECT CategoryID, ParentCategory, CategoryName
+FROM EasyDNNNewsCategoryList AS cl
+WHERE (cl.ParentCategory IN ( SELECT [CategoryID]  FROM [dbo].[EasyDNNNewsModuleCategoryItems] WHERE ModuleID = @ModuleID) OR cl.CategoryID IN ( SELECT [CategoryID]  FROM [dbo].[EasyDNNNewsModuleCategoryItems] WHERE ModuleID = @ModuleID)) AND PortalID = @PortalID
+
+UNION ALL
+
+SELECT c.CategoryID, c.ParentCategory, c.[CategoryName]
+FROM EasyDNNNewsCategoryList AS c INNER JOIN hierarchy AS p ON c.ParentCategory = p.CategoryID WHERE c.PortalID = @PortalID
+)
+SELECT DISTINCT CategoryID FROM hierarchy;	   ' 
+GO
+/****** Object:  StoredProcedure [dbo].[EDNGetAutoAddCategoryAndFilterByModule]    Script Date: 05/12/2012 11:45:37 ******/
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EDNGetAutoAddCategoryAndFilterByModule]') AND type in (N'P', N'PC'))
+BEGIN
+drop procedure [dbo].[EDNGetAutoAddCategoryAndFilterByModule]
+END
+GO
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE [dbo].[EDNGetAutoAddCategoryAndFilterByModule]
+	@PortalID int,
+    @ModuleID int
+AS 
+DECLARE @CategoriesID TABLE 
+( 
+    CategoryID int
+);
+	WITH hierarchy
+AS
+(
+SELECT CategoryID, ParentCategory, CategoryName
+FROM EasyDNNNewsCategoryList AS cl
+WHERE (cl.ParentCategory IN ( SELECT [CategoryID]  FROM [dbo].[EasyDNNNewsModuleCategoryItems] WHERE ModuleID = @ModuleID) OR cl.CategoryID IN ( SELECT [CategoryID]  FROM [dbo].[EasyDNNNewsModuleCategoryItems] WHERE ModuleID = @ModuleID)) AND PortalID = @PortalID
+
+UNION ALL
+
+SELECT c.CategoryID, c.ParentCategory, c.[CategoryName]
+FROM EasyDNNNewsCategoryList AS c INNER JOIN hierarchy AS p ON c.ParentCategory = p.CategoryID WHERE c.PortalID = @PortalID
+)
+INSERT @CategoriesID SELECT DISTINCT CategoryID FROM hierarchy;	   
+SELECT * FROM EasyDNNNewsCategoryList as c WHERE c.PortalID=@PortalID AND c.CategoryID IN (SELECT CategoryID FROM @CategoriesID) ORDER BY Position ASC;
+' 
+GO
+/****** Object:  StoredProcedure [dbo].[EasyDNNNewsShowCategoriesByPermissions]    Script Date: 05/12/2012 11:45:37 ******/
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsShowCategoriesByPermissions]') AND type in (N'P', N'PC'))
+BEGIN
+drop procedure [dbo].[EasyDNNNewsShowCategoriesByPermissions]
+END
+GO
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE [dbo].[EasyDNNNewsShowCategoriesByPermissions]
+    @UserID int,
+    @PortalID int,
+    @ModuleID int
+AS 
+CREATE TABLE #tempCat([CategoryID] int);
+SET NOCOUNT ON
+INSERT #tempCat SELECT DISTINCT CategoryID
+ FROM [dbo].[EasyDNNNewsRolePremissionsShowCategories] AS rpsc
+  INNER JOIN [dbo].[EasyDNNNewsRolePremissionSettings] AS rps ON rpsc.PremissionSettingsID = rpsc.PremissionSettingsID
+   INNER JOIN {databaseOwner}{objectQualifier}UserRoles AS ur ON ur.RoleID = rps.RoleID
+    WHERE ur.UserID = @UserID AND rps.ModuleID = @ModuleID AND rps.PortalID = @PortalID;
+INSERT #tempCat SELECT CategoryID
+ FROM [dbo].[EasyDNNNewsUserPremissionsShowCategories] AS upsc
+  INNER JOIN [dbo].[EasyDNNNewsUserPremissionSettings] AS ups ON upsc.PremissionSettingsID = ups.PremissionSettingsID
+   WHERE ups.PortalID = @PortalID AND ups.ModuleID = @ModuleID AND ups.UserID = @UserID;
+
+SELECT DISTINCT CategoryID FROM #tempCat;
+DROP TABLE #tempCat;'

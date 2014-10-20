@@ -1,0 +1,72 @@
+﻿.box-container {
+    background: url("images/boxBG.png") repeat scroll 0 0 #EDEDED;
+    border-color: #ADADAD #ADADAD -moz-use-text-color;
+    border-image: none;
+    border-radius: 10px 10px 0 0;
+    border-style: solid solid solid;
+    border-width: 1px 1px 1px;
+    height: 150px;
+    width: 100%;
+    margin-top: -1px;
+}
+
+.box-content {
+}
+
+.box-container h2 {
+    background: url("images/sprite.png") no-repeat scroll left 15px rgba(0, 0, 0, 0);
+    font-family: bkoodak;
+    font-size: 17px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0px 0 13px;
+    width: 100%;
+}
+
+.box-container > div {
+    padding-right: 6px;
+}
+
+
+.DNNContainer_Title_h2.SpacingBottom > h2 {
+    margin-bottom: -20px;
+}
+
+
+.page-content {
+    border: 1px solid #DEDEDE;
+    border-radius: 0 5px 5px;
+    padding-bottom: 15px !important;
+    background: -webkit-linear-gradient(#FFFFFF, #F9F9F9) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: -moz-linear-gradient(#FFFFFF, #F9F9F9) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: -o-linear-gradient(#FFFFFF, #F9F9F9) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: -ms-linear-gradient(#FFFFFF, #F9F9F9) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: linear-gradient(#FFFFFF, #F9F9F9) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #DEDEDE;
+    box-shadow: none !important;
+    padding: 12px;
+    border-radius: 2px;
+    box-shadow: 0 0 2px #666666;
+    font-size: 14px;
+    margin: 0 auto;
+    min-height: 245px;
+    padding: 10px;
+    position: relative;
+    text-align: left;
+}
+
+.page-content-title {
+    border-bottom: 1px solid #DDDDDD;
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    width: 100%;
+}
+
+    .page-content-title span {
+        color: #777;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }

@@ -1,0 +1,174 @@
+﻿/* ========================================
+    CSS STYLES FOR Module Evotiva.DNNBackup
+   ========================================
+*/
+
+.bkp-normal, .bkp-error, .bkp-ok, .bkp-bold, .bkp-head, .bkp-head-small, .bkp-mainoption, .bkp-titlelabel, 
+.bkp-menubarlink, .bkp-breadcrumbs, .bkp-breaditem, .bkp-actionitem, .bkp-linkbutton {
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+}
+
+/* 	general */
+.bkp-normal { font-weight: normal; }
+.bkp-error { color: red; }
+.bkp-ok { color: green; }
+.bkp-bold { font-weight: bold; }
+
+.bkp-head {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4B70A0;
+}   
+
+.bkp-head-small {
+    /*font-size: 15px;*/
+    font-weight: bold;
+    color: #4B70A0;
+}   
+
+.bkp-mainoption {  font-size: 13px; font-weight: bold;}
+
+.bkp-nowraptext { white-space: nowrap; }
+
+.bkp-titlelabel {
+    vertical-align: top;
+    width: 250px;
+    font-weight: bold;
+}
+
+.bkp-formrow { vertical-align: top; }
+
+.bkp-centeredrow { vertical-align: middle; }
+
+.bkp-attentionbackground {
+    background: #FFC;
+    border: 1px solid #e6962b;
+    margin: 10px 50px;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.bkp-hr {
+    background: gray;
+    border: none;
+    color: gray;
+    height: 1px;
+}
+
+/* menu */
+
+#bkp-menubarbg {
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    display: block;
+    height: auto;
+    padding-bottom: 1px;
+    width: 100%;
+}
+
+.bkp-menubarlink, a.bkp-menubarlink, a.bkp-menubarlink:link, a.bkp-menubarlink:visited {
+    color: #273D83; font-size: 12px; font-weight: bold; text-decoration: none; 
+}
+
+a.bkp-menubarlink:active, a.bkp-menubarlink:hover {
+    color: #F2781E; 
+}
+
+
+/* action lists */
+
+div .bkp-breadcrumbs {
+    font-size: 12px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+div .bkp-breadcrumbs img {
+    border-width: 0px;
+    border-style: none;
+    margin-right: 0px;
+    vertical-align: middle;
+}
+
+.bkp-breaditem, a.bkp-breaditem, a.bkp-breaditem:link, a.bkp-breaditem:visited {
+    color: #273D83; font-size: 11px; font-weight: bold;  text-decoration: none;     
+}
+a.bkp-breaditem:active, a.bkp-breaditem:hover {
+    color: #F2781E;     
+}
+
+.bkp-actionitem, a.bkp-actionitem, a.bkp-actionitem:link, a.bkp-actionitem:visited {
+    color: #273D83; font-size: 14px; font-weight: bold; text-decoration: none;     
+}
+a.bkp-actionitem:active, a.bkp-actionitem:hover {
+    color: #F2781E;     
+}
+
+
+/* main form */
+
+#divMainBackupDefault {
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-top: 10px;
+    text-align: left;
+}
+
+
+
+/* link button */
+
+.bkp-linkbutton, a.bkp-linkbutton {
+    display: inline-block;
+    margin-bottom: 9px;
+    cursor: pointer;
+    *overflow: visible;
+    border: 1px solid #c2c2c2;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding: 6px 6px;
+    border-color: #0D569E;
+    background: #3792ED;
+    background: -moz-linear-gradient(top, #358eea 0%, #2170cd 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#358eea), color-stop(100%,#2170cd));
+    background: -webkit-linear-gradient(top, #358eea 0%,#2170cd 100%);
+    /*background: linear-gradient(top, #358eea 0%,#2170cd 100%);*/
+     background: -ms-linear-gradient(top, #358eea, #2170cd);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#358eea', endColorstr='#2170cd');
+    -webkit-box-shadow: 0px 1px 0px 0px #000000, inset 0px 1px 0px 0px #ffffff;
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.6), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 1px 0px 0px #000000, inset 0px 1px 0px 0px #ffffff;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.6), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4);
+    color: #efefef !important;
+    -webkit-text-shadow: 0px -1px 0px #185B93;
+    text-shadow: 0px -1px 0px #185B93;
+}
+
+.bkp-linkbutton:hover, a.bkp-linkbutton:hover a.bkp-linkbutton:active {
+    text-decoration: none !important;
+    border-color: black;
+    background: #1f66be;
+    background: -moz-linear-gradient(top, #1f66be 0%, #3085e0 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1f66be), color-stop(100%,#3085e0));
+    background: -webkit-linear-gradient(top, #1f66be 0%,#3085e0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1f66be', endColorstr='#3085e0');
+    /*background: linear-gradient(top, #1f66be 0%,#3085e0 100%);*/
+    -webkit-box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.4);
+    color: #fff !important;
+}
+
+.bkp-linkbutton[disabled], .bkp-linkbutton[disabled]:hover, .bkp-linkbutton[disabled]:active {
+    background: #ccc !important;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    color: #aaa !important;
+    -webkit-text-shadow: none;
+    text-shadow: none;
+}

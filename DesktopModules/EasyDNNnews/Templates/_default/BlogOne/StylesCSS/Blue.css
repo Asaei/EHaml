@@ -1,0 +1,96 @@
+#EDN_BlogOne.BlogOne_Style_Blue h1.edn_module_title {
+  background: url(../img/styles/blue/gradient_title_bg.png) repeat-x #095691;
+}
+#EDN_BlogOne.BlogOne_Style_Blue h1.edn_module_title span {
+  text-shadow: 0 -1px 0 #184cba;
+}
+#EDN_BlogOne.BlogOne_Style_Blue a.open_article_btn {
+  background-color: #1975bb;
+}
+#EDN_BlogOne.BlogOne_Style_Blue .date_box {
+  background: #116db2;
+}
+#EDN_BlogOne.BlogOne_Style_Blue .date_box p {
+  color: white;
+}
+#EDN_BlogOne.BlogOne_Style_Blue .date_box p.year {
+  background: #d2d2d2;
+  color: #111111;
+}
+#EDN_BlogOne.BlogOne_Style_Blue .article .author_box span {
+  background-color: #1975bb;
+}
+#EDN_BlogOne.BlogOne_Style_Blue .article .details p.categories span {
+  background-color: #3a8dcd;
+}
+#EDN_BlogOne.BlogOne_Style_Blue .article .details p.tags span {
+  background-color: #3a8dcd;
+}
+#EDN_BlogOne.BlogOne_Style_Blue .article .details p.author span {
+  background-color: #3a8dcd;
+}
+#EDN_BlogOne.BlogOne_Style_Blue .article.standalone .article_pagination span {
+  background: url(../img/styles/blue/pagination_active_page_bg.png) repeat-x #085590;
+  border: 1px solid #095894;
+  color: white;
+}
+#EDN_BlogOne.BlogOne_Style_Blue.news .article_pager a.page.active {
+  background: url(../img/styles/blue/pagination_active_page_bg.png) repeat-x #085590;
+  border: 1px solid #095894;
+  color: white;
+}
+#EDN_BlogOne.BlogOne_Style_Blue.search .search_input .input {
+  background-image: url(../img/styles/blue/search_sprite.png);
+}
+#EDN_BlogOne.BlogOne_Style_Blue.search .search_input .do_search {
+  background-image: url(../img/styles/blue/search_sprite.png);
+}
+#EDN_BlogOne.BlogOne_Style_Blue.search .search_input.button_outside .input {
+  background-image: url(../img/styles/blue/search_sprite.png);
+}
+#EDN_BlogOne.BlogOne_Style_Blue.search .search_input.button_outside .input input {
+  background-image: url(../img/styles/blue/search_sprite.png);
+}
+#EDN_BlogOne.BlogOne_Style_Blue.search .search_input.button_outside .do_search {
+  background-image: url(../img/styles/blue/search_button_right.png);
+}
+#EDN_BlogOne.BlogOne_Style_Blue.search .search_input.button_outside .do_search span {
+  background-image: url(../img/styles/blue/search_sprite.png);
+}
+#EDN_BlogOne.BlogOne_Style_Blue.calendar .callendar_table_container .calendar_table .month_selection {
+  background: url(../img/styles/blue/calendar_title_bg.png) repeat-x #095691;
+}
+#EDN_BlogOne.BlogOne_Style_Blue.calendar .callendar_table_container .calendar_table .month_selection td {
+  text-shadow: 0 -1px 0 #184cba;
+}
+#EDN_BlogOne.BlogOne_Style_Blue.calendar .callendar_table_container .calendar_table .day.has_posts {
+  background: #c5c5c5 !important;
+}
+#EDN_BlogOne.BlogOne_Style_Blue.calendar .callendar_table_container .calendar_table .day.has_posts > a {
+  color: white !important;
+}
+#EDN_BlogOne.BlogOne_Style_Blue.calendar .callendar_table_container .calendar_table .day.selected {
+  background: #5daae5 !important;
+}
+#EDN_BlogOne.BlogOne_Style_Blue.calendar .callendar_table_container .calendar_table .day.selected > a {
+  color: white !important;
+}
+#EDN_BlogOne.BlogOne_Style_Blue.calendar .callendar_table_container .calendar_table .day.today {
+  background: #1975bb !important;
+}
+#EDN_BlogOne.BlogOne_Style_Blue.calendar .callendar_table_container .calendar_table .day.today > a {
+  color: white !important;
+}
+#EDN_BlogOne.BlogOne_Style_Blue.calendar .callendar_table_container.advanced .calendar_table .day {
+  background: white !important;
+}
+#EDN_BlogOne.BlogOne_Style_Blue.calendar .callendar_table_container.advanced .calendar_table .day > a {
+  color: #6f6f6f !important;
+}
+#EDN_BlogOne.BlogOne_Style_Blue.calendar .callendar_table_container.advanced .calendar_table .day.today > a {
+  background: #1975bb !important;
+}
+
+.EDN_search.BlogOne.Blue .acSelect {
+  background-color: #3877a8;
+}

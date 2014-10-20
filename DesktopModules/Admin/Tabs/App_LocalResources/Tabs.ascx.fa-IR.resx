@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddPage.Text" xml:space="preserve">
+    <value>افزودن صفحات</value>
+  </data>
+  <data name="CanNotDeleteHomeTab.Text" xml:space="preserve">
+    <value>شما نمی توانید صفحه ی اصلی پورتال خود را حذف نمایید</value>
+  </data>
+  <data name="CanNotDeleteSpecialTab.Text" xml:space="preserve">
+    <value>این یک صفحه خاص می باشد،شما نمی توانید آن را حذف نمایید!</value>
+  </data>
+  <data name="Collapse.Text" xml:space="preserve">
+    <value>بستن همه نودها</value>
+  </data>
+  <data name="ConfirmDelete.Text" xml:space="preserve">
+    <value>این عملیات موجب حذف صفحه و همه فرزندان آن خواهد شد. آیا مطمئن هستید؟</value>
+  </data>
+  <data name="DeletePage.Text" xml:space="preserve">
+    <value>حذف صفحه</value>
+  </data>
+  <data name="EditPage.Text" xml:space="preserve">
+    <value>ویرایش صفحه</value>
+  </data>
+  <data name="Expand.Text" xml:space="preserve">
+    <value>بازنمودن همه نودها</value>
+  </data>
+  <data name="InvalidTabName.Text" xml:space="preserve">
+    <value>{0} عنوان نامعتبر می باشد </value>
+  </data>
+  <data name="lblDisabled.Text" xml:space="preserve">
+    <value>صفحه غیرفعال می باشد</value>
+  </data>
+  <data name="lblHidden.Text" xml:space="preserve">
+    <value>صفحه در منو نمایش داده نمی شود</value>
+  </data>
+  <data name="lblHome.Text" xml:space="preserve">
+    <value>صفحه اصلی پورتال</value>
+  </data>
+  <data name="lblSecure.Text" xml:space="preserve">
+    <value>قابل نمایش تنها برای نقش های خاص</value>
+  </data>
+  <data name="lblEveryone.Text" xml:space="preserve">
+    <value>صفحه برای همه قابل نمایش می باشد</value>
+  </data>
+  <data name="MovePageDown.Text" xml:space="preserve">
+    <value>انتقال به پایین</value>
+  </data>
+  <data name="MovePageUp.Text" xml:space="preserve">
+    <value>انتقال به بالا</value>
+  </data>
+  <data name="root.Text" xml:space="preserve">
+    <value>ریشه پورتال</value>
+  </data>
+  <data name="ShowHostTabs.Text" xml:space="preserve">
+    <value>صفحات میزبان</value>
+  </data>
+  <data name="ShowPortalTabs.Text" xml:space="preserve">
+    <value>صفحات پورتال</value>
+  </data>
+  <data name="ViewPage.Text" xml:space="preserve">
+    <value>نمایش صفحه</value>
+  </data>
+  <data name="DisablePage.Text" xml:space="preserve">
+    <value>غیرفعال نمودن لینک در منوی راهبری</value>
+  </data>
+  <data name="EnablePage.Text" xml:space="preserve">
+    <value>فعال نمودن لینک در منوی سایت </value>
+  </data>
+  <data name="HidePage.Text" xml:space="preserve">
+    <value>مخفی شدن در منو</value>
+  </data>
+  <data name="lblHostOnly.Text" xml:space="preserve">
+    <value>مدیریت :</value>
+  </data>
+  <data name="ShowPage.Text" xml:space="preserve">
+    <value>نمایش در منو</value>
+  </data>
+  <data name="lblAdminOnly.Text" xml:space="preserve">
+    <value>تنها برای مدیران قابل نمایش می باشد</value>
+  </data>
+  <data name="lblRegistered.Text" xml:space="preserve">
+    <value>قابل نمایش برای کاربران ثبت نام شده</value>
+  </data>
+  <data name="btnBulkCreate.Text" xml:space="preserve">
+    <value>ایجاد صفحات</value>
+  </data>
+  <data name="BulkCreateIntro.Text" xml:space="preserve">
+    <value>در این بخش برای هر سطر یک صفحه جدید زیر صفحه انتخاب شده ایجاد می نماید. برای ایجاد زیر صفحه شما می بایست از پیشوند "&gt;" استفاده نمایید. </value>
+  </data>
+  <data name="MakeHome.Text" xml:space="preserve">
+    <value>صفحه خانگی ساختن</value>
+  </data>
+  <data name="cmdMore.Text" xml:space="preserve">
+    <value>تنظیمات بیشتر</value>
+  </data>
+  <data name="cmdUpdate.Text" xml:space="preserve">
+    <value>بروزرسانی صفحه</value>
+  </data>
+  <data name="Appearance.Tabname" xml:space="preserve">
+    <value>ظاهر</value>
+  </data>
+  <data name="Common.Tabname" xml:space="preserve">
+    <value>عمومی</value>
+  </data>
+  <data name="Link.Tabname" xml:space="preserve">
+    <value>لینک</value>
+  </data>
+  <data name="Metatags.Tabname" xml:space="preserve">
+    <value>متا تگ ها</value>
+  </data>
+  <data name="Module.Header" xml:space="preserve">
+    <value>ماژول</value>
+  </data>
+  <data name="Modules.Tabname" xml:space="preserve">
+    <value>ماژول ها</value>
+  </data>
+  <data name="ModuleTitle.Header" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="Options.Header" xml:space="preserve">
+    <value>گزینه ها</value>
+  </data>
+  <data name="Permissions.Tabname" xml:space="preserve">
+    <value>مجوزها</value>
+  </data>
+  <data name="SEO.Tabname" xml:space="preserve">
+    <value>سئو</value>
+  </data>
+  <data name="lblContainer.Text" xml:space="preserve">
+    <value>کانتینر پیش فرض</value>
+  </data>
+  <data name="lblDescription.Text" xml:space="preserve">
+    <value>شرح صفحه</value>
+  </data>
+  <data name="lblDisabledPage.Text" xml:space="preserve">
+    <value>غیرفعال</value>
+  </data>
+  <data name="lblIconLarge.Text" xml:space="preserve">
+    <value>آیکن بزرگ</value>
+  </data>
+  <data name="lblIconSmall.Text" xml:space="preserve">
+    <value>آیکن کوچک</value>
+  </data>
+  <data name="lblKeywords.Text" xml:space="preserve">
+    <value>کلمات کلیدی صفحه</value>
+  </data>
+  <data name="lblMetaHead.Text" xml:space="preserve">
+    <value>تگ های Head صفحه</value>
+  </data>
+  <data name="lblMetaRefresh.Text" xml:space="preserve">
+    <value>دوره بازیابی خودکار (ثانیه)</value>
+  </data>
+  <data name="lblName.Text" xml:space="preserve">
+    <value>نام صفحه</value>
+  </data>
+  <data name="lblPageSSL.Text" xml:space="preserve">
+    <value>امن</value>
+  </data>
+  <data name="lblPermanentRedirect.Text" xml:space="preserve">
+    <value>تغییر مسیر همیشگی</value>
+  </data>
+  <data name="lblSitemapPriority.Text" xml:space="preserve">
+    <value>اولویت در نقشه سایت</value>
+  </data>
+  <data name="lblSkin.Text" xml:space="preserve">
+    <value>پوسته صفحه</value>
+  </data>
+  <data name="lblTitle.Text" xml:space="preserve">
+    <value>عنوان صفحه</value>
+  </data>
+  <data name="lblVisible.Text" xml:space="preserve">
+    <value>نمایش در منو</value>
+  </data>
+  <data name="lblTags.Text" xml:space="preserve">
+    <value>تگ های صفحه</value>
+  </data>
+  <data name="cmdCopySkin.Text" xml:space="preserve">
+    <value>کپی نمودن پوسته انتخاب شده برای همه فرزندان</value>
+  </data>
+  <data name="DefaultContainer.Text" xml:space="preserve">
+    <value>[Default Container]</value>
+  </data>
+  <data name="DefaultSkin.Text" xml:space="preserve">
+    <value>[Default Skin]</value>
+  </data>
+  <data name="DesignCopied.Text" xml:space="preserve">
+    <value>پوسته برای همه صفحات فرزند ثبت گردید</value>
+  </data>
+  <data name="DesignCopyError.Text" xml:space="preserve">
+    <value>درهنگام ثبت این پوسته برای همه فرزندان صفحه خطایی رخ داده است.</value>
+  </data>
+  <data name="Host.Text" xml:space="preserve">
+    <value>میزبان</value>
+  </data>
+  <data name="Site.Text" xml:space="preserve">
+    <value>سایت</value>
+  </data>
+  <data name="ModuleHelp.Text" xml:space="preserve">
+    <value>&lt;h1&gt;درباره صفحات&lt;/h1&gt;&lt;p&gt; مدیر سایت می تواند صفحات این پورتال را مدیریت نماید&lt;/p&gt;</value>
+  </data>
+  <data name="lblUrl.Text" xml:space="preserve">
+    <value>لینک</value>
+  </data>
+  <data name="TabRecycled.Text" xml:space="preserve">
+    <value>یک صفحه با این نام در سطل بازیابی وجود دارد. برای بازگرداندن آن می توانید از سطل بازیابی استفاده نمایید.</value>
+  </data>
+  <data name="lblNoRecords.Text" xml:space="preserve">
+    <value>در صفحه انتخاب شده ماژولی وجود ندارد.</value>
+  </data>
+  <data name="TabExists.Text" xml:space="preserve">
+    <value>نام صفحه ای که انتخاب نموده اید  به صفحه ی دیگری در همان سطح اختصاص یافته است.</value>
+  </data>
+  <data name="TabCreated.Text" xml:space="preserve">
+    <value>صفحه {0} ایجاد شد</value>
+  </data>
+  <data name="TabDeleted.Text" xml:space="preserve">
+    <value>صفحه {0} حذف شد </value>
+  </data>
+  <data name="TabHidden.Text" xml:space="preserve">
+    <value>صفحه {0} از منوی راهبری مخفی می باشد</value>
+  </data>
+  <data name="TabShown.Text" xml:space="preserve">
+    <value>صفحه {0} در منوی راهبری نمایش داده می شود</value>
+  </data>
+  <data name="TabEnabled.Text" xml:space="preserve">
+    <value>صفحه {0} فعال شد</value>
+  </data>
+  <data name="TabDisabled.Text" xml:space="preserve">
+    <value>صفحه {0} غیرفعال شد</value>
+  </data>
+  <data name="TabMadeHome.Text" xml:space="preserve">
+    <value>صفحه {0} به عنوان صفحه خانگی است</value>
+  </data>
+  <data name="TabUpdated.Text" xml:space="preserve">
+    <value>صفحه {0} بروزرسانی شد</value>
+  </data>
+  <data name="TabMoved.Text" xml:space="preserve">
+    <value>صفحه {0} انتقال داده شد</value>
+  </data>
+  <data name="EmptyTabName.Text" xml:space="preserve">
+    <value>نام صفحه مشخص نشده است</value>
+  </data>
+  <data name="lblLegend.Text" xml:space="preserve">
+    <value>علایم و اختصارات</value>
+  </data>
+  <data name="lblContainer.Help" xml:space="preserve">
+    <value>کانتینر انتخاب شده به تمام ماژول ها در صفحه اعمال خواهد شد</value>
+  </data>
+  <data name="lblDescription.Help" xml:space="preserve">
+    <value>درباره این صفحه شرحی را وارد نمایید</value>
+  </data>
+  <data name="lblDisabledPage.Help" xml:space="preserve">
+    <value>درصورتی که صفحه غیرفعال باشد برای کابران سایت قابل استفاده نمی باشد. شما می توانید از این گزینه برای ساخت صفحاتی که می خواهید در آینده نمایش داده شوند استفاده نمایید</value>
+  </data>
+  <data name="lblIconLarge.Help" xml:space="preserve">
+    <value>شما می توانید یک آیکن بزرگ برای نمایش در کنسول انتخاب نمایید</value>
+  </data>
+  <data name="lblIconSmall.Help" xml:space="preserve">
+    <value>شما می توانید یک آیکن برای نمایش در منو انتخاب نمایید</value>
+  </data>
+  <data name="lblKeywords.Help" xml:space="preserve">
+    <value>کلمات کلیدی موردنظر برای این صفحه را وارد نمایید (با کاما از هم جدا می شوند). این کلمات از طریق موتورهای جستجو برای کمک به ایندکس گذاری سایت شما استفاده می گردند. </value>
+  </data>
+  <data name="lblMetaHead.Help" xml:space="preserve">
+    <value>هرگونه تگ که در بخش HEAD فایل HTML صفحه قرار می گیرند را که می خواهید وارد نمایید (مانند Meta tags) </value>
+  </data>
+  <data name="lblMetaRefresh.Help" xml:space="preserve">
+    <value>زمان موردنظر بین بازیابی خودکار صفحه را وارد نمایید. (برای مثال برای انتظار 1 دقیقه بین بازیابی ها عدد "60" را وارد نمایید و برای غیرقعال نمودن بازیابی خودکار این گزینه را خالی بگذارید)</value>
+  </data>
+  <data name="lblName.Help" xml:space="preserve">
+    <value>این نام صفحه می باشد. نامی که وارد نمایید در منوی سایت نمایش داده می شود</value>
+  </data>
+  <data name="lblPageSSL.Help" xml:space="preserve">
+    <value>مشخص نمایید که این صفحه اجباری برای استفاده از SSL به کاربران دارد یا خیر. این گزینه تنها در صورتی که مدیریت در تنظیمات سایت امکان استفاده از SSL را فعال نموده باشد.</value>
+  </data>
+  <data name="lblPermanentRedirect.Help" xml:space="preserve">
+    <value>درصورتی که می خواهید به کاربر درباره جابجایی صفحه هشدار دهید، این گزینه را فعال نمایید. این گزینه به موتورهای جستجو امکان می دهد که آدرس های خود را ویرایش نمایند. </value>
+  </data>
+  <data name="lblSitemapPriority.Help" xml:space="preserve">
+    <value>اولویت موردنظر خود (بین 0 تا 1.0) را وارد نمایید. این گزینه برای امتیازدهی در گوگل مورد استفاده قرار می گیرد (مقدار پیش فرض 0.5 می باشد)</value>
+  </data>
+  <data name="lblSkin.Help" xml:space="preserve">
+    <value>پوسته ای که انتخاب می کنید به این صفحه اعمال خواهد شد</value>
+  </data>
+  <data name="lblTags.Help" xml:space="preserve">
+    <value>آیتم های موردنظر را از منوی بازشونده برای تگ نمودن انتخاب نمایید</value>
+  </data>
+  <data name="lblTitle.Help" xml:space="preserve">
+    <value>برای صفحه عنوانی را وارد نمایید. متن وارد شده در این بخش در عنوان پنجره Browser  نمایش داده می شود.</value>
+  </data>
+  <data name="lblUrl.Help" xml:space="preserve">
+    <value>درصورتی که میخواهید لینک در منوی سایت به صفحات دیگر و جدا از سایت منتقل گردد، می توانید آدرس آن را در این بخش وارد نمایید. توجه نمایید که این گزینه اختیاری است.</value>
+  </data>
+  <data name="lblVisible.Help" xml:space="preserve">
+    <value>شما می توانید نمایش/ عدم نمایش صفحه در منوی اصلی را انتخاب نمایید. در صورتی که صفحه درمنوی اصلی نمایش داده نشود شما می توانید براساس آدرس آن لینک به آن صفحه داشته باشید.</value>
+  </data>
+  <data name="valName.Text" xml:space="preserve">
+    <value>نام صفحه الزامی است</value>
+  </data>
+  <data name="bulkPagesLabel.Text" xml:space="preserve">
+    <value>صفحات:</value>
+  </data>
+  <data name="ExceededQuota.Text" xml:space="preserve">
+    <value>افزودن این صفحه باعث بالاتر رفتن تعداد صفحات شما از سقف مجاز تعریف شده برای شما می شود. لطفاً به منظور افزایش سهمیه صفحات خود با ارائه دهنده سرویس میزبانی وب خود تماس بگیرید.</value>
+  </data>
+  <data name="PathDuplicateWithAlias.Text" xml:space="preserve">
+    <value>دامنه ای همنام با مسیر صفحه شما موجود است</value>
+  </data>
+</root>

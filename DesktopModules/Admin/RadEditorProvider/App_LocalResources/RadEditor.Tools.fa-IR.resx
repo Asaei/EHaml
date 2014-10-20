@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ReservedResource" xml:space="preserve">
+    <value>لطفا این متن را حذف ننمایید. RadEditor برای منابع خارجی که در فایل App_GlobalResources هستند، به این متن نیاز دارد</value>
+  </data>
+  <data name="AboutDialog" xml:space="preserve">
+    <value>درباره RadEditor</value>
+  </data>
+  <data name="AbsolutePosition" xml:space="preserve">
+    <value>تنظیم جایگاه مطلق</value>
+  </data>
+  <data name="AjaxSpellCheck" xml:space="preserve">
+    <value>بررسی املایی Ajax</value>
+  </data>
+  <data name="ApplyClass" xml:space="preserve">
+    <value>پذیرش کلاس CSS</value>
+  </data>
+  <data name="BackColor" xml:space="preserve">
+    <value>رنگ پس زمینه</value>
+  </data>
+  <data name="Bold" xml:space="preserve">
+    <value>ضخیم</value>
+  </data>
+  <data name="ConvertToLower" xml:space="preserve">
+    <value>تبدیل به حروف کوچک</value>
+  </data>
+  <data name="ConvertToUpper" xml:space="preserve">
+    <value>تبدیل به حروف بزرگ</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>کپی</value>
+  </data>
+  <data name="Cut" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="DecreaseSize" xml:space="preserve">
+    <value>کم کردن سایز</value>
+  </data>
+  <data name="DeleteCell" xml:space="preserve">
+    <value>حذف سلول</value>
+  </data>
+  <data name="DeleteColumn" xml:space="preserve">
+    <value>حذف ستون</value>
+  </data>
+  <data name="DeleteRow" xml:space="preserve">
+    <value>حذف ردیف</value>
+  </data>
+  <data name="DeleteTable" xml:space="preserve">
+    <value>حذف جدول</value>
+  </data>
+  <data name="DocumentManager" xml:space="preserve">
+    <value>مدیریت اسناد</value>
+  </data>
+  <data name="FindAndReplace" xml:space="preserve">
+    <value>یافتن و جایگزین نمودن </value>
+  </data>
+  <data name="FlashManager" xml:space="preserve">
+    <value>مدیریت فلش </value>
+  </data>
+  <data name="FontName" xml:space="preserve">
+    <value>نام فونت</value>
+  </data>
+  <data name="FontSize" xml:space="preserve">
+    <value>سایز</value>
+  </data>
+  <data name="ForeColor" xml:space="preserve">
+    <value>رنگ قلم</value>
+  </data>
+  <data name="FormatBlock" xml:space="preserve">
+    <value>استایل پاراگراف</value>
+  </data>
+  <data name="FormatCodeBlock" xml:space="preserve">
+    <value>قالب بندی بلاک کد</value>
+  </data>
+  <data name="FormatStripper" xml:space="preserve">
+    <value>فرمت Stripper</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>راهنما</value>
+  </data>
+  <data name="ImageManager" xml:space="preserve">
+    <value>مدیریت تصویر</value>
+  </data>
+  <data name="ImageMapDialog" xml:space="preserve">
+    <value>ویرایشگر نقشه تصویر</value>
+  </data>
+  <data name="IncreaseSize" xml:space="preserve">
+    <value>افزایش سایز</value>
+  </data>
+  <data name="Indent" xml:space="preserve">
+    <value>ایجاد تورفتگی</value>
+  </data>
+  <data name="InsertAnchor" xml:space="preserve">
+    <value>افزودن Anchor</value>
+  </data>
+  <data name="InsertColumnLeft" xml:space="preserve">
+    <value>افزدون ستون به چپ</value>
+  </data>
+  <data name="InsertColumnRight" xml:space="preserve">
+    <value>افزودن ستون به راست</value>
+  </data>
+  <data name="InsertCustomLink" xml:space="preserve">
+    <value>لینک به صفحه پورتال ....</value>
+  </data>
+  <data name="InsertDate" xml:space="preserve">
+    <value>افزودن تاریخ</value>
+  </data>
+  <data name="InsertEmailLink" xml:space="preserve">
+    <value>افزودن لینک ایمیل</value>
+  </data>
+  <data name="InsertFormButton" xml:space="preserve">
+    <value>افزدون دکمه</value>
+  </data>
+  <data name="InsertFormCheckbox" xml:space="preserve">
+    <value>افزدون Checkbox</value>
+  </data>
+  <data name="InsertFormElement" xml:space="preserve">
+    <value>افزودن آیتم های فرم</value>
+  </data>
+  <data name="InsertFormForm" xml:space="preserve">
+    <value>افزودن فرم</value>
+  </data>
+  <data name="InsertFormHidden" xml:space="preserve">
+    <value>افزودن فیلد مخفی</value>
+  </data>
+  <data name="InsertFormPassword" xml:space="preserve">
+    <value>افزودن رمزعبور</value>
+  </data>
+  <data name="InsertFormRadio" xml:space="preserve">
+    <value>افزودن رادیو</value>
+  </data>
+  <data name="InsertFormReset" xml:space="preserve">
+    <value>افزودن بازیابی</value>
+  </data>
+  <data name="InsertFormSelect" xml:space="preserve">
+    <value>افزودن انتخاب</value>
+  </data>
+  <data name="InsertFormSubmit" xml:space="preserve">
+    <value>افزرودن ثبت</value>
+  </data>
+  <data name="InsertFormText" xml:space="preserve">
+    <value>افزدون Textbox</value>
+  </data>
+  <data name="InsertFormTextarea" xml:space="preserve">
+    <value>افزودن Textarea</value>
+  </data>
+  <data name="InsertGroupbox" xml:space="preserve">
+    <value>افزودن Groupbox</value>
+  </data>
+  <data name="InsertHorizontalRule" xml:space="preserve">
+    <value>خط کش افقی</value>
+  </data>
+  <data name="InsertOrderedList" xml:space="preserve">
+    <value>لیست اعداد</value>
+  </data>
+  <data name="InsertParagraph" xml:space="preserve">
+    <value>پاراگراف جدید</value>
+  </data>
+  <data name="InsertRowAbove" xml:space="preserve">
+    <value>افزودن ردیف در بالا</value>
+  </data>
+  <data name="InsertRowBelow" xml:space="preserve">
+    <value>افزودن ردیف در پایین</value>
+  </data>
+  <data name="InsertSnippet" xml:space="preserve">
+    <value>افزودن کد Snippet</value>
+  </data>
+  <data name="InsertSymbol" xml:space="preserve">
+    <value>افزودن نماد</value>
+  </data>
+  <data name="InsertTable" xml:space="preserve">
+    <value>افزودن جدول</value>
+  </data>
+  <data name="InsertTime" xml:space="preserve">
+    <value>افزودن زمان</value>
+  </data>
+  <data name="InsertUnorderedList" xml:space="preserve">
+    <value>لیست بالت دار</value>
+  </data>
+  <data name="Italic" xml:space="preserve">
+    <value>مورب</value>
+  </data>
+  <data name="JustifyCenter" xml:space="preserve">
+    <value>چیدمان در وسط</value>
+  </data>
+  <data name="JustifyFull" xml:space="preserve">
+    <value>مرتب شده</value>
+  </data>
+  <data name="JustifyLeft" xml:space="preserve">
+    <value>چیدمان چپ</value>
+  </data>
+  <data name="JustifyNone" xml:space="preserve">
+    <value>حذف چیدمان</value>
+  </data>
+  <data name="JustifyRight" xml:space="preserve">
+    <value>چیدمان راست</value>
+  </data>
+  <data name="LinkManager" xml:space="preserve">
+    <value>مدیریت لینک ها</value>
+  </data>
+  <data name="MediaManager" xml:space="preserve">
+    <value>مدیریت رسانه ها</value>
+  </data>
+  <data name="MergeColumns" xml:space="preserve">
+    <value>ادغام کردن ستون ها</value>
+  </data>
+  <data name="MergeRows" xml:space="preserve">
+    <value>ادغام کردن سطرها</value>
+  </data>
+  <data name="ModuleManager" xml:space="preserve">
+    <value>مدیریت ماژول</value>
+  </data>
+  <data name="Outdent" xml:space="preserve">
+    <value>بیرون رفتن متن</value>
+  </data>
+  <data name="PageProperties" xml:space="preserve">
+    <value>خصوصیات صفحه</value>
+  </data>
+  <data name="Paste" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="PasteAsHtml" xml:space="preserve">
+    <value>Paste به عنوان Html</value>
+  </data>
+  <data name="PasteFromWord" xml:space="preserve">
+    <value>Paste به عنوان Word</value>
+  </data>
+  <data name="PasteFromWordNoFontsNoSizes" xml:space="preserve">
+    <value>Paste از Word, strip font</value>
+  </data>
+  <data name="PastePlainText" xml:space="preserve">
+    <value>Paste متن ساده</value>
+  </data>
+  <data name="PasteStrip" xml:space="preserve">
+    <value>Paste گزینه های</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>پرینت</value>
+  </data>
+  <data name="RealFontSize" xml:space="preserve">
+    <value>سایز فونت واقعی</value>
+  </data>
+  <data name="Redo" xml:space="preserve">
+    <value>برگرداندن تغییرات</value>
+  </data>
+  <data name="RepeatLastCommand" xml:space="preserve">
+    <value>تکرار آخرین دستور</value>
+  </data>
+  <data name="SelectAll" xml:space="preserve">
+    <value>انتخاب همه</value>
+  </data>
+  <data name="SetCellProperties" xml:space="preserve">
+    <value>خصوصیات Cell</value>
+  </data>
+  <data name="SetImageProperties" xml:space="preserve">
+    <value>خصوصیات .... </value>
+  </data>
+  <data name="SetLinkProperties" xml:space="preserve">
+    <value>خصوصیات ....</value>
+  </data>
+  <data name="SetTableProperties" xml:space="preserve">
+    <value>خصوصیات جدول</value>
+  </data>
+  <data name="SpellCheck" xml:space="preserve">
+    <value>چک لغات</value>
+  </data>
+  <data name="SplitCell" xml:space="preserve">
+    <value>تقسیم سلول </value>
+  </data>
+  <data name="StrikeThrough" xml:space="preserve">
+    <value>میان خط دار</value>
+  </data>
+  <data name="StripAll" xml:space="preserve">
+    <value>حذف همه قالب بندی ها</value>
+  </data>
+  <data name="StripCss" xml:space="preserve">
+    <value>حذف همه CSS ها</value>
+  </data>
+  <data name="StripFont" xml:space="preserve">
+    <value>حذف همه گزینه های فونت</value>
+  </data>
+  <data name="StripSpan" xml:space="preserve">
+    <value>حذف همه آیتم های Span</value>
+  </data>
+  <data name="StripWord" xml:space="preserve">
+    <value>حذف قالب بندی Word</value>
+  </data>
+  <data name="StyleBuilder" xml:space="preserve">
+    <value>سازنده استایل</value>
+  </data>
+  <data name="Subscript" xml:space="preserve">
+    <value>زیرنویس</value>
+  </data>
+  <data name="Superscript" xml:space="preserve">
+    <value>بالانویس (توان)</value>
+  </data>
+  <data name="TableWizard" xml:space="preserve">
+    <value>ویزارد جدول</value>
+  </data>
+  <data name="TemplateManager" xml:space="preserve">
+    <value>مدیریت الگو</value>
+  </data>
+  <data name="ToggleDocking" xml:space="preserve">
+    <value>ثابت کردن تمام نوار ایزارها و ماژول های شناور</value>
+  </data>
+  <data name="ToggleScreenMode" xml:space="preserve">
+    <value>وضعیت تمام صفحه</value>
+  </data>
+  <data name="ToggleTableBorder" xml:space="preserve">
+    <value>نمایش/مخفی نمودن حاشیه</value>
+  </data>
+  <data name="Underline" xml:space="preserve">
+    <value>زیرخط</value>
+  </data>
+  <data name="Undo" xml:space="preserve">
+    <value>بازگشت</value>
+  </data>
+  <data name="Unlink" xml:space="preserve">
+    <value>حذف لینک</value>
+  </data>
+  <data name="Zoom" xml:space="preserve">
+    <value>بزرگ نمایی</value>
+  </data>
+  <data name="ImageEditor" xml:space="preserve">
+    <value>ویرایشگر تصویر</value>
+  </data>
+  <data name="SilverlightManager" xml:space="preserve">
+    <value>مدیریت سیلورلایت</value>
+  </data>
+  <data name="TrackChangesDialog" xml:space="preserve">
+    <value>پیگیری تغییرات</value>
+  </data>
+  <data name="XhtmlValidator" xml:space="preserve">
+    <value>اعتبارسنجی XHTML</value>
+  </data>
+  <data name="SplitCellHorizontal" xml:space="preserve">
+    <value>تقسیم سلول به صورت افقی </value>
+  </data>
+  <data name="Clipboard" xml:space="preserve">
+    <value>Clipboard</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>محتوا</value>
+  </data>
+  <data name="CSDialog" xml:space="preserve">
+    <value>بررسی انطباق</value>
+  </data>
+  <data name="Editing" xml:space="preserve">
+    <value>Editing</value>
+  </data>
+  <data name="Enter" xml:space="preserve">
+    <value>Enter زده شده</value>
+  </data>
+  <data name="Font" xml:space="preserve">
+    <value>فونت</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Insert" xml:space="preserve">
+    <value>درج کردن</value>
+  </data>
+  <data name="InsertImage" xml:space="preserve">
+    <value>افزودن تصویر</value>
+  </data>
+  <data name="InsertLink" xml:space="preserve">
+    <value>افزودن لینک</value>
+  </data>
+  <data name="InsertOptions" xml:space="preserve">
+    <value>افزودن رسانه</value>
+  </data>
+  <data name="InsertTableLight" xml:space="preserve">
+    <value>افزودن جدول</value>
+  </data>
+  <data name="Links" xml:space="preserve">
+    <value>لینک ها</value>
+  </data>
+  <data name="Media" xml:space="preserve">
+    <value>رسانه</value>
+  </data>
+  <data name="Paragraph" xml:space="preserve">
+    <value>پاراگراف</value>
+  </data>
+  <data name="PasteHtml" xml:space="preserve">
+    <value>Paste Html</value>
+  </data>
+  <data name="Preferences" xml:space="preserve">
+    <value>تنظیمات</value>
+  </data>
+  <data name="Proofing" xml:space="preserve">
+    <value>تصحیح</value>
+  </data>
+  <data name="Review" xml:space="preserve">
+    <value>مرور</value>
+  </data>
+  <data name="SaveTemplate" xml:space="preserve">
+    <value>ذخیره الگو</value>
+  </data>
+  <data name="Styles" xml:space="preserve">
+    <value>Styles</value>
+  </data>
+  <data name="Tables" xml:space="preserve">
+    <value>جداول</value>
+  </data>
+  <data name="TemplateOptions" xml:space="preserve">
+    <value>ذخیره الگو</value>
+  </data>
+  <data name="ToggleFloatingToolbar" xml:space="preserve">
+    <value>تغییر وضیع نوار ابزار شناور</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>View</value>
+  </data>
+</root>

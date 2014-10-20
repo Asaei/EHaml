@@ -1,0 +1,1562 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DeleteItem.Text" xml:space="preserve">
+    <value>آیا از حذف این آیتم مطمئن هستید؟</value>
+  </data>
+  <data name="RemoveItem.Text" xml:space="preserve">
+    <value>آیا از حذف این مورد اطمینان دارید؟</value>
+  </data>
+  <data name="Calendar.Text" xml:space="preserve">
+    <value>تقویم</value>
+  </data>
+  <data name="Yes.Text" xml:space="preserve">
+    <value>بله</value>
+  </data>
+  <data name="No.Text" xml:space="preserve">
+    <value>خیر</value>
+  </data>
+  <data name="Not_Specified.Text" xml:space="preserve">
+    <value>مشخص نشده</value>
+  </data>
+  <data name="None_Specified.Text" xml:space="preserve">
+    <value>هیچ کدام مشخص نشده</value>
+  </data>
+  <data name="cmdCancel.Text" xml:space="preserve">
+    <value>لغو</value>
+  </data>
+  <data name="cmdDelete.Text" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="cmdDisplay.Text" xml:space="preserve">
+    <value>نمایش</value>
+  </data>
+  <data name="cmdGo.Text" xml:space="preserve">
+    <value>برو</value>
+  </data>
+  <data name="cmdUpdate.Text" xml:space="preserve">
+    <value>بروزرسانی</value>
+  </data>
+  <data name="cmdUpload.Text" xml:space="preserve">
+    <value>بارگذاری فایل جدید</value>
+  </data>
+  <data name="Select.Text" xml:space="preserve">
+    <value>انتخاب</value>
+  </data>
+  <data name="Upload.Text" xml:space="preserve">
+    <value>آپلود</value>
+  </data>
+  <data name="Add.Text" xml:space="preserve">
+    <value>افزودن</value>
+  </data>
+  <data name="All.Text" xml:space="preserve">
+    <value>همه</value>
+  </data>
+  <data name="Unauthorized.Text" xml:space="preserve">
+    <value>ناشناس</value>
+  </data>
+  <data name="Today.Text" xml:space="preserve">
+    <value>امروز</value>
+  </data>
+  <data name="Close.Text" xml:space="preserve">
+    <value>بستن</value>
+  </data>
+  <data name="cmdReturn.Text" xml:space="preserve">
+    <value>بازگشت</value>
+  </data>
+  <data name="cmdDownLoad.Text" xml:space="preserve">
+    <value>دانلود</value>
+  </data>
+  <data name="Seconds.Text" xml:space="preserve">
+    <value>ثانیه ها</value>
+  </data>
+  <data name="Second.Text" xml:space="preserve">
+    <value>ثانیه</value>
+  </data>
+  <data name="Minutes.Text" xml:space="preserve">
+    <value>دقیقه</value>
+  </data>
+  <data name="Minute.Text" xml:space="preserve">
+    <value>دقیقه</value>
+  </data>
+  <data name="Hours.Text" xml:space="preserve">
+    <value>ساعت</value>
+  </data>
+  <data name="Hour.Text" xml:space="preserve">
+    <value>ساعت</value>
+  </data>
+  <data name="Days.Text" xml:space="preserve">
+    <value>روز</value>
+  </data>
+  <data name="Day.Text" xml:space="preserve">
+    <value>روز</value>
+  </data>
+  <data name="DeleteItems.Text" xml:space="preserve">
+    <value>آیا از حذف این آیتم ها مطمئن هستید؟</value>
+  </data>
+  <data name="cmdEdit.Text" xml:space="preserve">
+    <value>ویرایش</value>
+  </data>
+  <data name="Edit.Text" xml:space="preserve">
+    <value>ویرایش</value>
+  </data>
+  <data name="Unknown.Text" xml:space="preserve">
+    <value>ناسناخته</value>
+  </data>
+  <data name="Weeks.Text" xml:space="preserve">
+    <value>هفته</value>
+  </data>
+  <data name="Week.Text" xml:space="preserve">
+    <value>هفته</value>
+  </data>
+  <data name="Months.Text" xml:space="preserve">
+    <value>ماه</value>
+  </data>
+  <data name="Month.Text" xml:space="preserve">
+    <value>ماه</value>
+  </data>
+  <data name="Years.Text" xml:space="preserve">
+    <value>سال</value>
+  </data>
+  <data name="Year.Text" xml:space="preserve">
+    <value>سال</value>
+  </data>
+  <data name="New.Text" xml:space="preserve">
+    <value>جدید</value>
+  </data>
+  <data name="DeleteModule.Confirm" xml:space="preserve">
+    <value>آیا از حذف این ماژول مطمئن هستید؟</value>
+  </data>
+  <data name="EXCEPTION.Log" xml:space="preserve">
+    <value>EXCEPTION: {0}</value>
+  </data>
+  <data name="PURGE.Log" xml:space="preserve">
+    <value>وقایع سایت با موفقیت پاک شد</value>
+  </data>
+  <data name="SkinObjects.Text" xml:space="preserve">
+    <value>[Skin Objects]</value>
+  </data>
+  <data name="SkinObjectsDescription.Text" xml:space="preserve">
+    <value>اشیاء پوسته در واقع نوعی user control می باشند که در طراحی قالب یک پوسته به کار می روند به طور مثال شی&lt; پوسته CurrentDate که یک user control می باشد تاریخ سیستم را نمایش می دهد</value>
+  </data>
+  <data name="ReadError.Text" xml:space="preserve">
+    <value>امکان خواندن همه داده ها وجود ندارد: {0}/{1}</value>
+  </data>
+  <data name="Help.Text" xml:space="preserve">
+    <value>راهنما</value>
+  </data>
+  <data name="PURGEUSERS.Log" xml:space="preserve">
+    <value>پاک نمودن ورود موفقیت آمیز کاربران</value>
+  </data>
+  <data name="ErrorOccurred.Text" xml:space="preserve">
+    <value>خطایی رخ داده است.</value>
+  </data>
+  <data name="ModuleUnavailable.Text" xml:space="preserve">
+    <value>خطا : {0}در حال حاضر در دسترس نیست </value>
+  </data>
+  <data name="PURGEDSCHEDULE.Log" xml:space="preserve">
+    <value>پاک نمودن تاریخچه زمانبندی</value>
+  </data>
+  <data name="TESTCOMPLETE.Log" xml:space="preserve">
+    <value>تست انجام شد .   {0} لطفا چند ثانیه صبر نمائید.</value>
+  </data>
+  <data name="UserEmailExists.Text" xml:space="preserve">
+    <value>یک حساب کاربری با این ایمیل وجود دارد.</value>
+  </data>
+  <data name="InvalidAnswer.Text" xml:space="preserve">
+    <value>پاسخ داده شده درست نمی باشد، لطفا آن را بررسی و مجدد وارد نمایید. </value>
+  </data>
+  <data name="InvalidEmail.Text" xml:space="preserve">
+    <value>آدرس ایمیل وارد شده نامعتبر است. لطفا آدرس معتبری وارد نمایید. </value>
+  </data>
+  <data name="InvalidPassword.Text" xml:space="preserve">
+    <value>رمزعبور وارد شده نامعتبر است. لطفا رمزعبور معتبری وارد نمایید. رمزعبور می بایست حداقل  [PasswordLength] کاراکتر باشد و شامل حداقل شامل [NoneAlphabet] کاراکتر غیرحروفی باشد.</value>
+  </data>
+  <data name="InvalidQuestion.Text" xml:space="preserve">
+    <value>سوال مشخص شده نامعتبر است. لطفا سوال معتبری وارد نمایید. </value>
+  </data>
+  <data name="InvalidUserName.Text" xml:space="preserve">
+    <value>نام کاربری مشخص شده نامعتبر است. لطفا نام کاربری معتبری وارد نمایید.</value>
+  </data>
+  <data name="UserRejected.Text" xml:space="preserve">
+    <value>ثبت کاربر با خطا روبرو شد. لطفا با مدیر سایت تماس بگیرید.</value>
+  </data>
+  <data name="UserNameExists.Text" xml:space="preserve">
+    <value>یک حساب کاربری با این نام کاربری وجود دارد.</value>
+  </data>
+  <data name="RegError.Text" xml:space="preserve">
+    <value>درهنگام ثبت نام خطایی رخ داده است. برای اطلاعات بیشتر با مدیر سایت تماس بگیرید. </value>
+  </data>
+  <data name="PaneNotFound.Error" xml:space="preserve">
+    <value>امکان جایگذاری ContentPane برای پوسته نیست </value>
+  </data>
+  <data name="ContractExpired.Error" xml:space="preserve">
+    <value>قرارداد میزبانی مربوط به  {0} در تاریخ {1} منقضی شده است. برای اطلاعات بیشتر  از آدرس  &lt;a href="mailto:{2}"&gt;{2}&lt;/a&gt; استفاده نمایید.</value>
+  </data>
+  <data name="TabAccess.Error" xml:space="preserve">
+    <value>شما مجاز به مشاهده این صفحه از پورتال نمی باشد</value>
+  </data>
+  <data name="ModuleAccess.Error" xml:space="preserve">
+    <value>شما مجوز مشاهده این ماژول در پورتال را ندارید</value>
+  </data>
+  <data name="CriticalError.Error" xml:space="preserve">
+    <value>یک خطای بحرانی اتفاق افتاده است</value>
+  </data>
+  <data name="ModuleLoad.Error" xml:space="preserve">
+    <value>درهنگام بارگذاری ماژول خطایی ر خ داده است</value>
+  </data>
+  <data name="ModuleAdd.Error" xml:space="preserve">
+    <value>خطایی در هنگام افزودن ماژول رخ داده {0}</value>
+  </data>
+  <data name="ContainerLoad.Error" xml:space="preserve">
+    <value>کبارگذاری کانتینتر امکان پذیر نیست.: {0}</value>
+  </data>
+  <data name="BeginZip.Text" xml:space="preserve">
+    <value>شروع بررسی zip فایل</value>
+  </data>
+  <data name="CreateDir.Text" xml:space="preserve">
+    <value>ایجاد پوشه</value>
+  </data>
+  <data name="WriteFile.Text" xml:space="preserve">
+    <value>در حال نوشتن فایل</value>
+  </data>
+  <data name="FileError.Text" xml:space="preserve">
+    <value>خطا در خواندن فایل </value>
+  </data>
+  <data name="EndZip.Text" xml:space="preserve">
+    <value>اتمام فعالیت فایل zip</value>
+  </data>
+  <data name="FileRestricted.Text" xml:space="preserve">
+    <value>{0} این نوع فایل مجاز نمی باشد. فایل های مجاز عبارتند از ( *.{1}). لطفا با ارائه دهنده میزبانی خود برای اعلام نیاز به بارگذاری این فایل تماس بگیرید.</value>
+  </data>
+  <data name="Skins.Text" xml:space="preserve">
+    <value>پوسته ها</value>
+  </data>
+  <data name="Containers.Text" xml:space="preserve">
+    <value>کانتینرها </value>
+  </data>
+  <data name="StartProcessor.Text" xml:space="preserve">
+    <value>مقداردهی اولیه پردازشگر پوسته و کانتینر</value>
+  </data>
+  <data name="PackageLoad.Text" xml:space="preserve">
+    <value>فایل خصوصیات سطح بسته بارگذاری شد</value>
+  </data>
+  <data name="PackageLoad.Error" xml:space="preserve">
+    <value>خطا در بارگذاری فایل خصوصیات سطح بسته : ({0})</value>
+  </data>
+  <data name="DuplicateSkinObject.Error" xml:space="preserve">
+    <value>جلوگیری از SkinObject تکراری برای توکن  {0}</value>
+  </data>
+  <data name="DuplicateSkinObject.Detail" xml:space="preserve">
+    <value>هر پوسته ای که از این توکن استفاده می نماید می بایست ابتدا ثبت شود {0} به جای آنکه مجدد ایجاد گردد ({1}).  این پوسته ممکن است به درستی بارگذاری نشود</value>
+  </data>
+  <data name="LoadingSkinToken.Text" xml:space="preserve">
+    <value>بارگذاری پوسته برای توکن  {0}</value>
+  </data>
+  <data name="BeginSkinFile.Text" xml:space="preserve">
+    <value>شروع بررسی فایل</value>
+  </data>
+  <data name="EndSkinFile.Text" xml:space="preserve">
+    <value>اتمام فعالیت فایل</value>
+  </data>
+  <data name="EndSkinFiles.Text" xml:space="preserve">
+    <value>اتمام فعالیت فایل پوسته/کانتینر</value>
+  </data>
+  <data name="FileFormat.Error" xml:space="preserve">
+    <value>خطا در قالب فایل</value>
+  </data>
+  <data name="FileFormat.Detail" xml:space="preserve">
+    <value>{0} شامل ContentPane نمی باشد</value>
+  </data>
+  <data name="SkinFileLoad.Text" xml:space="preserve">
+    <value>بارگذاری فایل ویژگی</value>
+  </data>
+  <data name="SkinFileLoad.Error" xml:space="preserve">
+    <value>خطا در بارگذاری ویژگی های فایل</value>
+  </data>
+  <data name="FileWrite.Text" xml:space="preserve">
+    <value>نوشتن فایل ها</value>
+  </data>
+  <data name="ControlDirective.Text" xml:space="preserve">
+    <value>کنترل قالب بندی راهنما</value>
+  </data>
+  <data name="ControlRegister.Text" xml:space="preserve">
+    <value>قالب بندی راهنمای ثبت نام</value>
+  </data>
+  <data name="Substituting.Text" xml:space="preserve">
+    <value>جانشینی</value>
+  </data>
+  <data name="Substituting.Detail" xml:space="preserve">
+    <value>{0}&lt;br&gt;اندازه: {1}</value>
+  </data>
+  <data name="ProcessToken.Text" xml:space="preserve">
+    <value>پردازش توکن</value>
+  </data>
+  <data name="SkinToken.Text" xml:space="preserve">
+    <value>توکن یک شیء پوسته  می باشد</value>
+  </data>
+  <data name="PaneToken.Text" xml:space="preserve">
+    <value>توکن  content pane است.</value>
+  </data>
+  <data name="TokenFound.Text" xml:space="preserve">
+    <value>توکن در فایل مشخصات یافت شد</value>
+  </data>
+  <data name="TokenFormat.Text" xml:space="preserve">
+    <value>مشخصات توکن فرمت بندی شده</value>
+  </data>
+  <data name="TokenNotFoundInFile.Text" xml:space="preserve">
+    <value>توکن در فایل مشخصات یافت نشد</value>
+  </data>
+  <data name="ControlFormat.Text" xml:space="preserve">
+    <value>کنترل قالب بندی قوانین</value>
+  </data>
+  <data name="TokenNotFound.Text" xml:space="preserve">
+    <value>توکن پیدا نشد</value>
+  </data>
+  <data name="ProcessObject.Text" xml:space="preserve">
+    <value>پردازش شیء الحاقی</value>
+  </data>
+  <data name="SkinObject.Text" xml:space="preserve">
+    <value>این شیء یک شیء پوسته است.</value>
+  </data>
+  <data name="PaneObject.Text" xml:space="preserve">
+    <value>شیء الحاقی content pane است.</value>
+  </data>
+  <data name="ObjectNotFound.Text" xml:space="preserve">
+    <value>شیء الحاقی یافت نشد.</value>
+  </data>
+  <data name="cmdNext.Text" xml:space="preserve">
+    <value>بعدی</value>
+  </data>
+  <data name="cmdBack.Text" xml:space="preserve">
+    <value>قبلی</value>
+  </data>
+  <data name="cmdFinish.Text" xml:space="preserve">
+    <value>خاتمه</value>
+  </data>
+  <data name="cmdBack.Help" xml:space="preserve">
+    <value>برای انتقال به صفحه ی قبلی کلیک نمایید</value>
+  </data>
+  <data name="cmdNext.Help" xml:space="preserve">
+    <value>برای انتقال به صفحه ی بعدی کلیک نمایید</value>
+  </data>
+  <data name="Left.Text" xml:space="preserve">
+    <value>چپ</value>
+  </data>
+  <data name="Right.Text" xml:space="preserve">
+    <value>راست</value>
+  </data>
+  <data name="Center.Text" xml:space="preserve">
+    <value>مرکز</value>
+  </data>
+  <data name="Maximized.Text" xml:space="preserve">
+    <value>حداکثر</value>
+  </data>
+  <data name="Minimized.Text" xml:space="preserve">
+    <value>حداقل</value>
+  </data>
+  <data name="None.Text" xml:space="preserve">
+    <value>هیچ کدام</value>
+  </data>
+  <data name="Pages.Text" xml:space="preserve">
+    <value>صفحه {0} از {1}</value>
+  </data>
+  <data name="cmdHelp.Text" xml:space="preserve">
+    <value>راهنما</value>
+  </data>
+  <data name="cmdHelp.Help" xml:space="preserve">
+    <value>برای نمایش راهنمای این صفحه کلیک نمایید</value>
+  </data>
+  <data name="DNN_Reading.Text" xml:space="preserve">
+    <value>خواندن فایل مانیفست نصب</value>
+  </data>
+  <data name="DNN_Success.Text" xml:space="preserve">
+    <value>فایل مانیفست با موفقیت به اتمام رسید</value>
+  </data>
+  <data name="DNN_Valid.Text" xml:space="preserve">
+    <value>قالب فایل DNN {0} معتبر است</value>
+  </data>
+  <data name="DNN_ValidSkinObject.Text" xml:space="preserve">
+    <value>فایل DNN دارای قالب معتبر برای SkinObejct 2.0 می باشد</value>
+  </data>
+  <data name="EXCEPTION.Text" xml:space="preserve">
+    <value>خطا</value>
+  </data>
+  <data name="EXCEPTION_DesktopSrc.Text" xml:space="preserve">
+    <value>کنترل ماژول می بایست مقدار  Desktopsrc را داشته باشد،  نادیده گرفته شود</value>
+  </data>
+  <data name="EXCEPTION_FileLoad.Text" xml:space="preserve">
+    <value>فایل به درستی بارگذاری نشد, نادیده گرفته شود</value>
+  </data>
+  <data name="EXCEPTION_FileName.Text" xml:space="preserve">
+    <value>فایل می بایست دارای نام باشد , نادیده گرفته شود</value>
+  </data>
+  <data name="EXCEPTION_FileRead.Text" xml:space="preserve">
+    <value>داده ها قابل خواندن نیستند.</value>
+  </data>
+  <data name="EXCEPTION_FolderDesc.Text" xml:space="preserve">
+    <value>یک پوشه می بایست دارای شرح باشد, نادیده گرفته شود</value>
+  </data>
+  <data name="EXCEPTION_FolderName.Text" xml:space="preserve">
+    <value>یک پوشه می بایست دارای نام باشد, نادیده گرفته شود</value>
+  </data>
+  <data name="EXCEPTION_FolderProvider.Text" xml:space="preserve">
+    <value>یک پوشه می بایست دارای نوع باشد, نادیده گرفته شود</value>
+  </data>
+  <data name="EXCEPTION_FolderVersion.Text" xml:space="preserve">
+    <value>یک پوشه می بایست دارای نسخه باشد, نادیده گرفته شود</value>
+  </data>
+  <data name="EXCEPTION_Format.Text" xml:space="preserve">
+    <value>قالب DNN نامعتبر , نادیده گرفته شود</value>
+  </data>
+  <data name="EXCEPTION_LoadFailed.Text" xml:space="preserve">
+    <value>خطا در بارگذاری فایل DNN, نادیده گرفته شود</value>
+  </data>
+  <data name="EXCEPTION_MissingDnn.Text" xml:space="preserve">
+    <value>فایل .dnn پیدا نشد  ???</value>
+  </data>
+  <data name="EXCEPTION_MissingResource.Text" xml:space="preserve">
+    <value>فایل منبعی مربوط به dnn در فایل zip پیدا نشد : </value>
+  </data>
+  <data name="EXCEPTION_MultipleDnn.Text" xml:space="preserve">
+    <value>چندین فایل .dnn در پوشه zip وجود دارد : </value>
+  </data>
+  <data name="EXCEPTION_Src.Text" xml:space="preserve">
+    <value>کنترل ماژول می بایست یک مقدار src داشته باشد ,نادیده گرفته شود</value>
+  </data>
+  <data name="EXCEPTION_Type.Text" xml:space="preserve">
+    <value>کنترل ماژول می بایست یک مقدار نوع داشته باشد ,نادیده گرفته شود</value>
+  </data>
+  <data name="FILE_Created.Text" xml:space="preserve">
+    <value>ایجاد شده - {0}</value>
+  </data>
+  <data name="FILE_Found.Text" xml:space="preserve">
+    <value>مسیر معتبر پیدا شد ({0})  برای {1}.</value>
+  </data>
+  <data name="FILE_Loading.Text" xml:space="preserve">
+    <value>درحال بارگذاری</value>
+  </data>
+  <data name="FILE_NotFound.Text" xml:space="preserve">
+    <value>فایل مشخص شده در پوشه zip پیدا نشد: </value>
+  </data>
+  <data name="FILE_ReadSuccess.Text" xml:space="preserve">
+    <value>فایل {0} به درستی خوانده شد</value>
+  </data>
+  <data name="FILES_Created.Text" xml:space="preserve">
+    <value>فایل ها ایجاد شدند :</value>
+  </data>
+  <data name="FILES_CreatedResources.Text" xml:space="preserve">
+    <value>فایل های منبع ایجاد شد</value>
+  </data>
+  <data name="FILES_Creating.Text" xml:space="preserve">
+    <value>ایجاد فایل ها</value>
+  </data>
+  <data name="FILES_Expanding.Text" xml:space="preserve">
+    <value>بازنمودن فایل منبع</value>
+  </data>
+  <data name="FILES_Loading.Text" xml:space="preserve">
+    <value>بارگذاری فایل در</value>
+  </data>
+  <data name="FILES_Reading.Text" xml:space="preserve">
+    <value>خواندن فایل ها</value>
+  </data>
+  <data name="FILES_ReadingEnd.Text" xml:space="preserve">
+    <value>خواندن فایل ها تکمیل شد.</value>
+  </data>
+  <data name="INSTALL_Start.Text" xml:space="preserve">
+    <value>شروع نصب</value>
+  </data>
+  <data name="INSTALL_Success.Text" xml:space="preserve">
+    <value>نصب با موفقیت</value>
+  </data>
+  <data name="REGISTER_Controls.Text" xml:space="preserve">
+    <value>کنترل های ثبت نام</value>
+  </data>
+  <data name="REGISTER_Definition.Text" xml:space="preserve">
+    <value>تعاریف ثبت نام</value>
+  </data>
+  <data name="REGISTER_End.Text" xml:space="preserve">
+    <value>ثبت نام پایان یافته</value>
+  </data>
+  <data name="REGISTER_Module.Text" xml:space="preserve">
+    <value>ثبت DesktopModule</value>
+  </data>
+  <data name="SQL_Begin.Text" xml:space="preserve">
+    <value>شروع اجرای دستورات SQL</value>
+  </data>
+  <data name="SQL_BeginFile.Text" xml:space="preserve">
+    <value>شروع اجرای دستورات SQL فایل: {0} </value>
+  </data>
+  <data name="SQL_End.Text" xml:space="preserve">
+    <value>تمام دستورات SQL</value>
+  </data>
+  <data name="SQL_EndFile.Text" xml:space="preserve">
+    <value>اتمام اجرای دستورات SQL فایل: {0} </value>
+  </data>
+  <data name="SQL_Exceptions.Text" xml:space="preserve">
+    <value>اجرای دستورات SQL با خطای روبرو مواجه شد : {0}{1}</value>
+  </data>
+  <data name="SQL_Executing.Text" xml:space="preserve">
+    <value>در حال اجرا</value>
+  </data>
+  <data name="SQL_UnknownFile.Text" xml:space="preserve">
+    <value>کدینگ این فایل شناخته شده نمی باشد {0}, </value>
+  </data>
+  <data name="XML_Loaded.Text" xml:space="preserve">
+    <value>xml بارگذاری شد.</value>
+  </data>
+  <data name="Folders.Text" xml:space="preserve">
+    <value>پوشه ها : </value>
+  </data>
+  <data name="Files.Text" xml:space="preserve">
+    <value>فایل ها :</value>
+  </data>
+  <data name="Page.Text" xml:space="preserve">
+    <value>صفحه :</value>
+  </data>
+  <data name="URL.Text" xml:space="preserve">
+    <value>URL:</value>
+  </data>
+  <data name="Home.Text" xml:space="preserve">
+    <value>خانه</value>
+  </data>
+  <data name="Maximize.Text" xml:space="preserve">
+    <value>حداکثر</value>
+  </data>
+  <data name="Minimize.Text" xml:space="preserve">
+    <value>حداقل</value>
+  </data>
+  <data name="EXCEPTION_DirectoryExists.Text" xml:space="preserve">
+    <value>پوشه در حال حاضر وجود دارد </value>
+  </data>
+  <data name="EXCEPTION.DuplicateLocale.Text" xml:space="preserve">
+    <value>این منطقه زمانی قبلا تعریف شده است</value>
+  </data>
+  <data name="EXCEPTION.SaveLocale.Text" xml:space="preserve">
+    <value>عملیات فایل انجام نشد. دسترسی های فایل منبع را بررسی نمایید می بایست دسترسی ویرایش داشته باشید.</value>
+  </data>
+  <data name="LOG.LangPack.LoadFiles" xml:space="preserve">
+    <value>بارگذاری {0} فایل های منبع </value>
+  </data>
+  <data name="LOG.LangPack.Global" xml:space="preserve">
+    <value>عمومی</value>
+  </data>
+  <data name="LOG.LangPack.Control" xml:space="preserve">
+    <value>کنترل</value>
+  </data>
+  <data name="LOG.LangPack.Module" xml:space="preserve">
+    <value>ماژول</value>
+  </data>
+  <data name="LOG.LangPack.Admin" xml:space="preserve">
+    <value>مدیر </value>
+  </data>
+  <data name="LOG.LangPack.ArchiveFiles" xml:space="preserve">
+    <value>ایجاد فایل آرشیو بسته منابع</value>
+  </data>
+  <data name="LOG.LangPack.LoadFromFolder" xml:space="preserve">
+    <value>بارگذاری فایل های منبع از پوشه : {0}</value>
+  </data>
+  <data name="LOG.LangPack.LoadFileName" xml:space="preserve">
+    <value>بارگذاری فایل منبع: {0}</value>
+  </data>
+  <data name="LOG.LangPack.SerializeManifest" xml:space="preserve">
+    <value>فایل مانیفست به درستی ایجاد شد. </value>
+  </data>
+  <data name="LOG.LangPack.SavedFile" xml:space="preserve">
+    <value>فایل منبع {0} در بسته منابع ذخیره شد. </value>
+  </data>
+  <data name="LOG.LangPack.CreateArchive" xml:space="preserve">
+    <value>افزدون فایل به بسته منابع : {0}</value>
+  </data>
+  <data name="LOG.LangPack.ERROR.SavingFile" xml:space="preserve">
+    <value>درهنگام ذخیره فایل در بسته منبع خطایی رخ داده است: {0}</value>
+  </data>
+  <data name="LOG.LangPack.ERROR.CreatingFile" xml:space="preserve">
+    <value>درهنگام ایجاد بسته منبع خطایی رخ داده است : {0}</value>
+  </data>
+  <data name="LOG.LangPack.ERROR.ManifestFile" xml:space="preserve">
+    <value>درهنگام ایجاد بسته فایل manifest خطایی رخ داده است: {0}</value>
+  </data>
+  <data name="EXCEPTION.LangPack.ManifestZip" xml:space="preserve">
+    <value>خطایی در زمان خواندن فایل zip مربوط به مانیفست بسته زبانی رخ داده است. خطا :  {0}</value>
+  </data>
+  <data name="EXCEPTION.LangPack.ManifestLoad" xml:space="preserve">
+    <value>خطا در بارگذاری مانیفست منبع بسته زبانی رخ داده است. خطا : {0}</value>
+  </data>
+  <data name="EXCEPTION.LangPack.FileMissing" xml:space="preserve">
+    <value>فایل {0} در مانیفست بسته زبانی وجود ندارد </value>
+  </data>
+  <data name="EXCEPTION.LangPack.Install" xml:space="preserve">
+    <value>خطا در بارگذاری فایل منبع بسته زبانی رخ داده است. خطا : {0}</value>
+  </data>
+  <data name="LOG.LangPack.Job.LoadManifest" xml:space="preserve">
+    <value>بارگذاری فایل مانیفست</value>
+  </data>
+  <data name="LOG.LangPack.Job.DeserializeManifest" xml:space="preserve">
+    <value>Deserializing فایل مانیفست </value>
+  </data>
+  <data name="LOG.LangPack.Job.LoadFiles" xml:space="preserve">
+    <value>Unzip نمودن فایل زبان </value>
+  </data>
+  <data name="LOG.LangPack.Job.SaveFiles" xml:space="preserve">
+    <value>وارد نمودن فایل زبانی</value>
+  </data>
+  <data name="LOG.LangPack.Job.CreateLocale" xml:space="preserve">
+    <value>ایجاد/بروزرسانی زبان محلی </value>
+  </data>
+  <data name="LOG.LangPackReader.LoadFiles" xml:space="preserve">
+    <value>Unzip نمودن فایل زبان: {0}</value>
+  </data>
+  <data name="LOG.LangPackReader.UnzipFiles" xml:space="preserve">
+    <value>وارد نمودن فایل: {0}</value>
+  </data>
+  <data name="LOG.LangPackReader.CreateLocale" xml:space="preserve">
+    <value>ایجاد زبان محلی : {0}</value>
+  </data>
+  <data name="Wizard.Success.SuccessTitle" xml:space="preserve">
+    <value>تبریک:</value>
+  </data>
+  <data name="Wizard.Success.SuccessDetail" xml:space="preserve">
+    <value>&lt;p&gt;
+					تبریک. ویزارد با موفقیت به پایان رسید.			&lt;/p&gt;</value>
+  </data>
+  <data name="Wizard.Success.FailureTitle" xml:space="preserve">
+    <value>ویزارد با موفقیت به پایان نرسید.</value>
+  </data>
+  <data name="Wizard.Success.FailureDetail" xml:space="preserve">
+    <value>				&lt;p&gt;
+					متاسفانه خطایی در حین اجرای ویزارد رخ داد. لطفا پیام زیر را بررسی نموده  و با سرویس دهنده خود تماس بگیرید
+				&lt;/p&gt;
+</value>
+  </data>
+  <data name="LOG.PAWriter.CreateManifest" xml:space="preserve">
+    <value>ایجاد فایل مانیفست {0}</value>
+  </data>
+  <data name="LOG.PAWriter.CreateArchive" xml:space="preserve">
+    <value>افزودن فایل به بسته ماژول: {0}</value>
+  </data>
+  <data name="LOG.PAWriter.SavedFile" xml:space="preserve">
+    <value>فایل {0} در بسته ماژول ذخیره شد.</value>
+  </data>
+  <data name="LOG.PAWriter.ERROR.SavingFile" xml:space="preserve">
+    <value>درهنگام ذخیره فایل در بسته ماژول خطایی رخ داده است: {0}</value>
+  </data>
+  <data name="LOG.PAWriter.CreateZipFile" xml:space="preserve">
+    <value>ایجاد بسته ماژول: {0}</value>
+  </data>
+  <data name="ModuleExpired.Text" xml:space="preserve">
+    <value>انقضای ماژول - {0}</value>
+  </data>
+  <data name="LOG.PALogger.Info" xml:space="preserve">
+    <value>اطلاعات</value>
+  </data>
+  <data name="LOG.PALogger.Warning" xml:space="preserve">
+    <value>اخطار</value>
+  </data>
+  <data name="LOG.PALogger.Failure" xml:space="preserve">
+    <value>خطا</value>
+  </data>
+  <data name="LOG.PALogger.StartJob" xml:space="preserve">
+    <value>شروع فعالیت</value>
+  </data>
+  <data name="LOG.PALogger.EndJob" xml:space="preserve">
+    <value>انتهای فعالیت</value>
+  </data>
+  <data name="AllUsers.Text" xml:space="preserve">
+    <value>تمام کاربران</value>
+  </data>
+  <data name="Superuser.Text" xml:space="preserve">
+    <value>کاربر ارشد</value>
+  </data>
+  <data name="UnauthenticatedUsers.Text" xml:space="preserve">
+    <value>کاربران ناشناس</value>
+  </data>
+  <data name="RestrictedFileType.Text" xml:space="preserve">
+    <value>فرمت فایل {0} محدود شده و شما مجاز به آپلود فایل با چنین فرمتی نیستید. فرمت های مجاز عبارتند از  ( {1} ). لطفا با ارائه دهنده خدمات میزبانی خود تماس بگیرید و درخواست کنید این فرمت را برای آپلود مجاز نمایند</value>
+  </data>
+  <data name="SaveFileError.Text" xml:space="preserve">
+    <value>در حین ذخیره سازی فایل خطایی رخ داده است.{0}. لطفا جهت اطمینان از درست بودن تنظیمات امنیتی مرتبط، یا ارائه دهنده خدمات میزبانی خود، تماس بگیرید.</value>
+  </data>
+  <data name="DiskSpaceExceeded.Text" xml:space="preserve">
+    <value>فایل  {0} دارای حجم بیشتر از حجم فضای دیسک موجود شما می باشد. لطفا با ارائه دهنده میزبانی وب سایت خود برای افزایش فضای پورتال خود تماس بگیرید. </value>
+  </data>
+  <data name="WordCleanButton.Text" xml:space="preserve">
+    <value>MS Word HTML خام</value>
+  </data>
+  <data name="INSTALL_OlderVersion.Text" xml:space="preserve">
+    <value>متوقف شدن عملیات نصب - ماژولی که در حال نصب آن بودید قدیمی تر از نسخه ای است که در سایت شما از قبل نصب شده است.</value>
+  </data>
+  <data name="INSTALL_Compatibility.Text" xml:space="preserve">
+    <value>متوقف شدن عملیات نصب - ماژولی که در حال نصب آن بودید با نسخه application نسخه DNN شما هم خوانی ندارد (نیاز به ارتقاء دارد)</value>
+  </data>
+  <data name="INSTALL_Dependencies.Text" xml:space="preserve">
+    <value>متوقف شدن عملیات نصب - ماژولی که در حال نصب آن بودید نیاز به کامپوننت های اضافه دارد که در سایت شما نصب نشده است.</value>
+  </data>
+  <data name="INSTALL_Permissions.Text" xml:space="preserve">
+    <value>متوقف شدن عملیات نصب - بسته ای که در حال نصب آن بودید احتیاج به دسترسی هایی بیشتر از دسترسی های فعلی دارد.</value>
+  </data>
+  <data name="First.Text" xml:space="preserve">
+    <value>اولین</value>
+  </data>
+  <data name="Next.Text" xml:space="preserve">
+    <value>بعدی</value>
+  </data>
+  <data name="Previous.Text" xml:space="preserve">
+    <value>قبلی</value>
+  </data>
+  <data name="Last.Text" xml:space="preserve">
+    <value>آخرین</value>
+  </data>
+  <data name="Recordsperpage.Text" xml:space="preserve">
+    <value>تعداد رکورد در صفحه </value>
+  </data>
+  <data name="Recordsperpage.Help" xml:space="preserve">
+    <value>حدامثر تعداد رکوردهایی که در یک صفحه نمایش داده شوند را وارد نمایید</value>
+  </data>
+  <data name="LOG.LangPack.Provider" xml:space="preserve">
+    <value>ارائه دهنده</value>
+  </data>
+  <data name="InvalidFileName.Text" xml:space="preserve">
+    <value>نام فایل نامعتبر است - نام فایل نمی تواند شامل  ' باشد </value>
+  </data>
+  <data name="AllRoles.Text" xml:space="preserve">
+    <value>&lt;تمام نقش ها &gt;</value>
+  </data>
+  <data name="GlobalRoles.Text" xml:space="preserve">
+    <value>&lt; نقش های عمومی &gt;</value>
+  </data>
+  <data name="Cancel.Action" xml:space="preserve">
+    <value>لغو</value>
+  </data>
+  <data name="InsertSmileyButton.Text" xml:space="preserve">
+    <value>افزودن شکلک</value>
+  </data>
+  <data name="RoleGroupFilter.Text" xml:space="preserve">
+    <value>فیلتر شده توسط گروه:</value>
+  </data>
+  <data name="DeleteItems.Confirm" xml:space="preserve">
+    <value>آیا از حذف این آیتم ها مطمئن هستید؟</value>
+  </data>
+  <data name="RemoveItems.Confirm" xml:space="preserve">
+    <value>آیا از حذف این موارد اطمینان دارید؟</value>
+  </data>
+  <data name="PasswordMismatch.Text" xml:space="preserve">
+    <value>رمزعبور و تکرار آن با هم یکسان نیستند</value>
+  </data>
+  <data name="OnLine.Text" xml:space="preserve">
+    <value>آنلاین</value>
+  </data>
+  <data name="Deleted.Text" xml:space="preserve">
+    <value>حذف شده</value>
+  </data>
+  <data name="LOG.LangPackReader.ModuleWarning" xml:space="preserve">
+    <value>فایل منبع {0}  ذخیره نشد زیرا ماژول{1} نصب نشده است</value>
+  </data>
+  <data name="AdminOnly.Text" xml:space="preserve">
+    <value>تنها مدیران</value>
+  </data>
+  <data name="Public.Text" xml:space="preserve">
+    <value>عمومی</value>
+  </data>
+  <data name="Visibility.Text" xml:space="preserve">
+    <value>قابلیت نمایش:</value>
+  </data>
+  <data name="CreateProfileDefinitions.Error" xml:space="preserve">
+    <value>خطا در تعریف پروفایل ها</value>
+  </data>
+  <data name="CreatePortal.Error" xml:space="preserve">
+    <value>خطا در ایجاد پورتال</value>
+  </data>
+  <data name="CreateAdminUser.Error" xml:space="preserve">
+    <value>خطا در ایجاد کاربر مدیر</value>
+  </data>
+  <data name="DeleteUploadFolder.Error" xml:space="preserve">
+    <value>خطا در حذف پوشه های بارگذاری قبلی </value>
+  </data>
+  <data name="ChildPortal.Error" xml:space="preserve">
+    <value>خطا در پیکربندی پورتال فرزند </value>
+  </data>
+  <data name="PortalTemplate.Error" xml:space="preserve">
+    <value>خطا در خواندن قالب پورتال</value>
+  </data>
+  <data name="AdminTemplate.Error" xml:space="preserve">
+    <value>خطا در تجزیه الگوی مدیر</value>
+  </data>
+  <data name="FilePermission.Error" xml:space="preserve">
+    <value>شما مجوز دسترسی به فایل درخواست شده را ندارید.</value>
+  </data>
+  <data name="ModuleLoadWarning.Error" xml:space="preserve">
+    <value>اخطار در بارگذاری ماژول</value>
+  </data>
+  <data name="ModuleLoadWarning.Text" xml:space="preserve">
+    <value>یکی یا چند ماژول بارگذاری نشده اند. این ممکن است موقتی باشد. لطفا صفحه را بازیابی نمایید (کلید F5 را بفشارید). درصورتی که مشکل همچنان باقی مانده بود لطفا به &lt;a href="mailto:{0}"&gt;مدیر سایت &lt;/a&gt; اطلاع دهید.</value>
+  </data>
+  <data name="FTB_FolderCreated.Text" xml:space="preserve">
+    <value>پوشه {0} به درستی ایجاد شد. </value>
+  </data>
+  <data name="FTB_FolderCreate.Error" xml:space="preserve">
+    <value>خطای نامشخصی در هنگام ایجاد پوشه رخ داده است</value>
+  </data>
+  <data name="FTB_FolderCreate.Permission" xml:space="preserve">
+    <value>شما مجوز ایجاد پوشه را ندارید. </value>
+  </data>
+  <data name="FTB_FolderDeleted.Text" xml:space="preserve">
+    <value>پوشه {0} به درستی حذف شد. </value>
+  </data>
+  <data name="FTB_FolderDelete.Error" xml:space="preserve">
+    <value>درهنگام حذف پوشه خطایی رخ داده است.</value>
+  </data>
+  <data name="FTB_FolderDelete.Permission" xml:space="preserve">
+    <value>شما مجوز حذف پوشه را ندارید.</value>
+  </data>
+  <data name="FTB_ImageDeleted.Text" xml:space="preserve">
+    <value>تصویر {0} به درستی حذف گردید.</value>
+  </data>
+  <data name="FTB_ImageDelete.Error" xml:space="preserve">
+    <value>درهنگام حذف تصویر خطایی رخ داده است.</value>
+  </data>
+  <data name="FTB_ImageDelete.Permission" xml:space="preserve">
+    <value>شما مجوز حذف تصاویر را ندارید.</value>
+  </data>
+  <data name="FTB_ImageUploaded.Text" xml:space="preserve">
+    <value>تصویر {0} با موفقیت بارگذاری شد. </value>
+  </data>
+  <data name="FTB_ImageUpload.Error" xml:space="preserve">
+    <value>درهنگام بارگذاری تصویر خطایی رخ داده است. </value>
+  </data>
+  <data name="FTB_ImageUploadNoFile.Text" xml:space="preserve">
+    <value>هیچ فایلی بارگذاری نشد</value>
+  </data>
+  <data name="FTB_ImageUpload.Permission" xml:space="preserve">
+    <value>شما مجوز بارگذاری تصاویر را ندارید.</value>
+  </data>
+  <data name="LastPortal.Text" xml:space="preserve">
+    <value>شما نمی توانید آخرین پورتال را حذف نمایید</value>
+  </data>
+  <data name="User.Text" xml:space="preserve">
+    <value>نام کاربری:</value>
+  </data>
+  <data name="PageDisabled.Header" xml:space="preserve">
+    <value>غیرفعال شدن صفحه</value>
+  </data>
+  <data name="PageDisabled.Text" xml:space="preserve">
+    <value>این صفحه غیرفعال می باشد و تنها برای کاربران با دسترسی ویرایش صفحه قابل مشاهده است.</value>
+  </data>
+  <data name="InvalidPasswordAnswer.Text" xml:space="preserve">
+    <value>وارد نمودن پاسخ امنیتی الزامی است.</value>
+  </data>
+  <data name="InvalidPasswordQuestion.Text" xml:space="preserve">
+    <value>وارد نمودن سئوال امنیتی الزامی است.</value>
+  </data>
+  <data name="PasswordChanged.Text" xml:space="preserve">
+    <value>رمزعبور مجدد تنظیم شد</value>
+  </data>
+  <data name="PasswordInvalid.Text" xml:space="preserve">
+    <value>شما می بایست رمزعبور معتبری وارد نمایید. درصورتی که الزامات رمزعبور را نمی دانید با مدیرسایت تماس بگیرید.</value>
+  </data>
+  <data name="PasswordMailError.Text" xml:space="preserve">
+    <value>رمزعبور مجدد تنظیم شد ولی در هنگام ارسال ایمیل خطایی رخ داده است</value>
+  </data>
+  <data name="PasswordMissing.Text" xml:space="preserve">
+    <value>شما می بایست رمزعبور فعلی خود را وارد نمایید نه رمز جدید را</value>
+  </data>
+  <data name="PasswordNotDifferent.Text" xml:space="preserve">
+    <value>رمزعبور جدید مشابه رمز پیشین می باشد. لطفا رمزعبور جدیدی وارد نمایید</value>
+  </data>
+  <data name="PasswordResetFailed.Text" xml:space="preserve">
+    <value>درهنگام تغییر رمزعبور خطایی رخ داده است. رمزعبور تغییر پیدا نکرد.</value>
+  </data>
+  <data name="InsecureAdmin.Text" xml:space="preserve">
+    <value>کاربر مدیر شما هنوز از رمزعبورهای شناخته شده و ساده استفاده می نماید. لطفا به بخش مدیریت-&gt;حساب کاربری بروید و رمزعبور را ویرایش نمایید. همچنین مطمئن شوید که آدرس ایمیل معتبری را وارد نموده اید.</value>
+  </data>
+  <data name="InsecureHost.Text" xml:space="preserve">
+    <value>کاربر میزبان (ارشد) شما هنوز از رمزعبورهای شناخته شده و ساده استفاده می نماید. لطفا به بخش میزبان-&gt;حساب کاربری ارشد بروید و رمزعبور را ویرایش نمایید. </value>
+  </data>
+  <data name="InsecureDefaults.Text" xml:space="preserve">
+    <value>هر دو کاربر پیش فرض شما (مدیر و میزبان) هنوز از رمزعبورهای شناخته شده و ساده استفاده می نمایند. لطفا به بخش مربوطه (مدیریت-&gt;حساب کاربری و میزبان-&gt;حساب کاربری) بروید و رمزعبور را ویرایش نمایید. همچنین مطمئن گردید که آدرس ایمیل معتبری را برای آن ها وارد نموده اید.
+</value>
+  </data>
+  <data name="InsecureDefaults.Title" xml:space="preserve">
+    <value>جزییات حساب کاربری ناامن </value>
+  </data>
+  <data name="PrivateMembership.Text" xml:space="preserve">
+    <value>&lt;b&gt;*نکته:&lt;/b&gt; عضویت در این پورتال به صورت خصوصی می باشد. بعد از اینکه اطلاعات خود را یکبار ثبت نمودید به مدیر اطلاع داده می شود و application شما مورد غربالگری قرار می گیرد و درصورت فعال شدن مجوز دسترسی به پورتال را دریافت می نمایید.</value>
+  </data>
+  <data name="PublicMembership.Text" xml:space="preserve">
+    <value>&lt;b&gt;*نکته :&lt;/b&gt; عضویت در این سایت عمومی است. بلافاصله پس از ثبت اطلاعات خود، می توانید  به این پورتال دسترسی داشته باشید.</value>
+  </data>
+  <data name="Register.Text" xml:space="preserve">
+    <value>ثبت نام کاربر</value>
+  </data>
+  <data name="Required.Text" xml:space="preserve">
+    <value>وارد نمودن مقدار برای تمامی فیلدهای تعیین شده الزامی می باشد</value>
+  </data>
+  <data name="VerifiedMembership.Text" xml:space="preserve">
+    <value>&lt;b&gt;*تذکر:&lt;/b&gt; عضویت در این سایت باید تأیید شود. در صورتی که اطلاعات حساب شما تأیید شد ایمیلی حاوی کد معتبرسازی دریافت خواهید نمود.  برای اولین لاگین به سایت ضروری است.</value>
+  </data>
+  <data name="Captcha.Help" xml:space="preserve">
+    <value>کد امنیتی را وارد نمایید</value>
+  </data>
+  <data name="Captcha.Text" xml:space="preserve">
+    <value>کد امنیتی</value>
+  </data>
+  <data name="Password.Text" xml:space="preserve">
+    <value>رمزعبور :</value>
+  </data>
+  <data name="Username.Text" xml:space="preserve">
+    <value>نام کاربری:</value>
+  </data>
+  <data name="CaptchaText.Text" xml:space="preserve">
+    <value>کدی که در زیر نمایش داده شده است را وارد نمایید</value>
+  </data>
+  <data name="InvalidCaptcha.Text" xml:space="preserve">
+    <value>کدامنیتی نادرست است</value>
+  </data>
+  <data name="CaptchaAlt.Text" xml:space="preserve">
+    <value>کد CAPTCHA</value>
+  </data>
+  <data name="PrivateConfirmationMessage.Text" xml:space="preserve">
+    <value>&lt;b&gt;یک ایمیل با جزییات ثبت نام شما برای تایید به مدیریت سایت ارسال شده است.بعد از تایید ثبت نام شما توسط مدیر ایمیلی برای تایید ثبت نام شما به آدرسی که وارد نموده اید :{0} ارسال می گردد.&lt;/b&gt;</value>
+  </data>
+  <data name="DNN_ReadingComponent.Text" xml:space="preserve">
+    <value>خواندن فایل مانیفست کامپوننت </value>
+  </data>
+  <data name="DNN_ReadingPackage.Text" xml:space="preserve">
+    <value>خواندن مانیفست بسته</value>
+  </data>
+  <data name="AUTHENTICATION_LoginSrcMissing.Text" xml:space="preserve">
+    <value>فایل الزامی  LoginControlSrc در  مانیفست وجود ندارد</value>
+  </data>
+  <data name="AUTHENTICATION_ReadSuccess.Text" xml:space="preserve">
+    <value>تاییدات در مانیفس به درستی تجزیه شد </value>
+  </data>
+  <data name="AUTHENTICATION_SettingsSrcMissing.Text" xml:space="preserve">
+    <value>فیلد الزامی SettingsControlSrc در مانیفست وجود ندارد</value>
+  </data>
+  <data name="AUTHENTICATION_TypeMissing.Text" xml:space="preserve">
+    <value>نوع فیلد الزامی در مانیفست وجود ندارد</value>
+  </data>
+  <data name="UNINSTALL_Start.Text" xml:space="preserve">
+    <value>آغاز حذف پکیج</value>
+  </data>
+  <data name="UNINSTALL_Success.Text" xml:space="preserve">
+    <value>حذف پکیج با موفقیت به پایان رسید</value>
+  </data>
+  <data name="AUTHENTICATION_Registered.Text" xml:space="preserve">
+    <value>تاییدات به درستی ثبت شد - {0}</value>
+  </data>
+  <data name="FILE_Deleted.Text" xml:space="preserve">
+    <value>حذف شده - {0}</value>
+  </data>
+  <data name="UNINSTALL_StartComp.Text" xml:space="preserve">
+    <value>آغاز حذف کامپوننت</value>
+  </data>
+  <data name="UNINSTALL_SuccessComp.Text" xml:space="preserve">
+    <value>حذف کامپوننت با موفقیت به پایان رسید</value>
+  </data>
+  <data name="COMPONENT_RollingBack.Text" xml:space="preserve">
+    <value>برگرداندن به حالت اولیه</value>
+  </data>
+  <data name="AUTHENTICATION_UnRegistered.Text" xml:space="preserve">
+    <value> اعتبارات تایید شده با موفقیت حذف شدند - {0}</value>
+  </data>
+  <data name="COMPONENT_Installed.Text" xml:space="preserve">
+    <value>کامپوننت با موفقیت نصب شد</value>
+  </data>
+  <data name="COMPONENT_RolledBack.Text" xml:space="preserve">
+    <value>کامپوننت با موفقیت به حالت اولیه بازگشت.</value>
+  </data>
+  <data name="INSTALL_Committed.Text" xml:space="preserve">
+    <value>نصب به درستی انجام شد</value>
+  </data>
+  <data name="COMPONENT_UnInstalled.Text" xml:space="preserve">
+    <value>کامپوننت با موفقیت حذف شد</value>
+  </data>
+  <data name="ASSEMBLY_Registered.Text" xml:space="preserve">
+    <value>اسمبلی هم اکنون ثبت شد</value>
+  </data>
+  <data name="ASSEMBLY_UnRegistered.Text" xml:space="preserve">
+    <value>اسمبلی ثبت نشده است</value>
+  </data>
+  <data name="INSTALL_Failed.Text" xml:space="preserve">
+    <value>خطا در نصب </value>
+  </data>
+  <data name="FILE_CreateBackup.Text" xml:space="preserve">
+    <value>ایجاد نسخه پشتیبان از قبلی  - {0}</value>
+  </data>
+  <data name="FILE_RestoreBackup.Text" xml:space="preserve">
+    <value>از نسخه های قبلی بازگردانده شد - {0}</value>
+  </data>
+  <data name="ASSEMBLY_Added.Text" xml:space="preserve">
+    <value>اسمبلی ثبت شده</value>
+  </data>
+  <data name="ASSEMBLY_Updated.Text" xml:space="preserve">
+    <value>اسمبلی بروزرسانی شد</value>
+  </data>
+  <data name="FOLDER_DeletedBackup.Text" xml:space="preserve">
+    <value>حذف فایل های موقت نصب</value>
+  </data>
+  <data name="ASSEMBLY_InUse.Text" xml:space="preserve">
+    <value>اسمبلی به وسیله بسته دیگری در حال استفاده است</value>
+  </data>
+  <data name="EXCEPTION_NameMissing.Text" xml:space="preserve">
+    <value>نام آیتم الزامی می باشد </value>
+  </data>
+  <data name="EXCEPTION_TypeMissing.Text" xml:space="preserve">
+    <value>نوع آیتم الزامی است </value>
+  </data>
+  <data name="EXCEPTION_VersionMissing.Text" xml:space="preserve">
+    <value>نسخه آیتم الزامی است</value>
+  </data>
+  <data name="INSTALL_Aborted.Text" xml:space="preserve">
+    <value>قطع شدن نصب بسته</value>
+  </data>
+  <data name="INSTALL_Package.Text" xml:space="preserve">
+    <value>بسته وابسته نصب نشده است</value>
+  </data>
+  <data name="INSTALL_Version.Text" xml:space="preserve">
+    <value>نسخه جدیدتری از این بسته از قبل نصب شده است</value>
+  </data>
+  <data name="INSTALL_Namespace.Text" xml:space="preserve">
+    <value>کامپوننت وابسته نصب نشده است </value>
+  </data>
+  <data name="XMLMERGE_Upgrade.Text" xml:space="preserve">
+    <value>آپگرید شده توسط{1}  نسخه{2} - تاریخ: {3}</value>
+  </data>
+  <data name="CONFIG_Committed.Text" xml:space="preserve">
+    <value>تغییرات فایل پیکربندی ثبت شد</value>
+  </data>
+  <data name="CONFIG_RolledBack.Text" xml:space="preserve">
+    <value>از تغییرات فایل پیکربندی صرفنظر شد.</value>
+  </data>
+  <data name="CONFIG_Updated.Text" xml:space="preserve">
+    <value>فایل پیکربندی بروزرسانی شد</value>
+  </data>
+  <data name="SQL_Committed.Text" xml:space="preserve">
+    <value>اسکریپت SQL اجرا شد</value>
+  </data>
+  <data name="SQL_RolledBack.Text" xml:space="preserve">
+    <value>اسکریپت SQL اجرا نشد</value>
+  </data>
+  <data name="SQL_BeginUnInstall.Text" xml:space="preserve">
+    <value>شروع به حذف SQL مربوط به</value>
+  </data>
+  <data name="SQL_EndUnInstall.Text" xml:space="preserve">
+    <value>اتمام دستورات SQL مربوط به UnInstall</value>
+  </data>
+  <data name="FOLDER_Created.Text" xml:space="preserve">
+    <value>پوشه ایجاد شد - {0}</value>
+  </data>
+  <data name="SECURITY_Installer.Text" xml:space="preserve">
+    <value>شما دسترسی لازم برای نصب این کامپوننت را ندارید</value>
+  </data>
+  <data name="SECURITY_NotRegistered.Text" xml:space="preserve">
+    <value>نوع این پکیج ثبت شده نمی باشد</value>
+  </data>
+  <data name="EXCEPTION_InstallerCreate.Text" xml:space="preserve">
+    <value>خطا در ایجاد فایل نصب کامپوننت </value>
+  </data>
+  <data name="TokenReplaceUnknownProperty.Text" xml:space="preserve">
+    <value>مقدار نامشخص</value>
+  </data>
+  <data name="UserDeleteError.Text" xml:space="preserve">
+    <value>خطا در حذف کاربر</value>
+  </data>
+  <data name="SKIN_BeginProcessing.Text" xml:space="preserve">
+    <value>شروع پردازش</value>
+  </data>
+  <data name="SKIN_EndProcessing.Text" xml:space="preserve">
+    <value>اتمام پردازش</value>
+  </data>
+  <data name="MODULE_ControlKeyMissing.Text" xml:space="preserve">
+    <value>کلید کنترل ماژول وجود ندارد</value>
+  </data>
+  <data name="MODULE_ControlTypeMissing.Text" xml:space="preserve">
+    <value>نوع کنترل ماژول وجود ندارد</value>
+  </data>
+  <data name="MODULE_FriendlyNameMissing.Text" xml:space="preserve">
+    <value>نام کاربرپسند ماژول وجود ندارد</value>
+  </data>
+  <data name="MODULE_ReadSuccess.Text" xml:space="preserve">
+    <value>مانیفست ماژول با موفقیت خوانده شد</value>
+  </data>
+  <data name="MODULE_Registered.Text" xml:space="preserve">
+    <value>ماژول با موفقیت ثبت شد - {0}</value>
+  </data>
+  <data name="MODULE_UnRegistered.Text" xml:space="preserve">
+    <value>ماژول با موفقیت غیرفعال شد - {0}</value>
+  </data>
+  <data name="PACKAGE_NoLicense.Text" xml:space="preserve">
+    <value>گواهینامه مربوط به این بسته در فایل نصب آن وجود ندارد . برای دریافت آن با فروشنده تماس بگیرید. </value>
+  </data>
+  <data name="PACKAGE_NoReleaseNotes.Text" xml:space="preserve">
+    <value>این بسته نکات انتشار را ندارد</value>
+  </data>
+  <data name="FOLDER_Deleted.Text" xml:space="preserve">
+    <value>پوشه حذف شد - {0}</value>
+  </data>
+  <data name="UNINSTALL_Failure.Text" xml:space="preserve">
+    <value>خطا در حذف کامپوننت</value>
+  </data>
+  <data name="WRITER_CreateArchive.Text" xml:space="preserve">
+    <value>ایجاد فایل zip - {0}</value>
+  </data>
+  <data name="WRITER_SavedFile.Text" xml:space="preserve">
+    <value>فایل در آرشیو ذخیره شد. - {0}</value>
+  </data>
+  <data name="WRITER_SaveFileError.Text" xml:space="preserve">
+    <value>خطا در ذخیره سازی فایل در آرشیو - {0}</value>
+  </data>
+  <data name="SKIN_Registered.Text" xml:space="preserve">
+    <value>پکیج پوسته با موفقیت نصب گردید - {0}</value>
+  </data>
+  <data name="SKIN_UnRegistered.Text" xml:space="preserve">
+    <value>پکیج پوسته با موفقیت حذف گردید - {0}</value>
+  </data>
+  <data name="WRITER_AddFileToManifest.Text" xml:space="preserve">
+    <value>فایل افزوده شده به مانیفست- {0}</value>
+  </data>
+  <data name="WRITER_CreatedManifest.Text" xml:space="preserve">
+    <value>مانیفست ایجاد شده</value>
+  </data>
+  <data name="WRITER_CreatedPackage.Text" xml:space="preserve">
+    <value>پکیج ایجاد شده</value>
+  </data>
+  <data name="WRITER_CreatingManifest.Text" xml:space="preserve">
+    <value>ایجاد مانیفست</value>
+  </data>
+  <data name="WRITER_CreatingPackage.Text" xml:space="preserve">
+    <value>ایجاد پکیج</value>
+  </data>
+  <data name="PACKAGE_UnRecognizable.Text" xml:space="preserve">
+    <value>مانیفست بسته غیرقابل تشخیص است</value>
+  </data>
+  <data name="LANGUAGE_Registered.Text" xml:space="preserve">
+    <value>بسته زبانی به درستی ثبت شد - {0}</value>
+  </data>
+  <data name="LANGUAGE_UnRegistered.Text" xml:space="preserve">
+    <value>بسته زبانی به درستی غیرفعال شد- {0}</value>
+  </data>
+  <data name="DisplayEnglish.Text" xml:space="preserve">
+    <value>نمایش نام انگلیسی</value>
+  </data>
+  <data name="DisplayNative.Text" xml:space="preserve">
+    <value>نمایش نام محلی</value>
+  </data>
+  <data name="CLEANUP_ProcessComplete.Text" xml:space="preserve">
+    <value>عملیات پاکسازی فایل ها کامل گردید - {0}</value>
+  </data>
+  <data name="CLEANUP_Processing.Text" xml:space="preserve">
+    <value>عملیات پاکسازی فایل - {0}</value>
+  </data>
+  <data name="LANGUAGE_PortalsEnabled.Text" xml:space="preserve">
+    <value>زبان برای همه پورتال ها فعال شده است - {0}</value>
+  </data>
+  <data name="PermissionTypeGrant.Text" xml:space="preserve">
+    <value>دسترسی ایجاد شد</value>
+  </data>
+  <data name="PermissionTypeDeny.Text" xml:space="preserve">
+    <value>دسترسی محدود شده است</value>
+  </data>
+  <data name="PermissionTypeNull.Text" xml:space="preserve">
+    <value>مشخص نشده</value>
+  </data>
+  <data name="FailedRecipient.Text" xml:space="preserve">
+    <value>پیام به آدرس های روبرو ارسال نشد - {0}</value>
+  </data>
+  <data name="SMTPConfigurationProblem.Text" xml:space="preserve">
+    <value>ایمیلی ارسال نشد. زیرا تنظیمات پیکربندی SMPT در بخش تنظیمات میزبان انجام نشده است</value>
+  </data>
+  <data name="FILE_NotAllowed.Text" xml:space="preserve">
+    <value>پسوند فایل مجاز نیست - {0}</value>
+  </data>
+  <data name="InsufficientFolderPermission.Text" xml:space="preserve">
+    <value>شما دسترسی های لازم برای نوشتن در پوشه را ندارید {0}. لطفا با ارائه دهنده میزبانی سایت خود برای اطمینان از ارائه دسترسی های لازم تماس بگیرید.</value>
+  </data>
+  <data name="UNINSTALL_WarningsComp.Text" xml:space="preserve">
+    <value>حذف کامپوننت با هشدار</value>
+  </data>
+  <data name="UNINSTALL_Warnings.Text" xml:space="preserve">
+    <value>حذف با هشدار</value>
+  </data>
+  <data name="FileInUse.Text" xml:space="preserve">
+    <value>فایل - {0} - احتمالا در حال استفاده است و امکان حذف آن در این زمان وجود ندارد. لطفا چند دقیقه صبر نمایید و مجددا تلاش کنید.</value>
+  </data>
+  <data name="GreenSuccess.Text" xml:space="preserve">
+    <value>موفق</value>
+  </data>
+  <data name="RedError.Text" xml:space="preserve">
+    <value>خطا</value>
+  </data>
+  <data name="YellowWarning.Text" xml:space="preserve">
+    <value>اخطار</value>
+  </data>
+  <data name="SelectedRole.Text" xml:space="preserve">
+    <value>نقش انتخاب شده</value>
+  </data>
+  <data name="jQuery.NotInstalled.Text" xml:space="preserve">
+    <value>jQuery نصب نشده است</value>
+  </data>
+  <data name="jQuery.UnknownVersion.Text" xml:space="preserve">
+    <value>عدم شناسایی نسخه  jQuery </value>
+  </data>
+  <data name="SendMail.Error" xml:space="preserve">
+    <value>در ارسال پیام اطلاع رسانی به این ایمیل خطایی رخ داد  - {0}.  هر چند ایمیل ارسال نشد ولی در هر حال حساب کاربری شما با موفقیت ساخته شد.</value>
+  </data>
+  <data name="TokenReplaceUnknownObject.Text" xml:space="preserve">
+    <value>خطا در دستیابی به [{0}:{1}], {0}یک منبع داده ناشناخته است.</value>
+  </data>
+  <data name="DASHBOARD_KeyMissing.Text" xml:space="preserve">
+    <value>فیلد اجباری KEY در فایل مانیفست وجود ندارد</value>
+  </data>
+  <data name="DASHBOARD_LocalResourcesMissing.Text" xml:space="preserve">
+    <value>فیلد اجباری Required field در فایل مانیفست وجود ندارد </value>
+  </data>
+  <data name="DASHBOARD_ReadSuccess.Text" xml:space="preserve">
+    <value>فایل ماننیفست کنترل داشبورد با موفقیت خوانده شد</value>
+  </data>
+  <data name="DASHBOARD_Registered.Text" xml:space="preserve">
+    <value>کنترل داشبورد با موفقیت ثبت شد</value>
+  </data>
+  <data name="DASHBOARD_SrcMissing.Text" xml:space="preserve">
+    <value>فیلد الزامی Src در فایل مانیفست وجود ندارد </value>
+  </data>
+  <data name="DASHBOARD_UnRegistered.Text" xml:space="preserve">
+    <value>کنترل داشبورد با موفقیت غیرفعال شد</value>
+  </data>
+  <data name="SKIN_Installed.Text" xml:space="preserve">
+    <value>پوسته قبلا با یک نام دیگر نصب شده است</value>
+  </data>
+  <data name="ModuleEffective.Text" xml:space="preserve">
+    <value>قابلیت اجرای ماژول - {0}</value>
+  </data>
+  <data name="ModuleVisibleAdministrator.Text" xml:space="preserve">
+    <value>تنها برای مدیران قابل نمایش است</value>
+  </data>
+  <data name="PortalRoot.Text" xml:space="preserve">
+    <value>ریشه پورتال</value>
+  </data>
+  <data name="False.Text" xml:space="preserve">
+    <value>خیر</value>
+  </data>
+  <data name="True.Text" xml:space="preserve">
+    <value>بله</value>
+  </data>
+  <data name="EXCEPTION_InvalidEmailAddress.Text" xml:space="preserve">
+    <value>آدرس ایمیل ({0}) دارای قالب نامعتبر است</value>
+  </data>
+  <data name="EXCEPTION_ModuleCacheMissing.Text" xml:space="preserve">
+    <value>ModuleCachingProvider احتمالا درست پیکربندی نشده است. لطفا بخش پیکربندی فایل را که در web.config و در ارائه دهنده وجود دارد را بررسی نمایید.</value>
+  </data>
+  <data name="File.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Localization_NotLocalized.Text" xml:space="preserve">
+    <value>بومی نشده</value>
+  </data>
+  <data name="Localization_NotTranslated.Text" xml:space="preserve">
+    <value>ترجمه نشده</value>
+  </data>
+  <data name="Localization_OutOfDate.Text" xml:space="preserve">
+    <value>قدیمی</value>
+  </data>
+  <data name="Localization_Translated.Text" xml:space="preserve">
+    <value>ترجمه شده</value>
+  </data>
+  <data name="DeLocalizeModule.Confirm" xml:space="preserve">
+    <value>آیا از غیربومی نمودن این ماژول مطمئن هستید؟</value>
+  </data>
+  <data name="LocalizeModule.Confirm" xml:space="preserve">
+    <value>آیا از بومی سازی این ماژول مطمئن هستید؟</value>
+  </data>
+  <data name="TranslateModule.Confirm" xml:space="preserve">
+    <value>آیا مطمئن هستید که می خواهید این ماژول به عنوان ترجمه شده مشخص شود؟</value>
+  </data>
+  <data name="UnTranslateModule.Confirm" xml:space="preserve">
+    <value>آیا مطمئن هستید که می خواهید این ماژول به عنوان ترجمه نشده مشخص شود؟</value>
+  </data>
+  <data name="System_Default.Text" xml:space="preserve">
+    <value>پیش فرض سیستم</value>
+  </data>
+  <data name="LanguageNotSelected.Text" xml:space="preserve">
+    <value>شما زبان پیش فرض سایت را انتخاب ننموده اید. زبانی که شما انتخاب نمایید پیش فرض سایت خواهد شد. </value>
+  </data>
+  <data name="DefaultFolderMappings.Error" xml:space="preserve">
+    <value>خطا در ایجاد نوع پوشه پیش فرض</value>
+  </data>
+  <data name="jQuery.UI.UnknownVersion.Text" xml:space="preserve">
+    <value>عدم شناسایی نسخه  jQuery UI</value>
+  </data>
+  <data name="jQueryUI.NotInstalled.Text" xml:space="preserve">
+    <value>jQuery UI نصب نشده است.</value>
+  </data>
+  <data name="Confirm.Text" xml:space="preserve">
+    <value>تایید</value>
+  </data>
+  <data name="RequiredFields.Text" xml:space="preserve">
+    <value>فیلدهای اجباری را نشان می دهد</value>
+  </data>
+  <data name="CollapseAll.Text" xml:space="preserve">
+    <value>بستن همه</value>
+  </data>
+  <data name="ExpandAll.Text" xml:space="preserve">
+    <value>بازنمودن همه </value>
+  </data>
+  <data name="Ok.Text" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="MODULE_InvalidVersion.Text" xml:space="preserve">
+    <value>نسخه {0} معتبر نمی باشد. به لیست نسخه های بروزشده اضافه نشد. </value>
+  </data>
+  <data name="EVENTMESSAGE_CommandMissing.Text" xml:space="preserve">
+    <value>دستورات تکمیل کننده در فایل مانیفست وجود ندارد </value>
+  </data>
+  <data name="EVENTMESSAGE_TypeMissing.Text" xml:space="preserve">
+    <value>نوع فعالیت های تکمیل کننده در فایل مانیفست وجود ندارد </value>
+  </data>
+  <data name="ModuleHelp.Text" xml:space="preserve">
+    <value>راهنمای ماژول </value>
+  </data>
+  <data name="ResourceNotFound.Text" xml:space="preserve">
+    <value>فایل منبعی پیدا نشد</value>
+  </data>
+  <data name="Delete.Text" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="FileAccess.Error" xml:space="preserve">
+    <value>شما مجوزهای دسترسی لازم برای دسترسی به این فایل را ندارید.</value>
+  </data>
+  <data name="MembersOnly.Text" xml:space="preserve">
+    <value>فقط اعضا</value>
+  </data>
+  <data name="Accept.Text" xml:space="preserve">
+    <value>موافقم</value>
+  </data>
+  <data name="AcceptFriend.Text" xml:space="preserve">
+    <value>تایید درخواست دوستی !</value>
+  </data>
+  <data name="DayAgo.Text" xml:space="preserve">
+    <value>{0} روز قبل </value>
+  </data>
+  <data name="DaysAgo.Text" xml:space="preserve">
+    <value>{0} روز قبل </value>
+  </data>
+  <data name="Dismiss.Text" xml:space="preserve">
+    <value>مخفی نمودن پیام</value>
+  </data>
+  <data name="DismissNotification.Text" xml:space="preserve">
+    <value>مخفی نمودن این پیام</value>
+  </data>
+  <data name="DuplicateDisplayName.Text" xml:space="preserve">
+    <value>The Display Name is already in use.</value>
+  </data>
+  <data name="Follow.Text" xml:space="preserve">
+    <value>پیگیری</value>
+  </data>
+  <data name="FollowBack.Text" xml:space="preserve">
+    <value>انصراف از پیگیری</value>
+  </data>
+  <data name="FriendsGroups.Text" xml:space="preserve">
+    <value>دوستان و گروه ها</value>
+  </data>
+  <data name="HourAgo.Text" xml:space="preserve">
+    <value>{0} ساعت قبل </value>
+  </data>
+  <data name="HoursAgo.Text" xml:space="preserve">
+    <value>{0} ساعت قبل </value>
+  </data>
+  <data name="Ignore.Text" xml:space="preserve">
+    <value>نادیده گرفتن</value>
+  </data>
+  <data name="IgnoreFriend.Text" xml:space="preserve">
+    <value>نادیده گرفتن درخواستی دوستی</value>
+  </data>
+  <data name="InvalidDisplayName.Text" xml:space="preserve">
+    <value>نام نمایش معتبر نیست.</value>
+  </data>
+  <data name="MinuteAgo.Text" xml:space="preserve">
+    <value>{0} دقیقه قبل </value>
+  </data>
+  <data name="MinutesAgo.Text" xml:space="preserve">
+    <value>{0} دقیقه قبل </value>
+  </data>
+  <data name="ModuleNotIntended.Text" xml:space="preserve">
+    <value>This module is only intended for use on a page which is defined as the profile page for the portal.</value>
+  </data>
+  <data name="MonthAgo.Text" xml:space="preserve">
+    <value>{0} ماه قبل </value>
+  </data>
+  <data name="MonthsAgo.Text" xml:space="preserve">
+    <value>{0} ماه قبل </value>
+  </data>
+  <data name="OAuthConfigBase_APIKey.Help" xml:space="preserve">
+    <value>Enter the value of the APP ID/API Key/Consumer Key you configured for this authentication provider.</value>
+  </data>
+  <data name="OAuthConfigBase_APIKey.Text" xml:space="preserve">
+    <value>APP ID</value>
+  </data>
+  <data name="OAuthConfigBase_APISecret.Help" xml:space="preserve">
+    <value>Enter the value of the APP Secret/Consumer Secret you configured for this authentication provider.</value>
+  </data>
+  <data name="OAuthConfigBase_APISecret.Text" xml:space="preserve">
+    <value>APP Secret</value>
+  </data>
+  <data name="OAuthConfigBase_Enabled.Help" xml:space="preserve">
+    <value>Check this box to enable this authentication provider for this site</value>
+  </data>
+  <data name="OAuthConfigBase_Enabled.Text" xml:space="preserve">
+    <value>فعال شده</value>
+  </data>
+  <data name="OAuthConfigBase_LoginURL.Help" xml:space="preserve">
+    <value>آدرس صفحه ورود وبسایت خود را تعیین کنید.</value>
+  </data>
+  <data name="OAuthConfigBase_LoginURL.Text" xml:space="preserve">
+    <value>URL ورود به صفحه</value>
+  </data>
+  <data name="OAuthConfigBase_RegisterURL.Help" xml:space="preserve">
+    <value>URL صفحه ثبت نام صفحه خود را وارد کنید.</value>
+  </data>
+  <data name="OAuthConfigBase_RegisterURL.Text" xml:space="preserve">
+    <value> URL صفحه ثبت نام:</value>
+  </data>
+  <data name="SecondsAgo.Text" xml:space="preserve">
+    <value>{0} ثانیه قبل </value>
+  </data>
+  <data name="UnverifiedUser.Text" xml:space="preserve">
+    <value>حساب کاربری شما تائید نشده است. لطفا به ایمیل خود وارد شده و روی لینکی که از طرف ارسال شده کلیک کنید تا حساب تان فعال شود</value>
+  </data>
+  <data name="UserFolderTitle.Text" xml:space="preserve">
+    <value>فایلهای من</value>
+  </data>
+  <data name="WeekAgo.Text" xml:space="preserve">
+    <value>{0} هفته قبل </value>
+  </data>
+  <data name="WeeksAgo.Text" xml:space="preserve">
+    <value>{0} هفته قبل </value>
+  </data>
+  <data name="COMPONENT_Skipped.Text" xml:space="preserve">
+    <value>کامپوننت صرف نظر شد</value>
+  </data>
+  <data name="DeleteSharedModule.Confirm" xml:space="preserve">
+    <value>این ماژول در گروه سایت ها با سایت های دیگر به اشتراک گذاشته شده است. حذف این ماژول، آن را از تمام سایت های دیگر که ماژول در آن ها به اشتراک گذاشته شده حذف خواهد کرد. برای دیدن این که ماژول در کدام سایت ها به اشتراک گذاشته شده: به تنظیمات&gt; تنظیمات ماژول&gt; اضافه شده به صفحات را ملاحظه کنید. آیا مطمئن هستید که می خواهید این ماژول را تمام صفحات حذف نمایید؟ </value>
+  </data>
+  <data name="CopyPermissionsToChildren.Text" xml:space="preserve">
+    <value>مجوزهای دسترسی برای نمایش و یا ویرایش را مشخص نمایید. ماژول می تواند سطح دسترسی های خود را از صفحه به ارث ببرد. برای انجام این کار تیک مربوط به گزینه به ارث بری تنظیمات سطح دسترسی را تیک بزنید</value>
+  </data>
+</root>

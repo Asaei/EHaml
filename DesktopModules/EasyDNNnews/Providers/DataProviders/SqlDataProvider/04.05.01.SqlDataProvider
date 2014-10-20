@@ -1,0 +1,218 @@
+﻿/****** Object:  StoredProcedure [dbo].[EasyDNNnewsGroupsAndAuthors]    Script Date: 05/15/2012 15:45:42 ******/
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNnewsGroupsAndAuthors]') AND type in (N'P', N'PC'))
+BEGIN
+drop procedure [dbo].[EasyDNNnewsGroupsAndAuthors]
+END
+GO
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE [dbo].[EasyDNNnewsGroupsAndAuthors]
+	@PortalID int,
+	@ModuleID int,
+	@NotInGroupPosition bit, -- 0 gore, 1 dolje
+	@DisplayAll bit = 1
+AS 
+	DECLARE @i Int, @MaxI Int, @GroupID Int;
+    DECLARE @TableGroups Table ([PortalID] int
+      ,[GroupID] int
+      ,[GroupName] nvarchar(250)
+      ,[GroupInfo] nvarchar(4000)
+      ,[GroupImage] nvarchar(1000)
+      ,[FacebookURL] nvarchar(1000)
+      ,[TwitterURL] nvarchar(1000)
+      ,[GooglePlusURL] nvarchar(1000)
+      ,[LinkedInURL] nvarchar(1000)
+      ,[Parent] int
+      ,[Level] int
+      ,[Position] int
+      ,[MyRowCount] Int Identity(1,1))
+    DECLARE @resultTable Table ([UserID] int null
+      ,[Username] nvarchar(100) null
+      ,[FirstName] nvarchar(50) null
+      ,[LastName] nvarchar(50) null
+      ,[Email] nvarchar(256) null
+      ,[DisplayName] nvarchar(128) null
+	  ,[AuthorProfileID] int null
+      ,[ShortInfo] nvarchar(350) null
+      ,[ProfileImage] nvarchar(1000) null
+      ,[FacebookURL] nvarchar(1000) null
+      ,[TwitterURL] nvarchar(1000) null
+      ,[GooglePlusURL] nvarchar(1000) null
+      ,[LinkedInURL] nvarchar(1000) null
+      ,[DateAdded] datetime null
+      ,[Active] bit null
+      ,[ArticleCount] int null
+      ,[GroupID] int null
+      ,[GroupName] nvarchar(250) null
+      ,[GroupInfo] nvarchar(4000) null
+      ,[GroupImage] nvarchar(1000) null
+      ,[GFacebookURL] nvarchar(1000) null
+      ,[GTwitterURL] nvarchar(1000) null
+      ,[GGooglePlusURL] nvarchar(1000) null
+      ,[GLinkedInURL] nvarchar(1000) null
+      ,[Parent] int null
+      ,[Level] int null
+      ,[Position] int null)
+      
+  SET NOCOUNT ON
+  IF @NotInGroupPosition = 0
+  BEGIN
+	IF @DisplayAll = 1
+	  BEGIN
+		  Insert into @resultTable SELECT u.[UserID]
+			  ,u.[Username]
+			  ,u.[FirstName]
+			  ,u.[LastName]
+			  ,u.[Email]
+			  ,u.[DisplayName]
+			  ,ap.[AuthorProfileID]
+			  ,ap.[ShortInfo]
+			  ,ap.[ProfileImage]
+			  ,ap.[FacebookURL]
+			  ,ap.[TwitterURL]
+			  ,ap.[GooglePlusURL]
+			  ,ap.[LinkedInURL]
+			  ,ap.[DateAdded]
+			  ,ap.[Active]
+			  ,ap.[ArticleCount]
+			  ,null,null,null,null,null,null,null,null,null,null,null
+		  FROM {databaseOwner}{objectQualifier}Users AS u INNER JOIN [dbo].[EasyDNNNewsAuthorProfile] AS ap ON u.UserID = ap.UserID WHERE ap.PortalID = @PortalID AND ap.AuthorProfileID NOT IN (SELECT AuthorProfileID FROM [dbo].[EasyDNNNewsAutorGroupItems]) ORDER BY Username
+	  END
+	ELSE
+	  BEGIN
+	    Insert into @resultTable SELECT u.[UserID]
+			  ,u.[Username]
+			  ,u.[FirstName]
+			  ,u.[LastName]
+			  ,u.[Email]
+			  ,u.[DisplayName]
+			  ,ap.[AuthorProfileID]
+			  ,ap.[ShortInfo]
+			  ,ap.[ProfileImage]
+			  ,ap.[FacebookURL]
+			  ,ap.[TwitterURL]
+			  ,ap.[GooglePlusURL]
+			  ,ap.[LinkedInURL]
+			  ,ap.[DateAdded]
+			  ,ap.[Active]
+			  ,ap.[ArticleCount]
+			  ,null,null,null,null,null,null,null,null,null,null,null
+		  FROM {databaseOwner}{objectQualifier}Users AS u INNER JOIN [dbo].[EasyDNNNewsAuthorProfile] AS ap ON u.UserID = ap.UserID INNER JOIN [dbo].[EasyDNNNewsModuleAuthorsItems] as mai ON mai.UserID = ap.UserID WHERE ap.PortalID = @PortalID AND ap.AuthorProfileID NOT IN (SELECT AuthorProfileID FROM [dbo].[EasyDNNNewsAutorGroupItems]) ORDER BY Username
+	  END
+  END
+  IF @DisplayAll = 1
+  BEGIN
+  Insert into @TableGroups SELECT DISTINCT [PortalID]
+      ,nag.[GroupID]
+      ,[GroupName]
+      ,[GroupInfo]
+      ,[GroupImage]
+      ,[FacebookURL]
+      ,[TwitterURL]
+      ,[GooglePlusURL]
+      ,[LinkedInURL]
+      ,[Parent]
+      ,[Level]
+      ,[Position]
+  FROM [dbo].[EasyDNNNewsAuthorGroups] AS nag INNER JOIN [dbo].[EasyDNNNewsAutorGroupItems] AS agi ON agi.GroupID = nag.GroupID WHERE nag.PortalID = @PortalID ORDER BY Position;
+  END
+  ELSE
+  BEGIN
+    Insert into @TableGroups SELECT DISTINCT [PortalID]
+      ,nag.[GroupID]
+      ,[GroupName]
+      ,[GroupInfo]
+      ,[GroupImage]
+      ,[FacebookURL]
+      ,[TwitterURL]
+      ,[GooglePlusURL]
+      ,[LinkedInURL]
+      ,[Parent]
+      ,[Level]
+      ,[Position]
+  FROM [dbo].[EasyDNNNewsAuthorGroups] AS nag INNER JOIN [dbo].[EasyDNNNewsAutorGroupItems] AS agi ON agi.GroupID = nag.GroupID INNER JOIN [dbo].[EasyDNNNewsModuleGroupItems] AS mgi ON nag.GroupID = mgi.GroupID WHERE mgi.ModuleID = @ModuleID AND nag.PortalID = @PortalID ORDER BY Position;
+  END
+  SELECT @MaxI = @@RowCount;
+  SELECT @i = 1;
+    While @i <= @MaxI
+Begin
+Select @GroupID = GroupID from @TableGroups Where MyRowCount = @i
+Insert into @resultTable SELECT
+       null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+      ,[GroupID]
+      ,[GroupName]
+      ,[GroupInfo]
+      ,[GroupImage]
+      ,[FacebookURL]
+      ,[TwitterURL]
+      ,[GooglePlusURL]
+      ,[LinkedInURL]
+      ,[Parent]
+      ,[Level]
+      ,[Position]
+      from @TableGroups WHERE MyRowCount = @i
+Insert into @resultTable SELECT u.[UserID]
+      ,u.[Username]
+      ,u.[FirstName]
+      ,u.[LastName]
+      ,u.[Email]
+      ,u.[DisplayName]
+	  ,ap.[AuthorProfileID]
+      ,ap.[ShortInfo]
+      ,ap.[ProfileImage]
+      ,ap.[FacebookURL]
+      ,ap.[TwitterURL]
+      ,ap.[GooglePlusURL]
+      ,ap.[LinkedInURL]
+      ,ap.[DateAdded]
+      ,ap.[Active]
+      ,ap.[ArticleCount]
+      ,null,null,null,null,null,null,null,null,null,null,null
+  FROM {databaseOwner}{objectQualifier}Users AS u INNER JOIN [dbo].[EasyDNNNewsAuthorProfile] AS ap ON u.UserID = ap.UserID INNER JOIN [dbo].[EasyDNNNewsAutorGroupItems] AS agi ON agi.AuthorProfileID = ap.AuthorProfileID WHERE agi.GroupID = @GroupID
+Select
+ @i = @i + 1;
+End
+  IF @NotInGroupPosition = 1
+   BEGIN
+	IF @DisplayAll = 1
+	  BEGIN
+		  Insert into @resultTable SELECT u.[UserID]
+			  ,u.[Username]
+			  ,u.[FirstName]
+			  ,u.[LastName]
+			  ,u.[Email]
+			  ,u.[DisplayName]
+			  ,ap.[AuthorProfileID]
+			  ,ap.[ShortInfo]
+			  ,ap.[ProfileImage]
+			  ,ap.[FacebookURL]
+			  ,ap.[TwitterURL]
+			  ,ap.[GooglePlusURL]
+			  ,ap.[LinkedInURL]
+			  ,ap.[DateAdded]
+			  ,ap.[Active]
+			  ,ap.[ArticleCount]
+			  ,null,null,null,null,null,null,null,null,null,null,null
+		  FROM {databaseOwner}{objectQualifier}Users AS u INNER JOIN [dbo].[EasyDNNNewsAuthorProfile] AS ap ON u.UserID = ap.UserID WHERE ap.PortalID = @PortalID AND ap.AuthorProfileID NOT IN (SELECT AuthorProfileID FROM [dbo].[EasyDNNNewsAutorGroupItems]) ORDER BY Username
+	  END
+	ELSE
+	  BEGIN
+	    Insert into @resultTable SELECT u.[UserID]
+			  ,u.[Username]
+			  ,u.[FirstName]
+			  ,u.[LastName]
+			  ,u.[Email]
+			  ,u.[DisplayName]
+			  ,ap.[AuthorProfileID]
+			  ,ap.[ShortInfo]
+			  ,ap.[ProfileImage]
+			  ,ap.[FacebookURL]
+			  ,ap.[TwitterURL]
+			  ,ap.[GooglePlusURL]
+			  ,ap.[LinkedInURL]
+			  ,ap.[DateAdded]
+			  ,ap.[Active]
+			  ,ap.[ArticleCount]
+			  ,null,null,null,null,null,null,null,null,null,null,null
+		  FROM {databaseOwner}{objectQualifier}Users AS u INNER JOIN [dbo].[EasyDNNNewsAuthorProfile] AS ap ON u.UserID = ap.UserID INNER JOIN [dbo].[EasyDNNNewsModuleAuthorsItems] as mai ON mai.UserID = ap.UserID WHERE ap.PortalID = @PortalID AND ap.AuthorProfileID NOT IN (SELECT AuthorProfileID FROM [dbo].[EasyDNNNewsAutorGroupItems]) ORDER BY Username
+	  END
+  END
+    SELECT * FROM @resultTable;' 

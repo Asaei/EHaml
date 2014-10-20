@@ -1,0 +1,143 @@
+﻿
+<style type="text/css" media="screen">
+
+.ls-layer,
+.ls-layer * {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	white-space: nowrap;
+}
+            
+</style>
+
+<!--LayerSlider begin-->
+<div id="LayerSlider${ModuleID}" style="width: ${xf.ViewXmlSetting("width","700px")}; height: ${xf.ViewXmlSetting("height",330)}px;">
+#if($DataList.Count > 0) 
+    #foreach($DataItem in $DataList)	
+	    <!--LayerSlider layer-->
+	    <div class="ls-layer" style=" slidedelay: ${xf.ViewItemSetting($DataItem,"b_slideDelay",2000)}; durationin: ${xf.ViewItemSetting($DataItem,"b_durationIn",1500)}; durationout: ${xf.ViewItemSetting($DataItem,"b_durationOut",1500)}; easingin: ${xf.ViewItemSetting($DataItem,"b_easingIn","easeInOutQuint")}; easingout: ${xf.ViewItemSetting($DataItem,"b_easingOut","easeInOutQuint")}; delayin: ${xf.ViewItemSetting($DataItem,"b_delayIn",0)}; delayout: ${xf.ViewItemSetting($DataItem,"b_delayOut",0)}; 
+           transition2d: ${xf.ViewItemSetting($DataItem,"b_transition2d","1,2,3,4,5,6,7,8,9,10")}; 
+           #if(${xf.ViewItemSetting($DataItem,"b_transition","3d")} == "3d")
+             transition3d: ${xf.ViewItemSetting($DataItem,"b_transition3d","1,2,3,4,5,6,7,8,9,10")};
+           #end
+           timeshift:${xf.ViewItemSetting($DataItem,"b_timeshift",0)};">
+		    <!--LayerSlider background-->
+            #if($DataItem.Picture!= "")
+                <img src="${xf.ViewLinkUrl($DataItem.Picture)}" class="ls-tn">
+		        <img class="ls-bg" src="${xf.ViewLinkUrl($DataItem.Picture)}" alt="$DataItem.Title">
+            #end
+ 
+            <!--Cycle Print this entry-->
+            #if($ItemList.Count > 0) 
+                 #foreach($ItemX in $ItemList)	
+                    #if($ItemX.ContentID == $DataItem.ID)
+                        #if($ItemX.ItemType ==1 )
+                            <!--Print picture elements-->
+                            #if(${xf.ViewItemSetting($ItemX,"Element_LinkEnable",false)} ==true)
+                                <a  class="ls-s${xf.ViewItemSetting($ItemX,"Element_Speed",3)} ${xf.ViewItemSetting($ItemX,"Element_CssClass","")}" title="$ItemX.Title" href="${xf.ViewItemSettingToUrl($ItemX,"Element_LinkUrl")}"
+                                 #if(${xf.ViewItemSetting($ItemX,"Element_LinkOpen",false)} ==true)
+                                    target="_blank" 
+                                 #end
+                                 style="position: absolute;top: ${xf.ViewItemSetting($ItemX,"Element_top",50)}px; left: ${xf.ViewItemSetting($ItemX,"Element_left",500)}px; slidedirection : ${xf.ViewItemSetting($ItemX,"Element_slidedirection","left")}; slideoutdirection : ${xf.ViewItemSetting($ItemX,"Element_slideoutdirection","left")}; durationin : ${xf.ViewItemSetting($ItemX,"Element_durationin",2000)}; durationout : ${xf.ViewItemSetting($ItemX,"Element_durationout",3000)}; easingin : ${xf.ViewItemSetting($ItemX,"Element_easingIn","easeOutCirc")}; easingout : ${xf.ViewItemSetting($ItemX,"Element_easingOut","easeInOutExpo")}; delayin : ${xf.ViewItemSetting($ItemX,"Element_delayin",500)};delayout : ${xf.ViewItemSetting($ItemX,"Element_delayOut",0)}; showuntil : ${xf.ViewItemSetting($ItemX,"Element_showuntil",1500)};
+                                 #if(${xf.ViewItemSetting($ItemX,"Element_RotateEnable","false")} =="true")
+                                   rotatein:${xf.ViewItemSetting($ItemX,"Element_Rotatein",-35)};rotateout:${xf.ViewItemSetting($ItemX,"Element_Rotateout",35)};
+                                 #end
+                                 #if(${xf.ViewItemSetting($ItemX,"Element_ScaleEnable","false")} =="true")
+                                    scalein:${xf.ViewItemSetting($ItemX,"Element_Scalein","0.5")};scaleout:${xf.ViewItemSetting($ItemX,"Element_Scaleout","0.5")};
+                                 #end
+                                 ${xf.ViewItemSetting($ItemX,"Element_style","")}"><img title="$ItemX.Title" alt="$ItemX.Title" src="${xf.ViewPicture($ItemX)}" /></a>
+                            #else
+                                <img class="ls-s${xf.ViewItemSetting($ItemX,"Element_Speed",3)} ${xf.ViewItemSetting($ItemX,"Element_CssClass","")}" title="$ItemX.Title" alt="$ItemX.Title" src="${xf.ViewPicture($ItemX)}" style="position: absolute;top: ${xf.ViewItemSetting($ItemX,"Element_top",50)}px; left: ${xf.ViewItemSetting($ItemX,"Element_left",500)}px; slidedirection : ${xf.ViewItemSetting($ItemX,"Element_slidedirection","left")}; slideoutdirection : ${xf.ViewItemSetting($ItemX,"Element_slideoutdirection","left")}; durationin : ${xf.ViewItemSetting($ItemX,"Element_durationin",2000)}; durationout : ${xf.ViewItemSetting($ItemX,"Element_durationout",3000)}; easingin : ${xf.ViewItemSetting($ItemX,"Element_easingIn","easeOutCirc")}; easingout : ${xf.ViewItemSetting($ItemX,"Element_easingOut","easeInOutExpo")}; delayin : ${xf.ViewItemSetting($ItemX,"Element_delayin",500)};delayout : ${xf.ViewItemSetting($ItemX,"Element_delayOut",0)}; showuntil : ${xf.ViewItemSetting($ItemX,"Element_showuntil",1500)};
+                                 #if(${xf.ViewItemSetting($ItemX,"Element_RotateEnable","false")} =="true")
+                                   rotatein:${xf.ViewItemSetting($ItemX,"Element_Rotatein",-35)};rotateout:${xf.ViewItemSetting($ItemX,"Element_Rotateout",35)};
+                                 #end
+                                 #if(${xf.ViewItemSetting($ItemX,"Element_ScaleEnable","false")} =="true")
+                                    scalein:${xf.ViewItemSetting($ItemX,"Element_Scalein","0.5")};scaleout:${xf.ViewItemSetting($ItemX,"Element_Scaleout","0.5")};
+                                 #end
+                                ${xf.ViewItemSetting($ItemX,"Element_style","")}"/>
+                            #end
+                        #end
+                       
+                        #if($ItemX.ItemType ==2 )
+                            <!--Print text elements-->
+                            <${xf.ViewItemSetting($ItemX,"Element_tag","h1")} class="ls-s${xf.ViewItemSetting($ItemX,"Element_Speed",3)} ${xf.ViewItemSetting($ItemX,"Element_CssClass","")}" style="position: absolute;top:${xf.ViewItemSetting($ItemX,"Element_top",50)}px; left: ${xf.ViewItemSetting($ItemX,"Element_left",80)}px;slidedirection : ${xf.ViewItemSetting($ItemX,"Element_slidedirection","left")}; slideoutdirection : ${xf.ViewItemSetting($ItemX,"Element_slideoutdirection","left")}; durationin : ${xf.ViewItemSetting($ItemX,"Element_durationin",2000)}; durationout : ${xf.ViewItemSetting($ItemX,"Element_durationout",2000)}; easingin : ${xf.ViewItemSetting($ItemX,"Element_easingIn","easeOutCirc")}; easingout : ${xf.ViewItemSetting($ItemX,"Element_easingOut","easeInOutExpo")}; delayin : ${xf.ViewItemSetting($ItemX,"Element_delayin",500)};delayout : ${xf.ViewItemSetting($ItemX,"Element_delayOut",0)}; showuntil : ${xf.ViewItemSetting($ItemX,"Element_showuntil",1500)};
+                             #if(${xf.ViewItemSetting($ItemX,"Element_RotateEnable","false")} =="true")
+                                rotatein:${xf.ViewItemSetting($ItemX,"Element_Rotatein",-35)};rotateout:${xf.ViewItemSetting($ItemX,"Element_Rotateout",35)};
+                            #end
+                            #if(${xf.ViewItemSetting($ItemX,"Element_ScaleEnable","false")} =="true")
+                                scalein:${xf.ViewItemSetting($ItemX,"Element_Scalein","0.5")};scaleout:${xf.ViewItemSetting($ItemX,"Element_Scaleout","0.5")};
+                            #end
+                             ${xf.ViewItemSetting($ItemX,"Element_style","")}">
+                                #if(${xf.ViewItemSetting($ItemX,"Element_LinkEnable",false)} ==true)
+                                    <a href="${xf.ViewItemSettingToUrl($ItemX,"Element_LinkUrl")}"  title="$ItemX.Title"
+                                      #if(${xf.ViewItemSetting($ItemX,"Element_LinkOpen",false)} ==true)
+                                        target="_blank" 
+                                      #end
+                                    >$ItemX.Title</a>
+                                #else
+                                    $ItemX.Title
+                                #end
+                            </${xf.ViewItemSetting($ItemX,"Element_tag","h1")}>
+                        #end
+
+
+                        #if($ItemX.ItemType ==3 )
+                            <!--Print video elements-->
+                            <div title="$ItemX.Title" class="ls-s${xf.ViewItemSetting($ItemX,"Element_Speed",3)} ${xf.ViewItemSetting($ItemX,"Element_CssClass","")}" style="position: absolute;top: ${xf.ViewItemSetting($ItemX,"Element_top",50)}px; left: ${xf.ViewItemSetting($ItemX,"Element_left",50)}px; durationin : ${xf.ViewItemSetting($ItemX,"Element_durationin",1500)}; durationout : ${xf.ViewItemSetting($ItemX,"Element_durationout",1500)}; easingin : ${xf.ViewItemSetting($ItemX,"Element_easingIn","easeInOutQuint")}; easingout : ${xf.ViewItemSetting($ItemX,"Element_easingOut","easeInOutQuint")}; delayin : ${xf.ViewItemSetting($ItemX,"Element_delayin",0)};delayout : ${xf.ViewItemSetting($ItemX,"Element_delayOut",0)};   ${xf.ViewItemSetting($ItemX,"Element_style","")}">
+                                <iframe src="${xf.ViewItemSetting($ItemX,"Element_Video_Url","")}" width="${xf.ViewItemSetting($ItemX,"Element_Video_width",400)}" height="${xf.ViewItemSetting($ItemX,"Element_Video_height",250)}" frameborder="0" ${xf.ViewItemSetting($ItemX,"Element_FullScreen","webkitAllowFullScreen,mozallowfullscreen,allowFullScreen").Replace(","," ")}></iframe>
+                            </div>
+                        #end
+
+                    #end
+                    
+                 #end
+            #end
+ 
+        </div>
+    #end
+#end
+</div>
+<!--LayerSlider end-->
+
+
+#if($DataList.Count > 0) 
+<script type="text/javascript" charset="utf-8">
+    jQuery(document).ready(function ($) {
+        $("#LayerSlider${ModuleID}").layerSlider({
+            skinsPath: '${Module.ModulePath}Effects/$EffectName/Themes/',
+            skin: '$ThemeName' ,
+
+            // User settings (can be modified)
+            autoStart: ${xf.ViewXmlSetting("autoStart","true")}, 				// If true, slideshow will automatically start after loading the page.
+            autoPlayVideos: ${xf.ViewXmlSetting("autoPlayVideos","true")}, 		// If you set it true, videos will begin to play immediately when the layer slides in. 
+            autoPauseSlideshow: ${xf.ViewXmlSetting("autoPauseSlideshow","true")},// If a slideshow is running and autoPlayVideos is set to true, the slideshow can be auto-paused while videos are playing. Just set autoPauseSlideshow to true or 'auto' and the slideshow will stop. Of course in 'auto' mode it will continue after the video has played. 
+            twoWaySlideshow: ${xf.ViewXmlSetting("twoWaySlideshow","true")}, 	// If true, slideshow will go backwards if you click the prev button.
+            keybNav: ${xf.ViewXmlSetting("keybNav","true")}, 					// Keyboard navigation. You can navigate with the left and right arrow keys.
+            imgPreload: ${xf.ViewXmlSetting("imgPreload","true")}, 				// Image preload. Preloads all images and background-images of the next layer.
+            navPrevNext: ${xf.ViewXmlSetting("navPrevNext","true")}, 			// If false, Prev and Next buttons will be invisible.
+            navStartStop: ${xf.ViewXmlSetting("navStartStop","true")}, 			// If false, Start and Stop buttons will be invisible.
+            navButtons: ${xf.ViewXmlSetting("navButtons","true")}, 				// If false, slide buttons will be invisible.
+            pauseOnHover: ${xf.ViewXmlSetting("pauseOnHover","false")}, 			// SlideShow will pause when mouse pointer is over LayerSlider.
+            animateFirstLayer: ${xf.ViewXmlSetting("animateFirstLayer","true")},// If true, first layer will animate (slide in) instead of fading
+            touchNav: ${xf.ViewXmlSetting("touchNav","true")}, 					// Touch-control (on mobile devices)
+            forceLoopNum: ${xf.ViewXmlSetting("forceLoopNum","true")}, 			// If true, the slider will always stop at the given number of loops even if the user restarts the slideshow
+            responsive: ${xf.ViewXmlSetting("responsive","true")}, 			    // Responsive mode with smart-resizing feature
+            randomSlideshow: ${xf.ViewXmlSetting("randomSlideshow","false")}, 	// If true, LayerSlider will change to a random layer instead of changing to the next / prev layer. Note that 'loops' feature won't work with randomSlideshow!
+            hoverPrevNext: ${xf.ViewXmlSetting("hoverPrevNext","true")}, 		// If true, the prev and next buttons will be shown only if you move your mouse over the slider.
+            hoverBottomNav: ${xf.ViewXmlSetting("hoverBottomNav","false")}, 	// If true, the bottom navigation controls (with also thumbnails) will be shown only if you move your mouse over the slider.
+            responsiveUnder: ${xf.ViewXmlSetting("responsiveUnder",0)}, 					// You can force the slider to change automatically into responsive mode but only if the slider width is smaller than responsiveUnder pixels. It can be used if you need a full-width slider with fixed height but you also need it to be responsive if the browser is smaller... Important! If you enter a value higher than 0, the normal responsive mode will be switched off automatically!
+            sublayerContainer: ${xf.ViewXmlSetting("sublayerContainer",0)}, 					// This feature is needed if you are using a full-width slider and you need that your sublayers forced to positioning inside a centered custom width container. Just specify the width of this container in pixels! Note, that this feature is working only with pixel-positioned sublayers, but of course if you add left: 50% position to a sublayer it will be positioned horizontally to the center, as before!
+            firstLayer: ${xf.ViewXmlSetting("firstLayer",1)}, 					// LayerSlider will begin with this layer. Use the word 'random' to start with a random layer.
+            loops: ${xf.ViewXmlSetting("loops",0)}, 					// Number of loops if autoStart set true (0 means infinite!)
+            thumbnailNavigation: '${xf.ViewXmlSetting("imgNavigation","hover")}', 				// Thumbnail navigation mode. Can be 'disabled', 'hover', 'always'. Note, that 'hover' setting needs navButtons true!
+            tnWidth: ${xf.ViewXmlSetting("tnWidth",100)}, 					// Width of the thumbnails (in pixels).
+            tnHeight: ${xf.ViewXmlSetting("tnHeight",60)}, 					// Height of the thumbnails (in pixels).
+            tnContainerWidth: '${xf.ViewXmlSetting("tnCWidth","300")}', 				// Default width of the thumbnail container.
+            tnActiveOpacity: ${xf.ViewXmlSetting("tnActiveOpacity",65)}, 					// Opacity of the active thumbnail (0-100).
+            tnInactiveOpacity: ${xf.ViewXmlSetting("tnInactiveOpacity",100)}
+        });
+    });
+ 
+</script>
+#end
+ 

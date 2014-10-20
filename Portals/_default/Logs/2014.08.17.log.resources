@@ -1,0 +1,204 @@
+2014-08-17 07:36:52,098 [srv20079][Thread:17][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at MyDnn_EHaml.Util.UpdatePoorsantTable(NameValueCollection poorsantNameBValue, DataClassesDataContext context)
+   at MyDnn_EHaml.Util.UpdateSettings(String KendoTheme, String FontLabel, String LabelFontSize, Color LabelFontColor, String TextBoxFontSize, Color TextBoxFontColor, Color TextBoxBackgroundColor, String TextBoxWidth, String TextBoxHeight, String NahveyeBarkhordBaBedehkarha, String NahveyeBarkhordBaBedehkarhaValue, String TedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji, String TedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji, NameValueCollection poorsantNameBValue, String ShomareTerminal, String ShomarePazirande, String KelideEkhtesasi, String AddressePazgashtAzBank, String txtOnvanePishnahad, String txtMatnePishnahad, String txtOnvaneTaeidPishnahad, String txtMatneTaeidPishnahad, String txtOnvaneEMailLinkeTaeed, String txtMatneEMailLinkeTaeed, String txtMatnePishnahadSMS, String txtMatneTaeidPishnahadSMS)
+   at MyDnn_EHaml.MyDnn_EHaml_Settings.Settings.lnkUpdate_Click(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-08-17 07:36:52,219 [srv20079][Thread:17][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=1145&error=An unexpected error has occurred&content=0
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at MyDnn_EHaml.Util.UpdatePoorsantTable(NameValueCollection poorsantNameBValue, DataClassesDataContext context)
+   at MyDnn_EHaml.Util.UpdateSettings(String KendoTheme, String FontLabel, String LabelFontSize, Color LabelFontColor, String TextBoxFontSize, Color TextBoxFontColor, Color TextBoxBackgroundColor, String TextBoxWidth, String TextBoxHeight, String NahveyeBarkhordBaBedehkarha, String NahveyeBarkhordBaBedehkarhaValue, String TedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji, String TedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji, NameValueCollection poorsantNameBValue, String ShomareTerminal, String ShomarePazirande, String KelideEkhtesasi, String AddressePazgashtAzBank, String txtOnvanePishnahad, String txtMatnePishnahad, String txtOnvaneTaeidPishnahad, String txtMatneTaeidPishnahad, String txtOnvaneEMailLinkeTaeed, String txtMatneEMailLinkeTaeed, String txtMatnePishnahadSMS, String txtMatneTaeidPishnahadSMS)
+   at MyDnn_EHaml.MyDnn_EHaml_Settings.Settings.lnkUpdate_Click(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-08-17 07:58:42,239 [srv20079][Thread:40][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at MyDnn_EHaml.Util.UpdatePoorsantTable(NameValueCollection poorsantNameBValue, DataClassesDataContext context)
+   at MyDnn_EHaml.Util.UpdateSettings(String KendoTheme, String FontLabel, String LabelFontSize, Color LabelFontColor, String TextBoxFontSize, Color TextBoxFontColor, Color TextBoxBackgroundColor, String TextBoxWidth, String TextBoxHeight, String NahveyeBarkhordBaBedehkarha, String NahveyeBarkhordBaBedehkarhaValue, String TedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji, String TedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji, NameValueCollection poorsantNameBValue, String ShomareTerminal, String ShomarePazirande, String KelideEkhtesasi, String AddressePazgashtAzBank, String txtOnvanePishnahad, String txtMatnePishnahad, String txtOnvaneTaeidPishnahad, String txtMatneTaeidPishnahad, String txtOnvaneEMailLinkeTaeed, String txtMatneEMailLinkeTaeed, String txtMatnePishnahadSMS, String txtMatneTaeidPishnahadSMS)
+   at MyDnn_EHaml.MyDnn_EHaml_Settings.Settings.lnkUpdate_Click(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-08-17 07:58:42,360 [srv20079][Thread:40][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=1145&error=An unexpected error has occurred&content=0
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at MyDnn_EHaml.Util.UpdatePoorsantTable(NameValueCollection poorsantNameBValue, DataClassesDataContext context)
+   at MyDnn_EHaml.Util.UpdateSettings(String KendoTheme, String FontLabel, String LabelFontSize, Color LabelFontColor, String TextBoxFontSize, Color TextBoxFontColor, Color TextBoxBackgroundColor, String TextBoxWidth, String TextBoxHeight, String NahveyeBarkhordBaBedehkarha, String NahveyeBarkhordBaBedehkarhaValue, String TedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji, String TedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji, NameValueCollection poorsantNameBValue, String ShomareTerminal, String ShomarePazirande, String KelideEkhtesasi, String AddressePazgashtAzBank, String txtOnvanePishnahad, String txtMatnePishnahad, String txtOnvaneTaeidPishnahad, String txtMatneTaeidPishnahad, String txtOnvaneEMailLinkeTaeed, String txtMatneEMailLinkeTaeed, String txtMatnePishnahadSMS, String txtMatneTaeidPishnahadSMS)
+   at MyDnn_EHaml.MyDnn_EHaml_Settings.Settings.lnkUpdate_Click(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-08-17 07:59:38,627 [srv20079][Thread:9][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at MyDnn_EHaml.Util.UpdatePoorsantTable(NameValueCollection poorsantNameBValue, DataClassesDataContext context)
+   at MyDnn_EHaml.Util.UpdateSettings(String KendoTheme, String FontLabel, String LabelFontSize, Color LabelFontColor, String TextBoxFontSize, Color TextBoxFontColor, Color TextBoxBackgroundColor, String TextBoxWidth, String TextBoxHeight, String NahveyeBarkhordBaBedehkarha, String NahveyeBarkhordBaBedehkarhaValue, String TedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji, String TedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji, NameValueCollection poorsantNameBValue, String ShomareTerminal, String ShomarePazirande, String KelideEkhtesasi, String AddressePazgashtAzBank, String txtOnvanePishnahad, String txtMatnePishnahad, String txtOnvaneTaeidPishnahad, String txtMatneTaeidPishnahad, String txtOnvaneEMailLinkeTaeed, String txtMatneEMailLinkeTaeed, String txtMatnePishnahadSMS, String txtMatneTaeidPishnahadSMS)
+   at MyDnn_EHaml.MyDnn_EHaml_Settings.Settings.lnkUpdate_Click(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-08-17 07:59:38,627 [srv20079][Thread:9][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=1145&error=An unexpected error has occurred&content=0
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at MyDnn_EHaml.Util.UpdatePoorsantTable(NameValueCollection poorsantNameBValue, DataClassesDataContext context)
+   at MyDnn_EHaml.Util.UpdateSettings(String KendoTheme, String FontLabel, String LabelFontSize, Color LabelFontColor, String TextBoxFontSize, Color TextBoxFontColor, Color TextBoxBackgroundColor, String TextBoxWidth, String TextBoxHeight, String NahveyeBarkhordBaBedehkarha, String NahveyeBarkhordBaBedehkarhaValue, String TedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji, String TedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji, NameValueCollection poorsantNameBValue, String ShomareTerminal, String ShomarePazirande, String KelideEkhtesasi, String AddressePazgashtAzBank, String txtOnvanePishnahad, String txtMatnePishnahad, String txtOnvaneTaeidPishnahad, String txtMatneTaeidPishnahad, String txtOnvaneEMailLinkeTaeed, String txtMatneEMailLinkeTaeed, String txtMatnePishnahadSMS, String txtMatneTaeidPishnahadSMS)
+   at MyDnn_EHaml.MyDnn_EHaml_Settings.Settings.lnkUpdate_Click(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-08-17 08:01:35,662 [srv20079][Thread:18][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at MyDnn_EHaml.Util.UpdatePoorsantTable(NameValueCollection poorsantNameBValue, DataClassesDataContext context)
+   at MyDnn_EHaml.Util.UpdateSettings(String KendoTheme, String FontLabel, String LabelFontSize, Color LabelFontColor, String TextBoxFontSize, Color TextBoxFontColor, Color TextBoxBackgroundColor, String TextBoxWidth, String TextBoxHeight, String NahveyeBarkhordBaBedehkarha, String NahveyeBarkhordBaBedehkarhaValue, String TedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji, String TedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji, NameValueCollection poorsantNameBValue, String ShomareTerminal, String ShomarePazirande, String KelideEkhtesasi, String AddressePazgashtAzBank, String txtOnvanePishnahad, String txtMatnePishnahad, String txtOnvaneTaeidPishnahad, String txtMatneTaeidPishnahad, String txtOnvaneEMailLinkeTaeed, String txtMatneEMailLinkeTaeed, String txtMatnePishnahadSMS, String txtMatneTaeidPishnahadSMS)
+   at MyDnn_EHaml.MyDnn_EHaml_Settings.Settings.lnkUpdate_Click(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-08-17 08:01:35,663 [srv20079][Thread:18][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=1145&error=An unexpected error has occurred&content=0
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at MyDnn_EHaml.Util.UpdatePoorsantTable(NameValueCollection poorsantNameBValue, DataClassesDataContext context)
+   at MyDnn_EHaml.Util.UpdateSettings(String KendoTheme, String FontLabel, String LabelFontSize, Color LabelFontColor, String TextBoxFontSize, Color TextBoxFontColor, Color TextBoxBackgroundColor, String TextBoxWidth, String TextBoxHeight, String NahveyeBarkhordBaBedehkarha, String NahveyeBarkhordBaBedehkarhaValue, String TedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji, String TedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji, NameValueCollection poorsantNameBValue, String ShomareTerminal, String ShomarePazirande, String KelideEkhtesasi, String AddressePazgashtAzBank, String txtOnvanePishnahad, String txtMatnePishnahad, String txtOnvaneTaeidPishnahad, String txtMatneTaeidPishnahad, String txtOnvaneEMailLinkeTaeed, String txtMatneEMailLinkeTaeed, String txtMatnePishnahadSMS, String txtMatneTaeidPishnahadSMS)
+   at MyDnn_EHaml.MyDnn_EHaml_Settings.Settings.lnkUpdate_Click(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-08-17 08:08:29,497 [srv20079][Thread:24][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at MyDnn_EHaml.Util.UpdatePoorsantTable(NameValueCollection poorsantNameBValue, DataClassesDataContext context)
+   at MyDnn_EHaml.Util.UpdateSettings(String KendoTheme, String FontLabel, String LabelFontSize, Color LabelFontColor, String TextBoxFontSize, Color TextBoxFontColor, Color TextBoxBackgroundColor, String TextBoxWidth, String TextBoxHeight, String NahveyeBarkhordBaBedehkarha, String NahveyeBarkhordBaBedehkarhaValue, String TedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji, String TedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji, NameValueCollection poorsantNameBValue, String ShomareTerminal, String ShomarePazirande, String KelideEkhtesasi, String AddressePazgashtAzBank, String txtOnvanePishnahad, String txtMatnePishnahad, String txtOnvaneTaeidPishnahad, String txtMatneTaeidPishnahad, String txtOnvaneEMailLinkeTaeed, String txtMatneEMailLinkeTaeed, String txtMatnePishnahadSMS, String txtMatneTaeidPishnahadSMS)
+   at MyDnn_EHaml.MyDnn_EHaml_Settings.Settings.lnkUpdate_Click(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-08-17 08:08:29,498 [srv20079][Thread:24][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=1145&error=An unexpected error has occurred&content=0
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at MyDnn_EHaml.Util.UpdatePoorsantTable(NameValueCollection poorsantNameBValue, DataClassesDataContext context)
+   at MyDnn_EHaml.Util.UpdateSettings(String KendoTheme, String FontLabel, String LabelFontSize, Color LabelFontColor, String TextBoxFontSize, Color TextBoxFontColor, Color TextBoxBackgroundColor, String TextBoxWidth, String TextBoxHeight, String NahveyeBarkhordBaBedehkarha, String NahveyeBarkhordBaBedehkarhaValue, String TedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji, String TedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji, NameValueCollection poorsantNameBValue, String ShomareTerminal, String ShomarePazirande, String KelideEkhtesasi, String AddressePazgashtAzBank, String txtOnvanePishnahad, String txtMatnePishnahad, String txtOnvaneTaeidPishnahad, String txtMatneTaeidPishnahad, String txtOnvaneEMailLinkeTaeed, String txtMatneEMailLinkeTaeed, String txtMatnePishnahadSMS, String txtMatneTaeidPishnahadSMS)
+   at MyDnn_EHaml.MyDnn_EHaml_Settings.Settings.lnkUpdate_Click(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-08-17 08:09:10,504 [srv20079][Thread:24][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at MyDnn_EHaml.Util.UpdatePoorsantTable(NameValueCollection poorsantNameBValue, DataClassesDataContext context)
+   at MyDnn_EHaml.Util.UpdateSettings(String KendoTheme, String FontLabel, String LabelFontSize, Color LabelFontColor, String TextBoxFontSize, Color TextBoxFontColor, Color TextBoxBackgroundColor, String TextBoxWidth, String TextBoxHeight, String NahveyeBarkhordBaBedehkarha, String NahveyeBarkhordBaBedehkarhaValue, String TedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji, String TedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji, NameValueCollection poorsantNameBValue, String ShomareTerminal, String ShomarePazirande, String KelideEkhtesasi, String AddressePazgashtAzBank, String txtOnvanePishnahad, String txtMatnePishnahad, String txtOnvaneTaeidPishnahad, String txtMatneTaeidPishnahad, String txtOnvaneEMailLinkeTaeed, String txtMatneEMailLinkeTaeed, String txtMatnePishnahadSMS, String txtMatneTaeidPishnahadSMS)
+   at MyDnn_EHaml.MyDnn_EHaml_Settings.Settings.lnkUpdate_Click(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-08-17 08:09:10,505 [srv20079][Thread:24][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=1145&error=An unexpected error has occurred&content=0
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at MyDnn_EHaml.Util.UpdatePoorsantTable(NameValueCollection poorsantNameBValue, DataClassesDataContext context)
+   at MyDnn_EHaml.Util.UpdateSettings(String KendoTheme, String FontLabel, String LabelFontSize, Color LabelFontColor, String TextBoxFontSize, Color TextBoxFontColor, Color TextBoxBackgroundColor, String TextBoxWidth, String TextBoxHeight, String NahveyeBarkhordBaBedehkarha, String NahveyeBarkhordBaBedehkarhaValue, String TedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji, String TedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji, NameValueCollection poorsantNameBValue, String ShomareTerminal, String ShomarePazirande, String KelideEkhtesasi, String AddressePazgashtAzBank, String txtOnvanePishnahad, String txtMatnePishnahad, String txtOnvaneTaeidPishnahad, String txtMatneTaeidPishnahad, String txtOnvaneEMailLinkeTaeed, String txtMatneEMailLinkeTaeed, String txtMatnePishnahadSMS, String txtMatneTaeidPishnahadSMS)
+   at MyDnn_EHaml.MyDnn_EHaml_Settings.Settings.lnkUpdate_Click(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-08-17 08:09:53,806 [srv20079][Thread:43][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at MyDnn_EHaml.Util.UpdatePoorsantTable(NameValueCollection poorsantNameBValue, DataClassesDataContext context)
+   at MyDnn_EHaml.Util.UpdateSettings(String KendoTheme, String FontLabel, String LabelFontSize, Color LabelFontColor, String TextBoxFontSize, Color TextBoxFontColor, Color TextBoxBackgroundColor, String TextBoxWidth, String TextBoxHeight, String NahveyeBarkhordBaBedehkarha, String NahveyeBarkhordBaBedehkarhaValue, String TedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji, String TedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji, NameValueCollection poorsantNameBValue, String ShomareTerminal, String ShomarePazirande, String KelideEkhtesasi, String AddressePazgashtAzBank, String txtOnvanePishnahad, String txtMatnePishnahad, String txtOnvaneTaeidPishnahad, String txtMatneTaeidPishnahad, String txtOnvaneEMailLinkeTaeed, String txtMatneEMailLinkeTaeed, String txtMatnePishnahadSMS, String txtMatneTaeidPishnahadSMS)
+   at MyDnn_EHaml.MyDnn_EHaml_Settings.Settings.lnkUpdate_Click(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-08-17 08:09:53,806 [srv20079][Thread:43][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=1145&error=An unexpected error has occurred&content=0
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at MyDnn_EHaml.Util.UpdatePoorsantTable(NameValueCollection poorsantNameBValue, DataClassesDataContext context)
+   at MyDnn_EHaml.Util.UpdateSettings(String KendoTheme, String FontLabel, String LabelFontSize, Color LabelFontColor, String TextBoxFontSize, Color TextBoxFontColor, Color TextBoxBackgroundColor, String TextBoxWidth, String TextBoxHeight, String NahveyeBarkhordBaBedehkarha, String NahveyeBarkhordBaBedehkarhaValue, String TedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji, String TedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji, NameValueCollection poorsantNameBValue, String ShomareTerminal, String ShomarePazirande, String KelideEkhtesasi, String AddressePazgashtAzBank, String txtOnvanePishnahad, String txtMatnePishnahad, String txtOnvaneTaeidPishnahad, String txtMatneTaeidPishnahad, String txtOnvaneEMailLinkeTaeed, String txtMatneEMailLinkeTaeed, String txtMatnePishnahadSMS, String txtMatneTaeidPishnahadSMS)
+   at MyDnn_EHaml.MyDnn_EHaml_Settings.Settings.lnkUpdate_Click(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-08-17 08:10:29,541 [srv20079][Thread:29][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at MyDnn_EHaml.Util.UpdatePoorsantTable(NameValueCollection poorsantNameBValue, DataClassesDataContext context)
+   at MyDnn_EHaml.Util.UpdateSettings(String KendoTheme, String FontLabel, String LabelFontSize, Color LabelFontColor, String TextBoxFontSize, Color TextBoxFontColor, Color TextBoxBackgroundColor, String TextBoxWidth, String TextBoxHeight, String NahveyeBarkhordBaBedehkarha, String NahveyeBarkhordBaBedehkarhaValue, String TedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji, String TedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji, NameValueCollection poorsantNameBValue, String ShomareTerminal, String ShomarePazirande, String KelideEkhtesasi, String AddressePazgashtAzBank, String txtOnvanePishnahad, String txtMatnePishnahad, String txtOnvaneTaeidPishnahad, String txtMatneTaeidPishnahad, String txtOnvaneEMailLinkeTaeed, String txtMatneEMailLinkeTaeed, String txtMatnePishnahadSMS, String txtMatneTaeidPishnahadSMS)
+   at MyDnn_EHaml.MyDnn_EHaml_Settings.Settings.lnkUpdate_Click(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-08-17 08:10:29,541 [srv20079][Thread:29][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=1145&error=An unexpected error has occurred&content=0
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at MyDnn_EHaml.Util.UpdatePoorsantTable(NameValueCollection poorsantNameBValue, DataClassesDataContext context)
+   at MyDnn_EHaml.Util.UpdateSettings(String KendoTheme, String FontLabel, String LabelFontSize, Color LabelFontColor, String TextBoxFontSize, Color TextBoxFontColor, Color TextBoxBackgroundColor, String TextBoxWidth, String TextBoxHeight, String NahveyeBarkhordBaBedehkarha, String NahveyeBarkhordBaBedehkarhaValue, String TedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji, String TedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji, NameValueCollection poorsantNameBValue, String ShomareTerminal, String ShomarePazirande, String KelideEkhtesasi, String AddressePazgashtAzBank, String txtOnvanePishnahad, String txtMatnePishnahad, String txtOnvaneTaeidPishnahad, String txtMatneTaeidPishnahad, String txtOnvaneEMailLinkeTaeed, String txtMatneEMailLinkeTaeed, String txtMatnePishnahadSMS, String txtMatneTaeidPishnahadSMS)
+   at MyDnn_EHaml.MyDnn_EHaml_Settings.Settings.lnkUpdate_Click(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-08-17 08:11:15,583 [srv20079][Thread:37][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at MyDnn_EHaml.Util.UpdatePoorsantTable(NameValueCollection poorsantNameBValue, DataClassesDataContext context)
+   at MyDnn_EHaml.Util.UpdateSettings(String KendoTheme, String FontLabel, String LabelFontSize, Color LabelFontColor, String TextBoxFontSize, Color TextBoxFontColor, Color TextBoxBackgroundColor, String TextBoxWidth, String TextBoxHeight, String NahveyeBarkhordBaBedehkarha, String NahveyeBarkhordBaBedehkarhaValue, String TedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji, String TedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji, NameValueCollection poorsantNameBValue, String ShomareTerminal, String ShomarePazirande, String KelideEkhtesasi, String AddressePazgashtAzBank, String txtOnvanePishnahad, String txtMatnePishnahad, String txtOnvaneTaeidPishnahad, String txtMatneTaeidPishnahad, String txtOnvaneEMailLinkeTaeed, String txtMatneEMailLinkeTaeed, String txtMatnePishnahadSMS, String txtMatneTaeidPishnahadSMS)
+   at MyDnn_EHaml.MyDnn_EHaml_Settings.Settings.lnkUpdate_Click(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-08-17 08:11:15,584 [srv20079][Thread:37][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=1145&error=An unexpected error has occurred&content=0
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at MyDnn_EHaml.Util.UpdatePoorsantTable(NameValueCollection poorsantNameBValue, DataClassesDataContext context)
+   at MyDnn_EHaml.Util.UpdateSettings(String KendoTheme, String FontLabel, String LabelFontSize, Color LabelFontColor, String TextBoxFontSize, Color TextBoxFontColor, Color TextBoxBackgroundColor, String TextBoxWidth, String TextBoxHeight, String NahveyeBarkhordBaBedehkarha, String NahveyeBarkhordBaBedehkarhaValue, String TedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji, String TedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji, NameValueCollection poorsantNameBValue, String ShomareTerminal, String ShomarePazirande, String KelideEkhtesasi, String AddressePazgashtAzBank, String txtOnvanePishnahad, String txtMatnePishnahad, String txtOnvaneTaeidPishnahad, String txtMatneTaeidPishnahad, String txtOnvaneEMailLinkeTaeed, String txtMatneEMailLinkeTaeed, String txtMatnePishnahadSMS, String txtMatneTaeidPishnahadSMS)
+   at MyDnn_EHaml.MyDnn_EHaml_Settings.Settings.lnkUpdate_Click(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-08-17 08:12:40,597 [srv20079][Thread:34][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at MyDnn_EHaml.Util.UpdatePoorsantTable(NameValueCollection poorsantNameBValue, DataClassesDataContext context)
+   at MyDnn_EHaml.Util.UpdateSettings(String KendoTheme, String FontLabel, String LabelFontSize, Color LabelFontColor, String TextBoxFontSize, Color TextBoxFontColor, Color TextBoxBackgroundColor, String TextBoxWidth, String TextBoxHeight, String NahveyeBarkhordBaBedehkarha, String NahveyeBarkhordBaBedehkarhaValue, String TedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji, String TedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji, NameValueCollection poorsantNameBValue, String ShomareTerminal, String ShomarePazirande, String KelideEkhtesasi, String AddressePazgashtAzBank, String txtOnvanePishnahad, String txtMatnePishnahad, String txtOnvaneTaeidPishnahad, String txtMatneTaeidPishnahad, String txtOnvaneEMailLinkeTaeed, String txtMatneEMailLinkeTaeed, String txtMatnePishnahadSMS, String txtMatneTaeidPishnahadSMS)
+   at MyDnn_EHaml.MyDnn_EHaml_Settings.Settings.lnkUpdate_Click(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-08-17 08:12:40,598 [srv20079][Thread:34][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=1145&error=An unexpected error has occurred&content=0
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at MyDnn_EHaml.Util.UpdatePoorsantTable(NameValueCollection poorsantNameBValue, DataClassesDataContext context)
+   at MyDnn_EHaml.Util.UpdateSettings(String KendoTheme, String FontLabel, String LabelFontSize, Color LabelFontColor, String TextBoxFontSize, Color TextBoxFontColor, Color TextBoxBackgroundColor, String TextBoxWidth, String TextBoxHeight, String NahveyeBarkhordBaBedehkarha, String NahveyeBarkhordBaBedehkarhaValue, String TedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji, String TedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji, NameValueCollection poorsantNameBValue, String ShomareTerminal, String ShomarePazirande, String KelideEkhtesasi, String AddressePazgashtAzBank, String txtOnvanePishnahad, String txtMatnePishnahad, String txtOnvaneTaeidPishnahad, String txtMatneTaeidPishnahad, String txtOnvaneEMailLinkeTaeed, String txtMatneEMailLinkeTaeed, String txtMatnePishnahadSMS, String txtMatneTaeidPishnahadSMS)
+   at MyDnn_EHaml.MyDnn_EHaml_Settings.Settings.lnkUpdate_Click(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-08-17 08:42:47,486 [srv20079][Thread:25][ERROR] DotNetNuke.Services.FileSystem.FileServerHandler - System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at DotNetNuke.Services.FileSystem.FileManager.WriteFileToHttpContext(IFileInfo file, ContentDisposition contentDisposition)
+   at DotNetNuke.Services.FileSystem.FileServerHandler.ProcessRequest(HttpContext context)
+2014-08-17 08:42:47,650 [srv20079][Thread:25][ERROR] DotNetNuke.Services.FileSystem.FileServerHandler - System.Threading.ThreadAbortException: Thread was being aborted.
+   at DotNetNuke.Services.FileSystem.FileServerHandler.ProcessRequest(HttpContext context)
+2014-08-17 08:44:09,745 [srv20079][Thread:28][ERROR] DotNetNuke.Services.FileSystem.FileServerHandler - System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at DotNetNuke.Services.FileSystem.FileManager.WriteFileToHttpContext(IFileInfo file, ContentDisposition contentDisposition)
+   at DotNetNuke.Services.FileSystem.FileServerHandler.ProcessRequest(HttpContext context)
+2014-08-17 08:44:09,748 [srv20079][Thread:28][ERROR] DotNetNuke.Services.FileSystem.FileServerHandler - System.Threading.ThreadAbortException: Thread was being aborted.
+   at DotNetNuke.Services.FileSystem.FileServerHandler.ProcessRequest(HttpContext context)
+2014-08-17 08:44:39,787 [srv20079][Thread:37][ERROR] DotNetNuke.Services.FileSystem.FileServerHandler - System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at DotNetNuke.Services.FileSystem.FileManager.WriteFileToHttpContext(IFileInfo file, ContentDisposition contentDisposition)
+   at DotNetNuke.Services.FileSystem.FileServerHandler.ProcessRequest(HttpContext context)
+2014-08-17 08:44:39,789 [srv20079][Thread:37][ERROR] DotNetNuke.Services.FileSystem.FileServerHandler - System.Threading.ThreadAbortException: Thread was being aborted.
+   at DotNetNuke.Services.FileSystem.FileServerHandler.ProcessRequest(HttpContext context)

@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BackupFilesDisabled.Message" xml:space="preserve">
+    <value>Note: The Files Backup is disabled.</value>
+  </data>
+  <data name="ControlTitle_backupconfigurationfiles.Text" xml:space="preserve">
+    <value>Backup Configuration - Files</value>
+  </data>
+  <data name="lblCreateDataZipFile.Help" xml:space="preserve">
+    <value>When enabled, it will create a Zip File including the portal files (files and folders of all the portals within the DNN instance). NOTE: this includes just /Portals by default. Enable any of the other settings to include additional files and folders.</value>
+  </data>
+  <data name="lblCreateDataZipFile.Text" xml:space="preserve">
+    <value>Perform the files backup</value>
+  </data>
+  <data name="lblDataBackupFileName.Help" xml:space="preserve">
+    <value>Name of  the backup zip file to be generated. E.g. myfiles. Note: The date/time will be appened to the resulting file name if the proper setting was enabled in 'Advanced Settings'.</value>
+  </data>
+  <data name="lblDataBackupFileName.Text" xml:space="preserve">
+    <value>Backup file name (w/o extension)</value>
+  </data>
+  <data name="lblExcludeFoldersList.Help" xml:space="preserve">
+    <value>Comma separated list of relative folder paths to exclude from the files' backup. '*' wildcard is supported. (e.g.: \Install\temp ,\Portals\*\cache,\Portals\_default\Logs,\Portals\0\SpecialFolder,\App_Data)</value>
+  </data>
+  <data name="lblExcludeFoldersList.Text" xml:space="preserve">
+    <value>Exclude Folders List</value>
+  </data>
+  <data name="lblExternalFoldersList.Help" xml:space="preserve">
+    <value>Comma separated list of absolute folder paths to include in the backup (e.g.: C:\mysecurefolder\myDMXfiles,E:\otherimportanfolder)</value>
+  </data>
+  <data name="lblExternalFoldersList.Text" xml:space="preserve">
+    <value>External Folders List</value>
+  </data>
+  <data name="lblIncludeBinFolder.Help" xml:space="preserve">
+    <value>Include \bin folder within the files' backup Zip file?</value>
+  </data>
+  <data name="lblIncludeBinFolder.Text" xml:space="preserve">
+    <value>Include \bin folder</value>
+  </data>
+  <data name="lblIncludeHostFolder.Help" xml:space="preserve">
+    <value>Include 'Host' folder (Portals\_default) within the files' backup Zip file?</value>
+  </data>
+  <data name="lblIncludeHostFolder.Text" xml:space="preserve">
+    <value>Include 'Host' folder</value>
+  </data>
+  <data name="lblIncludeModulesFolder.Help" xml:space="preserve">
+    <value>Include \DesktopModules folder within the files' backup Zip file?</value>
+  </data>
+  <data name="lblIncludeModulesFolder.Text" xml:space="preserve">
+    <value>Include Modules folder</value>
+  </data>
+  <data name="lblIncludeOtherFolders.Help" xml:space="preserve">
+    <value>Include all the other files and folders within the files backup Zip file?</value>
+  </data>
+  <data name="lblIncludeOtherFolders.Text" xml:space="preserve">
+    <value>Include other folders</value>
+  </data>
+  <data name="lblIncludeWebConfig.Help" xml:space="preserve">
+    <value>Include the web.config file within the files' backup Zip file?</value>
+  </data>
+  <data name="lblIncludeWebConfig.Text" xml:space="preserve">
+    <value>Include web.config file</value>
+  </data>
+  <data name="PortalFilesStuff.Text" xml:space="preserve">
+    <value>Files Backup Options</value>
+  </data>
+  <data name="lblIncludeAppDataFolder.Help" xml:space="preserve">
+    <value>Include \App_Data folder within the files' backup Zip file? (NOTE: if you are running a sql express database 'file', then "Error adding file App_Data\Database.mdf to zip file" and "Error adding file App_Data\Database_log.ldf to zip file", "because it is being used by another process" are expected and can be ignored.)</value>
+  </data>
+  <data name="lblIncludeAppDataFolder.Text" xml:space="preserve">
+    <value>Include \App_Data folder</value>
+  </data>
+  <data name="lblFilesBackup.Text" xml:space="preserve">
+    <value>These are the files backup settings for &lt;b&gt;manual backups&lt;/b&gt;, and will be the default settings when creating a new scheduled files' backup job.</value>
+  </data>
+  <data name="lblFilesBackupSchedule.Text" xml:space="preserve">
+    <value>These are the files backup settings for the &lt;b&gt;scheduled job&lt;/b&gt; being edited.</value>
+  </data>
+  <data name="lblExcludeFilesList.Help" xml:space="preserve">
+    <value>Comma separated list of Full name or file patterns to be excluded from the backup.&lt;br /&gt;
+If you start a pattern with '\' then the child folders will be also scanned for the pattern of files to be excluded. &lt;br /&gt;
+Examples:  &lt;br /&gt;
+&lt;ul&gt;
+&lt;li&gt;\App_Data\Database.mdf,\App_Data\Database.ldf =&gt;will exclude these database files, which typically you don't have to include in the Portal Files backup.&lt;/li&gt;
+&lt;li&gt;\Portals\0\old\myuselessfile.png =&gt;will exclude this file.&lt;/li&gt;
+&lt;li&gt;*.log =&gt; will exclude '*.log' from the root folder only.&lt;/li&gt;
+&lt;li&gt;\pla*.txt =&gt; will exclude 'pla*.txt' from all folders. &lt;/li&gt;
+&lt;li&gt;\portals\*.log  =&gt; will exclude '*.log' from \portals and all child folders (recursive)&lt;/li&gt;
+&lt;li&gt;portals\0\*.bak  =&gt; will exclude '*.bak' from \portals\0 only (non recursive).&lt;/li&gt;
+&lt;/ul&gt;
+
+
+</value>
+  </data>
+  <data name="lblExcludeFilesList.Text" xml:space="preserve">
+    <value>Exclude Files List</value>
+  </data>
+  <data name="lblExcludeCacheFolders.Help" xml:space="preserve">
+    <value>Exclude all /Portals/*/Cache folders.</value>
+  </data>
+  <data name="lblExcludeCacheFolders.Text" xml:space="preserve">
+    <value>Exclude 'Cache' folders</value>
+  </data>
+  <data name="lblExcludeLogFiles.Help" xml:space="preserve">
+    <value>Exclude the /Portals/_default/Logs/*.resources files.</value>
+  </data>
+  <data name="lblExcludeLogFiles.Text" xml:space="preserve">
+    <value>Exclude 'Log' files</value>
+  </data>
+  <data name="lblExcludeTempFolders.Help" xml:space="preserve">
+    <value>Exclude the /Install/Temp and /Portals/_default/Temp folders.</value>
+  </data>
+  <data name="lblExcludeTempFolders.Text" xml:space="preserve">
+    <value>Exclude 'Temp' folders</value>
+  </data>
+  <data name="lblNewOrUpdatedFilesOnly.Help" xml:space="preserve">
+    <value>Incremental backup: For scheduled backups, this setting tells DNNBackup to include only files created or updated after the last time this same scheduled backup backup was run.</value>
+  </data>
+  <data name="lblNewOrUpdatedFilesOnly.Text" xml:space="preserve">
+    <value>New or updated files only</value>
+  </data>
+</root>

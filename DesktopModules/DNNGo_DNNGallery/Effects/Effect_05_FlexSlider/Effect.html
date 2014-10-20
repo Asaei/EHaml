@@ -1,0 +1,64 @@
+﻿ 
+ 
+
+<div id="contentflexslider$ModuleID" class="$ThemeName" style="width:${xf.ViewXmlSetting("width","600")}px;">
+  <ul class="slides">
+       #if($DataList.Count > 0)
+                #foreach($DataItem in $DataList)
+                     <li> 
+                            <div class="flex-image ${xf.ViewPrettyIcon($DataItem)}"><a rel="${xf.ViewPrettyPhoto($DataItem)}" href="${xf.ViewLinkUrl($DataItem.UrlLink)}" target="${xf.ViewLinkTarget($DataItem)}" title="$DataItem.Description"><img src="${xf.ViewLinkUrl($DataItem.Thumbnails)}" style="width:100%"  alt="$DataItem.Subtitle" /></a>
+                            </div>
+                            <div class="flex-caption">
+                               <h3>$DataItem.Title</h3>
+                              <p>$DataItem.ContentText</p>
+                            </div>
+                    </li>
+                #end
+        #end
+    </ul>
+  </div>
+  <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+          base_photo_hover();
+          /* Slider
+          * ---------------------------------------------- */
+          jQuery('#contentflexslider$ModuleID').flexslider({
+              animationLoop: true,
+              animation: "slide",
+              slideshowSpeed: ${xf.ViewXmlSetting("SlideshowSpeed","3000")},
+              itemWidth: ${xf.ViewXmlSetting("itemWidth",130)},
+              controlNav: ${xf.ViewXmlSetting("controlNav","true")},
+              directionNav: ${xf.ViewXmlSetting("directionNav","true")},
+              maxItems: ${xf.ViewXmlSetting("maxItems",3)},
+              move: ${xf.ViewXmlSetting("move",1)},
+              itemMargin: ${xf.ViewXmlSetting("itemMargin",10)}
+          });
+
+          jQuery(".flex-image a[rel^='prettyPhoto']").prettyPhoto({
+              animation_speed: '${xf.ViewXmlSetting("animation_speed","normal")}',
+              theme: '${xf.ViewXmlSetting("theme","pp_default")}',
+              slideshow: ${xf.ViewXmlSetting("slideshow",3000)},
+              autoplay_slideshow: ${xf.ViewXmlSetting("autoplay_slideshow","false")},
+              overlay_gallery: ${xf.ViewXmlSetting("overlay_gallery","false")} /* If set to true, a gallery will overlay the fullscreen image on mouse over */
+          });
+          // ---------------------------------------
+          // PHOTO
+          // ---------------------------------------
+
+          function base_photo_hover() {
+              // Photo Hover
+              jQuery('.image-zoom, .image-link').unbind().hoverIntent({
+                  over: function () {
+                      jQuery('a img', jQuery(this)).stop().animate({
+                          opacity: 0.4
+                      }, 150);
+                  },
+                  out: function () {
+                      jQuery('a img', jQuery(this)).stop().animate({
+                          opacity: 1
+                      }, 150);
+                  }
+              });
+          }
+      });
+</script>

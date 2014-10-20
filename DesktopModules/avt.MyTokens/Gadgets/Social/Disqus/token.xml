@@ -1,0 +1,43 @@
+<token>
+    <name>Disqus</name>
+    <desc>Embed Disqus comments on the page.</desc>
+    <cacheTimeSeconds>86400</cacheTimeSeconds>
+    <docurl>http://docs.disqus.com/developers/</docurl>
+    
+    <src>
+        <type>string</type>
+        <text>
+            <div id="disqus_thread"></div>
+            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            <script type="text/javascript">
+                var disqus_shortname = '{{ShortName|{0} }}';
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true; dsq.id='dsqInc';
+                    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+        </text>
+    </src>
+    
+    <parser>
+        <type>string</type>
+        <replace>false</replace>
+        <decodeHtml>false</decodeHtml>
+    </parser>
+    
+    <param>
+        <name>ShortName</name>
+        <type>string</type>
+        <desc>
+            ShortName uniquely identifies your account on Disqus.
+        </desc>
+        <required>true</required>
+    </param>
+    
+    <example>
+        <codeSnippet>[Social:Disqus(ShortName="This Wont Work")]</codeSnippet>
+        <desc>Embeds Disqus comments on this page. Note that this won't work because the ShortName must be created by you on Diqus and associated with current domain.</desc>
+    </example>
+    
+</token>

@@ -1,0 +1,192 @@
+﻿/* google plus template */
+
+div.mydnnCoverPhoto
+{
+    background:url('images/coverBG.png') no-repeat;
+    height: 180px;
+    margin-right: -11px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.mydnnProfilePhotoPane #UserProfileImg img {
+  background: url("Images/noProfilePlus.png") no-repeat scroll -1px -1px transparent;
+  display: block;
+  margin: 0;
+  min-height: 190px;
+  padding: 0;
+  min-width: 190px;
+}
+
+.mydnnProfilePhotoPane #UserProfileImg {
+  background:#fff;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  margin-left: 5px;
+  padding: 5px;
+  margin-top:30px;
+}
+
+#plusUserDisplayNameHeader {
+  display: inline-block;
+  padding-top: 25px;
+  text-align: right;
+  width: 100%;
+  margin-bottom:10px;
+}
+
+.plusUserProfileControls {
+  display: inline-block;
+  margin-top: -50px;
+  width: 100%;
+}
+
+.plus-btn1
+{
+    float:left;
+    margin:15px 0 0 5px;
+}
+.plus-btn1:hover
+{
+}
+.plus-btn1 a:hover,.plus-btn2 a:hover
+{
+    text-decoration:none;
+}
+.plus-btn1 a
+{
+    color: #FFFFFF;
+    font-weight:bold;
+}
+.plus-btn2
+{
+    float:left;
+    cursor: default;
+    font-size: 11px;
+    font-weight: bold;
+    margin:15px 0 0 5px;
+}
+.plus-btn2:hover
+{
+}
+
+.securityMenu .handle {
+  right: 15px;
+}
+
+.journalTools #journalOptionArea {
+  float: right;
+  width:562px;
+}
+
+
+.journalrow {
+  direction:rtl;
+  text-align: right;
+}
+
+
+.LeftPaneProfile .DnnModule-DotNetNukeModulesMemberDirectory #mdMemberList > li {
+  margin: 0 !important;
+  padding: 0 5px 0 0 !important;
+  width: 44px !important;
+}
+.mdMemberDetails .mdMemberImg span 
+{
+    width:44px;
+}
+
+.coverPane .DnnModule .dnnActionMenu
+{
+    top:10% !important;
+    left:50% !important;
+}
+
+.DnnModule{z-index:auto;}
+
+.mdMemberDetails .mdMemberImg 
+{
+    margin:0  !important;
+    border:none !important;
+    padding:0 !important;
+    min-width:44px !important;
+}
+.mdMemberDetails .mdMemberImg img {
+  height: 44px !important;
+  width: 44px !important;
+  min-width:44px !important;
+  border-radius:3px 3px 3px 3px;
+}
+
+
+/* menu plus */
+
+.plusIcons
+{
+    height:80px;
+    width:32px;
+    margin:0 14px;
+    position:relative;
+    text-align:center;
+    background-position:0 -885px;
+}
+.plusIcons a
+{
+    font-size:11px !important;
+    color:#A7A7A7 !important;
+}
+.plusIcons a:hover
+{
+    text-decoration:none;
+    font-size:11px !important;
+    color:#000 !important;
+}
+
+
+.coverPane ul.mdMemberList li
+{
+    padding:0 !important;
+    width:0 !important;
+}
+
+.plusIcons div
+{
+    background-image:url("Images/Plus/icons.png");
+    background-repeat:no-repeat;
+    height:32px;
+    width:32px;
+    margin-top:5px;
+}
+.icon-home {background-position:0 -685px;}
+.icon-home:hover,.icon-home-sel {background-position:0 -25px;}
+
+.icon-myprofile{background-position:0 -158px;}
+.icon-myprofile:hover,.icon-myprofile-sel{background-position:0 -884px;}
+
+.icon-myfreinds{background-position:0 -191px;}
+.icon-myfreinds:hover,.icon-myfreinds-sel{background-position:0 -851px;}
+
+.icon-mymessages{background-position:0 -125px;}
+.icon-mymessages:hover,.icon-mymessages-sel{background-position:0 -92px;}
+
+.jcmt li
+{
+    clear:both;
+}
+
+.jphoto
+{
+    text-align:center;
+    margin-top:5px;
+}
+
+.mdMemberList .mdHoverContent{border:1px solid #CCCCCC !important;}
+
+.DNNModuleContent.ModViewProfileC > div {display:block !important;}
+
+.mydnnCoverPhoto > img {
+  width: 100%;
+}

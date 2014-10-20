@@ -1,0 +1,88 @@
+/* Layout helpers
+----------------------------------*/
+.livetabsredmond .ui-helper-hidden { display: none; }
+.livetabsredmond .ui-helper-hidden-accessible { position: absolute; left: -99999999px; }
+.livetabsredmond .ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.livetabsredmond .ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.livetabsredmond .ui-helper-clearfix { display: inline-block; }
+/* required comment for clearfix to work in Opera \*/
+* html .ui-helper-clearfix { height:1%; }
+.livetabsredmond .ui-helper-clearfix { display:block; }
+/* end clearfix */
+.livetabsredmond .ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+/* Interaction Cues
+----------------------------------*/
+.livetabsredmond .ui-state-disabled { cursor: default !important; }
+/* states and images */
+.livetabsredmond .ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+/* Overlays */
+.livetabsredmond .ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+/* Component containers
+----------------------------------*/
+.livetabsredmond .ui-widget { font-family: Lucida Grande, Lucida Sans, Arial, sans-serif; font-size: 1.1em; }
+.livetabsredmond .ui-widget input, .livetabsredmond .ui-widget select, .livetabsredmond .ui-widget textarea, .livetabsredmond .ui-widget button { font-family: Lucida Grande, Lucida Sans, Arial, sans-serif; font-size: 1em; }
+.livetabsredmond .ui-widget-content { border: 1px solid #a6c9e2; background: #fcfdfd url(images/ui-bg_inset-hard_100_fcfdfd_1x100.png) 50% bottom repeat-x; color: #222222; }
+.livetabsredmond .ui-widget-content a {  }
+.livetabsredmond .ui-widget-header { border: 1px solid #4297d7; background: #5c9ccc url(images/ui-bg_gloss-wave_55_5c9ccc_500x100.png) 50% 50% repeat-x; color: #ffffff; font-weight: bold; }
+.livetabsredmond .ui-widget-header a { color: #ffffff; }
+/* Interaction states
+----------------------------------*/
+.livetabsredmond .ui-state-default, .livetabsredmond .ui-widget-content .ui-state-default { border: 1px solid #c5dbec; background: #dfeffc url(images/ui-bg_glass_85_dfeffc_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #2e6e9e; outline: none; }
+.livetabsredmond .ui-state-default a, .livetabsredmond .ui-state-default a:link, .livetabsredmond .ui-state-default a:visited { color: #2e6e9e; text-decoration: none; outline: none; }
+.livetabsredmond .ui-state-hover, .livetabsredmond .ui-widget-content .ui-state-hover, .livetabsredmond .ui-state-focus, .livetabsredmond .ui-widget-content .ui-state-focus { border: 1px solid #79b7e7; background: #d0e5f5 url(images/ui-bg_glass_75_d0e5f5_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #1d5987; outline: none; }
+.livetabsredmond .ui-state-hover a, .livetabsredmond .ui-state-hover a:hover { color: #1d5987; text-decoration: none; outline: none; }
+.livetabsredmond .ui-state-active, .livetabsredmond .ui-widget-content .ui-state-active { border: 1px solid #79b7e7; background: #f5f8f9 url(images/ui-bg_inset-hard_100_f5f8f9_1x100.png) 50% 50% repeat-x; font-weight: bold; color: #e17009; outline: none; }
+.livetabsredmond .ui-state-active a, .livetabsredmond .ui-state-active a:link, .livetabsredmond .ui-state-active a:visited { color: #e17009; outline: none; text-decoration: none; }
+/* Interaction Cues
+----------------------------------*/
+.livetabsredmond .ui-state-highlight, .livetabsredmond .ui-widget-content .ui-state-highlight {border: 1px solid #fad42e; background: #fbec88 url(images/ui-bg_flat_55_fbec88_40x100.png) 50% 50% repeat-x; color: #363636; }
+.livetabsredmond .ui-state-highlight a, .livetabsredmond .ui-widget-content .ui-state-highlight a { color: #363636; }
+.livetabsredmond .ui-state-error, .livetabsredmond .ui-widget-content .ui-state-error {border: 1px solid #cd0a0a; background: #fef1ec url(images/ui-bg_glass_95_fef1ec_1x400.png) 50% 50% repeat-x; color: #cd0a0a; }
+.livetabsredmond .ui-state-error a, .livetabsredmond .ui-widget-content .ui-state-error a { color: #cd0a0a; }
+.livetabsredmond .ui-state-error-text, .livetabsredmond .ui-widget-content .ui-state-error-text { color: #cd0a0a; }
+.livetabsredmond .ui-state-disabled, .livetabsredmond .ui-widget-content .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+.livetabsredmond .ui-priority-primary, .livetabsredmond .ui-widget-content .ui-priority-primary { font-weight: bold; }
+.livetabsredmond .ui-priority-secondary, .livetabsredmond .ui-widget-content .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+/* states and images */
+.livetabsredmond .ui-icon { width: 16px; height: 16px; background-image: url(images/ui-icons_469bdd_256x240.png); }
+.livetabsredmond .ui-widget-content .ui-icon {background-image: url(images/ui-icons_469bdd_256x240.png); }
+.livetabsredmond .ui-widget-header .ui-icon {background-image: url(images/ui-icons_d8e7f3_256x240.png); }
+.livetabsredmond .ui-state-default .ui-icon { background-image: url(images/ui-icons_6da8d5_256x240.png); }
+.livetabsredmond .ui-state-hover .ui-icon, .livetabsredmond .ui-state-focus .ui-icon {background-image: url(images/ui-icons_217bc0_256x240.png); }
+.livetabsredmond .ui-state-active .ui-icon {background-image: url(images/ui-icons_f9bd01_256x240.png); }
+.livetabsredmond .ui-state-highlight .ui-icon {background-image: url(images/ui-icons_2e83ff_256x240.png); }
+.livetabsredmond .ui-state-error .ui-icon, .livetabsredmond .ui-state-error-text .ui-icon {background-image: url(images/ui-icons_cd0a0a_256x240.png); }
+/* Corner radius */
+.livetabsredmond .ui-corner-all, .livetabsredmond .ui-corner-top, .livetabsredmond .ui-corner-left, .livetabsredmond .ui-corner-tl { -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; border-top-left-radius: 5px; }
+.livetabsredmond .ui-corner-all, .livetabsredmond .ui-corner-top, .livetabsredmond .ui-corner-right, .livetabsredmond .ui-corner-tr { -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; border-top-right-radius: 5px; }
+.livetabsredmond .ui-corner-all, .livetabsredmond .ui-corner-bottom, .livetabsredmond .ui-corner-left, .livetabsredmond .ui-corner-bl { -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; border-bottom-left-radius: 5px; }
+.livetabsredmond .ui-corner-all, .livetabsredmond .ui-corner-bottom, .livetabsredmond .ui-corner-right, .livetabsredmond .ui-corner-br { -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; border-bottom-right-radius: 5px; }
+/* Overlays */
+.livetabsredmond .ui-widget-overlay { background: #aaaaaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x; opacity: .30;filter:Alpha(Opacity=30); }
+.livetabsredmond .ui-widget-shadow { margin: -8px 0 0 -8px; padding: 8px; background: #aaaaaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x; opacity: .30;filter:Alpha(Opacity=30); -moz-border-radius: 8px; -webkit-border-radius: 8px; -khtml-border-radius: 8px; border-radius: 8px;}
+/* Tabs
+----------------------------------*/
+.livetabsredmond .ui-tabs { padding: .2em; zoom: 1; }
+.livetabsredmond .ui-tabs .ui-tabs-nav { list-style: none; position: relative; padding: .2em .2em 0; }
+.livetabsredmond .ui-tabs .ui-tabs-nav li { list-style: none; position: relative; float: right; margin: 0 .2em -1px 0; padding: 0; }
+.livetabsredmond .ui-tabs .ui-tabs-nav li a { float: left; text-decoration: none; padding: .5em 2em; }
+.livetabsredmond .ui-tabs .ui-tabs-nav li.ui-tabs-selected, .livetabsredmond .ui-tabs .ui-tabs-nav li.ui-tabs-active { padding-bottom: 1px; border-bottom-width: 0; }
+.livetabsredmond .ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .livetabsredmond .ui-tabs .ui-tabs-nav li.ui-tabs-active a, .livetabsredmond .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .livetabsredmond .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.livetabsredmond .ui-tabs .ui-tabs-nav li a, .livetabsredmond .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a, .livetabsredmond .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.livetabsredmond .ui-tabs .ui-tabs-panel { padding: 1em 1.4em; display: block; border-width: 0; background: none; }
+.livetabsredmond .ui-tabs .ui-tabs-hide { display: none !important; }
+
+
+.livetabsredmond > .ui-tabs > .ui-tabs-nav > li {
+  min-width: 0;
+  width: 156px;
+}
+
+.livetabsredmond .ui-tabs .ui-tabs-nav li a {
+  font-family: tahoma;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 0.5em 2em;
+  width: 105px;
+  text-align: center;
+}

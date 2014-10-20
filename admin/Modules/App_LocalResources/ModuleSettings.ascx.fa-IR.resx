@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ModuleSettings.Text" xml:space="preserve">
+    <value>تنظیمات ماژول</value>
+  </data>
+  <data name="plFriendlyName.Text" xml:space="preserve">
+    <value>ماژول :</value>
+  </data>
+  <data name="plFriendlyName.Help" xml:space="preserve">
+    <value>نمایش نام این ماژول</value>
+  </data>
+  <data name="plTitle.Text" xml:space="preserve">
+    <value>عنوان ماژول :</value>
+  </data>
+  <data name="plTitle.Help" xml:space="preserve">
+    <value>عنوان ماژول را مشخص کنید. در صورتی که کانتینر دارای نوار عنوان باشد؛ این عنوان در نوار عنوان کانتینر ماژول نمایش داده خواهد شد.</value>
+  </data>
+  <data name="PageSettings.Text" xml:space="preserve">
+    <value>تنظیمات صفحه</value>
+  </data>
+  <data name="Security.Text" xml:space="preserve">
+    <value>تنظیمات پیشرفته</value>
+  </data>
+  <data name="plAllTabs.Text" xml:space="preserve">
+    <value>نمایش ماژول در همه صفحات؟</value>
+  </data>
+  <data name="plAllTabs.Help" xml:space="preserve">
+    <value>وضعیت نمایش این ماژول در دیگر صفحات را انتخاب نمایید</value>
+  </data>
+  <data name="plVisibility.Text" xml:space="preserve">
+    <value>بسته / گسترده :</value>
+  </data>
+  <data name="plVisibility.Help" xml:space="preserve">
+    <value>انتخاب نحوه نمایش این ماژول  </value>
+  </data>
+  <data name="plTab.Text" xml:space="preserve">
+    <value>انتقال ماژول به صفحه دیگر : </value>
+  </data>
+  <data name="plTab.Help" xml:space="preserve">
+    <value>انتقال این نمونه از ماژول به صفحه ی دیگر</value>
+  </data>
+  <data name="plHeader.Text" xml:space="preserve">
+    <value>سرنویس :</value>
+  </data>
+  <data name="plHeader.Help" xml:space="preserve">
+    <value>متن سرنویس برای این ماژول را وارد نمایید</value>
+  </data>
+  <data name="plFooter.Text" xml:space="preserve">
+    <value>زیرنویس :</value>
+  </data>
+  <data name="plFooter.Help" xml:space="preserve">
+    <value>متن زیرنویس برای این ماژول را وارد نمایید</value>
+  </data>
+  <data name="plIcon.Text" xml:space="preserve">
+    <value>آیکون :</value>
+  </data>
+  <data name="plIcon.Help" xml:space="preserve">
+    <value>آیکون موردنظر برای این ماژول را که در  نوار عنوان ماژول،نمایش داده می شود را انتخاب نمایید</value>
+  </data>
+  <data name="plAlign.Text" xml:space="preserve">
+    <value>چیدمان :</value>
+  </data>
+  <data name="plAlign.Help" xml:space="preserve">
+    <value>چیدمان این ماژول را انتخاب نمایید</value>
+  </data>
+  <data name="plColor.Text" xml:space="preserve">
+    <value>رنگ :</value>
+  </data>
+  <data name="plColor.Help" xml:space="preserve">
+    <value>یک رنگ برای این ماژول مشخص نمایید</value>
+  </data>
+  <data name="plBorder.Text" xml:space="preserve">
+    <value>لبه :</value>
+  </data>
+  <data name="plBorder.Help" xml:space="preserve">
+    <value>عرض لبه را برای ماژول وارد نمایید</value>
+  </data>
+  <data name="plModuleContainer.Text" xml:space="preserve">
+    <value>کانتینر ماژول :</value>
+  </data>
+  <data name="plModuleContainer.Help" xml:space="preserve">
+    <value>کانتینر موردنظر را برای این ماژول انتخاب نمایید (برای افزودن کانتینر جدید به بخش مدیریت فایل بروید)</value>
+  </data>
+  <data name="plPermissions.Text" xml:space="preserve">
+    <value>مجوزهای دسترسی :</value>
+  </data>
+  <data name="plPermissions.Help" xml:space="preserve">
+    <value>مجوز نمایش و ویرایش ماژول را مشخص کنید. در صورتی که گزینه "به ارث برن مجوزهای دسترسی" فعال باشد؛ ماژول می تواند مجوزهای دسترسی را از صفحه به ارث ببرد.</value>
+  </data>
+  <data name="plCacheTime.Text" xml:space="preserve">
+    <value>زمان کش(ثانیه) :</value>
+  </data>
+  <data name="plCacheTime.Help" xml:space="preserve">
+    <value>زمان نگهداری محتوای ماژول در  حافظه کش را مشخص کنید.</value>
+  </data>
+  <data name="plStartDate.Text" xml:space="preserve">
+    <value>تاریخ آغاز نمایش:</value>
+  </data>
+  <data name="plStartDate.Help" xml:space="preserve">
+    <value>تاریخ آغاز نمایش ماژول را مشخص کنید.قبل از این تاریخ ماژول تنها برای کاربرانی با دسترسی مدیریت قابل نمایش است.</value>
+  </data>
+  <data name="plEndDate.Text" xml:space="preserve">
+    <value>تاریخ انتقضا:</value>
+  </data>
+  <data name="plEndDate.Help" xml:space="preserve">
+    <value>تاریخ انقضای نمایش ماژول. بعد از این تاریخ ماژول تنها برای کاربرانی با دسترسی مدیریت قابل مشاهده می باشد.</value>
+  </data>
+  <data name="plDefault.Text" xml:space="preserve">
+    <value>استفاده از تنظیمات این ماژول به عنوان تنظیمات پیش فرض</value>
+  </data>
+  <data name="plDefault.Help" xml:space="preserve">
+    <value>درصورتی که تمایل دارید تنظیمات صفحه مشخص شده برای این ماژول به عنوان تنظیمات پیش فرض در هنگام افزودن ماژول جدید مورد استفاده قرار گیرد، این گزینه را انتخاب نمایید. </value>
+  </data>
+  <data name="plAllModules.Text" xml:space="preserve">
+    <value>استفاده از تنظیمات این ماژول برای تمام ماژول ها</value>
+  </data>
+  <data name="plAllModules.Help" xml:space="preserve">
+    <value>درصورتی که تمایل دارید تنظیمات این ماژول برای تمام ماژول های موجود در پورتال به کار گرفته شود،این گزینه را فعال نمایید.</value>
+  </data>
+  <data name="GeneralDetails.Text" xml:space="preserve">
+    <value>تنظیمات اولیه</value>
+  </data>
+  <data name="Appearance.Text" xml:space="preserve">
+    <value>تنظیمات اولیه</value>
+  </data>
+  <data name="OtherSettings.Text" xml:space="preserve">
+    <value>تنظیمات پیشرفته</value>
+  </data>
+  <data name="InheritPermissions.Text" xml:space="preserve">
+    <value>ارث بری مجوزهای  &lt;b&gt;نمایش&lt;/b&gt;از &lt;b&gt;صفحه&lt;/b&gt;</value>
+  </data>
+  <data name="ControlTitle_module.Text" xml:space="preserve">
+    <value>ماژول</value>
+  </data>
+  <data name="plDisplayTitle.Text" xml:space="preserve">
+    <value>نمایش کانتینر</value>
+  </data>
+  <data name="plDisplayTitle.Help" xml:space="preserve">
+    <value>درصورتی که می خواهید  کانتینر این ماژول نمایش داده شود، این گزینه را فعال نمایید</value>
+  </data>
+  <data name="plDisplaySyndicate.Text" xml:space="preserve">
+    <value>فعال نمودن RSS</value>
+  </data>
+  <data name="plDisplayPrint.Help" xml:space="preserve">
+    <value>درصورتی که می خواهید امکان چاپ در این ماژول فعال باشد، این گزینه را فعال نمایید</value>
+  </data>
+  <data name="plDisplaySyndicate.Help" xml:space="preserve">
+    <value>درصورتی که می خواهید امکان RSSدر این ماژول فعال باشد، این گزینه را فعال نمایید</value>
+  </data>
+  <data name="plDisplayPrint.Text" xml:space="preserve">
+    <value>فعال نمودن امکان چاپ محتوا</value>
+  </data>
+  <data name="valStartDate.ErrorMessage" xml:space="preserve">
+    <value>تاریخ آغاز نمایش ماژول نامعتبر است</value>
+  </data>
+  <data name="valEndDate.ErrorMessage" xml:space="preserve">
+    <value>تاریخ انقضای ماژول نامعتبر است.</value>
+  </data>
+  <data name="valCacheTime.ErrorMessage" xml:space="preserve">
+    <value>زمان کش نامعتبر است. </value>
+  </data>
+  <data name="ModuleHelp.Text" xml:space="preserve">
+    <value>&lt;h1&gt;تنظیمات ماژول&lt;/h1&gt;&lt;p&gt;مدیران می توانند تنظیمات ماژول صفحه جاری را مدیریت نمایند. این تنظیمات شامل مدیریت محتوا، مجوزهای دسترسی و مشخصات است.&lt;/p&gt;</value>
+  </data>
+  <data name="valBorder.ErrorMessage" xml:space="preserve">
+    <value>عرض لبه نامعتبر است (می بایست عددی بین 0 تا 9 باشد)</value>
+  </data>
+  <data name="valEndDate2.ErrorMessage" xml:space="preserve">
+    <value>تاریخ انقضا می بایست پس از تاریخ آغاز نمایش ماژول باشد</value>
+  </data>
+  <data name="plNewTabs.Help" xml:space="preserve">
+    <value>برای افزودن این ماژول تنها به صفحات جدید این گزینه را فعال نمایید. این امکان تنها برای کاربران مدیر و میزبان مهیا می باشد.</value>
+  </data>
+  <data name="plNewTabs.Text" xml:space="preserve">
+    <value>افزودن به صفحات جدید</value>
+  </data>
+  <data name="plWebSlice.Help" xml:space="preserve">
+    <value>با تنظیم این گزینه، این ماژول به صورت یک IE8 WebSlice در می آید.</value>
+  </data>
+  <data name="plWebSlice.Text" xml:space="preserve">
+    <value>WebSlice باشد؟</value>
+  </data>
+  <data name="plWebSliceExpiry.Help" xml:space="preserve">
+    <value>تاریخ موردنظر برای منقضی شدن Web Slice را وارد نمایید. در صورت عدم تعیین این تاریخ، از تاریخ انقضای ماژول استفاده می شود.</value>
+  </data>
+  <data name="plWebSliceExpiry.Text" xml:space="preserve">
+    <value>تاریخ انقضای Web Slice : </value>
+  </data>
+  <data name="plWebSliceTitle.Help" xml:space="preserve">
+    <value>عنوان Web Slice را وارد نمایید. در صورت عدم تعیین این گزینه، از عنوان ماژول استفاده می شود. </value>
+  </data>
+  <data name="plWebSliceTitle.Text" xml:space="preserve">
+    <value>عنوان Web Slice : </value>
+  </data>
+  <data name="plWebSliceTTL.Help" xml:space="preserve">
+    <value>زمان Live بودن (Time to Live - TTL) را به صورت دقیقه وارد نمایید. درصوتی که برای این گزینه مقداری وارد ننمایید مقدار پیش فرض کش را درنظر می گیرد.</value>
+  </data>
+  <data name="plWebSliceTTL.Text" xml:space="preserve">
+    <value>Web Slice TTL:</value>
+  </data>
+  <data name="valWebSliceExpiry.ErrorMessage" xml:space="preserve">
+    <value>تاریخ انقضای ماژول نامعتبر است.</value>
+  </data>
+  <data name="valWebSliceTTL.ErrorMessage" xml:space="preserve">
+    <value>TTL نامعتبر - می بایست عدد باشد</value>
+  </data>
+  <data name="InstalledOn.Text" xml:space="preserve">
+    <value>این ماژول در صفحات زیر استفاده شده است : </value>
+  </data>
+  <data name="ModuleInstalledOn.Text" xml:space="preserve">
+    <value>افزودن به صفحه </value>
+  </data>
+  <data name="InstalledOn.Help" xml:space="preserve">
+    <value>لیست صفحاتی که شامل این مازول می باشند. این ماژول را می توانید با استفاده از  گزینه افزودن ماژول موجود به صفحات دیگر اضافه نمایید. این امکان تنها برای صفحاتی که این امکان را دارند فراهم است.</value>
+  </data>
+  <data name="MsgInstalledOnNone.Text" xml:space="preserve">
+    <value>این نمونه از ماژول به هیچ صفحه ی دیگری اضافه نشده است.</value>
+  </data>
+  <data name="MsgInstalledOnAll.Text" xml:space="preserve">
+    <value>نمایش ماژول در تمام صفحات </value>
+  </data>
+  <data name="CustomSettings.Text" xml:space="preserve">
+    <value>{0} تنظیمات</value>
+  </data>
+  <data name="ModuleExists.Text" xml:space="preserve">
+    <value>این ماژول در صفحه انتخاب شده وجود دارد(ممکن است در سطل بازیابی باشد) و تنها یک نمونه از این ماژول  در صفحه وجود داشته باشد.</value>
+  </data>
+  <data name="CacheProvider.Help" xml:space="preserve">
+    <value>Provider موردنظر برای استفاده از این صفحه را انتخاب نمایید</value>
+  </data>
+  <data name="CacheDuration.Help" xml:space="preserve">
+    <value>دوره زمانی برای کش نمودن صفحه را (به ثانیه) وارد نمایید. این مقدار می بایست یک عدد باشد</value>
+  </data>
+  <data name="CacheProvider.Text" xml:space="preserve">
+    <value>Provider خروجی کش</value>
+  </data>
+  <data name="CacheDuration.Text" xml:space="preserve">
+    <value>طول مدت کش (ثانیه) :</value>
+  </data>
+  <data name="cmdClearTabModuleCache.Text" xml:space="preserve">
+    <value>پاک نمودن کش برای این تب ماژول</value>
+  </data>
+  <data name="cmdClearAllTabModuleCache.Text" xml:space="preserve">
+    <value>پاک نمودن کش برای تمام تب های ماژول</value>
+  </data>
+  <data name="lblCachedItemCount.Text" xml:space="preserve">
+    <value>تعداد کش های جاری : {0} آیتم برای این ماژول </value>
+  </data>
+  <data name="CacheDurationWarning.Text" xml:space="preserve">
+    <value>. کش نمودن اطلاعات در این ماژول پیشنهاد نمی گردد چون ممکن است باعث نمایش اطلاعات قدیمی گردد.</value>
+  </data>
+  <data name="CacheInherited.Text" xml:space="preserve">
+    <value>به ارث برده شده</value>
+  </data>
+  <data name="plTags.Help" xml:space="preserve">
+    <value>آیتم های موردنظر برای تگ نمودن این ماژول را مشخص کنید</value>
+  </data>
+  <data name="plTags.Text" xml:space="preserve">
+    <value>تگ ها :</value>
+  </data>
+  <data name="plAdminBorder.Help" xml:space="preserve">
+    <value>با فعال نمودن این گزینه، ویرایشگران صفحه پس از ورود به سایت، دور ماژول هایی که تنها برای خود انها قابل نمایش است؛  حاشیه ای قرمز رنگ  مشاهده می کنند.</value>
+  </data>
+  <data name="plAdminBorder.Text" xml:space="preserve">
+    <value>مخفی نمودن حاشیه برای مدیر</value>
+  </data>
+  <data name="cultureLabel.Help" xml:space="preserve">
+    <value>زبان انتخابی این ماژول</value>
+  </data>
+  <data name="cultureLabel.Text" xml:space="preserve">
+    <value>زبان ماژول :</value>
+  </data>
+  <data name="defaultCultureLabel.Help" xml:space="preserve">
+    <value>برای مشاهده نسخه این ماژول در زبان پیش فرض بر روی این لینک کلیک نمایید</value>
+  </data>
+  <data name="defaultCultureLabel.Text" xml:space="preserve">
+    <value>زبان پیش فرض :</value>
+  </data>
+  <data name="Bind.Text" xml:space="preserve">
+    <value>متصل نمودن </value>
+  </data>
+  <data name="edit.Text" xml:space="preserve">
+    <value>ویرایش</value>
+  </data>
+  <data name="UnBind.Text" xml:space="preserve">
+    <value>عدم اتصال</value>
+  </data>
+  <data name="LocalizedModules.Text" xml:space="preserve">
+    <value>بومی سازی ماژول</value>
+  </data>
+  <data name="Translated.Text" xml:space="preserve">
+    <value>ترجمه شده </value>
+  </data>
+  <data name="UnTranslated.Text" xml:space="preserve">
+    <value>ترجمه نشده</value>
+  </data>
+  <data name="CreateBoundCopies.Text" xml:space="preserve">
+    <value>ایجاد کپی های متصل</value>
+  </data>
+  <data name="Permissions.Text" xml:space="preserve">
+    <value>مجوزهای دسترسی</value>
+  </data>
+  <data name="CacheSettings.Text" xml:space="preserve">
+    <value>تنظیمات کش </value>
+  </data>
+  <data name="ContainerPreview.Text" xml:space="preserve">
+    <value>پیش نمایش</value>
+  </data>
+  <data name="ExpandAll.Text" xml:space="preserve">
+    <value>بازنمودن همه</value>
+  </data>
+  <data name="PreviewNoSelectionMessage.Text" xml:space="preserve">
+    <value>یک کانتینر برای پیش نمایش انتخاب نمایید. </value>
+  </data>
+  <data name="lblNoRecords.Text" xml:space="preserve">
+    <value>این ماژول در هیچ صفحه ای استفاده نشده است </value>
+  </data>
+  <data name="Page.Header" xml:space="preserve">
+    <value>صفحه</value>
+  </data>
+  <data name="ControlTitle_settings.Text" xml:space="preserve">
+    <value>{0} تنظیمات</value>
+  </data>
+  <data name="plSearchOnce.Help" xml:space="preserve">
+    <value>تعیین میکند که آیا  تمام صفحات حاوی این ماژول در نتایج جستجو نمایش داده شوند یا نه.</value>
+  </data>
+  <data name="plSearchOnce.Text" xml:space="preserve">
+    <value>یک بار نمایش در نتایج جستجو</value>
+  </data>
+  <data name="isShareableLabel.Help" xml:space="preserve">
+    <value>برای مجوز اشتراک گذاری این ماژول در سایر سایت های پرتال علامت بزنید</value>
+  </data>
+  <data name="isShareableLabel.Text" xml:space="preserve">
+    <value>قابلیت اشتراک گذاری؟</value>
+  </data>
+  <data name="isShareableViewOnlyLabel.Help" xml:space="preserve">
+    <value>برای محدود کردن ماژول به اشتراک گذاری فقط در حالت نمایش تیک بزنید</value>
+  </data>
+  <data name="isShareableViewOnlyLabel.Text" xml:space="preserve">
+    <value>فقط نمایش؟</value>
+  </data>
+</root>

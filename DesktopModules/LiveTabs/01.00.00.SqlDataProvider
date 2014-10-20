@@ -1,0 +1,143 @@
+﻿/* =====================================================================================
+/   TABLE: LiveTabs
+/  ===================================================================================== */
+
+
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}LiveTabs]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+	BEGIN
+
+CREATE TABLE {databaseOwner}[{objectQualifier}LiveTabs]
+(
+	[modID] [int] NOT NULL,
+	[Data] [ntext] NULL
+)
+	ALTER TABLE {databaseOwner}[{objectQualifier}LiveTabs] ADD CONSTRAINT [PK_{objectQualifier}LiveTabs] PRIMARY KEY NONCLUSTERED  ([modID])
+
+	ALTER TABLE {databaseOwner}[{objectQualifier}LiveTabs] WITH NOCHECK ADD CONSTRAINT [FK_{objectQualifier}LiveTabs_{objectQualifier}Modules] FOREIGN KEY ([modID]) REFERENCES {databaseOwner}[{objectQualifier}Modules] ([ModuleID]) ON DELETE CASCADE NOT FOR REPLICATION
+	END
+GO
+
+
+/****** Object:  Stored Procedure {databaseOwner}{objectQualifier}LiveTabsGet    Script Date: Tuesday, October 10, 2006 ******/
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}LiveTabsGet') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}LiveTabsGet
+GO
+
+/****** Object:  Stored Procedure {databaseOwner}{objectQualifier}LiveTabsAdd    Script Date: Tuesday, October 10, 2006 ******/
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}LiveTabsAdd') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}LiveTabsAdd
+GO
+
+/****** Object:  Stored Procedure {databaseOwner}{objectQualifier}LiveTabsUpdate    Script Date: Tuesday, October 10, 2006 ******/
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}LiveTabsUpdate') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}LiveTabsUpdate
+GO
+
+/****** Object:  Stored Procedure {databaseOwner}{objectQualifier}LiveTabsDelete    Script Date: Tuesday, October 10, 2006 ******/
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}LiveTabsDelete') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}{objectQualifier}LiveTabsDelete
+GO
+
+
+/* -------------------------------------------------------------------------------------
+/   LiveTabsGet
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}LiveTabsGet
+	@modID int
+	
+AS
+
+SELECT
+	[Data]
+FROM {databaseOwner}{objectQualifier}LiveTabs
+WHERE
+	[modID] = @modID
+	
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+/* -------------------------------------------------------------------------------------
+/   LiveTabsAdd
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}LiveTabsAdd
+	@modID int,
+	@Data ntext
+AS
+
+INSERT INTO {databaseOwner}{objectQualifier}LiveTabs (
+	[modID],[Data]
+) VALUES (
+	@modID,@Data
+)
+
+select SCOPE_IDENTITY()
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+/* -------------------------------------------------------------------------------------
+/   LiveTabsUpdate
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}LiveTabsUpdate
+	@modID int, 
+	@Data ntext 
+AS
+
+UPDATE {databaseOwner}{objectQualifier}LiveTabs SET
+	[Data] = @Data
+WHERE
+	[modID] = @modID
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+/* -------------------------------------------------------------------------------------
+/   LiveTabsDelete
+/  ------------------------------------------------------------------------------------- */
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}LiveTabsDelete
+	@modID int
+AS
+
+DELETE FROM {databaseOwner}{objectQualifier}LiveTabs
+WHERE
+	[modID] = @modID
+GO
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+
+
+

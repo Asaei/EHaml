@@ -1,0 +1,81 @@
+﻿ <div class="$ThemeName">
+	<div id="weatherslider${ModuleID}" style="width: ${xf.ViewXmlSetting("width","100%")};height: ${xf.ViewXmlSetting("height",350)}px;">
+            #if($DataList.Count > 0) 
+                #foreach($DataItem in $DataList)
+		            <span class="ws-location">$DataItem.Title</span>
+                #end 
+            #end
+	</div>				 				
+</div>
+<script type="text/javascript">
+    jQuery(function ($) {
+        $("#weatherslider${ModuleID}").weatherSlider({
+              //imgPath: "${Module.ModulePath}Effects/${EffectName}/images/",
+            imgPath: "http://www.dnngo.net/DesktopModules/DNNGo_DNNGallery/Effects/Effect_17_WeatherSlider/images/",
+            CSSanimations	: ${xf.ViewXmlSetting("CSSanimations","true")},//Enables or disables CSS3 animations (snow, rain, wind, lightnings).Note, that CSS3 animations will work only in Google Chrome, Apple Safari and Mozilla Firefox browsers. In other browsers the script will animate weather elements using jQuery. 
+            JSanimations    : ${xf.ViewXmlSetting("JSanimations","true")}, //If CSSanimations and JSanimations are both disabled, the script won't animate snow, rain, wind and lightnings. 
+            snow            : ${xf.ViewXmlSetting("snow","true")}, //You can switch off the animation of snow. 
+            rain            : ${xf.ViewXmlSetting("rain","true")}, //You can switch off the animation of rain. 
+            wind            : ${xf.ViewXmlSetting("wind","true")}, //You can switch off the animation of wind.
+            lightnings      : ${xf.ViewXmlSetting("lightnings","true")}, //You can switch off the animation of lightnings.
+
+            windyWeather    : ${xf.ViewXmlSetting("windyWeather",18)},   //You can set the minimum value (in kmph) of the windy weather. If the wind speed of the current weather is higher than the value, the script will animate the background.
+            windDirection   : '${xf.ViewXmlSetting("windDirection","auto")}', //You can set the direction of the background animation if the weather is windy.
+            icyTemp         : ${xf.ViewXmlSetting("icyTemp","-1")},   //You can set the temperature (in °C) of icy weather. If the current temperature is lower than the value, the script will show the icy layer.
+
+            measurement     : '${xf.ViewXmlSetting("measurement","metric")}', //  The type of the measurement.   
+            daytime         : [${xf.ViewXmlSetting("daytime_day",7)}, ${xf.ViewXmlSetting("daytime_night",19)}],   //The script tries automatically determine whether is day or night. If fails, it will use these settings. With this you can specify the interval when it is daytime.
+
+            infoDuration    : ${xf.ViewXmlSetting("infoDuration",450)},      //The duration of the animation of infobox.
+            infoEasingType  : ['${xf.ViewXmlSetting("infoEasingType_1","easeOutBack")}', '${xf.ViewXmlSetting("infoEasingType_2","easeInBack")}'], //The easing types of the animation of infobox.
+
+            reduction           : '${xf.ViewXmlSetting("reduction","auto")}',   //The script automatically scales everything (graphic elements, font sizes, etc) depending on the width and height of the container. You can override it with a number between 0 and 1.
+		    keybNav				: ${xf.ViewXmlSetting("keybNav","true")}, //If true, than you can navigate with left and right arrow keys.Note, that if there are more than one sliders on the same page you should disable this setting.
+		    touchNav            : ${xf.ViewXmlSetting("touchNav","true")}, //If true, than you can navigate with swiping your finger over the slider on touch screen mobile devices.
+		
+		    // NEW FEATURES v2.0
+
+		    responsive          : ${xf.ViewXmlSetting("responsive","true")}, //Enable this option to turn WeatherSlider into a responsive slider.
+		    enableSearchField   : ${xf.ViewXmlSetting("enableSearchField","true")}, //You can show / hide the search field.
+		    enableWeatherInfo   : ${xf.ViewXmlSetting("enableWeatherInfo","true")}, //You can show / hide the weather infobox.
+		    enableForecast      : ${xf.ViewXmlSetting("enableForecast","true")}, //You can show / hide the 3 days forecast feature.
+		    slideDelay          : ${xf.ViewXmlSetting("slideDelay",0)},    //Auto slideshow. If you enter a value, WeatherSlider will change slides (locations) automatically. The value is in ms so if you need to change slides in 5 secs you should add 5000 to the value (0 means false, auto slideshow off).
+		    refreshInterval     : ${xf.ViewXmlSetting("refreshInterval",0)},    //Auto refresh. If you enter a value, WeatherSlider will refresh the weather conditions in the current location automatically. The value is in ms so if you need to refresh in 5 secs you should add 5000 to the value (0 means false, auto refresh off).
+		    timeFormat          : ${xf.ViewXmlSetting("timeFormat",12)},   //You can switch between 12 and 24 hour time formats.
+
+		    // Show or hide current weather data
+
+		    showLoc     : ${xf.ViewXmlSetting("showLoc","true")}, //You can show / hide current location.
+		    showTime    : ${xf.ViewXmlSetting("showTime","true")}, //You can show / hide current time.
+		    showCond    : ${xf.ViewXmlSetting("showCond","true")}, //You can show / hide current weather condition information.
+		    showTemp    : ${xf.ViewXmlSetting("showTemp","true")}, //You can show / hide current temperature information.
+		    showLow     : ${xf.ViewXmlSetting("showLow","true")}, //You can show / hide low temperature information.
+		    showHigh    : ${xf.ViewXmlSetting("showHigh","true")}, //You can show / hide high temperature information.
+		    showHum     : ${xf.ViewXmlSetting("showHum","true")}, //You can show / hide humidity information.
+		    showPrec    : ${xf.ViewXmlSetting("showPrec","true")}, //You can show / hide precipitation information.
+		    showWind    : ${xf.ViewXmlSetting("showWind","true")}, //You can show / hide wind information.
+		    showPress   : ${xf.ViewXmlSetting("showPress","true")}, //You can show / hide pressure information.
+		    showVis     : ${xf.ViewXmlSetting("showVis","true")}, //You can show / hide visibility information.
+
+		    // Show or hide 3 days forecast weather data
+
+		    showFDay    : ${xf.ViewXmlSetting("showFDay","true")}, //You can show / hide the name of the day in the forecast.
+		    showFCond   : ${xf.ViewXmlSetting("showFCond","true")}, //You can show / hide weather conditions in the forecast.
+		    showFLow    : ${xf.ViewXmlSetting("showFLow","true")}, //You can show / hide low temperature information in the forecast.
+		    showFHigh   : ${xf.ViewXmlSetting("showFHigh","true")},  //You can show / hide high temperature information in the forecast.
+            // Important! You must sign up to get your own WorlWeatherOnline API key!
+		    // Please do NOT use our API key, except for testing only!
+		    // The registraion for your API key is free:
+		    // http://www.worldweatheronline.com/register.aspx
+            WWOAPIKey   : '${xf.ViewXmlSetting("WWOAPIKey","bcfd972130073802122311")}' 
+       
+       
+        });
+    });
+</script>
+
+
+
+
+
+ 

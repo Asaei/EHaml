@@ -1,0 +1,101 @@
+﻿SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtMyTokens_GetPortalTokensByType]
+
+	@portalID       int,
+    @type           int
+
+as
+
+SELECT * FROM {databaseOwner}{objectQualifier}avtMyTokens_Tokens WHERE PortalID = @portalID AND TokenType = @type
+
+GO
+
+
+
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtMyTokens_Tokens] ADD CacheTimeSec int Default 0 NOT NULL
+GO
+
+
+set ANSI_NULLS ON
+GO
+set QUOTED_IDENTIFIER ON
+go
+
+
+ALTER procedure {databaseOwner}[{objectQualifier}avtMyTokens_AddToken]
+
+	@portalID		int,
+	@tokenName		nvarchar(255),
+	@tokenDesc		ntext,
+	@tokenType		int,
+	@tokenRule		ntext,
+	@tokenData		ntext,
+	@cacheTimeSec	int
+
+as
+
+INSERT INTO {databaseOwner}{objectQualifier}avtMyTokens_Tokens (PortalID, TokenName, TokenDescription, TokenType, TokenRule, TokenData, CacheTimeSec)
+	VALUES (@portalID, @tokenName, @tokenDesc, @tokenType, @tokenRule, @tokenData, @cacheTimeSec)
+
+SELECT SCOPE_IDENTITY()
+
+GO
+set ANSI_NULLS ON
+GO
+set QUOTED_IDENTIFIER ON
+go
+
+
+
+
+ALTER procedure {databaseOwner}[{objectQualifier}avtMyTokens_UpdateToken]
+
+	@tokenID		int,
+	@tokenName		nvarchar(255),
+	@tokenDesc		ntext,
+	@tokenType		int,
+	@tokenRule		ntext,
+	@tokenData		ntext,
+	@cacheTimeSec	int
+
+as
+
+UPDATE {databaseOwner}{objectQualifier}avtMyTokens_Tokens 
+SET 
+	TokenName = @tokenName, 
+	TokenDescription = @tokenDesc, 
+	TokenType = @tokenType, 
+	TokenRule = @tokenRule,
+	TokenData = @tokenData,
+	CacheTimeSec = @cacheTimeSec
+WHERE TokenID = @tokenID
+
+
+
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE TABLE {databaseOwner}[{objectQualifier}avtMyTokens_Activations](
+	[RegistrationCode] [nvarchar](100) NOT NULL,
+	[Host] [nvarchar](255) NOT NULL,
+	[ActivationCode] [nvarchar](1024) NOT NULL,
+	[ProductKey] [nvarchar](1024) NOT NULL,
+	[BaseProductCode] [nvarchar](50) NOT NULL,
+	[BaseProductVersion] [nvarchar](50) NOT NULL,
+ CONSTRAINT [PK_{objectQualifier}avtMyTokens_Activations] PRIMARY KEY CLUSTERED 
+(
+	[RegistrationCode] ASC,
+	[Host] ASC
+)
+) ON [PRIMARY]
+
+GO

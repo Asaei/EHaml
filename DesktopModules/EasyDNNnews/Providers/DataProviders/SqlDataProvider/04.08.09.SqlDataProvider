@@ -1,0 +1,305 @@
+﻿/****** Object:  Table [dbo].[EasyDNNNewsCategoryLink]    Script Date: 10/22/2012 14:36:42 ******/
+/****** Object:  ForeignKey [FK_EasyDNNNewsCategoryLink_EasyDNNNewsCategoryList]    Script Date: 10/22/2012 14:36:45 ******/
+/****** Object:  ForeignKey [FK_EasyDNNNewsCategoryLink_Modules]    Script Date: 10/22/2012 14:36:45 ******/
+
+/****** Object:  Table [dbo].[EasyDNNNewsPortalFilterByTagID]    Script Date: 11/06/2012 10:56:31 ******/
+/****** Object:  ForeignKey [FK_EasyDNNNewsPortalFilterByTagID_Portals]    Script Date: 11/06/2012 10:56:31 ******/
+/****** Object:  ForeignKey [FK_EasyDNNNewsPortalFilterByTagID_EasyDNNNewsNewTags]    Script Date: 11/06/2012 10:56:31 ******/
+
+/****** Object:  Table [dbo].[EasyDNNNewsPortalCategoryLink]    Script Date: 11/05/2012 14:32:18 ******/
+/****** Object:  ForeignKey [FK_EasyDNNNewsPortalCategoryLink_EasyDNNNewsCategoryList]    Script Date: 11/05/2012 14:32:18 ******/
+/****** Object:  ForeignKey [FK_EasyDNNNewsPortalCategoryLink_Modules]    Script Date: 11/05/2012 14:32:18 ******/
+/****** Object:  ForeignKey [FK_EasyDNNNewsPortalCategoryLink_Portals]    Script Date: 11/05/2012 14:32:18 ******/
+
+/****** Object:  Table [dbo].[EasyDNNNewsPortalFilterByArticles]    Script Date: 11/12/2012 16:23:43 ******/
+/****** Object:  Table [dbo].[EasyDNNNewsFilterByArticles]    Script Date: 11/12/2012 16:23:43 ******/
+/****** Object:  ForeignKey [FK_EasyDNNNewsFilterByArticles_EasyDNNNews]    Script Date: 11/12/2012 16:23:43 ******/
+/****** Object:  ForeignKey [FK_EasyDNNNewsFilterByArticles_Modules]    Script Date: 11/12/2012 16:23:43 ******/
+/****** Object:  ForeignKey [FK_EasyDNNNewsPortalArticlesFilter_Portals]    Script Date: 11/12/2012 16:23:43 ******/
+/****** Object:  ForeignKey [FK_EasyDNNNewsPortalFilterByArticles_EasyDNNNews]    Script Date: 11/12/2012 16:23:43 ******/
+
+/**** Adding new columns 'EasyDNNNewsGallery' and column_name = 'Responsive', 'EasyDNNNewsEventsData' and column_name = 'ShowEndDate', 'EasyDNNNewsPortalSettings' and column_name = 'MapsUserLocationRequest'****/
+/**** Modifing columns GalleryName nvarchar(500),GalleryDescription nvarchar(2000)****/
+/****** Added  ApproveArticle,ApproveUpdateArticle,EditOwnArticle columns to tables EasyDNNNewsRolePremissionSettings,EasyDNNNewsUserPremissionSettings Script Date: 10/30/2012 14:36:42 ******/
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsCategoryLink]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[EasyDNNNewsCategoryLink](
+	[SourceModuleID] [int] NOT NULL,
+	[CategoryID] [int] NOT NULL,
+	[NewsModuleID] [int] NOT NULL,
+ CONSTRAINT [PK_EasyDNNNewsCategoryLink] PRIMARY KEY CLUSTERED ( [SourceModuleID] ASC, [CategoryID] ASC )WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+ )
+END
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsCategoryLink_EasyDNNNewsCategoryList]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsCategoryLink]'))
+ALTER TABLE [dbo].[EasyDNNNewsCategoryLink]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsCategoryLink_EasyDNNNewsCategoryList] FOREIGN KEY([CategoryID])
+REFERENCES [dbo].[EasyDNNNewsCategoryList] ([CategoryID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsCategoryLink_EasyDNNNewsCategoryList]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsCategoryLink]'))
+ALTER TABLE [dbo].[EasyDNNNewsCategoryLink] CHECK CONSTRAINT [FK_EasyDNNNewsCategoryLink_EasyDNNNewsCategoryList]
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsCategoryLink_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsCategoryLink]'))
+ALTER TABLE [dbo].[EasyDNNNewsCategoryLink]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsCategoryLink_Modules] FOREIGN KEY([SourceModuleID])
+REFERENCES {databaseOwner}{objectQualifier}Modules ([ModuleID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsCategoryLink_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsCategoryLink]'))
+ALTER TABLE [dbo].[EasyDNNNewsCategoryLink] CHECK CONSTRAINT [FK_EasyDNNNewsCategoryLink_Modules]
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalFilterByTagID]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[EasyDNNNewsPortalFilterByTagID](
+	[FilterPortalID] [int] NOT NULL,
+	[TagID] [int] NOT NULL,
+ CONSTRAINT [PK_EasyDNNNewsPortalFilterByTagID] PRIMARY KEY CLUSTERED ([FilterPortalID] ASC,[TagID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+)
+END
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalFilterByTagID_EasyDNNNewsNewTags]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalFilterByTagID]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalFilterByTagID]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsPortalFilterByTagID_EasyDNNNewsNewTags] FOREIGN KEY([TagID])
+REFERENCES [dbo].[EasyDNNNewsNewTags] ([TagID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalFilterByTagID_EasyDNNNewsNewTags]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalFilterByTagID]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalFilterByTagID] CHECK CONSTRAINT [FK_EasyDNNNewsPortalFilterByTagID_EasyDNNNewsNewTags]
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalFilterByTagID_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalFilterByTagID]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalFilterByTagID]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsPortalFilterByTagID_Portals] FOREIGN KEY([FilterPortalID])
+REFERENCES {databaseOwner}{objectQualifier}Portals ([PortalID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalFilterByTagID_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalFilterByTagID]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalFilterByTagID] CHECK CONSTRAINT [FK_EasyDNNNewsPortalFilterByTagID_Portals]
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalCategoryLink]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[EasyDNNNewsPortalCategoryLink](
+	[SourcePortalID] [int] NOT NULL,
+	[CategoryID] [int] NOT NULL,
+	[NewsModuleID] [int] NOT NULL,
+ CONSTRAINT [PK_EasyDNNNewsPortalCategoryLink] PRIMARY KEY CLUSTERED ([SourcePortalID] ASC, [CategoryID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+)
+END
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalCategoryLink_EasyDNNNewsCategoryList]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalCategoryLink]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalCategoryLink]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsPortalCategoryLink_EasyDNNNewsCategoryList] FOREIGN KEY([CategoryID])
+REFERENCES [dbo].[EasyDNNNewsCategoryList] ([CategoryID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalCategoryLink_EasyDNNNewsCategoryList]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalCategoryLink]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalCategoryLink] CHECK CONSTRAINT [FK_EasyDNNNewsPortalCategoryLink_EasyDNNNewsCategoryList]
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalCategoryLink_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalCategoryLink]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalCategoryLink]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsPortalCategoryLink_Modules] FOREIGN KEY([NewsModuleID])
+REFERENCES {databaseOwner}{objectQualifier}Modules ([ModuleID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalCategoryLink_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalCategoryLink]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalCategoryLink] CHECK CONSTRAINT [FK_EasyDNNNewsPortalCategoryLink_Modules]
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalCategoryLink_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalCategoryLink]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalCategoryLink]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsPortalCategoryLink_Portals] FOREIGN KEY([SourcePortalID])
+REFERENCES {databaseOwner}{objectQualifier}Portals ([PortalID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalCategoryLink_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalCategoryLink]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalCategoryLink] CHECK CONSTRAINT [FK_EasyDNNNewsPortalCategoryLink_Portals]
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalFilterByArticles]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[EasyDNNNewsPortalFilterByArticles](
+	[FilterPortalID] [int] NOT NULL,
+	[ArticleID] [int] NOT NULL,
+ CONSTRAINT [PK_EasyDNNNewsPortalFilterByArticles] PRIMARY KEY CLUSTERED ([FilterPortalID] ASC,[ArticleID] ASC) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+)
+END
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsFilterByArticles]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[EasyDNNNewsFilterByArticles](
+	[FilterModuleID] [int] NOT NULL,
+	[ArticleID] [int] NOT NULL,
+	CONSTRAINT [PK_EasyDNNNewsFilterByArticles] PRIMARY KEY CLUSTERED ([FilterModuleID] ASC,[ArticleID] ASC ) WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+)
+END
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsFilterByArticles_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsFilterByArticles]'))
+ALTER TABLE [dbo].[EasyDNNNewsFilterByArticles]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsFilterByArticles_EasyDNNNews] FOREIGN KEY([ArticleID])
+REFERENCES [dbo].[EasyDNNNews] ([ArticleID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsFilterByArticles_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsFilterByArticles]'))
+ALTER TABLE [dbo].[EasyDNNNewsFilterByArticles] CHECK CONSTRAINT [FK_EasyDNNNewsFilterByArticles_EasyDNNNews]
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsFilterByArticles_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsFilterByArticles]'))
+ALTER TABLE [dbo].[EasyDNNNewsFilterByArticles]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsFilterByArticles_Modules] FOREIGN KEY([FilterModuleID])
+REFERENCES {databaseOwner}{objectQualifier}Modules ([ModuleID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsFilterByArticles_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsFilterByArticles]'))
+ALTER TABLE [dbo].[EasyDNNNewsFilterByArticles] CHECK CONSTRAINT [FK_EasyDNNNewsFilterByArticles_Modules]
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalArticlesFilter_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalFilterByArticles]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalFilterByArticles]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsPortalArticlesFilter_Portals] FOREIGN KEY([FilterPortalID])
+REFERENCES {databaseOwner}{objectQualifier}Portals ([PortalID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalArticlesFilter_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalFilterByArticles]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalFilterByArticles] CHECK CONSTRAINT [FK_EasyDNNNewsPortalArticlesFilter_Portals]
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalFilterByArticles_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalFilterByArticles]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalFilterByArticles]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsPortalFilterByArticles_EasyDNNNews] FOREIGN KEY([ArticleID])
+REFERENCES [dbo].[EasyDNNNews] ([ArticleID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalFilterByArticles_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalFilterByArticles]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalFilterByArticles] CHECK CONSTRAINT [FK_EasyDNNNewsPortalFilterByArticles_EasyDNNNews]
+GO
+
+/**** Adding new columns ****/
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsGallery' and column_name = 'Responsive')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsGallery] ADD Responsive bit NOT NULL DEFAULT(0)
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsEventsData' and column_name = 'ShowEndDate')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsEventsData] ADD ShowEndDate bit NOT NULL DEFAULT(1)
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsPortalSettings' and column_name = 'MapsUserLocationRequest')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsPortalSettings] ADD MapsUserLocationRequest bit NOT NULL DEFAULT(1)
+END
+GO
+
+/**** Modifing columns ****/
+ALTER TABLE EasyGallery ALTER Column GalleryName nvarchar(500)
+ALTER TABLE EasyGallery ALTER Column GalleryDescription nvarchar(2000)
+
+/**** skripta koja prebacuje title link i meta u lokalizacijsku tablicu ****/
+
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsRolePremissionSettings' and column_name = 'ApproveArticle')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionSettings] ADD ApproveArticle bit NOT NULL DEFAULT(0)
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsRolePremissionSettings' and column_name = 'ApproveUpdateArticle')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionSettings] ADD ApproveUpdateArticle bit NOT NULL DEFAULT(0)
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsRolePremissionSettings' and column_name = 'ApproveUpdateArticle')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionSettings] ADD ApproveUpdateArticle bit NOT NULL DEFAULT(0)
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsRolePremissionSettings' and column_name = 'EditOwnArticle')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionSettings] ADD EditOwnArticle bit NOT NULL DEFAULT(0)
+END
+GO
+
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsUserPremissionSettings' and column_name = 'ApproveArticle')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsUserPremissionSettings] ADD ApproveArticle bit NOT NULL DEFAULT(0)
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsUserPremissionSettings' and column_name = 'ApproveUpdateArticle')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsUserPremissionSettings] ADD ApproveUpdateArticle bit NOT NULL DEFAULT(0)
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsUserPremissionSettings' and column_name = 'ApproveUpdateArticle')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsUserPremissionSettings] ADD ApproveUpdateArticle bit NOT NULL DEFAULT(0)
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsUserPremissionSettings' and column_name = 'EditOwnArticle')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsUserPremissionSettings] ADD EditOwnArticle bit NOT NULL DEFAULT(0)
+END
+GO
+
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsContentLocalization' and column_name = 'clTitleLink')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsContentLocalization] ADD clTitleLink nvarchar(200) NOT NULL DEFAULT('')
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsContentLocalization' and column_name = 'MetaDecription')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsContentLocalization] ADD MetaDecription nvarchar(1000) NOT NULL DEFAULT('')
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsContentLocalization' and column_name = 'MetaKeywords')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsContentLocalization] ADD MetaKeywords nvarchar(500) NOT NULL DEFAULT('')
+END
+GO
+
+DECLARE @RowsToProcessByArticle int;
+DECLARE @CurrentRowByArticles int;
+DECLARE @ArticleID int;
+DECLARE @Title nvarchar(200);
+DECLARE @TitleLink nvarchar(200);
+DECLARE @MetaDecription nvarchar(1000);
+DECLARE @MetaKeywords nvarchar(500);
+
+DECLARE @Articles TABLE
+(
+	RowID int not null primary key identity(1,1),
+	ArticleID int
+)
+
+INSERT INTO @Articles SELECT DISTINCT nt.[ArticleID] FROM [dbo].[EasyDNNNewsContentLocalization] as nt ORDER BY ArticleID;
+SET @RowsToProcessByArticle=@@ROWCOUNT;
+
+BEGIN TRANSACTION;
+BEGIN TRY
+SET NOCOUNT ON 
+SET @CurrentRowByArticles = 0
+WHILE @CurrentRowByArticles < @RowsToProcessByArticle
+BEGIN
+    SET @CurrentRowByArticles = @CurrentRowByArticles + 1;
+    BEGIN TRY
+		SELECT @ArticleID = a.ArticleID FROM @Articles as a WHERE a.RowID=@CurrentRowByArticles;      
+		SELECT @Title = n.[Title], @TitleLink = n.[TitleLink], @MetaDecription = n.[MetaDecription], @MetaKeywords = n.[MetaKeywords] FROM EasyDNNNews as n WHERE n.ArticleID = @ArticleID
+		UPDATE EasyDNNNewsContentLocalization SET
+		  clTitleLink = (CASE WHEN (clTitleLink = '''') THEN @TitleLink ELSE clTitleLink END),
+		  MetaDecription = (CASE WHEN (MetaDecription = '''') THEN @MetaDecription ELSE MetaDecription END),
+		  MetaKeywords = (CASE WHEN (MetaKeywords = '''') THEN @MetaKeywords ELSE MetaKeywords END)
+		WHERE ArticleID = @ArticleID    END TRY
+    BEGIN CATCH    
+    END CATCH 
+END
+
+END TRY
+BEGIN CATCH
+    SELECT 
+         ERROR_NUMBER() AS ErrorNumber
+        ,ERROR_SEVERITY() AS ErrorSeverity
+        ,ERROR_STATE() AS ErrorState
+        ,ERROR_PROCEDURE() AS ErrorProcedure
+        ,ERROR_LINE() AS ErrorLine
+        ,ERROR_MESSAGE() AS ErrorMessage;
+
+    IF @@TRANCOUNT > 0
+        ROLLBACK TRANSACTION;
+END CATCH;
+
+IF @@TRANCOUNT > 0
+    COMMIT TRANSACTION;

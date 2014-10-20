@@ -1,0 +1,85 @@
+<token>
+    <name>TweetButton</name>
+    <desc>The Tweet Button is a small widget which allows users to easily share your website with their followers.</desc>
+    <cacheTimeSeconds>86400</cacheTimeSeconds>
+    <docurl>http://dev.twitter.com/pages/tweet_button</docurl>
+    
+    <src>
+        <type>string</type>
+        <text>
+            <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+            <a href="http://twitter.com/share" 
+               class="twitter-share-button"
+               __params__="{{url|data-url='{0}'}} {{via|data-via='{0}'}} {{text|data-text='{0}'}} {{related|data-related='{0}'}} {{count|data-count='{0}'}} {{lang|data-lang='{0}'}} {{counturl|data-counturl='{0}'}}">
+               Tweet
+           </a>
+        </text>
+    </src>
+    
+    <parser>
+        <type>string</type>
+        <replace>false</replace>
+        <decodeHtml>false</decodeHtml>
+    </parser>
+    
+    <param>
+        <name>Url</name>
+        <type>string</type>
+        <desc>URL to Tweet. If not specified it uses the URL of the webpage.</desc>
+        <required>false</required>
+    </param>
+    
+    <param>
+        <name>Via</name>
+        <type>string</type>
+        <desc>Via user.</desc>
+        <required>false</required>
+    </param>
+    
+    <param>
+        <name>Text</name>
+        <type>string</type>
+        <desc>The text that appears inside the tweet. If not specifed it uses page title.</desc>
+        <required>false</required>
+    </param>
+    
+    <param>
+        <name>Related</name>
+        <type>string</type>
+        <desc>Recommended accounts - you can suggest accounts for a user to follow once they have sent a Tweet using your Tweet Button. These suggested accounts and their basic information are shown on the last page of the Share Box flow.</desc>
+        <required>false</required>
+    </param>
+
+    <param>
+        <name>Count</name>
+        <type>enum</type>
+        <values>horizontal,vertical</values><!-- only for enums, comma separated list -->
+        <desc>Count box position. Default is horizontal.</desc>
+        <required>false</required>
+    </param>
+    
+    <param>
+        <name>Lang</name>
+        <type>string</type>
+        <desc>The language for the Tweet Button. Default is en.</desc>
+        <required>false</required>
+    </param>
+    
+    <param>
+        <name>CountUrl</name>
+        <type>string</type>
+        <desc>URL to which your shared URL resolves to? default is the url being shared.</desc>
+        <required>false</required>
+    </param>
+    
+    <example>
+        <codeSnippet>[Social:TweetButton]</codeSnippet>
+        <desc>Show Tweet button that will share current URL with default settings.</desc>
+    </example>
+    
+    <example>
+        <codeSnippet>[Social:TweetButton(Count=vertical,Text="Check This!",Url="http://mysite.com")]</codeSnippet>
+        <desc>Show Tweet button that will share current URL, displaying the count above the button and the specifieddefault text.</desc>
+    </example>
+    
+</token>

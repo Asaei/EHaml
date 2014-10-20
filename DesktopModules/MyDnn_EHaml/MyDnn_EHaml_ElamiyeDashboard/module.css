@@ -1,0 +1,986 @@
+﻿.k-grid-content { padding-right: 17px !important; }
+
+.MyElamiyesReply {
+    margin-top: 60px;
+    float: right;
+}
+
+/**/
+
+#dnn_ctr1436_LordDashboard_cbolActiveInquiry {
+    float: right;
+    margin-left: 15px;
+    width: 540px !important;
+    max-width: 800px !important;
+}
+
+.dnnFixedSizeComboBox { width: 600px; }
+
+.mright.ui-tabs-panel.ui-widget-content.ui-corner-bottom {
+    width: 765px !important;
+    min-height: 535px;
+}
+
+.dnnPrimaryAction {
+    height: 30px;
+    line-height: 30px;
+}
+
+
+.item-td { width: 100%; }
+
+.item-panel {
+    width: 100%;
+    border-bottom: solid 0px silver;
+}
+
+.left-panel {
+    width: 25%;
+    float: left;
+    margin: 0 5px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.right-panel {
+    width: 70%;
+    float: right;
+}
+
+.right-panel .r-img {
+    background: url("../MyDnn_EHaml_Dashboard/images/pic1.png") no-repeat scroll 0 -640px rgba(0, 0, 0, 0);
+    height: 83px;
+    margin: 35px 5px 10px 10px;
+    width: 140px;
+    float: right;
+    margin-left: 10px;
+}
+
+.cnt-panel {
+    min-height: 100px;
+    float: right;
+    padding-top: 10px;
+}
+
+.cnt-panel .title-main { font-size: 25px; }
+
+.cnt-panel .title1 {
+    color: #808080;
+    font-family: bkoodak;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: normal;
+    margin: 0;
+}
+
+
+.cnt-panel .title2 {
+    color: #9f9f9f;
+    font-family: bkoodak;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: normal;
+    margin: 0;
+}
+
+.cnt-panel .title2 span { color: #619eff; }
+
+.cnt-panel .title3 {
+    color: #5B5B5B;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.cnt-panel .title4 {
+    color: #5B5B5B;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.item-btn { width: 150px; }
+
+.rate-item > img { padding-top: 5px; }
+
+.title-expredate {
+    color: #808080;
+    font-family: tahoma;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.ReplyToInquiryShenasname .dnnlabel:nth-child(2) {
+    border: 1px solid #C0C0C0;
+    min-width: 450px;
+    padding: 5px;
+    min-height: 20px;
+}
+
+
+.k-link {
+    font-family: tahoma;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+.k-grid td {
+    font-family: tahoma;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.MyInquirysReplyd {
+    margin-top: 60px;
+    float: right;
+}
+
+.quality {
+    margin: 0 auto;
+    width: 102px;
+    height: 100%;
+    display: block;
+}
+
+.qualityTarikhGozashte {
+    margin: 0 auto;
+    width: 102px;
+    height: 100%;
+    display: block;
+}
+
+.qualitySuc {
+    margin: 0 auto;
+    width: 102px;
+    height: 100%;
+    display: block;
+}
+
+.Power {
+    clear: both;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    width: 38px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.NazareKhoob {
+    float: right;
+    color: #1f9f1f;
+    margin-right: 8%;
+}
+
+.NazareBad {
+    float: left;
+    color: #ff0000;
+    margin-left: 9%;
+    clear: left;
+}
+
+.JoziyateNazarSanji {
+    display: block;
+    clear: both;
+    text-align: center;
+    margin-left: 4%;
+    padding-top: 5px;
+}
+
+.JoziyateNazarSanji > a { width: 130px; }
+
+.TarikheErsal {
+    float: left;
+    clear: both;
+    margin-top: -10%;
+    margin-left: 8%;
+}
+
+.ZamaneAmadegiBarayeShooroo {
+    float: right;
+    clear: right;
+    margin-top: 2.3%;
+}
+
+.GeymateKol {
+    float: left;
+    clear: left;
+    font: 20px bkoodak;
+    margin-top: 0.5%;
+}
+
+.Pishbini {
+    float: right;
+    clear: both;
+    margin-top: 1%;
+}
+
+.NameKhedmatresan {
+    display: block;
+    text-align: center;
+    margin-top: -14%;
+    color: #1f9f1f;
+}
+
+.MoshahedeyeEtelaateTamas {
+    margin-right: 15%;
+    color: #1f9f1f !important;
+}
+
+.MoshahedeyeEtelaateTamas > a { color: #1f9f1f !important; }
+
+.ajax-load {
+    background: url("../MyDnn_EHaml_Dashboard/images/loading.gif") no-repeat scroll center center #f8f5f5;
+    height: 800px;
+    left: 0;
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.BaPishnahadMovafegamTarikhGozashte { }
+
+.ShomareEstelam {
+    display: block;
+    width: 190px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 0%;
+}
+
+.CreateDateSuc {
+    display: block;
+    width: 190px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.StartingPointSuc {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 8px;
+}
+
+
+.JoziyateEstelamSSuc {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-right: 2%;
+    text-align: center;
+}
+
+.JoziyateEstelamKhSuc {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-right: 7%;
+}
+
+.col1 {
+    margin-top: 10px;
+    float: right;
+    margin-left: 2px;
+    width: 35%;
+}
+
+.col2 {
+    margin-top: 10px;
+    float: right;
+    margin-right: 2px;
+    margin-left: 2px;
+    width: 29%;
+}
+
+.col3 {
+    margin-top: 10px;
+    float: left;
+    margin-right: 2px;
+    margin-left: 2px;
+    width: 32%;
+}
+
+.NameKhadamatResan {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.joziyateKhadamatresan {
+    display: inline-block;
+    margin: 10px 16px;
+}
+
+.titleKhadamatresan {
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+
+.GrdInquiryReplyDetail { margin-top: 60px; }
+
+.ModatZamaneHaml {
+    float: right;
+    margin-top: 2%;
+}
+
+.PishbiniKh {
+    float: left;
+    margin-top: 1%;
+    clear: both;
+}
+
+.downContent {
+    clear: left;
+    text-align: center;
+}
+
+.classInsideDiv {
+    display: block;
+    padding-top: 30px !important;
+}
+
+
+.VaziyatePishnahadOk {
+    margin-left: 15px;
+    font-family: bkoodak;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(5, 179, 5);
+}
+
+
+
+.VaziyatePishnahadNotOk {
+    margin-left: 15px;
+    font-family: bkoodak;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.VaziyatePishnahadBarrasi {
+    margin-left: 15px;
+    font-family: bkoodak;
+    font-size: 22px;
+    font-weight: bold;
+    color: #5B5B5B;
+}
+
+.SahebName { display: none; }
+
+.JoziyatePishnahad {
+    width: 100px;
+    margin: 0 auto;
+    height: 100%;
+    display: block;
+}
+
+.green {
+    background: url(../MyDnn_EHaml_Dashboard/Images/accept.png) no-repeat scroll center center;
+    height: 32px;
+    width: 100%;
+    text-indent: -90000px;
+    display: block;
+}
+
+.red {
+    background: url(../MyDnn_EHaml_Dashboard/Images/deny.png) no-repeat scroll center center;
+    height: 32px;
+    width: 100%;
+    text-indent: -90000px;
+    display: block;
+}
+
+.blue {
+    background: url(../MyDnn_EHaml_Dashboard/Images/info.png) no-repeat scroll center center;
+    height: 32px;
+    width: 100%;
+    text-indent: -90000px;
+    display: block;
+}
+
+.col3_Kh {
+    margin-top: 10px;
+    float: left;
+    margin-left: 12px;
+    width: 26%;
+}
+
+.JoziyateNazarSanji_Kh {
+    display: block;
+    clear: both;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.col1_Kh {
+    margin-top: 10px;
+    float: right;
+    margin-left: 2px;
+    width: 41%;
+}
+
+.col2_Kh {
+    margin-top: 10px;
+    float: right;
+    width: 25%;
+}
+
+.joziyatePishnahadSuc_Kh {
+    display: inline-block;
+    margin: 8px -8px;
+}
+
+.ShomaGablanSherkatKadeed { text-align: center; }
+
+.logoForPrint {
+    position: absolute !important;
+    top: 4px !important;
+    background: darkgray !important;
+}
+
+.logoForPrint img { width: 155px !important; }
+
+.k-grid-content { padding-right: 17px !important; }
+
+span.masir {
+    clear: both;
+    float: right;
+}
+
+span.flash {
+    padding-right: 25px;
+    background: url("images/felesh.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+    margin: 8px;
+}
+
+span.vasilemoredeniyazesm {
+    clear: both;
+    float: right;
+    padding-top: 3px;
+}
+
+div#grdMyElamiyesS { top: -40px; }
+
+div#grdMyElamiyesTarikhGozashte { top: -105px; }
+
+div#grdMySucElamiyes { top: -150px; }
+
+#dnn_ctr1436_LordDashboard_cbolActiveInquiry {
+    float: right;
+    margin-left: 15px;
+    width: 540px !important;
+    max-width: 800px !important;
+}
+
+.dnnFixedSizeComboBox { width: 600px; }
+
+.mright.ui-tabs-panel.ui-widget-content.ui-corner-bottom {
+    width: 765px !important;
+    min-height: 535px;
+}
+
+.dnnPrimaryAction {
+    height: 30px;
+    line-height: 30px;
+}
+
+
+.item-td { width: 100%; }
+
+.item-panel {
+    width: 100%;
+    border-bottom: solid 0px silver;
+}
+
+.left-panel {
+    width: 25%;
+    float: left;
+    margin: 0 5px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.right-panel {
+    width: 70%;
+    float: right;
+}
+
+.right-panel .r-img {
+    background: url("../MyDnn_EHaml_Dashboard/images/pic1.png") no-repeat scroll 0 -640px rgba(0, 0, 0, 0);
+    height: 83px;
+    margin: 35px 5px 10px 10px;
+    width: 140px;
+    float: right;
+    margin-left: 10px;
+}
+
+.cnt-panel {
+    min-height: 100px;
+    float: right;
+    padding-top: 10px;
+}
+
+.cnt-panel .title-main { font-size: 25px; }
+
+.cnt-panel .title1 {
+    color: #808080;
+    font-family: bkoodak;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: normal;
+    margin: 0;
+}
+
+
+.cnt-panel .title2 {
+    color: #9f9f9f;
+    font-family: bkoodak;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: normal;
+    margin: 0;
+}
+
+.cnt-panel .title2 span { color: #619eff; }
+
+.cnt-panel .title3 {
+    color: #5B5B5B;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.cnt-panel .title4 {
+    color: #5B5B5B;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.item-btn { width: 150px; }
+
+.rate-item > img { padding-top: 5px; }
+
+.title-expredate {
+    color: #808080;
+    font-family: tahoma;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.ReplyToInquiryShenasname .dnnlabel:nth-child(2) {
+    border: 1px solid #C0C0C0;
+    min-width: 450px;
+    padding: 5px;
+    min-height: 20px;
+}
+
+
+.k-link {
+    font-family: tahoma;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+.k-grid td {
+    font-family: tahoma;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.MyInquirysReplyd {
+    margin-top: 60px;
+    float: right;
+}
+
+.quality {
+    margin: 0 auto;
+    width: 102px;
+    height: 100%;
+    display: block;
+}
+
+.qualityTarikhGozashte {
+    margin: 0 auto;
+    width: 102px;
+    height: 100%;
+    display: block;
+}
+
+.qualitySuc {
+    margin: 0 auto;
+    width: 102px;
+    height: 100%;
+    display: block;
+}
+
+.Power {
+    clear: both;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    width: 38px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.NazareKhoob {
+    float: right;
+    color: #1f9f1f;
+    margin-right: 8%;
+}
+
+.NazareBad {
+    float: left;
+    color: #ff0000;
+    margin-left: 9%;
+    clear: left;
+}
+
+.JoziyateNazarSanji {
+    display: block;
+    clear: both;
+    text-align: center;
+    margin-left: 4%;
+    padding-top: 5px;
+}
+
+.JoziyateNazarSanji > a { width: 130px; }
+
+.TarikheErsal {
+    float: left;
+    clear: both;
+    margin-top: -10%;
+    margin-left: 8%;
+}
+
+.ZamaneAmadegiBarayeShooroo {
+    float: right;
+    clear: right;
+    margin-top: 2.3%;
+}
+
+.GeymateKol {
+    float: left;
+    clear: left;
+    font: 20px bkoodak;
+    margin-top: 0.5%;
+}
+
+.Pishbini {
+    float: right;
+    clear: both;
+    margin-top: 1%;
+}
+
+.NameKhedmatresan {
+    display: block;
+    text-align: center;
+    margin-top: -14%;
+    color: #1f9f1f;
+}
+
+.MoshahedeyeEtelaateTamas {
+    margin-right: 15%;
+    color: #1f9f1f !important;
+}
+
+.MoshahedeyeEtelaateTamas > a { color: #1f9f1f !important; }
+
+.ajax-load {
+    background: url("../MyDnn_EHaml_Dashboard/images/loading.gif") no-repeat scroll center center #f8f5f5;
+    height: 800px;
+    left: 0;
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.BaPishnahadMovafegamTarikhGozashte { }
+
+.ShomareEstelam {
+    display: block;
+    width: 190px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 0%;
+}
+
+.CreateDateSuc {
+    display: block;
+    width: 190px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.StartingPointSuc {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 8px;
+}
+
+
+.JoziyateEstelamSSuc {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-right: 7%;
+}
+
+.JoziyateEstelamKhSuc {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-right: 7%;
+}
+
+.col1 {
+    margin-top: 10px;
+    float: right;
+    margin-left: 2px;
+    width: 35%;
+}
+
+.col2 {
+    margin-top: 10px;
+    float: right;
+    margin-right: 2px;
+    margin-left: 2px;
+    width: 29%;
+}
+
+.col3 {
+    margin-top: 10px;
+    float: left;
+    margin-right: 2px;
+    margin-left: 2px;
+    width: 32%;
+}
+
+.NameKhadamatResan {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.joziyateKhadamatresan {
+    display: inline-block;
+    margin: 10px 16px;
+}
+
+.titleKhadamatresan { font-weight: bold; }
+
+/*.joziyatePishnahadSuc {
+position: absolute;
+float: right;
+top: 35.3%;
+right: 52.7%;
+}*/
+
+span.masirsuc {
+    margin: 18px 2px;
+    display: inline-block;
+    clear: both;
+}
+
+
+.GrdInquiryReplyDetail { margin-top: 60px; }
+
+.ModatZamaneHaml {
+    float: right;
+    margin-top: 2%;
+}
+
+.PishbiniKh {
+    float: left;
+    margin-top: 1%;
+    clear: both;
+}
+
+.downContent {
+    clear: left;
+    text-align: center;
+}
+
+.classInsideDiv {
+    display: block;
+    padding-top: 30px !important;
+}
+
+
+.VaziyatePishnahadOk {
+    margin-left: 15px;
+    font-family: bkoodak;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(5, 179, 5);
+}
+
+
+
+.VaziyatePishnahadNotOk {
+    margin-left: 15px;
+    font-family: bkoodak;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.VaziyatePishnahadBarrasi {
+    margin-left: 15px;
+    font-family: bkoodak;
+    font-size: 22px;
+    font-weight: bold;
+    color: #5B5B5B;
+}
+
+.SahebName { display: none; }
+
+.JoziyatePishnahad {
+    width: 100px;
+    margin: 0 auto;
+    height: 100%;
+    display: block;
+}
+
+.green {
+    background: url(../MyDnn_EHaml_Dashboard/Images/accept.png) no-repeat scroll center center;
+    height: 32px;
+    width: 100%;
+    text-indent: -90000px;
+    display: block;
+}
+
+.red {
+    background: url(../MyDnn_EHaml_Dashboard/Images/deny.png) no-repeat scroll center center;
+    height: 32px;
+    width: 100%;
+    text-indent: -90000px;
+    display: block;
+}
+
+.blue {
+    background: url(../MyDnn_EHaml_Dashboard/Images/info.png) no-repeat scroll center center;
+    height: 32px;
+    width: 100%;
+    text-indent: -90000px;
+    display: block;
+}
+
+.col3_Kh {
+    margin-top: 10px;
+    float: left;
+    margin-left: 12px;
+    width: 26%;
+}
+
+.JoziyateNazarSanji_Kh {
+    display: block;
+    clear: both;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.col1_Kh {
+    margin-top: 10px;
+    float: right;
+    margin-left: 2px;
+    width: 41%;
+}
+
+.col2_Kh {
+    margin-top: 10px;
+    float: right;
+    width: 25%;
+}
+
+.joziyatePishnahadSuc_Kh {
+    display: inline-block;
+    margin: 8px -8px;
+}
+
+.ShomaGablanSherkatKadeed { text-align: center; }
+
+.logoForPrint {
+    position: absolute !important;
+    top: 4px !important;
+    background: darkgray !important;
+}
+
+.logoForPrint img { width: 155px !important; }
+
+.k-grid-content { padding-right: 17px !important; }
+
+.col1Suc {
+    margin-top: 10px;
+    float: right;
+    margin-left: 2px;
+    width: 33%;
+}
+
+.col2Suc {
+    margin-top: 10px;
+    float: right;
+    margin-left: 2px;
+    width: 30%;
+}
+
+.col3Suc {
+    margin-top: 10px;
+    float: left;
+    margin-right: 2px;
+    margin-left: 2px;
+    width: 27%;
+}
+
+span.joziyatePishnahadSuc {
+    float: right;
+    display: block;
+    width: 176%;
+    margin-right: -162px;
+}
+
+span.EtelaateSherkat { margin: 13px; }
+
+.k-grid-header .k-header:first-child, .k-grid tbody td:first-child, .k-grid tfoot td:first-child { border-left-width: 1; }

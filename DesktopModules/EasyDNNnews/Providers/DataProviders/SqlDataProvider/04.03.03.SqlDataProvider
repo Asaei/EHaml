@@ -1,0 +1,2 @@
+﻿ALTER TABLE EasyDNNnewsCharList ALTER Column OriginalChar nvarchar(3)
+ALTER TABLE EasyDNNnewsCharList ALTER Column NewChar nvarchar(3)

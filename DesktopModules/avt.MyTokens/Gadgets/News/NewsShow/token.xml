@@ -1,0 +1,57 @@
+<token>
+    <name>NewsShow</name>
+    <desc>NewsShow is a Google service that embeds news article summaries matching some criteria.</desc>
+    <cacheTimeSeconds>86400</cacheTimeSeconds>
+    <docurl>http://code.google.com/apis/newssearch/newsshow/index.html</docurl>
+    
+    <src>
+        <type>string</type>
+        <text>
+            <iframe src="http://www.google.com/uds/modules/elements/newsshow/iframe.html?topic={{topics|{0}&amp;}}q={{keywords|{0} }}"
+                frameborder="0" width="728" height="90" marginwidth="0" marginheight="0"></iframe>
+        </text>
+    </src>
+    
+    <parser>
+        <type>string</type>
+        <replace>false</replace>
+        <decodeHtml>false</decodeHtml>
+    </parser>
+    
+    <param>
+        <name>Keywords</name>
+        <type>string</type>
+        <desc>Let NewsShow know what keywords are relevant.</desc>
+        <required>true</required>
+    </param>
+    
+    <param>
+        <name>Topics</name>
+        <type>string</type>
+        <desc>
+            Let NewsShow know what topics this instance should contain. This is a comma delimited list of codes as follows:
+                * h - specifies the top headlines topic
+                * w - specifies the world topic
+                * b - specifies the business topic
+                * n - specifies the nation topic
+                * t - specifies the science and technology topic
+                * el - specifies the elections topic
+                * p - specifies the politics topic
+                * e - specifies the entertainment topic
+                * s - specifies the sports topic
+                * m - specifies the health topic;
+        </desc>
+        <required>false</required>
+        <default>h,w,b,n,t,el,p,e,s,m</default>
+    </param>
+    
+    <example>
+        <codeSnippet>[News:NewsShow(Keywords="treaties")]</codeSnippet>
+        <desc>Returns news that refer to treaties in default topics.</desc>
+    </example>
+    <example>
+        <codeSnippet>[News:NewsShow(Keywords="treaties",Topic="h")]</codeSnippet>
+        <desc>Returns Top Stories that relate to treaties.</desc>
+    </example>
+    
+</token>

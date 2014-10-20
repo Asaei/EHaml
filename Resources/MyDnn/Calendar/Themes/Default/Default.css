@@ -1,0 +1,321 @@
+.parent-calendar {
+}
+div.calendar {
+    background: url("Images/calendar.png") no-repeat scroll 0 0 transparent;
+    height: 290px;
+    padding: 20px 0 0;
+    width: 265px;
+    z-index:10000000;
+}
+.calendar table {
+    background: none repeat scroll 0 0 transparent;
+    color: #000000;
+    cursor: default;
+    font-family: "trebuchet ms",verdana,tahoma,sans-serif;
+    font-size: 11px;
+    margin-right: 10px;
+    padding: 0;
+    width: 245px;
+}
+.calendar {
+    border-color: #797979;
+}
+.calendar .button {
+    border-top: 1px solid #C5C5C5;
+    color: #000000;
+    font-weight: bold;
+    padding: 2px;
+    text-align: center;
+}
+.calendar .mydnnToday 
+{
+    cursor:pointer;
+    color: #eef3f5;
+    font-family: Tahoma;
+    font-size: 13px;
+    font-weight: bold;
+    padding-top: 12px;
+    text-align: right;
+    vertical-align: top;
+}
+.calendar .ttip {
+    color: #eef3f5;
+    font-family: Tahoma;
+    font-size: 12px;
+    font-weight: normal;
+    padding-top: 12px;
+    vertical-align: top;
+    padding: 12px 2px 2px 10px;
+    text-align: left;
+}
+.calendar .nav {
+    font-family: verdana,tahoma,sans-serif;
+}
+.calendar .nav div {
+    background: url("Images/menuarrow.gif") no-repeat scroll 100% 100% transparent;
+}
+.calendar thead tr {
+    color: #FFFFFF;
+    height: 28px;
+}
+.calendar thead .title {
+    border-top: 1px solid #C5C5C5;
+    color: #000000;
+    font-weight: bold;
+    padding: 2px;
+    text-align: center;
+}
+.calendar thead .headrow {
+    background: url("Images/highlight.png") repeat scroll 0 -258px #E3E3E3;
+}
+.calendar thead .name {
+    border-bottom: 1px solid #C5C5C5;
+    color: #000000;
+    padding: 2px;
+    text-align: center;
+}
+.calendar thead .weekend {
+    color: #CC4444;
+}
+.calendar thead .hilite {
+    background: url("Images/highlight.png") repeat scroll 0 -258px #ED5614;
+    border-bottom: 1px solid #797979;
+    cursor: pointer;
+    padding: 2px 2px 1px;
+}
+.calendar thead .active {
+    background: url("Images/highlight.png") repeat scroll 0 -258px #ED5614;
+    border-bottom: 1px solid #797979;
+    color: #FFFFFF;
+    padding: 3px 1px 0 3px;
+}
+.calendar thead .daynames {
+    background: none repeat scroll 0 0 #EBEBEB;
+}
+.calendar tbody .day {
+    color: #2E2E2E;
+    font-weight: normal;
+    line-height: 22px;
+    padding: 0 0.45em 0 0.1em;
+    text-align: center;
+    width: 2em;
+}
+.calendar tbody .day.othermonth {
+    color: #999999;
+    font-size: 80%;
+}
+.calendar tbody .day.othermonth.oweekend {
+    color: #FF9999;
+}
+.calendar table .wn {
+    background: none repeat scroll 0 0 #F6DED4;
+    padding: 2px 3px 2px 2px;
+}
+.calendar tbody .rowhilite td, .calendar tbody .rowhilite td.wn {
+    cursor: pointer;
+}
+.calendar tbody td.today {
+    font-weight: bold;
+}
+.calendar tbody td.hilite {
+    background-color: #F47373;
+    background-image: url("Images/highlight.png");
+    background-position: 0 -258px;
+    border: 1px solid #F0713A;
+    color: #FFFFFF;
+    padding: 1px 3px 1px 1px;
+}
+.calendar tbody td.active {
+    padding: 2px 2px 0;
+}
+.calendar tbody td.weekend {
+    color: #CC4444;
+}
+.calendar tbody td.selected {
+    background: url("Images/highlight.png") repeat scroll 0 -258px #ED5614;
+    border: 1px solid #F0713A;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    padding: 1px 3px 1px 1px;
+}
+.calendar tbody .disabled {
+    color: #999999;
+}
+.calendar tbody .emptycell {
+    visibility: hidden;
+}
+.calendar tbody .emptyrow {
+    display: none;
+}
+.calendar .footrow {
+    text-align: center;
+    height:45px;
+}
+.calendar .footrow .hilite 
+{
+    padding: 12px 0;
+    background:none !important;
+    color: #000000;
+    cursor: pointer;
+}
+.calendar .footrow .hilite  
+{
+    text-decoration:none;
+    border:0;
+    color:#fff;
+}
+.calendar tfoot .active {
+    background: url("Images/highlight.png") repeat scroll 0 -258px #ED5614;
+    padding: 2px 0 0 2px;
+}
+.calendar .combo {
+    background: url("Images/highlight.png") repeat scroll 0 -258px #ED5614;
+    border: 1px solid #F0713A;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    padding: 1px 3px 1px 1px;
+    cursor: pointer;
+    display: none;
+    font-size: 12px;
+    font-family:Tahoma;;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4em;
+    z-index: 100;
+}
+.calendar .combo .label, .calendar .combo .label-IEfix {
+    font-family: Tahoma;
+    padding: 1px;
+    text-align: center;
+}
+.calendar .combo .label-IEfix {
+    width: 4em;
+}
+.calendar .combo .hilite {
+    
+    color: #000000;
+    cursor: pointer;
+}
+.calendar .combo .active {
+    
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.calendar td.time {
+    border-top: 1px solid #C5C5C5;
+    padding: 1px 0 0 25px;
+    text-align: center;
+}
+.calendar td.time .hour, .calendar td.time .minute, .calendar td.time .ampm {
+    color: #000000;
+    font-weight: normal;
+    padding: 0 5px 0 6px;
+}
+.calendar td.time .hour, .calendar td.time .minute {
+    font-family: monospace;
+}
+.calendar td.time .ampm {
+    text-align: center;
+}
+.calendar td.time .colon {
+    font-weight: bold;
+    padding: 0 2px 0 3px;
+}
+.calendar td.time span.hilite {
+    
+    color: #000000;
+    cursor: pointer;
+}
+.calendar td.time span.active {
+    
+    color: #FFFFFF;
+}
+.hide-display-btn {
+    display: none;
+}
+
+/* mydnn input & link */
+
+.mydnn-k-datepicker
+{
+    width:160px ;
+    color:#2E2E2E;
+    background-color: #E9E9E9;
+    border-color: #C5C5C5;    
+    border-radius: 4px 4px 4px 4px;
+    background-image: url("Images/highlight.png");
+    border-style: solid;
+    border-width: 1px;
+    padding: 2px 2px 0 2px;
+    display:inline-block;
+    cursor: default;
+    position: relative;
+    background-position: 0 center;
+    background-repeat: repeat-x;
+    color:#2E2E2E;
+    height:25px;
+}
+.mydnn-k-datepicker:hover
+{
+    background-color: #A99F9A;
+    border-color: #A99F9A;
+}
+.k-picker-wrap
+{
+    cursor:pointer;
+    background-image: url("Images/sprite.png");
+    background-position: -32px -176px;
+    opacity: 0.8;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    font-size: 0;
+    height: 16px;
+    line-height: 0;
+    overflow: hidden;
+    text-align: center;
+    text-indent: -3333px;
+    vertical-align: middle;
+    width: 16px;
+    border: 0;
+    white-space:nowrap;
+    margin:3px 0 0 1px;
+    float:left;
+}
+.mydnn-k-datepicker input,.k-input
+{
+    margin:1px 0 0 1px !important;
+    width:140px !important;
+    min-width:100px !important;
+    border-radius: 2px 2px 2px 2px;    
+    box-shadow: 0 0 1px 1px #DDDDDD inset;
+    border: 0 none;
+    height: 1.31em;
+    line-height: 1.31em;
+    padding: 0.18em 0 !important;
+    text-indent: 4px;
+    vertical-align:top;
+    background-color:#fff;
+}
+.k-select
+{
+    border-radius: 0 4px 4px 0;
+    border-color: #C5C5C5;
+    line-height: 1.3em;
+    min-height: 1.3em;
+    padding: 1px 3px;
+    vertical-align: middle;
+    border-style: solid;
+    border-width: 0;
+    cursor: default;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    text-decoration: none;
+    top: 0;
+}
+.k-icon-calendar
+{
+}
+
+

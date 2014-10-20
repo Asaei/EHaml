@@ -1,0 +1,54 @@
+﻿<!--ArticleTemplate-->
+<EDNHeader>
+
+</EDNHeader>
+<!--Gallery TOP position-->
+<EDNContentTop>	
+<div class="article details">
+		<h1>[EasyDNNnews:Title]</h1>
+		<p class="meta_text no_margin"><span style="float:right;">توسط : [EasyDNNnews:Author:Link]</span><span class="separator">|</span><span>[EasyDNNnews:PublishDate]</span></p>
+        <div class="social_buttons">
+            <a class="ymsb-print-btn" title="Print" href="javascript:void(0);" >
+                <span >چاپ خبر</span>
+            </a>
+        </div>
+        <div class="main_content">
+</EDNContentTop>
+
+<EDNContent>
+		
+		<div class="article_image left_image" [EasyDNNnews:Image:Visibility]>
+		    [EasyDNNnews:IfMediaType:Image]
+				<img alt="[EasyDNNnews:Title]" src="[EasyDNNnews:Image]" />
+			[EasyDNNnews:EndIfMediaType]
+            <div class="article_details_summery">[EasyDNNnews:Summary]</div>
+		</div>
+        
+		<div style="padding:5px;line-height:22px;font-size:13px;font-family:Tahoma;clear:both;text-align:justify;direction:rtl;">
+            [EasyDNNnews:Article] 
+        </div>
+        <div>
+            [EasyDNNnews:IfMediaType:EmbedMedia]
+		    [EasyDNNnews:MainMedia]
+		    [EasyDNNnews:EndIfMediaType]
+        </div>
+</EDNContent>
+
+<EDNContentBottom>[EasyDNNnews:ArticleMaps]
+</EDNContentBottom>
+<!--Gallery BOTTOM position-->
+<EDNFooter>
+<div class="clear_content"></div>
+</div>
+
+<div class="box_list_container">کلمات کلیدی: [EasyDNNnews:Tags separator=""]</div>
+
+[EasyDNNnews:DocumentList]
+[EasyDNNnews:RelatedArticles]
+
+</EDNFooter>
+<!--Comments position-->
+<EDNBottom>
+</div>
+</EDNBottom>
+<!--ArticleEnd-->

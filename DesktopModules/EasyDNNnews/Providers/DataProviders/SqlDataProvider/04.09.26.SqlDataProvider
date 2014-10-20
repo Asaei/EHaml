@@ -1,0 +1,30 @@
+﻿BEGIN TRY
+	ALTER TABLE [dbo].[EasyDNNNewsArchive] DROP COLUMN [Approved]
+	ALTER TABLE [dbo].[EasyDNNNewsArchive] DROP COLUMN [NumberOfViews]
+	ALTER TABLE [dbo].[EasyDNNNewsArchive] DROP COLUMN [RatingValue]
+	ALTER TABLE [dbo].[EasyDNNNewsArchive] DROP COLUMN [RatingCount]
+	ALTER TABLE [dbo].[EasyDNNNewsArchive] DROP COLUMN [Active]
+	ALTER TABLE [dbo].[EasyDNNNewsArchive] DROP COLUMN [GalleryIntegration]
+	ALTER TABLE [dbo].[EasyDNNNewsArchive] DROP COLUMN [ArtGalleryID]
+	ALTER TABLE [dbo].[EasyDNNNewsArchive] DROP COLUMN [ShowArtGAllery]
+	ALTER TABLE [dbo].[EasyDNNNewsArchive] DROP COLUMN [ShowAdsense]
+	ALTER TABLE [dbo].[EasyDNNNewsArchive] DROP COLUMN [NumberOfComments]
+	ALTER TABLE [dbo].[EasyDNNNewsArchive] DROP COLUMN [DateAdded]
+END TRY
+BEGIN CATCH
+END CATCH
+
+BEGIN TRY
+	ALTER TABLE [dbo].[EasyDNNNews] DROP COLUMN [OriginalImage]
+	ALTER TABLE [dbo].[EasyDNNNews] DROP COLUMN [ShowAdsense]
+	ALTER TABLE [dbo].[EasyDNNNews] DROP COLUMN [AllowAnonymousComments]
+END TRY
+BEGIN CATCH
+END CATCH
+
+BEGIN TRY
+	ALTER TABLE [dbo].[EasyDNNNewsArchive] DROP COLUMN [OriginalImage]
+	ALTER TABLE [dbo].[EasyDNNNewsArchive] DROP COLUMN [AllowAnonymousComments]
+END TRY
+BEGIN CATCH
+END CATCH

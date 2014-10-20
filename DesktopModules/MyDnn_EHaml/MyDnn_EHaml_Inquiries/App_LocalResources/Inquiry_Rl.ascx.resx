@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnAddVasileyeHaml.Text" xml:space="preserve">
+    <value>افزودن</value>
+  </data>
+  <data name="chkEmptyingCharges.Text" xml:space="preserve">
+    <value>با احتساب هزینه تخلیه در مقصد</value>
+  </data>
+  <data name="chkIsTender.Text" xml:space="preserve">
+    <value>تمایل به برگزاری استعلام به صورت مناقصه ای دارم</value>
+  </data>
+  <data name="chkWithInsurance.Text" xml:space="preserve">
+    <value>با احتساب بیمه مسئولیت</value>
+  </data>
+  <data name="ErrorMessage.Text" xml:space="preserve">
+    <value>وارد نمودن این فیلد الزامی می باشد</value>
+  </data>
+  <data name="ExpireDateGreaterThanActionDateErrorMessage.Text" xml:space="preserve">
+    <value>تاریخ انقضا نمیتواند بزرگتر از تاریخ آغاز عملیات باشد</value>
+  </data>
+  <data name="hplFormeVooroodeArzeshBarAsaseVasileyeHaml.Text" xml:space="preserve">
+    <value>دریافت قالب فرم ارزش بر اساس وسیله حمل</value>
+  </data>
+  <data name="KamarShekane5Mehvar.Help" xml:space="preserve">
+    <value>تعداد کمر شکن 5 محور</value>
+  </data>
+  <data name="KamarShekane5Mehvar.Text" xml:space="preserve">
+    <value>تعداد کمر شکن 5 محور:</value>
+  </data>
+  <data name="KamarShekane5MehvareTerafiky.Help" xml:space="preserve">
+    <value>تعداد کمر شکن 5 محور ترافیکی</value>
+  </data>
+  <data name="KamarShekane5MehvareTerafiky.Text" xml:space="preserve">
+    <value>تعداد کمر شکن 5 محور ترافیکی:</value>
+  </data>
+  <data name="KamarShekane5MehvareTerafikyeJoftScort.Help" xml:space="preserve">
+    <value>تعداد کمر شکن 5 محور ترافیکی جفت اسکورت</value>
+  </data>
+  <data name="KamarShekane5MehvareTerafikyeJoftScort.Text" xml:space="preserve">
+    <value>تعداد کمر شکن 5 محور ترافیکی جفت اسکورت:</value>
+  </data>
+  <data name="KamarShekane5MehvareTerafikyeTakScort.Help" xml:space="preserve">
+    <value>کمر شکن 5 محور ترافیکی تک اسکورت</value>
+  </data>
+  <data name="KamarShekane5MehvareTerafikyeTakScort.Text" xml:space="preserve">
+    <value>کمر شکن 5 محور ترافیکی تک اسکورت:</value>
+  </data>
+  <data name="KamarShekane7Mehvar.Help" xml:space="preserve">
+    <value>تعداد کمر شکن 7 محور</value>
+  </data>
+  <data name="KamarShekane7Mehvar.Text" xml:space="preserve">
+    <value>تعداد کمر شکن 7 محور:</value>
+  </data>
+  <data name="KamarShekane7MehvareTerafiky.Help" xml:space="preserve">
+    <value>تعداد کمر شکن 7 محور ترافیکی</value>
+  </data>
+  <data name="KamarShekane7MehvareTerafiky.Text" xml:space="preserve">
+    <value>تعداد کمر شکن 7 محور ترافیکی:</value>
+  </data>
+  <data name="KamarShekane7MehvareTerafikyeJoftScort.Help" xml:space="preserve">
+    <value>تعداد کمر شکن 7 محور ترافیکی جفت اسکورت</value>
+  </data>
+  <data name="KamarShekane7MehvareTerafikyeJoftScort.Text" xml:space="preserve">
+    <value>تعداد کمر شکن 7 محور ترافیکی جفت اسکورت:</value>
+  </data>
+  <data name="KamarShekane7MehvareTerafikyeTakScort.Help" xml:space="preserve">
+    <value>تعداد کمر شکن 7 محور ترافیکی تک اسکورت</value>
+  </data>
+  <data name="KamarShekane7MehvareTerafikyeTakScort.Text" xml:space="preserve">
+    <value>تعداد کمر شکن 7 محور ترافیکی تک اسکورت:</value>
+  </data>
+  <data name="KamiyoneJoft.Help" xml:space="preserve">
+    <value>تعداد کامیون جفت</value>
+  </data>
+  <data name="KamiyoneJoft.Text" xml:space="preserve">
+    <value>تعداد کامیون جفت:</value>
+  </data>
+  <data name="KamiyoneTak.Help" xml:space="preserve">
+    <value>تعداد کامیون تک</value>
+  </data>
+  <data name="KamiyoneTak.Text" xml:space="preserve">
+    <value>تعداد کامیون تک:</value>
+  </data>
+  <data name="Khavar.Help" xml:space="preserve">
+    <value>تعداد خاور</value>
+  </data>
+  <data name="Khavar.Text" xml:space="preserve">
+    <value>تعداد خاور:</value>
+  </data>
+  <data name="lblActionDate.Help" xml:space="preserve">
+    <value>تاریخ آغاز عملیات را وارد نمایید</value>
+  </data>
+  <data name="lblActionDate.Text" xml:space="preserve">
+    <value>تاریخ آغاز عملیات:</value>
+  </data>
+  <data name="lblDarkhastKonande.Text" xml:space="preserve">
+    <value>درخواست کننده:</value>
+  </data>
+  <data name="lblDestinationOstan.Help" xml:space="preserve">
+    <value>کشور مقصد را وارد نمایید</value>
+  </data>
+  <data name="lblDestinationOstan.Text" xml:space="preserve">
+    <value>کشور مقصد(قابل تایپ):</value>
+  </data>
+  <data name="lblDestinationShahr.Help" xml:space="preserve">
+    <value>شهر مقصد را وارد نمایید</value>
+  </data>
+  <data name="lblDestinationShahr.Text" xml:space="preserve">
+    <value>شهر مقصد(قابل تایپ):</value>
+  </data>
+  <data name="lblExpireDate.Help" xml:space="preserve">
+    <value>آخرین تاریخ اعتبار استعلام را وارد نمایید</value>
+  </data>
+  <data name="lblExpireDate.Text" xml:space="preserve">
+    <value>آخرین تاریخ اعتبار استعلام:</value>
+  </data>
+  <data name="lblInquiryZadghanTitle.Text" xml:space="preserve">
+    <value>فرم استعلام حمل - زمینی – داخلی – غیرفله- برحسب نوع و تعداد وسیله حمل</value>
+  </data>
+  <data name="lblIsReallyNeed.Text" xml:space="preserve">
+    <value>هدف شما از استعلام:</value>
+  </data>
+  <data name="lblListeKalahayeKhatarnak.Help" xml:space="preserve">
+    <value>کالاهای خطرناک موجود در محموله را انتخاب نمایید</value>
+  </data>
+  <data name="lblListeKalahayeKhatarnak.Text" xml:space="preserve">
+    <value>لیست کالاهای خطرناک:</value>
+  </data>
+  <data name="lblLoadType.Help" xml:space="preserve">
+    <value>نوع محموله خود را انتخاب نمایید</value>
+  </data>
+  <data name="lblLoadType.Text" xml:space="preserve">
+    <value>نوع محموله:</value>
+  </data>
+  <data name="lblNoeVasileyeHaml.Help" xml:space="preserve">
+    <value>نوع وسیله حمل مورد نیاز خود را انتخاب نمایید</value>
+  </data>
+  <data name="lblNoeVasileyeHaml.Text" xml:space="preserve">
+    <value>نوع وسیله حمل مورد نیاز:</value>
+  </data>
+  <data name="lblStartingPointOstan.Help" xml:space="preserve">
+    <value>کشور مبدآ را وارد نمایید</value>
+  </data>
+  <data name="lblStartingPointOstan.Text" xml:space="preserve">
+    <value>کشور مبدآ:</value>
+  </data>
+  <data name="lblStartingPointShahr.Help" xml:space="preserve">
+    <value>شهر مبدآ را وارد نمایید</value>
+  </data>
+  <data name="lblStartingPointShahr.Text" xml:space="preserve">
+    <value>شهر مبدآ:</value>
+  </data>
+  <data name="lblTedadeVasileyeHaml.Help" xml:space="preserve">
+    <value>تعداد وسیله حمل انتخاب شده را وارد نمایید</value>
+  </data>
+  <data name="lblTedadeVasileyeHaml.Text" xml:space="preserve">
+    <value>تعداد:</value>
+  </data>
+  <data name="lnkSubmit.Text" xml:space="preserve">
+    <value>ارسال</value>
+  </data>
+  <data name="TreylereKafiyeMamooli.Help" xml:space="preserve">
+    <value>تعداد تریلر کفی معمولی</value>
+  </data>
+  <data name="TreylereKafiyeMamooli.Text" xml:space="preserve">
+    <value>تعداد تریلر کفی معمولی:</value>
+  </data>
+  <data name="TreylereKafiyeTerafiky.Help" xml:space="preserve">
+    <value>تعداد تریلر کفی ترافیکی</value>
+  </data>
+  <data name="TreylereKafiyeTerafiky.Text" xml:space="preserve">
+    <value>تعداد تریلر کفی ترافیکی:</value>
+  </data>
+  <data name="TreylereKafiyeTerafikyeJoftScort.Help" xml:space="preserve">
+    <value>تعداد تریلر کفی ترافیکی جفت اسکورت</value>
+  </data>
+  <data name="TreylereKafiyeTerafikyeJoftScort.Text" xml:space="preserve">
+    <value>تعداد تریلر کفی ترافیکی جفت اسکورت:</value>
+  </data>
+  <data name="TreylereKafiyeTerafikyeTakScort.Help" xml:space="preserve">
+    <value>تعداد تریلر کفی ترافیکی تک اسکورت</value>
+  </data>
+  <data name="TreylereKafiyeTerafikyeTakScort.Text" xml:space="preserve">
+    <value>تعداد تریلر کفی ترافیکی تک اسکورت:</value>
+  </data>
+</root>

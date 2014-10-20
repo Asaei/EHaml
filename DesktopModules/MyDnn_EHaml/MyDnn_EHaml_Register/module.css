@@ -1,0 +1,89 @@
+﻿.dnnLabel { width: 35% !important; }
+
+.note-panel { text-align: center; }
+
+.note-panel .dnnLabel {
+    float: none;
+    margin-bottom: 15px;
+    margin-left: 0;
+    margin-right: -15px;
+    width: 100% !important;
+}
+
+
+.dnnFixedSizeComboBox > table { width: 100% !important; }
+
+.dnnFixedSizeComboBox > table input.rcbInput {
+    width: 100%;
+    min-width: 100%;
+}
+
+.dnnFormItem input[type="text"], .dnnFormItem input[type="password"], .dnnFormItem input[type="email"], .dnnFormItem input[type="tel"], .dnnFormItem select, .dnnFormItem textarea { width: 50% !important; }
+
+.dnnFormItem > .RadComboBox_Default { width: 50% !important; }
+
+
+.dnnLabel span { font-size: 12px !important; }
+
+
+
+a.dnnFormHelp { top: 5px !important; }
+
+.MessageForNotSubscribeUser, .MessageForBedehkarUser, .MessageForLoginNakarde, .MessageForNotApproved, .pnlSomeThingWrong, .pnlLoginKonAhmagh {
+    display: block;
+    padding: 17px 18px;
+    margin-bottom: 18px;
+    border: 1px solid rgba(2, 139, 255, 0.2); /* blue */
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    max-width: 980px;
+    direction: rtl;
+    text-align: right;
+    background-color: rgba(255, 255, 0, 0.15); /* yellow */
+    border-color: #CDB21F; /* yellow */
+}
+
+.tavafogname { margin-top: 20px; }
+
+#dnn_ctr439_Register_tavafogname {
+    height: 165px;
+    width: 445px !important;
+    margin-top: 25px;
+    direction: rtl;
+    overflow: scroll;
+    line-height: 1.8;
+    text-align: justify;
+    padding: 0 4 0 4;
+}
+
+.tavafog {
+    float: left;
+    margin-top: -46%;
+    margin-left: 43px;
+}
+
+.tavafog2 {
+    float: left;
+    margin-top: -65px;
+    margin-left: 170px;
+    margin-bottom: 30px;
+}
+
+.dnn_ctr439_Register_lnkRegister {
+    position: absolute;
+    margin-top: 90px;
+}
+
+.lblThingsAreOk {
+    display: block;
+    padding: 17px 18px;
+    margin-bottom: 18px;
+    border: 1px solid rgba(2, 139, 255, 0.2); /* blue */
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    max-width: 980px;
+    direction: rtl;
+    text-align: right;
+    background-color: rgba(51, 255, 0, 0.15); /* yellow */
+    border-color: #26cd1f; /* yellow */
+}

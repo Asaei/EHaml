@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnRunbackup.Text" xml:space="preserve">
+    <value>Perform Backup</value>
+  </data>
+  <data name="lblBackupDatabase.Text" xml:space="preserve">
+    <value>Backup Database </value>
+  </data>
+  <data name="lblBackupFiles.Text" xml:space="preserve">
+    <value>Backup Files  &lt;COMPLETE&gt;</value>
+  </data>
+  <data name="UnsupportedDataProvider.Text" xml:space="preserve">
+    <value>Your current default data provider is &lt;DATAPROVIDER&gt;. &lt;br /&gt;&lt;br /&gt;At this time, this module can only handle SQL Server databases.</value>
+  </data>
+  <data name="ConfirmBackup.Text" xml:space="preserve">
+    <value>Confirm Backup?</value>
+  </data>
+  <data name="WarningTablesPK.Message" xml:space="preserve">
+    <value>Primary Keys issue: &lt;br /&gt;The following tables (which currently have rows) were configured to be included in the backup but they lack of a 'primary key' (PK) definition and has some BLOB column: &lt;br /&gt;
+&lt;TABLESLIST&gt;&lt;br /&gt;
+Some data could be missing at restore time if you backup tables without a primary key.&lt;br /&gt;
+For more information, please run the "Tables Primary Keys Validator" utility.&lt;br /&gt;
+&lt;b&gt;Note: You can disable this warning message (Configuration &gt; Database Backup Settings &gt; 'Warn about missing PKs').&lt;/b&gt;</value>
+  </data>
+  <data name="chkBackupDBAnyway.Text" xml:space="preserve">
+    <value>Ignore the 'Missing Primary Keys' warning</value>
+  </data>
+  <data name="FileCreate.Text" xml:space="preserve">
+    <value>Create File</value>
+  </data>
+  <data name="FileDelete.Text" xml:space="preserve">
+    <value>Delete File</value>
+  </data>
+  <data name="FolderCreate.Text" xml:space="preserve">
+    <value>Create Folder</value>
+  </data>
+  <data name="FolderDelete.Text" xml:space="preserve">
+    <value>Delete Folder</value>
+  </data>
+  <data name="ImpersonateNo.Text" xml:space="preserve">
+    <value>NOTE: Your site is standard (not currently configured for 'impersonation').</value>
+  </data>
+  <data name="ImpersonateYes.Text" xml:space="preserve">
+    <value>&lt;font color='red'&gt;NOTE: Your site is configured for impersonation (in the web.config file, 'identity impersonate="true"').&lt;br /&gt;User Account: {USER}&lt;/font&gt;</value>
+  </data>
+  <data name="lblPermissions.Text" xml:space="preserve">
+    <value>File System Permissions Summary:</value>
+  </data>
+  <data name="lblPermissionsError.Text" xml:space="preserve">
+    <value>&lt;p&gt;
+    &lt;b&gt;&lt;font color='red'&gt;Your site failed the permissions check.&lt;/font&gt;&lt;/b&gt; &lt;br /&gt;Using Windows
+    Explorer, browse to the configured backup root folder (&lt;b&gt; {FOLDER}&lt;/b&gt; ).
+    &lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;img alt="Image showing the security settings for the backup root folder must be set to Read, Write and Change Control for the ASPNET or NT AUTHORITY/NETWORK SERVICE accounts."
+        src="{IMAGE}" align="bottom" hspace="5" /&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    Right-click the folder and select Sharing and Security from the popup menu. Select
+    the Security tab. Add the appropriate User Account and set the Permissions.&lt;/p&gt;
+&lt;h3&gt;
+    If ' Impersonation' is enabled&lt;/h3&gt;
+&lt;p&gt;
+You must set the required permissions to the ' impersonated' user account.&lt;br /&gt;
+{IMPERSONATE}&lt;/p&gt;
+&lt;h3&gt;
+    If using Windows 2000 - IIS5&lt;/h3&gt;
+&lt;p&gt;
+    The {Server}\ASPNET User Account must have Read, Write, and Change Control of the
+    virtual root of your website.&lt;/p&gt;
+&lt;h3&gt;
+    If using Windows 2003, Windows Vista or Windows Server 2008 and IIS6 or IIS7&lt;/h3&gt;
+&lt;p&gt;
+    The NT AUTHORITY\NETWORK SERVICE User Account must have Read, Write, and Change
+    Control of the virtual root of your Website.&lt;/p&gt;
+&lt;h3&gt;
+    If using Windows 7 or Windows Server 2008 R2 and IIS7.5&lt;/h3&gt;
+&lt;p&gt;
+    The IIS AppPool\DefaultAppPool User Account must have Read, Write, and Change Control
+    of the virtual root of your Website.&lt;/p&gt;
+&lt;br /&gt;
+&lt;br /&gt;</value>
+  </data>
+  <data name="WarningNoActions.Message" xml:space="preserve">
+    <value>No action was performed. Both Database and Files backup are disabled.</value>
+  </data>
+  <data name="Native.Text" xml:space="preserve">
+    <value>Native</value>
+  </data>
+  <data name="Script.Text" xml:space="preserve">
+    <value>Script</value>
+  </data>
+  <data name="ModuleHelp.Text" xml:space="preserve">
+    <value>Documentation available at &lt;a target="_blank" href="http://www.evotiva.com"&gt;www.evotiva.com&lt;/a&gt;. </value>
+  </data>
+  <data name="BackupFileInfo.Text" xml:space="preserve">
+    <value>FILENAME (FILESIZE)&lt;br /&gt;FILEDATE, TIMEAGO</value>
+  </data>
+  <data name="Download.Text" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="DownloadDisabled.Text" xml:space="preserve">
+    <value>Download Disabled</value>
+  </data>
+  <data name="lblBackupOptions.Text" xml:space="preserve">
+    <value>Manual Backup</value>
+  </data>
+  <data name="lblFtpUpload.Text" xml:space="preserve">
+    <value>Upload Backup Files to FTP Server</value>
+  </data>
+  <data name="lblLastDatabaseNativeBackup.Text" xml:space="preserve">
+    <value>Last 'native' Database Backup:</value>
+  </data>
+  <data name="lblLastFilesBackup.Text" xml:space="preserve">
+    <value>Last Files Backup:</value>
+  </data>
+  <data name="lblRecentBackups.Text" xml:space="preserve">
+    <value>Local Backups</value>
+  </data>
+  <data name="NotAvailable.Text" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="btnRestore.Text" xml:space="preserve">
+    <value>Launch Restore</value>
+  </data>
+  <data name="lblRestore.Text" xml:space="preserve">
+    <value>Restore Wizard</value>
+  </data>
+  <data name="ConfirmRestore.Text" xml:space="preserve">
+    <value>Confirm launch of the Restore Wizard?</value>
+  </data>
+  <data name="Complete.Text" xml:space="preserve">
+    <value>[Complete]</value>
+  </data>
+  <data name="Partial.Text" xml:space="preserve">
+    <value>[Partial]</value>
+  </data>
+  <data name="lblLastRunbackup.Text" xml:space="preserve">
+    <value>Last Run:</value>
+  </data>
+  <data name="lnkResetLastRunbackup.Text" xml:space="preserve">
+    <value>[Reset]</value>
+  </data>
+  <data name="MinutesAgo.Text" xml:space="preserve">
+    <value>minutes ago.</value>
+  </data>
+  <data name="ConfirmResetLastRunbackup.Text" xml:space="preserve">
+    <value>Are you sure you want to reset the last run date/time? If another backup process is still running in the background, and you trigger a new backup process, errors could happen.</value>
+  </data>
+  <data name="lblAmazonS3Upload.Text" xml:space="preserve">
+    <value>Upload Backup Files to Amazon S3</value>
+  </data>
+  <data name="lblCloudFilesUpload.Text" xml:space="preserve">
+    <value>Upload Backup Files to Rackspace CloudFiles</value>
+  </data>
+  <data name="And.Text" xml:space="preserve">
+    <value> and </value>
+  </data>
+  <data name="lblLastDatabaseScriptBackup.Text" xml:space="preserve">
+    <value>Last 'script' Database Backup:</value>
+  </data>
+  <data name="lblDropboxUpload.Text" xml:space="preserve">
+    <value>Upload Backup Files to Dropbox</value>
+  </data>
+  <data name="lblAzureUpload.Text" xml:space="preserve">
+    <value>Upload Backup Files to Windows Azure</value>
+  </data>
+  <data name="lblLastDatabasetBackup.Text" xml:space="preserve">
+    <value>Last Database backup:</value>
+  </data>
+  <data name="chkRunInBackground.Text" xml:space="preserve">
+    <value>&amp;nbsp;Run in Background (as a scheduled job)</value>
+  </data>
+  <data name="chkInstallRestorePack.Text" xml:space="preserve">
+    <value>Install Restore Pack (installs and run the Restore Pack Loader)</value>
+  </data>
+</root>

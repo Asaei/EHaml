@@ -1,0 +1,51 @@
+﻿<style type="text/css">
+#tj_container${ModuleID} .img_gallery${ModuleID}
+{
+	width:${xf.ViewXmlSetting("ItemWidth",300)}px; 
+	height:${xf.ViewXmlSetting("ItemHeight",115)}px;
+}
+</style>
+<div id="tj_container${ModuleID}" class="$ThemeName" style="width: ${xf.ViewXmlSetting("width","100%")}; height: ${xf.ViewXmlSetting("height","250")}px;">
+    <div class="tj_nav">
+        <span id="tj_prev${ModuleID}" class="tj_prev">${xf.ViewXmlSetting("Previous","Previous")}</span> 
+        <span id="tj_next${ModuleID}" class="tj_next">${xf.ViewXmlSetting("Next","Next")}</span>
+    </div>
+    <div class="tj_wrapper">
+        <ul class="tj_gallery">
+            #if($DataList.Count > 0) 
+                #foreach($DataItem in $DataList)
+                    <li>
+                        <a rel="${xf.ViewPrettyPhoto($DataItem)}" target="${xf.ViewLinkTarget($DataItem)}" href="${xf.ViewLinkUrl($DataItem.UrlLink)}" title="$DataItem.Description">
+                            <img class="img_gallery${ModuleID}" src="${xf.ViewLinkUrl($DataItem.Thumbnails)}" alt="$DataItem.Title" />
+                        </a>
+                    </li>
+                 #end 
+            #end
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    jQuery(function ($) 
+    {
+        $('#tj_container${ModuleID}').gridnav({
+            navL: '#tj_prev${ModuleID}',
+		    navR: '#tj_next${ModuleID}',
+            rows: ${xf.ViewXmlSetting("rows",2)},
+            type: {
+                mode: '${xf.ViewXmlSetting("mode","sequpdown")}', 		 
+                speed: ${xf.ViewXmlSetting("speed",500)}, 			 
+                easing: '${xf.ViewXmlSetting("easing","jswing")}', 			 
+                factor: ${xf.ViewXmlSetting("factor",50)}
+            }
+        });
+        $(".tj_gallery li a[rel^='prettyPhoto']").prettyPhoto({
+            animation_speed: '${xf.ViewXmlSetting("animation_speed","normal")}',
+            theme: '${xf.ViewXmlSetting("theme","pp_default")}',
+            slideshow: ${xf.ViewXmlSetting("slideshow",3000)},
+            autoplay_slideshow: ${xf.ViewXmlSetting("autoplay_slideshow","true")},
+            overlay_gallery: ${xf.ViewXmlSetting("overlay_gallery","false")} /* If set to true, a gallery will overlay the fullscreen image on mouse over */
+        });
+    });
+</script>
+
+ 

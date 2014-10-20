@@ -1,0 +1,4 @@
+﻿if exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsCategories' and column_name = 'CategoryName')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsCategories] DROP COLUMN CategoryName
+END

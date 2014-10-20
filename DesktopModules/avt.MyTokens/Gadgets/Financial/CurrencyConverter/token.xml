@@ -1,0 +1,36 @@
+<token>
+    <name>CurrencyConverter</name>
+    <desc>Embed a gocurrency.com currency converter.</desc>
+    <cacheTimeSeconds>86400</cacheTimeSeconds>
+    <docurl>http://www.gocurrency.com/add-converter.htm</docurl>
+    
+    <src>
+        <type>string</type>
+        <text>
+            <iframe scrolling="no" frameborder="0" tabindex="0" allowtransparency="true" width ="160" height="300" onload="loadCurrencyConverter(this);">
+            </iframe>
+            <script type="text/javascript">
+                function loadCurrencyConverter(obj) {
+                    obj.contentDocument.write('<a href= "http://www.gocurrency.com" id="gocurrency" style='display:none;'>Currency Converter</a>');
+                    var oNode= obj.contentDocument.createElement("script");
+                     obj.contentDocument.getElementsByTagName("body")[0].appendChild(oNode);
+
+                    oNode.setAttribute("type", "text/javascript", 0);
+                    oNode.setAttribute("src", "http://www.gocurrency.com/v2/gocurrcalc_t.php?id=53", 0); 
+                }
+            </script>
+        </text>
+    </src>
+    
+    <parser>
+        <type>string</type>
+        <replace>false</replace>
+        <decodeHtml>false</decodeHtml>
+    </parser>
+    
+    <example>
+        <codeSnippet>[Financial:CurrencyConverter]</codeSnippet>
+        <desc>Displays currency conversion form.</desc>
+    </example>
+    
+</token>

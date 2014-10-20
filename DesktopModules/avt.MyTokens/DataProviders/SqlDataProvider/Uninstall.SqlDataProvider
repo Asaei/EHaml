@@ -1,0 +1,119 @@
+﻿-- DROP EVERYTHING
+IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[FK_{objectQualifier}avtMyTokens_Tokens_{objectQualifier}Modules]') AND OBJECTPROPERTY(id, N'IsForeignKey') = 1)
+ALTER TABLE  {databaseOwner}[{objectQualifier}avtMyTokens_Tokens]  DROP CONSTRAINT [FK_{objectQualifier}avtMyTokens_Tokens_{objectQualifier}Modules]
+GO
+IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[FK_{objectQualifier}avtMyToken2_Namespaces_{objectQualifier}Portals]') AND OBJECTPROPERTY(id, N'IsForeignKey') = 1)
+ALTER TABLE  {databaseOwner}[{objectQualifier}avtMyTokens2_Namespaces]  DROP CONSTRAINT [FK_{objectQualifier}avtMyToken2_Namespaces_{objectQualifier}Portals]
+GO
+IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[FK_{objectQualifier}avtMyTokens2_Tokens_{objectQualifier}avtMyTokens2_Namespaces]') AND OBJECTPROPERTY(id, N'IsForeignKey') = 1)
+ALTER TABLE  {databaseOwner}[{objectQualifier}avtMyTokens2_Tokens]  DROP CONSTRAINT [FK_{objectQualifier}avtMyTokens2_Tokens_{objectQualifier}avtMyTokens2_Namespaces]
+GO
+IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[FK_{objectQualifier}avtMyTokens2_ExternalApi_{objectQualifier}Portals]') AND OBJECTPROPERTY(id, N'IsForeignKey') = 1)
+ALTER TABLE  {databaseOwner}[{objectQualifier}avtMyTokens2_ExternalApi]  DROP CONSTRAINT [FK_{objectQualifier}avtMyTokens2_ExternalApi_{objectQualifier}Portals]
+GO
+IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[FK_{objectQualifier}avtMyTokens2_ExternalApiKeys_{objectQualifier}Portals]') AND OBJECTPROPERTY(id, N'IsForeignKey') = 1)
+ALTER TABLE  {databaseOwner}[{objectQualifier}avtMyTokens2_ExternalApiKeys]  DROP CONSTRAINT [FK_{objectQualifier}avtMyTokens2_ExternalApiKeys_{objectQualifier}Portals]
+GO
+IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[FK_{objectQualifier}avtMyTokens2_Servers_{objectQualifier}Portals]') AND OBJECTPROPERTY(id, N'IsForeignKey') = 1)
+ALTER TABLE  {databaseOwner}[{objectQualifier}avtMyTokens2_Servers]  DROP CONSTRAINT [FK_{objectQualifier}avtMyTokens2_Servers_{objectQualifier}Portals]
+GO
+IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[FK_{objectQualifier}avtMyTokens2_Tokens_{objectQualifier}avtMyTokens2_Servers]') AND OBJECTPROPERTY(id, N'IsForeignKey') = 1)
+ALTER TABLE  {databaseOwner}[{objectQualifier}avtMyTokens2_Tokens]  DROP CONSTRAINT [FK_{objectQualifier}avtMyTokens2_Tokens_{objectQualifier}avtMyTokens2_Servers]
+GO
+
+
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens_DeleteToken]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens_DeleteToken]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens_GetToken]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens_GetToken]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens_UpdateToken]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens_UpdateToken]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens_CheckName]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens_CheckName]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens_AddToken]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens_AddToken]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens_GetPortalTokens]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens_GetPortalTokens]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens_GetPortalTokensByType]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens_GetPortalTokensByType]
+GO
+
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens2_AddNamespace]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens2_AddNamespace]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens2_AddToken]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens2_AddToken]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens2_DeleteNamespace]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens2_DeleteNamespace]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens2_DeleteToken]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens2_DeleteToken]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens2_GetNamespaces]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens2_GetNamespaces]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens2_GetToken]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens2_GetToken]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens2_GetTokensByNs]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens2_GetTokensByNs]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens2_UpdateNamespace]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens2_UpdateNamespace]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens2_UpdateToken]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens2_UpdateToken]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens2_ClearGlobalSettings]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens2_ClearGlobalSettings]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens2_DeleteApiKey]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens2_DeleteApiKey]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens2_GetApiKeys]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens2_GetApiKeys]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens2_GetApiSettings]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens2_GetApiSettings]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens2_SetupApi]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens2_SetupApi]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens2_UpdateApiKey]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtMyTokens2_UpdateApiKey]
+GO
+
+
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens_Tokens]') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
+DROP TABLE  {databaseOwner}[{objectQualifier}avtMyTokens_Tokens]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens2_Namespaces]') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
+DROP TABLE  {databaseOwner}[{objectQualifier}avtMyTokens2_Namespaces]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens2_Tokens]') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
+DROP TABLE  {databaseOwner}[{objectQualifier}avtMyTokens2_Tokens]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens2_ExternalApi]') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
+DROP TABLE  {databaseOwner}[{objectQualifier}avtMyTokens2_ExternalApi]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens2_ExternalApiKeys]') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
+DROP TABLE  {databaseOwner}[{objectQualifier}avtMyTokens2_ExternalApiKeys]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens2_Servers]') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
+DROP TABLE  {databaseOwner}[{objectQualifier}avtMyTokens2_Servers]
+GO
+
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtMyTokens_Activations]') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
+DROP TABLE {databaseOwner}[{objectQualifier}avtMyTokens_Activations]
+
+
+DELETE FROM {databaseOwner}[{objectQualifier}Tabs] WHERE TabName = 'MyTokens Studio'
+GO
+

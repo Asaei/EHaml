@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="bAddModule.Text" xml:space="preserve">
+    <value>Add Module</value>
+  </data>
+  <data name="bCreateTab.Text" xml:space="preserve">
+    <value>Add Tab</value>
+  </data>
+  <data name="bUpdate.Text" xml:space="preserve">
+    <value>Update Tab</value>
+  </data>
+  <data name="bUpdateTagName.Text" xml:space="preserve">
+    <value>Update Module Settings</value>
+  </data>
+  <data name="cmdCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ControlTitle_edit.Text" xml:space="preserve">
+    <value>Manage Tabs</value>
+  </data>
+  <data name="lCustomizeBreakline.Help" xml:space="preserve">
+    <value>You can optionally specify your own breakline html...</value>
+  </data>
+  <data name="lCustomizeBreakline.Text" xml:space="preserve">
+    <value>Customize Breakline</value>
+  </data>
+  <data name="lJavascriptLink.Help" xml:space="preserve">
+    <value>Links directly to the tab from within page</value>
+  </data>
+  <data name="lJavascriptLink.Text" xml:space="preserve">
+    <value>Javascript Link</value>
+  </data>
+  <data name="lLocale.Help" xml:space="preserve">
+    <value>Specify locale for which this tab should show</value>
+  </data>
+  <data name="lLocale.Text" xml:space="preserve">
+    <value>Locale</value>
+  </data>
+  <data name="lLocalePreview.Help" xml:space="preserve">
+    <value>Allows you to easily view tabs for a specific locale.</value>
+  </data>
+  <data name="lLocalePreview.Text" xml:space="preserve">
+    <value>Locale Preview</value>
+  </data>
+  <data name="lModules.Help" xml:space="preserve">
+    <value>Select a module</value>
+  </data>
+  <data name="lModules.Text" xml:space="preserve">
+    <value>Modules</value>
+  </data>
+  <data name="lNewTab.Help" xml:space="preserve">
+    <value>Allows you to create new tab</value>
+  </data>
+  <data name="lNewTab.Text" xml:space="preserve">
+    <value>Tab Name</value>
+  </data>
+  <data name="lPages.Help" xml:space="preserve">
+    <value>Select a page from your portal</value>
+  </data>
+  <data name="lPages.Text" xml:space="preserve">
+    <value>Pages</value>
+  </data>
+  <data name="lPermissions.Help" xml:space="preserve">
+    <value>Tab Permissions</value>
+  </data>
+  <data name="lPermissions.Text" xml:space="preserve">
+    <value>Permissions</value>
+  </data>
+  <data name="lSearchable.Help" xml:space="preserve">
+    <value>Enable DNN Search</value>
+  </data>
+  <data name="lSearchable.Text" xml:space="preserve">
+    <value>DNN Searchable</value>
+  </data>
+  <data name="lSearchSummary.Help" xml:space="preserve">
+    <value>Shown in Search Results</value>
+  </data>
+  <data name="lSearchSummary.Text" xml:space="preserve">
+    <value>Search Summary</value>
+  </data>
+  <data name="lSelectedModules.Help" xml:space="preserve">
+    <value>Selected modules to show in tab</value>
+  </data>
+  <data name="lSelectedModules.Text" xml:space="preserve">
+    <value>Selected Modules</value>
+  </data>
+  <data name="SettingsTab.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="lShowContent.Help" xml:space="preserve">
+    <value>Allows you to show Text/Html</value>
+  </data>
+  <data name="lShowContent.Text" xml:space="preserve">
+    <value>Show Content</value>
+  </data>
+  <data name="lTabHeader.Help" xml:space="preserve">
+    <value>Allows you to customize the tab header. Use HTML editor and add icons and other formatting to your tabs</value>
+  </data>
+  <data name="lTabHeader.Text" xml:space="preserve">
+    <value>Use HTML Tab Header</value>
+  </data>
+  <data name="lTabLink.Help" xml:space="preserve">
+    <value>Links directly to the tab from any page</value>
+  </data>
+  <data name="lTabLink.Text" xml:space="preserve">
+    <value>Tab Link</value>
+  </data>
+  <data name="lTabLinkHtmlCode.Help" xml:space="preserve">
+    <value>Links directly to the tab from any page</value>
+  </data>
+  <data name="lTabLinkHtmlCode.Text" xml:space="preserve">
+    <value>Link HTML Code</value>
+  </data>
+  <data name="lTabName.Help" xml:space="preserve">
+    <value>Allows you to rename the tab</value>
+  </data>
+  <data name="lTabName.Text" xml:space="preserve">
+    <value>Tab Name</value>
+  </data>
+  <data name="lTabs.Help" xml:space="preserve">
+    <value>List of tabs</value>
+  </data>
+  <data name="lTabs.Text" xml:space="preserve">
+    <value>Tabs</value>
+  </data>
+  <data name="lTagName.Help" xml:space="preserve">
+    <value>[TagName] is used within Content in Module Wrapper Mode</value>
+  </data>
+  <data name="lTagName.Text" xml:space="preserve">
+    <value>Tag Name</value>
+  </data>
+  <data name="lWrapModules.Help" xml:space="preserve">
+    <value>Use Tag Names within Content to create your own layout. Module Wrapper Mode</value>
+  </data>
+  <data name="lWrapModules.Text" xml:space="preserve">
+    <value>Wrap Modules</value>
+  </data>
+  <data name="ContentTab.Text" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="IntegrationTab.Text" xml:space="preserve">
+    <value>Integration</value>
+  </data>
+  <data name="ModulesTab.Text" xml:space="preserve">
+    <value>Modules</value>
+  </data>
+  <data name="PermissionsTab.Text" xml:space="preserve">
+    <value>Permissions</value>
+  </data>
+  <data name="SearchTab.Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="AllLocales.Text" xml:space="preserve">
+    <value>All Locales</value>
+  </data>
+  <data name="FallbackLocale.Text" xml:space="preserve">
+    <value>Fallback Locale</value>
+  </data>
+  <data name="lLoadOnDemand.Help" xml:space="preserve">
+    <value>Loads the content of tab only when the tab is activated by postback (Page Refresh). Useful to reduce the size of page and improve speed/performance. Since the content is only loaded on demand, it's not available to Search Engines and therefore the content will NOT BE INDEXED by Search Engines.</value>
+  </data>
+  <data name="lLoadOnDemand.Text" xml:space="preserve">
+    <value>Load On Demand</value>
+  </data>
+  <data name="lDateExpire.Help" xml:space="preserve">
+    <value>Enforce start and end date of module</value>
+  </data>
+  <data name="lDateExpire.Text" xml:space="preserve">
+    <value>Enforce Start/End Date</value>
+  </data>
+  <data name="lModulePermissions.Help" xml:space="preserve">
+    <value>Enforces module permissions</value>
+  </data>
+  <data name="lModulePermissions.Text" xml:space="preserve">
+    <value>Enforce Module Permissions</value>
+  </data>
+  <data name="lShowModuleContainer.Text" xml:space="preserve">
+    <value>Show Module Container</value>
+  </data>
+  <data name="lUseToken.Text" xml:space="preserve">
+    <value>Display Token</value>
+  </data>
+  <data name="Usetokencontent.Text" xml:space="preserve">
+    <value>Your content here..</value>
+  </data>
+  <data name="ValidateError.Text" xml:space="preserve">
+    <value>Tab name already exist</value>
+  </data>
+  <data name="BasicTab.Text" xml:space="preserve">
+    <value>Basic</value>
+  </data>
+  <data name="ContentSubTab.Text" xml:space="preserve">
+    <value>HTML</value>
+  </data>
+  <data name="lModulesHeading.Text" xml:space="preserve">
+    <value>Modules</value>
+  </data>
+  <data name="lNavigateUrl.Text" xml:space="preserve">
+    <value>Tab Link</value>
+  </data>
+  <data name="lSearch.Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="lBasic.Text" xml:space="preserve">
+    <value>Basic</value>
+  </data>
+  <data name="lIntegration.Text" xml:space="preserve">
+    <value>lntegration</value>
+  </data>
+  <data name="lPermissionss.Text" xml:space="preserve">
+    <value>Permissions</value>
+  </data>
+  <data name="lContent.Text" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="lModuless.Text" xml:space="preserve">
+    <value>Modules</value>
+  </data>
+  <data name="cmdBack1.Text" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="lModuless.Help" xml:space="preserve">
+    <value>Select a module</value>
+  </data>
+  <data name="lPermissionss.Help" xml:space="preserve">
+    <value>Specify permission  who can access your tab</value>
+  </data>
+  <data name="lShowModuleContainer.Help" xml:space="preserve">
+    <value>Please specify to show the module container</value>
+  </data>
+  <data name="lNavigateUrl.Help" xml:space="preserve">
+    <value>Link directly to given url</value>
+  </data>
+  <data name="lUseToken.Help" xml:space="preserve">
+    <value>Use Token for render tabs</value>
+  </data>
+  <data name="SelectedTabSetValidate.Text" xml:space="preserve">
+    <value>You cannot set the tab as default selected and specify tab link simultaneously</value>
+  </data>
+  <data name="Automatic.Text" xml:space="preserve">
+    <value>Automatic</value>
+  </data>
+  <data name="lInjectEvent.Help" xml:space="preserve">
+    <value>Event on which the module to be injected</value>
+  </data>
+  <data name="lInjectEvent.Text" xml:space="preserve">
+    <value>Inject event</value>
+  </data>
+  <data name="PageInit.Text" xml:space="preserve">
+    <value>Page Init</value>
+  </data>
+  <data name="PageLoad.Text" xml:space="preserve">
+    <value>Page Load</value>
+  </data>
+  <data name="lPortals.Help" xml:space="preserve">
+    <value>Select the dnn portals</value>
+  </data>
+  <data name="lPortals.Text" xml:space="preserve">
+    <value>Portals</value>
+  </data>
+</root>

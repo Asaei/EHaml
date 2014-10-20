@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TokenObjectss>
+	
+	<Host>avt.MyTokens.Core.Objects.Core.HostObject, avt.MyTokens.Core</Host>
+	<Profile>avt.MyTokens.Core.Objects.Core.UserProfileObject, avt.MyTokens.Core</Profile>
+	
+</TokenObjectss>

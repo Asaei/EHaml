@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ChooseDbError.Text" xml:space="preserve">
+    <value>شما می بایست نوع پایگاه داده را انتخاب نمایید</value>
+  </data>
+  <data name="Confirm.Text" xml:space="preserve">
+    <value>تکرار رمزعبور :</value>
+  </data>
+  <data name="IntroDetail.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Password.Text" xml:space="preserve">
+    <value>رمزعبور :</value>
+  </data>
+  <data name="UserName.Text" xml:space="preserve">
+    <value>نام کاربری : </value>
+  </data>
+  <data name="AccountInfo.Text" xml:space="preserve">
+    <value>اطلاعات حساب کاربری</value>
+  </data>
+  <data name="AccountInfoIntro.Text" xml:space="preserve">
+    <value>&lt;b style="font-size: 13px;"&gt;به ویزارد نصب دات نت نیوک خوش آمدید. این ویزارد شما را در نصب یاری می رساند.&lt;/b&gt;&lt;p style="padding-top:5px;"&gt;برای راه اندازی و نصب دات نت نیوک ، گزینه های زیر را تکمیل نمائید&lt;/p&gt;</value>
+  </data>
+  <data name="AdminInfo.Text" xml:space="preserve">
+    <value>اطلاعات کاربر میزبان(مدیر ارشد)</value>
+  </data>
+  <data name="CheckingIIS.Text" xml:space="preserve">
+    <value>بررسی پیکربندی IIS </value>
+  </data>
+  <data name="cmdContinue.Text" xml:space="preserve">
+    <value>ادامه</value>
+  </data>
+  <data name="Confirm.Help" xml:space="preserve">
+    <value>رمزعبوری را که در کادر بالا وارد کردید را تکرار نمایید</value>
+  </data>
+  <data name="CreateSuperUser.Text" xml:space="preserve">
+    <value>ایجاد مدیر ارشد سایت</value>
+  </data>
+  <data name="CreatingSite.Text" xml:space="preserve">
+    <value>ایجاد سایت [{0}]</value>
+  </data>
+  <data name="CreatingSuperUser.Text" xml:space="preserve">
+    <value>ایجاد مدیر ارشد سایت</value>
+  </data>
+  <data name="DatabaseAdvanced.Text" xml:space="preserve">
+    <value>پیشرفته</value>
+  </data>
+  <data name="DatabaseFilename.Help" xml:space="preserve">
+    <value>نام فایل دیتابیس</value>
+  </data>
+  <data name="DatabaseFilename.Text" xml:space="preserve">
+    <value>نام فایل</value>
+  </data>
+  <data name="DatabaseInfo.Text" xml:space="preserve">
+    <value>اطلاعات دیتابیس</value>
+  </data>
+  <data name="DatabaseInstallation.Text" xml:space="preserve">
+    <value>نصب دیتابیس</value>
+  </data>
+  <data name="DatabaseName.Help" xml:space="preserve">
+    <value>نام دیتابیس</value>
+  </data>
+  <data name="DatabaseName.Text" xml:space="preserve">
+    <value>نام دیتابیس</value>
+  </data>
+  <data name="DatabaseObjectQualifier.Help" xml:space="preserve">
+    <value>چنانچه برای این گزینه مقداری تعیین نمائید تمامی عناصر دیتابیس از جمله جداول و پروسیجرها دارای پیشوند وارد شده می باشند</value>
+  </data>
+  <data name="DatabaseObjectQualifier.Text" xml:space="preserve">
+    <value>پیشوند آبجکت ها</value>
+  </data>
+  <data name="DatabaseOwner.Text" xml:space="preserve">
+    <value>مالک دیتابیس</value>
+  </data>
+  <data name="DatabasePassword.Help" xml:space="preserve">
+    <value>رمزعبور دیتابیس.</value>
+  </data>
+  <data name="DatabasePassword.Text" xml:space="preserve">
+    <value>رمزعبور دیتابیس</value>
+  </data>
+  <data name="DatabaseRunAs.Help" xml:space="preserve">
+    <value>منظور از این گزینه نوع دسترسی کاربر وارد شده به دیتابیس پورتال می باشد</value>
+  </data>
+  <data name="DatabaseRunAs.Text" xml:space="preserve">
+    <value>اجرا و دسترسی به دیتابیس به عنوان</value>
+  </data>
+  <data name="DatabaseSecurity.Help" xml:space="preserve">
+    <value>منظور از این گزینه نوع امنیت استفاده شده برای دیتابیس کی باشد</value>
+  </data>
+  <data name="DatabaseSecurity.Text" xml:space="preserve">
+    <value>امنیت</value>
+  </data>
+  <data name="DatabaseServer.Help" xml:space="preserve">
+    <value>نام سرور دیتابیس.</value>
+  </data>
+  <data name="DatabaseServer.Text" xml:space="preserve">
+    <value>نام سرور</value>
+  </data>
+  <data name="DatabaseSetup.Help" xml:space="preserve">
+    <value>تنظیمات استاندارد یا پیشرفته دیتابیس.</value>
+  </data>
+  <data name="DatabaseSetup.Text" xml:space="preserve">
+    <value>نصب دیتابیس</value>
+  </data>
+  <data name="DatabaseStandard.Text" xml:space="preserve">
+    <value>استاندارد</value>
+  </data>
+  <data name="DatabaseType.Help" xml:space="preserve">
+    <value>نوع دیتابیسی که قصد دارید نصب کنید</value>
+  </data>
+  <data name="DatabaseType.Text" xml:space="preserve">
+    <value>نوع دیتابیس</value>
+  </data>
+  <data name="DatabaseUsername.Help" xml:space="preserve">
+    <value>نام کاربری دیتابیس</value>
+  </data>
+  <data name="DatabaseUsername.Text" xml:space="preserve">
+    <value>نام کاربری دیتابیس</value>
+  </data>
+  <data name="DbSecurityIntegrated.Text" xml:space="preserve">
+    <value>اتصال در مد یکپارچه (بدون کاربری)</value>
+  </data>
+  <data name="DbSecurityUserDefined.Text" xml:space="preserve">
+    <value>اتصال در مد کاربر</value>
+  </data>
+  <data name="DeletingOldFiles.Text" xml:space="preserve">
+    <value>حذف فایل های قدیمی برای</value>
+  </data>
+  <data name="Error.Text" xml:space="preserve">
+    <value>خطا</value>
+  </data>
+  <data name="ErrorInStep.Text" xml:space="preserve">
+    <value>خطا رخ داد - {0}</value>
+  </data>
+  <data name="ExtensionsInstallation.Text" xml:space="preserve">
+    <value>نصب ابزارها</value>
+  </data>
+  <data name="FileAndFolderPermissionCheck.Text" xml:space="preserve">
+    <value>بررسی مجوزهای دسترسی فایل ها و پوشه ها</value>
+  </data>
+  <data name="FileAndFolderPermissionCheckTitle.Text" xml:space="preserve">
+    <value>بررسی مجوزهای دسترسی فایل ها و پوشه ها</value>
+  </data>
+  <data name="FileCreateCheck.Text" xml:space="preserve">
+    <value>بررسی ایجاد فایل</value>
+  </data>
+  <data name="FileDeleteCheck.Text" xml:space="preserve">
+    <value>بررسی حذف فایل</value>
+  </data>
+  <data name="FolderCreateCheck.Text" xml:space="preserve">
+    <value>بررسی ایجاد پوشه</value>
+  </data>
+  <data name="FolderDeleteCheck.Text" xml:space="preserve">
+    <value>بررسی حذف پوشه</value>
+  </data>
+  <data name="IISVerificationFail.Text" xml:space="preserve">
+    <value>AppPool  در IIS  باید در حالت Integrated اجرا شود</value>
+  </data>
+  <data name="InitHostSetting.Text" xml:space="preserve">
+    <value>آماده سازی تنظیمات میزبان</value>
+  </data>
+  <data name="InputErrorInvalidPassword.Text" xml:space="preserve">
+    <value>رمزعبور وارد شده شامل حداقل تعداد کاراکتر الزامی نیست</value>
+  </data>
+  <data name="InputErrorMissingRequiredFields.Text" xml:space="preserve">
+    <value>از دست دادن فایل های ضروری</value>
+  </data>
+  <data name="Installation.Text" xml:space="preserve">
+    <value>نصب</value>
+  </data>
+  <data name="InstallationDone.Text" xml:space="preserve">
+    <value>انجام شد</value>
+  </data>
+  <data name="InstallingDataBaseScriptStep.Text" xml:space="preserve">
+    <value>نصب اسکریپت های دیتابیس</value>
+  </data>
+  <data name="InstallingExtension.Text" xml:space="preserve">
+    <value>نصب {0} - {1}</value>
+  </data>
+  <data name="InstallingExtensionType.Text" xml:space="preserve">
+    <value>نصب بسته برای نوع - {0}</value>
+  </data>
+  <data name="InstallingLanguagesTitle.Text" xml:space="preserve">
+    <value>زبان های نصب</value>
+  </data>
+  <data name="InstallingMembershipDatabaseScriptStep.Text" xml:space="preserve">
+    <value>Installing Membership Database Scripts</value>
+  </data>
+  <data name="InstallTitle.Text" xml:space="preserve">
+    <value>ویزارد نصب دات نت نیوک</value>
+  </data>
+  <data name="IsAbleToPerformDatabaseActions.Text" xml:space="preserve">
+    <value>یوزر دیتابیس شما دارای دسترسی های لازم برای نصب  (dbo) نیست.</value>
+  </data>
+  <data name="IsAbleToPerformDatabaseActionsCheck.Text" xml:space="preserve">
+    <value>Checking database user has ability to perform necessary actions</value>
+  </data>
+  <data name="IsSqlServerDbo.Text" xml:space="preserve">
+    <value>دیتابیس شما دارای دسترسی dbo نیست</value>
+  </data>
+  <data name="IsValidDotNetVersion.Text" xml:space="preserve">
+    <value>دات نت نیوک برای نصب به resو یا بالاتر نیاز دارد.</value>
+  </data>
+  <data name="IsValidSqlServerVersion.Text" xml:space="preserve">
+    <value>دات نت نیوک برای نصب و اجرا به  SQL 2008 نسخه express و یا کامل نیاز دارد</value>
+  </data>
+  <data name="IsValidSqlServerVersionCheck.Text" xml:space="preserve">
+    <value>Checking database version is SQL 2008 (express or full product) or higher to work</value>
+  </data>
+  <data name="Language.Help" xml:space="preserve">
+    <value>زبانی که می خواهید برای پورتال خود استفاده نمایید.</value>
+  </data>
+  <data name="Language.Text" xml:space="preserve">
+    <value>زبان</value>
+  </data>
+  <data name="LanguageDutch.Text" xml:space="preserve">
+    <value>Dutch</value>
+  </data>
+  <data name="LanguageEnglish.Text" xml:space="preserve">
+    <value>انگلیسی</value>
+  </data>
+  <data name="LanguageFrench.Text" xml:space="preserve">
+    <value>فرانسوی</value>
+  </data>
+  <data name="LanguageGerman.Text" xml:space="preserve">
+    <value>آلمانی</value>
+  </data>
+  <data name="LanguageItalian.Text" xml:space="preserve">
+    <value>ایتالیایی</value>
+  </data>
+  <data name="LaunchInstall.Text" xml:space="preserve">
+    <value>اجرای نصب کننده</value>
+  </data>
+  <data name="LicenseActivation.Text" xml:space="preserve">
+    <value>Activating License</value>
+  </data>
+  <data name="NoInstallationLog.Text" xml:space="preserve">
+    <value>بدون لاگ نصب</value>
+  </data>
+  <data name="Password.Help" xml:space="preserve">
+    <value>رمزعبور برای مدیر ارشد سایت</value>
+  </data>
+  <data name="ProcessingUpgradeScript.Text" xml:space="preserve">
+    <value>پردازش آپگرید اسکریپت</value>
+  </data>
+  <data name="RequiresFileOrDatabase.Text" xml:space="preserve">
+    <value>File or Database entry is required under connection node in DotNetNuke.Install.Config file</value>
+  </data>
+  <data name="Retry.Text" xml:space="preserve">
+    <value>تلاش مجدد</value>
+  </data>
+  <data name="SeeLogs.Text" xml:space="preserve">
+    <value>مشاهده لاگ ها</value>
+  </data>
+  <data name="SkipCreatingSite.Text" xml:space="preserve">
+    <value>نام مستعار پورتال [{0}] از قبل تنظیم شده است. صرفنظر کردن از این مرحله</value>
+  </data>
+  <data name="SqlTypeExpress.Text" xml:space="preserve">
+    <value>SQL Express</value>
+  </data>
+  <data name="SqlTypeServer.Text" xml:space="preserve">
+    <value>SQL Server</value>
+  </data>
+  <data name="StepFailed.Text" xml:space="preserve">
+    <value>Step Failed - {0}</value>
+  </data>
+  <data name="SuperUserCreation.Text" xml:space="preserve">
+    <value>ایجاد مدیر ارشد</value>
+  </data>
+  <data name="TemplateBlank.Text" xml:space="preserve">
+    <value>قالب خالی</value>
+  </data>
+  <data name="TemplateDefault.Text" xml:space="preserve">
+    <value>قالب پیش فرض</value>
+  </data>
+  <data name="TemplateMobile.Text" xml:space="preserve">
+    <value>قالب موبایل</value>
+  </data>
+  <data name="TemplateSolutions.Text" xml:space="preserve">
+    <value>قالب راهکار</value>
+  </data>
+  <data name="UpdatingConfigFile.Text" xml:space="preserve">
+    <value>Updating Config for </value>
+  </data>
+  <data name="UpgradingNormalApplication.Text" xml:space="preserve">
+    <value>Upgrading Application</value>
+  </data>
+  <data name="UpgradingVersionApplication.Text" xml:space="preserve">
+    <value>Upgrading Application to </value>
+  </data>
+  <data name="UserName.Help" xml:space="preserve">
+    <value>نام کاربری برای مدیر ارشد سایت</value>
+  </data>
+  <data name="ViewWebsite.Text" xml:space="preserve">
+    <value>نمایش پورتال</value>
+  </data>
+  <data name="VisitWebsite.Text" xml:space="preserve">
+    <value>دیدن پورتال</value>
+  </data>
+  <data name="WebsiteCreation.Text" xml:space="preserve">
+    <value>نصب پورتال</value>
+  </data>
+  <data name="WebsiteInfo.Text" xml:space="preserve">
+    <value>اطلاعات پورتال</value>
+  </data>
+  <data name="WebsiteName.Help" xml:space="preserve">
+    <value>نامی را که می خواهید برای پورتال استفاده کنید را وارد نمایید</value>
+  </data>
+  <data name="WebsiteName.Text" xml:space="preserve">
+    <value>نام پورتال</value>
+  </data>
+  <data name="WebsiteTemplate.Help" xml:space="preserve">
+    <value>نوع پورتالی که می خواهید نصب کنید</value>
+  </data>
+  <data name="WebsiteTemplate.Text" xml:space="preserve">
+    <value>قالب</value>
+  </data>
+  <data name="Confirm.Required" xml:space="preserve">
+    <value>تکرار رمزعبور ضروری است</value>
+  </data>
+  <data name="DatabaseConnectionError.Text" xml:space="preserve">
+    <value>خطای اتصال به دیتابیس</value>
+  </data>
+  <data name="DatabaseError.Text" xml:space="preserve">
+    <value>عدم توانایی اتصال به دیتابیس</value>
+  </data>
+  <data name="DatabaseName.Required" xml:space="preserve">
+    <value>نام دیتابیس ضروری است.</value>
+  </data>
+  <data name="DatabasePassword.Required" xml:space="preserve">
+    <value>رمزعبور دیتابیس ضروری است</value>
+  </data>
+  <data name="DatabaseServer.Required" xml:space="preserve">
+    <value>نام سرور دیتابیس ضروری است.</value>
+  </data>
+  <data name="InstallationComplete.Text" xml:space="preserve">
+    <value>نصب کامل شد!</value>
+  </data>
+  <data name="InstallationIntroInfo.Text" xml:space="preserve">
+    <value>دات نت نیوک شروع به نصب کرده است. از این که صبوری می کنید متشکریم...</value>
+  </data>
+  <data name="InvalidQualifier.Text" xml:space="preserve">
+    <value>Object Qualifier باید با یک حرف شروع شود و نمی تواند بیش از 20 کاراکتر باشد</value>
+  </data>
+  <data name="LanguageSpanish.Text" xml:space="preserve">
+    <value>اسپانیایی</value>
+  </data>
+  <data name="LegacyLangaugePack.Text" xml:space="preserve">
+    <value>این بسته زبانی از نسخه برنامه فعلی قدیمی تر است: </value>
+  </data>
+  <data name="NoErrorsLogged.Text" xml:space="preserve">
+    <value>هیچ خطایی در نصب ثبت نشده است</value>
+  </data>
+  <data name="PageTitle.Text" xml:space="preserve">
+    <value>ویزارد نصب دات نت نیوک</value>
+  </data>
+  <data name="Password.Required" xml:space="preserve">
+    <value>رمزعبور ضروری است</value>
+  </data>
+  <data name="StandardDatabaseMsg.Text" xml:space="preserve">
+    <value>No valid default database connection detected.
+Standard Database setup option is unavailable</value>
+  </data>
+  <data name="TestingDatabase.Text" xml:space="preserve">
+    <value>تائید اتصال دیتابیس</value>
+  </data>
+  <data name="TimerMinutes.Text" xml:space="preserve">
+    <value>دقیقه</value>
+  </data>
+  <data name="TimerSeconds.Text" xml:space="preserve">
+    <value>ثانیه</value>
+  </data>
+  <data name="UserName.Required" xml:space="preserve">
+    <value>نام کاربری ضروری است</value>
+  </data>
+  <data name="WebsiteName.Required" xml:space="preserve">
+    <value>نام پورتال ضروری است</value>
+  </data>
+  <data name="DatabaseFilename.Required" xml:space="preserve">
+    <value>نام فایل دیتابیس ضروری است</value>
+  </data>
+  <data name="DatabaseUsername.Required" xml:space="preserve">
+    <value>نام کاربری دیتابیس ضروری است.</value>
+  </data>
+  <data name="PasswordMismatch.Text" xml:space="preserve">
+    <value>رمزعبور و تکرارش یکسان نیست</value>
+  </data>
+</root>

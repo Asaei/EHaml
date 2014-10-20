@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="bUpdate.Text" xml:space="preserve">
+    <value>بروز رسانی</value>
+  </data>
+  <data name="cbSpecifyHeight.Text" xml:space="preserve">
+    <value>طول مشخص</value>
+  </data>
+  <data name="cbSpecifyWidth.Text" xml:space="preserve">
+    <value>عرض مشخص</value>
+  </data>
+  <data name="cmdCancel.Text" xml:space="preserve">
+    <value>بازگشت</value>
+  </data>
+  <data name="ControlTitle_options.Text" xml:space="preserve">
+    <value>مشاهده گزینه ها</value>
+  </data>
+  <data name="lFxFade.Help" xml:space="preserve">
+    <value>افکت محد</value>
+  </data>
+  <data name="lFxFade.Text" xml:space="preserve">
+    <value>محو</value>
+  </data>
+  <data name="lFxSlide.Help" xml:space="preserve">
+    <value>افکت اسلاید</value>
+  </data>
+  <data name="lFxSlide.Text" xml:space="preserve">
+    <value>اسلاید</value>
+  </data>
+  <data name="lHeight.Help" xml:space="preserve">
+    <value>انتخاب طول ثابت برای ماژول در این صورت اگر طول ماژول بیش از این اندازه باشد ماژول اسکرول دار خواهد شد خورد</value>
+  </data>
+  <data name="lHeight.Text" xml:space="preserve">
+    <value>طول</value>
+  </data>
+  <data name="lHeightPixels.Text" xml:space="preserve">
+    <value>پیکسل</value>
+  </data>
+  <data name="lRotateMilliseconds.Text" xml:space="preserve">
+    <value>میلی ثانیه</value>
+  </data>
+  <data name="lRotateTabs.Help" xml:space="preserve">
+    <value>در صورت انتخاب این گزینه تب پیش فرض  بر اساس بازه زمانی تغییر می کند</value>
+  </data>
+  <data name="lRotateTabs.Text" xml:space="preserve">
+    <value>تغییر خودکار تب</value>
+  </data>
+  <data name="lRotateTime.Help" xml:space="preserve">
+    <value>زمان چرخش برای حرکت بین تب ها</value>
+  </data>
+  <data name="lRotateTime.Text" xml:space="preserve">
+    <value>زمان چرخش</value>
+  </data>
+  <data name="lSelectOnMouseover.Help" xml:space="preserve">
+    <value>انتخاب خودکار تب با حرکت ماوس بر روی تب</value>
+  </data>
+  <data name="lSelectOnMouseover.Text" xml:space="preserve">
+    <value>انتخاب خودکار تب</value>
+  </data>
+  <data name="lSkins.Help" xml:space="preserve">
+    <value>اسکین مورد استفاده</value>
+  </data>
+  <data name="lSkins.Text" xml:space="preserve">
+    <value>اسکین مورد استفاده</value>
+  </data>
+  <data name="lSortable.Help" xml:space="preserve">
+    <value>مرتب سازی تب ها</value>
+  </data>
+  <data name="lSortable.Text" xml:space="preserve">
+    <value>مرتب سازی</value>
+  </data>
+  <data name="lTabBehavior.Text" xml:space="preserve">
+    <value>تنظیمات پایه ای</value>
+  </data>
+  <data name="lTabEffects.Text" xml:space="preserve">
+    <value>افکت</value>
+  </data>
+  <data name="lTabLayout.Text" xml:space="preserve">
+    <value>طول / عرض</value>
+  </data>
+  <data name="lTabsPersistence.Help" xml:space="preserve">
+    <value>در صورت انتخاب این گزینه اگر صفحه مجددا بارگذاری شود تب پیش فرض آخرین تب انتخاب شده خواهد بود</value>
+  </data>
+  <data name="lTabsPersistence.Text" xml:space="preserve">
+    <value>حفظ تب انتخاب شده</value>
+  </data>
+  <data name="lTabTheming.Text" xml:space="preserve">
+    <value>شکل ظاهری</value>
+  </data>
+  <data name="lThemes.Help" xml:space="preserve">
+    <value>تم مورد استفاده</value>
+  </data>
+  <data name="lThemes.Text" xml:space="preserve">
+    <value>تم مورد استفاده</value>
+  </data>
+  <data name="lWidth.Help" xml:space="preserve">
+    <value>انتخاب عرض ثابت برای ماژول در این صورت اگر عرض ماژول بیش از این اندازه باشد ماژول اسکرول دار خواهد شد خورد</value>
+  </data>
+  <data name="lWidth.Text" xml:space="preserve">
+    <value>عرض</value>
+  </data>
+  <data name="lWidthPixels.Text" xml:space="preserve">
+    <value>پیکسل</value>
+  </data>
+  <data name="lFxCustom.Help" xml:space="preserve">
+    <value>در صورت انتخاب این گزینه انتخاب تب ها با افکت صورت می گیرد</value>
+  </data>
+  <data name="lFxCustom.Text" xml:space="preserve">
+    <value>فعال سازی افکت</value>
+  </data>
+  <data name="lEventAction.Help" xml:space="preserve">
+    <value>Google Analytics Event Tracking Action</value>
+  </data>
+  <data name="lEventAction.Text" xml:space="preserve">
+    <value>Event Action</value>
+  </data>
+  <data name="lEventCategory.Help" xml:space="preserve">
+    <value>Google Analytics Event Tracking Category</value>
+  </data>
+  <data name="lEventCategory.Text" xml:space="preserve">
+    <value>Event Category</value>
+  </data>
+  <data name="lEventLabel.Help" xml:space="preserve">
+    <value>Google Analytics Event Tracking Label</value>
+  </data>
+  <data name="lEventLabel.Text" xml:space="preserve">
+    <value>Event Label</value>
+  </data>
+  <data name="lTabAnalytics.Text" xml:space="preserve">
+    <value>تحلیل گوگل</value>
+  </data>
+  <data name="lTrackClicks.Help" xml:space="preserve">
+    <value>ردیابی کلیک ها روی تب ها برای تحلیل گر گوگل</value>
+  </data>
+  <data name="lTrackClicks.Text" xml:space="preserve">
+    <value>رد یابی کلیک ها</value>
+  </data>
+  <data name="lTrackingCode.Help" xml:space="preserve">
+    <value>Google Analytics Tracking Code</value>
+  </data>
+  <data name="lTrackingCode.Text" xml:space="preserve">
+    <value>Tracking Code</value>
+  </data>
+  <data name="rbInsertTrackingCode.Text" xml:space="preserve">
+    <value>Provide the Google Analytics Tracking code</value>
+  </data>
+  <data name="rbTrackingCodeExists.Text" xml:space="preserve">
+    <value>Google Analytics Tracking Code is already on the page</value>
+  </data>
+  <data name="lHideSingleTab.Help" xml:space="preserve">
+    <value>Hides Single Tab - Use if you don't want to show a lone tab.</value>
+  </data>
+  <data name="lHideSingleTab.Text" xml:space="preserve">
+    <value>مخفی نمودن یک تب </value>
+  </data>
+  <data name="lHideTabs.Help" xml:space="preserve">
+    <value>Hides All Tabs - Use in conjunction with Rotate Tabs to create a Rotator</value>
+  </data>
+  <data name="lHideTabs.Text" xml:space="preserve">
+    <value>تب های مخفی</value>
+  </data>
+</root>

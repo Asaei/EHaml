@@ -1,0 +1,74 @@
+/* Layout helpers
+----------------------------------*/
+.livetabsdotluv .ui-helper-hidden { display: none; }
+.livetabsdotluv .ui-helper-hidden-accessible { position: absolute; left: -99999999px; }
+.livetabsdotluv .ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.livetabsdotluv .ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.livetabsdotluv .ui-helper-clearfix { display: inline-block; }
+/* required comment for clearfix to work in Opera \*/
+* html .ui-helper-clearfix { height:1%; }
+.livetabsdotluv .ui-helper-clearfix { display:block; }
+/* end clearfix */
+.livetabsdotluv .ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+/* Interaction Cues
+----------------------------------*/
+.livetabsdotluv .ui-state-disabled { cursor: default !important; }
+/* states and images */
+.livetabsdotluv .ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+/* Overlays */
+.livetabsdotluv .ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+/* Component containers
+----------------------------------*/
+.livetabsdotluv .ui-widget { font-family: Arial, sans-serif; font-size: 1.3em; }
+.livetabsdotluv .ui-widget input, .livetabsdotluv .ui-widget select, .livetabsdotluv .ui-widget textarea, .livetabsdotluv .ui-widget button { font-family: Arial, sans-serif; font-size: 1em; }
+.livetabsdotluv .ui-widget-content { border: 1px solid #000000; background: #111111 url(images/ui-bg_gloss-wave_20_111111_500x100.png) 50% top repeat-x; color: #d9d9d9; }
+.livetabsdotluv .ui-widget-content a { }
+.livetabsdotluv .ui-widget-header { border: 1px solid #0b3e6f; background: #0b3e6f url(images/ui-bg_diagonals-thick_15_0b3e6f_40x40.png) 50% 50% repeat; color: #f6f6f6; font-weight: bold; }
+.livetabsdotluv .ui-widget-header a { color: #f6f6f6; }
+/* Interaction states
+----------------------------------*/
+.livetabsdotluv .ui-state-default, .livetabsdotluv .ui-widget-content .ui-state-default { border: 1px solid #333333; background: #333333 url(images/ui-bg_dots-small_20_333333_2x2.png) 50% 50% repeat; font-weight: bold; color: #ffffff; outline: none; }
+.livetabsdotluv .ui-state-default a, .livetabsdotluv .ui-state-default a:link, .livetabsdotluv .ui-state-default a:visited { color: #ffffff; text-decoration: none; outline: none; }
+.livetabsdotluv .ui-state-hover, .livetabsdotluv .ui-widget-content .ui-state-hover, .livetabsdotluv .ui-state-focus, .livetabsdotluv .ui-widget-content .ui-state-focus { border: 1px solid #222222; background: #00498f url(images/ui-bg_dots-small_40_00498f_2x2.png) 50% 50% repeat; font-weight: bold; color: #ffffff; outline: none; }
+.livetabsdotluv .ui-state-hover a, .livetabsdotluv .ui-state-hover a:hover { color: #ffffff; text-decoration: none; outline: none; }
+.livetabsdotluv .ui-state-active, .livetabsdotluv .ui-widget-content .ui-state-active { border: 1px solid #096ac8; background: #292929 url(images/ui-bg_flat_40_292929_40x100.png) 50% 50% repeat-x; font-weight: bold; color: #75abff; outline: none; }
+.livetabsdotluv .ui-state-active a, .livetabsdotluv .ui-state-active a:link, .livetabsdotluv .ui-state-active a:visited { color: #75abff; outline: none; text-decoration: none; }
+/* Interaction Cues
+----------------------------------*/
+.livetabsdotluv .ui-state-highlight, .livetabsdotluv .ui-widget-content .ui-state-highlight {border: 1px solid #052f57; background: #0b58a2 url(images/ui-bg_dots-medium_30_0b58a2_4x4.png) 50% 50% repeat; color: #ffffff; }
+.livetabsdotluv .ui-state-highlight a, .livetabsdotluv .ui-widget-content .ui-state-highlight a { color: #ffffff; }
+.livetabsdotluv .ui-state-error, .livetabsdotluv .ui-widget-content .ui-state-error {border: 1px solid #cd0a0a; background: #a32d00 url(images/ui-bg_dots-small_30_a32d00_2x2.png) 50% 50% repeat; color: #ffffff; }
+.livetabsdotluv .ui-state-error a, .livetabsdotluv .ui-widget-content .ui-state-error a { color: #ffffff; }
+.livetabsdotluv .ui-state-error-text, .livetabsdotluv .ui-widget-content .ui-state-error-text { color: #ffffff; }
+.livetabsdotluv .ui-state-disabled, .livetabsdotluv .ui-widget-content .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+.livetabsdotluv .ui-priority-primary, .livetabsdotluv .ui-widget-content .ui-priority-primary { font-weight: bold; }
+.livetabsdotluv .ui-priority-secondary, .livetabsdotluv .ui-widget-content .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+/* states and images */
+.livetabsdotluv .ui-icon { width: 16px; height: 16px; background-image: url(images/ui-icons_9ccdfc_256x240.png); }
+.livetabsdotluv .ui-widget-content .ui-icon {background-image: url(images/ui-icons_9ccdfc_256x240.png); }
+.livetabsdotluv .ui-widget-header .ui-icon {background-image: url(images/ui-icons_98d2fb_256x240.png); }
+.livetabsdotluv .ui-state-default .ui-icon { background-image: url(images/ui-icons_9ccdfc_256x240.png); }
+.livetabsdotluv .ui-state-hover .ui-icon, .livetabsdotluv .ui-state-focus .ui-icon {background-image: url(images/ui-icons_ffffff_256x240.png); }
+.livetabsdotluv .ui-state-active .ui-icon {background-image: url(images/ui-icons_00498f_256x240.png); }
+.livetabsdotluv .ui-state-highlight .ui-icon {background-image: url(images/ui-icons_ffffff_256x240.png); }
+.livetabsdotluv .ui-state-error .ui-icon, .livetabsdotluv .ui-state-error-text .ui-icon {background-image: url(images/ui-icons_ffffff_256x240.png); }
+/* Corner radius */
+.livetabsdotluv .ui-corner-all, .livetabsdotluv .ui-corner-top, .livetabsdotluv .ui-corner-left, .livetabsdotluv .ui-corner-tl { -moz-border-radius-topleft: 4px; -webkit-border-top-left-radius: 4px; -khtml-border-top-left-radius: 4px; border-top-left-radius: 4px; }
+.livetabsdotluv .ui-corner-all, .livetabsdotluv .ui-corner-top, .livetabsdotluv .ui-corner-right, .livetabsdotluv .ui-corner-tr { -moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px; -khtml-border-top-right-radius: 4px; border-top-right-radius: 4px; }
+.livetabsdotluv .ui-corner-all, .livetabsdotluv .ui-corner-bottom, .livetabsdotluv .ui-corner-left, .livetabsdotluv .ui-corner-bl { -moz-border-radius-bottomleft: 4px; -webkit-border-bottom-left-radius: 4px; -khtml-border-bottom-left-radius: 4px; border-bottom-left-radius: 4px; }
+.livetabsdotluv .ui-corner-all, .livetabsdotluv .ui-corner-bottom, .livetabsdotluv .ui-corner-right, .livetabsdotluv .ui-corner-br { -moz-border-radius-bottomright: 4px; -webkit-border-bottom-right-radius: 4px; -khtml-border-bottom-right-radius: 4px; border-bottom-right-radius: 4px; }
+/* Overlays */
+.livetabsdotluv .ui-widget-overlay { background: #aaaaaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x; opacity: .30;filter:Alpha(Opacity=30); }
+.livetabsdotluv .ui-widget-shadow { margin: -8px 0 0 -8px; padding: 8px; background: #aaaaaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x; opacity: .30;filter:Alpha(Opacity=30); -moz-border-radius: 8px; -webkit-border-radius: 8px; -khtml-border-radius: 8px; border-radius: 8px;}
+/* Tabs
+----------------------------------*/
+.livetabsdotluv .ui-tabs { padding: .2em; zoom: 1; }
+.livetabsdotluv .ui-tabs .ui-tabs-nav { list-style: none; position: relative; padding: .2em .2em 0; }
+.livetabsdotluv .ui-tabs .ui-tabs-nav li { list-style: none; position: relative; float: left; margin: 0 .2em -1px 0; padding: 0; }
+.livetabsdotluv .ui-tabs .ui-tabs-nav li a { float: left; text-decoration: none; padding: .5em 2em; }
+.livetabsdotluv .ui-tabs .ui-tabs-nav li.ui-tabs-selected, .livetabsdotluv .ui-tabs .ui-tabs-nav li.ui-tabs-active { padding-bottom: 1px; border-bottom-width: 0; }
+.livetabsdotluv .ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .livetabsdotluv .ui-tabs .ui-tabs-nav li.ui-tabs-active a, .livetabsdotluv .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .livetabsdotluv .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.livetabsdotluv .ui-tabs .ui-tabs-nav li a, .livetabsdotluv .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a, .livetabsdotluv .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.livetabsdotluv .ui-tabs .ui-tabs-panel { padding: 1em 1.4em; display: block; border-width: 0; background: none; }
+.livetabsdotluv .ui-tabs .ui-tabs-hide { display: none !important; }
+.livetabsdotluv .ui-tabs-panel p,.livetabsdotluv .ui-tabs-panel div {color:#ffffff;}

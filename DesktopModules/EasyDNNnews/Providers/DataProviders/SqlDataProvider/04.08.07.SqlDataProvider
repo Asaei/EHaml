@@ -1,0 +1,127 @@
+﻿/******  UserDefinedFunction [dbo].[EDS_StringListToTable]	******/
+/******  Table [dbo].[EasyDNNNewsFilterByTagID] ******/
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsFilterByTagID]') AND type in (N'U'))
+BEGIN
+CREATE TABLE [dbo].[EasyDNNNewsFilterByTagID](
+	[FilterModuleID] [int] NOT NULL,
+	[TagID] [int] NOT NULL,
+ CONSTRAINT [PK_EasyDNNNewsFilterByTagID] PRIMARY KEY CLUSTERED  ([FilterModuleID] ASC,[TagID] ASC )WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+)
+END
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsFilterByTagID_EasyDNNNewsNewTags]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsFilterByTagID]'))
+ALTER TABLE [dbo].[EasyDNNNewsFilterByTagID]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsFilterByTagID_EasyDNNNewsNewTags] FOREIGN KEY([TagID])
+REFERENCES [dbo].[EasyDNNNewsNewTags] ([TagID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsFilterByTagID_EasyDNNNewsNewTags]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsFilterByTagID]'))
+ALTER TABLE [dbo].[EasyDNNNewsFilterByTagID] CHECK CONSTRAINT [FK_EasyDNNNewsFilterByTagID_EasyDNNNewsNewTags]
+GO
+IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsFilterByTagID_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsFilterByTagID]'))
+ALTER TABLE [dbo].[EasyDNNNewsFilterByTagID]  WITH CHECK ADD  CONSTRAINT [FK_EasyDNNNewsFilterByTagID_Modules] FOREIGN KEY([FilterModuleID])
+REFERENCES {databaseOwner}{objectQualifier}Modules ([ModuleID]) ON DELETE CASCADE
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsFilterByTagID_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsFilterByTagID]'))
+ALTER TABLE [dbo].[EasyDNNNewsFilterByTagID] CHECK CONSTRAINT [FK_EasyDNNNewsFilterByTagID_Modules]
+GO
+
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsPortalSettings' and column_name = 'IsSocialInstance')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsPortalSettings] ADD IsSocialInstance bit NOT NULL DEFAULT(0)
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsPortalSettings' and column_name = 'PageTitleTemplate')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsPortalSettings] ADD PageTitleTemplate nvarchar(150) NOT NULL DEFAULT(N'def')
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsPortalSettings' and column_name = 'TitleItemSeparator')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsPortalSettings] ADD TitleItemSeparator nvarchar(5) NOT NULL DEFAULT(N'-')
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsPortalSettings' and column_name = 'ModuleToOpenTwitterDetails')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsPortalSettings] ADD ModuleToOpenTwitterDetails int NOT NULL DEFAULT(0)
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsPortalSettings' and column_name = 'ModuleToOpenFacebookDetails')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsPortalSettings] ADD ModuleToOpenFacebookDetails int NOT NULL DEFAULT(0)
+END
+GO
+
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsModuleSettings' and column_name = 'IsSocialInstance')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsModuleSettings] ADD IsSocialInstance bit NOT NULL DEFAULT(0)
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsModuleSettings' and column_name = 'ModuleToOpenTwitterDetails')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsModuleSettings] ADD ModuleToOpenTwitterDetails int NOT NULL DEFAULT(0)
+END
+GO
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsModuleSettings' and column_name = 'ModuleToOpenFacebookDetails')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsModuleSettings] ADD ModuleToOpenFacebookDetails int NOT NULL DEFAULT(0)
+END
+
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsSocialSharingTemp' and column_name = 'SocialUserID')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsSocialSharingTemp] ADD SocialUserID int NOT NULL DEFAULT(0)
+END
+
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNews' and column_name = 'AuthorAliasName')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNews] ADD AuthorAliasName nvarchar(100) NULL 
+END
+
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsRSSFeedImport' and column_name = 'SummaryLimit')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsRSSFeedImport] ADD SummaryLimit int NOT NULL DEFAULT(0)
+END
+
+ALTER TABLE EasyDNNNewsContentLocalization ALTER Column SubTitle nvarchar(4000)
+ALTER TABLE EasyDNNNewsContentLocalization ALTER Column Summary nvarchar(4000)
+
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EDS_StringListToTable]') AND type in (N'FN', N'IF', N'TF', N'FS', N'FT'))
+BEGIN
+drop function [dbo].[EDS_StringListToTable]
+END
+execute dbo.sp_executesql @statement = N'CREATE FUNCTION [dbo].[EDS_StringListToTable]
+(  
+	@List		nvarchar(max)
+) 
+RETURNS @TableOfValues TABLE 
+(  
+	CategoryID	int	not null primary key
+) 
+AS 
+	BEGIN
+		DECLARE @CategoryID varchar(10), @Pos int
+		SET @List = LTRIM(RTRIM(@List))+ '',''
+		SET @Pos = CHARINDEX('','', @List, 1)
+		IF REPLACE(@List, '','', '''') <> ''''
+			BEGIN
+				WHILE @Pos > 0
+				BEGIN
+					SET @CategoryID = LTRIM(RTRIM(LEFT(@List, @Pos - 1)))
+					IF @CategoryID <> ''''
+						BEGIN
+							INSERT INTO @TableOfValues (CategoryID) VALUES (CAST(@CategoryID AS int))
+						END
+					SET @List = RIGHT(@List, LEN(@List) - @Pos)
+					SET @Pos = CHARINDEX('','', @List, 1)
+				END
+			END	
+	RETURN
+	END'

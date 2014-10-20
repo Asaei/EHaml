@@ -1,0 +1,100 @@
+﻿div.t-r {
+    float: right;
+}
+
+div.top-sd {
+/*border-bottom: 1px solid rgb(223, 152, 125);
+margin-bottom: 4px;*/
+}
+
+.line-separator{
+
+height:0px;
+
+background:#717171;
+
+border-bottom:1px solid #C99945;
+
+}
+
+
+.last-estelams {
+    height: 215px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+
+
+.div-rotated {
+    position: absolute;
+    z-index: 1000;
+}
+
+.eh-last-item {
+    border: 1px solid #C0C0C0;
+    box-shadow: 1px 1px 2px 0 #CCCCCC;
+    cursor: pointer;
+    float: right;
+    margin: 10px 5px 0;
+    padding: 10px 5px;
+    -moz-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    width: 310px;
+}
+
+    .eh-last-item:hover {
+        box-shadow: 1px 1px 2px 2px #CCCCCC;
+    }
+
+.right-sd {
+    background: url("images/arrow.png") no-repeat scroll left 9px rgba(0, 0, 0, 0);
+    float: right;
+    padding-left: 30px;
+    width: 130px;
+}
+
+    .right-sd .eh-last-ostan-item {
+        /*border-bottom: 2px dotted #C0C0C0;*/
+        color: #4D52AE;
+        font-family: bkoodak;
+        font-size: 18px;
+        font-weight: normal;
+        margin: 0 1px 0 0;
+        width: 95%;
+    }
+
+    .right-sd .eh-last-shahr-item {
+        color: #4D52AE;
+        font-family: bkoodak;
+        font-size: 18px;
+        font-weight: normal;
+        margin: 0 1px 0 0;
+        width:95%;
+    }
+
+.left-sd {
+    float: right;
+    margin-right: 15px;
+    width: 130px;
+}
+
+    .left-sd .eh-last-ostan-item {
+        /*border-bottom: 2px dotted #C0C0C0;*/
+        color: #689F4A;
+        font-family: bkoodak;
+        font-size: 18px;
+        font-weight: normal;
+        margin: 0 3px 0 0;
+    }
+
+    .left-sd .eh-last-shahr-item {
+        color: #689F4A;
+        font-family: bkoodak;
+        font-size: 18px;
+        font-weight: normal;
+        margin: 0 3px 0 0;
+    }

@@ -1,0 +1,52 @@
+﻿
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+--------------------------------------------------------------------------------------------
+
+
+CREATE TABLE {databaseOwner}[{objectQualifier}avtMyTokens2_Servers](
+	[ServerId] [int] IDENTITY(1,1) NOT NULL,
+	[ServerName] [nvarchar](255) NOT NULL,
+	[ServerType] [int] NOT NULL,
+	[ConnectionString] [ntext] NULL,
+	[FriendlyLocation] [nvarchar](255) NULL,
+	[PortalId] [int] NULL,
+ CONSTRAINT [PK_{objectQualifier}avtMyTokens2_Servers] PRIMARY KEY CLUSTERED 
+(
+	[ServerId] ASC
+)
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtMyTokens2_Servers] WITH CHECK ADD CONSTRAINT [FK_{objectQualifier}avtMyTokens2_Servers_{objectQualifier}Portals] FOREIGN KEY([PortalId])
+REFERENCES {databaseOwner}[{objectQualifier}Portals] ([PortalID])
+ON DELETE CASCADE
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtMyTokens2_Servers] CHECK CONSTRAINT [FK_{objectQualifier}avtMyTokens2_Servers_{objectQualifier}Portals]
+GO
+
+
+--------------------------------------------------------------------------------------------
+
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtMyTokens2_Tokens] ADD ServerId int NULL
+GO
+
+--------------------------------------------------------------------------------------------
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtMyTokens2_Tokens]  WITH CHECK ADD  CONSTRAINT [FK_{objectQualifier}avtMyTokens2_Tokens_{objectQualifier}avtMyTokens2_Servers] FOREIGN KEY([ServerId])
+REFERENCES {databaseOwner}[{objectQualifier}avtMyTokens2_Servers] ([ServerId])
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtMyTokens2_Tokens] CHECK CONSTRAINT [FK_{objectQualifier}avtMyTokens2_Tokens_{objectQualifier}avtMyTokens2_Servers]
+GO
+
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------

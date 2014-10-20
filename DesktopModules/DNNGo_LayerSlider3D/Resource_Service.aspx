@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Resource_Service.aspx.cs" Inherits="DNNGo.Modules.LayerSlider3D.Resource_Service" EnableViewStateMac="false" %>

@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ControlTitle_backupconfigurationglobal.Text" xml:space="preserve">
+    <value>Backup Configuration - General Settings</value>
+  </data>
+  <data name="GlobalStuff.Text" xml:space="preserve">
+    <value>Global Options</value>
+  </data>
+  <data name="lblAppendDateTime.Help" xml:space="preserve">
+    <value>Append current date/time to the backup file name (database and portals files)?</value>
+  </data>
+  <data name="lblAppendDateTime.Text" xml:space="preserve">
+    <value>Append date/time</value>
+  </data>
+  <data name="lblBackupFileMaxCount.Help" xml:space="preserve">
+    <value>How many local backup files do you want to keep? NOTE: 0 means keep them all. Leave blank to use the default value.</value>
+  </data>
+  <data name="lblBackupFileMaxCount.Text" xml:space="preserve">
+    <value>Local Backup Files Retention</value>
+  </data>
+  <data name="lblBackupFolder.Help" xml:space="preserve">
+    <value>Backup folder name (will be created when needed). it can be relative to the web site's root. E.g. backup or portals/_default/backup.
+Or you can specify an arbitrary absolute folder (it should have the necessary file system access permissions). E.g. c:\myfolder\mybackups.</value>
+  </data>
+  <data name="lblBackupFolder.Text" xml:space="preserve">
+    <value>Backup Folder Name</value>
+  </data>
+  <data name="lblBackupFolderMessage.Text" xml:space="preserve">
+    <value>Note: if the same initial part of the file name is used for the database backup and the portal backup 
+(e.g. mysite.sql.zip and mysite.zip) then the restore can not correctly identify the files as being either database or portal.</value>
+  </data>
+  <data name="lblCompressionLevel.Help" xml:space="preserve">
+    <value>Compression level (for the compressed ZIP file creation). 0 - store only  to  9 - means best compression, 6 - default.</value>
+  </data>
+  <data name="lblCompressionLevel.Text" xml:space="preserve">
+    <value>Compression Level</value>
+  </data>
+  <data name="lblDownloadMethod.Help" xml:space="preserve">
+    <value>Alternate implementations for the download links.</value>
+  </data>
+  <data name="lblDownloadMethod.Text" xml:space="preserve">
+    <value>Download Method</value>
+  </data>
+  <data name="lblImpersonate.Help" xml:space="preserve">
+    <value>Impersonate the backup thread: turn it on only ifyou get security error messages when performing the backup.</value>
+  </data>
+  <data name="lblImpersonate.Text" xml:space="preserve">
+    <value>Impersonate Backup Thread</value>
+  </data>
+  <data name="lblPageRefreshRate.Help" xml:space="preserve">
+    <value>Page Refresh Rate (in seconds) for the backup/restore progress information, when running in the background. e.g. 7 seconds. NOTE: we do not use AJAX for better compatibility with older DNN versions.</value>
+  </data>
+  <data name="lblPageRefreshRate.Text" xml:space="preserve">
+    <value>Page Refresh Rate</value>
+  </data>
+  <data name="lblProcessPriority.Help" xml:space="preserve">
+    <value>Priority for the backup/restore process thread.</value>
+  </data>
+  <data name="lblProcessPriority.Text" xml:space="preserve">
+    <value>Process Priority</value>
+  </data>
+  <data name="lblRunInForeground.Help" xml:space="preserve">
+    <value>Do no create a separate thread for the backup.</value>
+  </data>
+  <data name="lblRunInForeground.Text" xml:space="preserve">
+    <value>Run in the Foreground</value>
+  </data>
+  <data name="lblZip64.Help" xml:space="preserve">
+    <value>Configures the use of the newer Zip64 format for the generated Zip file. Note: may not be legible by some legacy tools (e.g. the buit-in WinXP compression).</value>
+  </data>
+  <data name="lblZip64.Text" xml:space="preserve">
+    <value>Zip64 Format</value>
+  </data>
+  <data name="lblZipPassword.Help" xml:space="preserve">
+    <value>Password for the resulting Zip files (leave blank for no password).</value>
+  </data>
+  <data name="lblZipPassword.Text" xml:space="preserve">
+    <value>Zip Password</value>
+  </data>
+  <data name="lblZipPasswordConfirm.Help" xml:space="preserve">
+    <value>re-type the Zip Password.</value>
+  </data>
+  <data name="lblZipPasswordConfirm.Text" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="valZipPasswordMatch.Text" xml:space="preserve">
+    <value>&lt;br /&gt;ZIP Password doesn't match.</value>
+  </data>
+  <data name="valPageRefreshRate.Text" xml:space="preserve">
+    <value>&lt;br /&gt;&lt;br /&gt;Should be between 1 and 90 seconds.</value>
+  </data>
+  <data name="valBackupFileMaxCount.Text" xml:space="preserve">
+    <value>&lt;br /&gt;&lt;br /&gt;Should be greater or equal than zero.</value>
+  </data>
+  <data name="FeatureUnavailable.Text" xml:space="preserve">
+    <value>Feature unavailable in your current environment.</value>
+  </data>
+  <data name="lblCompressionBuffer.Help" xml:space="preserve">
+    <value>Size in bytes for the compress (zip) operations. The higher, the faster but more server resources will be consumed. Leave blank to use the default value.</value>
+  </data>
+  <data name="lblCompressionBuffer.Text" xml:space="preserve">
+    <value>Compression Buffer Size</value>
+  </data>
+  <data name="valCompressionBuffer.Text" xml:space="preserve">
+    <value>&lt;br /&gt;Valid buffer sizes are from 64 to 20480 bytes.</value>
+  </data>
+  <data name="lblEmailTemplateBody.Help" xml:space="preserve">
+    <value>Template for the notification email body (plain text). Leave blank to get the default template.</value>
+  </data>
+  <data name="lblEmailTemplateBody.Text" xml:space="preserve">
+    <value>Email Body</value>
+  </data>
+  <data name="lblEmailTemplateSubject.Help" xml:space="preserve">
+    <value>Subject for the notification email (it supports Tokens). Leave blank to get the default template.</value>
+  </data>
+  <data name="lblEmailTemplateSubject.Text" xml:space="preserve">
+    <value>Email Subject</value>
+  </data>
+  <data name="lblEnableNotification.Help" xml:space="preserve">
+    <value>When enabled, a notification email is sent after a backup operation is completed. See below for available Tokens.</value>
+  </data>
+  <data name="lblEnableNotification.Text" xml:space="preserve">
+    <value>Enable Notifications</value>
+  </data>
+  <data name="lblScheduledBackupEmailNotify.Help" xml:space="preserve">
+    <value>Notification emails will be sent to this email address. By default, it will be the portal administrator's email address. You can specify many addresses, separated by ";".</value>
+  </data>
+  <data name="lblScheduledBackupEmailNotify.Text" xml:space="preserve">
+    <value>Email Address(es)</value>
+  </data>
+  <data name="lblTokensHelp.Text" xml:space="preserve">
+    <value>&lt;b&gt;Available Tokens:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;[PORTAL-NAME] : web site name.&lt;/li&gt;
+&lt;li&gt;[PORTAL-URL] : web site URL.&lt;/li&gt;
+&lt;li&gt;[BACKUP-STATUS] : this will be 'OK', 'ERROR' or ' OKWARNING'.&lt;/li&gt; 
+&lt;li&gt;[BACKUP-TYPE] : this will be 'MANUAL' or  SCHEDULED'.&lt;/li&gt; 
+&lt;li&gt;[BACKUP-RESULTS] : text detalis about the performed operations.&lt;/li&gt;
+&lt;li&gt;[BACKUP-START] : date-time the backup started.&lt;/li&gt;
+&lt;li&gt;[BACKUP-END] : date-time the backup finished.&lt;/li&gt;
+&lt;li&gt;[BACKUP-DURATION] : backup duration, inlcluding off-site uploading activities&lt;/li&gt;
+&lt;li&gt;[DBBKPNATIVE-FILENAME] : compressed native database backup file name.&lt;/li&gt;
+&lt;li&gt;[DBBKPSCRIPT-FILENAME] : compressed script database backup file name.&lt;/li&gt;
+&lt;li&gt;[FILESBKP-FILENAME] : files backup file name.&lt;/li&gt;
+&lt;li&gt;[DBBKPNATIVE-URL] : compressed native database backup URL.&lt;/li&gt;
+&lt;li&gt;[DBBKPSCRIPT-URL] : compressed script database backup URL.&lt;/li&gt;
+&lt;li&gt;[FILESBKP-URL] : compressed files backup URL.&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="SchedulerNotifications.Text" xml:space="preserve">
+    <value>Notification Options</value>
+  </data>
+  <data name="valEmailAddress.Text" xml:space="preserve">
+    <value>&lt;br /&gt;The email address is not valid.</value>
+  </data>
+  <data name="lblZipPasswordBugNotice.Text" xml:space="preserve">
+    <value>Note: due to a limitation in the compression library, empty files and folders will not be included in the ZIP file if a password is set. When using a blank password, this limitation does not apply.</value>
+  </data>
+  <data name="LastUpdateCheck.Text" xml:space="preserve">
+    <value>Last check: </value>
+  </data>
+  <data name="lblCheckForUpdates.Help" xml:space="preserve">
+    <value>When enabled, once a day the module will check for a new version availability. If it finds one, it will notify you by means of an icon in the 'menu' bar.</value>
+  </data>
+  <data name="lblCheckForUpdates.Text" xml:space="preserve">
+    <value>Check for Updates</value>
+  </data>
+  <data name="lblBackupThresholdMinutes.Help" xml:space="preserve">
+    <value>Time frame (in minutes) to reject consecutive (manual or scheduled) backup requests.</value>
+  </data>
+  <data name="lblBackupThresholdMinutes.Text" xml:space="preserve">
+    <value>Backup Run Threshold</value>
+  </data>
+  <data name="BelowNormal.Text" xml:space="preserve">
+    <value>Below Normal</value>
+  </data>
+  <data name="lblBackupPriority.Help" xml:space="preserve">
+    <value>Set a not 'Normal' priority in case your ISP has set tight performance restrictions for your web site.</value>
+  </data>
+  <data name="lblBackupPriority.Text" xml:space="preserve">
+    <value>Backup Priority</value>
+  </data>
+  <data name="Lowest.Text" xml:space="preserve">
+    <value>Lowest</value>
+  </data>
+  <data name="Normal.Text" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="lblSilentMode.Help" xml:space="preserve">
+    <value>At backup time, reduces the on-screen feedback about the ongoing backup process. This will make the backup consume fewer resources, and it will be also faster.</value>
+  </data>
+  <data name="lblSilentMode.Text" xml:space="preserve">
+    <value>Silent Mode</value>
+  </data>
+  <data name="lblBackupOffSiteFileMaxCount.Help" xml:space="preserve">
+    <value>How many off-site backup files do you want to keep? NOTE: 0 means keep them all. Leave blank to use the default value.</value>
+  </data>
+  <data name="lblBackupOffSiteFileMaxCount.Text" xml:space="preserve">
+    <value>Off-Site Backup Files Retention</value>
+  </data>
+</root>

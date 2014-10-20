@@ -1,0 +1,52 @@
+﻿
+set ANSI_NULLS ON
+set QUOTED_IDENTIFIER ON
+go
+
+
+ALTER procedure {databaseOwner}[{objectQualifier}avtMyTokens_AddToken]
+
+	@portalID		int,
+	@tokenName		nvarchar(255),
+	@tokenDesc		ntext,
+	@tokenType		int,
+	@tokenRule		ntext,
+	@tokenData		ntext
+
+as
+
+IF EXISTS (SELECT TokenID FROM {databaseOwner}{objectQualifier}avtMyTokens_Tokens WHERE PortalID = @portalID AND TokenName = @tokenName)
+	UPDATE {databaseOwner}{objectQualifier}avtMyTokens_Tokens SET
+		TokenName = @tokenName, TokenDescription = @tokenDesc, TokenType = @tokenType, TokenRule = @tokenRule, TokenData = @tokenData
+	WHERE PortalID = @portalID AND TokenName = @tokenName
+ELSE
+	INSERT INTO {databaseOwner}{objectQualifier}avtMyTokens_Tokens (PortalID, TokenName, TokenDescription, TokenType, TokenRule, TokenData)
+		VALUES (@portalID, @tokenName, @tokenDesc, @tokenType, @tokenRule, @tokenData)
+
+SELECT SCOPE_IDENTITY()
+
+
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+IF NOT EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtActivations]') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
+BEGIN
+CREATE TABLE {databaseOwner}[{objectQualifier}avtActivations](
+	[ActivationCode] [nvarchar](100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[RegistrationCode] [nvarchar](100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[Host] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[ProductCode] [nvarchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[IsPrimary] [int] NOT NULL,
+	[BaseActivationCode] [nvarchar](100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+    CONSTRAINT [PK_{objectQualifier}avtActivations] PRIMARY KEY CLUSTERED 
+    (
+        [ActivationCode] ASC
+    )
+) ON [PRIMARY]
+END
+
+GO

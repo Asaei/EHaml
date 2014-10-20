@@ -1,0 +1,63 @@
+﻿.Theme_12_Default{
+	margin:0px auto;
+	overflow:hidden;
+}
+.Theme_12_Default .caption{
+	background:#000;
+	background: rgba(0,0,0,0.6);
+	color: #FFF;
+    font-size: 14px;
+    font-family: helvetica, arial, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    position: absolute;
+    z-index: 110;
+    width: 100%;
+    bottom: 0;
+	padding:15px;
+}
+*+html .Theme_12_Default .caption{
+	padding-left:0px;
+	padding-right:0px;
+	text-indent:15px;
+}
+.Theme_12_Default .nextButton,
+.Theme_12_Default .prevButton{
+	padding: 4px 10px 10px;
+    font-size: 60px;
+    font-family: arial, sans-serif;
+    line-height: 1em;
+    font-weight: bold;
+    color: #FFF;
+    text-decoration: none;
+	background:#000;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    z-index: 111;
+	border-radius:5px;
+}
+.Theme_12_Default .nextButton:hover,
+.Theme_12_Default .prevButton:hover{
+	color:#ccc;
+}
+.Theme_12_Default .fluxslider{
+	position:relative;
+}
+.Theme_12_Default .pagination{
+	position:absolute;
+	left:5px;
+	top:5px;
+	z-index:112;
+}
+.Theme_12_Default .pagination li{
+	background:url(images/bullets.png) 0px 0px no-repeat;
+	width:22px;
+	height:22px;
+	text-indent:-9999px;
+}
+*+html .Theme_12_Default .pagination li{
+	float:left;
+}
+.Theme_12_Default .pagination li.current{
+	background:url(images/bullets.png) 0px -22px no-repeat;
+}

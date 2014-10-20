@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="bUpdate.Text" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="cbSpecifyHeight.Text" xml:space="preserve">
+    <value>Specify Height</value>
+  </data>
+  <data name="cbSpecifyWidth.Text" xml:space="preserve">
+    <value>Specify Width</value>
+  </data>
+  <data name="cmdCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ControlTitle_options.Text" xml:space="preserve">
+    <value>View Options</value>
+  </data>
+  <data name="lHeight.Help" xml:space="preserve">
+    <value>Optionally specify a height; otherwise, module will dynamically resize</value>
+  </data>
+  <data name="lHeight.Text" xml:space="preserve">
+    <value>Height</value>
+  </data>
+  <data name="lHeightPixels.Text" xml:space="preserve">
+    <value>pixels</value>
+  </data>
+  <data name="lSelectOnMouseover.Help" xml:space="preserve">
+    <value>Automatically selects the tab on mouseover</value>
+  </data>
+  <data name="lSelectOnMouseover.Text" xml:space="preserve">
+    <value>Auto Select Tab</value>
+  </data>
+  <data name="lSkins.Help" xml:space="preserve">
+    <value>Available Skins</value>
+  </data>
+  <data name="lSkins.Text" xml:space="preserve">
+    <value>Skins</value>
+  </data>
+  <data name="BehaviorTab.Text" xml:space="preserve">
+    <value>Behavior</value>
+  </data>
+  <data name="EffectsTab.Text" xml:space="preserve">
+    <value>Effects</value>
+  </data>
+  <data name="LayoutTab.Text" xml:space="preserve">
+    <value>Layout</value>
+  </data>
+  <data name="lTabsPersistence.Help" xml:space="preserve">
+    <value>Remembers the last selected tab on postback or when user returns to the page</value>
+  </data>
+  <data name="lTabsPersistence.Text" xml:space="preserve">
+    <value>Tabs Persistence</value>
+  </data>
+  <data name="ThemingTab.Text" xml:space="preserve">
+    <value>Theming</value>
+  </data>
+  <data name="lThemes.Help" xml:space="preserve">
+    <value>Available Themes</value>
+  </data>
+  <data name="SectionThemes.Text" xml:space="preserve">
+    <value>Themes</value>
+  </data>
+  <data name="lWidth.Help" xml:space="preserve">
+    <value>Optionally specify a width; otherwise, module will dynamically resize</value>
+  </data>
+  <data name="lWidth.Text" xml:space="preserve">
+    <value>Width</value>
+  </data>
+  <data name="lWidthPixels.Text" xml:space="preserve">
+    <value>pixels</value>
+  </data>
+  <data name="lEventAction.Help" xml:space="preserve">
+    <value>Google Analytics Event Tracking Action</value>
+  </data>
+  <data name="lEventAction.Text" xml:space="preserve">
+    <value>Event Action</value>
+  </data>
+  <data name="lEventCategory.Help" xml:space="preserve">
+    <value>Google Analytics Event Tracking Category</value>
+  </data>
+  <data name="lEventCategory.Text" xml:space="preserve">
+    <value>Event Category</value>
+  </data>
+  <data name="lEventLabel.Help" xml:space="preserve">
+    <value>Google Analytics Event Tracking Label</value>
+  </data>
+  <data name="lEventLabel.Text" xml:space="preserve">
+    <value>Event Label</value>
+  </data>
+  <data name="AnalyticsTab.Text" xml:space="preserve">
+    <value>Analytics</value>
+  </data>
+  <data name="lTrackClicks.Help" xml:space="preserve">
+    <value>Track individual tab clicks using Google Analytics</value>
+  </data>
+  <data name="lTrackClicks.Text" xml:space="preserve">
+    <value>Track Clicks</value>
+  </data>
+  <data name="lTrackingCode.Help" xml:space="preserve">
+    <value>Google Analytics Tracking Code</value>
+  </data>
+  <data name="lTrackingCode.Text" xml:space="preserve">
+    <value>Tracking Code</value>
+  </data>
+  <data name="rbInsertTrackingCode.Text" xml:space="preserve">
+    <value>Provide the Google Analytics Tracking code</value>
+  </data>
+  <data name="rbTrackingCodeExists.Text" xml:space="preserve">
+    <value>Google Analytics Tracking Code is already on the page</value>
+  </data>
+  <data name="lIntelligentTabLink.Help" xml:space="preserve">
+    <value>Enables Scroll to tab link</value>
+  </data>
+  <data name="lIntelligentTabLink.Text" xml:space="preserve">
+    <value>Intelligent Tab Links</value>
+  </data>
+  <data name="Asynchronus.Text" xml:space="preserve">
+    <value>Asynchronus</value>
+  </data>
+  <data name="Traditional.Text" xml:space="preserve">
+    <value>Traditional</value>
+  </data>
+  <data name="lCollapsibleTab.Text" xml:space="preserve">
+    <value>Collapsible Tab</value>
+  </data>
+  <data name="liBottom.Text" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="liLeft.Text" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="liRight.Text" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="liTop.Text" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="lOrientation.Help" xml:space="preserve">
+    <value>Available Orientation</value>
+  </data>
+  <data name="lOrientation.Text" xml:space="preserve">
+    <value>Orientation</value>
+  </data>
+  <data name="lShowModuleContainer.Text" xml:space="preserve">
+    <value>Show Module Container</value>
+  </data>
+  <data name="Default.Text" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="lCacheTime.Text" xml:space="preserve">
+    <value>Cache Time</value>
+  </data>
+  <data name="lFeedUrl.Text" xml:space="preserve">
+    <value>Feed Url</value>
+  </data>
+  <data name="lLoadOnDemand.Text" xml:space="preserve">
+    <value>Load on Demand</value>
+  </data>
+  <data name="lMaxTitleLength.Text" xml:space="preserve">
+    <value>Max Title Length</value>
+  </data>
+  <data name="lTabMode.Text" xml:space="preserve">
+    <value>Tab Mode</value>
+  </data>
+  <data name="RSSFeed.Text" xml:space="preserve">
+    <value>RSS Feeds</value>
+  </data>
+  <data name="SQLQuery.Text" xml:space="preserve">
+    <value>SQL Query</value>
+  </data>
+  <data name="Character.Text" xml:space="preserve">
+    <value>Characters</value>
+  </data>
+  <data name="lMinutes.Text" xml:space="preserve">
+    <value>Cache Duration (minutes)</value>
+  </data>
+  <data name="Words.Text" xml:space="preserve">
+    <value>Words</value>
+  </data>
+  <data name="lSQLConnection.Text" xml:space="preserve">
+    <value>Connection</value>
+  </data>
+  <data name="lSQLquery.Text" xml:space="preserve">
+    <value>SQL Query</value>
+  </data>
+  <data name="lUseToken.Text" xml:space="preserve">
+    <value>Render Token</value>
+  </data>
+  <data name="Advanceddescription.Text" xml:space="preserve">
+    <value>Render tabs anywhere on the page - even within 3rd party modules. Individual tabs content can also be aggregated from multiple parts of the page</value>
+  </data>
+  <data name="Defaultdescription.Text" xml:space="preserve">
+    <value>Quickly design tabs using any arbitrary HTML Content and/or DotNetNuke Modules</value>
+  </data>
+  <data name="HeightInvalid.Text" xml:space="preserve">
+    <value>Height must be a valid number</value>
+  </data>
+  <data name="MaxTitleInvalid.Text" xml:space="preserve">
+    <value>Title Length must be a valid number</value>
+  </data>
+  <data name="RotateTimeInvalid.Text" xml:space="preserve">
+    <value>Rotate Time must be a valid number. Note: Time is in milliseconds</value>
+  </data>
+  <data name="Rssdescription.Text" xml:space="preserve">
+    <value>Dynamically render tabs based on a RSS Feed</value>
+  </data>
+  <data name="SQLdescription.Text" xml:space="preserve">
+    <value>Dynamically render tabs based on a SQL Query targeted towards DNN or External Database</value>
+  </data>
+  <data name="TokenCharacterError.Text" xml:space="preserve">
+    <value>token characters must be less than 50</value>
+  </data>
+  <data name="TrackingActionRequired.Text" xml:space="preserve">
+    <value>Event Tracking Action is required</value>
+  </data>
+  <data name="TrackingCodeRequired.Text" xml:space="preserve">
+    <value>Please provide Google Tracking Code</value>
+  </data>
+  <data name="TrackingLabelRequired.Text" xml:space="preserve">
+    <value>Event Tracking Label is required</value>
+  </data>
+  <data name="TrakingCategoryRequired.Text" xml:space="preserve">
+    <value>Event Tracking Category is required</value>
+  </data>
+  <data name="UseTokenRequired.Text" xml:space="preserve">
+    <value>Please provide Use token</value>
+  </data>
+  <data name="WidthInvalid.Text" xml:space="preserve">
+    <value>Width must be a valid number</value>
+  </data>
+  <data name="InvalidUseToken.Text" xml:space="preserve">
+    <value>Please specify another token name</value>
+  </data>
+  <data name="lMaxTabLength.Text" xml:space="preserve">
+    <value>Maximum Tabs</value>
+  </data>
+  <data name="MaxTab.Text" xml:space="preserve">
+    <value>Please specify tabs</value>
+  </data>
+  <data name="AdvancedTab.Text" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="BasicTab.Text" xml:space="preserve">
+    <value>Basic</value>
+  </data>
+  <data name="lAdvanced.Text" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="lAnalytics.Text" xml:space="preserve">
+    <value>Analytics</value>
+  </data>
+  <data name="lBasic.Text" xml:space="preserve">
+    <value>Basic</value>
+  </data>
+  <data name="lEffects.Text" xml:space="preserve">
+    <value>Effects</value>
+  </data>
+  <data name="lLayout.Text" xml:space="preserve">
+    <value>Layout</value>
+  </data>
+  <data name="lThemess.Text" xml:space="preserve">
+    <value>Themes</value>
+  </data>
+  <data name="ThemesTab.Text" xml:space="preserve">
+    <value>Themes</value>
+  </data>
+  <data name="Advanced.Text" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="lThemes.Text" xml:space="preserve">
+    <value>Themes</value>
+  </data>
+  <data name="lEnableThemeScript.Text" xml:space="preserve">
+    <value>Enable Theme Script</value>
+  </data>
+  <data name="lCacheTime.Help" xml:space="preserve">
+    <value>Specify cache time</value>
+  </data>
+  <data name="lFeedUrl.Help" xml:space="preserve">
+    <value>Please Specify FeedUrl</value>
+  </data>
+  <data name="lMaxTabLength.Help" xml:space="preserve">
+    <value>Specify maximum tab length</value>
+  </data>
+  <data name="lMaxTitleLength.Help" xml:space="preserve">
+    <value>Specify maximum title length of tab</value>
+  </data>
+  <data name="lSQLConnection.Help" xml:space="preserve">
+    <value>Please provide connection string</value>
+  </data>
+  <data name="lSQLquery.Help" xml:space="preserve">
+    <value>Specify SQL query</value>
+  </data>
+  <data name="lTabMode.Help" xml:space="preserve">
+    <value>Specify Tab Mode</value>
+  </data>
+  <data name="lUseToken.Help" xml:space="preserve">
+    <value>Please specify token to use in another module</value>
+  </data>
+  <data name="FeedUrlRequired.Text" xml:space="preserve">
+    <value>Please specify feed url</value>
+  </data>
+  <data name="SQLQueryRequired.Text" xml:space="preserve">
+    <value>Please specify sql query</value>
+  </data>
+  <data name="InvalidWidthSize.Text" xml:space="preserve">
+    <value>Please specify navigation width in between 15 to 35</value>
+  </data>
+  <data name="lCollapsibleTab.Help" xml:space="preserve">
+    <value>Specifies whether all the panes can be closed at once; otherwise, one pane must remain active at all times.</value>
+  </data>
+  <data name="lEnableThemeScript.Help" xml:space="preserve">
+    <value>If enabled read the javascript file with same name of selected theme from the directory of theme. e.g. Mytheme/Mytheme.js</value>
+  </data>
+  <data name="lLoadOnDemand.Help" xml:space="preserve">
+    <value>Loads the content of tab only when the tab is activated by postback (Page Refresh). Useful to reduce the size of page and improve speed/performance. Since the content is only loaded on demand, it's not available to Search Engines and therefore the content will NOT BE INDEXED by Search Engines.</value>
+  </data>
+  <data name="lThemess.Help" xml:space="preserve">
+    <value>Available Themes</value>
+  </data>
+  <data name="lWidthSize.Help" xml:space="preserve">
+    <value>Please specify navigation width size</value>
+  </data>
+  <data name="lWidthSize.Text" xml:space="preserve">
+    <value>Navigation Width</value>
+  </data>
+  <data name="ValidSqlQueryUser.Text" xml:space="preserve">
+    <value>Please check your sql query</value>
+  </data>
+  <data name="WidthSizeInvalid.Text" xml:space="preserve">
+    <value>Navigation width must be a valid number</value>
+  </data>
+  <data name="WidthSizeRequired.Text" xml:space="preserve">
+    <value>Please specify navigation width</value>
+  </data>
+  <data name="FeedUrlInvalid.Text" xml:space="preserve">
+    <value>Invalid feed url</value>
+  </data>
+  <data name="ValidQueryColumnRequired.Text" xml:space="preserve">
+    <value>Name Column of tab is required to generate tabs. Please specify valid SQL query.</value>
+  </data>
+  <data name="lEffect.Help" xml:space="preserve">
+    <value>JQuery available effects</value>
+  </data>
+  <data name="lEffect.Text" xml:space="preserve">
+    <value>Effects</value>
+  </data>
+</root>

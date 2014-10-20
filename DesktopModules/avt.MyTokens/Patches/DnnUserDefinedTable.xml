@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<patch>
+    <for>
+        <module-name>DNN_UserDefinedTable</module-name>
+        <keys>
+            <key></key>
+            <key>List</key>
+        </keys>
+    </for>
+    <patcher>avt.MyTokens.Patching.Patcher_DnnFormsAndList,avt.MyTokens.Core</patcher>
+    <code-vb>
+        <init></init>
+        <pre-render></pre-render>
+    </code-vb>
+	<code-cs>
+        <init></init>
+        <pre-render></pre-render>
+    </code-cs>
+</patch>

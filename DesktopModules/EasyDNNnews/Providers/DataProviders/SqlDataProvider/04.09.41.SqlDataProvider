@@ -1,0 +1,406 @@
+﻿-- Featured
+SET XACT_ABORT ON;
+BEGIN TRY
+    BEGIN TRANSACTION;
+    
+	DECLARE @ColumnType nvarchar(30);
+	SET @ColumnType = '';
+	SELECT @ColumnType = data_type FROM information_schema.columns WHERE table_name = 'EasyDNNNews' AND column_name = 'Featured'
+
+	IF @ColumnType = 'varchar'
+	BEGIN
+		IF not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNews' and column_name = 'TempFeatured')
+		BEGIN
+			ALTER TABLE [dbo].[EasyDNNNews] ADD TempFeatured BIT CONSTRAINT EDS_EasyDNNNews_Featured_df DEFAULT (0) NOT NULL
+		END
+		
+		EXEC ('ALTER TABLE [dbo].[EasyDNNNews] DROP CONSTRAINT [EDS_EasyDNNNews_Featured_df]; UPDATE [dbo].[EasyDNNNews] SET TempFeatured = CASE Featured WHEN ''True'' THEN 1 ELSE 0 END')
+
+		ALTER TABLE [dbo].[EasyDNNNews] DROP COLUMN [Featured]
+
+		EXEC sp_rename 'EasyDNNNews.[TempFeatured]', 'Featured', 'COLUMN'
+	END
+	
+	COMMIT TRANSACTION;
+		
+END TRY
+BEGIN CATCH
+
+	IF (XACT_STATE()) = -1
+	BEGIN
+		ROLLBACK TRANSACTION;
+	END;
+	IF (XACT_STATE()) = 1
+	BEGIN
+		COMMIT TRANSACTION;
+	END
+	
+END CATCH;
+
+-- Approved
+SET XACT_ABORT ON;
+BEGIN TRY
+    BEGIN TRANSACTION;
+    
+	DECLARE @ColumnType1 nvarchar(30);
+	SET @ColumnType1 = '';
+	SELECT @ColumnType1 = data_type FROM information_schema.columns WHERE table_name = 'EasyDNNNews' AND column_name = 'Approved'
+
+	IF @ColumnType1 = 'varchar'
+	BEGIN
+		IF not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNews' and column_name = 'TempApproved')
+		BEGIN
+			ALTER TABLE [dbo].[EasyDNNNews] ADD TempApproved BIT CONSTRAINT EDS_EasyDNNNews_Approved_df DEFAULT (0) NOT NULL
+		END
+		
+		EXEC ('ALTER TABLE [dbo].[EasyDNNNews] DROP CONSTRAINT [EDS_EasyDNNNews_Approved_df]; UPDATE [dbo].[EasyDNNNews] SET TempApproved = CASE Approved WHEN ''True'' THEN 1 ELSE 0 END')
+
+		ALTER TABLE [dbo].[EasyDNNNews] DROP COLUMN [Approved]
+
+		EXEC sp_rename 'EasyDNNNews.[TempApproved]', 'Approved', 'COLUMN'
+	END
+	
+	COMMIT TRANSACTION;
+		
+END TRY
+BEGIN CATCH
+
+	IF (XACT_STATE()) = -1
+	BEGIN
+		ROLLBACK TRANSACTION;
+	END;
+	IF (XACT_STATE()) = 1
+	BEGIN
+		COMMIT TRANSACTION;
+	END
+	
+END CATCH;
+
+-- AllowComments
+SET XACT_ABORT ON;
+BEGIN TRY
+    BEGIN TRANSACTION;
+    
+	DECLARE @ColumnType2 nvarchar(30);
+	SET @ColumnType2 = '';
+	SELECT @ColumnType2 = data_type FROM information_schema.columns WHERE table_name = 'EasyDNNNews' AND column_name = 'AllowComments'
+
+	IF @ColumnType2 = 'varchar'
+	BEGIN
+		IF not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNews' and column_name = 'TempAllowComments')
+		BEGIN
+			ALTER TABLE [dbo].[EasyDNNNews] ADD TempAllowComments BIT CONSTRAINT EDS_EasyDNNNews_AllowComments_df DEFAULT (0) NOT NULL
+		END
+		
+		EXEC ('ALTER TABLE [dbo].[EasyDNNNews] DROP CONSTRAINT [EDS_EasyDNNNews_AllowComments_df]; UPDATE [dbo].[EasyDNNNews] SET TempAllowComments = CASE AllowComments WHEN ''True'' THEN 1 ELSE 0 END')
+
+		ALTER TABLE [dbo].[EasyDNNNews] DROP COLUMN [AllowComments]
+
+		EXEC sp_rename 'EasyDNNNews.[TempAllowComments]', 'AllowComments', 'COLUMN'
+	END
+	
+	COMMIT TRANSACTION;
+		
+END TRY
+BEGIN CATCH
+
+	IF (XACT_STATE()) = -1
+	BEGIN
+		ROLLBACK TRANSACTION;
+	END;
+	IF (XACT_STATE()) = 1
+	BEGIN
+		COMMIT TRANSACTION;
+	END
+	
+END CATCH;
+
+-- Active
+SET XACT_ABORT ON;
+BEGIN TRY
+    BEGIN TRANSACTION;
+    
+	DECLARE @ColumnType3 nvarchar(30);
+	SET @ColumnType3 = '';
+	SELECT @ColumnType3 = data_type FROM information_schema.columns WHERE table_name = 'EasyDNNNews' AND column_name = 'Active'
+
+	IF @ColumnType3 = 'varchar'
+	BEGIN
+		IF not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNews' and column_name = 'TempActive')
+		BEGIN
+			ALTER TABLE [dbo].[EasyDNNNews] ADD TempActive BIT CONSTRAINT EDS_EasyDNNNews_Active_df DEFAULT (0) NOT NULL
+		END
+		
+		EXEC ('ALTER TABLE [dbo].[EasyDNNNews] DROP CONSTRAINT [EDS_EasyDNNNews_Active_df]; UPDATE [dbo].[EasyDNNNews] SET TempActive = CASE Active WHEN ''True'' THEN 1 ELSE 0 END')
+
+		ALTER TABLE [dbo].[EasyDNNNews] DROP COLUMN [Active]
+
+		EXEC sp_rename 'EasyDNNNews.[TempActive]', 'Active', 'COLUMN'
+	END
+	
+	COMMIT TRANSACTION;
+		
+END TRY
+BEGIN CATCH
+
+	IF (XACT_STATE()) = -1
+	BEGIN
+		ROLLBACK TRANSACTION;
+	END;
+	IF (XACT_STATE()) = 1
+	BEGIN
+		COMMIT TRANSACTION;
+	END
+	
+END CATCH;
+
+-- ShowMainImage
+SET XACT_ABORT ON;
+BEGIN TRY
+    BEGIN TRANSACTION;
+    
+	DECLARE @ColumnType4 nvarchar(30);
+	SET @ColumnType4 = '';
+	SELECT @ColumnType4 = data_type FROM information_schema.columns WHERE table_name = 'EasyDNNNews' AND column_name = 'ShowMainImage'
+
+	IF @ColumnType4 = 'varchar'
+	BEGIN
+		IF not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNews' and column_name = 'TempShowMainImage')
+		BEGIN
+			ALTER TABLE [dbo].[EasyDNNNews] ADD TempShowMainImage BIT CONSTRAINT EDS_EasyDNNNews_ShowMainImage_df DEFAULT (0) NOT NULL
+		END
+		
+		EXEC ('ALTER TABLE [dbo].[EasyDNNNews] DROP CONSTRAINT [EDS_EasyDNNNews_ShowMainImage_df]; UPDATE [dbo].[EasyDNNNews] SET TempShowMainImage = CASE ShowMainImage WHEN ''True'' THEN 1 ELSE 0 END')
+
+		ALTER TABLE [dbo].[EasyDNNNews] DROP COLUMN [ShowMainImage]
+
+		EXEC sp_rename 'EasyDNNNews.[TempShowMainImage]', 'ShowMainImage', 'COLUMN'
+	END
+	
+	COMMIT TRANSACTION;
+		
+END TRY
+BEGIN CATCH
+
+	IF (XACT_STATE()) = -1
+	BEGIN
+		ROLLBACK TRANSACTION;
+	END;
+	IF (XACT_STATE()) = 1
+	BEGIN
+		COMMIT TRANSACTION;
+	END
+	
+END CATCH;
+
+-- ShowMainImageFront
+SET XACT_ABORT ON;
+BEGIN TRY
+    BEGIN TRANSACTION;
+    
+	DECLARE @ColumnType5 nvarchar(30);
+	SET @ColumnType5 = '';
+	SELECT @ColumnType5 = data_type FROM information_schema.columns WHERE table_name = 'EasyDNNNews' AND column_name = 'ShowMainImageFront'
+
+	IF @ColumnType5 = 'varchar'
+	BEGIN
+		IF not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNews' and column_name = 'TempShowMainImageFront')
+		BEGIN
+			ALTER TABLE [dbo].[EasyDNNNews] ADD TempShowMainImageFront BIT CONSTRAINT EDS_EasyDNNNews_ShowMainImageFront_df DEFAULT (0) NOT NULL
+		END
+		
+		EXEC ('ALTER TABLE [dbo].[EasyDNNNews] DROP CONSTRAINT [EDS_EasyDNNNews_ShowMainImageFront_df]; UPDATE [dbo].[EasyDNNNews] SET TempShowMainImageFront = CASE ShowMainImageFront WHEN ''True'' THEN 1 ELSE 0 END')
+
+		ALTER TABLE [dbo].[EasyDNNNews] DROP COLUMN [ShowMainImageFront]
+
+		EXEC sp_rename 'EasyDNNNews.[TempShowMainImageFront]', 'ShowMainImageFront', 'COLUMN'
+	END
+	
+	COMMIT TRANSACTION;
+		
+END TRY
+BEGIN CATCH
+
+	IF (XACT_STATE()) = -1
+	BEGIN
+		ROLLBACK TRANSACTION;
+	END;
+	IF (XACT_STATE()) = 1
+	BEGIN
+		COMMIT TRANSACTION;
+	END
+	
+END CATCH;
+
+-- ArticleImageSet
+SET XACT_ABORT ON;
+BEGIN TRY
+    BEGIN TRANSACTION;
+    
+	DECLARE @ColumnType7 nvarchar(30);
+	SET @ColumnType7 = '';
+	SELECT @ColumnType7 = data_type FROM information_schema.columns WHERE table_name = 'EasyDNNNews' AND column_name = 'ArticleImageSet'
+
+	IF @ColumnType7 = 'nvarchar'
+	BEGIN
+		IF not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNews' and column_name = 'TempArticleImageSet')
+		BEGIN
+			ALTER TABLE [dbo].[EasyDNNNews] ADD TempArticleImageSet BIT CONSTRAINT EDS_EasyDNNNews_ArticleImageSet_df DEFAULT (0) NOT NULL
+		END
+		
+		EXEC ('ALTER TABLE [dbo].[EasyDNNNews] DROP CONSTRAINT [EDS_EasyDNNNews_ArticleImageSet_df]; UPDATE [dbo].[EasyDNNNews] SET TempArticleImageSet = CASE ArticleImageSet WHEN ''True'' THEN 1 ELSE 0 END')
+
+		ALTER TABLE [dbo].[EasyDNNNews] DROP COLUMN [ArticleImageSet]
+
+		EXEC sp_rename 'EasyDNNNews.[TempArticleImageSet]', 'ArticleImageSet', 'COLUMN'
+	END
+	
+	COMMIT TRANSACTION;
+		
+END TRY
+BEGIN CATCH
+
+	IF (XACT_STATE()) = -1
+	BEGIN
+		ROLLBACK TRANSACTION;
+	END;
+	IF (XACT_STATE()) = 1
+	BEGIN
+		COMMIT TRANSACTION;
+	END
+	
+END CATCH;
+
+-- EasyDNNNewsArchive
+-- Featured
+BEGIN TRANSACTION;
+BEGIN TRY
+
+	DECLARE @ColumnType8 nvarchar(30);
+	SET @ColumnType8 = '';
+	SELECT @ColumnType8 = data_type FROM information_schema.columns WHERE table_name = 'EasyDNNNewsArchive' AND column_name = 'Featured'
+
+	IF @ColumnType8 = 'nvarchar'
+	BEGIN
+		IF not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsArchive' and column_name = 'TempFeatured')
+		BEGIN
+			ALTER TABLE [dbo].[EasyDNNNewsArchive] ADD TempFeatured BIT CONSTRAINT EDS_EasyDNNNewsArchive_Featured_df DEFAULT (0) NOT NULL
+		END
+		
+		EXEC ('ALTER TABLE [dbo].[EasyDNNNewsArchive] DROP CONSTRAINT [EDS_EasyDNNNewsArchive_Featured_df]; UPDATE [dbo].[EasyDNNNewsArchive] SET TempFeatured = CASE Featured WHEN ''True'' THEN 1 ELSE 0 END')
+
+		ALTER TABLE [dbo].[EasyDNNNewsArchive] DROP COLUMN [Featured]
+
+		EXEC sp_rename 'EasyDNNNewsArchive.[TempFeatured]', 'Featured', 'COLUMN'
+	END
+	
+	COMMIT TRANSACTION;
+		
+END TRY
+BEGIN CATCH
+	IF @@TRANCOUNT > 0
+        ROLLBACK TRANSACTION;
+END CATCH;
+
+IF @@TRANCOUNT > 0
+    COMMIT TRANSACTION;
+    
+    
+-- AllowComments
+BEGIN TRANSACTION;
+BEGIN TRY
+
+	DECLARE @ColumnType9 nvarchar(30);
+	SET @ColumnType9 = '';
+	SELECT @ColumnType9 = data_type FROM information_schema.columns WHERE table_name = 'EasyDNNNewsArchive' AND column_name = 'AllowComments'
+
+	IF @ColumnType9 = 'nvarchar'
+	BEGIN
+		IF not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsArchive' and column_name = 'TempAllowComments')
+		BEGIN
+			ALTER TABLE [dbo].[EasyDNNNewsArchive] ADD TempAllowComments BIT CONSTRAINT EDS_EasyDNNNewsArchive_AllowComments_df DEFAULT (0) NOT NULL
+		END
+		
+		EXEC ('ALTER TABLE [dbo].[EasyDNNNewsArchive] DROP CONSTRAINT [EDS_EasyDNNNewsArchive_AllowComments_df]; UPDATE [dbo].[EasyDNNNewsArchive] SET TempAllowComments = CASE AllowComments WHEN ''True'' THEN 1 ELSE 0 END')
+
+		ALTER TABLE [dbo].[EasyDNNNewsArchive] DROP COLUMN [AllowComments]
+
+		EXEC sp_rename 'EasyDNNNewsArchive.[TempAllowComments]', 'AllowComments', 'COLUMN'
+	END
+	
+	COMMIT TRANSACTION;
+		
+END TRY
+BEGIN CATCH
+	IF @@TRANCOUNT > 0
+        ROLLBACK TRANSACTION;
+END CATCH;
+
+IF @@TRANCOUNT > 0
+    COMMIT TRANSACTION;
+    
+-- ShowMainImage
+BEGIN TRANSACTION;
+BEGIN TRY
+
+	DECLARE @ColumnType10 nvarchar(30);
+	SET @ColumnType10 = '';
+	SELECT @ColumnType10 = data_type FROM information_schema.columns WHERE table_name = 'EasyDNNNewsArchive' AND column_name = 'ShowMainImage'
+
+	IF @ColumnType10 = 'nvarchar'
+	BEGIN
+		IF not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsArchive' and column_name = 'TempShowMainImage')
+		BEGIN
+			ALTER TABLE [dbo].[EasyDNNNewsArchive] ADD TempShowMainImage BIT CONSTRAINT EDS_EasyDNNNewsArchive_ShowMainImage_df DEFAULT (0) NOT NULL
+		END
+		
+		EXEC ('ALTER TABLE [dbo].[EasyDNNNewsArchive] DROP CONSTRAINT [EDS_EasyDNNNewsArchive_ShowMainImage_df]; UPDATE [dbo].[EasyDNNNewsArchive] SET TempShowMainImage = CASE ShowMainImage WHEN ''True'' THEN 1 ELSE 0 END')
+
+		ALTER TABLE [dbo].[EasyDNNNewsArchive] DROP COLUMN [ShowMainImage]
+
+		EXEC sp_rename 'EasyDNNNewsArchive.[TempShowMainImage]', 'ShowMainImage', 'COLUMN'
+	END
+	
+	COMMIT TRANSACTION;
+		
+END TRY
+BEGIN CATCH
+	IF @@TRANCOUNT > 0
+        ROLLBACK TRANSACTION;
+END CATCH;
+
+IF @@TRANCOUNT > 0
+    COMMIT TRANSACTION;
+   
+-- AllowComments
+BEGIN TRANSACTION;
+BEGIN TRY
+
+	DECLARE @ColumnType11 nvarchar(30);
+	SET @ColumnType11 = '';
+	SELECT @ColumnType11 = data_type FROM information_schema.columns WHERE table_name = 'EasyDNNNewsArchive' AND column_name = 'ShowMainImageFront'
+
+	IF @ColumnType11 = 'nvarchar'
+	BEGIN
+		IF not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsArchive' and column_name = 'TempShowMainImageFront')
+		BEGIN
+			ALTER TABLE [dbo].[EasyDNNNewsArchive] ADD TempShowMainImageFront BIT CONSTRAINT EDS_EasyDNNNewsArchive_ShowMainImageFront_df DEFAULT (0) NOT NULL
+		END
+		
+		EXEC ('ALTER TABLE [dbo].[EasyDNNNewsArchive] DROP CONSTRAINT [EDS_EasyDNNNewsArchive_ShowMainImageFront_df]; UPDATE [dbo].[EasyDNNNewsArchive] SET TempShowMainImageFront = CASE ShowMainImageFront WHEN ''True'' THEN 1 ELSE 0 END')
+
+		ALTER TABLE [dbo].[EasyDNNNewsArchive] DROP COLUMN [ShowMainImageFront]
+
+		EXEC sp_rename 'EasyDNNNewsArchive.[TempShowMainImageFront]', 'ShowMainImageFront', 'COLUMN'
+	END
+	
+	COMMIT TRANSACTION;
+		
+END TRY
+BEGIN CATCH
+	IF @@TRANCOUNT > 0
+        ROLLBACK TRANSACTION;
+END CATCH;
+
+IF @@TRANCOUNT > 0
+    COMMIT TRANSACTION;

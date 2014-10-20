@@ -1,0 +1,73 @@
+/* Layout helpers
+----------------------------------*/
+.livetabsexcitebike .ui-helper-hidden { display: none; }
+.livetabsexcitebike .ui-helper-hidden-accessible { position: absolute; left: -99999999px; }
+.livetabsexcitebike .ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.livetabsexcitebike .ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.livetabsexcitebike .ui-helper-clearfix { display: inline-block; }
+/* required comment for clearfix to work in Opera \*/
+* html .ui-helper-clearfix { height:1%; }
+.livetabsexcitebike .ui-helper-clearfix { display:block; }
+/* end clearfix */
+.livetabsexcitebike .ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+/* Interaction Cues
+----------------------------------*/
+.livetabsexcitebike .ui-state-disabled { cursor: default !important; }
+/* states and images */
+.livetabsexcitebike .ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+/* Overlays */
+.livetabsexcitebike .ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+/* Component containers
+----------------------------------*/
+.livetabsexcitebike .ui-widget { font-family: segoe ui, Arial, sans-serif; font-size: 1.1em; }
+.livetabsexcitebike .ui-widget input, .livetabsexcitebike .ui-widget select, .livetabsexcitebike .ui-widget textarea, .livetabsexcitebike .ui-widget button { font-family: segoe ui, Arial, sans-serif; font-size: 1em; }
+.livetabsexcitebike .ui-widget-content { border: 1px solid #aaaaaa; background: #eeeeee url(images/ui-bg_inset-hard_100_eeeeee_1x100.png) 50% bottom repeat-x; color: #222222; }
+.livetabsexcitebike .ui-widget-content a { }
+.livetabsexcitebike .ui-widget-header { border: 1px solid #cccccc; background: #f9f9f9 url(images/ui-bg_highlight-soft_100_f9f9f9_1x100.png) 50% 50% repeat-x; color: #e69700; font-weight: bold; }
+.livetabsexcitebike .ui-widget-header a { color: #e69700; }
+/* Interaction states
+----------------------------------*/
+.livetabsexcitebike .ui-state-default, .livetabsexcitebike .ui-widget-content .ui-state-default { border: 1px solid #ffffff; background: #1484e6 url(images/ui-bg_diagonals-thick_22_1484e6_40x40.png) 50% 50% repeat; font-weight: bold; color: #ffffff; outline: none; }
+.livetabsexcitebike .ui-state-default a, .livetabsexcitebike .ui-state-default a:link, .livetabsexcitebike .ui-state-default a:visited { color: #ffffff; text-decoration: none; outline: none; }
+.livetabsexcitebike .ui-state-hover, .livetabsexcitebike .ui-widget-content .ui-state-hover, .livetabsexcitebike .ui-state-focus, .livetabsexcitebike .ui-widget-content .ui-state-focus { border: 1px solid #2293f7; background: #2293f7 url(images/ui-bg_diagonals-thick_26_2293f7_40x40.png) 50% 50% repeat; font-weight: bold; color: #ffffff; outline: none; }
+.livetabsexcitebike .ui-state-hover a, .livetabsexcitebike .ui-state-hover a:hover { color: #ffffff; text-decoration: none; outline: none; }
+.livetabsexcitebike .ui-state-active, .livetabsexcitebike .ui-widget-content .ui-state-active { border: 1px solid #e69700; background: #e69700 url(images/ui-bg_diagonals-thick_20_e69700_40x40.png) 50% 50% repeat; font-weight: bold; color: #ffffff; outline: none; }
+.livetabsexcitebike .ui-state-active a, .livetabsexcitebike .ui-state-active a:link, .livetabsexcitebike .ui-state-active a:visited { color: #ffffff; outline: none; text-decoration: none; }
+/* Interaction Cues
+----------------------------------*/
+.livetabsexcitebike .ui-state-highlight, .livetabsexcitebike .ui-widget-content .ui-state-highlight {border: 1px solid #ffffff; background: #c5ddfc url(images/ui-bg_diagonals-small_25_c5ddfc_40x40.png) 50% 50% repeat; color: #333333; }
+.livetabsexcitebike .ui-state-highlight a, .livetabsexcitebike .ui-widget-content .ui-state-highlight a { color: #333333; }
+.livetabsexcitebike .ui-state-error, .livetabsexcitebike .ui-widget-content .ui-state-error {border: 1px solid #e69700; background: #e69700 url(images/ui-bg_diagonals-thick_20_e69700_40x40.png) 50% 50% repeat; color: #ffffff; }
+.livetabsexcitebike .ui-state-error a, .livetabsexcitebike .ui-widget-content .ui-state-error a { color: #ffffff; }
+.livetabsexcitebike .ui-state-error-text, .livetabsexcitebike .ui-widget-content .ui-state-error-text { color: #ffffff; }
+.livetabsexcitebike .ui-state-disabled, .livetabsexcitebike .ui-widget-content .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+.livetabsexcitebike .ui-priority-primary, .livetabsexcitebike .ui-widget-content .ui-priority-primary { font-weight: bold; }
+.livetabsexcitebike .ui-priority-secondary, .livetabsexcitebike .ui-widget-content .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+/* states and images */
+.livetabsexcitebike .ui-icon { width: 16px; height: 16px; background-image: url(images/ui-icons_0a82eb_256x240.png); }
+.livetabsexcitebike .ui-widget-content .ui-icon {background-image: url(images/ui-icons_0a82eb_256x240.png); }
+.livetabsexcitebike .ui-widget-header .ui-icon {background-image: url(images/ui-icons_5fa5e3_256x240.png); }
+.livetabsexcitebike .ui-state-default .ui-icon { background-image: url(images/ui-icons_fcdd4a_256x240.png); }
+.livetabsexcitebike .ui-state-hover .ui-icon, .livetabsexcitebike .ui-state-focus .ui-icon {background-image: url(images/ui-icons_ffffff_256x240.png); }
+.livetabsexcitebike .ui-state-active .ui-icon {background-image: url(images/ui-icons_ffffff_256x240.png); }
+.livetabsexcitebike .ui-state-highlight .ui-icon {background-image: url(images/ui-icons_0b54d5_256x240.png); }
+.livetabsexcitebike .ui-state-error .ui-icon, .livetabsexcitebike .ui-state-error-text .ui-icon {background-image: url(images/ui-icons_ffffff_256x240.png); }
+/* Corner radius */
+.livetabsexcitebike .ui-corner-all, .livetabsexcitebike .ui-corner-top, .livetabsexcitebike .ui-corner-left, .livetabsexcitebike .ui-corner-tl { -moz-border-radius-topleft: 3px; -webkit-border-top-left-radius: 3px; -khtml-border-top-left-radius: 3px; border-top-left-radius: 3px; }
+.livetabsexcitebike .ui-corner-all, .livetabsexcitebike .ui-corner-top, .livetabsexcitebike .ui-corner-right, .livetabsexcitebike .ui-corner-tr { -moz-border-radius-topright: 3px; -webkit-border-top-right-radius: 3px; -khtml-border-top-right-radius: 3px; border-top-right-radius: 3px; }
+.livetabsexcitebike .ui-corner-all, .livetabsexcitebike .ui-corner-bottom, .livetabsexcitebike .ui-corner-left, .livetabsexcitebike .ui-corner-bl { -moz-border-radius-bottomleft: 3px; -webkit-border-bottom-left-radius: 3px; -khtml-border-bottom-left-radius: 3px; border-bottom-left-radius: 3px; }
+.livetabsexcitebike .ui-corner-all, .livetabsexcitebike .ui-corner-bottom, .livetabsexcitebike .ui-corner-right, .livetabsexcitebike .ui-corner-br { -moz-border-radius-bottomright: 3px; -webkit-border-bottom-right-radius: 3px; -khtml-border-bottom-right-radius: 3px; border-bottom-right-radius: 3px; }
+/* Overlays */
+.livetabsexcitebike .ui-widget-overlay { background: #e6b900 url(images/ui-bg_flat_0_e6b900_40x100.png) 50% 50% repeat-x; opacity: .30;filter:Alpha(Opacity=30); }
+.livetabsexcitebike .ui-widget-shadow { margin: 6px 0 0 6px; padding: 0px; background: #e69700 url(images/ui-bg_flat_0_e69700_40x100.png) 50% 50% repeat-x; opacity: .20;filter:Alpha(Opacity=20); -moz-border-radius: 3px; -webkit-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; }
+/* Tabs
+----------------------------------*/
+.livetabsexcitebike .ui-tabs { padding: .2em; zoom: 1; }
+.livetabsexcitebike .ui-tabs .ui-tabs-nav { list-style: none; position: relative; padding: .2em .2em 0; }
+.livetabsexcitebike .ui-tabs .ui-tabs-nav li { list-style: none; position: relative; float: left; margin: 0 .2em -1px 0; padding: 0; }
+.livetabsexcitebike .ui-tabs .ui-tabs-nav li a { float: left; text-decoration: none; padding: .5em 2em; }
+.livetabsexcitebike .ui-tabs .ui-tabs-nav li.ui-tabs-selected, .livetabsexcitebike .ui-tabs .ui-tabs-nav li.ui-tabs-active { padding-bottom: 1px; border-bottom-width: 0; }
+.livetabsexcitebike .ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .livetabsexcitebike .ui-tabs .ui-tabs-nav li.ui-tabs-active a, .livetabsexcitebike .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .livetabsexcitebike .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.livetabsexcitebike .ui-tabs .ui-tabs-nav li a, .livetabsexcitebike .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a, .livetabsexcitebike .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.livetabsexcitebike .ui-tabs .ui-tabs-panel { padding: 1em 1.4em; display: block; border-width: 0; background: none; }
+.livetabsexcitebike .ui-tabs .ui-tabs-hide { display: none !important; }

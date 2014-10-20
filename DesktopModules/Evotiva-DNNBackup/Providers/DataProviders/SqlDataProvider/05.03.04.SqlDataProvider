@@ -1,0 +1,46 @@
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS ON 
+GO
+
+-- new default values
+declare @mid int
+select @mid=m.ModuleID from {databaseOwner}{objectQualifier}ModuleDefinitions  md
+left join {databaseOwner}{objectQualifier}Modules m on m.ModuleDefID = md.ModuleDefID 
+where md.FriendlyName = 'Evotiva-DNNBackup'
+if @mid > 0 BEGIN
+	update {databaseOwner}{objectQualifier}ModuleSettings  set SettingValue = 'False' 
+	 where ModuleID = @mid and SettingName='PortalTablesOnly'
+    declare @sdo varchar(10)
+    select @sdo = SettingValue from {databaseOwner}{objectQualifier}ModuleSettings
+     where ModuleID = @mid and SettingName='ScriptDatabaseObjects'    
+    if @sdo = 'False' BEGIN
+	update {databaseOwner}{objectQualifier}ModuleSettings  set SettingValue  = 'TSQL' 
+	 where ModuleID = @mid and SettingName='ScriptMethod'	 
+	update {databaseOwner}{objectQualifier}ModuleSettings  set SettingValue = 'True' 
+	 where ModuleID = @mid and SettingName='ScriptDatabaseObjects'
+	END	
+END
+GO
+
+
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/

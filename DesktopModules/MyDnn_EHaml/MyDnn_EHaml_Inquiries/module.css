@@ -1,0 +1,615 @@
+﻿.InquiryZaban-Form.dnnForm.zabanForm .rcbInput { font-family: tahoma !important; }
+
+.InquiryZaban-Form.dnnForm.zabanForm .RadComboBoxDropDown .rcbList .rcbItem, .RadComboBoxDropDown .rcbList {
+    direction: rtl;
+    text-align: right;
+    font-family: tahoma !important;
+}
+
+span, div, p, h1, h2, h3, h4, h5, h6 { letter-spacing: normal !important; }
+
+.clear { clear: both; }
+
+.MessageForNotSubscribeUser, .MessageForBedehkarUser, .MessageForLoginNakarde, .MessageForNotApproved, .MessageAfterErsal {
+    display: block;
+    padding: 17px 18px;
+    margin-bottom: 18px;
+    border: 1px solid rgba(2, 139, 255, 0.2); /* blue */
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    max-width: 980px;
+    direction: rtl;
+    text-align: right;
+    background-color: rgba(255, 255, 0, 0.15); /* yellow */
+    border-color: #CDB21F; /* yellow */
+}
+
+.pnlMustSelectDangerLoadType {
+    display: block;
+    padding: 17px 18px;
+    margin-bottom: 18px;
+    border: 1px solid rgba(2, 139, 255, 0.2); /* blue */
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    max-width: 980px;
+    direction: rtl;
+    text-align: right;
+    background-color: rgba(255, 255, 0, 0.15); /* yellow */
+    border-color: #CDB21F; /* yellow */
+    line-height: 2;
+}
+
+.pnlErrorMessageGeneral {
+    display: block;
+    padding: 17px 18px;
+    margin-bottom: 18px;
+    border: 1px solid rgba(2, 139, 255, 0.2); /* blue */
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    max-width: 980px;
+    direction: rtl;
+    text-align: right;
+    background-color: rgba(255, 255, 0, 0.15); /* yellow */
+    border-color: #CDB21F; /* yellow */
+    line-height: 2;
+}
+
+.MessageForNotSubscribeUser p { margin: 5px; }
+
+.MessageForNotSubscribeUser a {
+    font-family: bkoodak;
+    font-size: 16px;
+    font-weight: bold;
+    color: #292f9c;
+    margin-top: 8px;
+    display: block;
+}
+
+.dnnFormItem.form-title .dnnLabel {
+    font-family: bkoodak;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 0;
+}
+
+.dnnFormItem.form-title .dnnLabel span {
+    font-family: bkoodak;
+    font-size: 20px;
+    font-weight: normal;
+    color: #706f6f;
+    border-bottom: solid 2px #999;
+    display: block;
+    width: 525px;
+    padding-bottom: 5px;
+}
+
+
+.dnnFormItem input[type="text"], .dnnFormItem input[type="password"], .dnnFormItem input[type="email"], .dnnFormItem input[type="tel"], .dnnFormItem select, .dnnFormItem textarea { width: 30% !important; }
+
+.dnnFormItem > .RadComboBox_Default { width: 30% !important; }
+
+.dnnLabel { width: 22% !important; }
+
+.riTextBox.riEnabled {
+    margin-bottom: 9px !important;
+    min-width: 295px;
+}
+
+.rcbInput.radPreventDecorate { min-width: 100%; }
+
+.RadPicker_Default .rcCalPopup { top: -5px; }
+
+.item-td { width: 100%; }
+
+.item-panel {
+    width: 100%;
+    border-bottom: solid 0px silver;
+}
+
+.left-panel {
+    width: 20%;
+    float: left;
+    margin: 0 5px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.right-panel {
+    width: 75%;
+    float: right;
+}
+
+.right-panel .r-img {
+    background: url("images/pic1.png") no-repeat scroll 0 -640px rgba(0, 0, 0, 0);
+    height: 83px;
+    margin: 35px 5px 10px 10px;
+    width: 140px;
+    float: right;
+    margin-left: 10px;
+}
+
+.cnt-panel {
+    min-height: 100px;
+    float: right;
+    padding-top: 10px;
+}
+
+.cnt-panel .title-main { font-size: 25px; }
+
+.cnt-panel .title1 {
+    color: #808080;
+    font-family: bkoodak;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: normal;
+    margin: 0;
+}
+
+
+.cnt-panel .title2 {
+    color: #9f9f9f;
+    font-family: bkoodak;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: normal;
+    margin: 0;
+}
+
+.cnt-panel .title2 span { color: #619eff; }
+
+.cnt-panel .title3 {
+    color: #5B5B5B;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.cnt-panel .title4 {
+    color: #5B5B5B;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.item-btn { width: 150px; }
+
+.rate-item > img { padding-top: 5px; }
+
+.title-expredate {
+    color: #808080;
+    font-family: tahoma;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.pasokh-title {
+    border-bottom: 1px solid #C0C0C0;
+    padding-bottom: 17px !important;
+    margin-bottom: 15px;
+}
+
+.pasokh-title .dnnLabel {
+    font-family: bkoodak;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 0 0 5px 0;
+    width: 100%;
+    border: none !important;
+}
+
+.pasokh-title .dnnLabel span {
+    font-family: bkoodak;
+    font-size: 20px !important;
+}
+
+
+.shenasnameForm .dnnFormItem > .dnnLabel:last-child {
+    border: 1px solid #C0C0C0;
+    min-width: 450px;
+    padding: 5px;
+    min-height: 20px;
+}
+
+
+.shenasnameForm .dnnSecondaryAction { margin-top: 5px; }
+
+
+.formPasokh {
+    display: none;
+    padding-top: 10px;
+}
+
+.formPasokh .dnnFormItem { }
+
+.formPasokh .rcInputCell { width: 200px !important; }
+
+.zadghalForm .dnnLabel:first-child { width: 280px !important; }
+
+.zdfForm .dnnlabel:first-child { width: 280px !important; }
+
+.hsForm .dnnlabel:first-child { width: 305px !important; }
+
+.zabanForm .dnnlabel:first-child { width: 298px !important; }
+
+.hlForm .dnnlabel:first-child { width: 324px !important; }
+
+.dlform .dnnlabel:first-child { width: 320px !important; }
+
+.dnform .dnnlabel:first-child { width: 315px !important; }
+
+.dghcoForm .dnnlabel { width: 320px !important; }
+
+.formTr .dnnlabel:first-child { width: 318px !important; }
+
+.textAfterTheButton {
+    color: #7D9CCC;
+    font-size: 12px;
+    position: relative;
+    top: 5px;
+}
+
+/**/
+
+
+.fromtop20 { margin-top: 15px; }
+
+.tosiye { right: -100px; }
+
+.tosiye2 { right: -64px; }
+
+.tosiye3 {
+    right: -10px;
+    top: -37px;
+}
+
+.tosiye4 { right: -18px; }
+
+.tosiye5 { right: -30px; }
+
+.tosiye6 { right: -20px; }
+
+
+.ReplyToInquiry-Zaban-Shenasname .dnnlabel:first-child { width: 280px !important; }
+
+.ReplyToInquiry-Zaban-Reply-Form .dnnlabel:first-child { width: 370px !important; }
+
+.hlshenasname .dnnlabel:first-child { width: 250px !important; }
+
+.formpasokhhl .dnnlabel:first-child { width: 235px !important; }
+
+.dlshenasname .dnnlabel { width: 240px !important; }
+
+.formpasokhdl .dnnlabel:first-child { width: 240px !important; }
+
+.dnshenasname .dnnlabel:first-child { width: 240px !important; }
+
+.frmdnpasokh .dnnlabel:first-child { width: 285px !important; }
+
+.dghcoshenasname .dnnlabel:first-child { width: 240px !important; }
+
+.formpasokhdghco .dnnlabel:first-child { width: 265px !important; }
+
+.frompasokhtr .dnnlabel:first-child { width: 290px !important; }
+
+/**/
+
+.replytoinquiry-zadghal-reply-form .dnnlabel:first-child { width: 318px !important; }
+
+.replytoinquiry-zadghal-shenasname .dnnlabel:first-child { width: 318px !important; }
+
+
+
+.ltr45 { float: left; }
+
+
+.item-main {
+    box-shadow: 0 3px 3px 1px #C0C0C0;
+    min-height: 200px;
+    width: 100%;
+    margin-bottom: 8px;
+    border-top: solid 1px #eef2ef;
+}
+
+.item-main .right-side {
+    float: right;
+    width: 185px;
+    height: 200px;
+    border-left: solid 1px silver;
+    margin: 0 3px;
+}
+
+.item-main .center-side {
+    float: right;
+    width: 570px;
+    height: 200px;
+    border-left: solid 1px silver;
+    margin: 0 3px;
+}
+
+.item-main .left-side {
+    float: left;
+    width: 162px;
+    height: 200px;
+    border: solid 0px silver;
+    margin: 0 3px;
+    position: relative;
+}
+
+.user-title {
+    text-align: center;
+    width: 100%;
+    font-family: bkoodak;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 5px;
+    color: #999;
+}
+
+.rating1 {
+    margin-bottom: 30px;
+    margin-top: 40px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.rat-power {
+    font-family: bkoodak;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.rat-qality {
+    display: block;
+    float: right;
+    position: absolute;
+    right: 30px;
+    top: -22px;
+}
+
+.ratqality {
+    display: block;
+    height: 25px;
+    text-indent: 1000px;
+    width: 110px;
+}
+
+.rate_0 { background: url("images/star_0.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0); }
+
+.rating2 {
+    text-align: center;
+    font-family: bkoodak;
+    font-size: 18px;
+}
+
+.rat-good {
+    color: #008000;
+    padding-left: 30px;
+}
+
+.rat-bad { color: #FF0000; }
+
+.source-dest {
+    margin-top: 10px;
+    width: 75%;
+    height: 40px;
+    background: #d5d5d5;
+    margin-bottom: 10px;
+    float: right;
+}
+
+.source-dest h2 {
+    float: right;
+    font-family: bkoodak;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0 5px;
+    /*text-shadow: 1px 0px 0px #FFFFFF;*/
+}
+
+.source-dest .source {
+    background: url("images/felesh.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+    padding-left: 30px !important;
+}
+
+.send-date {
+    direction: ltr;
+    float: left;
+    margin: 13px 5px;
+}
+
+.send-date > span {
+    font-size: 12px;
+    color: gray;
+}
+
+.inquiry-body {
+    width: 100%;
+    min-height: 80px;
+    position: relative;
+}
+
+.inquiry-body > h2 {
+    color: #797a79;
+    font-family: bkoodak;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 32px;
+    margin: 0 5px;
+}
+
+.inquiry-body > h2 span {
+    font-family: b mitra, bkoodak;
+    font-size: 22px;
+    color: #1c1c1c;
+}
+
+.inquiry-body .khatarnak {
+    background: url("images/danger.png") no-repeat scroll right center rgba(0, 0, 0, 0);
+    color: #FF0000;
+    display: block;
+    font-family: bkoodak;
+    font-size: 20px;
+    height: 11px;
+    left: 25px;
+    opacity: 0.6;
+    padding-bottom: 13px;
+    padding-right: 27px;
+    position: absolute;
+    top: 60px;
+    width: 90px;
+}
+
+.daycount { position: relative; }
+
+.daycount .date-util {
+    border-radius: 30px;
+    color: #FFFFFF;
+    display: block;
+    font-family: bkoodak;
+    font-size: 18px;
+    font-weight: normal;
+    height: 40px;
+    left: 50%;
+    line-height: 37px;
+    position: absolute;
+    text-align: center;
+    top: 40px;
+    width: 40px;
+}
+
+.daycount .date-util.greenback { background: none repeat scroll 0 0 #2dbf2d; }
+
+.daycount .date-util.blueback { background: none repeat scroll 0 0 #54bff7; }
+
+.daycount .date-util.redback { background: none repeat scroll 0 0 #f35959; }
+
+.daycount .data-util-end {
+    color: #808080;
+    display: block;
+    font-family: bkoodak;
+    font-size: 16px;
+    font-weight: normal;
+    left: 17%;
+    line-height: 37px;
+    position: absolute;
+    text-align: center;
+    top: 50px;
+}
+
+.replay-button {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.replay-button a { width: 135px; }
+
+
+.ajax-load {
+    background: url("images/loading.gif") no-repeat scroll center center #f8f5f5;
+    height: 800px;
+    left: 0;
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+.panelekalayekhatarnak { display: none; }
+
+.shenasnameForm .dnnFormItem .dnnlabel:first-child, .formPasokh .dnnFormItem .dnnlabel:first-child {
+    min-width: 300px;
+    width: auto !important;
+}
+
+.dnnFormItem span { font-size: 12px; }
+
+.shenasnameForm .dnnFormItem .dnnlabel:last-child, .formPasokh .dnnFormItem .dnnlabel:last-child { min-width: 610px !important; }
+
+.dnnFormItem > label { font-size: 12px; }
+
+.dnnForm .dnnFormItem.paneleVooroodeArzesheBar { display: none; }
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+.barasaseDekopaj { display: none; }
+
+.barasaseTedadVaNoeVasileyeHaml { display: none; }
+
+.barasaseTonaj { display: none; }
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+.formPasokh .dnnFormItem > .dnnLabel:last-child { padding: 5px; }
+
+
+.dnnForm.cantiner-panel {
+    float: right;
+    padding: 0;
+    width: 732px;
+}
+
+.dnnForm.cantiner-panel .dnnFormItem h4 {
+    border-bottom: 1px solid #C0C0C0;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.dnnForm.cantiner-panel .dnnFormItem .dnnLabel:first-child { min-width: 215px; }
+
+.dnnForm.cantiner-panel .dnnFormItem input, .dnnForm.cantiner-panel .dnnFormItem .RadComboBox_Default { width: 40% !important; }
+
+
+.RadPicker .riTextBox {
+    margin-bottom: 10px !important;
+    min-width: 295px !important;
+}
+
+.logoForPrint {
+    position: absolute !important;
+    top: 4px !important;
+    background: darkgray !important;
+}
+
+.logoForPrint img { width: 155px !important; }
+
+.myErrorMessage {
+    font-family: bkoodak;
+    text-align: right;
+    direction: rtl;
+    background: #feffce url(../../images/warning-icn.png) no-repeat 10px center;
+    border: 2px #cdb21f solid;
+    color: #41370C;
+    text-shadow: 0px 1px 1px #fff;
+    border-radius: 4px;
+    font-size: 17px;
+}
+
+.myErrorMessage span {
+    /* clear: both; */
+    display: block;
+    padding: 5px;
+}

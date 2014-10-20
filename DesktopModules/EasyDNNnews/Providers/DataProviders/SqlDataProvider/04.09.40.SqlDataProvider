@@ -1,0 +1,427 @@
+﻿BEGIN TRY
+	if exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsComments' and column_name = 'AnonymName')
+	BEGIN
+	ALTER TABLE [dbo].[EasyDNNNewsComments] ALTER Column AnonymName nvarchar(128)
+	END
+	if exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsComments' and column_name = 'ReplayCommentID')
+	BEGIN
+	ALTER TABLE [dbo].[EasyDNNNewsComments] ALTER Column ReplayCommentID int
+	END
+END TRY
+BEGIN CATCH
+END CATCH;
+
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsContentLocalization' and column_name = 'MainImageTitle')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsContentLocalization] ADD MainImageTitle nvarchar(500) NULL
+END
+
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsContentLocalization' and column_name = 'MainImageDescription')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsContentLocalization] ADD MainImageDescription nvarchar(2000) NULL
+END
+
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNews' and column_name = 'MainImageTitle')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNews] ADD MainImageTitle nvarchar(500) NULL
+END
+
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNews' and column_name = 'MainImageDescription')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNews] ADD MainImageDescription nvarchar(2000) NULL
+END
+
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNews' and column_name = 'HideDefaultLocale')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNews] ADD HideDefaultLocale bit NOT NULL DEFAULT(0)
+END
+
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsRolePremissionSettings' and column_name = 'SubTitle')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionSettings] ADD SubTitle bit NOT NULL DEFAULT(1)
+END
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsRolePremissionSettings' and column_name = 'SEO')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionSettings] ADD SEO bit NOT NULL DEFAULT(1)
+END
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsRolePremissionSettings' and column_name = 'Summary')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionSettings] ADD Summary bit NOT NULL DEFAULT(1)
+END
+
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsRolePremissionSettings' and column_name = 'Text')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionSettings] ADD Text bit NOT NULL DEFAULT(1)
+END
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsRolePremissionSettings' and column_name = 'Page')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionSettings] ADD Page bit NOT NULL DEFAULT(1)
+END
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsRolePremissionSettings' and column_name = 'File')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionSettings] ADD [File] bit NOT NULL DEFAULT(1)
+END
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsRolePremissionSettings' and column_name = 'Link')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionSettings] ADD Link bit NOT NULL DEFAULT(1)
+END
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsRolePremissionSettings' and column_name = 'None')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionSettings] ADD None bit NOT NULL DEFAULT(1)
+END
+
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsRolePremissionSettings' and column_name = 'Tags')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionSettings] ADD Tags bit NOT NULL DEFAULT(1)
+END
+
+
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsRolePremissionSettings' and column_name = 'ArticleGallery')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionSettings] ADD ArticleGallery bit NOT NULL DEFAULT(1)
+END
+
+
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsRolePremissionSettings' and column_name = 'GoogleMap')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionSettings] ADD GoogleMap bit NOT NULL DEFAULT(1)
+END
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsRolePremissionSettings' and column_name = 'ChangeTemplate')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionSettings] ADD ChangeTemplate bit NOT NULL DEFAULT(1)
+END
+
+
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsRolePremissionSettings' and column_name = 'Events')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionSettings] ADD Events bit NOT NULL DEFAULT(1)
+END
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsRolePremissionSettings' and column_name = 'AllowComments')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionSettings] ADD AllowComments bit NOT NULL DEFAULT(1)
+END
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsRolePremissionSettings' and column_name = 'Featured')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionSettings] ADD Featured bit NOT NULL DEFAULT(1)
+END
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsRolePremissionSettings' and column_name = 'PublishExpire')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionSettings] ADD PublishExpire  bit NOT NULL DEFAULT(1)
+END
+
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsUserPremissionSettings' and column_name = 'SubTitle')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsUserPremissionSettings] ADD SubTitle bit NOT NULL DEFAULT(1)
+END
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsUserPremissionSettings' and column_name = 'SEO')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsUserPremissionSettings] ADD SEO bit NOT NULL DEFAULT(1)
+END
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsUserPremissionSettings' and column_name = 'Summary')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsUserPremissionSettings] ADD Summary bit NOT NULL DEFAULT(1)
+END
+
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsUserPremissionSettings' and column_name = 'Text')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsUserPremissionSettings] ADD Text bit NOT NULL DEFAULT(1)
+END
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsUserPremissionSettings' and column_name = 'Page')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsUserPremissionSettings] ADD Page bit NOT NULL DEFAULT(1)
+END
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsUserPremissionSettings' and column_name = 'File')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsUserPremissionSettings] ADD [File] bit NOT NULL DEFAULT(1)
+END
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsUserPremissionSettings' and column_name = 'Link')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsUserPremissionSettings] ADD Link bit NOT NULL DEFAULT(1)
+END
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsUserPremissionSettings' and column_name = 'None')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsUserPremissionSettings] ADD None bit NOT NULL DEFAULT(1)
+END
+
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsUserPremissionSettings' and column_name = 'Tags')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsUserPremissionSettings] ADD Tags bit NOT NULL DEFAULT(1)
+END
+
+
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsUserPremissionSettings' and column_name = 'ArticleGallery')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsUserPremissionSettings] ADD ArticleGallery bit NOT NULL DEFAULT(1)
+END
+
+
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsUserPremissionSettings' and column_name = 'GoogleMap')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsUserPremissionSettings] ADD GoogleMap bit NOT NULL DEFAULT(1)
+END
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsUserPremissionSettings' and column_name = 'ChangeTemplate')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsUserPremissionSettings] ADD ChangeTemplate bit NOT NULL DEFAULT(1)
+END
+
+
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsUserPremissionSettings' and column_name = 'Events')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsUserPremissionSettings] ADD Events bit NOT NULL DEFAULT(1)
+END
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsUserPremissionSettings' and column_name = 'AllowComments')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsUserPremissionSettings] ADD AllowComments bit NOT NULL DEFAULT(1)
+END
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsUserPremissionSettings' and column_name = 'Featured')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsUserPremissionSettings] ADD Featured bit NOT NULL DEFAULT(1)
+END
+if not exists (select * from INFORMATION_SCHEMA.columns where table_name = 'EasyDNNNewsUserPremissionSettings' and column_name = 'PublishExpire')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsUserPremissionSettings] ADD PublishExpire  bit NOT NULL DEFAULT(1)
+END
+
+/****** Object:  StoredProcedure [dbo].[EasyDNNNewsPermissions]    Script Date: 02/25/2013 11:27:52 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPermissions]') AND type in (N'P', N'PC'))
+BEGIN
+drop procedure [dbo].[EasyDNNNewsPermissions]
+END
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE [dbo].[EasyDNNNewsPermissions]
+    @UserID int,
+    @PortalID int,
+    @ModuleID int
+AS 
+SET NOCOUNT ON;
+DECLARE @CheckModuleID bit;
+IF @ModuleID IS NULL
+BEGIN
+	SET @CheckModuleID = 1;
+END
+ELSE
+BEGIN
+	SET @CheckModuleID = 0;
+END
+
+IF @UserID = -1
+BEGIN
+	SELECT [ApproveArticles],[DocumentUpload],[DocumentDownload],[AddEditCategories],[AllowToComment],[ApproveComments],[ViewPaidContent],[ShowSharedGallery],[ShowCustomGallery],[AddArticleToAll],[ShowAllCategories],[AddPerArticle],[PostToSocialNetwork],
+	      [SubTitle],[SEO],[Summary],[Text],[Page],[File],[Link],[None],[Tags],[ArticleGallery],[GoogleMap],[ChangeTemplate],[Events],[AllowComments],[Featured],[PublishExpire]
+		FROM EasyDNNNewsRolePremissionSettings AS rps WHERE rps.RoleID IS NULL AND ((@CheckModuleID = 1 AND (rps.ModuleID IS NULL)) OR (@CheckModuleID = 0 AND (rps.ModuleID = @ModuleID))) AND rps.PortalID = @PortalID
+END
+ELSE
+BEGIN
+	WITH RoleAndUserRights as
+	(
+		SELECT DISTINCT [ApproveArticles],[DocumentUpload],[DocumentDownload],[AddEditCategories],[AllowToComment],[ApproveComments],[ViewPaidContent],[ShowSharedGallery],[ShowCustomGallery],[AddArticleToAll],[ShowAllCategories],[AddPerArticle],[PostToSocialNetwork],
+	        [SubTitle],[SEO],[Summary],[Text],[Page],[File],[Link],[None],[Tags],[ArticleGallery],[GoogleMap],[ChangeTemplate],[Events],[AllowComments],[Featured],[PublishExpire]
+			FROM EasyDNNNewsRolePremissionSettings AS rps INNER JOIN {databaseOwner}{objectQualifier}UserRoles AS ur ON ur.RoleID = rps.RoleID
+		WHERE ur.UserID = @UserID AND ((@CheckModuleID = 1 AND (rps.ModuleID IS NULL)) OR (@CheckModuleID = 0 AND (rps.ModuleID = @ModuleID))) AND rps.PortalID = @PortalID
+		UNION
+		SELECT [ApproveArticles],[DocumentUpload],[DocumentDownload],[AddEditCategories],[AllowToComment],[ApproveComments],[ViewPaidContent],[ShowSharedGallery],[ShowCustomGallery],[AddArticleToAll],[ShowAllCategories],[AddPerArticle],[PostToSocialNetwork],
+	        [SubTitle],[SEO],[Summary],[Text],[Page],[File],[Link],[None],[Tags],[ArticleGallery],[GoogleMap],[ChangeTemplate],[Events],[AllowComments],[Featured],[PublishExpire]
+			FROM  EasyDNNNewsUserPremissionSettings AS ups
+		WHERE ups.UserID = @UserID AND ((@CheckModuleID = 1 AND (ups.ModuleID IS NULL)) OR (@CheckModuleID = 0 AND (ups.ModuleID = @ModuleID))) AND ups.PortalID = @PortalID
+	)
+	SELECT TOP(1)
+		CASE WHEN EXISTS (SELECT ApproveArticles FROM RoleAndUserRights WHERE ApproveArticles = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS ApproveArticles,
+		CASE WHEN EXISTS (SELECT DocumentUpload FROM RoleAndUserRights WHERE DocumentUpload = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS DocumentUpload,
+		CASE WHEN EXISTS (SELECT DocumentDownload FROM RoleAndUserRights WHERE DocumentDownload = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS DocumentDownload,
+		CASE WHEN EXISTS (SELECT AddEditCategories FROM RoleAndUserRights WHERE AddEditCategories = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS AddEditCategories,
+		CASE WHEN EXISTS (SELECT AllowToComment FROM RoleAndUserRights WHERE AllowToComment = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS AllowToComment,
+		CASE WHEN EXISTS (SELECT ApproveComments FROM RoleAndUserRights WHERE ApproveComments = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS ApproveComments,
+		CASE WHEN EXISTS (SELECT ViewPaidContent FROM RoleAndUserRights WHERE ViewPaidContent = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS ViewPaidContent,
+		CASE WHEN EXISTS (SELECT ShowSharedGallery FROM RoleAndUserRights WHERE ShowSharedGallery = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS ShowSharedGallery,
+		CASE WHEN EXISTS (SELECT ShowCustomGallery FROM RoleAndUserRights WHERE ShowCustomGallery = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS ShowCustomGallery,
+		CASE WHEN EXISTS (SELECT AddArticleToAll FROM RoleAndUserRights WHERE AddArticleToAll = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS AddArticleToAll,
+		CASE WHEN EXISTS (SELECT ShowAllCategories FROM RoleAndUserRights WHERE ShowAllCategories = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS ShowAllCategories,
+		CASE WHEN EXISTS (SELECT AddPerArticle FROM RoleAndUserRights WHERE AddPerArticle = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS AddPerArticle,
+		CASE WHEN EXISTS (SELECT PostToSocialNetwork FROM RoleAndUserRights WHERE PostToSocialNetwork = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS PostToSocialNetwork,
+	    CASE WHEN EXISTS (SELECT SubTitle FROM RoleAndUserRights WHERE SubTitle = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS SubTitle,
+	    CASE WHEN EXISTS (SELECT SEO FROM RoleAndUserRights WHERE SEO = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS SEO, 
+	    CASE WHEN EXISTS (SELECT Summary FROM RoleAndUserRights WHERE Summary = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS Summary, 
+	    CASE WHEN EXISTS (SELECT [Text] FROM RoleAndUserRights WHERE [Text] = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS [Text], 
+	    CASE WHEN EXISTS (SELECT [Page] FROM RoleAndUserRights WHERE [Page] = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS [Page], 
+	    CASE WHEN EXISTS (SELECT [File] FROM RoleAndUserRights WHERE [File] = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS [File], 
+	    CASE WHEN EXISTS (SELECT [Link] FROM RoleAndUserRights WHERE [Link] = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS [Link], 
+	    CASE WHEN EXISTS (SELECT [None] FROM RoleAndUserRights WHERE [None] = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS [None], 
+	    CASE WHEN EXISTS (SELECT [Tags] FROM RoleAndUserRights WHERE [Tags] = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS [Tags], 
+	    CASE WHEN EXISTS (SELECT [ArticleGallery] FROM RoleAndUserRights WHERE [ArticleGallery] = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS [ArticleGallery], 
+	    CASE WHEN EXISTS (SELECT [GoogleMap] FROM RoleAndUserRights WHERE [GoogleMap] = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS [GoogleMap], 
+	    CASE WHEN EXISTS (SELECT [ChangeTemplate] FROM RoleAndUserRights WHERE [ChangeTemplate] = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS [ChangeTemplate], 
+	    CASE WHEN EXISTS (SELECT [Events] FROM RoleAndUserRights WHERE [Events] = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS [Events], 
+	    CASE WHEN EXISTS (SELECT [Featured] FROM RoleAndUserRights WHERE [Featured] = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS [Featured], 
+	    CASE WHEN EXISTS (SELECT [AllowComments] FROM RoleAndUserRights WHERE [AllowComments] = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS [AllowComments], 
+	    CASE WHEN EXISTS (SELECT [PublishExpire] FROM RoleAndUserRights WHERE [PublishExpire] = 1) THEN CAST(1 AS bit) ELSE CAST(0 AS bit) END AS [PublishExpire]
+	FROM RoleAndUserRights
+END'
+
+/****** CleanUp Categories table tj items of articles and categories ******/
+
+DELETE FROM [EasyDNNNewsCategories] WHERE [CategoryID] IS NULL
+ALTER TABLE [EasyDNNNewsCategories] ALTER COLUMN [CategoryID] int not null
+
+DECLARE @EditAllCategories bit;
+SET @EditAllCategories = 0;
+DECLARE @RowsToProcessByRole int;
+DECLARE @CurrentRowByRole int;
+DECLARE @PremissionSettingsID int;
+
+IF OBJECT_ID('tempdb..#RolePermissions') IS NOT NULL
+BEGIN
+DROP TABLE #RolePermissions;
+END
+CREATE TABLE #RolePermissions
+( 
+	RowID int not null primary key identity(1,1),
+	PremissionSettingsID int not null,
+	AddArticleToAll bit not null
+)
+
+INSERT INTO #RolePermissions SELECT PremissionSettingsID, AddArticleToAll FROM [dbo].[EasyDNNNewsRolePremissionSettings];
+SET @RowsToProcessByRole=@@ROWCOUNT;
+
+
+BEGIN TRANSACTION;
+BEGIN TRY
+SET NOCOUNT ON;
+SET @CurrentRowByRole = 0;
+WHILE @CurrentRowByRole < @RowsToProcessByRole
+BEGIN
+    SET @CurrentRowByRole = @CurrentRowByRole + 1;
+	SELECT @PremissionSettingsID = PremissionSettingsID, @EditAllCategories = AddArticleToAll FROM #RolePermissions WHERE RowID=@CurrentRowByRole;
+
+	IF @EditAllCategories <> 1
+	BEGIN
+	IF NOT EXISTS (SELECT [PremissionSettingsID] FROM [dbo].[EasyDNNNewsRolePremissionsAddToCategories] WHERE PremissionSettingsID = @PremissionSettingsID)
+		BEGIN
+			UPDATE [dbo].[EasyDNNNewsRolePremissionSettings]
+			   SET [ShowSharedGallery] = 0
+				  ,[ShowCustomGallery] = 0
+				  ,[AddPerArticle] = 0
+				  ,[PostToSocialNetwork] = 0
+				  ,[SubTitle] = 0
+				  ,[SEO] = 0
+				  ,[Summary] = 0
+				  ,[Text] = 0
+				  ,[Page] = 0
+				  ,[File] = 0
+				  ,[Link] = 0
+				  ,[None] = 0
+				  ,[Tags] = 0
+				  ,[ArticleGallery] = 0
+				  ,[GoogleMap] = 0
+				  ,[Events] = 0
+				  ,[Featured] = 0
+				  ,[PublishExpire] = 0
+				  ,[ChangeTemplate] = 0
+				  ,[AllowComments] = 0
+			 WHERE PremissionSettingsID = @PremissionSettingsID
+		END
+	END
+END
+IF OBJECT_ID('tempdb..#RolePermissions') IS NOT NULL
+BEGIN
+DROP TABLE #RolePermissions;
+END
+
+END TRY
+BEGIN CATCH
+    SELECT 
+         ERROR_NUMBER() AS ErrorNumber
+        ,ERROR_SEVERITY() AS ErrorSeverity
+        ,ERROR_STATE() AS ErrorState
+        ,ERROR_PROCEDURE() AS ErrorProcedure
+        ,ERROR_LINE() AS ErrorLine
+        ,ERROR_MESSAGE() AS ErrorMessage;
+
+    IF @@TRANCOUNT > 0
+        ROLLBACK TRANSACTION;
+END CATCH;
+
+IF @@TRANCOUNT > 0
+    COMMIT TRANSACTION;
+
+
+SET @EditAllCategories = 0;
+DECLARE @RowsToProcessByUser int;
+DECLARE @CurrentRowByUser int;
+
+IF OBJECT_ID('tempdb..#UserPermissions') IS NOT NULL
+BEGIN
+DROP TABLE #UserPermissions;
+END
+CREATE TABLE #UserPermissions
+( 
+	RowID int not null primary key identity(1,1),
+	PremissionSettingsID int not null,
+	AddArticleToAll bit not null
+)
+
+INSERT INTO #UserPermissions SELECT PremissionSettingsID, AddArticleToAll FROM [dbo].[EasyDNNNewsUserPremissionSettings];
+SET @RowsToProcessByUser=@@ROWCOUNT;
+
+
+BEGIN TRANSACTION;
+BEGIN TRY
+SET NOCOUNT ON;
+SET @CurrentRowByUser = 0;
+WHILE @CurrentRowByUser < @RowsToProcessByUser
+BEGIN
+    SET @CurrentRowByUser = @CurrentRowByUser + 1;
+	SELECT @PremissionSettingsID = PremissionSettingsID, @EditAllCategories = AddArticleToAll FROM #UserPermissions WHERE RowID=@CurrentRowByUser;
+
+	IF @EditAllCategories <> 1
+	BEGIN
+	IF NOT EXISTS (SELECT [PremissionSettingsID] FROM [dbo].[EasyDNNNewsUserPremissionsAddToCategories] WHERE PremissionSettingsID = @PremissionSettingsID)
+		BEGIN
+			UPDATE [dbo].[EasyDNNNewsUserPremissionSettings]
+			   SET [ShowSharedGallery] = 0
+				  ,[ShowCustomGallery] = 0
+				  ,[AddPerArticle] = 0
+				  ,[PostToSocialNetwork] = 0
+				  ,[SubTitle] = 0
+				  ,[SEO] = 0
+				  ,[Summary] = 0
+				  ,[Text] = 0
+				  ,[Page] = 0
+				  ,[File] = 0
+				  ,[Link] = 0
+				  ,[None] = 0
+				  ,[Tags] = 0
+				  ,[ArticleGallery] = 0
+				  ,[GoogleMap] = 0
+				  ,[Events] = 0
+				  ,[Featured] = 0
+				  ,[PublishExpire] = 0
+				  ,[ChangeTemplate] = 0
+				  ,[AllowComments] = 0
+			 WHERE PremissionSettingsID = @PremissionSettingsID
+		END
+	END
+END
+IF OBJECT_ID('tempdb..#UserPermissions') IS NOT NULL
+BEGIN
+DROP TABLE #UserPermissions;
+END
+
+END TRY
+BEGIN CATCH
+    SELECT 
+         ERROR_NUMBER() AS ErrorNumber
+        ,ERROR_SEVERITY() AS ErrorSeverity
+        ,ERROR_STATE() AS ErrorState
+        ,ERROR_PROCEDURE() AS ErrorProcedure
+        ,ERROR_LINE() AS ErrorLine
+        ,ERROR_MESSAGE() AS ErrorMessage;
+
+    IF @@TRANCOUNT > 0
+        ROLLBACK TRANSACTION;
+END CATCH;
+
+IF @@TRANCOUNT > 0
+    COMMIT TRANSACTION;

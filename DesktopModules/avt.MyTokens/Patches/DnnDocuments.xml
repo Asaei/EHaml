@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<patch>
+    <for>
+        <module-name>DNN_Documents</module-name>
+        <keys>
+            <key></key>
+        </keys>
+    </for>
+    <patcher>avt.MyTokens.Patching.SimplePatcher,avt.MyTokens.Core</patcher>
+    <code-vb>
+        <init>
+        </init>
+        <pre-render>
+        <![CDATA[
+            For Each grItem As DataGridItem In grdDocuments.Items
+                For Each ctrl As Control In grItem.Controls
+                    If ctrl.Controls.Count > 0 Then
+                        For Each sctrl As Control In ctrl.Controls
+                            If TypeOf sctrl Is HyperLink And sctrl.ID <> "editLink" Then
+                                Dim lnk As HyperLink = TryCast(sctrl, HyperLink)
+                                lnk.Text = Tokenize(lnk.Text, ModuleConfiguration, False, False)
+                                lnk.ToolTip = Tokenize(lnk.ToolTip, ModuleConfiguration, False, False)
+                                lnk.NavigateUrl = Tokenize(lnk.NavigateUrl, ModuleConfiguration, False, False)
+                            ElseIf TypeOf sctrl Is LiteralControl Then
+                                Dim lit As LiteralControl = TryCast(sctrl, LiteralControl)
+                                lit.Text = Tokenize(lit.Text, ModuleConfiguration, False, False)
+                            End If
+                        Next
+                    Else
+                        Dim cell As TableCell = TryCast(ctrl, TableCell)
+                        cell.Text = Tokenize(cell.Text, ModuleConfiguration, False, False)
+                    End If
+                Next
+            Next
+        ]]>
+        </pre-render>
+    </code-vb>
+	<code-cs>
+        <init>
+        </init>
+        <pre-render>
+        <![CDATA[
+            foreach (DataGridItem grItem in grdDocuments.Items) {
+				foreach (Control ctrl in grItem.Controls) {
+					if (ctrl.Controls.Count > 0) {
+						foreach (Control sctrl in ctrl.Controls) {
+							if (sctrl is HyperLink & sctrl.ID != "editLink") {
+								HyperLink lnk = sctrl as HyperLink;
+								lnk.Text = Tokenize(lnk.Text, ModuleConfiguration, false, false);
+								lnk.ToolTip = Tokenize(lnk.ToolTip, ModuleConfiguration, false, false);
+								lnk.NavigateUrl = Tokenize(lnk.NavigateUrl, ModuleConfiguration, false, false);
+							} else if (sctrl is LiteralControl) {
+								LiteralControl lit = sctrl as LiteralControl;
+								lit.Text = Tokenize(lit.Text, ModuleConfiguration, false, false);
+							}
+						}
+					} else {
+						TableCell cell = ctrl as TableCell;
+						cell.Text = Tokenize(cell.Text, ModuleConfiguration, false, false);
+					}
+				}
+			}
+
+        ]]>
+        </pre-render>
+    </code-cs>
+</patch>

@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AllCategories.Text" xml:space="preserve">
+    <value>تمام دسته ها</value>
+  </data>
+  <data name="Category.Text" xml:space="preserve">
+    <value>دسته</value>
+  </data>
+  <data name="cmdCancelAdd.Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="cmdConfirmAdd.Text" xml:space="preserve">
+    <value>Proceed</value>
+  </data>
+  <data name="PermissionEdit.Text" xml:space="preserve">
+    <value>تنها ویرایشگران صفحه</value>
+  </data>
+  <data name="PermissionView.Text" xml:space="preserve">
+    <value>همانند صفحه</value>
+  </data>
+  <data name="ShareableWarningAlternate.Text" xml:space="preserve">
+    <value>اگر این متن باعث گمراهی شما می شود و یا روی سایتی کار می کنید که تحمل شکست را ندارد، باید روی گزینه انصراف کلیک کرده و با &lt;a href="mailto:support@dotnetnuke.com"&gt; تیم پشتیبانی دات نت نیوک &lt;/ a&gt;. تماس بگیرید</value>
+  </data>
+  <data name="ShareableWarningContent.Text" xml:space="preserve">
+    <value>You are attempting to add a reference to this module that exists on another site in this group. This module may or may not support sharing across multiple sites - it doesn't explicitly state either way whether it does. &lt;br/&gt;&lt;br/&gt;If you are sure that it does, or if your intent is to test its ability to do so, then proceed with caution and be aware that certain functionality in the module - or even the entire module - may not function correctly in this configuration.</value>
+  </data>
+  <data name="ShareableWarningHeader.Text" xml:space="preserve">
+    <value>&lt;span style="color: red;"&gt;اخطار&lt;/span&gt;:این ماژول ممکن است در سایت های اشتراکی  کار نکند</value>
+  </data>
+  <data name="ShareableWarningTitle.Text" xml:space="preserve">
+    <value>ممکن است به خوبی کار نکند</value>
+  </data>
+  <data name="Tool.ClearCache.Text" xml:space="preserve">
+    <value>پاکسازی cache</value>
+  </data>
+  <data name="Tool.DeletePage.Confirm" xml:space="preserve">
+    <value>آیا از حذف این صفحه اطمینان دارید?</value>
+  </data>
+  <data name="Tool.DeletePage.Special.ToolTip" xml:space="preserve">
+    <value>شما نمی توانید این صفحه را حذف کنید، چرا که این صفحه یک صفحه سیستمی است و یا در حال استفاده اسا. &gt;تنظیمات پیشرفته &gt; در مدیریت صفحات را ببیند و یا با مدیر سیستم تماس بگیرید.</value>
+  </data>
+  <data name="Tool.Help.Text" xml:space="preserve">
+    <value>راهنمایی</value>
+  </data>
+  <data name="Tool.Help.ToolTip" xml:space="preserve">
+    <value>راهنمایی آنلاین</value>
+  </data>
+  <data name="Tool.RecycleApp.Text" xml:space="preserve">
+    <value>پاکسازی Application Pool</value>
+  </data>
+  <data name="Tool.UploadFile.Text" xml:space="preserve">
+    <value>آپلود فایل</value>
+  </data>
+  <data name="Pane.AddBottom.Text" xml:space="preserve">
+    <value>افزودن به انتهای {0}</value>
+  </data>
+  <data name="Pane.AddTop.Text" xml:space="preserve">
+    <value>افزودن به ابتدای {0}</value>
+  </data>
+  <data name="Tool.AddExistingModule.Text" xml:space="preserve">
+    <value>افزودن ماژول موجود</value>
+  </data>
+  <data name="Tool.AddNewModule.Text" xml:space="preserve">
+    <value>افزودن ماژول جدید</value>
+  </data>
+  <data name="Tool.AddNewPage.Text" xml:space="preserve">
+    <value>افزودن صفحه جدید</value>
+  </data>
+  <data name="Tool.AddToBookmarks.ToolTip" xml:space="preserve">
+    <value>افزودن به علاقه مندی ها</value>
+  </data>
+  <data name="Tool.Admin.Text" xml:space="preserve">
+    <value>مدیر</value>
+  </data>
+  <data name="Tool.CopyPage.Text" xml:space="preserve">
+    <value>کپی صفحه</value>
+  </data>
+  <data name="Tool.DeletePage.Text" xml:space="preserve">
+    <value>حذف صفحه</value>
+  </data>
+  <data name="Tool.EditPage.Text" xml:space="preserve">
+    <value>ویرایش صفحه</value>
+  </data>
+  <data name="Tool.EditThisPage.Text" xml:space="preserve">
+    <value>ویرایش این صفحه</value>
+  </data>
+  <data name="Tool.ExportPage.Text" xml:space="preserve">
+    <value>اکسپورت صفحه</value>
+  </data>
+  <data name="Tool.FindModules.Text" xml:space="preserve">
+    <value>یافتن ماژول های بیشتر</value>
+  </data>
+  <data name="Tool.Host.Text" xml:space="preserve">
+    <value>میزبان</value>
+  </data>
+  <data name="Tool.ImportPage.Text" xml:space="preserve">
+    <value>ایمپورت صفحه</value>
+  </data>
+  <data name="Tool.GettingStarted.Text" xml:space="preserve">
+    <value>شروع کار</value>
+  </data>
+  <data name="Tool.LayoutMode.Text" xml:space="preserve">
+    <value>نمایش در حالت طرح بندی</value>
+  </data>
+  <data name="Tool.MakeCopy.Text" xml:space="preserve">
+    <value>کپی محتوای ماژول</value>
+  </data>
+  <data name="Tool.ManageRoles.Text" xml:space="preserve">
+    <value>مدیریت نقش ها</value>
+  </data>
+  <data name="Tool.ManageTemplate.Text" xml:space="preserve">
+    <value>ظاهر صفحه</value>
+  </data>
+  <data name="Tool.ManageUsers.Text" xml:space="preserve">
+    <value>مدیریت کاربران</value>
+  </data>
+  <data name="Tool.MobilePreview.Text" xml:space="preserve">
+    <value>پیش نمایش موبایل</value>
+  </data>
+  <data name="Tool.Modules.Text" xml:space="preserve">
+    <value>ماژول ها</value>
+  </data>
+  <data name="Tool.NewUser.Text" xml:space="preserve">
+    <value>افزودن کاربر جدید</value>
+  </data>
+  <data name="Tool.PagePermissions.Text" xml:space="preserve">
+    <value>مجوزهای دسترسی صفحه</value>
+  </data>
+  <data name="Tool.Pages.Text" xml:space="preserve">
+    <value>صفحات</value>
+  </data>
+  <data name="Tool.PageSettings.Text" xml:space="preserve">
+    <value>تنظیمات صفحه</value>
+  </data>
+  <data name="Tool.RemoveFromBookmarks.ToolTip" xml:space="preserve">
+    <value>خارج کردن از علاقه مندی ها</value>
+  </data>
+  <data name="Tool.SwitchSites.Button" xml:space="preserve">
+    <value>برو</value>
+  </data>
+  <data name="Tool.SwitchSites.Text" xml:space="preserve">
+    <value>تعویض سایت:</value>
+  </data>
+  <data name="Tool.Tools.Text" xml:space="preserve">
+    <value>دسترسی سریع</value>
+  </data>
+  <data name="Tool.Users.Text" xml:space="preserve">
+    <value>کاربران</value>
+  </data>
+  <data name="Tool.CloseEditMode.Text" xml:space="preserve">
+    <value>بستن حالت ویرایش</value>
+  </data>
+  <data name="LoadingModule.Text" xml:space="preserve">
+    <value>بارگزاری ماژول (ها)</value>
+  </data>
+  <data name="LoadingTabModule.Text" xml:space="preserve">
+    <value>&lt;b style="color:#fff"&gt;برای آغاز کار&lt;/b&gt;, لطفا &lt;b style="color:#fff"&gt; ابتدا سایت و صفحات را انتخاب کنیدe&lt;/b&gt; First</value>
+  </data>
+  <data name="SelectPage.Text" xml:space="preserve">
+    <value>انتخاب صحفه</value>
+  </data>
+  <data name="SelectSite.Text" xml:space="preserve">
+    <value>انتخاب سایت</value>
+  </data>
+  <data name="Pane.Add.Text" xml:space="preserve">
+    <value>افزودن به {0}</value>
+  </data>
+  <data name="Tool.CopyPermissionsToChildren.Text" xml:space="preserve">
+    <value>کپی کردن سطح دسترسی ها برای فرزندان</value>
+  </data>
+  <data name="Tool.StayInEditMode.Text" xml:space="preserve">
+    <value>ماندن در حالت ویرایش</value>
+  </data>
+  <data name="DragModuleToolTip.Text" xml:space="preserve">
+    <value>برای اضافه کردن ماژول به یک قسمت از صفحه، ماژول را به آن قسمت درگ نمایید</value>
+  </data>
+  <data name="Upgrade.Text" xml:space="preserve">
+    <value>آپگرید</value>
+  </data>
+  <data name="Tool.CopyPermissionsToChildrenPageEditor.Confirm" xml:space="preserve">
+    <value>سطوح دسترسی برای تمام فرزندان این صفحه جایگزین خواهد شد.&lt;br /&gt;&lt;br /&gt;آیا از ادامه این کار اطمینان دارید?</value>
+  </data>
+  <data name="Tool.AdvancedSettings.Text" xml:space="preserve">
+    <value>تنظیمات پیشرفته</value>
+  </data>
+  <data name="Tool.BookmarkedSettings.Text" xml:space="preserve">
+    <value>تنظیمات علاقه مندی ها</value>
+  </data>
+  <data name="Tool.CommonSettings.Text" xml:space="preserve">
+    <value>تنظیمات رایج</value>
+  </data>
+  <data name="Tool.SwitchLanguages.Text" xml:space="preserve">
+    <value>تعویض زبان ها</value>
+  </data>
+  <data name="Cancel.Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="Upgrade.ToolTip" xml:space="preserve">
+    <value>برای دریافت آخرین نسخه اینجا را کلیک کنید</value>
+  </data>
+  <data name="LoadingTabModuleCE.Text" xml:space="preserve">
+    <value>&lt;b style="color:#fff"&gt;برای آغاز کار&lt;/b&gt;, لطفا &lt;b style="color:#fff"&gt;ابتدا صفحه ای را انتخاب نمایید&lt;/b&gt;</value>
+  </data>
+  <data name="NoModule.Text" xml:space="preserve">
+    <value>ماژولی موجود نیست</value>
+  </data>
+</root>

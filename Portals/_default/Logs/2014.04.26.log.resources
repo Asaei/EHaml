@@ -1,0 +1,418 @@
+2014-04-26 00:37:48,568 [srv20079][Thread:14][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.InvalidOperationException: Sequence contains no elements
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.Single[TSource](IQueryable`1 source)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.ReplyToInquiry_Hl.FillPageControllsShenasname(String inquiryId)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.ReplyToInquiry_Hl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-26 00:37:48,616 [srv20079][Thread:14][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=113&error=An unexpected error has occurred
+System.InvalidOperationException: Sequence contains no elements
+   at System.Data.Linq.SqlClient.SqlProvider.Execute(Expression query, QueryInfo queryInfo, IObjectReaderFactory factory, Object[] parentArgs, Object[] userArgs, ICompiledSubQuery[] subQueries, Object lastResult)
+   at System.Data.Linq.SqlClient.SqlProvider.ExecuteAll(Expression query, QueryInfo[] queryInfos, IObjectReaderFactory factory, Object[] userArguments, ICompiledSubQuery[] subQueries)
+   at System.Data.Linq.SqlClient.SqlProvider.System.Data.Linq.Provider.IProvider.Execute(Expression query)
+   at System.Data.Linq.DataQuery`1.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.Single[TSource](IQueryable`1 source)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.ReplyToInquiry_Hl.FillPageControllsShenasname(String inquiryId)
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.ReplyToInquiry_Hl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-26 08:50:29,510 [srv20079][Thread:7][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Page.IsValid cannot be called before validation has taken place. It should be queried in the event handler for a control that has CausesValidation=True and initiated the postback, or after a call to Page.Validate.
+   at System.Web.UI.Page.get_IsValid()
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.Inquiry_Zadghal.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-26 08:50:29,594 [srv20079][Thread:7][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Page.IsValid cannot be called before validation has taken place. It should be queried in the event handler for a control that has CausesValidation=True and initiated the postback, or after a call to Page.Validate. ---> System.Web.HttpException: Page.IsValid cannot be called before validation has taken place. It should be queried in the event handler for a control that has CausesValidation=True and initiated the postback, or after a call to Page.Validate.
+   at System.Web.UI.Page.get_IsValid()
+   at MyDnn_EHaml.MyDnn_EHaml_Inquiries.Inquiry_Zadghal.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- End of inner exception stack trace ---
+2014-04-26 09:05:44,200 [srv20079][Thread:33][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Security.Membership.AspNetMembershipProvider.UserLogin(Int32 portalId, String username, String password, String authType, String verificationCode, UserLoginStatus& loginStatus)
+   at DotNetNuke.Entities.Users.UserController.ValidateUser(Int32 portalId, String username, String password, String authType, String verificationCode, String portalName, String ip, UserLoginStatus& loginStatus)
+   at DotNetNuke.Modules.Admin.Authentication.Login.OnLoginClick(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-26 09:05:44,228 [srv20079][Thread:33][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=57&error=An unexpected error has occurred
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Security.Membership.AspNetMembershipProvider.UserLogin(Int32 portalId, String username, String password, String authType, String verificationCode, UserLoginStatus& loginStatus)
+   at DotNetNuke.Entities.Users.UserController.ValidateUser(Int32 portalId, String username, String password, String authType, String verificationCode, String portalName, String ip, UserLoginStatus& loginStatus)
+   at DotNetNuke.Modules.Admin.Authentication.Login.OnLoginClick(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-26 09:18:46,162 [srv20079][Thread:37][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 09:18:46,211 [srv20079][Thread:25][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 10:10:39,183 [srv20079][Thread:21][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 10:10:39,192 [srv20079][Thread:48][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 10:12:30,965 [srv20079][Thread:49][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 77.104.107.130
+	Port: 36848
+	Referer: http://ehaml.ir/Login?returnurl=/&popUp=true
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
+	ViewState: N2cR5P+eYyan5HNRh9iA5A0aPHMjfIr/zZPf6CCPKvbtUOZe2A6sDQbC325l0wasGh0RnNf1P/lt8Qbx/ZKFpzqlJ6f1tvmVtrS1qtI2h3ad49CtEGHsaVWWGZ+t9QKPJtuDMJx3L0SYU2Pw+Qz/Ua3rH4iszTZLI2KpbhPLtskOkcncogwfN2Z3HkHPwX0fJ0yQRhcAhUHsFB8HMxd5b4XfLza3HjfJU8QINsfgoPnx2Szzxm/cA4zlqDhV3nWv4ENGbI+hpPTbOiugDq2AStngL6dkS/mQo35F/oDH1SL0Qgwl8Ziwpt1RXJfA12ctBCy9tAZPoo83B+TFLkRgP+Q0l7FKMxK1Y5t1toboT1979csf8ZFvDwIbXu8NNnr+lvFwbWMvhACC8qOXA0qdn+zLzETqdRKVbCqjOSS7IVvuBSrkdTKNrPBpRQclj071iTHSayiRLnJLTvBHmzdH2taEtM0cY5qrkpsTaDk/2AesMijxYQCF+DL3iJcK+fO5a/bEnP3BVX4MeFFDbsASzLnSofWZnOJKxaKY0wN+64mBnGlxszCfBHk+JgK86nLeRCXw5YJ2N8tJqS+pVvr2JMTkdLlgNJ/XmHBxZ/SgL7ni2WwU86U52HQuCt+bCfNTc/r3Cuj0p7NhrrMBkfr5SLs6l1FGXC5VLaBCH1irMA0bXjKQVE/SEKq4csONnuFVeZMS48gIOl13bOa6mxXU/fj2c4ZIjHUAoRR7Cr2Fxg6XFLzSypqUUpiebrNW1nbh2no1y2UAZzbwAAZExcJWj7o0xpis+1wPMkuBiqSa3...
+   at System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-26 10:12:31,006 [srv20079][Thread:49][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.HttpException: Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 77.104.107.130
+	Port: 36848
+	Referer: http://ehaml.ir/Login?returnurl=/&popUp=true
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
+	ViewState: N2cR5P+eYyan5HNRh9iA5A0aPHMjfIr/zZPf6CCPKvbtUOZe2A6sDQbC325l0wasGh0RnNf1P/lt8Qbx/ZKFpzqlJ6f1tvmVtrS1qtI2h3ad49CtEGHsaVWWGZ+t9QKPJtuDMJx3L0SYU2Pw+Qz/Ua3rH4iszTZLI2KpbhPLtskOkcncogwfN2Z3HkHPwX0fJ0yQRhcAhUHsFB8HMxd5b4XfLza3HjfJU8QINsfgoPnx2Szzxm/cA4zlqDhV3nWv4ENGbI+hpPTbOiugDq2AStngL6dkS/mQo35F/oDH1SL0Qgwl8Ziwpt1RXJfA12ctBCy9tAZPoo83B+TFLkRgP+Q0l7FKMxK1Y5t1toboT1979csf8ZFvDwIbXu8NNnr+lvFwbWMvhACC8qOXA0qdn+zLzETqdRKVbCqjOSS7IVvuBSrkdTKNrPBpRQclj071iTHSayiRLnJLTvBHmzdH2taEtM0cY5qrkpsTaDk/2AesMijxYQCF+DL3iJcK+fO5a/bEnP3BVX4MeFFDbsASzLnSofWZnOJKxaKY0wN+64mBnGlxszCfBHk+JgK86nLeRCXw5YJ2N8tJqS+pVvr2JMTkdLlgNJ/XmHBxZ/SgL7ni2WwU86U52HQuCt+bCfNTc/r3Cuj0p7NhrrMBkfr5SLs6l1FGXC5VLaBCH1irMA0bXjKQVE/SEKq4csONnuFVeZMS48gIOl13bOa6mxXU/fj2c4ZIjHUAoRR7Cr2Fxg6XFLzSypqUUpiebrNW1nbh2no1y2UAZzbwAAZExcJWj7o0xpis+1wPMkuBiqSa3...
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- End of inner exception stack trace ---
+2014-04-26 10:14:48,323 [srv20079][Thread:35][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 10:14:48,328 [srv20079][Thread:24][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 10:16:01,892 [srv20079][Thread:44][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 10:16:01,913 [srv20079][Thread:8][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 10:19:18,011 [srv20079][Thread:19][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 10:19:18,013 [srv20079][Thread:24][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 10:21:18,382 [srv20079][Thread:33][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-26 10:21:18,442 [srv20079][Thread:33][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=108&error=An unexpected error has occurred
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-26 10:22:21,858 [srv20079][Thread:33][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 10:22:21,862 [srv20079][Thread:35][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 10:22:27,416 [srv20079][Thread:48][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-26 10:22:27,417 [srv20079][Thread:48][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=110&error=An unexpected error has occurred
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-26 10:23:03,369 [srv20079][Thread:35][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Security.Membership.AspNetMembershipProvider.UserLogin(Int32 portalId, String username, String password, String authType, String verificationCode, UserLoginStatus& loginStatus)
+   at DotNetNuke.Entities.Users.UserController.ValidateUser(Int32 portalId, String username, String password, String authType, String verificationCode, String portalName, String ip, UserLoginStatus& loginStatus)
+   at DotNetNuke.Modules.Admin.Authentication.Login.OnLoginClick(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-26 10:23:03,371 [srv20079][Thread:35][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=57&error=An unexpected error has occurred
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Security.Membership.AspNetMembershipProvider.UserLogin(Int32 portalId, String username, String password, String authType, String verificationCode, UserLoginStatus& loginStatus)
+   at DotNetNuke.Entities.Users.UserController.ValidateUser(Int32 portalId, String username, String password, String authType, String verificationCode, String portalName, String ip, UserLoginStatus& loginStatus)
+   at DotNetNuke.Modules.Admin.Authentication.Login.OnLoginClick(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-26 10:26:21,508 [srv20079][Thread:41][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 10:26:21,512 [srv20079][Thread:47][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 10:26:41,178 [srv20079][Thread:44][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-26 10:26:41,178 [srv20079][Thread:44][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=108&error=An unexpected error has occurred
+System.ArgumentOutOfRangeException: Year, Month, and Day parameters describe an un-representable DateTime.
+   at System.DateTime.DateToTicks(Int32 year, Int32 month, Int32 day)
+   at System.DateTime..ctor(Int32 year, Int32 month, Int32 day)
+   at Telerik.Web.UI.Calendar.Utils.Utility.ConvertToServerDateTimeCollection(DateTimeCollection dateTimeCollection, String inputString)
+   at Telerik.Web.UI.RadCalendar.LoadPostData(String postDataKey, NameValueCollection postCollection)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-26 10:28:45,855 [srv20079][Thread:19][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Security.Membership.AspNetMembershipProvider.UserLogin(Int32 portalId, String username, String password, String authType, String verificationCode, UserLoginStatus& loginStatus)
+   at DotNetNuke.Entities.Users.UserController.ValidateUser(Int32 portalId, String username, String password, String authType, String verificationCode, String portalName, String ip, UserLoginStatus& loginStatus)
+   at DotNetNuke.Modules.Admin.Authentication.Login.OnLoginClick(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-26 10:28:45,856 [srv20079][Thread:19][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=57&error=An unexpected error has occurred
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Security.Membership.AspNetMembershipProvider.UserLogin(Int32 portalId, String username, String password, String authType, String verificationCode, UserLoginStatus& loginStatus)
+   at DotNetNuke.Entities.Users.UserController.ValidateUser(Int32 portalId, String username, String password, String authType, String verificationCode, String portalName, String ip, UserLoginStatus& loginStatus)
+   at DotNetNuke.Modules.Admin.Authentication.Login.OnLoginClick(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-26 10:29:17,640 [srv20079][Thread:41][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 10:29:17,654 [srv20079][Thread:19][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 10:32:57,856 [srv20079][Thread:47][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 10:32:59,241 [srv20079][Thread:21][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 10:35:45,337 [srv20079][Thread:44][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 10:35:45,362 [srv20079][Thread:8][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 10:48:58,551 [srv20079][Thread:44][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 10:48:58,561 [srv20079][Thread:8][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 10:51:49,820 [srv20079][Thread:47][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 77.104.107.130
+	Port: 10159
+	Referer: http://ehaml.ir/Login?returnurl=/&popUp=true
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
+	ViewState: EEG9mZuxlaEFrfXbwG+5aEvOIVeAVovq/J6PC1jTPKAoPDNFo+NNS9jKQPb7jXw0G48J/gQPV2wcKlOieASG6voeQ66ojV3Yd6MWaY9oS3mFWZn9OQePnjdmRyWKC2dcgp5I4qQGpixuRpH8FwRw3okoo1NrzGzS4xBI/FEM62OZOQvBgi78KukPLktxxzz4aoh/jI7cmG1msZNwf0YVLH9TBxt6C3m9CjMam/9j/ZkD9CFSTGn23QC0vtfyRaYprGURIZVXiv0SCdy3jPvhGiZp+N+B6v7nmxHsztFjITksGUyPpLx3aiX8MlGGufjksH5a/CC+3SLVGkvrjMU2jsNlMTw1mLZ3FlbRRVE5pGnjUeBtKQursgmaqi8COpIClWAzRIocwGMrL+qvPJ07SQZwSLnUYivG4YiMgNYHSfp0h9hHxTC1agO097a1Rn/KW9TF+fGp4FRKO10D79tvRGJqPyQtsEYpBSGD//io1/Ote/1DjKgKQCcVUOBstTBWYuq6MmhpqPa8QTPVCj3DnyEyzR9FByldh26p6ISjAcjIbRVzELpJihm2hw9DONg1vmsYhchJT95RZGun+SWUovGpKJexySdvp+/59k3MFbvR6YhyuDUI3D50mFq7uvpdzf79ffSGVZJmR0+rfDZZAsW5FxZu+DPT4l4Vng9jQ/Kos1o8Y7kiAqKJqVtuDHTw/p7M+tGy5OaJpC2SrFp1S/pjGmFetYaz/cZGYQjtltBvO6B/lzq/dDIuJAiXD+ZeFtHcixz66EfEADdcH4lC/RIE91YrrE4Q4qVnIiOHu...
+   at System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-04-26 10:51:49,822 [srv20079][Thread:47][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.HttpException: Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+http://go.microsoft.com/fwlink/?LinkID=314055 ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: 77.104.107.130
+	Port: 10159
+	Referer: http://ehaml.ir/Login?returnurl=/&popUp=true
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
+	ViewState: EEG9mZuxlaEFrfXbwG+5aEvOIVeAVovq/J6PC1jTPKAoPDNFo+NNS9jKQPb7jXw0G48J/gQPV2wcKlOieASG6voeQ66ojV3Yd6MWaY9oS3mFWZn9OQePnjdmRyWKC2dcgp5I4qQGpixuRpH8FwRw3okoo1NrzGzS4xBI/FEM62OZOQvBgi78KukPLktxxzz4aoh/jI7cmG1msZNwf0YVLH9TBxt6C3m9CjMam/9j/ZkD9CFSTGn23QC0vtfyRaYprGURIZVXiv0SCdy3jPvhGiZp+N+B6v7nmxHsztFjITksGUyPpLx3aiX8MlGGufjksH5a/CC+3SLVGkvrjMU2jsNlMTw1mLZ3FlbRRVE5pGnjUeBtKQursgmaqi8COpIClWAzRIocwGMrL+qvPJ07SQZwSLnUYivG4YiMgNYHSfp0h9hHxTC1agO097a1Rn/KW9TF+fGp4FRKO10D79tvRGJqPyQtsEYpBSGD//io1/Ote/1DjKgKQCcVUOBstTBWYuq6MmhpqPa8QTPVCj3DnyEyzR9FByldh26p6ISjAcjIbRVzELpJihm2hw9DONg1vmsYhchJT95RZGun+SWUovGpKJexySdvp+/59k3MFbvR6YhyuDUI3D50mFq7uvpdzf79ffSGVZJmR0+rfDZZAsW5FxZu+DPT4l4Vng9jQ/Kos1o8Y7kiAqKJqVtuDHTw/p7M+tGy5OaJpC2SrFp1S/pjGmFetYaz/cZGYQjtltBvO6B/lzq/dDIuJAiXD+ZeFtHcixz66EfEADdcH4lC/RIE91YrrE4Q4qVnIiOHu...
+   --- End of inner exception stack trace ---
+   at System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- End of inner exception stack trace ---
+2014-04-26 10:52:27,960 [srv20079][Thread:41][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 10:52:27,981 [srv20079][Thread:47][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 10:54:49,440 [srv20079][Thread:35][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 10:54:49,451 [srv20079][Thread:6][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 11:10:02,870 [srv20079][Thread:31][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Security.Membership.AspNetMembershipProvider.UpdateUserMembership(UserInfo user)
+   at DotNetNuke.Security.Membership.AspNetMembershipProvider.UpdateUser(UserInfo user)
+   at DotNetNuke.Entities.Users.UserController.UpdateUser(Int32 portalId, UserInfo user, Boolean loggedAction, Boolean clearCache)
+   at DotNetNuke.HttpModules.Membership.MembershipModule.AuthenticateRequest(HttpContextBase context, Boolean allowUnknownExtensinons)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 11:11:24,852 [srv20079][Thread:6][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.IO.IOException: The process cannot access the file 'C:\HostingSpaces\mydnn\ehaml.com\wwwroot\Desktopmodules\LiveTabs\License.lic' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path)
+   at Mandeeps.DNN.Modules.Licensing.LicenseManager.method_0(Object object_0)
+   at Mandeeps.DNN.Modules.Licensing.LicenseManager.method_6(License license_1)
+   at Mandeeps.DNN.Modules.Licensing.LicenseManager.method_3()
+   at Mandeeps.DNN.Modules.Licensing.LicenseManager..ctor(AppType App, LicenseType Edition, String InstallId, String PortalId, String Domain, String AppID, String LicenseFile, Int32 TrialDays, Int32 ValidateDays, String AppVersion, String PlatformVersion)
+   at Mandeeps.DNN.Modules.LiveTabs.View.#9()
+2014-04-26 11:16:11,314 [srv20079][Thread:7][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 11:16:11,331 [srv20079][Thread:29][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 11:16:36,050 [srv20079][Thread:20][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 11:16:36,061 [srv20079][Thread:29][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 11:17:39,938 [srv20079][Thread:45][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 11:17:39,962 [srv20079][Thread:20][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 11:18:30,857 [srv20079][Thread:35][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 11:18:30,882 [srv20079][Thread:44][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 11:32:24,334 [srv20079][Thread:20][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 11:32:24,343 [srv20079][Thread:33][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 11:32:54,965 [srv20079][Thread:48][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 11:32:54,981 [srv20079][Thread:14][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): This is an invalid webresource request.
+   at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2014-04-26 11:33:52,370 [srv20079][Thread:24][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.Security.Membership.AspNetMembershipProvider.UpdateUserMembership(UserInfo user)
+   at DotNetNuke.Security.Membership.AspNetMembershipProvider.UpdateUser(UserInfo user)
+   at DotNetNuke.Entities.Users.UserController.UpdateUser(Int32 portalId, UserInfo user, Boolean loggedAction, Boolean clearCache)
+   at DotNetNuke.HttpModules.Membership.MembershipModule.AuthenticateRequest(HttpContextBase context, Boolean allowUnknownExtensinons)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

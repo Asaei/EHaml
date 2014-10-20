@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ModuleHelp.Text" xml:space="preserve">
+    <value>&lt;h1&gt;درباره نویسنده پکیج&lt;/h1&gt;&lt;p&gt;می توانید پکیج ایجاد کنید.&lt;/p&gt;</value>
+  </data>
+  <data name="ControlTitle_packagewriter.Text" xml:space="preserve">
+    <value>ایجاد پکیج</value>
+  </data>
+  <data name="Introduction.Help" xml:space="preserve">
+    <value>در این ویزارد می توانید تمام فایل های موردنیاز را برای نصب این ویژگی در یک وبسایت دیگر، به صورت پکیج درآورید.</value>
+  </data>
+  <data name="Introduction.Title" xml:space="preserve">
+    <value>ایجاد پکیج</value>
+  </data>
+  <data name="plBasePath.Help" xml:space="preserve">
+    <value>فولدری که فایل های پکیج در آن است.</value>
+  </data>
+  <data name="plBasePath.Text" xml:space="preserve">
+    <value>فولدر</value>
+  </data>
+  <data name="plBinFolder.Help" xml:space="preserve">
+    <value>فولدری که حاوی فایل های اسمبلی است را انتخاب کنید.</value>
+  </data>
+  <data name="plBinFolder.Text" xml:space="preserve">
+    <value>فولدر اسمبلی</value>
+  </data>
+  <data name="Cancel.Text" xml:space="preserve">
+    <value>بازگشت</value>
+  </data>
+  <data name="ChooseFiles.Help" xml:space="preserve">
+    <value>در این مرحله می توانید فایلهایی را برای قرار گرفتن در پکیج خود اضافه نمایید.  ویزارد سعی می کند فایل های موجود را تشخیص داده و اضافه نماید اما در صورت تمایل می توانید فایل هایی را از لیست حذف نموده یا اضافه کنید.  با انتخاب گزینه قراردادن کدمنبع می تانید کد را نیز اضافه کمید.</value>
+  </data>
+  <data name="ChooseFiles.Title" xml:space="preserve">
+    <value>فایل ها را برای  قرار گرفتن در پکیج انتخاب کنید </value>
+  </data>
+  <data name="cmdGetFiles.Text" xml:space="preserve">
+    <value>بازسازی لیست فایل ها</value>
+  </data>
+  <data name="chkIncludeSource.Text" xml:space="preserve">
+    <value>شامل سورس کد:</value>
+  </data>
+  <data name="ChooseAssemblies.Help" xml:space="preserve">
+    <value>در این مرحله می توانید اسمبلی هایی را برای قرار گرفتن در پکیج خود اضافه نمایید. در صورتی که فایل پروژه ای در فولدر پکیج وجود داشته باشد، ویزارد سعی می کنداسمبلی موجود را تشخیص دهد اما در صورت تمایل می توانید اسمبلی ها را از لیست حذف نمایید.</value>
+  </data>
+  <data name="ChooseAssemblies.Title" xml:space="preserve">
+    <value>اسمبلی ها را برای قرار گرفتن در پکیج انتخاب کنید.</value>
+  </data>
+  <data name="cmdGetAssemblies.Text" xml:space="preserve">
+    <value>بازسازی لیست</value>
+  </data>
+  <data name="Complete.Text" xml:space="preserve">
+    <value>پکیج کامل (zip):</value>
+  </data>
+  <data name="FinalStep.Help" xml:space="preserve">
+    <value>آخرین مرحله ایجاد پکیج است.برای ایجاد یک کپی از فایل مانیفست گزینه " ایجاد فایل مانیفست" را کلیک کنید. -  این فایل در فولدر پکیج ایجاد خواهد شد.هرگزینه ای را که در این قسمت انتخاب کنید، باز هم مانیفست در دیتابیس ذخیره شده و  به پکیج اضافه می شود.&lt;br/&gt;&lt;br/&gt;  
+برای ایجاد پکیج گزینه "ایجاد پکیج" را انتخاب کنید. این پکیج در پوشه  Install مربوطه ایجاد می شود. (مثلا Install/Modules برای ماژول ها, Install/Skins برای پوسته ها).</value>
+  </data>
+  <data name="FinalStep.Title" xml:space="preserve">
+    <value>ایجاد پکیج</value>
+  </data>
+  <data name="Manifest.Text" xml:space="preserve">
+    <value>فقط مانیفست (dnn):</value>
+  </data>
+  <data name="plManifestName.Help" xml:space="preserve">
+    <value>نام فایل مانیفست را وارد کنید.</value>
+  </data>
+  <data name="plManifestName.Text" xml:space="preserve">
+    <value>نام فایل مانیفست:</value>
+  </data>
+  <data name="LogTitle.Text" xml:space="preserve">
+    <value>لاگ های ایجاد پکیج</value>
+  </data>
+  <data name="plArchiveName.Help" xml:space="preserve">
+    <value>نامی را برای فایل آرشیو (zip) وارد کنید. .</value>
+  </data>
+  <data name="plArchiveName.Text" xml:space="preserve">
+    <value>نام فایل آرشیو:</value>
+  </data>
+  <data name="WriterResults.Help" xml:space="preserve">
+    <value>نتایج ایجاد پکیج را در ادامه مشاهده می کنید.</value>
+  </data>
+  <data name="WriterResults.Title" xml:space="preserve">
+    <value>نتایج ایجاد پکیج</value>
+  </data>
+  <data name="CreateManifest.Help" xml:space="preserve">
+    <value>بر اساس انتخابی که انجام داده اید، ویزارد مانیفستی را برای پکیج ایجاد نموده است. نام مانیفست را در جعبه متن زیر مشاهده می کنید.می توانید پیش از ایجاد پکیج فایل مانیفست را ویرایش کنید.</value>
+  </data>
+  <data name="CreateManifest.Title" xml:space="preserve">
+    <value>ایجاد مانیفست</value>
+  </data>
+  <data name="plManifest.Help" xml:space="preserve">
+    <value>برای ایجاد فایل مانیفست این گزینه را فعال کنید.</value>
+  </data>
+  <data name="plManifest.Text" xml:space="preserve">
+    <value>ایجاد فایل مانیفست:</value>
+  </data>
+  <data name="plPackage.Help" xml:space="preserve">
+    <value>برای ایجاد فایل  (zip) پکیج این گزینه را فعال کنید.</value>
+  </data>
+  <data name="plPackage.Text" xml:space="preserve">
+    <value>ایجاد پکیج:</value>
+  </data>
+  <data name="plReviewManifest.Help" xml:space="preserve">
+    <value>برای بازبینی مانیفست پیش از ایجاد پکیج این گزینه را فعال کنید.</value>
+  </data>
+  <data name="plReviewManifest.Text" xml:space="preserve">
+    <value>بازبینی مانیفست:</value>
+  </data>
+  <data name="plUseManifest.Help" xml:space="preserve">
+    <value>در صورتی که می خواهید برای پکیج از مانیفست موجود استفاده کنید، این گزینه را فعال کنید</value>
+  </data>
+  <data name="plUseManifest.Text" xml:space="preserve">
+    <value>استفاده از مانیفست موجود:</value>
+  </data>
+  <data name="plChooseManifest.Help" xml:space="preserve">
+    <value>در صورتی که می خواهید از مانیفستی که قبلا ایجاد شده استفاده کنید، آن مانیفست را انتخاب کنید.</value>
+  </data>
+  <data name="plChooseManifest.Text" xml:space="preserve">
+    <value>انتخاب فایل مانیفست:</value>
+  </data>
+  <data name="NoFileName.Text" xml:space="preserve">
+    <value>نامی را برای پکیچ وارد کنید.</value>
+  </data>
+  <data name="ManifestHelp.Text" xml:space="preserve">
+    <value>&lt;p&gt;این ویزارد مانیفستی را برای ابزار شما ایجاد می کند.اگر مانیفست را قبلا ایجاد نموده اید( چه از طریق اجرای ویزارد چه به صورت دستی) می توانید با استفاده از گزینه "استفاده از مانیفست موجود" از همان فایل مانیفست برای این ابزار، استفاده کنید. &lt;/p&gt;
+&lt;p&gt;در آخرین مرحله از ویزارد می توانید مانیفست را بازبینی کنید. -  در صورتی که می خواهید پیش از ایجاد فایل ZIP برخی تغییرات را در پکیج انجام دهید.&lt;/p&gt;</value>
+  </data>
+  <data name="InvalidPackageName.Text" xml:space="preserve">
+    <value>نام پکیج عیرمجاز -نام پکیج باید پسوند".zip"داشته باشد.</value>
+  </data>
+  <data name="InvalidManifestExtension.Text" xml:space="preserve">
+    <value>پسوند مانیفست غیرمجاز - پسوند مانیفست باید ".dnn" باشد.</value>
+  </data>
+  <data name="Success.Text" xml:space="preserve">
+    <value>پکیج ایجاد شد و در فولدر {0} موجود است.</value>
+  </data>
+</root>

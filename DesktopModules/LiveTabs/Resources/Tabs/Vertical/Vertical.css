@@ -1,0 +1,150 @@
+/*
+ * jQuery UI CSS Framework 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ */
+
+/* Layout helpers
+----------------------------------*/
+.livetabsverticalvertical .ui-helper-hidden { display: none; }
+.livetabsverticalvertical .ui-helper-hidden-accessible { position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px,1px,1px,1px); }
+.livetabsverticalvertical .ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.livetabsverticalvertical .ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.livetabsverticalvertical .ui-helper-clearfix { display: inline-block; }
+/* required comment for clearfix to work in Opera \*/
+* html .ui-helper-clearfix { height:1%; }
+.livetabsverticalvertical .ui-helper-clearfix { display:block; }
+/* end clearfix */
+.livetabsverticalvertical .ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+
+
+/* Interaction Cues
+----------------------------------*/
+.livetabsverticalvertical .ui-state-disabled { cursor: default !important; }
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.livetabsverticalvertical .ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.livetabsverticalvertical .ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+
+/*
+ * jQuery UI CSS Framework 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ *
+ * To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Helvetica,Arial,sans-serif&fwDefault=bold&fsDefault=1.1em&cornerRadius=2&bgColorHeader=c5c5c5&bgTextureHeader=01_flat.png&bgImgOpacityHeader=100&borderColorHeader=aaaaaa&fcHeader=222222&iconColorHeader=ffffff&bgColorContent=ffffff&bgTextureContent=01_flat.png&bgImgOpacityContent=75&borderColorContent=aaaaaa&fcContent=222222&iconColorContent=222222&bgColorDefault=c5c5c5&bgTextureDefault=01_flat.png&bgImgOpacityDefault=75&borderColorDefault=c5c5c5&fcDefault=555555&iconColorDefault=888888&bgColorHover=ffffff&bgTextureHover=02_glass.png&bgImgOpacityHover=100&borderColorHover=999999&fcHover=212121&iconColorHover=454545&bgColorActive=ffffff&bgTextureActive=06_inset_hard.png&bgImgOpacityActive=100&borderColorActive=ffffff&fcActive=000000&iconColorActive=454545&bgColorHighlight=fbeef2&bgTextureHighlight=02_glass.png&bgImgOpacityHighlight=55&borderColorHighlight=fcefa1&fcHighlight=363636&iconColorHighlight=2e83ff&bgColorError=fef1ec&bgTextureError=05_inset_soft.png&bgImgOpacityError=95&borderColorError=cd0a0a&fcError=cd0a0a&iconColorError=cd0a0a&bgColorOverlay=aaaaaa&bgTextureOverlay=01_flat.png&bgImgOpacityOverlay=0&opacityOverlay=30&bgColorShadow=c9c9c9&bgTextureShadow=01_flat.png&bgImgOpacityShadow=100&opacityShadow=30&thicknessShadow=8px&offsetTopShadow=-8px&offsetLeftShadow=-8px&cornerRadiusShadow=8px
+ */
+
+
+/* Component containers
+----------------------------------*/
+.livetabsverticalvertical .ui-widget { font-family: Helvetica,Arial,sans-serif; font-size: 1.1em; }
+.livetabsverticalvertical .ui-widget .ui-widget { font-size: 1em; }
+.livetabsverticalvertical .ui-widget input, .livetabsverticalvertical .ui-widget select, .livetabsverticalvertical .ui-widget textarea, .livetabsverticalvertical .ui-widget button { font-family: Helvetica,Arial,sans-serif; font-size: 1em; }
+.livetabsverticalvertical .ui-widget-content { border: none; background: #ffffff; color: #222222; }
+.livetabsverticalvertical .ui-widget-header { border: none; color: #222222; font-weight: bold; }
+.livetabsverticalvertical .ui-widget-header a { color: #222222; }
+
+/* Interaction states
+----------------------------------*/
+.livetabsverticalvertical .ui-state-default, .livetabsverticalvertical .ui-widget-content .ui-state-default, .livetabsverticalvertical .ui-widget-header .ui-state-default { border:none; background: none; font-weight: bold; color: #555555; }
+.livetabsverticalvertical .ui-state-default a, .livetabsverticalvertical .ui-state-default a:link, .livetabsverticalvertical .ui-state-default a:visited { color: #555555; text-decoration: none; }
+.livetabsverticalvertical .ui-state-hover, .livetabsverticalvertical .ui-widget-content .ui-state-hover, .livetabsverticalvertical .ui-widget-header .ui-state-hover, .livetabsverticalvertical .ui-state-focus, .livetabsverticalvertical .ui-widget-content .ui-state-focus, .livetabsverticalvertical .ui-widget-header .ui-state-focus { border: none; background: #ffffff; font-weight: bold; color: #212121; }
+.livetabsverticalvertical .ui-state-hover a, .livetabsverticalvertical .ui-state-hover a:hover { color: #212121; text-decoration: none; }
+.livetabsverticalvertical .ui-state-active, .livetabsverticalvertical .ui-widget-content .ui-state-active, .livetabsverticalvertical .ui-widget-header .ui-state-active { border: 1px solid #ffffff; background: #ffffff; font-weight: bold; color: #000000; }
+.livetabsverticalvertical .ui-state-active a, .livetabsverticalvertical .ui-state-active a:link, .livetabsverticalvertical .ui-state-active a:visited { color: #000000; text-decoration: none; }
+.livetabsverticalvertical .ui-widget :active { outline: none; }
+
+/* Interaction Cues
+----------------------------------*/
+.livetabsverticalvertical .ui-state-highlight, .livetabsverticalvertical .ui-widget-content .ui-state-highlight, .livetabsverticalvertical .ui-widget-header .ui-state-highlight  {border: 1px solid #fcefa1; background: #fbeef2; color: #363636; }
+.livetabsverticalvertical .ui-state-highlight a, .livetabsverticalvertical .ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a { color: #363636; }
+.livetabsverticalvertical .ui-state-error, .livetabsverticalvertical .ui-widget-content .ui-state-error, .livetabsverticalvertical .ui-widget-header .ui-state-error {border: 1px solid #cd0a0a; background: #fef1ec; color: #cd0a0a; }
+.livetabsverticalvertical .ui-state-error a, .livetabsverticalvertical .ui-widget-content .ui-state-error a, .livetabsverticalvertical .ui-widget-header .ui-state-error a { color: #cd0a0a; }
+.livetabsverticalvertical .ui-state-error-text, .livetabsverticalvertical .ui-widget-content .ui-state-error-text, .livetabsverticalvertical .ui-widget-header .ui-state-error-text { color: #cd0a0a; }
+.livetabsverticalvertical .ui-priority-primary, .livetabsverticalvertical .ui-widget-content .ui-priority-primary, .livetabsverticalvertical .ui-widget-header .ui-priority-primary { font-weight: bold; }
+.livetabsverticalvertical .ui-priority-secondary, .livetabsverticalvertical .ui-widget-content .ui-priority-secondary,  .ui-widget-header .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+.livetabsverticalvertical .ui-state-disabled, .livetabsverticalvertical .ui-widget-content .ui-state-disabled, .livetabsverticalvertical .ui-widget-header .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.livetabsverticalvertical .ui-icon { width: 16px; height: 16px; background-image: url(images/ui-icons_222222_256x240.png); }
+.livetabsverticalvertical .ui-widget-content .ui-icon {background-image: url(images/ui-icons_222222_256x240.png); }
+.livetabsverticalvertical .ui-widget-header .ui-icon {background-image: url(images/ui-icons_ffffff_256x240.png); }
+.livetabsverticalvertical .ui-state-default .ui-icon { background-image: url(images/ui-icons_888888_256x240.png); }
+.livetabsverticalvertical .ui-state-hover .ui-icon, .livetabsverticalvertical .ui-state-focus .ui-icon {background-image: url(images/ui-icons_454545_256x240.png); }
+.livetabsverticalvertical .ui-state-active .ui-icon {background-image: url(images/ui-icons_454545_256x240.png); }
+.livetabsverticalvertical .ui-state-highlight .ui-icon {background-image: url(images/ui-icons_2e83ff_256x240.png); }
+.livetabsverticalvertical .ui-state-error .ui-icon, .livetabsverticalvertical .ui-state-error-text .ui-icon {background-image: url(images/ui-icons_cd0a0a_256x240.png); }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+.livetabsverticalvertical .ui-corner-all, .livetabsverticalvertical .ui-corner-top, .livetabsverticalvertical .ui-corner-left, .livetabsverticalvertical .ui-corner-tl { -moz-border-radius-topleft: 0; -webkit-border-top-left-radius: 0; -khtml-border-top-left-radius: 0; border-top-left-radius: 0; }
+.livetabsverticalvertical .ui-corner-all, .livetabsverticalvertical .ui-corner-top, .livetabsverticalvertical .ui-corner-right, .livetabsverticalvertical .ui-corner-tr { -moz-border-radius-topright:0; -webkit-border-top-right-radius: 0; -khtml-border-top-right-radius: 0; border-top-right-radius: 20; }
+.livetabsverticalvertical .ui-corner-all, .livetabsverticalvertical .ui-corner-bottom, .livetabsverticalvertical .ui-corner-left, .livetabsverticalvertical .ui-corner-bl { -moz-border-radius-bottomleft: 0; -webkit-border-bottom-left-radius: 0; -khtml-border-bottom-left-radius: 0; border-bottom-left-radius: 0; }
+.livetabsverticalvertical .ui-corner-all, .livetabsverticalvertical .ui-corner-bottom, .livetabsverticalvertical .ui-corner-right, .livetabsverticalvertical .ui-corner-br { -moz-border-radius-bottomright: 0; -webkit-border-bottom-right-radius: 0; -khtml-border-bottom-right-radius: 0; border-bottom-right-radius: 0; }
+
+/* Overlays */
+.livetabsverticalvertical .ui-widget-overlay { background: #aaaaaa; opacity: .30;filter:Alpha(Opacity=30); }
+.livetabsverticalvertical .ui-widget-shadow { margin: -8px 0 0 -8px; padding: 8px; background: #c9c9c9; opacity: .30;filter:Alpha(Opacity=30); -moz-border-radius: 8px; -khtml-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }/*
+ * jQuery UI Tabs 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Tabs#theming
+ */
+.livetabsverticalvertical .ui-tabs { position: relative; padding: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.livetabsverticalvertical .ui-tabs .ui-tabs-nav { margin: 0; padding: .2em .2em 0; }
+.livetabsverticalvertical .ui-tabs .ui-tabs-nav li { list-style: none; float: right; position: relative; top: 1px; margin: 0 .2em 1px 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; }
+.livetabsverticalvertical .ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; }
+.livetabsverticalvertical .ui-tabs .ui-tabs-nav li.ui-tabs-selected, .livetabsverticalvertical .ui-tabs .ui-tabs-nav li.ui-tabs-active { margin-bottom: 0; padding-bottom: 1px; }
+.livetabsverticalvertical .ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .livetabsverticalvertical .ui-tabs .ui-tabs-nav li.ui-tabs-active a, .livetabsverticalvertical .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .livetabsverticalvertical .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.livetabsverticalvertical .ui-tabs .ui-tabs-nav li a, .livetabsverticalvertical .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a, .livetabsverticalvertical .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.livetabsverticalvertical .ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 1em 1.4em; background: none; }
+.livetabsverticalvertical .ui-tabs .ui-tabs-hide { display: none !important; }
+
+.livetabsverticalvertical .ui-tabs-vertical { width: 98%; border:1px solid #ccc;  padding:15px;}
+.livetabsverticalvertical .ui-tabs-vertical .ui-tabs-nav { padding: 15px .1em .2em .2em; float: right; width: 125px; height:235px; background: url(images/menu-bg.jpg) no-repeat scroll left top #FFFFFF; margin-top:-15px; margin-right:-15px; }
+/*.livetabsverticalvertical .ui-tabs-vertical .ui-tabs-nav { padding: 15px .1em .2em .2em; float: right; width: 200px; height:235px; background: url(images/menu-bg.jpg) no-repeat scroll left top #FFFFFF; margin-top:-27px;  }*/
+.livetabsverticalvertical .ui-tabs-vertical .ui-tabs-nav li { width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin-left:0px}
+.livetabsverticalvertical .ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+.livetabsverticalvertical .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-selected, .livetabsverticalvertical .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; border: 1px solid #AAAAAA !important;  border-left:none !important; margin-right:2px; }
+.livetabsverticalvertical .ui-tabs-vertical .ui-tabs-panel { padding: 0px; float: left; width: 740px;}
+
+.livetabsverticalvertical .mbutton{font-family:Helvetica,Arial,sans-serif; padding: 5px 10px; background: #818181; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#818181, endColorstr=#656565); -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#818181, endColorstr=#656565)"; background: -webkit-gradient(linear, left top, left bottom, from(#818181), to(#656565)); background: -moz-linear-gradient(center top , #818181 0%, #656565 100%) repeat scroll 0 0 transparent; border-color: #FFFFFF; border-radius: 3px; color: #FFFFFF; font-weight: bold; text-decoration: none; text-shadow: 0 1px 1px #000000;}
+.livetabsverticalvertical .mbutton:hover {background:#4E4E4E; color: #ffffff; text-decoration:none;}
+.livetabsverticalvertical .mbutton2 {font-weight: bold;padding: 8px;text-decoration: none; color:#003366;}
+.livetabsverticalvertical .mbutton2:hover {text-decoration:underline; color:#000}
+.livetabsverticalvertical .tabheading{font-size:14px; font-weight:bold; color:#555555}
+.livetabsverticalvertical .msectionhead{padding:8px 8px 8px 0; border-bottom:1px solid #cccccc; margin-bottom:10px;}
+.livetabsverticalvertical .msectionhead .head{font-family:Helvetica, Arial, sans-serif; font-weight:bold; text-decoration:none; color:#000}
+.livetabsverticalvertical .msectionhead:hover{background-color:#f1f1f1;}
+.livetabsverticalvertical .msectionhead input{ float:right}
+
+.livetabsverticalvertical textarea, .livetabsverticalvertical input, .livetabsverticalvertical select {border: 1px solid #CCCCCC;border-radius: 5px;-moz-border-radius:5px;webkit-border-radius:5px;padding: 2px;}
+.livetabsverticalvertical .dnnLabel{width:auto}

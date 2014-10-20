@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ControlTitle_backupconfigurationdatabase.Text" xml:space="preserve">
+    <value>Backup Configuration - Database</value>
+  </data>
+  <data name="DatabaseStuff.Text" xml:space="preserve">
+    <value>Backup Type</value>
+  </data>
+  <data name="Exclude.Text" xml:space="preserve">
+    <value>Backup data for ALL except the assigned tables</value>
+  </data>
+  <data name="lblBackupFileName.Help" xml:space="preserve">
+    <value>Name of the file to be generated by the database database backup operation . E.g.: mydatabase</value>
+  </data>
+  <data name="lblBackupFileName.Text" xml:space="preserve">
+    <value>Database Backup File Name</value>
+  </data>
+  <data name="lblBackupTitle.Text" xml:space="preserve">
+    <value>Database Backup Options</value>
+  </data>
+  <data name="lblDatabaseBackupMethod.Help" xml:space="preserve">
+    <value>Choose either 'native' (SQL Server built-in backup) and/or 'script' (custom) method. Native is the recomended method for 'local' databases.</value>
+  </data>
+  <data name="lblDatabaseBackupMethod.Text" xml:space="preserve">
+    <value>Backup Method</value>
+  </data>
+  <data name="lblDbInfo.Help" xml:space="preserve">
+    <value>Database server information</value>
+  </data>
+  <data name="lblDbInfo.Text" xml:space="preserve">
+    <value>Database Information</value>
+  </data>
+  <data name="lblPerformDatabaseBackup.Help" xml:space="preserve">
+    <value>Perform the database backup operation?</value>
+  </data>
+  <data name="lblPerformDatabaseBackup.Text" xml:space="preserve">
+    <value>Perform database backup</value>
+  </data>
+  <data name="lblScriptDatabaseObjects.Help" xml:space="preserve">
+    <value>Build the necessary scripts to recreate the database structure</value>
+  </data>
+  <data name="lblScriptDatabaseObjects.Text" xml:space="preserve">
+    <value>Script Database Objects</value>
+  </data>
+  <data name="lblScriptDataProviders.Help" xml:space="preserve">
+    <value>Saves all the .SqlDataProvider files (core &amp; 3rd. party)</value>
+  </data>
+  <data name="lblScriptDataProviders.Text" xml:space="preserve">
+    <value>Save DataProvider Files</value>
+  </data>
+  <data name="lblScriptMethod.Help" xml:space="preserve">
+    <value>Script objects method (SMO or TSQL). SMO is the recommended method (when it is available on your current hosting environment. However, it could be a bit slower than TSQL.</value>
+  </data>
+  <data name="lblScriptMethod.Text" xml:space="preserve">
+    <value>Script Method</value>
+  </data>
+  <data name="lblScriptOwner.Help" xml:space="preserve">
+    <value>Include object's owner when scripting the database objects</value>
+  </data>
+  <data name="lblScriptOwner.Text" xml:space="preserve">
+    <value>Script Owner</value>
+  </data>
+  <data name="lblScriptTablesData.Help" xml:space="preserve">
+    <value>Extracts (backup) the tables' contents </value>
+  </data>
+  <data name="lblScriptTablesData.Text" xml:space="preserve">
+    <value>Script (backup) Tables' Data</value>
+  </data>
+  <data name="lblTablesList.Help" xml:space="preserve">
+    <value>Comma separated list of tables to include or exclude from the backup (data scripting)</value>
+  </data>
+  <data name="lblTablesList.Text" xml:space="preserve">
+    <value>Tables List</value>
+  </data>
+  <data name="lblTablesListWarning.Message" xml:space="preserve">
+    <value>Note: you should not select (assign) too many tables. A list longer than 2000 chars will be ignored (check your settings again to see if your selection was accepted or not).</value>
+  </data>
+  <data name="lblUseCustomSchemaViews.Help" xml:space="preserve">
+    <value>Use custom schema views instead of the global INFORMATION_SCHEMA views</value>
+  </data>
+  <data name="lblUseCustomSchemaViews.Text" xml:space="preserve">
+    <value>Use Custom Schema Views</value>
+  </data>
+  <data name="lblWarnAboutMissingPKs.Help" xml:space="preserve">
+    <value>When enabled, before performing a backup the module will warn if it found not empty table(s) including BLOB columns and lacking of a 'primary key' (PK) being included in the backup process.</value>
+  </data>
+  <data name="lblWarnAboutMissingPKs.Text" xml:space="preserve">
+    <value>Warn About Missing PKs</value>
+  </data>
+  <data name="lnkListTables.Text" xml:space="preserve">
+    <value>List All</value>
+  </data>
+  <data name="ManyTablesSelected.Message" xml:space="preserve">
+    <value>ERROR: Too many tables selected to be included/excluded from the data scripting.</value>
+  </data>
+  <data name="rbNative.Text" xml:space="preserve">
+    <value>Native (SQL Server)</value>
+  </data>
+  <data name="rbScript.Text" xml:space="preserve">
+    <value>Script (custom)</value>
+  </data>
+  <data name="valBackupFileName.Text" xml:space="preserve">
+    <value>&lt;br /&gt;The Backup File Name is not valid.</value>
+  </data>
+  <data name="BackupDatabaseDisabled.Message" xml:space="preserve">
+    <value>Note: The Database Backup is disabled.</value>
+  </data>
+  <data name="dshDatabaseBackupMainSettings.Text" xml:space="preserve">
+    <value>Main Settings</value>
+  </data>
+  <data name="dshDatabaseBackupNative.Text" xml:space="preserve">
+    <value>BackupNative Settings</value>
+  </data>
+  <data name="dshDatabaseBackupScript.Text" xml:space="preserve">
+    <value>BackupScript Settings</value>
+  </data>
+  <data name="lblAuxDB.Help" xml:space="preserve">
+    <value>Auxiliary database to connect when restoring. e.g. tempdb, master, pubs, AdventureWorks, etc. NOTE: It should never be the same as the one to be restored!!</value>
+  </data>
+  <data name="lblAuxDB.Text" xml:space="preserve">
+    <value>Auxiliary Database</value>
+  </data>
+  <data name="lblContinueAfterErrorBackup.Help" xml:space="preserve">
+    <value>Description at http://msdn2.microsoft.com/en-us/library/ms179314.aspx</value>
+  </data>
+  <data name="lblContinueAfterErrorBackup.Text" xml:space="preserve">
+    <value>Continue After Error Backup</value>
+  </data>
+  <data name="lblCreateZipFile.Help" xml:space="preserve">
+    <value>Compress the database backup file? (only when the database is not remote)</value>
+  </data>
+  <data name="lblCreateZipFile.Text" xml:space="preserve">
+    <value>Create Database Zip File</value>
+  </data>
+  <data name="lblDeleteAfterZip.Help" xml:space="preserve">
+    <value>Delete the database backup file after the Zip operation? (only when the database is not remote)</value>
+  </data>
+  <data name="lblDeleteAfterZip.Text" xml:space="preserve">
+    <value>Delete Backup After Compressing It</value>
+  </data>
+  <data name="lblInitializeStore.Help" xml:space="preserve">
+    <value>Checked means a database backup "WITH INIT" (SQLSever). That is, specifies that all backup sets should be overwritten, but preserves the media header. If INIT is specified, any existing backup set on that device is overwritten, if conditions permit.</value>
+  </data>
+  <data name="lblInitializeStore.Text" xml:space="preserve">
+    <value>Initialize Backup Media</value>
+  </data>
+  <data name="lblNoRecoveryRestore.Help" xml:space="preserve">
+    <value>Enables the "NORECOVERY" option at restore time (http://msdn2.microsoft.com/en-us/library/ms179314.aspx). </value>
+  </data>
+  <data name="lblNoRecoveryRestore.Text" xml:space="preserve">
+    <value>No Recovery Restore</value>
+  </data>
+  <data name="FeatureUnavailable.Text" xml:space="preserve">
+    <value>Feature unavailable in your current environment.</value>
+  </data>
+  <data name="Include.Text" xml:space="preserve">
+    <value>Backup data ONLY for the assigned tables</value>
+  </data>
+  <data name="ConfirmMove.Text" xml:space="preserve">
+    <value>Confirm Assignment?</value>
+  </data>
+  <data name="lblShrinkDatabase.Help" xml:space="preserve">
+    <value>Shrink the physical database files after performing the backup</value>
+  </data>
+  <data name="lblShrinkDatabase.Text" xml:space="preserve">
+    <value>Shrink Database</value>
+  </data>
+  <data name="lblTruncateDNNEventLog.Help" xml:space="preserve">
+    <value>Truncate the DNN Event Log before performing the backup.</value>
+  </data>
+  <data name="lblTruncateDNNEventLog.Text" xml:space="preserve">
+    <value>Truncate DNN Event Log</value>
+  </data>
+  <data name="lnkExcludeNotCriticalTables.Text" xml:space="preserve">
+    <value>'Assign' known not-critical tables</value>
+  </data>
+  <data name="plNotCriticalTables.Help" xml:space="preserve">
+    <value>Move to the 'Assigned' box some known not-critical tables which can be safely excluded from the backup (EventLog, SiteLog, SearchItemWordPosition, SearchItemWord, SearchWord, SearchItem).</value>
+  </data>
+  <data name="lblAddGoEvery.Help" xml:space="preserve">
+    <value>When scripting tables' data, interval between each 'GO' for the generated 'INSERT' statements. Leave blank to use the default value.</value>
+  </data>
+  <data name="lblAddGoEvery.Text" xml:space="preserve">
+    <value>Add GO Every</value>
+  </data>
+  <data name="lblBlobBufferBytesLenght.Help" xml:space="preserve">
+    <value>When scripting tables' data, size in bytes for the BLOB dump operations. The higher, the faster but more server resources will be consumed. Leave blank to use the default value.</value>
+  </data>
+  <data name="lblBlobBufferBytesLenght.Text" xml:space="preserve">
+    <value>BLOBs Buffer Size</value>
+  </data>
+  <data name="lblMaxLenghtScriptFileSize.Help" xml:space="preserve">
+    <value>When scripting tables' data, the maximum file size (in bytes) for the generated files. Leave blank to use the default value.</value>
+  </data>
+  <data name="lblMaxLenghtScriptFileSize.Text" xml:space="preserve">
+    <value>Max. Script File Size</value>
+  </data>
+  <data name="lblUseTransactions.Help" xml:space="preserve">
+    <value>When scripting tables' data, add transactions in the generated scripts.</value>
+  </data>
+  <data name="lblUseTransactions.Text" xml:space="preserve">
+    <value>Use Transactions</value>
+  </data>
+  <data name="valAddGoEvery.Text" xml:space="preserve">
+    <value>&lt;br /&gt;A valid interval is from 0 to 20480.</value>
+  </data>
+  <data name="valBlobBufferBytesLenght.Text" xml:space="preserve">
+    <value>&lt;br /&gt;Valid buffer sizes are from 64 to 20480 bytes. Leave blank to use the default value.</value>
+  </data>
+  <data name="valMaxLenghtScriptFileSize.Text" xml:space="preserve">
+    <value>&lt;br /&gt;Valid file sizes are from 2048 to 545760 bytes. Leave blank to use the default value.</value>
+  </data>
+  <data name="lblScriptPortalTablesOnly.Help" xml:space="preserve">
+    <value>Allow only tables belonging to the DNN Instance. This setting makes sense only when an ObjectQualifier is set in the web.config file.</value>
+  </data>
+  <data name="lblScriptPortalTablesOnly.Text" xml:space="preserve">
+    <value>DNN tables Only</value>
+  </data>
+  <data name="cmdClearCache.Text" xml:space="preserve">
+    <value>Clear Cache</value>
+  </data>
+  <data name="lblWithCompression.Help" xml:space="preserve">
+    <value>Enables the 'with compression' clause. Valid only for SQL Sever 2008 or higher, and it is not supported on the Express and some other limited Editions.</value>
+  </data>
+  <data name="lblWithCompression.Text" xml:space="preserve">
+    <value>Compressed backup</value>
+  </data>
+  <data name="lblDatabaseBackup.Text" xml:space="preserve">
+    <value>These are the database backup settings for &lt;b&gt;manual backups&lt;/b&gt;, and will be the default settings when creating a new scheduled database backup job.</value>
+  </data>
+  <data name="lblDatabaseBackupSchedule.Text" xml:space="preserve">
+    <value>These are the database backup settings for the &lt;b&gt;scheduled job&lt;/b&gt; being edited.</value>
+  </data>
+</root>

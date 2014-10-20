@@ -1,0 +1,88 @@
+<div id="dnn_ctr1529_HtmlModule_lblContent" class="Normal">
+	<div class="box-content boxforland">
+<h2 style="background-position: 2px -433px;">حمل خارجی (استعلام قیمت- پاسخ به استعلام) </h2>
+<div class="content">
+<p>در این قسمت شما می توانید برای جابجایی جاده ای بار خود از ایران یا به ایران از شرکتهای خدمات رسان داخلی و خارجی استعلام قیمت کنید... <a href="#">بیشتر</a> </p>
+<h3 class="boxMenuLink">یک گزینه را انتخاب نمایید...<span></span>
+</h3>
+<ul class="boxMenu">
+    <li>
+    <a href="/جاده-ای/استعلام-قیمت/برای-حمل-خارجی">ارسال استعلام</a>
+    </li>
+    <li>
+    <a href="/جاده-ای/مشاهده-استعلام-های-موجود/کلیه-استعلام-های-حمل-خارجی">مشاهده استعلام ها و پاسخ به آنها</a>
+    </li>
+    <li>
+    <a href="/جاده-ای/وسیله-حمل-خالی-جاده-ای">اعلام وسلیه حمل خالی</a>
+    </li>
+    <li>
+    <a href="/جاده-ای/مشاهده-اعلام-وسیله-حمل-خالی-جاده-ای">مشاهده ی اعلامیه ها و اعلام نیاز</a>
+    </li>
+</ul>
+</div>
+</div>
+<div style="display: none;" class="box-content boxforrail">
+<h2 style="background-position: 2px -433px;">واگن خالی (اعلام- درخواست)</h2>
+<div class="content">
+<p>در این قسمت چنانچه شما واگن خالی دارید که در زمان مشخصی آماده بارگیری است می توانید اعلام کنید... <a href="#">بیشتر</a> </p>
+<h3 class="boxMenuLink">یک گزینه را انتخاب نمایید...<span></span>
+</h3>
+<ul class="boxMenu">
+    <li>
+    <a href="/ریلی/واگن-خالی">اعلام واگن خالی</a>
+    </li>
+    <li>
+    <a href="/ریلی/پاسخ-واگن-خالی">مشاهده ی اعلامیه ها و اعلام نیاز</a>
+    </li>
+</ul>
+</div>
+</div>
+<div style="display: none;" class="box-content boxforair">
+<h2 style="background-position: 2px -433px;"> حمل ترکیبی </h2>
+<div class="content">
+<p>در این قسمت شما می توانید حمل ترکیبی خود به صورت هوایی از شرکتهای خدمات رسان استعلام قیمت کنید... <a href="#">بیشتر</a> </p>
+<h3 class="boxMenuLink">یک گزینه را انتخاب نمایید...<span></span>
+</h3>
+<ul class="boxMenu">
+    <li>
+    <a href="#">ارسال استعلام</a>
+    </li>
+    <li>
+    <a href="#">مشاهده استعلام ها و پاسخ به آنها</a>
+    </li>
+</ul>
+</div>
+</div>
+<div style="display: none;" class="box-content boxforsea">
+<h2 style="background-position: 2px -433px;">غیر کانتینری   (استعلام قیمت- پاسخ به استعلام) </h2>
+<div class="content">
+<p>در این قسمت شما می توانید برای جابجایی دریایی بار خود از ایران یا به ایران به صورت غیرکانتینری از شرکتهای داخلی و خارجی استعلام قیمت کنید... <a href="#">بیشتر</a> </p>
+<h3 class="boxMenuLink">یک گزینه را انتخاب نمایید...<span></span>
+</h3>
+<ul class="boxMenu">
+    <li>
+    <a href="/دریایی/استعلام-قیمت/غیرکانتینری-NCL">ارسال استعلام</a>
+    </li>
+    <li>
+    <a href="/دریایی/مشاهده-استعلام-های-موجود/غیرکانتینری">مشاهده استعلام ها و پاسخ به آنها</a>
+    </li>
+</ul>
+</div>
+</div>
+<div style="display: none;" class="box-content boxforallservices">
+<h2 style="background-position: 2px -433px;">ترخیص </h2>
+<div class="content">
+<p>در این قسمت شما می توانید خدمات مربوط به ترخیص بار خود را به صورت مجازی انجام دهید...<a href="#">بیشتر</a> </p>
+<h3 class="boxMenuLink">یک گزینه را انتخاب نمایید...<span></span>
+</h3>
+<ul class="boxMenu">
+    <li>
+    <a href="/سایر-خدمات/ترخیص/استعلام-قیمت">ارسال استعلام</a>
+    </li>
+    <li>
+    <a href="/سایر-خدمات/ترخیص/مشاهده-استعلام-های-موجود">مشاهده استعلام ها و پاسخ به آنها</a>
+    </li>
+</ul>
+</div>
+</div>
+</div>

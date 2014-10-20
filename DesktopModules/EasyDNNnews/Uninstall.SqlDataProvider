@@ -1,0 +1,1404 @@
+﻿/***
+Deletes indexes for tables:
+ EasyDNNNews,
+ EasyDNNNewsUserPremissionSettings,
+ EasyDNNNewsRolePremissionSettings,
+ EasyDNNNewsCategories,
+ EasyDNNNewsCategoryList,
+ EasyDNNNewsComments
+ ***/
+
+/*** EasyDNNNews table indexes ***/
+
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_Wizard_Suggestion')
+    DROP INDEX IX_EasyDNNNews_Wizard_Suggestion ON EasyDNNNews;
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_Wizard_Suggestion2')
+    DROP INDEX IX_EasyDNNNews_Wizard_Suggestion2 ON EasyDNNNews;
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_Wizard_Suggestion3')
+    DROP INDEX IX_EasyDNNNews_Wizard_Suggestion3 ON EasyDNNNews;
+GO
+-- ovaj je naknadno dodani !!!
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_Wizard_Suggestion4')
+    DROP INDEX IX_EasyDNNNews_Wizard_Suggestion4 ON EasyDNNNews;
+Go
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_PortalID_HasPermissions_HideDefaultLocale')
+    DROP INDEX IX_EasyDNNNews_PortalID_HasPermissions_HideDefaultLocale ON EasyDNNNews;
+GO
+
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_PortalID')
+    DROP INDEX IX_EasyDNNNews_PortalID ON EasyDNNNews;
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_UserID')
+    DROP INDEX IX_EasyDNNNews_UserID ON EasyDNNNews;
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_Approved')
+    DROP INDEX IX_EasyDNNNews_Approved ON EasyDNNNews;
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_Active')
+    DROP INDEX IX_EasyDNNNews_Active ON EasyDNNNews;
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_HasPermissions')
+    DROP INDEX IX_EasyDNNNews_HasPermissions ON EasyDNNNews;
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_EventArticle')
+    DROP INDEX IX_EasyDNNNews_EventArticle ON EasyDNNNews;
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_Featured')
+    DROP INDEX IX_EasyDNNNews_Featured ON EasyDNNNews;
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_FK_ArticleGalleryID')
+    DROP INDEX IX_EasyDNNNews_FK_ArticleGalleryID ON EasyDNNNews;
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_PublishDate')
+    DROP INDEX IX_EasyDNNNews_PublishDate ON EasyDNNNews;
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_ExpireDate')
+    DROP INDEX IX_EasyDNNNews_ExpireDate ON EasyDNNNews;
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNews_HideDefaultLocale')
+    DROP INDEX IX_EasyDNNNews_HideDefaultLocale ON EasyDNNNews;
+GO
+
+/*** EasyDNNNewsUserPremissionSettings table indexes ***/
+
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EDNUserPremissionSettings_FK_UserID')
+    DROP INDEX IX_EDNUserPremissionSettings_FK_UserID ON EasyDNNNewsUserPremissionSettings;
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EDNUserPremissionSettings_FK_ModuleID')
+    DROP INDEX IX_EDNUserPremissionSettings_FK_ModuleID ON EasyDNNNewsUserPremissionSettings;
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EDNUserPremissionSettings_FK_PortalID')
+    DROP INDEX IX_EDNUserPremissionSettings_FK_PortalID ON EasyDNNNewsUserPremissionSettings;
+GO
+
+/*** EasyDNNNewsRolePremissionSettings table indexes ***/
+
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EDNRolePremissionSettings_FK_RoleID')
+    DROP INDEX IX_EDNRolePremissionSettings_FK_RoleID ON EasyDNNNewsRolePremissionSettings;
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EDNRolePremissionSettings_FK_ModuleID')
+    DROP INDEX IX_EDNRolePremissionSettings_FK_ModuleID ON EasyDNNNewsRolePremissionSettings;
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EDNRolePremissionSettings_FK_PortalID')
+    DROP INDEX IX_EDNRolePremissionSettings_FK_PortalID ON EasyDNNNewsRolePremissionSettings;
+GO
+
+/*** EasyDNNNewsCategories table indexes ***/
+
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNewsCategories_FK_ArticleID')
+    DROP INDEX IX_EasyDNNNewsCategories_FK_ArticleID ON EasyDNNNewsCategories;
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNewsCategories_FK_CategoryID')
+    DROP INDEX IX_EasyDNNNewsCategories_FK_CategoryID ON EasyDNNNewsCategories;
+GO
+
+/*** EasyDNNNewsCategoryList table indexes ***/
+
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNewsCategoryList_PortalID')
+    DROP INDEX IX_EasyDNNNewsCategoryList_PortalID ON EasyDNNNewsCategoryList;
+GO
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNewsCategoryList_ParentCategory')
+    DROP INDEX IX_EasyDNNNewsCategoryList_ParentCategory ON EasyDNNNewsCategoryList;
+
+/*** EasyDNNNewsComments table indexes ***/
+
+IF EXISTS (SELECT name FROM sys.indexes WHERE name = N'IX_EasyDNNNewsComments_FK_ArticleID')
+    DROP INDEX IX_EasyDNNNewsComments_FK_ArticleID ON EasyDNNNewsComments;
+GO
+
+
+/****** Object:  StoredProcedure [dbo].[EasyDNNNewsCategoryPositioning]    Script Date: 03/29/2013 15:44:01 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsCategoryPositioning]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsCategoryPositioning]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsForCalendarAll]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsForCalendarAll]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsForCalendarOnlyEvents]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsForCalendarOnlyEvents]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsForCalendarOnlyNews]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsForCalendarOnlyNews]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EDS_StringListToTable]') AND type in (N'FN', N'IF', N'TF', N'FS', N'FT'))
+DROP FUNCTION [dbo].[EDS_StringListToTable]
+GO
+
+
+/****** Added in 5.0 ******/
+/****** Object:  ForeignKey [FK_EasyDNNNewsLightboxSettings_EasyDNNNews]    Script Date: 03/29/2013 14:34:40 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsLightboxSettings_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsLightboxSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] DROP CONSTRAINT [FK_EasyDNNNewsLightboxSettings_EasyDNNNews]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsLightboxSettings_Modules]    Script Date: 03/29/2013 14:34:40 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsLightboxSettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsLightboxSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] DROP CONSTRAINT [FK_EasyDNNNewsLightboxSettings_Modules]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsLightboxSettings_Portals]    Script Date: 03/29/2013 14:34:40 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsLightboxSettings_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsLightboxSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] DROP CONSTRAINT [FK_EasyDNNNewsLightboxSettings_Portals]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsLightboxSettings_ThumbWidth]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] DROP CONSTRAINT [DF_EasyDNNNewsLightboxSettings_ThumbWidth]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsLightboxSettings_ThumbHeight]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] DROP CONSTRAINT [DF_EasyDNNNewsLightboxSettings_ThumbHeight]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsLightboxSettings_ItemsPerPage]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] DROP CONSTRAINT [DF_EasyDNNNewsLightboxSettings_ItemsPerPage]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsLightboxSettings_NumOfColumns]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] DROP CONSTRAINT [DF_EasyDNNNewsLightboxSettings_NumOfColumns]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsLightboxSettings_PagerType]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] DROP CONSTRAINT [DF_EasyDNNNewsLightboxSettings_PagerType]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsLightboxSettings_GalleryTheme]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] DROP CONSTRAINT [DF_EasyDNNNewsLightboxSettings_GalleryTheme]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsLightboxSettings_LightboxTheme]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] DROP CONSTRAINT [DF_EasyDNNNewsLightboxSettings_LightboxTheme]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsLightboxSettings_ShowTitle]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] DROP CONSTRAINT [DF_EasyDNNNewsLightboxSettings_ShowTitle]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsLightboxSettings_ShowDescription]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] DROP CONSTRAINT [DF_EasyDNNNewsLightboxSettings_ShowDescription]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsLightboxSettings_ShowLightBoxTitle]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] DROP CONSTRAINT [DF_EasyDNNNewsLightboxSettings_ShowLightBoxTitle]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsLightboxSettings_ShowLightBoxDescription]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] DROP CONSTRAINT [DF_EasyDNNNewsLightboxSettings_ShowLightBoxDescription]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsLightboxSettings_Responsive]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsLightboxSettings] DROP CONSTRAINT [DF_EasyDNNNewsLightboxSettings_Responsive]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNews_EasyGallery]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNews]'))
+ALTER TABLE [dbo].[EasyDNNNews] DROP CONSTRAINT [FK_EasyDNNNews_EasyGallery]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsArticleGalleryItems_EasyDNNNews]    Script Date: 03/29/2013 14:15:23 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsArticleGalleryItems_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleGalleryItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsArticleGalleryItems] DROP CONSTRAINT [FK_EasyDNNNewsArticleGalleryItems_EasyDNNNews]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsArticleGalleryItems_EasyGallery]    Script Date: 03/29/2013 14:15:23 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsArticleGalleryItems_EasyGallery]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleGalleryItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsArticleGalleryItems] DROP CONSTRAINT [FK_EasyDNNNewsArticleGalleryItems_EasyGallery]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAudioGallerySettings_EasyDNNNews]    Script Date: 03/29/2013 14:15:23 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAudioGallerySettings_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAudioGallerySettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsAudioGallerySettings] DROP CONSTRAINT [FK_EasyDNNNewsAudioGallerySettings_EasyDNNNews]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAudioGallerySettings_Modules]    Script Date: 03/29/2013 14:15:23 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAudioGallerySettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAudioGallerySettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsAudioGallerySettings] DROP CONSTRAINT [FK_EasyDNNNewsAudioGallerySettings_Modules]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAudioGallerySettings_Portals]    Script Date: 03/29/2013 14:15:23 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAudioGallerySettings_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAudioGallerySettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsAudioGallerySettings] DROP CONSTRAINT [FK_EasyDNNNewsAudioGallerySettings_Portals]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsChameleonNestedSettings_EasyDNNNews]    Script Date: 03/29/2013 14:15:23 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsChameleonNestedSettings_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsChameleonNestedSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsChameleonNestedSettings] DROP CONSTRAINT [FK_EasyDNNNewsChameleonNestedSettings_EasyDNNNews]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsChameleonNestedSettings_Modules]    Script Date: 03/29/2013 14:15:23 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsChameleonNestedSettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsChameleonNestedSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsChameleonNestedSettings] DROP CONSTRAINT [FK_EasyDNNNewsChameleonNestedSettings_Modules]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsChameleonNestedSettings_Portals]    Script Date: 03/29/2013 14:15:23 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsChameleonNestedSettings_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsChameleonNestedSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsChameleonNestedSettings] DROP CONSTRAINT [FK_EasyDNNNewsChameleonNestedSettings_Portals]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsChameleonSettings_EasyDNNNews]    Script Date: 03/29/2013 14:15:23 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsChameleonSettings_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsChameleonSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsChameleonSettings] DROP CONSTRAINT [FK_EasyDNNNewsChameleonSettings_EasyDNNNews]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsChameleonSettings_Modules]    Script Date: 03/29/2013 14:15:23 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsChameleonSettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsChameleonSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsChameleonSettings] DROP CONSTRAINT [FK_EasyDNNNewsChameleonSettings_Modules]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsChameleonSettings_Portals]    Script Date: 03/29/2013 14:15:23 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsChameleonSettings_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsChameleonSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsChameleonSettings] DROP CONSTRAINT [FK_EasyDNNNewsChameleonSettings_Portals]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsPortalAuthorsItems_Portals]    Script Date: 03/29/2013 14:15:23 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalAuthorsItems_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalAuthorsItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalAuthorsItems] DROP CONSTRAINT [FK_EasyDNNNewsPortalAuthorsItems_Portals]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsPortalAuthorsItems_Users]    Script Date: 03/29/2013 14:15:23 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalAuthorsItems_Users]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalAuthorsItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalAuthorsItems] DROP CONSTRAINT [FK_EasyDNNNewsPortalAuthorsItems_Users]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsPortalCategoryItems_EasyDNNNewsCategoryList]    Script Date: 03/29/2013 14:15:23 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalCategoryItems_EasyDNNNewsCategoryList]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalCategoryItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalCategoryItems] DROP CONSTRAINT [FK_EasyDNNNewsPortalCategoryItems_EasyDNNNewsCategoryList]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsPortalCategoryItems_Portals]    Script Date: 03/29/2013 14:15:23 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalCategoryItems_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalCategoryItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalCategoryItems] DROP CONSTRAINT [FK_EasyDNNNewsPortalCategoryItems_Portals]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsPortalGroupItems_EasyDNNNewsAuthorGroups]    Script Date: 03/29/2013 14:15:23 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalGroupItems_EasyDNNNewsAuthorGroups]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalGroupItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalGroupItems] DROP CONSTRAINT [FK_EasyDNNNewsPortalGroupItems_EasyDNNNewsAuthorGroups]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsTreeView_Modules]    Script Date: 03/29/2013 14:15:24 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsTreeView_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsTreeView]'))
+ALTER TABLE [dbo].[EasyDNNNewsTreeView] DROP CONSTRAINT [FK_EasyDNNNewsTreeView_Modules]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsVideoGallerySettings_EasyDNNNews]    Script Date: 03/29/2013 14:15:24 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsVideoGallerySettings_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsVideoGallerySettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsVideoGallerySettings] DROP CONSTRAINT [FK_EasyDNNNewsVideoGallerySettings_EasyDNNNews]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsVideoGallerySettings_Modules]    Script Date: 03/29/2013 14:15:24 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsVideoGallerySettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsVideoGallerySettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsVideoGallerySettings] DROP CONSTRAINT [FK_EasyDNNNewsVideoGallerySettings_Modules]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsVideoGallerySettings_Portals]    Script Date: 03/29/2013 14:15:24 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsVideoGallerySettings_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsVideoGallerySettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsVideoGallerySettings] DROP CONSTRAINT [FK_EasyDNNNewsVideoGallerySettings_Portals]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNnewsWidgets_Modules]    Script Date: 03/29/2013 14:15:24 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNnewsWidgets_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNnewsWidgets]'))
+ALTER TABLE [dbo].[EasyDNNnewsWidgets] DROP CONSTRAINT [FK_EasyDNNnewsWidgets_Modules]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNnewsWidgets_Portals]    Script Date: 03/29/2013 14:15:24 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNnewsWidgets_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNnewsWidgets]'))
+ALTER TABLE [dbo].[EasyDNNnewsWidgets] DROP CONSTRAINT [FK_EasyDNNnewsWidgets_Portals]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsAudioGallerySettings_ThumbWidth]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsAudioGallerySettings] DROP CONSTRAINT [DF_EasyDNNNewsAudioGallerySettings_ThumbWidth]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsAudioGallerySettings_ThumbHeight]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsAudioGallerySettings] DROP CONSTRAINT [DF_EasyDNNNewsAudioGallerySettings_ThumbHeight]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsAudioGallerySettings_ItemsPerPage]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsAudioGallerySettings] DROP CONSTRAINT [DF_EasyDNNNewsAudioGallerySettings_ItemsPerPage]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsAudioGallerySettings_NumOfColumns]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsAudioGallerySettings] DROP CONSTRAINT [DF_EasyDNNNewsAudioGallerySettings_NumOfColumns]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsAudioGallerySettings_PagerType]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsAudioGallerySettings] DROP CONSTRAINT [DF_EasyDNNNewsAudioGallerySettings_PagerType]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsAudioGallerySettings_GalleryTheme]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsAudioGallerySettings] DROP CONSTRAINT [DF_EasyDNNNewsAudioGallerySettings_GalleryTheme]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsAudioGallerySettings_ShowTitle]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsAudioGallerySettings] DROP CONSTRAINT [DF_EasyDNNNewsAudioGallerySettings_ShowTitle]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsAudioGallerySettings_ShowDescription]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsAudioGallerySettings] DROP CONSTRAINT [DF_EasyDNNNewsAudioGallerySettings_ShowDescription]
+END
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsChameleonNestedSettings_LightboxDescription]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsChameleonNestedSettings] DROP CONSTRAINT [DF_EasyDNNNewsChameleonNestedSettings_LightboxDescription]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsChameleonNestedSettings_MainImageResizeMode]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsChameleonNestedSettings] DROP CONSTRAINT [DF_EasyDNNNewsChameleonNestedSettings_MainImageResizeMode]
+END
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsChameleonSettings_LightboxDescription]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsChameleonSettings] DROP CONSTRAINT [DF_EasyDNNNewsChameleonSettings_LightboxDescription]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsChameleonSettings_CategoryHeightResponsive]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsChameleonSettings] DROP CONSTRAINT [DF_EasyDNNNewsChameleonSettings_CategoryHeightResponsive]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsChameleonSettings_CategoryWidthResponsive]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsChameleonSettings] DROP CONSTRAINT [DF_EasyDNNNewsChameleonSettings_CategoryWidthResponsive]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsChameleonSettings_MainImageResizeMode]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsChameleonSettings] DROP CONSTRAINT [DF_EasyDNNNewsChameleonSettings_MainImageResizeMode]
+END
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsVideoGallerySettings_ThumbWidth]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsVideoGallerySettings] DROP CONSTRAINT [DF_EasyDNNNewsVideoGallerySettings_ThumbWidth]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsVideoGallerySettings_ThumbHeight]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsVideoGallerySettings] DROP CONSTRAINT [DF_EasyDNNNewsVideoGallerySettings_ThumbHeight]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsVideoGallerySettings_ItemsPerPage]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsVideoGallerySettings] DROP CONSTRAINT [DF_EasyDNNNewsVideoGallerySettings_ItemsPerPage]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsVideoGallerySettings_NumOfColumns]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsVideoGallerySettings] DROP CONSTRAINT [DF_EasyDNNNewsVideoGallerySettings_NumOfColumns]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsVideoGallerySettings_PagerType]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsVideoGallerySettings] DROP CONSTRAINT [DF_EasyDNNNewsVideoGallerySettings_PagerType]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsVideoGallerySettings_GalleryTheme]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsVideoGallerySettings] DROP CONSTRAINT [DF_EasyDNNNewsVideoGallerySettings_GalleryTheme]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsVideoGallerySettings_ShowTitle]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsVideoGallerySettings] DROP CONSTRAINT [DF_EasyDNNNewsVideoGallerySettings_ShowTitle]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[DF_EasyDNNNewsVideoGallerySettings_ShowDescription]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsVideoGallerySettings] DROP CONSTRAINT [DF_EasyDNNNewsVideoGallerySettings_ShowDescription]
+END
+GO
+/****** Added in 5.0 ******/
+
+/****** Object:  ForeignKey [FK_EasyDNNNewsFilterByArticles_EasyDNNNews]    Script Date: 11/12/2012 16:27:19 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsFilterByArticles_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsFilterByArticles]'))
+ALTER TABLE [dbo].[EasyDNNNewsFilterByArticles] DROP CONSTRAINT [FK_EasyDNNNewsFilterByArticles_EasyDNNNews]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsFilterByArticles_Modules]    Script Date: 11/12/2012 16:27:19 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsFilterByArticles_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsFilterByArticles]'))
+ALTER TABLE [dbo].[EasyDNNNewsFilterByArticles] DROP CONSTRAINT [FK_EasyDNNNewsFilterByArticles_Modules]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsPortalArticlesFilter_Portals]    Script Date: 11/12/2012 16:27:19 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalArticlesFilter_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalFilterByArticles]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalFilterByArticles] DROP CONSTRAINT [FK_EasyDNNNewsPortalArticlesFilter_Portals]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsPortalFilterByArticles_EasyDNNNews]    Script Date: 11/12/2012 16:27:19 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalFilterByArticles_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalFilterByArticles]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalFilterByArticles] DROP CONSTRAINT [FK_EasyDNNNewsPortalFilterByArticles_EasyDNNNews]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsFilterByArticles]    Script Date: 11/12/2012 16:27:19 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsFilterByArticles_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsFilterByArticles]'))
+ALTER TABLE [dbo].[EasyDNNNewsFilterByArticles] DROP CONSTRAINT [FK_EasyDNNNewsFilterByArticles_EasyDNNNews]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsFilterByArticles_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsFilterByArticles]'))
+ALTER TABLE [dbo].[EasyDNNNewsFilterByArticles] DROP CONSTRAINT [FK_EasyDNNNewsFilterByArticles_Modules]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsFilterByArticles]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsFilterByArticles]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsPortalFilterByArticles]    Script Date: 11/12/2012 16:27:19 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalArticlesFilter_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalFilterByArticles]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalFilterByArticles] DROP CONSTRAINT [FK_EasyDNNNewsPortalArticlesFilter_Portals]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalFilterByArticles_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalFilterByArticles]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalFilterByArticles] DROP CONSTRAINT [FK_EasyDNNNewsPortalFilterByArticles_EasyDNNNews]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalFilterByArticles]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsPortalFilterByArticles]
+GO
+
+
+/****** Object:  ForeignKey [FK_EasyDNNNewsCategoryLink_EasyDNNNewsCategoryList]    Script Date: 11/05/2012 14:36:19 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsCategoryLink_EasyDNNNewsCategoryList]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsCategoryLink]'))
+ALTER TABLE [dbo].[EasyDNNNewsCategoryLink] DROP CONSTRAINT [FK_EasyDNNNewsCategoryLink_EasyDNNNewsCategoryList]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsCategoryLink_Modules]    Script Date: 11/05/2012 14:36:19 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsCategoryLink_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsCategoryLink]'))
+ALTER TABLE [dbo].[EasyDNNNewsCategoryLink] DROP CONSTRAINT [FK_EasyDNNNewsCategoryLink_Modules]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsPortalCategoryLink_EasyDNNNewsCategoryList]    Script Date: 11/05/2012 14:36:19 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalCategoryLink_EasyDNNNewsCategoryList]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalCategoryLink]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalCategoryLink] DROP CONSTRAINT [FK_EasyDNNNewsPortalCategoryLink_EasyDNNNewsCategoryList]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsPortalCategoryLink_Modules]    Script Date: 11/05/2012 14:36:19 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalCategoryLink_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalCategoryLink]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalCategoryLink] DROP CONSTRAINT [FK_EasyDNNNewsPortalCategoryLink_Modules]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsPortalCategoryLink_Portals]    Script Date: 11/05/2012 14:36:19 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalCategoryLink_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalCategoryLink]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalCategoryLink] DROP CONSTRAINT [FK_EasyDNNNewsPortalCategoryLink_Portals]
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsCategoryLink]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsCategoryLink]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalCategoryLink]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsPortalCategoryLink]
+GO
+
+/****** Object:  ForeignKey [FK_EasyDNNNewsPortalFilterByTagID_EasyDNNNewsNewTags]    Script Date: 11/06/2012 12:35:50 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalFilterByTagID_EasyDNNNewsNewTags]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalFilterByTagID]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalFilterByTagID] DROP CONSTRAINT [FK_EasyDNNNewsPortalFilterByTagID_EasyDNNNewsNewTags]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsPortalFilterByTagID_Portals]    Script Date: 11/06/2012 12:35:50 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalFilterByTagID_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalFilterByTagID]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalFilterByTagID] DROP CONSTRAINT [FK_EasyDNNNewsPortalFilterByTagID_Portals]
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalFilterByTagID]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsPortalFilterByTagID]
+GO
+
+/****** Object:  Table [dbo].[EasyDNNNewsFilterByTagID]    Script Date: 10/19/2012 14:07:20 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsFilterByTagID_EasyDNNNewsNewTags]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsFilterByTagID]'))
+ALTER TABLE [dbo].[EasyDNNNewsFilterByTagID] DROP CONSTRAINT [FK_EasyDNNNewsFilterByTagID_EasyDNNNewsNewTags]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsFilterByTagID]    Script Date: 10/19/2012 14:07:20 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsFilterByTagID_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsFilterByTagID]'))
+ALTER TABLE [dbo].[EasyDNNNewsFilterByTagID] DROP CONSTRAINT [FK_EasyDNNNewsFilterByTagID_Modules]
+GO
+
+/****** Object:  ForeignKey [FK_EasyDNNNewsCategoryMenuImages_EasyDNNNewsCategoryList]    Script Date: 08/30/2012 10:03:26 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsCategoryMenuImages_EasyDNNNewsCategoryList]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsCategoryMenuImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsCategoryMenuImages] DROP CONSTRAINT [FK_EasyDNNNewsCategoryMenuImages_EasyDNNNewsCategoryList]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsCategoryMenuImages_Modules]    Script Date: 08/30/2012 10:03:26 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsCategoryMenuImages_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsCategoryMenuImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsCategoryMenuImages] DROP CONSTRAINT [FK_EasyDNNNewsCategoryMenuImages_Modules]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsCategoryMenuImages]    Script Date: 08/30/2012 10:03:26 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsCategoryMenuImages_EasyDNNNewsCategoryList]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsCategoryMenuImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsCategoryMenuImages] DROP CONSTRAINT [FK_EasyDNNNewsCategoryMenuImages_EasyDNNNewsCategoryList]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsCategoryMenuImages_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsCategoryMenuImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsCategoryMenuImages] DROP CONSTRAINT [FK_EasyDNNNewsCategoryMenuImages_Modules]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsCategoryMenuImages]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsCategoryMenuImages]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsTagsLocalization_EasyDNNNewsNewTags]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsTagsLocalization]'))
+ALTER TABLE [dbo].[EasyDNNNewsTagsLocalization] DROP CONSTRAINT [FK_EasyDNNNewsTagsLocalization_EasyDNNNewsNewTags]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsCalendarSettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsCalendarSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsCalendarSettings] DROP CONSTRAINT [FK_EasyDNNNewsCalendarSettings_Modules]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsCalendarSettings_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsCalendarSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsCalendarSettings] DROP CONSTRAINT [FK_EasyDNNNewsCalendarSettings_Portals]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsMenuSettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsMenuSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsMenuSettings] DROP CONSTRAINT [FK_EasyDNNNewsMenuSettings_Modules]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsMenuSettings_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsMenuSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsMenuSettings] DROP CONSTRAINT [FK_EasyDNNNewsMenuSettings_Portals]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsModuleSettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsModuleSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsModuleSettings] DROP CONSTRAINT [FK_EasyDNNNewsModuleSettings_Modules]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsModuleSettings_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsModuleSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsModuleSettings] DROP CONSTRAINT [FK_EasyDNNNewsModuleSettings_Portals]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalSharing_Portals1]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalSharing]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalSharing] DROP CONSTRAINT [FK_EasyDNNNewsPortalSharing_Portals1]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsSearchSettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSearchSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsSearchSettings] DROP CONSTRAINT [FK_EasyDNNNewsSearchSettings_Modules]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsSearchSettings_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSearchSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsSearchSettings] DROP CONSTRAINT [FK_EasyDNNNewsSearchSettings_Portals]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsTagCloudSettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsTagCloudSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsTagCloudSettings] DROP CONSTRAINT [FK_EasyDNNNewsTagCloudSettings_Modules]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsTagCloudSettings_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsTagCloudSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsTagCloudSettings] DROP CONSTRAINT [FK_EasyDNNNewsTagCloudSettings_Portals]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsCalendarSettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsCalendarSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsCalendarSettings] DROP CONSTRAINT [FK_EasyDNNNewsCalendarSettings_Modules]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsCalendarSettings_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsCalendarSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsCalendarSettings] DROP CONSTRAINT [FK_EasyDNNNewsCalendarSettings_Portals]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsCalendarSettings]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsCalendarSettings]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsMenuSettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsMenuSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsMenuSettings] DROP CONSTRAINT [FK_EasyDNNNewsMenuSettings_Modules]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsMenuSettings_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsMenuSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsMenuSettings] DROP CONSTRAINT [FK_EasyDNNNewsMenuSettings_Portals]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsMenuSettings]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsMenuSettings]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsModuleSettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsModuleSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsModuleSettings] DROP CONSTRAINT [FK_EasyDNNNewsModuleSettings_Modules]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsModuleSettings_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsModuleSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsModuleSettings] DROP CONSTRAINT [FK_EasyDNNNewsModuleSettings_Portals]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF__EasyDNNNe__Enabl__6BB9E75F]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsModuleSettings] DROP CONSTRAINT [DF__EasyDNNNe__Enabl__6BB9E75F]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_EasyDNNNewsModuleSettings_EnableFacebook]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsModuleSettings] DROP CONSTRAINT [DF_EasyDNNNewsModuleSettings_EnableFacebook]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_EasyDNNNewsModuleSettings_EnableJournal]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsModuleSettings] DROP CONSTRAINT [DF_EasyDNNNewsModuleSettings_EnableJournal]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_EasyDNNNewsModuleSettings_EnableJournalComment]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsModuleSettings] DROP CONSTRAINT [DF_EasyDNNNewsModuleSettings_EnableJournalComment]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_EasyDNNNewsModuleSettings_PostSubtitleToJournal]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsModuleSettings] DROP CONSTRAINT [DF_EasyDNNNewsModuleSettings_PostSubtitleToJournal]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_EasyDNNNewsModuleSettings_PostSummaryToJournal]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsModuleSettings] DROP CONSTRAINT [DF_EasyDNNNewsModuleSettings_PostSummaryToJournal]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_EasyDNNNewsModuleSettings_PostTitleToJournal]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsModuleSettings] DROP CONSTRAINT [DF_EasyDNNNewsModuleSettings_PostTitleToJournal]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_EasyDNNNewsModuleSettings_PostImageToJournal]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsModuleSettings] DROP CONSTRAINT [DF_EasyDNNNewsModuleSettings_PostImageToJournal]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsModuleSettings]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsModuleSettings]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsSearchSettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSearchSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsSearchSettings] DROP CONSTRAINT [FK_EasyDNNNewsSearchSettings_Modules]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsSearchSettings_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSearchSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsSearchSettings] DROP CONSTRAINT [FK_EasyDNNNewsSearchSettings_Portals]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSearchSettings]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsSearchSettings]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsTagCloudSettings_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsTagCloudSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsTagCloudSettings] DROP CONSTRAINT [FK_EasyDNNNewsTagCloudSettings_Modules]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsTagCloudSettings_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsTagCloudSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsTagCloudSettings] DROP CONSTRAINT [FK_EasyDNNNewsTagCloudSettings_Portals]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsTagCloudSettings]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsTagCloudSettings]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalSharing_Portals1]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalSharing]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalSharing] DROP CONSTRAINT [FK_EasyDNNNewsPortalSharing_Portals1]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalSharing]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsPortalSharing]
+GO
+
+/****** skripte za social news articles and security ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsSocialSharingTemp_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSocialSharingTemp]'))
+ALTER TABLE [dbo].[EasyDNNNewsSocialSharingTemp] DROP CONSTRAINT [FK_EasyDNNNewsSocialSharingTemp_EasyDNNNews]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsSocialSharingTemp_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSocialSharingTemp]'))
+ALTER TABLE [dbo].[EasyDNNNewsSocialSharingTemp] DROP CONSTRAINT [FK_EasyDNNNewsSocialSharingTemp_Modules]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsSocialSharingTemp_Roles]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSocialSharingTemp]'))
+ALTER TABLE [dbo].[EasyDNNNewsSocialSharingTemp] DROP CONSTRAINT [FK_EasyDNNNewsSocialSharingTemp_Roles]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsSocialGroupItems_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSocialGroupItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsSocialGroupItems] DROP CONSTRAINT [FK_EasyDNNNewsSocialGroupItems_EasyDNNNews]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsSocialGroupItems_Roles]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSocialGroupItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsSocialGroupItems] DROP CONSTRAINT [FK_EasyDNNNewsSocialGroupItems_Roles]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsSocialSecurity_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSocialSecurity]'))
+ALTER TABLE [dbo].[EasyDNNNewsSocialSecurity] DROP CONSTRAINT [FK_EasyDNNNewsSocialSecurity_EasyDNNNews]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSocialSharingTemp]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsSocialSharingTemp]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSocialGroupItems]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsSocialGroupItems]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSocialSecurity]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsSocialSecurity]
+GO
+/****** skripte za social news articles and security ******/
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsPortalSettings_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalSettings]'))
+ALTER TABLE [dbo].[EasyDNNNewsPortalSettings] DROP CONSTRAINT [FK_EasyDNNNewsPortalSettings_Portals]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsRoleNotifications_Roles]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsRoleNotifications]'))
+ALTER TABLE [dbo].[EasyDNNNewsRoleNotifications] DROP CONSTRAINT [FK_EasyDNNNewsRoleNotifications_Roles]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsSocialSharingStatistics_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSocialSharingStatistics]'))
+ALTER TABLE [dbo].[EasyDNNNewsSocialSharingStatistics] DROP CONSTRAINT [FK_EasyDNNNewsSocialSharingStatistics_EasyDNNNews]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsSocialSharingStatistics_Users]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSocialSharingStatistics]'))
+ALTER TABLE [dbo].[EasyDNNNewsSocialSharingStatistics] DROP CONSTRAINT [FK_EasyDNNNewsSocialSharingStatistics_Users]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsUserNotifications_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsUserNotifications]'))
+ALTER TABLE [dbo].[EasyDNNNewsUserNotifications] DROP CONSTRAINT [FK_EasyDNNNewsUserNotifications_Portals]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsUserNotifications_Users]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsUserNotifications]'))
+ALTER TABLE [dbo].[EasyDNNNewsUserNotifications] DROP CONSTRAINT [FK_EasyDNNNewsUserNotifications_Users]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsRoleNotifications]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsRoleNotifications]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsSocialSharingStatistics]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsSocialSharingStatistics]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsUserNotifications]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsUserNotifications]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_EasyDNNNewsPortalSettings_ArticleApproveConfirm]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsPortalSettings] DROP CONSTRAINT [DF_EasyDNNNewsPortalSettings_ArticleApproveConfirm]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_EasyDNNNewsPortalSettings_CommentApproveConfirm]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsPortalSettings] DROP CONSTRAINT [DF_EasyDNNNewsPortalSettings_CommentApproveConfirm]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_EasyDNNNewsPortalSettings_EnableTwitter]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsPortalSettings] DROP CONSTRAINT [DF_EasyDNNNewsPortalSettings_EnableTwitter]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_EasyDNNNewsPortalSettings_TwitterAccessToken]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsPortalSettings] DROP CONSTRAINT [DF_EasyDNNNewsPortalSettings_TwitterAccessToken]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_EasyDNNNewsPortalSettings_EnableFacebook]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsPortalSettings] DROP CONSTRAINT [DF_EasyDNNNewsPortalSettings_EnableFacebook]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_EasyDNNNewsPortalSettings_EnableJournal]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsPortalSettings] DROP CONSTRAINT [DF_EasyDNNNewsPortalSettings_EnableJournal]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_EasyDNNNewsPortalSettings_EnableJournalComment]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsPortalSettings] DROP CONSTRAINT [DF_EasyDNNNewsPortalSettings_EnableJournalComment]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_EasyDNNNewsPortalSettings_PostSubtitleToJournal]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsPortalSettings] DROP CONSTRAINT [DF_EasyDNNNewsPortalSettings_PostSubtitleToJournal]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_EasyDNNNewsPortalSettings_PostSummaryToJournal]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsPortalSettings] DROP CONSTRAINT [DF_EasyDNNNewsPortalSettings_PostSummaryToJournal]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_EasyDNNNewsPortalSettings_PostTitleToJournal]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsPortalSettings] DROP CONSTRAINT [DF_EasyDNNNewsPortalSettings_PostTitleToJournal]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_EasyDNNNewsPortalSettings_PostImageToJournal]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsPortalSettings] DROP CONSTRAINT [DF_EasyDNNNewsPortalSettings_PostImageToJournal]
+END
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalSettings]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsPortalSettings]
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsShowCategoriesByPermissions]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsShowCategoriesByPermissions]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemByPermission]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemByPermission]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsForCategoryMenu]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsForCategoryMenu]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsByMonthlyArchive]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsByMonthlyArchive]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsByTagID]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsByTagID]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsByTagIDCountForPageing]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsByTagIDCountForPageing]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsCalendarEventsArchive]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsCalendarEventsArchive]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsCountForArticleEditor]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsCountForArticleEditor]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsCountForPageing]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsCountForPageing]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsCountForPageingDateWithEventsRange]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsCountForPageingDateWithEventsRange]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsCountForPageingOnlyEvents]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsCountForPageingOnlyEvents]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsCountItemsFromSearch]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsCountItemsFromSearch]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsEventsOnlyInRange]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsEventsOnlyInRange]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsEventsToShowInCalendar]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsEventsToShowInCalendar]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsForArticleEditor]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsForArticleEditor]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsForChalendarMonthly]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsForChalendarMonthly]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsForListDisplay]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsForListDisplay]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsForListDisplayByDateWithEventsRange]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsForListDisplayByDateWithEventsRange]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsForListDisplayOnlyEvents]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsForListDisplayOnlyEvents]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsForTagCloud]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsForTagCloud]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsFromSearch]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsFromSearch]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsForListDisplayByUserId]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsForListDisplayByUserId]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsCountForPageingByUserId]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsCountForPageingByUserId]
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsShowCategoriesByPermissions]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsShowCategoriesByPermissions]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAddEditCategoriesByPermissions]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsAddEditCategoriesByPermissions]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetCategoryAutoAdd]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetCategoryAutoAdd]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPermissions]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsPermissions]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EDNGetAutoAddCategoryAndFilterByModule]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EDNGetAutoAddCategoryAndFilterByModule]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNnewsGroupsAndAuthors]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNnewsGroupsAndAuthors]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNnewsArticleArchive]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNnewsArticleArchive]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsRolePremissionsAddToCategories]    Script Date: 11/24/2011 11:14:26 ******/
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionsAddToCategories] DROP CONSTRAINT [FK_EasyDNNNewsRolePremissionsAddToCategories_EasyDNNNewsCategoryList1]
+GO
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionsAddToCategories] DROP CONSTRAINT [FK_EasyDNNNewsRolePremissionsAddToCategories_EasyDNNNewsRolePremissionSettings1]
+GO
+DROP TABLE [dbo].[EasyDNNNewsRolePremissionsAddToCategories]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsRolePremissionsShowCategories]    Script Date: 11/24/2011 11:14:26 ******/
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionsShowCategories] DROP CONSTRAINT [FK_EasyDNNNewsRolePremissionsAddToCategories_EasyDNNNewsCategoryList]
+GO
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionsShowCategories] DROP CONSTRAINT [FK_EasyDNNNewsRolePremissionsAddToCategories_EasyDNNNewsRolePremissionSettings]
+GO
+DROP TABLE [dbo].[EasyDNNNewsRolePremissionsShowCategories]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsRolePremissionSettings]    Script Date: 11/24/2011 11:14:26 ******/
+ALTER TABLE [dbo].[EasyDNNNewsRolePremissionSettings] DROP CONSTRAINT [FK_EasyDNNNewsRolePremissionSettings_Roles]
+GO
+DROP TABLE [dbo].[EasyDNNNewsRolePremissionSettings]
+GO
+
+ALTER TABLE [dbo].[EasyDNNNewsUserPremissionsAddToCategories] DROP CONSTRAINT [FK_EasyDNNNewsUserPremissionsAddToCategories_EasyDNNNewsUserPremissionSettings1]
+GO
+DROP TABLE [dbo].[EasyDNNNewsUserPremissionsAddToCategories]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsUserPremissionsShowCategories]    Script Date: 11/24/2011 11:14:26 ******/
+ALTER TABLE [dbo].[EasyDNNNewsUserPremissionsShowCategories] DROP CONSTRAINT [FK_EasyDNNNewsUserPremissionsAddToCategories_EasyDNNNewsCategoryList]
+GO
+ALTER TABLE [dbo].[EasyDNNNewsUserPremissionsShowCategories] DROP CONSTRAINT [FK_EasyDNNNewsUserPremissionsAddToCategories_EasyDNNNewsUserPremissionSettings]
+GO
+DROP TABLE [dbo].[EasyDNNNewsUserPremissionsShowCategories]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsUserPremissionSettings]    Script Date: 11/24/2011 11:14:26 ******/
+ALTER TABLE [dbo].[EasyDNNNewsUserPremissionSettings] DROP CONSTRAINT [FK_EasyDNNNewsUserPremissionSettings_Users]
+GO
+DROP TABLE [dbo].[EasyDNNNewsUserPremissionSettings]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsDocuments]    Script Date: 11/24/2011 11:14:26 ******/
+ALTER TABLE [dbo].[EasyDNNNewsDocuments] DROP CONSTRAINT [FK_EasyDNNNewsDocuments_EasyDNNNews]
+GO
+DROP TABLE [dbo].[EasyDNNNewsDocuments]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsGallery]    Script Date: 11/24/2011 11:14:26 ******/
+ALTER TABLE [dbo].[EasyDNNNewsGallery] DROP CONSTRAINT [FK_EasyDNNNewsGallery_EasyDNNNews]
+GO
+ALTER TABLE [dbo].[EasyDNNNewsGallery] DROP CONSTRAINT [FK_EasyDNNNewsGallery_EasyGallery]
+GO
+DROP TABLE [dbo].[EasyDNNNewsGallery]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsArchive]    Script Date: 11/24/2011 11:14:25 ******/
+ALTER TABLE [dbo].[EasyDNNNewsArchive] DROP CONSTRAINT [FK_EasyDNNNewsArchive_EasyDNNNews]
+GO
+DROP TABLE [dbo].[EasyDNNNewsArchive]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsCategories]    Script Date: 11/24/2011 11:14:25 ******/
+ALTER TABLE [dbo].[EasyDNNNewsCategories] DROP CONSTRAINT [FK_EasyDNNNewsCategories_EasyDNNNews]
+GO
+ALTER TABLE [dbo].[EasyDNNNewsCategories] DROP CONSTRAINT [FK_EasyDNNNewsCategories_EasyDNNNewsCategoryList1]
+GO
+DROP TABLE [dbo].[EasyDNNNewsCategories]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsCategoryLocalization]    Script Date: 11/24/2011 11:14:26 ******/
+ALTER TABLE [dbo].[EasyDNNNewsCategoryLocalization] DROP CONSTRAINT [FK_EasyDNNNewsCategoryLocalization_EasyDNNNewsCategoryList]
+GO
+DROP TABLE [dbo].[EasyDNNNewsCategoryLocalization]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsComments]    Script Date: 11/24/2011 11:14:26 ******/
+ALTER TABLE [dbo].[EasyDNNNewsComments] DROP CONSTRAINT [FK_EasyDNNNewsComments_EasyDNNNews]
+GO
+DROP TABLE [dbo].[EasyDNNNewsComments]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsContentLocalization]    Script Date: 11/24/2011 11:14:26 ******/
+DROP TABLE [dbo].[EasyDNNNewsContentLocalization]
+GO
+/****** Object:  Table [dbo].[EasyDNNnewsCharList]    Script Date: 11/24/2011 11:14:26 ******/
+DROP TABLE [dbo].[EasyDNNnewsCharList]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsSaveInfo]    Script Date: 11/24/2011 11:14:26 ******/
+DROP TABLE [dbo].[EasyDNNNewsSaveInfo]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsSystemTokens]    Script Date: 11/24/2011 11:14:26 ******/
+DROP TABLE [dbo].[EasyDNNNewsSystemTokens]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsTokens]    Script Date: 11/24/2011 11:14:26 ******/
+DROP TABLE [dbo].[EasyDNNNewsTokens]
+GO
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsData]    Script Date: 12/05/2011 11:04:17 ******/
+DROP TABLE [dbo].[EasyDNNNewsData]
+GO
+
+/***Delete tables added in 04.05.055*/
+/****** Object:  ForeignKey [FK_EasyDNNNewsAuthorGroupImages_EasyDNNNewsAuthorGroups]    Script Date: 04/27/2012 10:33:33 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorGroupImages_EasyDNNNewsAuthorGroups]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorGroupImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorGroupImages] DROP CONSTRAINT [FK_EasyDNNNewsAuthorGroupImages_EasyDNNNewsAuthorGroups]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAuthorGroupImages_Modules]    Script Date: 04/27/2012 10:33:33 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorGroupImages_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorGroupImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorGroupImages] DROP CONSTRAINT [FK_EasyDNNNewsAuthorGroupImages_Modules]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAuthorGroups_Portals]    Script Date: 04/27/2012 10:33:33 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorGroups_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorGroups]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorGroups] DROP CONSTRAINT [FK_EasyDNNNewsAuthorGroups_Portals]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAuthorProfiles_Users]    Script Date: 04/27/2012 10:33:33 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorProfiles_Users]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorProfile]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorProfile] DROP CONSTRAINT [FK_EasyDNNNewsAuthorProfiles_Users]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAuthorProfileImages_Modules]    Script Date: 04/27/2012 10:33:33 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorProfileImages_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorProfileImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorProfileImages] DROP CONSTRAINT [FK_EasyDNNNewsAuthorProfileImages_Modules]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAuthorProfileImages_Users]    Script Date: 04/27/2012 10:33:33 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorProfileImages_Users]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorProfileImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorProfileImages] DROP CONSTRAINT [FK_EasyDNNNewsAuthorProfileImages_Users]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorGroups1]    Script Date: 04/27/2012 10:33:33 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorGroups1]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAutorGroupItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsAutorGroupItems] DROP CONSTRAINT [FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorGroups1]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorProfile]    Script Date: 04/27/2012 10:33:33 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorProfile]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAutorGroupItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsAutorGroupItems] DROP CONSTRAINT [FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorProfile]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsRSSArticle_EasyDNNNews]    Script Date: 04/27/2012 10:33:33 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsRSSArticle_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsRSSArticle]'))
+ALTER TABLE [dbo].[EasyDNNNewsRSSArticle] DROP CONSTRAINT [FK_EasyDNNNewsRSSArticle_EasyDNNNews]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsRSSArticle_EasyDNNNewsRSSFeedImport]    Script Date: 04/27/2012 10:33:33 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsRSSArticle_EasyDNNNewsRSSFeedImport]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsRSSArticle]'))
+ALTER TABLE [dbo].[EasyDNNNewsRSSArticle] DROP CONSTRAINT [FK_EasyDNNNewsRSSArticle_EasyDNNNewsRSSFeedImport]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsAuthorGroupImages]    Script Date: 04/27/2012 10:33:33 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorGroupImages_EasyDNNNewsAuthorGroups]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorGroupImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorGroupImages] DROP CONSTRAINT [FK_EasyDNNNewsAuthorGroupImages_EasyDNNNewsAuthorGroups]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorGroupImages_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorGroupImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorGroupImages] DROP CONSTRAINT [FK_EasyDNNNewsAuthorGroupImages_Modules]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorGroupImages]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsAuthorGroupImages]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsAuthorProfileImages]    Script Date: 04/27/2012 10:33:33 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorProfileImages_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorProfileImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorProfileImages] DROP CONSTRAINT [FK_EasyDNNNewsAuthorProfileImages_Modules]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorProfileImages_Users]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorProfileImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorProfileImages] DROP CONSTRAINT [FK_EasyDNNNewsAuthorProfileImages_Users]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorProfileImages]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsAuthorProfileImages]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsAutorGroupItems]    Script Date: 04/27/2012 10:33:33 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorGroups1]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAutorGroupItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsAutorGroupItems] DROP CONSTRAINT [FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorGroups1]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorProfile]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAutorGroupItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsAutorGroupItems] DROP CONSTRAINT [FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorProfile]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAutorGroupItems]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsAutorGroupItems]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsRSSArticle]    Script Date: 04/27/2012 10:33:33 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsRSSArticle_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsRSSArticle]'))
+ALTER TABLE [dbo].[EasyDNNNewsRSSArticle] DROP CONSTRAINT [FK_EasyDNNNewsRSSArticle_EasyDNNNews]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsRSSArticle_EasyDNNNewsRSSFeedImport]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsRSSArticle]'))
+ALTER TABLE [dbo].[EasyDNNNewsRSSArticle] DROP CONSTRAINT [FK_EasyDNNNewsRSSArticle_EasyDNNNewsRSSFeedImport]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsRSSArticle]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsRSSArticle]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsAuthorGroups]    Script Date: 04/27/2012 10:33:33 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorGroups_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorGroups]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorGroups] DROP CONSTRAINT [FK_EasyDNNNewsAuthorGroups_Portals]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsAuthorProfile]    Script Date: 04/27/2012 10:33:33 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorProfiles_Users]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorProfile]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorProfile] DROP CONSTRAINT [FK_EasyDNNNewsAuthorProfiles_Users]
+GO
+
+/*Brisanje galerije*/
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyGallerySettings]') AND type in (N'U'))
+BEGIN
+	IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGallery_EasyGalleryCategory]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGallery]'))
+	ALTER TABLE [dbo].[EasyGallery] DROP CONSTRAINT [FK_EasyGallery_EasyGalleryCategory]
+	IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNThumbs_EasyGallery]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNThumbs]'))
+	ALTER TABLE [dbo].[EasyDNNThumbs] DROP CONSTRAINT [FK_EasyDNNThumbs_EasyGallery]
+	IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNThumbs_{objectQualifier}Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNThumbs]'))
+	ALTER TABLE [dbo].[EasyDNNThumbs] DROP CONSTRAINT [FK_EasyDNNThumbs_{objectQualifier}Modules]
+	IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyGalleryPictures_EasyGallery]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyGalleryPictures]'))
+	ALTER TABLE [dbo].[EasyGalleryPictures] DROP CONSTRAINT [FK_EasyGalleryPictures_EasyGallery]
+	IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNMediaLocalization_EasyGalleryPictures]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNMediaLocalization]'))
+	ALTER TABLE [dbo].[EasyDNNMediaLocalization] DROP CONSTRAINT [FK_EasyDNNMediaLocalization_EasyGalleryPictures]
+
+	IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyGalleryPictures]') AND type in (N'U'))
+	DROP TABLE [dbo].[EasyGalleryPictures]
+	IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNMediaLocalization]') AND type in (N'U'))
+	DROP TABLE [dbo].[EasyDNNMediaLocalization]
+	IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyGalleryCategory]') AND type in (N'U'))
+	DROP TABLE [dbo].[EasyGalleryCategory]
+	IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyGallery]') AND type in (N'U'))
+	DROP TABLE [dbo].[EasyGallery]
+	IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNThumbs]') AND type in (N'U'))
+	DROP TABLE [dbo].[EasyDNNThumbs]
+END
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNfields_EasyDNNfields]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNfields]'))
+ALTER TABLE [dbo].[EasyDNNfields] DROP CONSTRAINT [FK_EasyDNNfields_EasyDNNfields]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNfields_EasyDNNfielsType]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNfields]'))
+ALTER TABLE [dbo].[EasyDNNfields] DROP CONSTRAINT [FK_EasyDNNfields_EasyDNNfielsType]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNfieldsMultiElements_EasyDNNfields]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNfieldsMultiElements]'))
+ALTER TABLE [dbo].[EasyDNNfieldsMultiElements] DROP CONSTRAINT [FK_EasyDNNfieldsMultiElements_EasyDNNfields]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNfieldsMultiElements_EasyDNNfieldsMultiElements]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNfieldsMultiElements]'))
+ALTER TABLE [dbo].[EasyDNNfieldsMultiElements] DROP CONSTRAINT [FK_EasyDNNfieldsMultiElements_EasyDNNfieldsMultiElements]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNfieldsMultiSelected_EasyDNNfieldsMultiElements1]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNfieldsMultiSelected]'))
+ALTER TABLE [dbo].[EasyDNNfieldsMultiSelected] DROP CONSTRAINT [FK_EasyDNNfieldsMultiSelected_EasyDNNfieldsMultiElements1]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNfieldsMultiSelected_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNfieldsMultiSelected]'))
+ALTER TABLE [dbo].[EasyDNNfieldsMultiSelected] DROP CONSTRAINT [FK_EasyDNNfieldsMultiSelected_EasyDNNNews]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNfieldsTemplateItems_EasyDNNfields]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNfieldsTemplateItems]'))
+ALTER TABLE [dbo].[EasyDNNfieldsTemplateItems] DROP CONSTRAINT [FK_EasyDNNfieldsTemplateItems_EasyDNNfields]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNfieldsTemplateItems_EasyDNNfieldsTemplate]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNfieldsTemplateItems]'))
+ALTER TABLE [dbo].[EasyDNNfieldsTemplateItems] DROP CONSTRAINT [FK_EasyDNNfieldsTemplateItems_EasyDNNfieldsTemplate]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNfieldsValues_EasyDNNfields]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNfieldsValues]'))
+ALTER TABLE [dbo].[EasyDNNfieldsValues] DROP CONSTRAINT [FK_EasyDNNfieldsValues_EasyDNNfields]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNfieldsValues_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNfieldsValues]'))
+ALTER TABLE [dbo].[EasyDNNfieldsValues] DROP CONSTRAINT [FK_EasyDNNfieldsValues_EasyDNNNews]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNfieldGetMultiControlsElementsByParent]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNfieldGetMultiControlsElementsByParent]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNfieldsExchangeElementsPosition]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNfieldsExchangeElementsPosition]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNfieldsIUElementsList]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNfieldsIUElementsList]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNfieldsMultiSelected]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNfieldsMultiSelected]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNfieldsTemplateItems]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNfieldsTemplateItems]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNfieldsValues]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNfieldsValues]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNfieldsMultiElements]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNfieldsMultiElements]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNfields]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNfields]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNfielsType]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNfielsType]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNfieldsTemplate]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNfieldsTemplate]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsInfo]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsInfo]
+GO
+
+/**** Delete tables added 4.5 ****/
+/****** Object:  ForeignKey [FK_EasyDNNNewsArticleGoogleMapConnection_EasyDNNNews]    Script Date: 05/12/2012 09:58:48 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsArticleGoogleMapConnection_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleGoogleMapConnection]'))
+ALTER TABLE [dbo].[EasyDNNNewsArticleGoogleMapConnection] DROP CONSTRAINT [FK_EasyDNNNewsArticleGoogleMapConnection_EasyDNNNews]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsArticleGoogleMapConnection_EasyDNNnewsGoogleMapsData]    Script Date: 05/12/2012 09:58:48 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsArticleGoogleMapConnection_EasyDNNnewsGoogleMapsData]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleGoogleMapConnection]'))
+ALTER TABLE [dbo].[EasyDNNNewsArticleGoogleMapConnection] DROP CONSTRAINT [FK_EasyDNNNewsArticleGoogleMapConnection_EasyDNNnewsGoogleMapsData]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAuthorGroupImages_EasyDNNNewsAuthorGroups]    Script Date: 05/12/2012 09:58:48 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorGroupImages_EasyDNNNewsAuthorGroups]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorGroupImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorGroupImages] DROP CONSTRAINT [FK_EasyDNNNewsAuthorGroupImages_EasyDNNNewsAuthorGroups]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAuthorGroupImages_Modules]    Script Date: 05/12/2012 09:58:48 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorGroupImages_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorGroupImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorGroupImages] DROP CONSTRAINT [FK_EasyDNNNewsAuthorGroupImages_Modules]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAuthorGroups_Portals]    Script Date: 05/12/2012 09:58:48 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorGroups_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorGroups]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorGroups] DROP CONSTRAINT [FK_EasyDNNNewsAuthorGroups_Portals]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAuthorProfiles_Users]    Script Date: 05/12/2012 09:58:48 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorProfiles_Users]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorProfile]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorProfile] DROP CONSTRAINT [FK_EasyDNNNewsAuthorProfiles_Users]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAuthorProfileImages_Modules]    Script Date: 05/12/2012 09:58:48 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorProfileImages_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorProfileImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorProfileImages] DROP CONSTRAINT [FK_EasyDNNNewsAuthorProfileImages_Modules]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAuthorProfileImages_Users]    Script Date: 05/12/2012 09:58:48 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorProfileImages_Users]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorProfileImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorProfileImages] DROP CONSTRAINT [FK_EasyDNNNewsAuthorProfileImages_Users]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorGroups1]    Script Date: 05/12/2012 09:58:48 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorGroups1]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAutorGroupItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsAutorGroupItems] DROP CONSTRAINT [FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorGroups1]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorProfile]    Script Date: 05/12/2012 09:58:48 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorProfile]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAutorGroupItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsAutorGroupItems] DROP CONSTRAINT [FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorProfile]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsModuleAuthorsItems_Users]    Script Date: 05/12/2012 09:58:49 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsModuleAuthorsItems_Users]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsModuleAuthorsItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsModuleAuthorsItems] DROP CONSTRAINT [FK_EasyDNNNewsModuleAuthorsItems_Users]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsModuleCategory_EasyDNNNewsCategoryList]    Script Date: 05/12/2012 09:58:49 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsModuleCategory_EasyDNNNewsCategoryList]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsModuleCategoryItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsModuleCategoryItems] DROP CONSTRAINT [FK_EasyDNNNewsModuleCategory_EasyDNNNewsCategoryList]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsModuleGroupItems_EasyDNNNewsAuthorGroups]    Script Date: 05/12/2012 09:58:49 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsModuleGroupItems_EasyDNNNewsAuthorGroups]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsModuleGroupItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsModuleGroupItems] DROP CONSTRAINT [FK_EasyDNNNewsModuleGroupItems_EasyDNNNewsAuthorGroups]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsRSSArticle_EasyDNNNews]    Script Date: 05/12/2012 09:58:49 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsRSSArticle_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsRSSArticle]'))
+ALTER TABLE [dbo].[EasyDNNNewsRSSArticle] DROP CONSTRAINT [FK_EasyDNNNewsRSSArticle_EasyDNNNews]
+GO
+/****** Object:  ForeignKey [FK_EasyDNNNewsRSSArticle_EasyDNNNewsRSSFeedImport]    Script Date: 05/12/2012 09:58:49 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsRSSArticle_EasyDNNNewsRSSFeedImport]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsRSSArticle]'))
+ALTER TABLE [dbo].[EasyDNNNewsRSSArticle] DROP CONSTRAINT [FK_EasyDNNNewsRSSArticle_EasyDNNNewsRSSFeedImport]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsAuthorGroupImages]    Script Date: 05/12/2012 09:58:48 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorGroupImages_EasyDNNNewsAuthorGroups]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorGroupImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorGroupImages] DROP CONSTRAINT [FK_EasyDNNNewsAuthorGroupImages_EasyDNNNewsAuthorGroups]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorGroupImages_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorGroupImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorGroupImages] DROP CONSTRAINT [FK_EasyDNNNewsAuthorGroupImages_Modules]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorGroupImages]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsAuthorGroupImages]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsAuthorProfileImages]    Script Date: 05/12/2012 09:58:48 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorProfileImages_Modules]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorProfileImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorProfileImages] DROP CONSTRAINT [FK_EasyDNNNewsAuthorProfileImages_Modules]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorProfileImages_Users]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorProfileImages]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorProfileImages] DROP CONSTRAINT [FK_EasyDNNNewsAuthorProfileImages_Users]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorProfileImages]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsAuthorProfileImages]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsAutorGroupItems]    Script Date: 05/12/2012 09:58:48 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorGroups1]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAutorGroupItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsAutorGroupItems] DROP CONSTRAINT [FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorGroups1]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorProfile]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAutorGroupItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsAutorGroupItems] DROP CONSTRAINT [FK_EasyDNNNewsAutorGroupItems_EasyDNNNewsAuthorProfile]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAutorGroupItems]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsAutorGroupItems]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsModuleGroupItems]    Script Date: 05/12/2012 09:58:49 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsModuleGroupItems_EasyDNNNewsAuthorGroups]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsModuleGroupItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsModuleGroupItems] DROP CONSTRAINT [FK_EasyDNNNewsModuleGroupItems_EasyDNNNewsAuthorGroups]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsModuleGroupItems]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsModuleGroupItems]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsArticleGoogleMapConnection]    Script Date: 05/12/2012 09:58:48 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsArticleGoogleMapConnection_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleGoogleMapConnection]'))
+ALTER TABLE [dbo].[EasyDNNNewsArticleGoogleMapConnection] DROP CONSTRAINT [FK_EasyDNNNewsArticleGoogleMapConnection_EasyDNNNews]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsArticleGoogleMapConnection_EasyDNNnewsGoogleMapsData]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleGoogleMapConnection]'))
+ALTER TABLE [dbo].[EasyDNNNewsArticleGoogleMapConnection] DROP CONSTRAINT [FK_EasyDNNNewsArticleGoogleMapConnection_EasyDNNnewsGoogleMapsData]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleGoogleMapConnection]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsArticleGoogleMapConnection]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsAuthorGroups]    Script Date: 05/12/2012 09:58:48 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorGroups_Portals]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorGroups]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorGroups] DROP CONSTRAINT [FK_EasyDNNNewsAuthorGroups_Portals]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorGroups]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsAuthorGroups]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsAuthorProfile]    Script Date: 05/12/2012 09:58:48 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsAuthorProfiles_Users]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorProfile]'))
+ALTER TABLE [dbo].[EasyDNNNewsAuthorProfile] DROP CONSTRAINT [FK_EasyDNNNewsAuthorProfiles_Users]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAuthorProfile]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsAuthorProfile]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsModuleAuthorsItems]    Script Date: 05/12/2012 09:58:49 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsModuleAuthorsItems_Users]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsModuleAuthorsItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsModuleAuthorsItems] DROP CONSTRAINT [FK_EasyDNNNewsModuleAuthorsItems_Users]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsModuleAuthorsItems]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsModuleAuthorsItems]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsModuleCategoryItems]    Script Date: 05/12/2012 09:58:49 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsModuleCategory_EasyDNNNewsCategoryList]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsModuleCategoryItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsModuleCategoryItems] DROP CONSTRAINT [FK_EasyDNNNewsModuleCategory_EasyDNNNewsCategoryList]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsModuleCategoryItems]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsModuleCategoryItems]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsRSSArticle]    Script Date: 05/12/2012 09:58:49 ******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsRSSArticle_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsRSSArticle]'))
+ALTER TABLE [dbo].[EasyDNNNewsRSSArticle] DROP CONSTRAINT [FK_EasyDNNNewsRSSArticle_EasyDNNNews]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsRSSArticle_EasyDNNNewsRSSFeedImport]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsRSSArticle]'))
+ALTER TABLE [dbo].[EasyDNNNewsRSSArticle] DROP CONSTRAINT [FK_EasyDNNNewsRSSArticle_EasyDNNNewsRSSFeedImport]
+GO
+/***** New created tags and article permissions constraints removal  and events data*****/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsArticleRolePermissions_EasyDNNNewsArticleRolePermissions]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleRolePermissions]'))
+ALTER TABLE [dbo].[EasyDNNNewsArticleRolePermissions] DROP CONSTRAINT [FK_EasyDNNNewsArticleRolePermissions_EasyDNNNewsArticleRolePermissions]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsArticleRolePermissions_Roles]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleRolePermissions]'))
+ALTER TABLE [dbo].[EasyDNNNewsArticleRolePermissions] DROP CONSTRAINT [FK_EasyDNNNewsArticleRolePermissions_Roles]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsArticleUserPermissions_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleUserPermissions]'))
+ALTER TABLE [dbo].[EasyDNNNewsArticleUserPermissions] DROP CONSTRAINT [FK_EasyDNNNewsArticleUserPermissions_EasyDNNNews]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsArticleUserPermissions_Users]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleUserPermissions]'))
+ALTER TABLE [dbo].[EasyDNNNewsArticleUserPermissions] DROP CONSTRAINT [FK_EasyDNNNewsArticleUserPermissions_Users]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsTagsItems_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsTagsItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsTagsItems] DROP CONSTRAINT [FK_EasyDNNNewsTagsItems_EasyDNNNews]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_EasyDNNNewsTagsItems_EasyDNNNewsNewTags]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsTagsItems]'))
+ALTER TABLE [dbo].[EasyDNNNewsTagsItems] DROP CONSTRAINT [FK_EasyDNNNewsTagsItems_EasyDNNNewsNewTags]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_easynewsEvent_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsEventsData]'))
+ALTER TABLE [dbo].[EasyDNNNewsEventsData] DROP CONSTRAINT [FK_easynewsEvent_EasyDNNNews]
+GO
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_easynewsEvent_EasyDNNNews]') AND parent_object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsEventsData]'))
+ALTER TABLE [dbo].[EasyDNNNewsEventsData] DROP CONSTRAINT [FK_easynewsEvent_EasyDNNNews]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_EasyDNNNewsTagsItems_DateAdded]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsTagsItems] DROP CONSTRAINT [DF_EasyDNNNewsTagsItems_DateAdded]
+END
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[DF_EasyDNNNewsNewTags_DateCreated]') AND type = 'D')
+BEGIN
+ALTER TABLE [dbo].[EasyDNNNewsNewTags] DROP CONSTRAINT [DF_EasyDNNNewsNewTags_DateCreated]
+END
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsFilterByTagID]    Script Date: 10/19/2012 14:07:20 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsFilterByTagID]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsFilterByTagID]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsEventsData]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsEventsData]
+GO
+/***** New created tags and article permissions tables removal *****/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleRolePermissions]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsArticleRolePermissions]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleUserPermissions]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsArticleUserPermissions]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsTagsItems]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsTagsItems]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsNewTags]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsNewTags]
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsTagsLocalization]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsTagsLocalization]
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsRSSArticle]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsRSSArticle]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsRSSFeedImport]    Script Date: 05/12/2012 09:58:49 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsRSSFeedImport]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsRSSFeedImport]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsUpdate]    Script Date: 05/12/2012 09:58:49 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsUpdate]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsUpdate]
+GO
+/****** Object:  Table [dbo].[EasyDNNnewsGoogleMapsAPI]    Script Date: 05/12/2012 09:58:48 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNnewsGoogleMapsAPI]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNnewsGoogleMapsAPI]
+GO
+/****** Object:  Table [dbo].[EasyDNNnewsGoogleMapsData]    Script Date: 05/12/2012 09:58:48 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNnewsGoogleMapsData]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNnewsGoogleMapsData]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsModuleSearchable]    Script Date: 05/12/2012 09:58:49 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsModuleSearchable]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsModuleSearchable]
+GO
+/****** Object:  Table [dbo].[EasyDNNNews]    Script Date: 11/24/2011 11:14:25 ******/
+DROP TABLE [dbo].[EasyDNNNews]
+GO
+/****** Object:  Table [dbo].[EasyDNNNewsCategoryList]    Script Date: 11/24/2011 11:14:26 ******/
+DROP TABLE [dbo].[EasyDNNNewsCategoryList]
+GO
+/**** Delete added at 4.5 ****/
+
+
+/****** Added in 5.0 ******/
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsVideoGallerySettings]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsVideoGallerySettings]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNnewsWidgets]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNnewsWidgets]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsArticleGalleryItems]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsArticleGalleryItems]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalGroupItems]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsPortalGroupItems]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalAuthorsItems]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsPortalAuthorsItems]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsPortalCategoryItems]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsPortalCategoryItems]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsAudioGallerySettings]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsAudioGallerySettings]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsChameleonNestedSettings]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsChameleonNestedSettings]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsChameleonSettings]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsChameleonSettings]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsLightboxSettings]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsLightboxSettings]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsTreeView]') AND type in (N'U'))
+DROP TABLE [dbo].[EasyDNNNewsTreeView]
+GO
+
+/****** Object:  StoredProcedure [dbo].[EasyDNNNewsGetItemsForTreeView]    Script Date: 03/29/2013 15:41:01 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsForTreeView]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsForTreeView]
+GO
+/****** Object:  StoredProcedure [dbo].[EasyDNNNewsGetItemsPerCategory]    Script Date: 03/29/2013 15:41:01 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetItemsPerCategory]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetItemsPerCategory]
+GO
+/****** Object:  StoredProcedure [dbo].[EasyDNNNewsGetCountAllNewsEventsOnlyInRange]    Script Date: 03/29/2013 15:41:01 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[EasyDNNNewsGetCountAllNewsEventsOnlyInRange]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[EasyDNNNewsGetCountAllNewsEventsOnlyInRange]
+
+/****** Added in 5.0 ******/

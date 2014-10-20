@@ -1,0 +1,112 @@
+<div id="dnn_ctr4582_HtmlModule_lblContent" class="Normal">
+	<div class="dashbord-main">
+<ul class="item-list">
+    <li class="EstelamateMan">
+    <a href="/default.aspx?tabid=1148">
+    <h2>استعلامات من</h2>
+    </a>
+    </li>
+    <li class="KhadamateMan">
+    <a href="/default.aspx?tabid=1149">
+    <h2>خدمات من</h2>
+    </a>
+    </li>
+    <li class="ElamiyeHayeMan">
+    <a href="/default.aspx?tabid=1150">
+    <h2>اعلامیه های من
+    (خدمات رسان)</h2>
+    </a>
+    </li>
+    <li class="ElamiyeHayeManS">
+    <a href="/default.aspx?tabid=1161">
+    <h2>اعلامیه های من
+    (صاحب بار)</h2>
+    </a>
+    </li>
+    <li class="GozareshateMali">
+    <a href="/default.aspx?tabid=1151">
+    <h2>گزارشات مالی</h2>
+    </a>
+    </li>
+</ul>
+</div>
+<style type="text/css">
+    .dashbord-main {
+    width: 100%;
+    display: block;
+    position:relative;
+    }
+    .dashbord-main ul.item-list {
+    padding: 20px 0px;
+    margin-bottom: 160px;
+    margin-right: 0px;
+    }
+    .dashbord-main ul.item-list li {
+    vertical-align:text-top;
+    background: none repeat scroll 0 0 #8EBD2F;
+    border: 1px solid #999999;
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+    float: right;
+    height: 120px;
+    list-style: none outside none;
+    margin: 0 10px 20px;
+    padding: 5px 0;
+    text-align: center;
+    transition: background-color 0.3s ease 0s;
+    width: 130px;
+    }
+    .dashbord-main ul.item-list li.KhadamateMan{
+    background: none repeat scroll 0 0 #f1c92b;
+    border: 1px solid #999999;
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+    float: right;
+    height: 120px;
+    list-style: none outside none;
+    margin: 0 10px 20px;
+    padding: 5px 0;
+    text-align: center;
+    transition: background-color 0.3s ease 0s;
+    width: 130px;
+    }
+    .dashbord-main ul.item-list li:hover {
+    background: #afe04d;
+    }
+    .dashbord-main ul.item-list li a {
+    display: block;
+    padding: 90px 0 0 0;
+    }
+    .dashbord-main ul.item-list li a h2 {
+    vertical-align:text-top;
+    background: none repeat scroll 0 0 #F6F6F6;
+    color: #444444;
+    font-family: bkoodak;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 18px;
+    height: 21px;
+    margin: 7 0 0 0;
+    padding: 3px 0;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid gray;
+    border-radius: 2px;
+    }
+    .dashbord-main ul.item-list li.EstelamateMan a {
+    background: url("/Portals/0/location.png") no-repeat center 14px transparent;
+    }
+    .dashbord-main ul.item-list li.KhadamateMan a {
+    background: url("/Portals/0/packet.png") no-repeat center 14px transparent;
+    }
+    .dashbord-main ul.item-list li.ElamiyeHayeMan a {
+    background: url("/Portals/0/user.png") no-repeat center 14px transparent;
+    }
+    .dashbord-main ul.item-list li.ElamiyeHayeManS a {
+    background: url("/Portals/0/user.png") no-repeat center 14px transparent;
+    }
+    .dashbord-main ul.item-list li.GozareshateMali a {
+    background: url("/Portals/0/matching.png") no-repeat center 14px transparent;
+    }
+</style>
+</div>

@@ -1,0 +1,12 @@
+2014-06-22 10:32:00,740 [srv20079][Thread:8][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.IO.IOException: The process cannot access the file 'C:\HostingSpaces\mydnn\ehaml.com\wwwroot\Desktopmodules\LiveTabs\License.lic' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path)
+   at Mandeeps.DNN.Modules.Licensing.LicenseManager.method_0(Object object_0)
+   at Mandeeps.DNN.Modules.Licensing.LicenseManager.method_6(License license_1)
+   at Mandeeps.DNN.Modules.Licensing.LicenseManager.method_3()
+   at Mandeeps.DNN.Modules.Licensing.LicenseManager..ctor(AppType App, LicenseType Edition, String InstallId, String PortalId, String Domain, String AppID, String LicenseFile, Int32 TrialDays, Int32 ValidateDays, String AppVersion, String PlatformVersion)
+   at Mandeeps.DNN.Modules.LiveTabs.View.#9()

@@ -1,0 +1,49 @@
+﻿.dnnFormItem input { width: 230px !important; }
+
+.dnnFormItem .RadComboBox { width: 230px !important; }
+
+.dnnFormItem .dnnLabel { width: 257px !important; }
+
+.rcpIcon {
+    margin-right: 275px !important;
+    margin-top: 13px !important;
+    margin-bottom: 13px !important;
+}
+
+#dnn_ctr2542_Settings_lblTedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji_lblLabel {
+    position: absolute;
+    width: 285px;
+}
+
+#dnn_ctr2542_Settings_txtTedadeRoozBadAzAnjamKarBarayeNemayesheNazarsanji {
+    width: 145px !important;
+    margin-right: 85px;
+}
+
+#dnn_ctr2542_Settings_txtTedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji {
+    width: 145px !important;
+    margin-right: 85px;
+}
+
+#dnn_ctr2542_Settings_lblTedadeRoozBarayeNemayesheDarDashboardBadAzNemayesheNazarSanji_lblLabel {
+    width: 332px !important;
+    position: absolute;
+}
+
+#dnn_ctr2542_Settings_txtMablag { float: right; }
+
+#Etelaresani > .dnnFormItem > .dnnLabel { width: 310px !important; }
+
+#EtelaResani > .dnnFormItem textarea {
+    width: 600px !important;
+    max-width: 600px !important;
+}
+
+.seperator {
+    border-bottom: #656161 dashed 1px;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 8px;
+}
+
+#dnn_ctr2542_Settings_txtListeShahrha { direction: ltr; }

@@ -1,0 +1,83 @@
+#EDN_NewsOne.NewsOne_Style_Green .edn_module_box > h1.edn_module_title, #EDN_NewsOne.NewsOne_Style_Green.tag_cloud > h1.edn_module_title, #EDN_NewsOne.NewsOne_Style_Green.calendar .callendar_table_container > h1.edn_module_title, #EDN_NewsOne.NewsOne_Style_Green.calendar .archive_list > h1.edn_module_title {
+  background: url(../images/green/module_title_background.png) repeat-x #3d7503;
+}
+#EDN_NewsOne.NewsOne_Style_Green .edn_module_box > h1.edn_module_title span, #EDN_NewsOne.NewsOne_Style_Green.tag_cloud > h1.edn_module_title span, #EDN_NewsOne.NewsOne_Style_Green.calendar .callendar_table_container > h1.edn_module_title span, #EDN_NewsOne.NewsOne_Style_Green.calendar .archive_list > h1.edn_module_title span {
+  color: white;
+  text-shadow: none;
+}
+#EDN_NewsOne.NewsOne_Style_Green.category_menu .edn_module_box > .edn_category_menu_wrapper li > div > a.category:hover {
+  color: #3e9805;
+}
+#EDN_NewsOne.NewsOne_Style_Green.calendar .callendar_table_container .calendar_table .month_selection {
+  background: url(../images/green/module_title_background.png) repeat-x #3d7503;
+}
+#EDN_NewsOne.NewsOne_Style_Green.calendar .callendar_table_container .calendar_table .month_selection td {
+  color: white;
+  text-shadow: none;
+}
+#EDN_NewsOne.NewsOne_Style_Green.calendar .callendar_table_container .calendar_table .month_selection td.next_prev_months a {
+  color: white !important;
+  text-shadow: none;
+}
+#EDN_NewsOne.NewsOne_Style_Green.calendar .callendar_table_container .calendar_table .month_selection td.next_prev_months a:hover {
+  text-shadow: 0 0 1px white;
+}
+#EDN_NewsOne.NewsOne_Style_Green.calendar .callendar_table_container .calendar_table .day.today {
+  background: url(../images/green/module_title_background.png) repeat-x #3d7503;
+}
+#EDN_NewsOne.NewsOne_Style_Green.calendar .callendar_table_container.advanced .calendar_table .day.today {
+  background: url("../images/common/calendar/day_bg.png") repeat-x scroll left bottom transparent;
+}
+#EDN_NewsOne.NewsOne_Style_Green.calendar .callendar_table_container.advanced .calendar_table .day.today > a {
+  background: url(../images/green/module_title_background.png) repeat-x 0 -17px #3d7503;
+}
+#EDN_NewsOne.NewsOne_Style_Green.calendar .callendar_table_container.advanced .calendar_table .day.selected {
+  background: url("../images/common/calendar/day_bg.png") repeat-x scroll left bottom transparent;
+}
+#EDN_NewsOne.NewsOne_Style_Green.calendar .callendar_table_container.advanced .calendar_table .day.selected > a {
+  background: url(../images/common/calendar/day_bg.png) repeat-x left -4px #929292;
+}
+#EDN_NewsOne.NewsOne_Style_Green.calendar .archive_list.events .edn_module_title > a.export {
+  background: url(../images/common/export_icalendar_white_outline.png);
+}
+#EDN_NewsOne.NewsOne_Style_Green.calendar .archive_list li a:hover {
+  color: #3e9805;
+}
+#EDN_NewsOne.NewsOne_Style_Green.tag_cloud .tags a:hover {
+  color: #3e9805;
+}
+#EDN_NewsOne.NewsOne_Style_Green.search .search_input .do_search {
+  background: url(../images/green/search_button.png) no-repeat #3d7503;
+}
+#EDN_NewsOne.NewsOne_Style_Green.search .search_input .do_search:hover {
+  background-position: 0 -30px;
+}
+#EDN_NewsOne.NewsOne_Style_Green.search .search_input.button_outside .do_search {
+  border-color: #51b10f;
+  background: url(../images/green/outside_button_bg.png) no-repeat top right #1a57ae;
+}
+#EDN_NewsOne.NewsOne_Style_Green.search .search_input.button_outside .do_search span {
+  color: white;
+}
+#EDN_NewsOne.NewsOne_Style_Green.search .search_input.button_outside .do_search:hover {
+  background-position: bottom right;
+}
+#EDN_NewsOne.NewsOne_Style_Green.search .search_input.button_outside .do_search:hover span {
+  color: white;
+}
+#EDN_NewsOne.NewsOne_Style_Green.news .article .meta_text a, #EDN_NewsOne.NewsOne_Style_Green.search .article .meta_text a {
+  color: #3e9805;
+}
+#EDN_NewsOne.NewsOne_Style_Green.news .article.in_list h1 a:hover, #EDN_NewsOne.NewsOne_Style_Green.search .article.in_list h1 a:hover {
+  color: #3e9805;
+}
+#EDN_NewsOne.NewsOne_Style_Green.news .article.details .main_content a, #EDN_NewsOne.NewsOne_Style_Green.search .article.details .main_content a {
+  color: #3e9805;
+}
+#EDN_NewsOne.NewsOne_Style_Green.news .article.details .article_comments .add_comment .add_article_box table td.right .submit:hover, #EDN_NewsOne.NewsOne_Style_Green.search .article.details .article_comments .add_comment .add_article_box table td.right .submit:hover {
+  background-color: #3d7503;
+}
+
+.EDN_search.NewsOne.Green ul li span a:hover {
+  color: #3e9805;
+}

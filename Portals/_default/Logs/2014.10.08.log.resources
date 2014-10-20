@@ -1,0 +1,12 @@
+2014-10-08 12:39:27,456 [Laptop][Thread:24][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Net.Mail.SmtpException: Bad sequence of commands. The server response was: This mail server requires authentication when attempting to send to a non-local e-mail address. Please check your mail client settings or contact your administrator to verify that the domain or address is defined for this server.
+   at System.Net.Mail.RecipientCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.RecipientCommand.Send(SmtpConnection conn, String to, String& response)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at DotNetNuke.Services.Mail.Mail.SendMailInternal(MailMessage mailMessage, String subject, String body, MailPriority priority, MailFormat bodyFormat, Encoding bodyEncoding, IEnumerable`1 attachments, String smtpServer, String smtpAuthentication, String smtpUsername, String smtpPassword, Boolean smtpEnableSSL)
+2014-10-08 12:49:43,645 [Laptop][Thread:17][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Net.Mail.SmtpException: Bad sequence of commands. The server response was: This mail server requires authentication when attempting to send to a non-local e-mail address. Please check your mail client settings or contact your administrator to verify that the domain or address is defined for this server.
+   at System.Net.Mail.RecipientCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.RecipientCommand.Send(SmtpConnection conn, String to, String& response)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at DotNetNuke.Services.Mail.Mail.SendMailInternal(MailMessage mailMessage, String subject, String body, MailPriority priority, MailFormat bodyFormat, Encoding bodyEncoding, IEnumerable`1 attachments, String smtpServer, String smtpAuthentication, String smtpUsername, String smtpPassword, Boolean smtpEnableSSL)

@@ -1,0 +1,599 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="plSkin.Text" xml:space="preserve">
+    <value>پوسته صفحه</value>
+  </data>
+  <data name="plSkin.Help" xml:space="preserve">
+    <value>پوسته انتخابی برای این صفحه بکار گرفته خواهد شد.</value>
+  </data>
+  <data name="plContainer.Text" xml:space="preserve">
+    <value>کانتینر صفحه</value>
+  </data>
+  <data name="plContainer.Help" xml:space="preserve">
+    <value>کانتینر انتخابی برای تمامی ماژول های این صفحه بکار گرفته خواهد شد.</value>
+  </data>
+  <data name="CacheSettings.Text" xml:space="preserve">
+    <value>تنظیمات کش</value>
+    <comment>Cache Settings</comment>
+  </data>
+  <data name="RequiredFields.Text" xml:space="preserve">
+    <value>بیانگر فیلدهای اجباریست</value>
+    <comment>Indicates required fields</comment>
+  </data>
+  <data name="SkinPreview.Text" xml:space="preserve">
+    <value>پیش نمایش پوسته و کانتینر</value>
+    <comment>Preview Skin and Container</comment>
+  </data>
+  <data name="PreviewNoSelectionMessage.Text" xml:space="preserve">
+    <value>لطفا یک پوسته یا کانتینر برای پیش نمایش انتخاب نمایید.</value>
+  </data>
+  <data name="Add.Text" xml:space="preserve">
+    <value>افزودن صفحه</value>
+    <comment>Add Page</comment>
+  </data>
+  <data name="Update.Text" xml:space="preserve">
+    <value>بروزرسانی صفحه</value>
+    <comment>Update Page</comment>
+  </data>
+  <data name="CopyPage.Text" xml:space="preserve">
+    <value>کپی صفحه</value>
+    <comment>Copy Page</comment>
+  </data>
+  <data name="BasicSettings.Text" xml:space="preserve">
+    <value>تنظيمات پايه</value>
+  </data>
+  <data name="BasicSettingsHelp.Text" xml:space="preserve">
+    <value>در اين قسمت مي توانيد تنظيمات پايه صفحه را انجام دهيد.</value>
+  </data>
+  <data name="TabName.Text" xml:space="preserve">
+    <value>نام صفحه</value>
+  </data>
+  <data name="TabNameHelp.Text" xml:space="preserve">
+    <value>اين نام صفحه است.متني كه شما وارد مي كنيد در منوي سایت نمايش داده خواهد شد.</value>
+  </data>
+  <data name="Title.Text" xml:space="preserve">
+    <value>عنوان صفحه</value>
+  </data>
+  <data name="TitleHelp.Text" xml:space="preserve">
+    <value>در اينجا عنوانی براي اين صفحه وارد كنيد.متني كه شما وارد مي كنيد در نوار عنوان مرورگر نمايش داده خواهد شد.</value>
+  </data>
+  <data name="Description.Text" xml:space="preserve">
+    <value>توضيحات</value>
+  </data>
+  <data name="DescriptionHelp.Text" xml:space="preserve">
+    <value>شرحی در باره اين صفحه بنويسيد.</value>
+  </data>
+  <data name="ParentTab.Text" xml:space="preserve">
+    <value>صفحه والد</value>
+  </data>
+  <data name="Url.Text" xml:space="preserve">
+    <value>لينك Url</value>
+  </data>
+  <data name="UrlHelp.Text" xml:space="preserve">
+    <value>اگر مي خواهيد اين صفحه به عنوان يك لينك راهبر به منبع ديگري باشد، مي توانيد مقدار لینک url را در این قسمت مشخص کنید. به خاطر داشته باشيد كه اين فيلد اختياري است.</value>
+  </data>
+  <data name="Copy.Text" xml:space="preserve">
+    <value>كپي صفحه</value>
+  </data>
+  <data name="CopyModules.Text" xml:space="preserve">
+    <value>كپي ماژول ها از صفحه </value>
+  </data>
+  <data name="CopyModulesHelp.Text" xml:space="preserve">
+    <value>هر صفحه اي را كه مي خواهيد ماژول ها از آن كپي كنيد انتخاب كنيد.</value>
+  </data>
+  <data name="CopyContent.Text" xml:space="preserve">
+    <value>تعیین ماژول ها</value>
+  </data>
+  <data name="CopyContentHelp.Text" xml:space="preserve">
+    <value>ماژول های مورد نظر برای کپی را انتخاب نموده و عنوان ماژول را  تعیین کنید. در کل تعیین کنید که ماژول جدید ایجاد شود(بدون محتوا)، یک کپی از ماژول(با محتوا) یا ارجاع به یک ماژول موجود (با محتوای مشترک).</value>
+  </data>
+  <data name="AdvancedSettings.Text" xml:space="preserve">
+    <value>تنظيمات پيشرفته</value>
+  </data>
+  <data name="AdvancedSettingsHelp.Text" xml:space="preserve">
+    <value>در اين قسمت شما مي توانيد تنظيمات پيشرفته صفحه را انجام دهيد.</value>
+  </data>
+  <data name="Appearance.Text" xml:space="preserve">
+    <value>ظاهر</value>
+  </data>
+  <data name="Icon.Text" xml:space="preserve">
+    <value>آیکن</value>
+  </data>
+  <data name="IconHelp.Text" xml:space="preserve">
+    <value>شما مي توانيد يك آیکن جهت نمایش در منوی سایت کنار نام صفحه انتخاب كنيد. </value>
+  </data>
+  <data name="Disabled.Text" xml:space="preserve">
+    <value>غيرفعال</value>
+  </data>
+  <data name="DisabledHelp.Text" xml:space="preserve">
+    <value>اگر صفحه غير فعال شود براي كاربران سايت غير قابل دسترس مي باشد. در صورتی که می خواهید محتوای این صفحه بعدا به نمایش گذاشته شود، مي توانيد اين گزینه را انتخاب كنيد.</value>
+  </data>
+  <data name="SecuritySettings.Text" xml:space="preserve">
+    <value>تنظيمات امنيتي</value>
+  </data>
+  <data name="Permissions.Text" xml:space="preserve">
+    <value>مجوزها</value>
+  </data>
+  <data name="PermissionsHelp.Text" xml:space="preserve">
+    <value>گروهي كه مي توانند اين صفحه را مشاهده نموده و مديريت كنند را انتخاب كنيد.</value>
+  </data>
+  <data name="OtherSettings.Text" xml:space="preserve">
+    <value>تنظيمات ديگر</value>
+  </data>
+  <data name="KeyWords.Text" xml:space="preserve">
+    <value>كلمات كليدي</value>
+  </data>
+  <data name="KeyWordsHelp.Text" xml:space="preserve">
+    <value>چند كلمه كليدي براي اين صفحه وارد كنيد(جدا شده با كاما).اين كلمات كليدي در موتورهاي جستجو گر جهت ايندكس گذاري صفحات سايت شما استفاده مي شود.</value>
+  </data>
+  <data name="plStartDate.Text" xml:space="preserve">
+    <value>تاريخ شروع :</value>
+  </data>
+  <data name="plStartDate.Help" xml:space="preserve">
+    <value>تاريخ شروع نمايش اين صفحه را وارد كنيد.مي توانيد با استفاده از تقويم يك تاريخ انتخاب كنيد.</value>
+  </data>
+  <data name="plEndDate.Text" xml:space="preserve">
+    <value>تاريخ پايان:</value>
+  </data>
+  <data name="plEndDate.Help" xml:space="preserve">
+    <value>تاريخ پايان نمايش صفحه را وارد كنيد. مي توانيد با استفاده از تقويم يك تاريخ انتخاب كنيد.</value>
+  </data>
+  <data name="SubmitToGoogle.Text" xml:space="preserve">
+    <value>معرفي صفحه به گوگل</value>
+  </data>
+  <data name="ControlTitle_tab.Text" xml:space="preserve">
+    <value>تنظیمات صفحه</value>
+  </data>
+  <data name="ControlTitle_edit.Text" xml:space="preserve">
+    <value>ويرايش صفحه</value>
+  </data>
+  <data name="valTabName.ErrorMessage" xml:space="preserve">
+    <value>&lt;br&gt;درج نام صفحه الزامي ميباشد</value>
+  </data>
+  <data name="DeleteSpecialPage.Text" xml:space="preserve">
+    <value>صفحه ای که به عنوان صفحه خانه،صفحه splash ،صفحه لاگین، و یا صفحه كاربر براي پورتال و یا آخرین صفحه قابل نمایش در پرتال تعريف شده است قابل حذف نمی باشد. صفحات میزبان و مدیر نیز قابل حذف نمیباشند.</value>
+  </data>
+  <data name="valStartDate.ErrorMessage" xml:space="preserve">
+    <value>&lt;br&gt; تاریخ شروع نامعتبر می باشد.</value>
+  </data>
+  <data name="valEndDate.ErrorMessage" xml:space="preserve">
+    <value>&lt;br&gt; تاریخ پایان نامعتبر می باشد.</value>
+  </data>
+  <data name="ModuleHelp.Text" xml:space="preserve">
+    <value>&lt;h1&gt;مدیریت صفحه&lt;/h1&gt;&lt;p&gt;با این ماژول  می توانید تنظیمات یک صفحه را تغییر دهید، صفحه را حذف نمایید یا برای ایندکس گذاری در گوگل ثبت کنید.&lt;/p&gt;</value>
+  </data>
+  <data name="PageDetails.Text" xml:space="preserve">
+    <value>خصوصيات صفحه</value>
+  </data>
+  <data name="DefaultTemplate.Text" xml:space="preserve">
+    <value>پیش فرض</value>
+  </data>
+  <data name="ModuleCopy.Text" xml:space="preserve">
+    <value>كپي</value>
+  </data>
+  <data name="ModuleNew.Text" xml:space="preserve">
+    <value>جديد</value>
+  </data>
+  <data name="ModuleReference.Text" xml:space="preserve">
+    <value>ارجاع</value>
+  </data>
+  <data name="PageHeadText.Help" xml:space="preserve">
+    <value>هر تگی که می خواهید در قسمت "Head" صفحه HTML اجرا شود را در این قسمت وارد نمایید. (مثلا.META tags)</value>
+  </data>
+  <data name="PageHeadText.Text" xml:space="preserve">
+    <value>تگ های HEADER صفحه </value>
+  </data>
+  <data name="RefreshInterval.Help" xml:space="preserve">
+    <value>بازه زمانی جهت انتظار بین هر بار بازخوانی اتوماتیک صفحه را وارد نمایید. (بطور مثال عدد "60" را به معنای یک دقیقه وارد.</value>
+  </data>
+  <data name="RefreshInterval.Text" xml:space="preserve">
+    <value>بازه زماني بازخواني صفحه</value>
+  </data>
+  <data name="cmdCopyPerm.Text" xml:space="preserve">
+    <value>کپی کردن مجوزها</value>
+  </data>
+  <data name="cmdCopySkin.Text" xml:space="preserve">
+    <value>کپی کردن طرح</value>
+  </data>
+  <data name="ExceededQuota.Text" xml:space="preserve">
+    <value>افزودن این صفحه باعث بالاتر رفتن تعداد صفحات شما از سقف مجاز تعریف شده برای شما می شود. لطفا به منظور افزایش سهمیه صفحات خود با ارائه دهنده سرویس میزبانی وب خود تماس بگیرید.</value>
+  </data>
+  <data name="plCopyPerm.Help" xml:space="preserve">
+    <value>کپی مجوزهای انتخاب شده جاری به تمام زیر صفحات این صفحه.</value>
+  </data>
+  <data name="plCopyPerm.Text" xml:space="preserve">
+    <value>کپی مجوزها به زیر صفحات:</value>
+  </data>
+  <data name="plCopySkin.Help" xml:space="preserve">
+    <value>کپی پوسته و کانتینر جاری برای صفحات موجود در زیر این صفحه</value>
+  </data>
+  <data name="plCopySkin.Text" xml:space="preserve">
+    <value>کپی طرح برای زیر صفحات</value>
+  </data>
+  <data name="Menu.Text" xml:space="preserve">
+    <value>نمایش در منو</value>
+  </data>
+  <data name="MenuHelp.Text" xml:space="preserve">
+    <value>تعیین نمایش یا عدم نمایش نام صفحه در منو. در صورت عدم نمایش در منو نیز می توان به این صفحه لینک داد.</value>
+  </data>
+  <data name="plSecure.Help" xml:space="preserve">
+    <value>تعیین استفاده یا عدم استفاده از اتصال امن (SSL). این تنظیم تنها زمانی فعال می شود که مدیر سایت تنظیمات SSL را فعال نموده باشد.</value>
+  </data>
+  <data name="plSecure.Text" xml:space="preserve">
+    <value>امن؟</value>
+  </data>
+  <data name="plFolder.Help" xml:space="preserve">
+    <value>پوشه الگوی صفحه را انتخاب نمایید.</value>
+  </data>
+  <data name="plFolder.Text" xml:space="preserve">
+    <value>پوشه الگو:</value>
+  </data>
+  <data name="plTemplate.Help" xml:space="preserve">
+    <value>الگوی صفحه ای را که می خواهید صفحه جدیدتان بر اساس آن ساخته شود را انتخاب نمایید.</value>
+  </data>
+  <data name="plTemplate.Text" xml:space="preserve">
+    <value>الگوی صفحه:</value>
+  </data>
+  <data name="Root.Text" xml:space="preserve">
+    <value>ریشه</value>
+  </data>
+  <data name="DesignCopied.Text" xml:space="preserve">
+    <value>کپی طرح با موفقیت انجام شد</value>
+  </data>
+  <data name="DesignCopyError.Text" xml:space="preserve">
+    <value>کپی طرح با خطا مواجه شد</value>
+  </data>
+  <data name="InsertAfter.Text" xml:space="preserve">
+    <value>بعد از</value>
+  </data>
+  <data name="InsertAtEnd.Text" xml:space="preserve">
+    <value>افزودن به پایان</value>
+  </data>
+  <data name="InsertBefore.Text" xml:space="preserve">
+    <value>قبل از</value>
+  </data>
+  <data name="InsertPosition.Help" xml:space="preserve">
+    <value>صفحه ای را که می خواهید صفحه فعلی در بعد یا قبل از آن قرار گیرد را انتخاب نمایید. یا در صورت تمایل صفحه را به انتهای سطح جاری اضافه نمایید.</value>
+  </data>
+  <data name="InsertPosition.Text" xml:space="preserve">
+    <value>درح صفحه:</value>
+  </data>
+  <data name="InvalidTabName.Text" xml:space="preserve">
+    <value>نام صفحه نامعتبر می باشد</value>
+  </data>
+  <data name="ParentTab.Help" xml:space="preserve">
+    <value>صفحه والد را انتخاب نمایید.</value>
+  </data>
+  <data name="PermissionCopyError.Text" xml:space="preserve">
+    <value>کپی مجوز ها با خطا انحام شد</value>
+  </data>
+  <data name="PermissionsCopied.Text" xml:space="preserve">
+    <value>کپی مجوزها با موفقیت انجام شد</value>
+  </data>
+  <data name="TabExists.Text" xml:space="preserve">
+    <value>نام صفحه ای را که وارد نموده اید تکراری بوده و برای صفحه دیگری استفاده شده است.</value>
+  </data>
+  <data name="valEndDate2.ErrorMessage" xml:space="preserve">
+    <value>&lt;br&gt; تاریخ انقضاء می بایست بعد از تاریخ شروع باشد</value>
+  </data>
+  <data name="avalableCulturesLabel.Text" xml:space="preserve">
+    <value>زبان های موجود</value>
+  </data>
+  <data name="BadTemplate.Text" xml:space="preserve">
+    <value>قالب صفحه در فرمت یک XML استاندارد نمی باشد لطفاً یک قالب دیگر انتخاب نماید و دوباره امتحان نماید</value>
+  </data>
+  <data name="CacheDuration.Help" xml:space="preserve">
+    <value>یک دوره زمانی (بر اساس ثانیه) وارد نماید تا صفحه بر اساس آن کش شود. این می بایست عدد صحیح باشد</value>
+  </data>
+  <data name="CacheDuration.Text" xml:space="preserve">
+    <value>مدت زمان کش (ثانیه)</value>
+  </data>
+  <data name="CacheDurationInfo.Text" xml:space="preserve">
+    <value> توجه داشته باشید، کش خروجی توسط یک پروسه زمانبندی شده پاکسازی میشود. بر این اساس این پروسه باید با تناوب بیشتری نسبت به مدت زمان کشی که در این قست مشخص می کنید اجرا شود..</value>
+  </data>
+  <data name="CacheIncludeExclude.Help" xml:space="preserve">
+    <value>اگر بر روی شامل پارامترها تنظیم شود،  کش بر اساس تغییرات مقادیر تمامی پارامترهای آدرس ذخیره خواهد شد و اگر بر روی مستثنی شدن پارامتر ها تنظیم شود مقدار پارامترهای آدرس در کش تاثیری نخواهد داشت</value>
+  </data>
+  <data name="CacheIncludeExclude.Text" xml:space="preserve">
+    <value>شامل /مستثنی از پارامترها به صورت پیش فرض</value>
+  </data>
+  <data name="CacheMaxVaryByCount.Help" xml:space="preserve">
+    <value>حداکثر تعداد تغییرات کش برای این صفحه را مشخص نماید که باید یک عدد صحیح باشد. (توجه داشته باشید ، این ویژگی مانع از تخریب سرویس می شود).</value>
+  </data>
+  <data name="CacheMaxVaryByCount.Text" xml:space="preserve">
+    <value>محدوده تغییرات</value>
+  </data>
+  <data name="CacheProvider.Help" xml:space="preserve">
+    <value>انتخاب provider برای استفاده در این صفحه</value>
+  </data>
+  <data name="CacheProvider.Text" xml:space="preserve">
+    <value>provider کش خروجی</value>
+  </data>
+  <data name="cmdClearAllPageCache.Text" xml:space="preserve">
+    <value>پاکسازی کش -- همه صفحات</value>
+  </data>
+  <data name="cmdClearPageCache.Text" xml:space="preserve">
+    <value>پاکسازی کش -- این صفحه</value>
+  </data>
+  <data name="CreateLocalizedPages.Text" xml:space="preserve">
+    <value>ایجاد صفحات بومی شده</value>
+  </data>
+  <data name="Culture.Text" xml:space="preserve">
+    <value>فقط ایجاد در زبان فعلی</value>
+  </data>
+  <data name="cultureLabel.Help" xml:space="preserve">
+    <value>زبان برای این صفحه</value>
+  </data>
+  <data name="cultureLabel.Text" xml:space="preserve">
+    <value>زبان صفحه :</value>
+  </data>
+  <data name="cultureTypeLabel.Help" xml:space="preserve">
+    <value>انتخاب نماید که آیا این صفحه، صفحه ای است که در تمام زبان ها مشترک است، یا اینکه باید برای هر زبان نسخه ای بومی ایجاد شود.</value>
+  </data>
+  <data name="cultureTypeLabel.Text" xml:space="preserve">
+    <value>نوع زبان :</value>
+  </data>
+  <data name="DefaultCulture.Text" xml:space="preserve">
+    <value>این زبان پیش فرض سایت است</value>
+  </data>
+  <data name="defaultCultureLabel.Help" xml:space="preserve">
+    <value>جهت مشاهده این صفحه در زبان پیش فرض، این لینک را کلیک کنید.</value>
+  </data>
+  <data name="defaultCultureLabel.Text" xml:space="preserve">
+    <value>زبان پبش فرض</value>
+  </data>
+  <data name="DeletePermissionError.Text" xml:space="preserve">
+    <value>شما اجازه حذف این صفحه را ندارید</value>
+  </data>
+  <data name="edit.Text" xml:space="preserve">
+    <value>ویرایش</value>
+  </data>
+  <data name="ExcludeVaryBy.Help" xml:space="preserve">
+    <value>یک لیست (جدا شده با کاما) از querystring ها که باید از تغییرات کش صفحه مستثنی شود. این گزینه زمانی معتبر خواهد بود که در بالا، گزینه پیش فرض روی "شامل کردن پارامترهای querystring  تنظیم شده باشد.</value>
+  </data>
+  <data name="ExcludeVaryBy.Text" xml:space="preserve">
+    <value>مستثنی ساختن پارامترها از کش</value>
+  </data>
+  <data name="IconLarge.Text" xml:space="preserve">
+    <value>آیکون بزرگ</value>
+  </data>
+  <data name="IconLargeHelp.Text" xml:space="preserve">
+    <value>می توانید یک آیکن بزرگ انتخاب نماید، این آیکون در کنسول استفاده می شود</value>
+  </data>
+  <data name="IncludeVaryBy.Help" xml:space="preserve">
+    <value>یک لیست (جدا شده با کاما) از querystring ها که باید در تغییرات کش صفحه شامل شود. این گزینه زمانی معتبر خواهد بود که در بالا، گزینه پیش فرض روی "مستثنی کردن پارامترهای querystring  تنظیم شده باشد.</value>
+  </data>
+  <data name="IncludeVaryBy.Text" xml:space="preserve">
+    <value>شامل پارامترها در تغییرات کش</value>
+  </data>
+  <data name="InvalidTabDates.Text" xml:space="preserve">
+    <value>شما تاریخ شروع و پایان نا معتبری وارد نموده اید- صفحه هرگز نمایش داده نخواهد شد</value>
+  </data>
+  <data name="IsTranslated.Help" xml:space="preserve">
+    <value>با انتخاب یا عدم انتخاب این گزینه تعیین کنید که این صفحه ترجمه شود یا خیر</value>
+  </data>
+  <data name="IsTranslated.Text" xml:space="preserve">
+    <value>ترجمه شده؟</value>
+  </data>
+  <data name="lblCachedItemCount.Text" xml:space="preserve">
+    <value>میزان کش فعلی : {0} تغییرات برای این صفحه</value>
+  </data>
+  <data name="Localization.Text" xml:space="preserve">
+    <value>بومی سازی</value>
+  </data>
+  <data name="Localize.Confirm" xml:space="preserve">
+    <value>شما در حال ایجاد نسخه های بومی شده از تمام صفحات در این سایت برای زبان "(0)" هستید . این صفحات با مطالب صفحه به طور پیش فرض در این زبان به اشتراک گذاشته می شود -- "(1)" تا ماژول ترجمه شود.</value>
+  </data>
+  <data name="Localized.Text" xml:space="preserve">
+    <value>ایجاد نسخه های بومی از صفحه</value>
+  </data>
+  <data name="LocalizedModules.Text" xml:space="preserve">
+    <value>بومی سازی ماژول</value>
+  </data>
+  <data name="LocalizedTabs.Text" xml:space="preserve">
+    <value>بومی سازی صفحه</value>
+  </data>
+  <data name="Neutral.Text" xml:space="preserve">
+    <value>ایجاد صفحه عمومی ببن  زبان ها</value>
+  </data>
+  <data name="NewContentMessage.Body" xml:space="preserve">
+    <value>این صفحه شامل مطالب جدیدی برای ترجمه است&lt;br/&gt;
+
+صفحه: &lt;a href='{1}'&gt;{0}&lt;/a&gt;</value>
+  </data>
+  <data name="NewContentMessage.Subject" xml:space="preserve">
+    <value>مطالب جدید آماده ترجمه</value>
+  </data>
+  <data name="plPermanentRedirect.Help" xml:space="preserve">
+    <value>با انتخاب این گزینه شما به client اعلام میکنید که این صفحه برای همیشه به محل دیگری منتقل شده است. همچنین به موتورهای جستجو  امکان می دهد تا آدرس ها به این صفحه را تغییر داده و به منبع اصلی اشاره کنند. در صورتیکه نوع لینک "هیج" انتخاب شده باشد از آن صرفنظر خواهد شد</value>
+  </data>
+  <data name="plPermanentRedirect.Text" xml:space="preserve">
+    <value>تغییر مسیر برای همیشه؟</value>
+  </data>
+  <data name="plPriority.Help" xml:space="preserve">
+    <value>اولویت مورد نظر را وارد کنید (بین 0 و 1.0). به این وسیله به رتبه بندی این صفحه در گوگل با توجه به سایر صفحات سایت شما کمک میشود. (0.5 به طور پیش فرض است) </value>
+  </data>
+  <data name="plPriority.Text" xml:space="preserve">
+    <value>اولویت نقشه سایت :</value>
+  </data>
+  <data name="plTags.Help" xml:space="preserve">
+    <value>از Drop-down بر چسب های این صفحه را انتخاب نماید</value>
+  </data>
+  <data name="plTags.Text" xml:space="preserve">
+    <value>برچسب ها :</value>
+  </data>
+  <data name="PopulatePages.Text" xml:space="preserve">
+    <value>صفحات دارای محتوا</value>
+  </data>
+  <data name="Publish.Confirm" xml:space="preserve">
+    <value>شما قصد انتشار این صفحه را دارید. با این کار تمام ماژول ها به عنوان ترجمه شده علامت گذاری میشود و به صورت خودکار تمام حقوق دسترسی نمایش را از زبان پیش فرض  خواهد گرفت. آیا به این کار اطمینان دارید؟</value>
+  </data>
+  <data name="PublishPage.Text" xml:space="preserve">
+    <value>با فشردن این دکمه صفحه منتشر خواهد شد. لازم به ذکر است صفحه تمام حقوق دسترسی را از صفحه دارای زبان پیش فرض خواهد گرفت ، در نتیجه صفحه برای بازدیدکنندگان قابل مشاهده خواهد بود</value>
+  </data>
+  <data name="publishPageLabel.Help" xml:space="preserve">
+    <value>با فشردن این کلید صفحه مستقیما منتشر خواهد شد. لازم به ذکر است صفحه تمام حقوق دسترسی را از صفحه دارای زبان پیش فرض خواهد گرفت ، در نتیجه صفحه برای بازدیدکنندگان قابل مشاهده خواهد بود</value>
+  </data>
+  <data name="publishPageLabel.Text" xml:space="preserve">
+    <value>انتشار صفحه</value>
+  </data>
+  <data name="ReadyForTranslation.Text" xml:space="preserve">
+    <value>با فشردن این دکمه صفحه دارای علامت "آماده برای ترجمه" خواهد شد. همچنین محتوای ماژول ها به صفحات دارای زبان های دیگر کپی خواهد شد و برای تمامی کاربران دارای نقش ترجمه آن صفحه پیام ارسال خواهد شد</value>
+  </data>
+  <data name="readyToTranslateLabel.Help" xml:space="preserve">
+    <value>با کلیک کردن لینک ذیل این صفحه به عنوان "آماده برای ترجمه" علامتگذاری خواهد شد. همچنین محتوای ماژول ها به صفحات دارای زبان های دیگر کپی خواهد شد و برای تمامی کاربران دارای نقش ترجمه آن صفحه پیام ارسال خواهد شد</value>
+  </data>
+  <data name="readyToTranslateLabel.Text" xml:space="preserve">
+    <value>با کلیک کردن لینک ذیل این صفحه به عنوان "آماده برای ترجمه" علامتگذاری خواهد شد. همچنین محتوای ماژول ها به صفحات دارای زبان های دیگر کپی خواهد شد و برای تمامی کاربران دارای نقش ترجمه آن صفحه پیام ارسال خواهد شد</value>
+  </data>
+  <data name="TabRecycled.Text" xml:space="preserve">
+    <value>یک صفحه با این نام در سطل بازیابی وجود دارد. برای بازنشانی صفحه از سطل بازیابی استفاده نماید</value>
+  </data>
+  <data name="TranslateConfirm.Text" xml:space="preserve">
+    <value>شما قصد علامتگذاری این صفحه به عنوان ترجمه شده را دارید؟ این یک اقدام فوری است. آیا مطمئن هستید؟</value>
+  </data>
+  <data name="UnTranslateConfirm.Text" xml:space="preserve">
+    <value>شما قصد علامتگذاری این صفحه به عنوان ترجمه نشده را دارید؟ این عملیات بلافاصله اجرا خواهد شد. آیا مطمئن هستید؟</value>
+  </data>
+  <data name="valCacheTime.ErrorMessage" xml:space="preserve">
+    <value>&lt;br&gt;مدت زمان کش باید یک عدد باشد</value>
+  </data>
+  <data name="valCacheVaryByLimit.ErrorMessage" xml:space="preserve">
+    <value>&lt;br&gt;محدوه مقدار کش باید یک عدد باشد</value>
+  </data>
+  <data name="view.Text" xml:space="preserve">
+    <value>مشاهده</value>
+  </data>
+  <data name="cmdSubmit.Text" xml:space="preserve">
+    <value>ارسال</value>
+  </data>
+  <data name="TranslationComment.Text" xml:space="preserve">
+    <value>توضیحات ترجمه را وارد کنید.</value>
+  </data>
+  <data name="PathDuplicateWithAlias.Text" xml:space="preserve">
+    <value>نام دامنه ای همنام با مسیر صفحه شما وجود دارد.</value>
+  </data>
+  <data name="Publish.Text" xml:space="preserve">
+    <value>انتشار</value>
+  </data>
+  <data name="CopyDesignToChildren.Confirm" xml:space="preserve">
+    <value>پوسته و کانتینر برای تمام فرزندان این صفحه جایگزین شده. آیا برای ادامه کار اطمینان دارید؟</value>
+  </data>
+</root>

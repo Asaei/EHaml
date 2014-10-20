@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<patch>
+    <for>
+        <module-name>DNN_Reports</module-name>
+        <keys>
+            <key></key>
+        </keys>
+    </for>
+    <patcher>avt.MyTokens.Patching.SimplePatcher,avt.MyTokens.Core</patcher>
+    <code-vb>
+        <init>
+        </init>
+        <pre-render>
+        <![CDATA[
+            Dim repRoot as Control = FindControl("VisualizerSection")
+            If repRoot Is Nothing
+                repRoot = Me
+            End If
+            
+            If repRoot.Controls.Count > 0 AndAlso repRoot.Controls(0).Controls.Count > 0 AndAlso repRoot.Controls(0).Controls(0).GetType() Is GetType(GridView) Then
+                Dim grid as GridView = repRoot.Controls(0).Controls(0)
+                If grid.Controls.Count > 0 Then
+                    For Each row As GridViewRow In grid.Controls(0).Controls
+                        For Each cell As TableCell In row.Cells
+                            cell.Text = Tokenize(cell.Text, ModuleConfiguration, False, False)
+                        Next
+                    Next
+                End If
+            End If
+        ]]>
+        </pre-render>
+    </code-vb>
+	<code-cs>
+        <init>
+        </init>
+        <pre-render>
+        <![CDATA[
+            Control repRoot = FindControl("VisualizerSection");
+			if (repRoot == null) {
+				repRoot = this;
+			}
+
+			if (repRoot.Controls.Count > 0 && repRoot.Controls[0].Controls.Count > 0 && repRoot.Controls[0].Controls[0] is GridView) {
+				GridView grid = repRoot.Controls[0].Controls[0];
+				if (grid.Controls.Count > 0) {
+					foreach (GridViewRow row in grid.Controls[0].Controls) {
+						foreach (TableCell cell in row.Cells) {
+							cell.Text = Tokenize(cell.Text, ModuleConfiguration, false, false);
+						}
+					}
+				}
+			}
+
+        ]]>
+        </pre-render>
+    </code-cs>
+</patch>

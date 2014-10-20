@@ -1,0 +1,40 @@
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS ON 
+GO
+
+if exists (select * from dbo.sysobjects 
+   where id = object_id(N'{databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleHistoryPurge') 
+	 and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	DROP PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleHistoryPurge
+GO
+CREATE PROCEDURE {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleHistoryPurge
+	@ScheduleID [int]
+AS
+IF (@ScheduleID <> -1)
+BEGIN
+    DELETE FROM {databaseOwner}{objectQualifier}Evotiva_DNNBackup_ScheduleHistory
+	WHERE ScheduleID = @ScheduleID
+END
+GO
+
+
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/

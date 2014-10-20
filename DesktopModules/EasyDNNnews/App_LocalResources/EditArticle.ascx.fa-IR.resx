@@ -1,0 +1,1182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BoundFieldResource2.HeaderText" xml:space="preserve">
+    <value>تاریخ</value>
+  </data>
+  <data name="btnCancelResource1.Text" xml:space="preserve">
+    <value>&lt;span&gt;انصراف&lt;/span&gt;</value>
+  </data>
+  <data name="btnContentLocalizationCloseResource1.Text" xml:space="preserve">
+    <value>&lt;span&gt;بستن&lt;/span&gt;</value>
+  </data>
+  <data name="btnContentLocalizationCopyDefaultResource1.Text" xml:space="preserve">
+    <value>&lt;span&gt;کپی مقادیر پیش فرض&lt;/span&gt;</value>
+  </data>
+  <data name="btnContentLocalizationUpdateResource1.Text" xml:space="preserve">
+    <value>&lt;span&gt;ذخیره بومی سازی&lt;/span&gt;</value>
+  </data>
+  <data name="btnDocUploadResource1.Text" xml:space="preserve">
+    <value>&lt;span&gt;آپلود&lt;/span&gt;</value>
+  </data>
+  <data name="btnGoArticleResource1.Text" xml:space="preserve">
+    <value>&lt;span&gt;بروزرسانی &amp;amp; نمایش&lt;/span&gt;</value>
+  </data>
+  <data name="btnIntegGalleryResource1.Text" xml:space="preserve">
+    <value>افزودن گالری به مطلب</value>
+  </data>
+  <data name="btnOpenEasyDnnGalleryResource1.Text" xml:space="preserve">
+    <value>باز کردن مطلب</value>
+  </data>
+  <data name="btnRemoveArticleImageResource1.Text" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="btnUpdateArticleResource1.Text" xml:space="preserve">
+    <value>&lt;span&gt;بروزرسانی مطلب&lt;/span&gt;</value>
+  </data>
+  <data name="btnUpdateCloseResource1.Text" xml:space="preserve">
+    <value>&lt;span&gt;بروزرسانی و بستن&lt;/span&gt;</value>
+  </data>
+  <data name="Button2Resource1.Text" xml:space="preserve">
+    <value>دکمه</value>
+  </data>
+  <data name="Button3Resource1.Text" xml:space="preserve">
+    <value>دکمه</value>
+  </data>
+  <data name="ButtonSharedResource1.Text" xml:space="preserve">
+    <value>دکمه</value>
+  </data>
+  <data name="cbAllDayEventResource1.Text" xml:space="preserve">
+    <value>افزودن رویداد روز</value>
+  </data>
+  <data name="cbShowGalleryResource1.Text" xml:space="preserve">
+    <value>نمایش گالری</value>
+  </data>
+  <data name="cbShowMainArticleImageListResource1.Text" xml:space="preserve">
+    <value>نمایش تصویر مطلب در لیس مطلب</value>
+  </data>
+  <data name="cbShowMainArticleImageResource1.Text" xml:space="preserve">
+    <value>نمایش main تصویر مطلب</value>
+  </data>
+  <data name="cvGINumber0Resource1.ErrorMessage" xml:space="preserve">
+    <value>لطفا عدد را وارد نمایید.</value>
+  </data>
+  <data name="cvGINumberResource1.ErrorMessage" xml:space="preserve">
+    <value>لطفا عدد را وارد نمایید.</value>
+  </data>
+  <data name="cvGIThumbnailHeightResource1.ErrorMessage" xml:space="preserve">
+    <value>لطفا عدد را وارد نمایید.</value>
+  </data>
+  <data name="cvGIThumbnailWidthResource1.ErrorMessage" xml:space="preserve">
+    <value>لطفا عدد را وارد نمایید.</value>
+  </data>
+  <data name="cvLightBoxGalleryNumberOfItems0Resource1.ErrorMessage" xml:space="preserve">
+    <value>لطفا فقط عدد وارد نمایید.</value>
+  </data>
+  <data name="cvLightBoxGalleryNumberOfItemsResource1.ErrorMessage" xml:space="preserve">
+    <value>لطفا فقط عدد وارد نمایید.</value>
+  </data>
+  <data name="cvPublishDate0Resource1.ErrorMessage" xml:space="preserve">
+    <value>تاریخ نامعتبر.</value>
+  </data>
+  <data name="cvPublishDateResource1.ErrorMessage" xml:space="preserve">
+    <value>تاریخ نامعتبر.</value>
+  </data>
+  <data name="hlOpenGalleryResource1.Text" xml:space="preserve">
+    <value>باز کردن مدیریت رسانه</value>
+  </data>
+  <data name="ibAddImagesResource1.Text" xml:space="preserve">
+    <value>افزودن گالری</value>
+  </data>
+  <data name="ibDisplayArticleGalleryResource1.Text" xml:space="preserve">
+    <value>نمایش این گالری</value>
+  </data>
+  <data name="lbArticleGalleryImagesResource1.Text" xml:space="preserve">
+    <value>مطلب&lt;span class="blue dot"&gt;&lt;/span&gt;</value>
+  </data>
+  <data name="lbCancelLocalizationResource1.Text" xml:space="preserve">
+    <value>&lt;span&gt;بستن&lt;/span&gt;</value>
+  </data>
+  <data name="lbCLCopyDefaultsResource1.Text" xml:space="preserve">
+    <value>&lt;span&gt;کپی مقادیر پیش فرض&lt;/span&gt;</value>
+  </data>
+  <data name="lbCLSaveLocalizationResource1.Text" xml:space="preserve">
+    <value>&lt;span&gt;ذخیره بومی سازی&lt;/span&gt;</value>
+  </data>
+  <data name="lbCustomGalleryResource1.Text" xml:space="preserve">
+    <value>سفارشی&lt;span class="yellow dot"&gt;&lt;/span&gt;</value>
+  </data>
+  <data name="lbDeleteArticleResource1.Text" xml:space="preserve">
+    <value>&lt;span&gt;حذف مطلب&lt;/span&gt;</value>
+  </data>
+  <data name="lbDeleteDocResource1.ToolTip" xml:space="preserve">
+    <value>حذف این سند</value>
+  </data>
+  <data name="lbDocUpdateResource1.ToolTip" xml:space="preserve">
+    <value>ذخیره تغییرات</value>
+  </data>
+  <data name="lbGallerySettingsResource1.Text" xml:space="preserve">
+    <value>نمایش تنظیمات</value>
+  </data>
+  <data name="lblAddPerArticlePermissionResource1.Text" xml:space="preserve">
+    <value>دسترسی ها در مطلب:</value>
+  </data>
+  <data name="lblApprovingMessageResource1.Text" xml:space="preserve">
+    <value>مطلب نیازمند تائید است. تغییرات تا زمان تائید قابل مشاهده نخواهند بود</value>
+  </data>
+  <data name="lbLastAddedTagsResource1.Text" xml:space="preserve">
+    <value>اولین مطلب اضافه شده اخیر</value>
+  </data>
+  <data name="lblCategorySelectErrorResource1.Text" xml:space="preserve">
+    <value>لطفا دسته را انتخاب نمایید.</value>
+  </data>
+  <data name="lblCategorySelectResource1.Text" xml:space="preserve">
+    <value>انتخاب دسته:</value>
+  </data>
+  <data name="lblCLSelectLanguageResource1.Text" xml:space="preserve">
+    <value>انتخاب زبان:</value>
+  </data>
+  <data name="lblContentLocalizationLocalizedLanguagesResource1.Text" xml:space="preserve">
+    <value>زبان بومی سازی:</value>
+  </data>
+  <data name="lblContentLocalizationMediaDescriptionResource1.Text" xml:space="preserve">
+    <value>توضیح رسانه:</value>
+  </data>
+  <data name="lblContentLocalizationMediaTitleResource1.Text" xml:space="preserve">
+    <value>عنوان رسانه:</value>
+  </data>
+  <data name="lblDocUploadDescriptionResource1.Text" xml:space="preserve">
+    <value>توضیح سند:</value>
+  </data>
+  <data name="lblDocUploadSelectFileResource1.Text" xml:space="preserve">
+    <value>انتخاب یک سند:</value>
+  </data>
+  <data name="lblDocUploadTitleResource1.Text" xml:space="preserve">
+    <value>عنوان سند:</value>
+  </data>
+  <data name="lblEventDateErrorResource1.Text" xml:space="preserve">
+    <value>تاریخ اتمام باید کمتر از تاریخ آغاز باشد</value>
+  </data>
+  <data name="lblExpireDateErrorResource1.Text" xml:space="preserve">
+    <value>زمان نامعتبر.</value>
+  </data>
+  <data name="lblGallerySelectResource1.Text" xml:space="preserve">
+    <value>انتخاب گالری:</value>
+  </data>
+  <data name="lblGalSetThenumberOfItems0Resource1.Text" xml:space="preserve">
+    <value>تنظیم تعداد آیتم ها در صفحه:</value>
+  </data>
+  <data name="lblIsArticleEventResource1.Text" xml:space="preserve">
+    <value>افزودن به عنوان رویداد:</value>
+  </data>
+  <data name="lblLocalizedLanguagesResource1.Text" xml:space="preserve">
+    <value>هیچ</value>
+  </data>
+  <data name="lblLocLangArticleResource1.Text" xml:space="preserve">
+    <value>زبان بومی سازی برای این مطلب:</value>
+  </data>
+  <data name="lbLocalizeContentResource1.Text" xml:space="preserve">
+    <value>&lt;span&gt;بومی سازی محتوا&lt;/span&gt;</value>
+  </data>
+  <data name="lbLocalizeimageResource1.Text" xml:space="preserve">
+    <value>بومی سازی محتوا</value>
+  </data>
+  <data name="lblPortalDefLanguageResource1.Text" xml:space="preserve">
+    <value>زبان پیش فرض پرتال:</value>
+  </data>
+  <data name="lblPubDateErrorResource1.Text" xml:space="preserve">
+    <value>تاریخ نامعتبر.</value>
+  </data>
+  <data name="lblSelectDetailTargetResource1.Text" xml:space="preserve">
+    <value>انتخاب مقصد:</value>
+  </data>
+  <data name="lblShowToUnauthorizedUserResource1.Text" xml:space="preserve">
+    <value>کاربران غیرمجاز:</value>
+  </data>
+  <data name="lblUsernameToAddResource1.Text" xml:space="preserve">
+    <value>افزودن کاربر با نام کاربری:</value>
+  </data>
+  <data name="lbModuleNavigationAddArticleResource1.Text" xml:space="preserve">
+    <value>&lt;img src="&lt;%=ModulePath %&gt;images/icons/paper_and_pencil.png" alt="" /&gt;</value>
+  </data>
+  <data name="lbModuleNavigationAddArticleResource1.ToolTip" xml:space="preserve">
+    <value>افزودن مطلب</value>
+  </data>
+  <data name="lbModuleNavigationApproveCommentsResource1.Text" xml:space="preserve">
+    <value>&lt;img src="&lt;%=ModulePath %&gt;images/icons/conversation.png" alt="" /&gt;</value>
+  </data>
+  <data name="lbModuleNavigationApproveCommentsResource1.ToolTip" xml:space="preserve">
+    <value>پذیرفتن نظرات</value>
+  </data>
+  <data name="lbModuleNavigationArticleEditorResource1.Text" xml:space="preserve">
+    <value>&lt;img src="&lt;%=ModulePath %&gt;images/icons/papers_and_pencil.png" alt="" /&gt;</value>
+  </data>
+  <data name="lbModuleNavigationArticleEditorResource1.ToolTip" xml:space="preserve">
+    <value>ویرایش مطالب موجود</value>
+  </data>
+  <data name="lbModuleNavigationCategoryEditorResource1.Text" xml:space="preserve">
+    <value>&lt;img src="&lt;%=ModulePath %&gt;images/icons/categories.png" alt="" /&gt;</value>
+  </data>
+  <data name="lbModuleNavigationCategoryEditorResource1.ToolTip" xml:space="preserve">
+    <value>ویرایشگر دسته</value>
+  </data>
+  <data name="lbModuleNavigationDashboardResource1.Text" xml:space="preserve">
+    <value>&lt;img src="&lt;%=ModulePath %&gt;images/icons/lcd.png" alt="" /&gt;</value>
+  </data>
+  <data name="lbModuleNavigationDashboardResource1.ToolTip" xml:space="preserve">
+    <value>داشبورد</value>
+  </data>
+  <data name="lbMostPopularTagsResource1.Text" xml:space="preserve">
+    <value>پربازدیدترین</value>
+  </data>
+  <data name="lbPowerOffResource1.Text" xml:space="preserve">
+    <value>&lt;img src="&lt;%=ModulePath %&gt;images/icons/power_off.png" alt="" /&gt;</value>
+  </data>
+  <data name="lbPowerOffResource1.ToolTip" xml:space="preserve">
+    <value>بستن</value>
+  </data>
+  <data name="lbRemoveDisplayArticleGalleryResource1.Text" xml:space="preserve">
+    <value>عدم نمایش گالری</value>
+  </data>
+  <data name="lbSetArticleImageArtGalleryResource1.Text" xml:space="preserve">
+    <value>تنظیم بعنوان عکس مطلب اصلی</value>
+  </data>
+  <data name="lbSharedArticleGalleryImagesResource1.Text" xml:space="preserve">
+    <value>اشتراک گذاشته شده</value>
+  </data>
+  <data name="lbUsernameAddResource1.Text" xml:space="preserve">
+    <value>افزودن</value>
+  </data>
+  <data name="lbUserPremissionRemoveResource1.Text" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="LinkButton1Resource1.ToolTip" xml:space="preserve">
+    <value>ویرایش این سند</value>
+  </data>
+  <data name="LinkButton2Resource1.ToolTip" xml:space="preserve">
+    <value>عدم اعمال تغییرات</value>
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>Text/HTML</value>
+  </data>
+  <data name="ListItemResource10.Text" xml:space="preserve">
+    <value>گالری Lightbox</value>
+  </data>
+  <data name="ListItemResource11.Text" xml:space="preserve">
+    <value>گالری صدا</value>
+  </data>
+  <data name="ListItemResource12.Text" xml:space="preserve">
+    <value>گالری تصویر</value>
+  </data>
+  <data name="ListItemResource13.Text" xml:space="preserve">
+    <value>مکان پایین</value>
+  </data>
+  <data name="ListItemResource14.Text" xml:space="preserve">
+    <value>مکان بالا</value>
+  </data>
+  <data name="ListItemResource15.Text" xml:space="preserve">
+    <value>عددی</value>
+  </data>
+  <data name="ListItemResource16.Text" xml:space="preserve">
+    <value>فلش های جهتی (بعدی، قبلی)</value>
+  </data>
+  <data name="ListItemResource17.Text" xml:space="preserve">
+    <value>پیکان ها (جلو، عقب، اولین، آخرین)</value>
+  </data>
+  <data name="ListItemResource18.Text" xml:space="preserve">
+    <value>انتخاب دسته</value>
+  </data>
+  <data name="ListItemResource19.Text" xml:space="preserve">
+    <value>انتخاب gallery</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>صفحه</value>
+  </data>
+  <data name="ListItemResource20.Text" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ListItemResource21.Text" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="ListItemResource22.Text" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="ListItemResource23.Text" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="ListItemResource24.Text" xml:space="preserve">
+    <value>100</value>
+  </data>
+  <data name="ListItemResource25.Text" xml:space="preserve">
+    <value>انتخاب نقش</value>
+  </data>
+  <data name="ListItemResource26.Text" xml:space="preserve">
+    <value>انتخاب نویسنده</value>
+  </data>
+  <data name="ListItemResource27.Text" xml:space="preserve">
+    <value>مطلب پیش نویس</value>
+  </data>
+  <data name="ListItemResource28.Text" xml:space="preserve">
+    <value>انتشار مطلب</value>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>فایل</value>
+  </data>
+  <data name="ListItemResource4.Text" xml:space="preserve">
+    <value>لینک</value>
+  </data>
+  <data name="ListItemResource5.Text" xml:space="preserve">
+    <value>هیچ</value>
+  </data>
+  <data name="ListItemResource6.Text" xml:space="preserve">
+    <value>_self</value>
+  </data>
+  <data name="ListItemResource7.Text" xml:space="preserve">
+    <value>_blank</value>
+  </data>
+  <data name="ListItemResource8.Text" xml:space="preserve">
+    <value>_parent</value>
+  </data>
+  <data name="ListItemResource9.Text" xml:space="preserve">
+    <value>_top</value>
+  </data>
+  <data name="revEventEndTImeResource1.ErrorMessage" xml:space="preserve">
+    <value>hh:mm</value>
+  </data>
+  <data name="revEventStartTimeResource1.ErrorMessage" xml:space="preserve">
+    <value>hh:mm</value>
+  </data>
+  <data name="revPublishTIme0Resource1.ErrorMessage" xml:space="preserve">
+    <value>hh:mm</value>
+  </data>
+  <data name="revPublishTImeResource1.ErrorMessage" xml:space="preserve">
+    <value>hh:mm</value>
+  </data>
+  <data name="rfvArchiveDate0Resource1.ErrorMessage" xml:space="preserve">
+    <value>زمان ضروری است.</value>
+  </data>
+  <data name="rfvArchiveDateResource1.ErrorMessage" xml:space="preserve">
+    <value>زمان ضروری است.</value>
+  </data>
+  <data name="rfvDocumentTitleResource1.ErrorMessage" xml:space="preserve">
+    <value>این فیلد ضروری است.</value>
+  </data>
+  <data name="rfvEventEndDateResource1.ErrorMessage" xml:space="preserve">
+    <value>زمان ضروری است.</value>
+  </data>
+  <data name="rfvEventEndResource1.ErrorMessage" xml:space="preserve">
+    <value>ساعت ضروری است.</value>
+  </data>
+  <data name="rfvEventStartDateResource1.ErrorMessage" xml:space="preserve">
+    <value>زمان ضروری است.</value>
+  </data>
+  <data name="rfvEventStartTimeResource1.ErrorMessage" xml:space="preserve">
+    <value>ساعت ضروری است.</value>
+  </data>
+  <data name="rfvGIItemsPerPage0Resource1.ErrorMessage" xml:space="preserve">
+    <value>این فیلد ضروری است.</value>
+  </data>
+  <data name="rfvGIItemsPerPageResource1.ErrorMessage" xml:space="preserve">
+    <value>این فیلد ضروری است.</value>
+  </data>
+  <data name="rfvGIThumbanilHeightResource1.ErrorMessage" xml:space="preserve">
+    <value>این فیلد ضروری است.</value>
+  </data>
+  <data name="rfvGIThumbanilWidthResource1.ErrorMessage" xml:space="preserve">
+    <value>این فیلد ضروری است.</value>
+  </data>
+  <data name="rfvRhumbImageWidth0Resource1.ErrorMessage" xml:space="preserve">
+    <value>این فیلد ضروری است.</value>
+  </data>
+  <data name="rfvRhumbImageWidth1Resource1.ErrorMessage" xml:space="preserve">
+    <value>این فیلد ضروری است.</value>
+  </data>
+  <data name="rfvTitleResource1.ErrorMessage" xml:space="preserve">
+    <value>این فیلد ضروری است.</value>
+  </data>
+  <data name="tbGIItemsPerPageResource1.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tbGIThumbnailHeightResource1.Text" xml:space="preserve">
+    <value>100</value>
+  </data>
+  <data name="tbGIThumbnailWidthResource1.Text" xml:space="preserve">
+    <value>100</value>
+  </data>
+  <data name="tbNumberOfColumnsResource1.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tbxGalleryHeightResource1.Text" xml:space="preserve">
+    <value>600</value>
+  </data>
+  <data name="tbxGalleryWidthResource1.Text" xml:space="preserve">
+    <value>700</value>
+  </data>
+  <data name="Media list.HeaderText" xml:space="preserve">
+    <value>لیست رسانه</value>
+  </data>
+  <data name="Users.HeaderText" xml:space="preserve">
+    <value>کاربران</value>
+  </data>
+  <data name="Edit article.HeaderText" xml:space="preserve">
+    <value>ویرایش مطلب</value>
+  </data>
+  <data name="Actions.HeaderText" xml:space="preserve">
+    <value>عمل ها</value>
+  </data>
+  <data name="Title.HeaderText" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="Description.HeaderText" xml:space="preserve">
+    <value>توضیح</value>
+  </data>
+  <data name="Filename.HeaderText" xml:space="preserve">
+    <value>نام فایل</value>
+  </data>
+  <data name="Author.HeaderText" xml:space="preserve">
+    <value>نویسنده</value>
+  </data>
+  <data name="Roles.HeaderText" xml:space="preserve">
+    <value>نقش ها</value>
+  </data>
+  <data name="View article.HeaderText" xml:space="preserve">
+    <value>نمایش مطلب</value>
+  </data>
+  <data name="tvCatAndSubCatResource1.CollapseImageToolTip" xml:space="preserve">
+    <value>بستن {0}</value>
+  </data>
+  <data name="tvCatAndSubCatResource1.ExpandImageToolTip" xml:space="preserve">
+    <value>بازکردن {0}</value>
+  </data>
+  <data name="tvCatAndSubCatResource1.SkipLinkText" xml:space="preserve">
+    <value>رد شدن لینک های ناوبری.</value>
+  </data>
+  <data name="ADDEXISTINGTAGS.Text" xml:space="preserve">
+    <value>افزودن تگ های موجود</value>
+  </data>
+  <data name="Articledetailtype.Text" xml:space="preserve">
+    <value>نوع جزئیات مطلب</value>
+  </data>
+  <data name="Categories.Text" xml:space="preserve">
+    <value>دسته ها</value>
+  </data>
+  <data name="CopyAndPaste.Text" xml:space="preserve">
+    <value>این توکن را در فیلد محتوای مطالب کپی و پیست کنید</value>
+  </data>
+  <data name="Croptosize.Text" xml:space="preserve">
+    <value>برش به اندازه</value>
+  </data>
+  <data name="EditArticle.Text" xml:space="preserve">
+    <value>ویرایش مطلب</value>
+  </data>
+  <data name="Height.Text" xml:space="preserve">
+    <value>ارتفاع:</value>
+  </data>
+  <data name="Itemtokensettings.Text" xml:space="preserve">
+    <value>تنظیمات توکن آیتم</value>
+  </data>
+  <data name="lblAllowComments.HelpText" xml:space="preserve">
+    <value>اجازه نظردهی:</value>
+  </data>
+  <data name="lblAllowComments.Text" xml:space="preserve">
+    <value>اجازه نظردهی:</value>
+  </data>
+  <data name="lblArticleCommentsTheme.HelpText" xml:space="preserve">
+    <value>تم نظرات مطلب:</value>
+  </data>
+  <data name="lblArticleCommentsTheme.Text" xml:space="preserve">
+    <value>تم نظرات مطلب:</value>
+  </data>
+  <data name="lblArticleCSSStyle.HelpText" xml:space="preserve">
+    <value>style نمایش:</value>
+  </data>
+  <data name="lblArticleCSSStyle.Text" xml:space="preserve">
+    <value>style نمایش:</value>
+  </data>
+  <data name="lblArticleDetailsTemplate.HelpText" xml:space="preserve">
+    <value>الگوی جزئیات مطلب:</value>
+  </data>
+  <data name="lblArticleDetailsTemplate.Text" xml:space="preserve">
+    <value>الگوی جزئیات مطلب:</value>
+  </data>
+  <data name="lblArticleDetailsTheme.HelpText" xml:space="preserve">
+    <value>تم جزئیات مطلب:</value>
+  </data>
+  <data name="lblArticleDetailsTheme.Text" xml:space="preserve">
+    <value>تم جزئیات مطلب:</value>
+  </data>
+  <data name="lblArticleSummary.HelpText" xml:space="preserve">
+    <value>خلاصه:</value>
+  </data>
+  <data name="lblArticleSummary.Text" xml:space="preserve">
+    <value>خلاصه:</value>
+  </data>
+  <data name="lblArticleTags.HelpText" xml:space="preserve">
+    <value>تگ های مطالب با کاما جدا می شوند ( , ):</value>
+  </data>
+  <data name="lblArticleTags.Text" xml:space="preserve">
+    <value>تگ های مطلب:</value>
+  </data>
+  <data name="lblArticleTitle.HelpText" xml:space="preserve">
+    <value>عنوان مطلب</value>
+  </data>
+  <data name="lblArticleTitle.Text" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="lblArticleURL.HelpText" xml:space="preserve">
+    <value>آدرس مطلب</value>
+  </data>
+  <data name="lblArticleURL.Text" xml:space="preserve">
+    <value>آدرس مطلب</value>
+  </data>
+  <data name="lblChOwner.HelpText" xml:space="preserve">
+    <value>عوض کردن مالک:</value>
+  </data>
+  <data name="lblChOwner.Text" xml:space="preserve">
+    <value>عوض کردن مالک:</value>
+  </data>
+  <data name="lblCLArticle.HelpText" xml:space="preserve">
+    <value>مطلب</value>
+  </data>
+  <data name="lblCLArticle.Text" xml:space="preserve">
+    <value>مطلب</value>
+  </data>
+  <data name="lblCLSubtitle.HelpText" xml:space="preserve">
+    <value>زیرعنوان</value>
+  </data>
+  <data name="lblCLSubtitle.Text" xml:space="preserve">
+    <value>زیرعنوان</value>
+  </data>
+  <data name="lblCLSummary.HelpText" xml:space="preserve">
+    <value>خلاصه</value>
+  </data>
+  <data name="lblCLSummary.Text" xml:space="preserve">
+    <value>خلاصه</value>
+  </data>
+  <data name="lblCLTitle.HelpText" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="lblCLTitle.Text" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="lblContent.HelpText" xml:space="preserve">
+    <value>محتوای مطلب:</value>
+  </data>
+  <data name="lblContent.Text" xml:space="preserve">
+    <value>محتوا:</value>
+  </data>
+  <data name="lblContentLocalizationDescription.HelpText" xml:space="preserve">
+    <value>توضیح:</value>
+  </data>
+  <data name="lblContentLocalizationDescription.Text" xml:space="preserve">
+    <value>توضیح:</value>
+  </data>
+  <data name="lblContentLocalizationSelectLanguage.HelpText" xml:space="preserve">
+    <value>زبانی را که می خواهید ویرایش کنید را انتخاب نمایید. نیازی به تغییر زبان پیش فرض نیست</value>
+  </data>
+  <data name="lblContentLocalizationSelectLanguage.Text" xml:space="preserve">
+    <value>انتخاب زبان:</value>
+  </data>
+  <data name="lblContentLocalizationTitle.HelpText" xml:space="preserve">
+    <value>عنوان:</value>
+  </data>
+  <data name="lblContentLocalizationTitle.Text" xml:space="preserve">
+    <value>عنوان:</value>
+  </data>
+  <data name="lblEventEndDateTime.HelpText" xml:space="preserve">
+    <value>تاریخ اتمام:</value>
+  </data>
+  <data name="lblEventEndDateTime.Text" xml:space="preserve">
+    <value>تاریخ اتمام:</value>
+  </data>
+  <data name="lblEventStartDateTime.HelpText" xml:space="preserve">
+    <value>تاریخ شروع:</value>
+  </data>
+  <data name="lblEventStartDateTime.Text" xml:space="preserve">
+    <value>تاریخ شروع:</value>
+  </data>
+  <data name="lblExpireDate.HelpText" xml:space="preserve">
+    <value>زمان انقضا. باید بزرگتر از زمان انتشار باشد.</value>
+  </data>
+  <data name="lblExpireDate.Text" xml:space="preserve">
+    <value>زمان انقضا:</value>
+  </data>
+  <data name="lblFeaturedArticle.HelpText" xml:space="preserve">
+    <value>مطلب برتر:</value>
+  </data>
+  <data name="lblFeaturedArticle.Text" xml:space="preserve">
+    <value>مطلب برتر:</value>
+  </data>
+  <data name="lblowner.HelpText" xml:space="preserve">
+    <value>مالک مطلب:</value>
+  </data>
+  <data name="lblowner.Text" xml:space="preserve">
+    <value>مالک مطلب:</value>
+  </data>
+  <data name="lblPublishDate.HelpText" xml:space="preserve">
+    <value>زمان انتشار:</value>
+  </data>
+  <data name="lblPublishDate.Text" xml:space="preserve">
+    <value>زمان انتشار:</value>
+  </data>
+  <data name="lblSubtitle.HelpText" xml:space="preserve">
+    <value>زیرعنوان:</value>
+  </data>
+  <data name="lblSubtitle.Text" xml:space="preserve">
+    <value>زیرعنوان:</value>
+  </data>
+  <data name="lblUseDefaultTemplate.HelpText" xml:space="preserve">
+    <value>استفاده از الگوی پیش فرض:</value>
+  </data>
+  <data name="lblUseDefaultTemplate.Text" xml:space="preserve">
+    <value>استفاده از الگوی پیش فرض:</value>
+  </data>
+  <data name="Leftclear.Text" xml:space="preserve">
+    <value>Left clear</value>
+  </data>
+  <data name="METAdescription.Text" xml:space="preserve">
+    <value>توضیح متا</value>
+  </data>
+  <data name="METAkeywords.Text" xml:space="preserve">
+    <value>کلمات کلیدی متا</value>
+  </data>
+  <data name="Onclickaction.Text" xml:space="preserve">
+    <value>عمل هنگام کلیک</value>
+  </data>
+  <data name="Position.Text" xml:space="preserve">
+    <value>مکان:</value>
+  </data>
+  <data name="Proportional.Text" xml:space="preserve">
+    <value>متناسب</value>
+  </data>
+  <data name="SEOsettings.Text" xml:space="preserve">
+    <value>تنظیمات سئو</value>
+  </data>
+  <data name="Sizing.Text" xml:space="preserve">
+    <value>اندازه</value>
+  </data>
+  <data name="Width.Text" xml:space="preserve">
+    <value>عرض:</value>
+  </data>
+  <data name="Generatetoken.Text" xml:space="preserve">
+    <value>تولید توکن</value>
+  </data>
+  <data name="Linktext.Text" xml:space="preserve">
+    <value>لینک متن</value>
+  </data>
+  <data name="Mainarticlemap.Text" xml:space="preserve">
+    <value>نقشه مطلب اصلی</value>
+  </data>
+  <data name="None.Text" xml:space="preserve">
+    <value>هیچ</value>
+  </data>
+  <data name="Note.Text" xml:space="preserve">
+    <value>توجه: اگر این متن را تنظیم کنید، توکن ها بعنوان لینک متن استاندارد رندر نمی شوند</value>
+  </data>
+  <data name="Openiteminlightbox.Text" xml:space="preserve">
+    <value>باز شدن در lightbox</value>
+  </data>
+  <data name="RedirecttosetURL.Text" xml:space="preserve">
+    <value>تغییر مسیر به آدرس تنظیم شده</value>
+  </data>
+  <data name="Searchforlocation.Text" xml:space="preserve">
+    <value>جستجو برای مکان:</value>
+  </data>
+  <data name="Showastandardtextlink.Text" xml:space="preserve">
+    <value>نمایش به عنوان لینک متن استاندارد</value>
+  </data>
+  <data name="Showdescription.Text" xml:space="preserve">
+    <value>نمایش توضیح</value>
+  </data>
+  <data name="Showtitle.Text" xml:space="preserve">
+    <value>نمایش عنوان</value>
+  </data>
+  <data name="Add marker.Text" xml:space="preserve">
+    <value>افزودن نشانه</value>
+  </data>
+  <data name="Addmap.Text" xml:space="preserve">
+    <value>افزودن map</value>
+  </data>
+  <data name="Backtoediting.Text" xml:space="preserve">
+    <value>بازگشت به ویرایش</value>
+  </data>
+  <data name="CopyAndPasteToken.Text" xml:space="preserve">
+    <value>این توکن را به بخش محتوای مطالب کپی و پیست کنید</value>
+  </data>
+  <data name="Delete.Text" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="Enablescrollwheelzoom.Text" xml:space="preserve">
+    <value>فعال کردن بزرگنمایی با چرخ اسکرول</value>
+  </data>
+  <data name="Galleriesincluded.Text" xml:space="preserve">
+    <value>گالری های مشمول در مطلب</value>
+  </data>
+  <data name="Generalsettings.Text" xml:space="preserve">
+    <value>تنظیمات اساسی</value>
+  </data>
+  <data name="HeightMap.Text" xml:space="preserve">
+    <value>ارتفاع:</value>
+  </data>
+  <data name="Latitude.Text" xml:space="preserve">
+    <value>عرض جغرافیایی:</value>
+  </data>
+  <data name="Longitude.Text" xml:space="preserve">
+    <value>طول جغرافیایی:</value>
+  </data>
+  <data name="Mainarticleimage.Text" xml:space="preserve">
+    <value>تصویر مطلب اصلی</value>
+  </data>
+  <data name="Mainarticlemapisnotset.Text" xml:space="preserve">
+    <value>نقشه مطلب اصلی تنظیم نشده است</value>
+  </data>
+  <data name="Mainarticlemapisset.Text" xml:space="preserve">
+    <value>نقشه مطلب اصلی تنظیم شده</value>
+  </data>
+  <data name="Mapeditor.Text" xml:space="preserve">
+    <value>ویرایشگر نقشه</value>
+  </data>
+  <data name="Mapmarkers.Text" xml:space="preserve">
+    <value>نشانه های نقشه</value>
+  </data>
+  <data name="Maptype.Text" xml:space="preserve">
+    <value>نوع نقشه:</value>
+  </data>
+  <data name="Remove.Text" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="StartUpload.Text" xml:space="preserve">
+    <value>شروع آپلود</value>
+  </data>
+  <data name="Thegalleryisempty.Text" xml:space="preserve">
+    <value>این گالری خالی است</value>
+  </data>
+  <data name="ThisImage.Text" xml:space="preserve">
+    <value>&lt;strong&gt;این عکس&lt;/strong&gt; بعنوان عکس اصلی مطلب انتخاب شده است</value>
+  </data>
+  <data name="WidthMap.Text" xml:space="preserve">
+    <value>عرض:</value>
+  </data>
+  <data name="Zoom.Text" xml:space="preserve">
+    <value>بزرگنمایی</value>
+  </data>
+  <data name="Action.Text" xml:space="preserve">
+    <value>عمل</value>
+  </data>
+  <data name="Customtoken.Text" xml:space="preserve">
+    <value>توکن سفارشی</value>
+  </data>
+  <data name="Description.Text" xml:space="preserve">
+    <value>توضیح</value>
+  </data>
+  <data name="DOCUMENTSincluded.Text" xml:space="preserve">
+    <value>اسناد مشمول در مطلب</value>
+  </data>
+  <data name="GalleryPanel.Text" xml:space="preserve">
+    <value>پنل گالری</value>
+  </data>
+  <data name="GalleryWithArticle.Text" xml:space="preserve">
+    <value>این گالری با مطلب نمایش داده می شود</value>
+  </data>
+  <data name="Media.Text" xml:space="preserve">
+    <value>رسانه</value>
+  </data>
+  <data name="NotWithArticle.Text" xml:space="preserve">
+    <value>این گالری با مطلب نمایش داده نمی شود</value>
+  </data>
+  <data name="Show.Text" xml:space="preserve">
+    <value>نمایش</value>
+  </data>
+  <data name="Title.Text" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="Addmarker.Text" xml:space="preserve">
+    <value>افزودن نشانه</value>
+  </data>
+  <data name="Addasarticlemap.Text">
+    <value>Add as article map</value>
+  </data>
+  <data name="AddGoogleMapslocation.Text">
+    <value>افزودن مکان در نقشه گوگل</value>
+  </data>
+  <data name="Addmapmarker.Text">
+    <value>اضافه کردن map marker</value>
+  </data>
+  <data name="addVideoFromYouTube.Text">
+    <value>افزودن ویدئو از YouTube یا Vimeo:</value>
+  </data>
+  <data name="AdvancedSettings.Text">
+    <value>تنظیمات پیشرفته</value>
+  </data>
+  <data name="AllTags.Text">
+    <value>تمام تگ ها</value>
+  </data>
+  <data name="Articleimageadded.Text">
+    <value>تصویر مطلب افزوده شد.</value>
+  </data>
+  <data name="Articleto.Text">
+    <value>مطلب به:</value>
+  </data>
+  <data name="Articleupdated.Text">
+    <value>مطلب بروزرسانی شد.</value>
+  </data>
+  <data name="Atitleisrequired.Text">
+    <value>عنوان ضروری است</value>
+  </data>
+  <data name="btnDeleteLocalization.Text">
+    <value>&lt;span&gt;حذف بومی سازی انتخاب شده&lt;/span&gt;</value>
+  </data>
+  <data name="Cancel.Text">
+    <value>انصراف</value>
+  </data>
+  <data name="cbShowEndDate.Text">
+    <value>نمایش تاریخ اتمام</value>
+  </data>
+  <data name="Centeronmap.Text">
+    <value>مرکز در نقشه</value>
+  </data>
+  <data name="Close.Text">
+    <value>بستن</value>
+  </data>
+  <data name="Close.Text1">
+    <value>بستن</value>
+  </data>
+  <data name="Confirm.Text">
+    <value>تائید</value>
+  </data>
+  <data name="Copydefaultvalues.Text">
+    <value>کپی مقادیر پیش فرض</value>
+  </data>
+  <data name="Customizegalleryitemtoken.Text">
+    <value>سفارشی کردن توکن آیتم های گالری</value>
+  </data>
+  <data name="Defaultportallanguage.Text">
+    <value>زبان پیش فرض پرتال</value>
+  </data>
+  <data name="DeleteArticleConfirm.Text">
+    <value>آیا از حذف این مطلب مطمئن هستید؟</value>
+  </data>
+  <data name="Documentuploaded.Text">
+    <value>سند آپلود شد.</value>
+  </data>
+  <data name="Edit.Text">
+    <value>ویرایش</value>
+  </data>
+  <data name="Editarticle.HeaderText">
+    <value>ویرایش مطلب</value>
+  </data>
+  <data name="EnterVideoURL.Text">
+    <value>URL ویدئو را وارد کنید...</value>
+  </data>
+  <data name="History.Text">
+    <value>تاریخچه</value>
+  </data>
+  <data name="HTMoptional.Text">
+    <value>HTML: (اختیاری)</value>
+  </data>
+  <data name="lblArticleCommentsTemplate.HelpText">
+    <value>template نظرات مطلب:</value>
+  </data>
+  <data name="lblArticleCommentsTemplate.Text">
+    <value>template نظرات مطلب:</value>
+  </data>
+  <data name="lblChameleonLayout.HelpText">
+    <value>layout گالری</value>
+  </data>
+  <data name="lblChameleonLayout.Text">
+    <value>layout گالری</value>
+  </data>
+  <data name="lblChameleonLayoutTheme.HelpText">
+    <value>Chameleon تم:</value>
+  </data>
+  <data name="lblChameleonLayoutTheme.Text">
+    <value>Chameleon تم:</value>
+  </data>
+  <data name="lblChameleonLayoutThemeStyle.HelpText">
+    <value>Chameleon تم style:</value>
+  </data>
+  <data name="lblChameleonLayoutThemeStyle.Text">
+    <value>Chameleon تم style:</value>
+  </data>
+  <data name="lblFixedResponsiveLayout.HelpText">
+    <value>layout ثابت یا انعطاف پذیر</value>
+  </data>
+  <data name="lblFixedResponsiveLayout.Text">
+    <value>layout ثابت یا انعطاف پذیر</value>
+  </data>
+  <data name="lblGalleryHeight.HelpText">
+    <value>ارتفاع گالری:</value>
+  </data>
+  <data name="lblGalleryHeight.Text">
+    <value>ارتفاع گالری:</value>
+  </data>
+  <data name="lblGalleryWidth.HelpText">
+    <value>عرض گالری:</value>
+  </data>
+  <data name="lblGalleryWidth.Text">
+    <value>عرض گالری:</value>
+  </data>
+  <data name="lblGIDisplayItemDescription.HelpText">
+    <value>نمایش توضیح آیتم:</value>
+  </data>
+  <data name="lblGIDisplayItemDescription.Text">
+    <value>نمایش توضیح آیتم:</value>
+  </data>
+  <data name="lblGIDisplayItemDescriptionLightBox.HelpText">
+    <value>نمایش توضیح آیتم در Lightbox:</value>
+  </data>
+  <data name="lblGIDisplayItemDescriptionLightBox.Text">
+    <value>نمایش توضیح آیتم در Lightbox:</value>
+  </data>
+  <data name="lblGIDisplayItemTitle.HelpText">
+    <value>نمایش عنوان آیتم:</value>
+  </data>
+  <data name="lblGIDisplayItemTitle.Text">
+    <value>نمایش عنوان آیتم:</value>
+  </data>
+  <data name="lblGIDisplayItemTitleLightBox.HelpText">
+    <value>نمایش عنوان آیتم در Lightbox:</value>
+  </data>
+  <data name="lblGIDisplayItemTitleLightBox.Text">
+    <value>نمایش عنوان آیتم در Lightbox:</value>
+  </data>
+  <data name="lblGIGalleryPosition.HelpText">
+    <value>موقعیت گالری:</value>
+  </data>
+  <data name="lblGIGalleryPosition.Text">
+    <value>موقعیت گالری:</value>
+  </data>
+  <data name="lblGIGalleryTheme.HelpText">
+    <value>Gallery تم:</value>
+  </data>
+  <data name="lblGIGalleryTheme.Text">
+    <value>Gallery تم:</value>
+  </data>
+  <data name="lblGIGalleryType.HelpText">
+    <value>نوع نمایش گالری:</value>
+  </data>
+  <data name="lblGIGalleryType.Text">
+    <value>نوع نمایش گالری:</value>
+  </data>
+  <data name="lblGIItemsPerPage.HelpText">
+    <value>آیتم ها در هر صفحه:</value>
+  </data>
+  <data name="lblGIItemsPerPage.Text">
+    <value>آیتم ها در هر صفحه:</value>
+  </data>
+  <data name="lblGINumberOfColumns.HelpText">
+    <value>تعداد ستون ها:</value>
+  </data>
+  <data name="lblGINumberOfColumns.Text">
+    <value>تعداد ستون ها:</value>
+  </data>
+  <data name="lblGIThumbHeight.HelpText">
+    <value>Thumbnail ارتفاع:</value>
+  </data>
+  <data name="lblGIThumbHeight.Text">
+    <value>Thumbnail ارتفاع:</value>
+  </data>
+  <data name="lblGIThumbWidth.HelpText">
+    <value>Thumbnail عرض:</value>
+  </data>
+  <data name="lblGIThumbWidth.Text">
+    <value>Thumbnail عرض:</value>
+  </data>
+  <data name="lblPostToJournal.Text">
+    <value>ارسال به دیوار کاربری</value>
+  </data>
+  <data name="lblSocialSecurityGroups.Text">
+    <value>گروه ها:</value>
+  </data>
+  <data name="lblSocialSecuritySelect.Text">
+    <value>نمایش:</value>
+  </data>
+  <data name="Leftwrap.Text">
+    <value>Left wrap</value>
+  </data>
+  <data name="liFixed.Text">
+    <value>Fixed Layout</value>
+  </data>
+  <data name="liImage.Text">
+    <value>تصویر</value>
+  </data>
+  <data name="liResponsive.Text">
+    <value>Layout انعطاف پذیر </value>
+  </data>
+  <data name="liVideo.Text">
+    <value>ویدئو</value>
+  </data>
+  <data name="OwnerIsAddedAutomatically.Text">
+    <value>مالک بصورت خودکار اضافه شد</value>
+  </data>
+  <data name="Permissionsperarticleoverride.Text">
+    <value>دسترسی های مطلب بر تمام دسترسی ها اولویت دارد</value>
+  </data>
+  <data name="PleaseSelctDifferntUsername.Text">
+    <value>لطفا نام کاربری دیگری برگزینید</value>
+  </data>
+  <data name="Pleaseselectfile.Text">
+    <value>لطفا یک فایل انتخاب کنید</value>
+  </data>
+  <data name="Post.Text">
+    <value>ارسال</value>
+  </data>
+  <data name="Previousversionsaved.Text">
+    <value>نسخه قبلی ذخیره شد:</value>
+  </data>
+  <data name="ResetarticleURL.Text">
+    <value>تنظیم مجدد URL مطلب</value>
+  </data>
+  <data name="Rightwrap.Text">
+    <value>Right wrap</value>
+  </data>
+  <data name="Roles.Text">
+    <value>نقش ها</value>
+  </data>
+  <data name="rvChameleonWidthPerct.ErrorMessage">
+    <value>مقداری مابین 0-100 انتخاب کنید.</value>
+  </data>
+  <data name="Savelocalization.Text">
+    <value>ذخیره بومی سازی</value>
+  </data>
+  <data name="Security.Text">
+    <value>امنیت:</value>
+  </data>
+  <data name="Social.Text">
+    <value>شبکه اجتماعی</value>
+  </data>
+  <data name="Thatuserdoesnotexist.Text">
+    <value>این کاربر وجود ندارد</value>
+  </data>
+  <data name="Title.Text1">
+    <value>عنوان</value>
+  </data>
+  <data name="Useralreadyaddedtolist.Text">
+    <value>کاربر به لیست اضافه شده </value>
+  </data>
+  <data name="Viewarticle.HeaderText">
+    <value>نمایش مطلب</value>
+  </data>
+  <data name="YouAreNotAllowed.Text">
+    <value>شما مجوز ویرایش این مطلب را ندارید</value>
+  </data>
+  <data name="Youdonothavepermision.Text">
+    <value>شما مجوز ویرایش این مطلب را ندارید</value>
+  </data>
+</root>

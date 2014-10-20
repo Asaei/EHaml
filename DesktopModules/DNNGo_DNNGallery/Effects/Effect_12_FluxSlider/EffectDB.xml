@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_DNNGallery>
+  <EffectDB>
+    <Name>
+      <![CDATA[Effect_12_FluxSlider]]>
+    </Name>
+    <Description>
+      <![CDATA[Flux slider is a CSS3 animation based image transition framework, inspired in part by the fantastic Nivo Slider jQuery module. Instead of the traditional Javascript timer based animations used by jQuery, Flux utilises the newer, more powerful CSS3 animation technology. Its in a fairly early/rough state at the moment but testing on the iPhone/iPad does appear to produce much smoother animations. Desktop performance (as with Nivo) is very smooth but the use of CSS3 enables us to produce some new effects that Nivo can’t, e.g. rotations. The aim is to use hardware acceleration where possible to improve performance on less powerful devices, such as mobiles & tablets.]]>
+    </Description>
+    <Version>
+      <![CDATA[01.02.00]]>
+    </Version>
+    <Thumbnails>
+      <![CDATA[http://www.dnngo.net/DesktopModules/DNNGo_DNNGallery/Effects/Effect_12_FluxSlider/preview.jpg]]>
+    </Thumbnails>
+    <EffectScript>
+      <![CDATA[flux.min.js]]>
+    </EffectScript>
+    <GlobalScript>
+      <![CDATA[]]>
+    </GlobalScript>
+    <DisplayByNormal>
+      <![CDATA[Picture,UrlLink]]>
+    </DisplayByNormal>
+    <DisplayByModule>
+      <![CDATA[Description,ViewType]]>
+    </DisplayByModule>
+    <DemoUrl>
+      <![CDATA[http://www.dnngo.net/OurModules/DNNGallery/FluxSlider3D.aspx]]>
+    </DemoUrl>
+  </EffectDB>
+</DNNGo_DNNGallery>

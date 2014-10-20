@@ -1,0 +1,158 @@
+2014-10-20 09:39:48,976 [Laptop][Thread:33][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Unhandled error loading page. ---> System.Web.HttpParseException: The file '/DesktopModules/DDRMenu/Menu.ascx' does not exist. ---> System.Web.HttpParseException: The file '/DesktopModules/DDRMenu/Menu.ascx' does not exist. ---> System.Web.HttpException: The file '/DesktopModules/DDRMenu/Menu.ascx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.BaseTemplateParser.GetReferencedType(VirtualPath virtualPath, Boolean allowNoCompile)
+   at System.Web.UI.BaseTemplateParser.GetUserControlType(VirtualPath virtualPath)
+   at System.Web.UI.MainTagNameToTypeMapper.ProcessUserControlRegistration(UserControlRegisterEntry ucRegisterEntry)
+   at System.Web.UI.BaseTemplateParser.ProcessDirective(String directiveName, IDictionary directive)
+   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   --- End of inner exception stack trace ---
+   at System.Web.UI.TemplateParser.ProcessException(Exception ex)
+   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   --- End of inner exception stack trace ---
+   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseFile(String physicalPath, VirtualPath virtualPath)
+   at System.Web.UI.TemplateParser.Parse()
+   at System.Web.Compilation.BaseTemplateBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   at DotNetNuke.UI.ControlUtilities.LoadControl[T](TemplateControl containerControl, String ControlSrc)
+   at DotNetNuke.UI.Skins.Skin.LoadSkin(PageBase page, String skinPath)
+   --- End of inner exception stack trace ---
+2014-10-20 09:39:49,264 [Laptop][Thread:33][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Unhandled error loading page. ---> System.Web.HttpParseException: The file '/DesktopModules/DDRMenu/Menu.ascx' does not exist. ---> System.Web.HttpParseException: The file '/DesktopModules/DDRMenu/Menu.ascx' does not exist. ---> System.Web.HttpException: The file '/DesktopModules/DDRMenu/Menu.ascx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.BaseTemplateParser.GetReferencedType(VirtualPath virtualPath, Boolean allowNoCompile)
+   at System.Web.UI.BaseTemplateParser.GetUserControlType(VirtualPath virtualPath)
+   at System.Web.UI.MainTagNameToTypeMapper.ProcessUserControlRegistration(UserControlRegisterEntry ucRegisterEntry)
+   at System.Web.UI.BaseTemplateParser.ProcessDirective(String directiveName, IDictionary directive)
+   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   --- End of inner exception stack trace ---
+   at System.Web.UI.TemplateParser.ProcessException(Exception ex)
+   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   --- End of inner exception stack trace ---
+   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseFile(String physicalPath, VirtualPath virtualPath)
+   at System.Web.UI.TemplateParser.Parse()
+   at System.Web.Compilation.BaseTemplateBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   at DotNetNuke.UI.ControlUtilities.LoadControl[T](TemplateControl containerControl, String ControlSrc)
+   at DotNetNuke.UI.Skins.Skin.LoadSkin(PageBase page, String skinPath)
+   --- End of inner exception stack trace ---
+2014-10-20 09:39:49,306 [Laptop][Thread:33][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.UI.Skins.Skin.GetSkin(PageBase page)
+   at DotNetNuke.Framework.DefaultPage.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-10-20 09:39:49,349 [Laptop][Thread:33][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=106&error=Object+reference+not+set+to+an+instance+of+an+object.&content=0
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.UI.Skins.Skin.GetSkin(PageBase page)
+   at DotNetNuke.Framework.DefaultPage.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-10-20 09:39:49,406 [Laptop][Thread:26][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Unhandled error loading page. ---> System.Web.HttpParseException: The file '/DesktopModules/DDRMenu/Menu.ascx' does not exist. ---> System.Web.HttpParseException: The file '/DesktopModules/DDRMenu/Menu.ascx' does not exist. ---> System.Web.HttpException: The file '/DesktopModules/DDRMenu/Menu.ascx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.BaseTemplateParser.GetReferencedType(VirtualPath virtualPath, Boolean allowNoCompile)
+   at System.Web.UI.BaseTemplateParser.GetUserControlType(VirtualPath virtualPath)
+   at System.Web.UI.MainTagNameToTypeMapper.ProcessUserControlRegistration(UserControlRegisterEntry ucRegisterEntry)
+   at System.Web.UI.BaseTemplateParser.ProcessDirective(String directiveName, IDictionary directive)
+   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   --- End of inner exception stack trace ---
+   at System.Web.UI.TemplateParser.ProcessException(Exception ex)
+   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   --- End of inner exception stack trace ---
+   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseFile(String physicalPath, VirtualPath virtualPath)
+   at System.Web.UI.TemplateParser.Parse()
+   at System.Web.Compilation.BaseTemplateBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   at DotNetNuke.UI.ControlUtilities.LoadControl[T](TemplateControl containerControl, String ControlSrc)
+   at DotNetNuke.UI.Skins.Skin.LoadSkin(PageBase page, String skinPath)
+   --- End of inner exception stack trace ---
+2014-10-20 09:39:49,427 [Laptop][Thread:26][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Unhandled error loading page. ---> System.Web.HttpParseException: The file '/DesktopModules/DDRMenu/Menu.ascx' does not exist. ---> System.Web.HttpParseException: The file '/DesktopModules/DDRMenu/Menu.ascx' does not exist. ---> System.Web.HttpException: The file '/DesktopModules/DDRMenu/Menu.ascx' does not exist.
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.BaseTemplateParser.GetReferencedType(VirtualPath virtualPath, Boolean allowNoCompile)
+   at System.Web.UI.BaseTemplateParser.GetUserControlType(VirtualPath virtualPath)
+   at System.Web.UI.MainTagNameToTypeMapper.ProcessUserControlRegistration(UserControlRegisterEntry ucRegisterEntry)
+   at System.Web.UI.BaseTemplateParser.ProcessDirective(String directiveName, IDictionary directive)
+   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   --- End of inner exception stack trace ---
+   at System.Web.UI.TemplateParser.ProcessException(Exception ex)
+   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   --- End of inner exception stack trace ---
+   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseFile(String physicalPath, VirtualPath virtualPath)
+   at System.Web.UI.TemplateParser.Parse()
+   at System.Web.Compilation.BaseTemplateBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   at DotNetNuke.UI.ControlUtilities.LoadControl[T](TemplateControl containerControl, String ControlSrc)
+   at DotNetNuke.UI.Skins.Skin.LoadSkin(PageBase page, String skinPath)
+   --- End of inner exception stack trace ---
+2014-10-20 09:39:49,432 [Laptop][Thread:26][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.UI.Skins.Skin.GetSkin(PageBase page)
+   at DotNetNuke.Framework.DefaultPage.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-10-20 09:39:49,436 [Laptop][Thread:26][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=106&error=terminate
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.UI.Skins.Skin.GetSkin(PageBase page)
+   at DotNetNuke.Framework.DefaultPage.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-10-20 09:39:49,457 [Laptop][Thread:26][ERROR] DotNetNuke.Services.Exceptions.Exceptions - DotNetNuke.Services.Exceptions.PageLoadException: Object reference not set to an instance of an object. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at DotNetNuke.UI.Skins.Skin.GetSkin(PageBase page)
+   at DotNetNuke.Framework.DefaultPage.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- End of inner exception stack trace ---
+2014-10-20 11:00:41,165 [Laptop][Thread:8][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Exception: System.UnauthorizedAccessException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Access denied!
+   at DnnSharp.Common.Api.ApiContext.Execute(IHttpHandler handler, HttpContext httpContext, Action`2 log)
+
+2014-10-20 12:48:38,923 [Laptop][Thread:8][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Exception: System.UnauthorizedAccessException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Access denied!
+   at DnnSharp.Common.Api.ApiContext.Execute(IHttpHandler handler, HttpContext httpContext, Action`2 log)
+
+2014-10-20 18:27:27,364 [Laptop][Thread:16][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Exception: System.UnauthorizedAccessException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Access denied!
+   at DnnSharp.Common.Api.ApiContext.Execute(IHttpHandler handler, HttpContext httpContext, Action`2 log)
+

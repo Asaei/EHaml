@@ -1,0 +1,66 @@
+<div id="dnn_ctr1530_HtmlModule_lblContent" class="Normal">
+	<div class="box-content boxforland">
+<h2 style="background-position: 2px -433px;">حمل ترکیبی (استعلام قیمت- پاسخ به استعلام) </h2>
+<div class="content">
+<p>در این قسمت شما می توانید برای جابجایی جاده ای بارهای ترکیبی خود از شرکتهای خدمات رسان داخلی و خارجی استعلام قیمت کنید... <a href="#">بیشتر</a> </p>
+<h3 class="boxMenuLink">یک گزینه را انتخاب نمایید...<span></span>
+</h3>
+<ul class="boxMenu">
+    <li>
+    <a href="#">ارسال استعلام</a>
+    </li>
+    <li>
+    <a href="#">مشاهده استعلام ها و پاسخ به آنها</a>
+    </li>
+</ul>
+</div>
+</div>
+<div style="display: none;" class="box-content boxforrail">
+<h2 style="background-position: 2px -433px;">حمل ترکیبی (استعلام قیمت- پاسخ به استعلام) </h2>
+<div class="content">
+<p>در این قسمت شما می توانید برای جابجایی ریلی بارهای ترکیبی خود از شرکتهای خدمات رسان داخلی و خارجی استعلام قیمت کنید... <a href="#">بیشتر</a> </p>
+<h3 class="boxMenuLink">یک گزینه را انتخاب نمایید...<span></span>
+</h3>
+<ul class="boxMenu">
+    <li>
+    <a href="#">ارسال استعلام</a>
+    </li>
+    <li>
+    <a href="#">مشاهده استعلام ها و پاسخ به آنها</a>
+    </li>
+</ul>
+</div>
+</div>
+<div style="display: none;" class="box-content boxforsea">
+<h2 style="background-position: 2px -433px;">حمل ترکیبی (استعلام قیمت- پاسخ به استعلام) </h2>
+<div class="content">
+<p>در این قسمت شما می توانید برای جابجایی دریایی بارهای ترکیبی خود از شرکتهای خدمات رسان داخلی و خارجی استعلام قیمت کنید... <a href="#">بیشتر</a> </p>
+<h3 class="boxMenuLink">یک گزینه را انتخاب نمایید...<span></span>
+</h3>
+<ul class="boxMenu">
+    <li>
+    <a href="#">ارسال استعلام</a>
+    </li>
+    <li>
+    <a href="#">مشاهده استعلام ها و پاسخ به آنها</a>
+    </li>
+</ul>
+</div>
+</div>
+<div style="display: none;" class="box-content boxforallservices">
+<h2 style="background-position: 2px -433px;">بازدید از مسیر </h2>
+<div class="content">
+<p>در این قسمت شما می توانید خدمات مربوط به بازدید از مسیر خود را به صورت مجازی انجام دهید...<a href="#">بیشتر</a> </p>
+<h3 class="boxMenuLink">یک گزینه را انتخاب نمایید...<span></span>
+</h3>
+<ul class="boxMenu">
+    <li>
+    <a href="/سایر-خدمات/بازدید-مسیر/درخواست-بازدید">درخواست بازدید مسیر</a>
+    </li>
+    <li>
+    <a href="/سایر-خدمات/بازدید-مسیر/مشاهده-درخواستهای-موجود">مشاهده درخواست ها و پاسخ به آنها</a>
+    </li>
+</ul>
+</div>
+</div>
+</div>
