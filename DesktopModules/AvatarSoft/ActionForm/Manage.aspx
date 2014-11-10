@@ -637,6 +637,10 @@
                     <a href="<%= avt.ActionForm.ActionFormController.BuyLink %>" class="btn btn-link" target="_blank">Buy License</a>
                 </div>
 
+                <p class="text-muted">
+                    Current server IPs: {{dnnsf.serverIps}}
+                </p>
+
             </section>
 
 

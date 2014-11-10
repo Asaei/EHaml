@@ -1,0 +1,308 @@
+2014-10-26 10:27:35,625 [Laptop][Thread:60][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: Error executing sql DELETE dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID == 48 ---> System.Data.SqlClient.SqlException: Incorrect syntax near '='.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-26 10:34:14,065 [Laptop][Thread:60][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression "ÎÇæÑ".indexOf("ÊÑíáÑ˜Ýí ÊÑÇÝí˜í Ê˜ ÇÓ˜æÑÊ") > -1 ---> System.Exception: Member not found: String.indexOf
+   at DnnSharp.Common.ExpressionEvaluator.Operators.OperatorCustomExpressions.MemberAccess(Expression le, String membername, List`1 args)
+   at DnnSharp.Common.ExpressionEvaluator.Operators.OpFuncServiceProviders.MethodOperatorFunc(OpFuncArgs args)
+   at DnnSharp.Common.ExpressionEvaluator.Parser.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.CompiledExpression.Compile()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-26 10:51:46,313 [Laptop][Thread:64][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near ','.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+ClientConnectionId:44232e50-75bb-43b7-a88d-b23e1f9973c7
+Error Number:102,State:1,Class:15
+2014-10-26 13:29:24,385 [Laptop][Thread:31][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near ','.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+ClientConnectionId:fea4d38d-0d53-44ed-a5b4-3c0203dbc238
+Error Number:102,State:1,Class:15
+2014-10-26 13:29:51,725 [Laptop][Thread:11][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near ','.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+ClientConnectionId:fea4d38d-0d53-44ed-a5b4-3c0203dbc238
+Error Number:102,State:1,Class:15
+2014-10-26 13:50:50,700 [Laptop][Thread:8][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression "" != Null && "" != "True" ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at DnnSharp.Common.ExpressionEvaluator.Parser.<BuildTree>b__f(Token x)
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at DnnSharp.Common.ExpressionEvaluator.Parser.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.CompiledExpression.Compile()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-26 14:13:25,323 [Laptop][Thread:26][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression "" != Null && "" == "No" ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at DnnSharp.Common.ExpressionEvaluator.Parser.<BuildTree>b__f(Token x)
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at DnnSharp.Common.ExpressionEvaluator.Parser.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.CompiledExpression.Compile()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-26 19:00:54,803 [Laptop][Thread:31][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression !"" ---> System.InvalidOperationException: The unary operator Not is not defined for the type 'System.String'.
+   at System.Linq.Expressions.Expression.Not(Expression expression, MethodInfo method)
+   at DnnSharp.Common.ExpressionEvaluator.Operators.OpFuncServiceProviders.UnaryOperatorFunc(OpFuncArgs args)
+   at DnnSharp.Common.ExpressionEvaluator.Parser.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.CompiledExpression.Compile()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-26 19:01:44,366 [Laptop][Thread:42][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression !"" ---> System.InvalidOperationException: The unary operator Not is not defined for the type 'System.String'.
+   at System.Linq.Expressions.Expression.Not(Expression expression, MethodInfo method)
+   at DnnSharp.Common.ExpressionEvaluator.Operators.OpFuncServiceProviders.UnaryOperatorFunc(OpFuncArgs args)
+   at DnnSharp.Common.ExpressionEvaluator.Parser.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.CompiledExpression.Compile()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-26 19:04:02,758 [Laptop][Thread:40][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True" ---> System.Exception: Parser error at position 5: Unknown type or identifier 'EHaml' ---> System.Exception: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   --- End of inner exception stack trace ---
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-26 19:04:12,014 [Laptop][Thread:25][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True" ---> System.Exception: Parser error at position 5: Unknown type or identifier 'EHaml' ---> System.Exception: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   --- End of inner exception stack trace ---
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-26 19:05:33,465 [Laptop][Thread:11][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression "" == true ---> System.InvalidOperationException: The binary operator Equal is not defined for the types 'System.String' and 'System.Boolean'.
+   at System.Linq.Expressions.Expression.GetEqualityComparisonOperator(ExpressionType binaryType, String opName, Expression left, Expression right, Boolean liftToNull)
+   at System.Linq.Expressions.Expression.Equal(Expression left, Expression right, Boolean liftToNull, MethodInfo method)
+   at DnnSharp.Common.ExpressionEvaluator.Operators.OpFuncServiceProviders.BinaryOperatorFunc(OpFuncArgs args)
+   at DnnSharp.Common.ExpressionEvaluator.Parser.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.CompiledExpression.Compile()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-26 19:07:14,930 [Laptop][Thread:31][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != true ---> System.Exception: Parser error at position 5: Unknown type or identifier 'EHaml' ---> System.Exception: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   --- End of inner exception stack trace ---
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-26 19:07:24,941 [Laptop][Thread:22][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="67")] != true ---> System.Exception: Parser error at position 5: Unknown type or identifier 'EHaml' ---> System.Exception: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   --- End of inner exception stack trace ---
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-26 19:09:09,853 [Laptop][Thread:40][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True" ---> System.Exception: Parser error at position 5: Unknown type or identifier 'EHaml' ---> System.Exception: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   --- End of inner exception stack trace ---
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-26 19:09:14,403 [Laptop][Thread:30][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="67")] != "True" ---> System.Exception: Parser error at position 5: Unknown type or identifier 'EHaml' ---> System.Exception: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   --- End of inner exception stack trace ---
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-26 19:10:02,712 [Laptop][Thread:40][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True" ---> System.Exception: Parser error at position 5: Unknown type or identifier 'EHaml' ---> System.Exception: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   --- End of inner exception stack trace ---
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-26 19:12:31,784 [Laptop][Thread:40][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True" ---> System.Exception: Parser error at position 5: Unknown type or identifier 'EHaml' ---> System.Exception: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   --- End of inner exception stack trace ---
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-26 19:12:53,009 [Laptop][Thread:30][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True" ---> System.Exception: Parser error at position 5: Unknown type or identifier 'EHaml' ---> System.Exception: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   --- End of inner exception stack trace ---
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-26 19:12:58,673 [Laptop][Thread:11][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="67")] != "True" ---> System.Exception: Parser error at position 5: Unknown type or identifier 'EHaml' ---> System.Exception: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   --- End of inner exception stack trace ---
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-26 19:14:18,907 [Laptop][Thread:11][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True" ---> System.Exception: Parser error at position 5: Unknown type or identifier 'EHaml' ---> System.Exception: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   --- End of inner exception stack trace ---
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-26 19:14:39,938 [Laptop][Thread:30][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True" ---> System.Exception: Parser error at position 5: Unknown type or identifier 'EHaml' ---> System.Exception: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   --- End of inner exception stack trace ---
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-26 19:14:50,440 [Laptop][Thread:40][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True" ---> System.Exception: Parser error at position 5: Unknown type or identifier 'EHaml' ---> System.Exception: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   --- End of inner exception stack trace ---
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-26 19:14:56,168 [Laptop][Thread:11][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True" ---> System.Exception: Parser error at position 5: Unknown type or identifier 'EHaml' ---> System.Exception: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   --- End of inner exception stack trace ---
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-26 19:15:10,039 [Laptop][Thread:32][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True" ---> System.Exception: Parser error at position 5: Unknown type or identifier 'EHaml' ---> System.Exception: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   --- End of inner exception stack trace ---
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-26 19:15:21,473 [Laptop][Thread:9][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True" ---> System.Exception: Parser error at position 5: Unknown type or identifier 'EHaml' ---> System.Exception: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   --- End of inner exception stack trace ---
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-26 19:16:08,332 [Laptop][Thread:40][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True" ---> System.Exception: Parser error at position 5: Unknown type or identifier 'EHaml' ---> System.Exception: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   --- End of inner exception stack trace ---
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-26 19:16:21,255 [Laptop][Thread:32][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True" ---> System.Exception: Parser error at position 5: Unknown type or identifier 'EHaml' ---> System.Exception: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   --- End of inner exception stack trace ---
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)

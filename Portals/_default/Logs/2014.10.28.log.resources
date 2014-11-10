@@ -1,0 +1,275 @@
+2014-10-28 15:05:37,536 [Laptop][Thread:25][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: Error executing sql UPDATE  dbo.Asaei_EHaml_Inquiry
+SET HadafeShomaAzEstelam = N'ÕÑÝÇ ÈÑÇí ÇØáÇÚ ÇÒ ÞíãÊ äíÓÊ æ äíÇÒ Èå Çíä ÎÏãÇÊ ÏÇÑã' ,
+        NoeVasileyeMoredeNiyaz = N'ÎÇæÑ,˜Çãíæä Ê˜' ,
+        NoeMahmoole = N'ãÇÔíä ÂáÇÊ' ,
+        BaEhtesabeBimeyeMasooliyat = N'ÎíÑ' ,
+        FormeVooroodeArzesheMahmoole = N'' ,
+        OstaneMabda = N'ÇíáÇã' ,
+        MantageyeMabda = N'asdas' ,
+        ShahreMabda = N'ÇíæÇä' ,
+        OstaneMagsad = N'ÓãäÇä' ,
+        MantageyeMagsad = N'xcdfe' ,
+        ShahreMagsad = N'ÑãÓÇÑ' ,
+        BaEhtesabeHazineyeTakhliyeDarMagsad = N'ÎíÑ' ,
+        TarikheAgazeAmaliyatShamsi = N'1393/08/25' ,
+        TarikheEtebareEstelamShamsi = N'1393/08/23' ,
+        TarikheAgazeAmaliyatMiladi = dbo.PersianToGregorian(CONVERT(VARCHAR, '1393/08/25', 120)) ,
+        TarikheEtebareEstelamMiladi = dbo.PersianToGregorian(CONVERT(VARCHAR, '1393/08/23', 120)) 
+        OUTPUT INSERTED.Id
+WHERE   Id = 67 OUTPUT INSERTED.actualValue ---> System.Data.SqlClient.SqlException: Incorrect syntax near 'OUTPUT'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-28 15:05:56,994 [Laptop][Thread:18][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: Error executing sql UPDATE  dbo.Asaei_EHaml_Inquiry
+SET HadafeShomaAzEstelam = N'ÕÑÝÇ ÈÑÇí ÇØáÇÚ ÇÒ ÞíãÊ äíÓÊ æ äíÇÒ Èå Çíä ÎÏãÇÊ ÏÇÑã' ,
+        NoeVasileyeMoredeNiyaz = N'ÎÇæÑ,˜Çãíæä Ê˜' ,
+        NoeMahmoole = N'ãÇÔíä ÂáÇÊ' ,
+        BaEhtesabeBimeyeMasooliyat = N'ÎíÑ' ,
+        FormeVooroodeArzesheMahmoole = N'' ,
+        OstaneMabda = N'ÇíáÇã' ,
+        MantageyeMabda = N'asdas' ,
+        ShahreMabda = N'ÇíæÇä' ,
+        OstaneMagsad = N'ÓãäÇä' ,
+        MantageyeMagsad = N'xcdfe' ,
+        ShahreMagsad = N'ÑãÓÇÑ' ,
+        BaEhtesabeHazineyeTakhliyeDarMagsad = N'ÎíÑ' ,
+        TarikheAgazeAmaliyatShamsi = N'1393/08/25' ,
+        TarikheEtebareEstelamShamsi = N'1393/08/23' ,
+        TarikheAgazeAmaliyatMiladi = dbo.PersianToGregorian(CONVERT(VARCHAR, '1393/08/25', 120)) ,
+        TarikheEtebareEstelamMiladi = dbo.PersianToGregorian(CONVERT(VARCHAR, '1393/08/23', 120)) 
+        OUTPUT INSERTED.Id
+WHERE   Id = 67 OUTPUT INSERTED.actualValue ---> System.Data.SqlClient.SqlException: Incorrect syntax near 'OUTPUT'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-28 15:05:57,749 [Laptop][Thread:5][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: Error executing sql UPDATE  dbo.Asaei_EHaml_Inquiry
+SET HadafeShomaAzEstelam = N'ÕÑÝÇ ÈÑÇí ÇØáÇÚ ÇÒ ÞíãÊ äíÓÊ æ äíÇÒ Èå Çíä ÎÏãÇÊ ÏÇÑã' ,
+        NoeVasileyeMoredeNiyaz = N'ÎÇæÑ,˜Çãíæä Ê˜' ,
+        NoeMahmoole = N'ãÇÔíä ÂáÇÊ' ,
+        BaEhtesabeBimeyeMasooliyat = N'ÎíÑ' ,
+        FormeVooroodeArzesheMahmoole = N'' ,
+        OstaneMabda = N'ÇíáÇã' ,
+        MantageyeMabda = N'asdas' ,
+        ShahreMabda = N'ÇíæÇä' ,
+        OstaneMagsad = N'ÓãäÇä' ,
+        MantageyeMagsad = N'xcdfe' ,
+        ShahreMagsad = N'ÑãÓÇÑ' ,
+        BaEhtesabeHazineyeTakhliyeDarMagsad = N'ÎíÑ' ,
+        TarikheAgazeAmaliyatShamsi = N'1393/08/25' ,
+        TarikheEtebareEstelamShamsi = N'1393/08/23' ,
+        TarikheAgazeAmaliyatMiladi = dbo.PersianToGregorian(CONVERT(VARCHAR, '1393/08/25', 120)) ,
+        TarikheEtebareEstelamMiladi = dbo.PersianToGregorian(CONVERT(VARCHAR, '1393/08/23', 120)) 
+        OUTPUT INSERTED.Id
+WHERE   Id = 67 OUTPUT INSERTED.actualValue ---> System.Data.SqlClient.SqlException: Incorrect syntax near 'OUTPUT'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-28 15:05:58,238 [Laptop][Thread:19][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: Error executing sql UPDATE  dbo.Asaei_EHaml_Inquiry
+SET HadafeShomaAzEstelam = N'ÕÑÝÇ ÈÑÇí ÇØáÇÚ ÇÒ ÞíãÊ äíÓÊ æ äíÇÒ Èå Çíä ÎÏãÇÊ ÏÇÑã' ,
+        NoeVasileyeMoredeNiyaz = N'ÎÇæÑ,˜Çãíæä Ê˜' ,
+        NoeMahmoole = N'ãÇÔíä ÂáÇÊ' ,
+        BaEhtesabeBimeyeMasooliyat = N'ÎíÑ' ,
+        FormeVooroodeArzesheMahmoole = N'' ,
+        OstaneMabda = N'ÇíáÇã' ,
+        MantageyeMabda = N'asdas' ,
+        ShahreMabda = N'ÇíæÇä' ,
+        OstaneMagsad = N'ÓãäÇä' ,
+        MantageyeMagsad = N'xcdfe' ,
+        ShahreMagsad = N'ÑãÓÇÑ' ,
+        BaEhtesabeHazineyeTakhliyeDarMagsad = N'ÎíÑ' ,
+        TarikheAgazeAmaliyatShamsi = N'1393/08/25' ,
+        TarikheEtebareEstelamShamsi = N'1393/08/23' ,
+        TarikheAgazeAmaliyatMiladi = dbo.PersianToGregorian(CONVERT(VARCHAR, '1393/08/25', 120)) ,
+        TarikheEtebareEstelamMiladi = dbo.PersianToGregorian(CONVERT(VARCHAR, '1393/08/23', 120)) 
+        OUTPUT INSERTED.Id
+WHERE   Id = 67 OUTPUT INSERTED.actualValue ---> System.Data.SqlClient.SqlException: Incorrect syntax near 'OUTPUT'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-28 15:34:37,241 [Laptop][Thread:9][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'OutputedInquiryId'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+ClientConnectionId:11919f64-c3d6-40c2-8454-2a48a127c6c5
+Error Number:207,State:1,Class:16
+2014-10-28 15:38:33,659 [Laptop][Thread:34][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'OutputedInquiryId'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+ClientConnectionId:2b1451e4-ed5f-408c-b3d1-5f9554ae42db
+Error Number:207,State:1,Class:16
+2014-10-28 15:38:34,769 [Laptop][Thread:9][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'OutputedInquiryId'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+ClientConnectionId:2b1451e4-ed5f-408c-b3d1-5f9554ae42db
+Error Number:207,State:1,Class:16
+2014-10-28 15:38:35,280 [Laptop][Thread:34][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'OutputedInquiryId'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+ClientConnectionId:2b1451e4-ed5f-408c-b3d1-5f9554ae42db
+Error Number:207,State:1,Class:16
+2014-10-28 15:38:35,644 [Laptop][Thread:26][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'OutputedInquiryId'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+ClientConnectionId:2b1451e4-ed5f-408c-b3d1-5f9554ae42db
+Error Number:207,State:1,Class:16
+2014-10-28 15:45:42,568 [Laptop][Thread:26][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'OutputedInquiryId'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+ClientConnectionId:ee4afa9c-22a7-47f6-aadb-8b4ecc424656
+Error Number:207,State:1,Class:16
+2014-10-28 16:18:00,329 [Laptop][Thread:11][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'OutputedInquiryId'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+ClientConnectionId:89c862fb-2448-4946-84de-b7d3f7f08b2c
+Error Number:207,State:1,Class:16
+2014-10-28 17:58:27,764 [Laptop][Thread:45][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: Error executing sql UPDATE  dbo.Asaei_EHaml_Inquiry
+SET HadafeShomaAzEstelam = N'ÕÑÝÇ ÈÑÇí ÇØáÇÚ ÇÒ ÞíãÊ äíÓÊ æ äíÇÒ Èå Çíä ÎÏãÇÊ ÏÇÑã' ,
+        NoeVasileyeMoredeNiyaz = N'˜Çãíæä ÌÝÊ' ,
+        NoeMahmoole = N'æÓíáå äÞáíå,Ç˜Ê íÇ ÌÇãÈæ' ,
+        BaEhtesabeBimeyeMasooliyat = N'Èáå' ,
+        FormeVooroodeArzesheMahmoole = N'http://localhost:100/Portals/0/EHaml/Uploads/Inquiry_Zadghan/V_A_B_A_V_H-1720205064.xlsx' ,
+        OstaneMabda = N'ÒäÌÇä' ,
+        MantageyeMabda = N'vvv' ,
+        ShahreMabda = N'ÒÇæå' ,
+        OstaneMagsad = N'ÞÒæíä' ,
+        MantageyeMagsad = N'bbb' ,
+        ShahreMagsad = N'ÂÑÇÏÇä' ,
+        BaEhtesabeHazineyeTakhliyeDarMagsad = N'Èáå' ,
+        TarikheAgazeAmaliyatShamsi = N'1393/08/29' ,
+        TarikheEtebareEstelamShamsi = N'1393/08/28' ,
+        TarikheAgazeAmaliyatMiladi = dbo.PersianToGregorian(CONVERT(VARCHAR, '1393/08/29', 120)) ,
+        TarikheEtebareEstelamMiladi = dbo.PersianToGregorian(CONVERT(VARCHAR, '1393/08/28', 120)) 
+        OUTPUT INSERTED.Id
+WHERE   Id = 72 OUTPUT INSERTED.actualValue ---> System.Data.SqlClient.SqlException: Incorrect syntax near 'OUTPUT'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+2014-10-28 18:43:03,361 [Laptop][Thread:35][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: Error executing sql UPDATE  dbo.Asaei_EHaml_Inquiry
+SET HadafeShomaAzEstelam = N'ÕÑÝÇ ÈÑÇí ÇØáÇÚ ÇÒ ÞíãÊ äíÓÊ æ äíÇÒ Èå Çíä ÎÏãÇÊ ÏÇÑã' ,
+        NoeVasileyeMoredeNiyaz = N'ÎÇæÑ,˜Çãíæä Ê˜' ,
+        NoeMahmoole = N'ÇáÊ,ÌäÑÇá ˜ÇÑæ' ,
+        BaEhtesabeBimeyeMasooliyat = N'ÎíÑ' ,
+        FormeVooroodeArzesheMahmoole = N'' ,
+        OstaneMabda = N'ÎÑÇÓÇä ÌäæÈí' ,
+        MantageyeMabda = N'xxx' ,
+        ShahreMabda = N'ÓÑÈíÔå' ,
+        OstaneMagsad = N'ÇáÈÑÒ' ,
+        MantageyeMagsad = N'ccc' ,
+        ShahreMagsad = N'ÓÇæÌÈáÇÛ' ,
+        BaEhtesabeHazineyeTakhliyeDarMagsad = N'Èáå' ,
+        TarikheAgazeAmaliyatShamsi = N'1393/08/28' ,
+        TarikheEtebareEstelamShamsi = N'1393/08/27' ,
+        TarikheAgazeAmaliyatMiladi = dbo.PersianToGregorian(CONVERT(VARCHAR, '1393/08/28', 120)) ,
+        TarikheEtebareEstelamMiladi = dbo.PersianToGregorian(CONVERT(VARCHAR, '1393/08/27', 120)) 
+        OUTPUT INSERTED.Id
+WHERE   Id = 75 OUTPUT INSERTED.actualValue ---> System.Data.SqlClient.SqlException: Incorrect syntax near 'OUTPUT'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)

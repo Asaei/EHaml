@@ -22,9 +22,10 @@
             </xsl:attribute>
 
             <xsl:attribute name="data-ng-init">
-                <xsl:text>init('</xsl:text>
-                <xsl:value-of select="/Form/Settings/JsonUrl"/>
-                <xsl:text>')</xsl:text>
+                <xsl:text>init(</xsl:text>
+                <!--<xsl:value-of select="/Form/Settings/JsonUrl"/>-->
+                <xsl:value-of select="/Form/Settings/JsonModel"/>
+                <xsl:text>)</xsl:text>
             </xsl:attribute>
             <xsl:attribute name="id">
                 <xsl:value-of select="/Form/Settings/BaseId"/>

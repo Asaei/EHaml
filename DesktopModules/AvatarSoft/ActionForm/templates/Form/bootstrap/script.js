@@ -249,20 +249,23 @@ function ActionFormCtrl($scope, $http, $timeout, $sce, $cookieStore, dataSources
         fields: []
     };
 
-    $scope.init = function (url) {
+    $scope.init = function (data) {
 
         // append all current query string to the url
         //if (location.search)
         //    url += location.search.trim('?');
 
         // request the for data from the server
-        $http({
-            method: 'GET',
-            url: url,
-            cache: true
-        }).success(function (data, status) {
-            $scope.load(data);
-        });
+        //$http({
+        //    method: 'GET',
+        //    url: url,
+        //    cache: true
+        //}).success(function (data, status) {
+        //    $scope.load(data);
+        //});
+
+        $scope.load(data);
+
     };
 
     $scope.parse = function (val) {
@@ -295,7 +298,7 @@ function ActionFormCtrl($scope, $http, $timeout, $sce, $cookieStore, dataSources
             if (o.onChange) {
                 // bind onChange, handle false to remove form-button class which will prevent postback - a bit of a hackish solution until we migrate everything to angular
                 o.onChange = eval(
-                    '( function(form) { ' +
+                    '( function(form, item) { ' +
                     '   try { ' +
                     '       var scope = angular.element(\'#' + data.baseId + 'root\').scope(); ' +
                     '       var refresh = function() { if (!scope.$$phase) scope.$apply(); }; ' +
@@ -803,7 +806,7 @@ function initForm(formRoot, options, localization) {
 
         if (strVar[0] == '[') {
             // looks like an array
-            return eval(strVar);
+            return eval(strVar.replace('\n', ''));
         }
 
         if (strVar == "false")
@@ -1116,7 +1119,7 @@ function initForm(formRoot, options, localization) {
             if ($(this).attr('type') == 'radio') {
                 if (this.checked)
                     data[name] = $(this).val();
-            } else if ($(this).attr('data-val')) {
+            } else if ($(this).attr('data-val') || $(this).attr('data-val') === '') {
                 data[name] = $(this).attr('data-val');
             }
             else if ($(this).hasClass('value-node')) {

@@ -1,0 +1,130 @@
+14:10:50.328 | Errors | 2bc3dfd7 | استعلام حمل زمینی(داخلی) محمولات سنگین(بیش از 40 تن) و غیر متعارف – بر اساس لیست عدلبندی کالا(پکینگ لیست) #5662 | System.UnauthorizedAccessException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Access denied!
+   at DnnSharp.Common.Api.ApiContext.Execute(IHttpHandler handler, HttpContext httpContext, Action`2 log)
+
+14:10:50.331 | Errors | 9a86dc63 | استعلام حمل زمینی(داخلی) محمولات سنگین(بیش از 40 تن) و غیر متعارف – بر اساس لیست عدلبندی کالا(پکینگ لیست) #5662 | System.UnauthorizedAccessException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Access denied!
+   at DnnSharp.Common.Api.ApiContext.Execute(IHttpHandler handler, HttpContext httpContext, Action`2 log)
+
+14:10:50.330 | Errors | 16a7e0a5 | استعلام حمل زمینی(داخلی) محمولات سنگین(بیش از 40 تن) و غیر متعارف – بر اساس لیست عدلبندی کالا(پکینگ لیست) #5662 | System.UnauthorizedAccessException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Access denied!
+   at DnnSharp.Common.Api.ApiContext.Execute(IHttpHandler handler, HttpContext httpContext, Action`2 log)
+
+14:10:50.329 | Errors | 20961461 | استعلام حمل زمینی(داخلی) محمولات سنگین(بیش از 40 تن) و غیر متعارف – بر اساس لیست عدلبندی کالا(پکینگ لیست) #5662 | System.UnauthorizedAccessException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Access denied!
+   at DnnSharp.Common.Api.ApiContext.Execute(IHttpHandler handler, HttpContext httpContext, Action`2 log)
+
+16:10:40.573 | Errors | ef0bb8c2 | استعلام حمل زمینی(داخلی) محمولات سنگین(بیش از 40 تن) و غیر متعارف – بر اساس لیست عدلبندی کالا(پکینگ لیست) #5662 | System.UnauthorizedAccessException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Access denied!
+   at DnnSharp.Common.Api.ApiContext.Execute(IHttpHandler handler, HttpContext httpContext, Action`2 log)
+
+17:10:52.263 | Errors | 9dd22879 | استعلام حمل زمینی(داخلی) محمولات سنگین(بیش از 40 تن) و غیر متعارف – بر اساس لیست عدلبندی کالا(پکینگ لیست) #5662 | Invalid column name 'BaEhtesabeHazineyeBarGiriDarMabda'.
+Invalid column name 'YekAksAzMahmoole'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+
+17:10:52.160 | Errors | 213a21a2 | استعلام حمل زمینی(داخلی) محمولات سنگین(بیش از 40 تن) و غیر متعارف – بر اساس لیست عدلبندی کالا(پکینگ لیست) #5662 | Invalid column name 'BaEhtesabeHazineyeBarGiriDarMabda'.
+Invalid column name 'YekAksAzMahmoole'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+
+17:10:19.658 | Errors | f987784b | استعلام حمل زمینی(داخلی) محمولات سنگین(بیش از 40 تن) و غیر متعارف – بر اساس لیست عدلبندی کالا(پکینگ لیست) #5662 | Error executing sql UPDATE  dbo.Asaei_EHaml_Inquiry
+SET
+          HadafeShomaAzEstelam = N'صرفا برای اطلاع از قیمت نیست و نیاز به این خدمات دارم' , -- HadafeShomaAzEstelam - nvarchar(1000)
+          BaEhtesabeHazineyeTakhliyeDarMagsad = N'خیر',
+          FormePakingList = N'http://localhost:100/Portals/0/EHaml/Uploads/Inquiry_HS/V_P_L-24994525.xlsx',
+          YekAksAzMahmoole = N'http://localhost:100/Portals/0/EHaml/Uploads/Inquiry_HS/question-mark-256-1909647205.png',
+          BaEhtesabeBimeyeMasooliyat = N'خیر' , -- BaEhtesabeBimeyeMasooliyat - nvarchar(1000)
+          FormeVorodeArzeshBarAsaseListeAdlBandi = N'http://localhost:100/Portals/0/EHaml/Uploads/Inquiry_HS/V_A_B_A_L_A-1197172721.xlsx' , -- FormeVorodeArzeshBarAsaseListeAdlBandi - nvarchar(1000)
+          OstaneMabda = N'خراسان شمالي' , -- OstaneMabda - nvarchar(1000)
+          MantageyeMabda = N'ردتا' , -- MantageyeMabda - nvarchar(1000)
+          ShahreMabda = N'جاجرم' , -- ShahreMabda - nvarchar(1000)
+          OstaneMagsad = N'آذربايجان غربي' , -- OstaneMagsad - nvarchar(1000)
+          MantageyeMagsad = N'مخت' , -- MantageyeMagsad - nvarchar(1000)
+          ShahreMagsad = N'شاهين دژ' , -- ShahreMagsad - nvarchar(1000)
+          BaEhtesabeHazineyeBarGiriDarMabda = N'خیر' , -- BaEhtesabeHazineyeBarGiriDarMabda- nvarchar(1000)
+          TarikheAgazeAmaliyat = N'1393/08/28' , -- TarikheAgazeAmaliyatShamsi - nvarchar(1000)
+          TarikheEtebareEstelam = N'1393/08/27' , -- TarikheEtebareEstelamShamsi - nvarchar(1000)
+          TarikheAgazeAmaliyatMiladi = dbo.PersianToGregorian(CONVERT(VARCHAR, '1393/08/28', 120)) , -- TarikheAgazeAmaliyatMiladi - date
+          TarikheEtebareEstelamMiladi = dbo.PersianToGregorian(CONVERT(VARCHAR, '1393/08/27', 120)) , -- TarikheEtebareEstelamMiladi - date
+          InquiryType = N'Inquiry_HS' , -- InquaryType - nvarchar(1000)
+          CreateDateShamsi = dbo.GregorianToPersian(CONVERT(VARCHAR, GETDATE(), 120)) , -- CreateDateShamsi - nvarchar(1000)
+          CreateDateMiladi = GETDATE()  -- CreateDateMiladi - date
+        OUTPUT INSERTED.Id
+WHERE   Id = 1
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+Invalid column name 'TarikheAgazeAmaliyat'.
+Invalid column name 'TarikheEtebareEstelam'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+
+17:10:38.626 | Errors | 68ca0a17 | استعلام حمل زمینی(داخلی) محمولات سنگین(بیش از 40 تن) و غیر متعارف – بر اساس لیست عدلبندی کالا(پکینگ لیست) #5662 | Error executing sql UPDATE  dbo.Asaei_EHaml_Inquiry
+SET
+          HadafeShomaAzEstelam = N'صرفا برای اطلاع از قیمت نیست و نیاز به این خدمات دارم' , -- HadafeShomaAzEstelam - nvarchar(1000)
+          BaEhtesabeHazineyeTakhliyeDarMagsad = N'خیر',
+          FormePakingList = N'http://localhost:100/Portals/0/EHaml/Uploads/Inquiry_HS/V_P_L-768126689.xlsx',
+          YekAksAzMahmoole = N'http://localhost:100/Portals/0/EHaml/Uploads/Inquiry_HS/question-mark-256-2113846113.png',
+          BaEhtesabeBimeyeMasooliyat = N'خیر' , -- BaEhtesabeBimeyeMasooliyat - nvarchar(1000)
+          FormeVorodeArzeshBarAsaseListeAdlBandi = N'' , -- FormeVorodeArzeshBarAsaseListeAdlBandi - nvarchar(1000)
+          OstaneMabda = N'خراسان شمالي' , -- OstaneMabda - nvarchar(1000)
+          MantageyeMabda = N'ردتا' , -- MantageyeMabda - nvarchar(1000)
+          ShahreMabda = N'جاجرم' , -- ShahreMabda - nvarchar(1000)
+          OstaneMagsad = N'آذربايجان غربي' , -- OstaneMagsad - nvarchar(1000)
+          MantageyeMagsad = N'مخت' , -- MantageyeMagsad - nvarchar(1000)
+          ShahreMagsad = N'شاهين دژ' , -- ShahreMagsad - nvarchar(1000)
+          BaEhtesabeHazineyeBarGiriDarMabda = N'خیر' , -- BaEhtesabeHazineyeBarGiriDarMabda- nvarchar(1000)
+          TarikheAgazeAmaliyat = N'1393/08/28' , -- TarikheAgazeAmaliyatShamsi - nvarchar(1000)
+          TarikheEtebareEstelam = N'1393/08/27' , -- TarikheEtebareEstelamShamsi - nvarchar(1000)
+          TarikheAgazeAmaliyatMiladi = dbo.PersianToGregorian(CONVERT(VARCHAR, '1393/08/28', 120)) , -- TarikheAgazeAmaliyatMiladi - date
+          TarikheEtebareEstelamMiladi = dbo.PersianToGregorian(CONVERT(VARCHAR, '1393/08/27', 120)) , -- TarikheEtebareEstelamMiladi - date
+          InquiryType = N'Inquiry_HS' , -- InquaryType - nvarchar(1000)
+          CreateDateShamsi = dbo.GregorianToPersian(CONVERT(VARCHAR, GETDATE(), 120)) , -- CreateDateShamsi - nvarchar(1000)
+          CreateDateMiladi = GETDATE()  -- CreateDateMiladi - date
+        OUTPUT INSERTED.Id
+WHERE   Id = 1
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+Invalid column name 'TarikheAgazeAmaliyat'.
+Invalid column name 'TarikheEtebareEstelam'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+

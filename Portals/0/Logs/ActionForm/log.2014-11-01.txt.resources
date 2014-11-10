@@ -1,0 +1,59 @@
+16:11:46.403 | Errors | ad9508c5 | استعلام حمل زمینی(ترانزیت،صادرات،واردات) – بر اساس نوع وسیله حمل یا تناژ محموله یا گروپاژ #6662 | System.UnauthorizedAccessException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Access denied!
+   at DnnSharp.Common.Api.ApiContext.Execute(IHttpHandler handler, HttpContext httpContext, Action`2 log)
+
+16:11:00.458 | Errors | c915f29c | استعلام حمل زمینی(ترانزیت،صادرات،واردات) – بر اساس نوع وسیله حمل یا تناژ محموله یا گروپاژ #6662 | System.UnauthorizedAccessException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Access denied!
+   at DnnSharp.Common.Api.ApiContext.Execute(IHttpHandler handler, HttpContext httpContext, Action`2 log)
+
+17:11:16.244 | Errors | d872b344 | استعلام حمل زمینی(ترانزیت،صادرات،واردات) – بر اساس نوع وسیله حمل یا تناژ محموله یا گروپاژ #6662 | Error executing sql UPDATE dbo.Asaei_EHaml_Inquiry SET VazneMahmooleKiloGeram = N'23452',
+VazneHarVahedeMahmooleKiloGeram = N'334'
+WHERE Id = 
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+Incorrect syntax near '='.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+
+17:11:34.931 | Errors | ab790cb5 | استعلام حمل زمینی(ترانزیت،صادرات،واردات) – بر اساس نوع وسیله حمل یا تناژ محموله یا گروپاژ #6662 | Error executing sql UPDATE dbo.Asaei_EHaml_Inquiry SET VazneMahmooleKiloGeram = N'23452',
+VazneHarVahedeMahmooleKiloGeram = N'334'
+WHERE Id = 
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+Incorrect syntax near '='.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+
+17:11:22.143 | Errors | be4d0969 | استعلام حمل زمینی(ترانزیت،صادرات،واردات) – بر اساس نوع وسیله حمل یا تناژ محموله یا گروپاژ #6662 | Error executing sql UPDATE dbo.Asaei_EHaml_Inquiry
+SET     FormePakingList = N'',
+        BaEhtesabeHazineyeOdateKantinereKhali = N'' ,
+        NoeVasileyeMoredeNiyaz2 = N'' ,
+        Tedad = N'' ,
+        HadeAxareVazneMahmoole = N'',
+		BaEhtesabeHazineyeOdateKantinereKhali =N'',
+        NoeVasileyeMoredeNiyaz2 = N'',Tedad = N'',HadeAxareVazneMahmoole = N''
+WHERE Id = 3
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+The column name 'BaEhtesabeHazineyeOdateKantinereKhali' is specified more than once in the SET clause or column list of an INSERT. A column cannot be assigned more than one value in the same clause. Modify the clause to make sure that a column is updated only once.  If this statement updates or inserts columns into a view, column aliasing can conceal the duplication in your code.
+The column name 'NoeVasileyeMoredeNiyaz2' is specified more than once in the SET clause or column list of an INSERT. A column cannot be assigned more than one value in the same clause. Modify the clause to make sure that a column is updated only once.  If this statement updates or inserts columns into a view, column aliasing can conceal the duplication in your code.
+The column name 'Tedad' is specified more than once in the SET clause or column list of an INSERT. A column cannot be assigned more than one value in the same clause. Modify the clause to make sure that a column is updated only once.  If this statement updates or inserts columns into a view, column aliasing can conceal the duplication in your code.
+The column name 'HadeAxareVazneMahmoole' is specified more than once in the SET clause or column list of an INSERT. A column cannot be assigned more than one value in the same clause. Modify the clause to make sure that a column is updated only once.  If this statement updates or inserts columns into a view, column aliasing can conceal the duplication in your code.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+

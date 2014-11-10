@@ -1,0 +1,263 @@
+13:08:50.897 | Errors | ada4b421 | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | There was an error evaluating conditional expression "" != Null && "" != "True"
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+Object reference not set to an instance of an object.
+   at DnnSharp.Common.ExpressionEvaluator.Parser.<BuildTree>b__f(Token x)
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at DnnSharp.Common.ExpressionEvaluator.Parser.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.CompiledExpression.Compile()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+
+14:08:25.393 | Errors | fac43401 | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | There was an error evaluating conditional expression "" != Null && "" == "No"
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+Object reference not set to an instance of an object.
+   at DnnSharp.Common.ExpressionEvaluator.Parser.<BuildTree>b__f(Token x)
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at DnnSharp.Common.ExpressionEvaluator.Parser.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.CompiledExpression.Compile()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+
+19:08:55.163 | Errors | 1b1b182b | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | There was an error evaluating conditional expression !""
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+The unary operator Not is not defined for the type 'System.String'.
+   at System.Linq.Expressions.Expression.Not(Expression expression, MethodInfo method)
+   at DnnSharp.Common.ExpressionEvaluator.Operators.OpFuncServiceProviders.UnaryOperatorFunc(OpFuncArgs args)
+   at DnnSharp.Common.ExpressionEvaluator.Parser.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.CompiledExpression.Compile()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+
+19:08:44.372 | Errors | b8322eb0 | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | There was an error evaluating conditional expression !""
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+The unary operator Not is not defined for the type 'System.String'.
+   at System.Linq.Expressions.Expression.Not(Expression expression, MethodInfo method)
+   at DnnSharp.Common.ExpressionEvaluator.Operators.OpFuncServiceProviders.UnaryOperatorFunc(OpFuncArgs args)
+   at DnnSharp.Common.ExpressionEvaluator.Parser.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.CompiledExpression.Compile()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+
+19:08:02.794 | Errors | a9a826bb | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True"
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+Parser error at position 5: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+
+19:08:12.083 | Errors | c807dc6b | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True"
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+Parser error at position 5: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+
+19:08:33.574 | Errors | 8ed7d76f | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | There was an error evaluating conditional expression "" == true
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+The binary operator Equal is not defined for the types 'System.String' and 'System.Boolean'.
+   at System.Linq.Expressions.Expression.GetEqualityComparisonOperator(ExpressionType binaryType, String opName, Expression left, Expression right, Boolean liftToNull)
+   at System.Linq.Expressions.Expression.Equal(Expression left, Expression right, Boolean liftToNull, MethodInfo method)
+   at DnnSharp.Common.ExpressionEvaluator.Operators.OpFuncServiceProviders.BinaryOperatorFunc(OpFuncArgs args)
+   at DnnSharp.Common.ExpressionEvaluator.Parser.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.CompiledExpression.Compile()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+
+19:08:14.983 | Errors | e7e5be76 | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != true
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+Parser error at position 5: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+
+19:08:25.040 | Errors | 01b8dc09 | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="67")] != true
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+Parser error at position 5: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+
+19:08:09.860 | Errors | 21e7434d | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True"
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+Parser error at position 5: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+
+19:08:14.672 | Errors | 76d440ff | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="67")] != "True"
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+Parser error at position 5: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+
+19:08:02.783 | Errors | dbd4dae5 | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True"
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+Parser error at position 5: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+
+19:08:31.856 | Errors | 0f3a1649 | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True"
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+Parser error at position 5: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+
+19:08:53.247 | Errors | 48e39f0a | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True"
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+Parser error at position 5: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+
+19:08:58.684 | Errors | 2cdda9aa | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="67")] != "True"
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+Parser error at position 5: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+
+19:08:18.980 | Errors | ef566a85 | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True"
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+Parser error at position 5: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+
+19:08:39.945 | Errors | 02e18ab6 | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True"
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+Parser error at position 5: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+
+19:08:50.549 | Errors | 0968d682 | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True"
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+Parser error at position 5: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+
+19:08:56.287 | Errors | 0a8921e2 | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True"
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+Parser error at position 5: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+
+19:08:10.076 | Errors | a7685d60 | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True"
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+Parser error at position 5: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+
+19:08:21.518 | Errors | 641f1534 | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True"
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+Parser error at position 5: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+
+19:08:08.376 | Errors | e3e617f2 | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True"
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+Parser error at position 5: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+
+19:08:21.262 | Errors | b1671f21 | استعلام حمل زمینی(داخلی) محمولات غیر فله – بر اساس نوع و تعداد وسیله حمل مورد نیاز #5651 | There was an error evaluating conditional expression EHaml:CanEditInquiry(UserId="1",InquiryId="")] != "True"
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+Parser error at position 5: Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+Unknown type or identifier 'EHaml'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EHamlDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Asaei_EHaml_Inquiry">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int64" Nullable="false" />
+    <Property Name="HadafeShomaAzEstelam" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="NoeVasileyeMoredeNiyaz" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="NoeHaml" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="NoeMahmoole" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="NoeMahmoole2" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="YekAksAzMahmoole" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="CodeHsMahmoole" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="VazneMahmooleKiloGeram" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ListeKalahayeKhatarnak" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="NoeBasteBandi" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="BaEhtesabeBimeyeMasooliyat" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="FormeVooroodeArzeshBarAsaseVasileyeHaml" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="FormeVorodeArzeshBarAsaseListeAdlBandi" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="FormePakingList" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="BaEhtesabeHazineyeBarGiriDarMabda" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="EstelamBarAsase" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="OstaneMabda" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="MantageyeMabda" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ShahreMabda" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="MogeiyateTahvilDadaneMahmooleBePeymankareHaml" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="OstaneMagsad" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="MantageyeMagsad" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ShahreMagsad" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="BaEhtesabeHazineyeTakhliyeDarMagsad" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="TarikheAgazeAmaliyatShamsi" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="TarikheEtebareEstelamShamsi" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="TarikheAgazeAmaliyatMiladi" Type="DateTime" Precision="0" />
+    <Property Name="TarikheEtebareEstelamMiladi" Type="DateTime" Precision="0" />
+    <Property Name="InquiryType" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="CreateDateShamsi" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="CreateDateMiladi" Type="DateTime" Precision="0" />
+    <Property Name="Tedad" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="HadeAxareVazneMahmoole" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="NoeVasileyeMoredeNiyaz2" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="VazneHarVahedeMahmooleKiloGeram" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="BaEhtesabeHazineyeOdateKantinereKhali" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Asaei_EHaml_ListeKalahayeKhatarnak">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ShomareyeTartib" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Asaei_EHaml_NoeVasileyeHaml">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="NameVasile" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ShomareyeTartib" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="InquiryID" Type="Int64" Nullable="false" />
+    <Property Name="InquiryType" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VasileName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Tedad" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="EHamlDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Asaei_EHaml_Inquiry" EntityType="Self.Asaei_EHaml_Inquiry" />
+    <EntitySet Name="Asaei_EHaml_ListeKalahayeKhatarnak" EntityType="Self.Asaei_EHaml_ListeKalahayeKhatarnak" />
+    <EntitySet Name="Asaei_EHaml_NoeVasileyeHaml" EntityType="Self.Asaei_EHaml_NoeVasileyeHaml" />
+    <EntitySet Name="Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz" EntityType="Self.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz" />
+  </EntityContainer>
+</Schema>

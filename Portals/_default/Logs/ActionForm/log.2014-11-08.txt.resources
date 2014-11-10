@@ -1,0 +1,192 @@
+17:11:37.172 | Debug | 11ea6486 |  | Exeute reader SQL query: SELECT  
+        '' AS BaEhtesabeBimeyeMasooliyat ,
+        '' AS BaEhtesabeHazineyeTakhliyeDarMagsad ,
+        '' AS CreateDateShamsi ,
+        '' AS FormeVooroodeArzeshBarAsaseVasileyeHaml ,
+        '' AS HadafeShomaAzEstelam ,
+        '' AS ListeKalahayeKhatarnak ,
+        '' AS MantageyeMabda ,
+        '' AS MantageyeMagsad ,
+        '' AS NoeMahmoole ,
+        '' AS NoeVasileyeMoredeNiyaz ,
+        '' AS OstaneMabda ,
+        '' AS OstaneMagsad ,
+        '' AS ShahreMabda ,
+        '' AS ShahreMagsad ,
+        '' AS TarikheAgazeAmaliyatShamsi ,
+        '' AS TarikheEtebareEstelamShamsi,
+        '' AS Id,
+        'No' AS IsEdit
+FROM dbo.Asaei_EHaml_Inquiry
+17:11:37.172 | Debug | 11ea6486 |  | Done executing sql.
+17:11:37.181 | Debug | 11ea6486 |  | Exeute reader SQL query: SELECT
+ '' as TedadeKhavar,
+ '' as TedadeKamiyoneTak,
+ '' as TedadeKamiyoneJoft,
+ '' as TedadeTreylereKafiyeMamooli,
+ '' as TedadeTreylereKafiyeTeraficyeBedooneScort,
+ '' as TedadeTreylereKafiyeTeraficyTakScort,
+ '' as TedadeTreylereKafiyeTeraficyJoftScort ,
+ '' as TedadeKamarShekane5MehvareMamooli,
+ '' as TedadeKamarShekane5MehvarTeraficyBedooneScort,
+ '' as TedadeKamarShekane5MehvarTeraficyTakScort,
+ '' as TedadeKamarShekane5MehvarTeraficyJoftScort,
+ '' as TedadeKamarShekane7MehvarTeraficyTakScort,
+ '' as TedadeKamarShekane7MehvarTeraficyJoftScort
+  FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+17:11:37.183 | Debug | 11ea6486 |  | Done executing sql.
+17:11:50.236 | Debug | bb84b5cd |  | Exeute reader SQL query: SELECT  
+        Id,
+        BaEhtesabeBimeyeMasooliyat ,
+        BaEhtesabeHazineyeTakhliyeDarMagsad ,
+        FormeVooroodeArzeshBarAsaseVasileyeHaml ,
+        HadafeShomaAzEstelam ,
+        ListeKalahayeKhatarnak ,
+        MantageyeMabda ,
+        MantageyeMagsad ,
+        NoeMahmoole ,
+        NoeVasileyeMoredeNiyaz ,
+        OstaneMabda ,
+        OstaneMagsad ,
+        ShahreMabda ,
+        ShahreMagsad ,
+        TarikheAgazeAmaliyatShamsi ,
+        TarikheEtebareEstelamShamsi,
+        'Yes' AS IsEdit
+FROM dbo.Asaei_EHaml_Inquiry
+Where Id = 5
+17:11:50.237 | Debug | bb84b5cd |  | Done executing sql.
+17:11:50.240 | Debug | bb84b5cd |  | Exeute reader SQL query: SELECT InquiryID,InquiryType,Tedad,VasileName,Id FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID = 5 AND InquiryType = [InquiryType] AND VasileName = N'خاور'
+17:11:50.241 | Debug | bb84b5cd |  | Done executing sql.
+17:11:50.245 | Debug | bb84b5cd |  | Exeute reader SQL query: SELECT InquiryID,InquiryType,Tedad,VasileName,Id FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID = 5 AND InquiryType = [InquiryType] AND VasileName = N'کامیون تک'
+17:11:50.248 | Debug | bb84b5cd |  | Done executing sql.
+17:11:50.252 | Debug | bb84b5cd |  | Exeute reader SQL query: SELECT InquiryID,InquiryType,Tedad,VasileName,Id FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID = 5 AND InquiryType = [InquiryType] AND VasileName = N'کامیون جفت'
+17:11:50.254 | Debug | bb84b5cd |  | Done executing sql.
+17:11:50.258 | Debug | bb84b5cd |  | Exeute reader SQL query: SELECT InquiryID,InquiryType,Tedad,VasileName,Id FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID = 5 AND InquiryType = [InquiryType] AND VasileName = N'تریلرکفی معمولی'
+17:11:50.260 | Debug | bb84b5cd |  | Done executing sql.
+17:11:50.264 | Debug | bb84b5cd |  | Exeute reader SQL query: SELECT InquiryID,InquiryType,Tedad,VasileName,Id FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID = 5 AND InquiryType = [InquiryType] AND VasileName = N'تریلرکفی ترافیکی بدون اسکورت'
+17:11:50.265 | Debug | bb84b5cd |  | Done executing sql.
+17:11:50.269 | Debug | bb84b5cd |  | Exeute reader SQL query: SELECT InquiryID,InquiryType,Tedad,VasileName,Id FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID = 5 AND InquiryType = [InquiryType] AND VasileName = N'تریلرکفی ترافیکی تک اسکورت'
+17:11:50.271 | Debug | bb84b5cd |  | Done executing sql.
+17:11:50.275 | Debug | bb84b5cd |  | Exeute reader SQL query: SELECT InquiryID,InquiryType,Tedad,VasileName,Id FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID = 5 AND InquiryType = [InquiryType] AND VasileName = N'تریلرکفی ترافیکی جفت اسکورت'
+17:11:50.276 | Debug | bb84b5cd |  | Done executing sql.
+17:11:50.280 | Debug | bb84b5cd |  | Exeute reader SQL query: SELECT InquiryID,InquiryType,Tedad,VasileName,Id FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID = 5 AND InquiryType = [InquiryType] AND VasileName = N'کمرشکن 5 محور معمولی'
+17:11:50.283 | Debug | bb84b5cd |  | Done executing sql.
+17:11:50.287 | Debug | bb84b5cd |  | Exeute reader SQL query: SELECT InquiryID,InquiryType,Tedad,VasileName,Id FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID = 5 AND InquiryType = [InquiryType] AND VasileName = N'کمرشکن 5 محور ترافیکی بدون اسکورت'
+17:11:50.288 | Debug | bb84b5cd |  | Done executing sql.
+17:11:50.292 | Debug | bb84b5cd |  | Exeute reader SQL query: SELECT InquiryID,InquiryType,Tedad,VasileName,Id FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID = 5 AND InquiryType = [InquiryType] AND VasileName = N'کمرشکن 5 محور ترافیکی تک اسکورت'
+17:11:50.293 | Debug | bb84b5cd |  | Done executing sql.
+17:11:50.296 | Debug | bb84b5cd |  | Exeute reader SQL query: SELECT InquiryID,InquiryType,Tedad,VasileName,Id FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID = 5 AND InquiryType = [InquiryType] AND VasileName = N'کمرشکن 5 محور ترافیکی جفت اسکورت'
+17:11:50.297 | Debug | bb84b5cd |  | Done executing sql.
+17:11:50.301 | Debug | bb84b5cd |  | Exeute reader SQL query: SELECT InquiryID,InquiryType,Tedad,VasileName,Id FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID = 5 AND InquiryType = [InquiryType] AND VasileName = N'کمر شکن 7 محور ترافیکی تک اسکورت'
+17:11:50.303 | Debug | bb84b5cd |  | Done executing sql.
+17:11:50.307 | Debug | bb84b5cd |  | Exeute reader SQL query: SELECT InquiryID,InquiryType,Tedad,VasileName,Id FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID = 5 AND InquiryType = [InquiryType] AND VasileName = N'کمر شکن 7 محور ترافیکی جفت اسکورت'
+17:11:50.308 | Debug | bb84b5cd |  | Done executing sql.
+17:11:15.599 | Debug | 42eb2e2c |  | Exeute reader SQL query: SELECT  
+        Id,
+        BaEhtesabeBimeyeMasooliyat ,
+        BaEhtesabeHazineyeTakhliyeDarMagsad ,
+        FormeVooroodeArzeshBarAsaseVasileyeHaml ,
+        HadafeShomaAzEstelam ,
+        ListeKalahayeKhatarnak ,
+        MantageyeMabda ,
+        MantageyeMagsad ,
+        NoeMahmoole ,
+        NoeVasileyeMoredeNiyaz ,
+        OstaneMabda ,
+        OstaneMagsad ,
+        ShahreMabda ,
+        ShahreMagsad ,
+        TarikheAgazeAmaliyatShamsi ,
+        TarikheEtebareEstelamShamsi,
+        'Yes' AS IsEdit
+FROM dbo.Asaei_EHaml_Inquiry
+Where Id = 5
+17:11:15.599 | Debug | 42eb2e2c |  | Done executing sql.
+17:11:15.602 | Debug | 42eb2e2c |  | Exeute reader SQL query: SELECT InquiryID,InquiryType,Tedad,VasileName,Id FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID = 5 AND InquiryType = [InquiryType] AND VasileName = N'خاور'
+17:11:15.602 | Debug | 42eb2e2c |  | Done executing sql.
+17:11:15.606 | Debug | 42eb2e2c |  | Exeute reader SQL query: SELECT InquiryID,InquiryType,Tedad,VasileName,Id FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID = 5 AND InquiryType = [InquiryType] AND VasileName = N'کامیون تک'
+17:11:15.607 | Debug | 42eb2e2c |  | Done executing sql.
+17:11:15.610 | Debug | 42eb2e2c |  | Exeute reader SQL query: SELECT InquiryID,InquiryType,Tedad,VasileName,Id FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID = 5 AND InquiryType = [InquiryType] AND VasileName = N'کامیون جفت'
+17:11:15.612 | Debug | 42eb2e2c |  | Done executing sql.
+17:11:15.616 | Debug | 42eb2e2c |  | Exeute reader SQL query: SELECT InquiryID,InquiryType,Tedad,VasileName,Id FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID = 5 AND InquiryType = [InquiryType] AND VasileName = N'تریلرکفی معمولی'
+17:11:15.617 | Debug | 42eb2e2c |  | Done executing sql.
+17:11:15.621 | Debug | 42eb2e2c |  | Exeute reader SQL query: SELECT InquiryID,InquiryType,Tedad,VasileName,Id FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID = 5 AND InquiryType = [InquiryType] AND VasileName = N'تریلرکفی ترافیکی بدون اسکورت'
+17:11:15.623 | Debug | 42eb2e2c |  | Done executing sql.
+17:11:15.627 | Debug | 42eb2e2c |  | Exeute reader SQL query: SELECT InquiryID,InquiryType,Tedad,VasileName,Id FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID = 5 AND InquiryType = [InquiryType] AND VasileName = N'تریلرکفی ترافیکی تک اسکورت'
+17:11:15.628 | Debug | 42eb2e2c |  | Done executing sql.
+17:11:15.632 | Debug | 42eb2e2c |  | Exeute reader SQL query: SELECT InquiryID,InquiryType,Tedad,VasileName,Id FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID = 5 AND InquiryType = [InquiryType] AND VasileName = N'تریلرکفی ترافیکی جفت اسکورت'
+17:11:15.634 | Debug | 42eb2e2c |  | Done executing sql.
+17:11:15.638 | Debug | 42eb2e2c |  | Exeute reader SQL query: SELECT InquiryID,InquiryType,Tedad,VasileName,Id FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID = 5 AND InquiryType = [InquiryType] AND VasileName = N'کمرشکن 5 محور معمولی'
+17:11:15.641 | Debug | 42eb2e2c |  | Done executing sql.
+17:11:15.645 | Debug | 42eb2e2c |  | Exeute reader SQL query: SELECT InquiryID,InquiryType,Tedad,VasileName,Id FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID = 5 AND InquiryType = [InquiryType] AND VasileName = N'کمرشکن 5 محور ترافیکی بدون اسکورت'
+17:11:15.647 | Debug | 42eb2e2c |  | Done executing sql.
+17:11:15.651 | Debug | 42eb2e2c |  | Exeute reader SQL query: SELECT InquiryID,InquiryType,Tedad,VasileName,Id FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID = 5 AND InquiryType = [InquiryType] AND VasileName = N'کمرشکن 5 محور ترافیکی تک اسکورت'
+17:11:15.651 | Debug | 42eb2e2c |  | Done executing sql.
+17:11:15.655 | Debug | 42eb2e2c |  | Exeute reader SQL query: SELECT InquiryID,InquiryType,Tedad,VasileName,Id FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID = 5 AND InquiryType = [InquiryType] AND VasileName = N'کمرشکن 5 محور ترافیکی جفت اسکورت'
+17:11:15.656 | Debug | 42eb2e2c |  | Done executing sql.
+17:11:15.660 | Debug | 42eb2e2c |  | Exeute reader SQL query: SELECT InquiryID,InquiryType,Tedad,VasileName,Id FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID = 5 AND InquiryType = [InquiryType] AND VasileName = N'کمر شکن 7 محور ترافیکی تک اسکورت'
+17:11:15.661 | Debug | 42eb2e2c |  | Done executing sql.
+17:11:15.665 | Debug | 42eb2e2c |  | Exeute reader SQL query: SELECT InquiryID,InquiryType,Tedad,VasileName,Id FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID = 5 AND InquiryType = [InquiryType] AND VasileName = N'کمر شکن 7 محور ترافیکی جفت اسکورت'
+17:11:15.666 | Debug | 42eb2e2c |  | Done executing sql.
+17:11:17.925 | Debug | 0e17728d |  | Exeute scalar SQL query: UPDATE  dbo.Asaei_EHaml_Inquiry
+SET HadafeShomaAzEstelam = N'صرفا برای اطلاع از قیمت نیست و نیاز به این خدمات دارم' ,
+        NoeVasileyeMoredeNiyaz = N'خاور' ,
+        NoeMahmoole = N'ماشین آلات' ,
+        BaEhtesabeBimeyeMasooliyat = N'خیر' ,
+        FormeVooroodeArzeshBarAsaseVasileyeHaml = N'' ,
+        OstaneMabda = N'خراسان شمالي' ,
+        MantageyeMabda = N'aaa' ,
+        ShahreMabda = N'اسفراين' ,
+        OstaneMagsad = N'زنجان' ,
+        MantageyeMagsad = N'zzz' ,
+        ShahreMagsad = N'طارم' ,
+        BaEhtesabeHazineyeTakhliyeDarMagsad = N'بله' ,
+        TarikheAgazeAmaliyatShamsi = N'1393/08/28' ,
+        TarikheEtebareEstelamShamsi = N'1393/08/27' ,
+        TarikheAgazeAmaliyatMiladi = dbo.PersianToGregorian(CONVERT(VARCHAR, '1393/08/28', 120)) ,
+        TarikheEtebareEstelamMiladi = dbo.PersianToGregorian(CONVERT(VARCHAR, '1393/08/27', 120)) 
+        OUTPUT INSERTED.Id
+WHERE   Id = 5
+17:11:17.977 | Debug | 0e17728d |  | Done executing sql.
+17:11:17.979 | Debug | 0e17728d |  | Exeute non-query SQL query: DELETE dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+WHERE InquiryID = 5
+17:11:17.981 | Debug | 0e17728d |  | Done executing sql.
+17:11:17.984 | Debug | 0e17728d |  | Exeute non-query SQL query: INSERT INTO dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+        ( InquiryID ,
+          InquiryType ,
+          VasileName ,
+          Tedad
+        )
+VALUES  ( 5 , -- InquiryID - bigint
+          N'Zadghan' , -- InquiryType - nvarchar(1000)
+          N'خاور' , -- VasileName - nvarchar(1000)
+          3  -- Tedad - smallint
+        )
+17:11:17.987 | Debug | 0e17728d |  | Done executing sql.

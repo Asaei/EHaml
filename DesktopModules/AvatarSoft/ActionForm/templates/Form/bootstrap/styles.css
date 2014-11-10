@@ -533,6 +533,7 @@
 .autocomplete-selected { background: #F0F0F0; }
 
 .autocomplete-suggestions strong { color: #1fadd7; font-weight: normal; }
-
 /*Overrides the css from bootstrap*/
-
+/*label.control-label {
+    font-weight: bold !important;
+}*/

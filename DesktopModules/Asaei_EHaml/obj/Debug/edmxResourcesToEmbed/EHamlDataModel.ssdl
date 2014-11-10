@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EHamlDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Asaei_EHaml_Inquiry">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="bigint" Nullable="false" />
+    <Property Name="HadafeShomaAzEstelam" Type="nvarchar" MaxLength="1000" />
+    <Property Name="NoeVasileyeMoredeNiyaz" Type="nvarchar" MaxLength="1000" />
+    <Property Name="NoeHaml" Type="nvarchar" MaxLength="1000" />
+    <Property Name="NoeMahmoole" Type="nvarchar" MaxLength="1000" />
+    <Property Name="NoeMahmoole2" Type="nvarchar" MaxLength="1000" />
+    <Property Name="YekAksAzMahmoole" Type="nvarchar" MaxLength="1000" />
+    <Property Name="CodeHsMahmoole" Type="nvarchar" MaxLength="1000" />
+    <Property Name="VazneMahmooleKiloGeram" Type="nvarchar" MaxLength="1000" />
+    <Property Name="ListeKalahayeKhatarnak" Type="nvarchar" MaxLength="1000" />
+    <Property Name="NoeBasteBandi" Type="nvarchar" MaxLength="1000" />
+    <Property Name="BaEhtesabeBimeyeMasooliyat" Type="nvarchar" MaxLength="1000" />
+    <Property Name="FormeVooroodeArzeshBarAsaseVasileyeHaml" Type="nvarchar" MaxLength="1000" />
+    <Property Name="FormeVorodeArzeshBarAsaseListeAdlBandi" Type="nvarchar" MaxLength="1000" />
+    <Property Name="FormePakingList" Type="nvarchar" MaxLength="1000" />
+    <Property Name="BaEhtesabeHazineyeBarGiriDarMabda" Type="nvarchar" MaxLength="1000" />
+    <Property Name="EstelamBarAsase" Type="nvarchar" MaxLength="1000" />
+    <Property Name="OstaneMabda" Type="nvarchar" MaxLength="1000" />
+    <Property Name="MantageyeMabda" Type="nvarchar" MaxLength="1000" />
+    <Property Name="ShahreMabda" Type="nvarchar" MaxLength="1000" />
+    <Property Name="MogeiyateTahvilDadaneMahmooleBePeymankareHaml" Type="nvarchar" MaxLength="1000" />
+    <Property Name="OstaneMagsad" Type="nvarchar" MaxLength="1000" />
+    <Property Name="MantageyeMagsad" Type="nvarchar" MaxLength="1000" />
+    <Property Name="ShahreMagsad" Type="nvarchar" MaxLength="1000" />
+    <Property Name="BaEhtesabeHazineyeTakhliyeDarMagsad" Type="nvarchar" MaxLength="1000" />
+    <Property Name="TarikheAgazeAmaliyatShamsi" Type="nvarchar" MaxLength="1000" />
+    <Property Name="TarikheEtebareEstelamShamsi" Type="nvarchar" MaxLength="1000" />
+    <Property Name="TarikheAgazeAmaliyatMiladi" Type="date" />
+    <Property Name="TarikheEtebareEstelamMiladi" Type="date" />
+    <Property Name="InquiryType" Type="nvarchar" MaxLength="1000" />
+    <Property Name="CreateDateShamsi" Type="nvarchar" MaxLength="1000" />
+    <Property Name="CreateDateMiladi" Type="date" />
+    <Property Name="Tedad" Type="nvarchar" MaxLength="1000" />
+    <Property Name="HadeAxareVazneMahmoole" Type="nvarchar" MaxLength="1000" />
+    <Property Name="NoeVasileyeMoredeNiyaz2" Type="nvarchar" MaxLength="1000" />
+    <Property Name="VazneHarVahedeMahmooleKiloGeram" Type="nvarchar" MaxLength="1000" />
+    <Property Name="BaEhtesabeHazineyeOdateKantinereKhali" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="Asaei_EHaml_ListeKalahayeKhatarnak">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="ShomareyeTartib" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Asaei_EHaml_NoeVasileyeHaml">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="NameVasile" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="ShomareyeTartib" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="InquiryID" Type="bigint" Nullable="false" />
+    <Property Name="InquiryType" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="VasileName" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="Tedad" Type="smallint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'EHamlDB.dbo.Asaei_EHaml_OstanVaShahr' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Asaei_EHaml_OstanVaShahr">
+          <Property Name="Id" Type="float" />
+          <Property Name="Shahrestan" Type="nvarchar" MaxLength="1000" />
+          <Property Name="MarkazeShahrestan" Type="nvarchar" MaxLength="1000" />
+          <Property Name="TarikheTasis" Type="float" />
+          <Property Name="CodeTagsimat" Type="float" />
+          <Property Name="Ostan" Type="nvarchar" MaxLength="1000" />
+          <Property Name="GozaresheTojihi" Type="nvarchar" MaxLength="1000" />
+        </EntityType>-->
+  <EntityContainer Name="EHamlDBModelStoreContainer">
+    <EntitySet Name="Asaei_EHaml_Inquiry" EntityType="Self.Asaei_EHaml_Inquiry" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Asaei_EHaml_ListeKalahayeKhatarnak" EntityType="Self.Asaei_EHaml_ListeKalahayeKhatarnak" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Asaei_EHaml_NoeVasileyeHaml" EntityType="Self.Asaei_EHaml_NoeVasileyeHaml" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz" EntityType="Self.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -639,13 +639,13 @@
 /*************************************EHaml***********************************/
 .ctlDaryafteGalebeFormeArzeshBarAsaseVasileyeHamlP {
 font-size: 12px !important;
-top: 8px !important;
+top: 11px !important;
 text-align: right !important;
 
 }
 
 .btn-link[disabled]{
-display: none !important;
+/*display: none !important;*/
 }
 
 .bstrap30 label{
@@ -658,6 +658,10 @@ font-weight: bold !important;
 
 .ctlTarikheAgazeAmaliyatP {
     direction: ltr;
+}
+
+.ctlZamaneAmadegiBarayeShoorooeAmaliyatP{
+direction: ltr;
 }
 
 .lblTarikheAgazeAmaliyatP {
@@ -673,5 +677,49 @@ font-weight: bold !important;
 
 .sweet-alert.showSweetAlert.visible {
     font-family: tahoma;
+}
+
+.bstrap30 .input-group-btn:last-child>.btn {
+    margin-right: -2px;
+    margin-left: 0px !important;
+    padding: 8.8px 12px !important;
+}
+
+.bstrap30 .input-group-btn:last-child>.btn
+{
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px !important;
+    border-top-left-radius: 4px !important;
+
+}
+
+.ctlDaryafteGalebeFormeVoroodeArzeshBarAsaseListeAdlBandiP {
+font-size: 12px !important;
+top: 11px !important;
+text-align: right !important;
+}
+
+.ctlDaryafteGalebeFormePakingListP {
+font-size: 12px !important;
+top: 11px !important;
+text-align: right !important;
+}
+
+h7.section-title.col-sm-4.col-sm-offset-3.ng-valid.ng-dirty {
+top: 25px;
+}
+
+.ShenasnameHTML {
+    text-align: right;
+    direction: rtl;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: bkoodak;
+    font-weight: bold;
+}
+
+.ShowReplyForm {
+    text-align: right;
 }
 

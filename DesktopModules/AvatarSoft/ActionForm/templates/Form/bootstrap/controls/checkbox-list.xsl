@@ -105,7 +105,7 @@
                             <xsl:attribute name="data-ng-change">
                                 <xsl:text>form.fields.</xsl:text>
                                 <xsl:value-of select="Name"/>
-                                <xsl:text>.onChange(form);</xsl:text>
+                                <xsl:text>.onChange(form, o);</xsl:text>
                             </xsl:attribute>
                         </xsl:if>
 

@@ -273,5 +273,7 @@
     <script src="/Resources/MyDnn/util.js"></script>
     <script src="/Resources/MyDnn/sweet-alert.min.js"></script>
     <script src="/Resources/MyDnn/moment.min.js"></script>
+    <!--<script src="/Resources/MyDnn/date.js"></script>-->
+    <!--<script src="/Resources/MyDnn/xdate.js"></script>-->
 </body>
 </html>

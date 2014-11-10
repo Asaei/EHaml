@@ -112,30 +112,25 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="agreeToTerms.text" xml:space="preserve">
     <value>Agree to &lt;a href="{0}" target="_blank"&gt;Terms and Conditions&lt;/a&gt;</value>
-    <comment>موافقم با &lt;a href="{0}" target="_blank"&gt;توافق نامه&lt;/a&gt;</comment>
   </data>
   <data name="agreeToTermsPopup1.text" xml:space="preserve">
     <value>Agree to </value>
-    <comment>موافقم</comment>
   </data>
   <data name="agreeToTermsPopup2.text" xml:space="preserve">
     <value>&lt;a href="{0}"&gt;Terms and Conditions&lt;/a&gt;</value>
-    <comment>&lt;a href="{0}"&gt;توافق نامه&lt;/a&gt;</comment>
   </data>
   <data name="button.pleaseWait" xml:space="preserve">
     <value>Please wait...</value>
-    <comment>شکیبا باشید...</comment>
   </data>
   <data name="button.selectFile" xml:space="preserve">
     <value>Select file...</value>
-    <comment>انتخاب فایل...</comment>
   </data>
   <data name="jquery.datepicker.closeText" xml:space="preserve">
     <value>Done</value>
@@ -182,116 +177,90 @@
   </data>
   <data name="message.pleaseWait" xml:space="preserve">
     <value>Please wait...</value>
-    <comment>شکیبا باشید...</comment>
   </data>
   <data name="validation.captcha" xml:space="preserve">
     <value>Invalid security code</value>
   </data>
   <data name="validation.captchaExpired" xml:space="preserve">
     <value>Security code expired. Please try again.</value>
-    <comment>کد امنیتی منقضی شده است. لطفآ دوباره سعی نمایید.</comment>
   </data>
   <data name="validation.date" xml:space="preserve">
     <value>Please enter a valid date.</value>
-    <comment>لطفآ یک تاریخ معتبر وارد نمایید.</comment>
   </data>
   <data name="validation.dateISO" xml:space="preserve">
     <value>Please enter a valid date (ISO).</value>
   </data>
   <data name="validation.dateUS" xml:space="preserve">
     <value>Date must be in format mm/dd/yyyy.</value>
-    <comment>لطفآ تاریخ را با فرمت صحیح وارد نمایید.</comment>
   </data>
   <data name="validation.digits" xml:space="preserve">
     <value>Please enter only digits.</value>
-    <comment>لطفآ تنها عدد وارد نمایید.</comment>
   </data>
   <data name="validation.email" xml:space="preserve">
     <value>Please enter a valid email address.</value>
-    <comment>لطفآ یک ایمیل معتبر وارد نمایید.</comment>
   </data>
   <data name="validation.equalTo" xml:space="preserve">
     <value>Please enter the same value again.</value>
-    <comment>لطفآ دوباره مقدار مشابه را وارد نمایید.</comment>
   </data>
   <data name="validation.letters" xml:space="preserve">
     <value>Only letters allowed.</value>
-    <comment>تنها مجاز به وارد کردن کاراکتر هستید.</comment>
   </data>
   <data name="validation.max" xml:space="preserve">
     <value>Please enter a value less than or equal to {0}.</value>
-    <comment>لطفآ مقداری کوچکتر یا مساوی {0} وارد نمایید.</comment>
   </data>
   <data name="validation.maxlength" xml:space="preserve">
     <value>Please enter no more than {0} characters.</value>
-    <comment>لطفآ بیش تر از {0}  کاراکتر وارد نفرمایید.</comment>
   </data>
   <data name="validation.min" xml:space="preserve">
     <value>Please enter a value greater than or equal to {0}.</value>
-    <comment>لطفآ مقداری بزرگتر یا مساوی {0} وارد نمایید.</comment>
   </data>
   <data name="validation.minlength" xml:space="preserve">
     <value>Please enter at least {0} characters.</value>
-    <comment>لطفآ حداقل {0} کاراکتر وارد نمایید.</comment>
   </data>
   <data name="validation.nowhitespace" xml:space="preserve">
     <value>No spaces are allowed.</value>
-    <comment>شما مجاز به وارد کردن فضای خالی نیست.</comment>
   </data>
   <data name="validation.number" xml:space="preserve">
     <value>Please enter a valid number.</value>
-    <comment>لطفآ یک عدد معتبر وارد نمایید.</comment>
   </data>
   <data name="validation.numberInteger" xml:space="preserve">
     <value>Please enter a valid integer number.</value>
-    <comment>لطفآ یک عدد صحیح معتبر وارد نمایید.</comment>
   </data>
   <data name="validation.numberIntegerPositive" xml:space="preserve">
     <value>Please enter a valid positive integer number.</value>
-    <comment>لطفآ یک عدد صحیح مثبت معتبر وارد نمایید.</comment>
   </data>
   <data name="validation.numberPositive" xml:space="preserve">
     <value>Please enter a valid positive number.</value>
-    <comment>لطفآ یک عدد مثبت معتبر وارد نمایید.</comment>
   </data>
   <data name="validation.passwordNoMatch" xml:space="preserve">
     <value>Password fields do not match.</value>
-    <comment>فیلد های پسورد با هم همخوانی ندارند</comment>
   </data>
   <data name="validation.phoneUS" xml:space="preserve">
     <value>Phone number must be in format (###) ###-####.</value>
   </data>
   <data name="validation.range" xml:space="preserve">
     <value>Please enter a value between {0} and {1}.</value>
-    <comment>لطفآ مقداری مابین {0} تا {1} وارد نمایید.</comment>
   </data>
   <data name="validation.rangelength" xml:space="preserve">
     <value>Please enter a value between {0} and {1} characters long.</value>
-    <comment>لطفآ مقداری مابین {0} تا {1} کاراکتر وارد نمایید.</comment>
   </data>
   <data name="validation.remote" xml:space="preserve">
     <value>Please fix this field.</value>
-    <comment>لطفآ این فیلد را اصلاح نمایید.</comment>
   </data>
   <data name="validation.required" xml:space="preserve">
     <value>This field is required.</value>
-    <comment>این فیلد الزامیست.</comment>
   </data>
   <data name="validation.required-cblist" xml:space="preserve">
     <value>At least one item needs to be selected</value>
-    <comment>حد اقل یک گزینه می بایست انتخاب شود</comment>
   </data>
   <data name="validation.required-file" xml:space="preserve">
     <value>File is required</value>
-    <comment>فایل الزامیست</comment>
   </data>
   <data name="validation.requiredServerMessage" xml:space="preserve">
     <value>Missing required field {0}.</value>
-    <comment>فیلد الزامی را وارد نمایید {0}.</comment>
   </data>
   <data name="validation.url" xml:space="preserve">
     <value>Please enter a valid URL.</value>
-    <comment>لطفآ یک آدرس وب معتبر وارد نمایید.</comment>
   </data>
   <data name="wysiwyg.bold" xml:space="preserve">
     <value>Bold</value>
