@@ -1,0 +1,223 @@
+09:58:24 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+09:59:02 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+10:30:24 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+10:33:09 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+10:36:59 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+10:37:09 | Errors | Unclosed quotation mark after the character string ''.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at avt.MyTokens.Core.Sources.TknSrc_Database.GetObject(String args, MyTokensReplacer tknReplacer)
+   at avt.MyTokens.Core.Objects.NamespaceDynamicObject.TryInvokeMember(InvokeMemberBinder binder, Object[] args, Object& result)
+   at CallSite.Target(Closure , CallSite , Object , String )
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+10:49:48 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+11:01:00 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+11:03:11 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+11:49:47 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+12:01:04 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+12:09:00 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+12:11:47 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+12:19:47 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+12:20:47 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+12:29:50 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+12:38:17 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+15:01:13 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+15:24:09 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+15:24:10 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+15:24:33 | Errors | Invalid token property listekalahayekhatarnak!
+   at avt.MyTokens.Core.Objects.BaseDynamicObject.GetValue(String propertyName, String strFormat, CultureInfo formatProvider, UserInfo user)
+   at avt.MyTokens.Core.Objects.BaseDynamicObjectList.TryGetMember(GetMemberBinder binder, Object& result)
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+15:24:37 | Errors | Invalid token property id!
+   at avt.MyTokens.Core.Objects.BaseDynamicObject.GetValue(String propertyName, String strFormat, CultureInfo formatProvider, UserInfo user)
+   at avt.MyTokens.Core.Objects.BaseDynamicObjectList.TryGetMember(GetMemberBinder binder, Object& result)
+   at CallSite.Target(Closure , CallSite , Object )
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+15:28:07 | Errors | Invalid token property listekalahayekhatarnak!
+   at avt.MyTokens.Core.Objects.BaseDynamicObject.GetValue(String propertyName, String strFormat, CultureInfo formatProvider, UserInfo user)
+   at avt.MyTokens.Core.Objects.BaseDynamicObjectList.TryGetMember(GetMemberBinder binder, Object& result)
+   at CallSite.Target(Closure , CallSite , Object )
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+15:28:10 | Errors | Invalid token property listekalahayekhatarnak!
+   at avt.MyTokens.Core.Objects.BaseDynamicObject.GetValue(String propertyName, String strFormat, CultureInfo formatProvider, UserInfo user)
+   at avt.MyTokens.Core.Objects.BaseDynamicObjectList.TryGetMember(GetMemberBinder binder, Object& result)
+   at CallSite.Target(Closure , CallSite , Object )
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+15:29:44 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+15:33:23 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+15:46:20 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+15:46:22 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+15:46:36 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+15:46:40 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+15:46:52 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+15:47:16 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+15:47:18 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+16:16:23 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+16:34:07 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+16:34:44 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+16:36:13 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+16:43:46 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+16:49:04 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+16:50:23 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+16:51:13 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+16:58:18 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+16:58:59 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+17:25:42 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+17:44:38 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+18:03:29 | Errors | Invalid token property baehtesabebimeyemasooliyat!
+   at avt.MyTokens.Core.Objects.BaseDynamicObject.GetValue(String propertyName, String strFormat, CultureInfo formatProvider, UserInfo user)
+   at avt.MyTokens.Core.Objects.BaseDynamicObjectList.TryGetMember(GetMemberBinder binder, Object& result)
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+
+18:24:45 | Errors | Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+

@@ -1,0 +1,2273 @@
+<?xml version="1.0" encoding="utf-8" ?><content type="ActionForm" version="03.05.10"><ActionForm>
+  <Settings>
+    <Title />
+    <CssName />
+    <Version>3.5.0</Version>
+    <Build>3.5.107</Build>
+    <RenderContext>Form</RenderContext>
+    <FrontEndTemplate>&lt;div class="ShowReplyForm"&gt;&lt;span&gt;&lt;a class="btn btn-primary" href="[FormUrl]"&gt;پاسخ به استعلام&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;</FrontEndTemplate>
+    <HasCustomLayout>False</HasCustomLayout>
+    <LayoutHtml><![CDATA[<div style="width: 40%; float: left; margin: 0px 20px 0px 0px;">[Fields:NewField]</div>
+<div style="width: 40%; float: left; margin: 0px 20px 0px 0px;">[Fields:NewField]</div>
+<div style="clear: both;"></div>
+<div style="clear: both;"></div>
+<div style="margin: 0px 20px 0px 0px; text-align: center;">[Buttons:Submit] [Buttons:Cancel]</div>]]></LayoutHtml>
+    <CurrentContext>ExportImport</CurrentContext>
+    <LabelAlign>top</LabelAlign>
+    <LabelWidth>3</LabelWidth>
+    <FieldSpacing>normal</FieldSpacing>
+    <OpenFormMode>Inline</OpenFormMode>
+    <FormTemplate>bootstrap</FormTemplate>
+    <FormTemplateFolder>/DesktopModules/AvatarSoft/ActionForm/templates/Form/bootstrap</FormTemplateFolder>
+    <UploadUrl>/DesktopModules/AvatarSoft/ActionForm/UploadFile.ashx?tabid=2174&amp;alias=localhost:100</UploadUrl>
+    <ModuleId>6678</ModuleId>
+    <IsDebug>False</IsDebug>
+    <ClientSideValidation>True</ClientSideValidation>
+    <ShowTooltips>False</ShowTooltips>
+    <LeftSidebarHtml />
+    <RightSidebarHtml />
+    <InitJs><![CDATA[]]></InitJs>
+    <PopupWidth>400</PopupWidth>
+    <PopupHeight>300</PopupHeight>
+    <jQueryTheme>sunny</jQueryTheme>
+    <Background />
+    <TextColor />
+    <Padding>0</Padding>
+    <DateFormat>yy/mm/dd</DateFormat>
+    <BaseId>dnn6678</BaseId>
+    <AjaxSubmitUrl>/DesktopModules/AvatarSoft/ActionForm/Submit.ashx?TabId=2174&amp;ctl=ExportModule&amp;moduleid=6678&amp;popUp=true&amp;language=fa-IR&amp;alias=localhost%3a100&amp;mid=6678</AjaxSubmitUrl>
+    <PageUrl>http://localhost:100/ReplyToInquiry_Base_Form</PageUrl>
+    <LocalizedStringsUrl>/DesktopModules/AvatarSoft/ActionForm/AdminApi.ashx?method=GetLocalization&amp;locale=fa-IR&amp;section=FrontEnd</LocalizedStringsUrl>
+    <JsonModel>{"baseId":"dnn6678","url":"/DesktopModules/AvatarSoft/ActionForm/AdminApi.ashx?method=FormSettings&amp;mid=6678&amp;tabid=-1&amp;alias=localhost%3a100&amp;ctl=ExportModule&amp;moduleid=6678&amp;popUp=true&amp;language=fa-IR","submitUrl":"/DesktopModules/AvatarSoft/ActionForm/Submit.ashx?TabId=2174&amp;ctl=ExportModule&amp;moduleid=6678&amp;popUp=true&amp;language=fa-IR&amp;alias=localhost%3a100&amp;mid=6678","submissionKey":"b186ec7a-f1bd-4f0f-b644-42747ff998cf","fields":{"KoleModatZamaneHaml":{"id":"dnn6678KoleModatZamaneHaml","type":"open-text","hasValue":true, "name":"KoleModatZamaneHaml","actionCount":0,"value":""},"ZamaneAmadegiBarayeShoorooeAmaliyat":{"id":"dnn6678ZamaneAmadegiBarayeShoorooeAmaliyat","type":"open-text","hasValue":true, "name":"ZamaneAmadegiBarayeShoorooeAmaliyat","actionCount":0,"value":""},"PishbiniEmkanPaziriyeAmaliyat":{"id":"dnn6678PishbiniEmkanPaziriyeAmaliyat","type":"closed-multiple-dropdown","hasValue":true, "name":"PishbiniEmkanPaziriyeAmaliyat","options":[{"text":"مطلوب","value":"مطلوب","selected":false,"path":"/مطلوب","filter":null},{"text":"کند","value":"کند","selected":false,"path":"/کند","filter":null},{"text":"بسیارکند","value":"بسیارکند","selected":false,"path":"/بسیارکند","filter":null}],"actionCount":0,"value":""},"GeymateKol":{"id":"dnn6678GeymateKol","type":"open-text","hasValue":true, "name":"GeymateKol","actionCount":0,"value":""},"Submit":{"id":"dnn6678Submit","type":"button","hasValue":false, "name":"Submit","actionCount":2,"value":""},"YesSubmit":{"id":"dnn6678YesSubmit","type":"button","hasValue":false, "name":"YesSubmit","actionCount":15,"value":""},"NoBack":{"id":"dnn6678NoBack","type":"button","hasValue":false, "name":"NoBack","actionCount":1,"value":""},"InquiryType":{"id":"dnn6678InquiryType","type":"hiden-constant","hasValue":true, "name":"InquiryType","actionCount":0,"value":"Zadghan"}}}</JsonModel>
+    <PortalHomeUrl>/Portals/0/</PortalHomeUrl>
+  </Settings>
+  <Fields>
+    <Field>
+      <Id><![CDATA[1410]]></Id>
+      <Title><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="خاور")] دستگاه خاور- قیمت واحد:]]></Title>
+      <TitleTokenized><![CDATA[ دستگاه خاور- قیمت واحد:]]></TitleTokenized>
+      <ShortDescTokenized><![CDATA[]]></ShortDescTokenized>
+      <OverrideName>GeymateVahedeKhavar</OverrideName>
+      <Name>GeymateVahedeKhavar</Name>
+      <ShortDesc><![CDATA[]]></ShortDesc>
+      <HelpText><![CDATA[]]></HelpText>
+      <ShowCondition><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="خاور")] > 0]]></ShowCondition>
+      <ValidationCondition><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="خاور")]]]></ValidationCondition>
+      <CanValidate><![CDATA[False]]></CanValidate>
+      <BindShow><![CDATA[]]></BindShow>
+      <BindPreserveLayout><![CDATA[False]]></BindPreserveLayout>
+      <BindValue><![CDATA[]]></BindValue>
+      <BindOnChange><![CDATA[var GeymateVahedeKhavar = 0;
+var GeymateVahedeKamiyooneTak = 0;
+var GeymateVahedeKamiyooneJoft = 0;
+var GeymateTreylereKafiyeMamooli = 0;
+var GeymateTreylereKafiyeTeraficiyeBedoneScort = 0;
+var GeymateTreylereKafiyeTeraficiyeTakScort = 0;
+var GeymateTreylereKafiyeTeraficiyeJoftScort = 0;
+var GeymateKamarShekane5MehvareMamooli = 0;
+var GeymateKamarShekane5MehvareTeraficiyeBedooneScort = 0;
+var GeymateKamarShekane5MehvareTeraficiyeTakScort = 0;
+var GeymateKamarShekane5MehvareTeraficiyeJoftScort = 0;
+var GeymateKamarShekane7MehvareTeraficiyeTakScort = 0;
+var GeymateKamarShekane7MehvareTeraficiyeJoftScort = 0;
+
+var ctlGeymateVahedeKhavar = form.fields.GeymateVahedeKhavar;
+var ctlGeymateVahedeKamiyooneTak = form.fields.GeymateVahedeKamiyooneTak;
+var ctlGeymateVahedeKamiyooneJoft = form.fields.GeymateVahedeKamiyooneJoft;
+var ctlGeymateTreylereKafiyeMamooli = form.fields.GeymateTreylereKafiyeMamooli;
+var ctlGeymateTreylereKafiyeTeraficiyeBedoneScort = form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort;
+var ctlGeymateTreylereKafiyeTeraficiyeTakScort = form.fields.GeymateTreylereKafiyeTeraficiyeTakScort;
+var ctlGeymateTreylereKafiyeTeraficiyeJoftScort = form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort;
+var ctlGeymateKamarShekane5MehvareMamooli = form.fields.GeymateKamarShekane5MehvareMamooli;
+var ctlGeymateKamarShekane5MehvareTeraficiyeBedooneScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort;
+var ctlGeymateKamarShekane5MehvareTeraficiyeTakScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort;
+var ctlGeymateKamarShekane5MehvareTeraficiyeJoftScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort;
+var ctlGeymateKamarShekane7MehvareTeraficiyeTakScort = form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort;
+var ctlGeymateKamarShekane7MehvareTeraficiyeJoftScort = form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort;
+
+if (ctlGeymateVahedeKhavar != undefined && form.fields.GeymateVahedeKhavar.value != '') {
+    GeymateVahedeKhavar = parseInt(form.fields.GeymateVahedeKhavar.value, 10) * parseInt($(".lblGeymateVahedKhavarP").html(), 10);
+}
+
+if (ctlGeymateVahedeKamiyooneTak != undefined && form.fields.GeymateVahedeKamiyooneTak.value != '') {
+    GeymateVahedeKamiyooneTak = parseInt(form.fields.GeymateVahedeKamiyooneTak.value, 10) * parseInt($(".lblGeymateVahedeKamiyooneTakP").html(), 10);
+}
+if (ctlGeymateVahedeKamiyooneJoft != undefined && form.fields.GeymateVahedeKamiyooneJoft.value != '') {
+    GeymateVahedeKamiyooneJoft = parseInt(form.fields.GeymateVahedeKamiyooneJoft.value, 10) * parseInt($(".lblGeymateVahedeKamiyooneJoftP").html(), 10);
+}
+
+if (ctlGeymateTreylereKafiyeMamooli != undefined && form.fields.GeymateTreylereKafiyeMamooli.value != '') {
+    GeymateTreylereKafiyeMamooli = parseInt(form.fields.GeymateTreylereKafiyeMamooli.value, 10) * parseInt($(".lblGeymateTreylereKafiyeMamooliP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeBedoneScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeBedoneScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeBedoneScortP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeTakScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeTakScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeTakScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeJoftScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeJoftScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeJoftScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareMamooli != undefined && form.fields.GeymateKamarShekane5MehvareMamooli.value != '') {
+    GeymateKamarShekane5MehvareMamooli = parseInt(form.fields.GeymateKamarShekane5MehvareMamooli.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareMamooliP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeBedooneScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeBedooneScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeBedooneScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeJoftScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeJoftScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeJoftScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeJoftScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeJoftScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeJoftScortP").html(), 10);
+}
+
+form.fields.GeymateKol.value = GeymateVahedeKhavar +
+    GeymateVahedeKamiyooneTak +
+    GeymateVahedeKamiyooneJoft +
+    GeymateTreylereKafiyeMamooli +
+    GeymateTreylereKafiyeTeraficiyeBedoneScort +
+    GeymateTreylereKafiyeTeraficiyeTakScort +
+    GeymateTreylereKafiyeTeraficiyeJoftScort +
+    GeymateKamarShekane5MehvareMamooli +
+    GeymateKamarShekane5MehvareTeraficiyeBedooneScort +
+    GeymateKamarShekane5MehvareTeraficiyeTakScort +
+    GeymateKamarShekane5MehvareTeraficiyeJoftScort +
+    GeymateKamarShekane7MehvareTeraficiyeTakScort +
+    GeymateKamarShekane7MehvareTeraficiyeJoftScort;]]></BindOnChange>
+      <InputType>open-text</InputType>
+      <InputData>{"Value":"","AutocompleteUrl":"","Mask":"","SaveToReport":true,"Readonly":false}</InputData>
+      <AutocompleteUrl />
+      <Mask />
+      <SaveToReport>True</SaveToReport>
+      <Readonly>False</Readonly>
+      <Value><![CDATA[]]></Value>
+      <IsRequired>True</IsRequired>
+      <IsActive>True</IsActive>
+      <IsEnabled>True</IsEnabled>
+      <CssClass><![CDATA[ctlEHaml , ctlGeymateVahedKhavarP]]></CssClass>
+      <CssStyles><![CDATA[]]></CssStyles>
+      <LabelCssClass><![CDATA[lblEHaml , lblGeymateVahedKhavarP]]></LabelCssClass>
+      <LabelCssStyles><![CDATA[]]></LabelCssStyles>
+      <CustomValidator1>Positive Integer Number</CustomValidator1>
+      <CustomValidator1JsName>numberPositive6678</CustomValidator1JsName>
+      <CustomValidator2 />
+      <ValidationGroup />
+      <GroupValidator />
+      <SaveToUserProfile>False</SaveToUserProfile>
+      <DisableAutocomplete>False</DisableAutocomplete>
+      <ViewOrder>0</ViewOrder>
+      <RowIndex>0</RowIndex>
+      <ColSpan>5</ColSpan>
+      <ColOffset>7</ColOffset>
+    </Field>
+    <Field>
+      <Id><![CDATA[1411]]></Id>
+      <Title><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کامیون تک")] دستگاه کامیون تک- قیمت واحد:]]></Title>
+      <TitleTokenized><![CDATA[ دستگاه کامیون تک- قیمت واحد:]]></TitleTokenized>
+      <ShortDescTokenized><![CDATA[]]></ShortDescTokenized>
+      <OverrideName>GeymateVahedeKamiyooneTak</OverrideName>
+      <Name>GeymateVahedeKamiyooneTak</Name>
+      <ShortDesc><![CDATA[]]></ShortDesc>
+      <HelpText><![CDATA[]]></HelpText>
+      <ShowCondition><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کامیون تک")] > 0]]></ShowCondition>
+      <ValidationCondition><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کامیون تک")] > 0]]></ValidationCondition>
+      <CanValidate><![CDATA[False]]></CanValidate>
+      <BindShow><![CDATA[]]></BindShow>
+      <BindPreserveLayout><![CDATA[False]]></BindPreserveLayout>
+      <BindValue><![CDATA[]]></BindValue>
+      <BindOnChange><![CDATA[var GeymateVahedeKhavar = 0;
+var GeymateVahedeKamiyooneTak = 0;
+var GeymateVahedeKamiyooneJoft = 0;
+var GeymateTreylereKafiyeMamooli = 0;
+var GeymateTreylereKafiyeTeraficiyeBedoneScort = 0;
+var GeymateTreylereKafiyeTeraficiyeTakScort = 0;
+var GeymateTreylereKafiyeTeraficiyeJoftScort = 0;
+var GeymateKamarShekane5MehvareMamooli = 0;
+var GeymateKamarShekane5MehvareTeraficiyeBedooneScort = 0;
+var GeymateKamarShekane5MehvareTeraficiyeTakScort = 0;
+var GeymateKamarShekane5MehvareTeraficiyeJoftScort = 0;
+var GeymateKamarShekane7MehvareTeraficiyeTakScort = 0;
+var GeymateKamarShekane7MehvareTeraficiyeJoftScort = 0;
+
+var ctlGeymateVahedeKhavar = form.fields.GeymateVahedeKhavar;
+var ctlGeymateVahedeKamiyooneTak = form.fields.GeymateVahedeKamiyooneTak;
+var ctlGeymateVahedeKamiyooneJoft = form.fields.GeymateVahedeKamiyooneJoft;
+var ctlGeymateTreylereKafiyeMamooli = form.fields.GeymateTreylereKafiyeMamooli;
+var ctlGeymateTreylereKafiyeTeraficiyeBedoneScort = form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort;
+var ctlGeymateTreylereKafiyeTeraficiyeTakScort = form.fields.GeymateTreylereKafiyeTeraficiyeTakScort;
+var ctlGeymateTreylereKafiyeTeraficiyeJoftScort = form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort;
+var ctlGeymateKamarShekane5MehvareMamooli = form.fields.GeymateKamarShekane5MehvareMamooli;
+var ctlGeymateKamarShekane5MehvareTeraficiyeBedooneScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort;
+var ctlGeymateKamarShekane5MehvareTeraficiyeTakScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort;
+var ctlGeymateKamarShekane5MehvareTeraficiyeJoftScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort;
+var ctlGeymateKamarShekane7MehvareTeraficiyeTakScort = form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort;
+var ctlGeymateKamarShekane7MehvareTeraficiyeJoftScort = form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort;
+
+if (ctlGeymateVahedeKhavar != undefined && form.fields.GeymateVahedeKhavar.value != '') {
+    GeymateVahedeKhavar = parseInt(form.fields.GeymateVahedeKhavar.value, 10) * parseInt($(".lblGeymateVahedKhavarP").html(), 10);
+}
+
+if (ctlGeymateVahedeKamiyooneTak != undefined && form.fields.GeymateVahedeKamiyooneTak.value != '') {
+    GeymateVahedeKamiyooneTak = parseInt(form.fields.GeymateVahedeKamiyooneTak.value, 10) * parseInt($(".lblGeymateVahedeKamiyooneTakP").html(), 10);
+}
+if (ctlGeymateVahedeKamiyooneJoft != undefined && form.fields.GeymateVahedeKamiyooneJoft.value != '') {
+    GeymateVahedeKamiyooneJoft = parseInt(form.fields.GeymateVahedeKamiyooneJoft.value, 10) * parseInt($(".lblGeymateVahedeKamiyooneJoftP").html(), 10);
+}
+
+if (ctlGeymateTreylereKafiyeMamooli != undefined && form.fields.GeymateTreylereKafiyeMamooli.value != '') {
+    GeymateTreylereKafiyeMamooli = parseInt(form.fields.GeymateTreylereKafiyeMamooli.value, 10) * parseInt($(".lblGeymateTreylereKafiyeMamooliP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeBedoneScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeBedoneScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeBedoneScortP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeTakScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeTakScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeTakScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeJoftScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeJoftScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeJoftScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareMamooli != undefined && form.fields.GeymateKamarShekane5MehvareMamooli.value != '') {
+    GeymateKamarShekane5MehvareMamooli = parseInt(form.fields.GeymateKamarShekane5MehvareMamooli.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareMamooliP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeBedooneScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeBedooneScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeBedooneScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeJoftScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeJoftScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeJoftScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeJoftScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeJoftScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeJoftScortP").html(), 10);
+}
+form.fields.GeymateKol.value = GeymateVahedeKhavar +
+    GeymateVahedeKamiyooneTak +
+    GeymateVahedeKamiyooneJoft +
+    GeymateTreylereKafiyeMamooli +
+    GeymateTreylereKafiyeTeraficiyeBedoneScort +
+    GeymateTreylereKafiyeTeraficiyeTakScort +
+    GeymateTreylereKafiyeTeraficiyeJoftScort +
+    GeymateKamarShekane5MehvareMamooli +
+    GeymateKamarShekane5MehvareTeraficiyeBedooneScort +
+    GeymateKamarShekane5MehvareTeraficiyeTakScort +
+    GeymateKamarShekane5MehvareTeraficiyeJoftScort +
+    GeymateKamarShekane7MehvareTeraficiyeTakScort +
+    GeymateKamarShekane7MehvareTeraficiyeJoftScort;]]></BindOnChange>
+      <InputType>open-text</InputType>
+      <InputData>{"Value":"","AutocompleteUrl":"","Mask":"","SaveToReport":true,"Readonly":false}</InputData>
+      <AutocompleteUrl />
+      <Mask />
+      <SaveToReport>True</SaveToReport>
+      <Readonly>False</Readonly>
+      <Value><![CDATA[]]></Value>
+      <IsRequired>True</IsRequired>
+      <IsActive>True</IsActive>
+      <IsEnabled>True</IsEnabled>
+      <CssClass><![CDATA[ctlEHaml , ctlGeymateVahedeKamiyooneTakP]]></CssClass>
+      <CssStyles><![CDATA[]]></CssStyles>
+      <LabelCssClass><![CDATA[lblEHaml , lblGeymateVahedeKamiyooneTakP]]></LabelCssClass>
+      <LabelCssStyles><![CDATA[]]></LabelCssStyles>
+      <CustomValidator1>Positive Integer Number</CustomValidator1>
+      <CustomValidator1JsName>numberPositive6678</CustomValidator1JsName>
+      <CustomValidator2 />
+      <ValidationGroup />
+      <GroupValidator />
+      <SaveToUserProfile>False</SaveToUserProfile>
+      <DisableAutocomplete>False</DisableAutocomplete>
+      <ViewOrder>1</ViewOrder>
+      <RowIndex>1</RowIndex>
+      <ColSpan>5</ColSpan>
+      <ColOffset>7</ColOffset>
+    </Field>
+    <Field>
+      <Id><![CDATA[1412]]></Id>
+      <Title><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کامیون جفت")] دستگاه کامیون جفت- قیمت واحد:]]></Title>
+      <TitleTokenized><![CDATA[ دستگاه کامیون جفت- قیمت واحد:]]></TitleTokenized>
+      <ShortDescTokenized><![CDATA[]]></ShortDescTokenized>
+      <OverrideName>GeymateVahedeKamiyooneJoft</OverrideName>
+      <Name>GeymateVahedeKamiyooneJoft</Name>
+      <ShortDesc><![CDATA[]]></ShortDesc>
+      <HelpText><![CDATA[]]></HelpText>
+      <ShowCondition><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کامیون جفت")] > 0]]></ShowCondition>
+      <ValidationCondition><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کامیون جفت")] > 0]]></ValidationCondition>
+      <CanValidate><![CDATA[False]]></CanValidate>
+      <BindShow><![CDATA[]]></BindShow>
+      <BindPreserveLayout><![CDATA[False]]></BindPreserveLayout>
+      <BindValue><![CDATA[]]></BindValue>
+      <BindOnChange><![CDATA[var GeymateVahedeKhavar = 0;
+var GeymateVahedeKamiyooneTak = 0;
+var GeymateVahedeKamiyooneJoft = 0;
+var GeymateTreylereKafiyeMamooli = 0;
+var GeymateTreylereKafiyeTeraficiyeBedoneScort = 0;
+var GeymateTreylereKafiyeTeraficiyeTakScort = 0;
+var GeymateTreylereKafiyeTeraficiyeJoftScort = 0;
+var GeymateKamarShekane5MehvareMamooli = 0;
+var GeymateKamarShekane5MehvareTeraficiyeBedooneScort = 0;
+var GeymateKamarShekane5MehvareTeraficiyeTakScort = 0;
+var GeymateKamarShekane5MehvareTeraficiyeJoftScort = 0;
+var GeymateKamarShekane7MehvareTeraficiyeTakScort = 0;
+var GeymateKamarShekane7MehvareTeraficiyeJoftScort = 0;
+
+var ctlGeymateVahedeKhavar = form.fields.GeymateVahedeKhavar;
+var ctlGeymateVahedeKamiyooneTak = form.fields.GeymateVahedeKamiyooneTak;
+var ctlGeymateVahedeKamiyooneJoft = form.fields.GeymateVahedeKamiyooneJoft;
+var ctlGeymateTreylereKafiyeMamooli = form.fields.GeymateTreylereKafiyeMamooli;
+var ctlGeymateTreylereKafiyeTeraficiyeBedoneScort = form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort;
+var ctlGeymateTreylereKafiyeTeraficiyeTakScort = form.fields.GeymateTreylereKafiyeTeraficiyeTakScort;
+var ctlGeymateTreylereKafiyeTeraficiyeJoftScort = form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort;
+var ctlGeymateKamarShekane5MehvareMamooli = form.fields.GeymateKamarShekane5MehvareMamooli;
+var ctlGeymateKamarShekane5MehvareTeraficiyeBedooneScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort;
+var ctlGeymateKamarShekane5MehvareTeraficiyeTakScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort;
+var ctlGeymateKamarShekane5MehvareTeraficiyeJoftScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort;
+var ctlGeymateKamarShekane7MehvareTeraficiyeTakScort = form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort;
+var ctlGeymateKamarShekane7MehvareTeraficiyeJoftScort = form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort;
+
+if (ctlGeymateVahedeKhavar != undefined && form.fields.GeymateVahedeKhavar.value != '') {
+    GeymateVahedeKhavar = parseInt(form.fields.GeymateVahedeKhavar.value, 10) * parseInt($(".lblGeymateVahedKhavarP").html(), 10);
+}
+
+if (ctlGeymateVahedeKamiyooneTak != undefined && form.fields.GeymateVahedeKamiyooneTak.value != '') {
+    GeymateVahedeKamiyooneTak = parseInt(form.fields.GeymateVahedeKamiyooneTak.value, 10) * parseInt($(".lblGeymateVahedeKamiyooneTakP").html(), 10);
+}
+if (ctlGeymateVahedeKamiyooneJoft != undefined && form.fields.GeymateVahedeKamiyooneJoft.value != '') {
+    GeymateVahedeKamiyooneJoft = parseInt(form.fields.GeymateVahedeKamiyooneJoft.value, 10) * parseInt($(".lblGeymateVahedeKamiyooneJoftP").html(), 10);
+}
+
+if (ctlGeymateTreylereKafiyeMamooli != undefined && form.fields.GeymateTreylereKafiyeMamooli.value != '') {
+    GeymateTreylereKafiyeMamooli = parseInt(form.fields.GeymateTreylereKafiyeMamooli.value, 10) * parseInt($(".lblGeymateTreylereKafiyeMamooliP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeBedoneScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeBedoneScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeBedoneScortP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeTakScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeTakScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeTakScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeJoftScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeJoftScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeJoftScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareMamooli != undefined && form.fields.GeymateKamarShekane5MehvareMamooli.value != '') {
+    GeymateKamarShekane5MehvareMamooli = parseInt(form.fields.GeymateKamarShekane5MehvareMamooli.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareMamooliP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeBedooneScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeBedooneScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeBedooneScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeJoftScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeJoftScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeJoftScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeJoftScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeJoftScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeJoftScortP").html(), 10);
+}
+form.fields.GeymateKol.value = GeymateVahedeKhavar +
+    GeymateVahedeKamiyooneTak +
+    GeymateVahedeKamiyooneJoft +
+    GeymateTreylereKafiyeMamooli +
+    GeymateTreylereKafiyeTeraficiyeBedoneScort +
+    GeymateTreylereKafiyeTeraficiyeTakScort +
+    GeymateTreylereKafiyeTeraficiyeJoftScort +
+    GeymateKamarShekane5MehvareMamooli +
+    GeymateKamarShekane5MehvareTeraficiyeBedooneScort +
+    GeymateKamarShekane5MehvareTeraficiyeTakScort +
+    GeymateKamarShekane5MehvareTeraficiyeJoftScort +
+    GeymateKamarShekane7MehvareTeraficiyeTakScort +
+    GeymateKamarShekane7MehvareTeraficiyeJoftScort;]]></BindOnChange>
+      <InputType>open-text</InputType>
+      <InputData>{"Value":"","AutocompleteUrl":"","Mask":"","SaveToReport":true,"Readonly":false}</InputData>
+      <AutocompleteUrl />
+      <Mask />
+      <SaveToReport>True</SaveToReport>
+      <Readonly>False</Readonly>
+      <Value><![CDATA[]]></Value>
+      <IsRequired>True</IsRequired>
+      <IsActive>True</IsActive>
+      <IsEnabled>True</IsEnabled>
+      <CssClass><![CDATA[ctlEHaml , ctlGeymateVahedeKamiyooneJoftP]]></CssClass>
+      <CssStyles><![CDATA[]]></CssStyles>
+      <LabelCssClass><![CDATA[lblEHaml , lblGeymateVahedeKamiyooneJoftP]]></LabelCssClass>
+      <LabelCssStyles><![CDATA[]]></LabelCssStyles>
+      <CustomValidator1>Positive Integer Number</CustomValidator1>
+      <CustomValidator1JsName>numberPositive6678</CustomValidator1JsName>
+      <CustomValidator2 />
+      <ValidationGroup />
+      <GroupValidator />
+      <SaveToUserProfile>False</SaveToUserProfile>
+      <DisableAutocomplete>False</DisableAutocomplete>
+      <ViewOrder>2</ViewOrder>
+      <RowIndex>2</RowIndex>
+      <ColSpan>5</ColSpan>
+      <ColOffset>7</ColOffset>
+    </Field>
+    <Field>
+      <Id><![CDATA[1413]]></Id>
+      <Title><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="تریلرکفی معمولی")] دستگاه تریلرکفی معمولی- قیمت واحد:]]></Title>
+      <TitleTokenized><![CDATA[ دستگاه تریلرکفی معمولی- قیمت واحد:]]></TitleTokenized>
+      <ShortDescTokenized><![CDATA[]]></ShortDescTokenized>
+      <OverrideName>GeymateTreylereKafiyeMamooli</OverrideName>
+      <Name>GeymateTreylereKafiyeMamooli</Name>
+      <ShortDesc><![CDATA[]]></ShortDesc>
+      <HelpText><![CDATA[]]></HelpText>
+      <ShowCondition><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="تریلرکفی معمولی")] > 0]]></ShowCondition>
+      <ValidationCondition><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="تریلرکفی معمولی")] > 0]]></ValidationCondition>
+      <CanValidate><![CDATA[False]]></CanValidate>
+      <BindShow><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="تریلرکفی معمولی")] > 0]]></BindShow>
+      <BindPreserveLayout><![CDATA[False]]></BindPreserveLayout>
+      <BindValue><![CDATA[]]></BindValue>
+      <BindOnChange><![CDATA[var GeymateVahedeKhavar = 0;
+var GeymateVahedeKamiyooneTak = 0;
+var GeymateVahedeKamiyooneJoft = 0;
+var GeymateTreylereKafiyeMamooli = 0;
+var GeymateTreylereKafiyeTeraficiyeBedoneScort = 0;
+var GeymateTreylereKafiyeTeraficiyeTakScort = 0;
+var GeymateTreylereKafiyeTeraficiyeJoftScort = 0;
+var GeymateKamarShekane5MehvareMamooli = 0;
+var GeymateKamarShekane5MehvareTeraficiyeBedooneScort = 0;
+var GeymateKamarShekane5MehvareTeraficiyeTakScort = 0;
+var GeymateKamarShekane5MehvareTeraficiyeJoftScort = 0;
+var GeymateKamarShekane7MehvareTeraficiyeTakScort = 0;
+var GeymateKamarShekane7MehvareTeraficiyeJoftScort = 0;
+
+var ctlGeymateVahedeKhavar = form.fields.GeymateVahedeKhavar;
+var ctlGeymateVahedeKamiyooneTak = form.fields.GeymateVahedeKamiyooneTak;
+var ctlGeymateVahedeKamiyooneJoft = form.fields.GeymateVahedeKamiyooneJoft;
+var ctlGeymateTreylereKafiyeMamooli = form.fields.GeymateTreylereKafiyeMamooli;
+var ctlGeymateTreylereKafiyeTeraficiyeBedoneScort = form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort;
+var ctlGeymateTreylereKafiyeTeraficiyeTakScort = form.fields.GeymateTreylereKafiyeTeraficiyeTakScort;
+var ctlGeymateTreylereKafiyeTeraficiyeJoftScort = form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort;
+var ctlGeymateKamarShekane5MehvareMamooli = form.fields.GeymateKamarShekane5MehvareMamooli;
+var ctlGeymateKamarShekane5MehvareTeraficiyeBedooneScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort;
+var ctlGeymateKamarShekane5MehvareTeraficiyeTakScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort;
+var ctlGeymateKamarShekane5MehvareTeraficiyeJoftScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort;
+var ctlGeymateKamarShekane7MehvareTeraficiyeTakScort = form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort;
+var ctlGeymateKamarShekane7MehvareTeraficiyeJoftScort = form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort;
+
+if (ctlGeymateVahedeKhavar != undefined && form.fields.GeymateVahedeKhavar.value != '') {
+    GeymateVahedeKhavar = parseInt(form.fields.GeymateVahedeKhavar.value, 10) * parseInt($(".lblGeymateVahedKhavarP").html(), 10);
+}
+
+if (ctlGeymateVahedeKamiyooneTak != undefined && form.fields.GeymateVahedeKamiyooneTak.value != '') {
+    GeymateVahedeKamiyooneTak = parseInt(form.fields.GeymateVahedeKamiyooneTak.value, 10) * parseInt($(".lblGeymateVahedeKamiyooneTakP").html(), 10);
+}
+if (ctlGeymateVahedeKamiyooneJoft != undefined && form.fields.GeymateVahedeKamiyooneJoft.value != '') {
+    GeymateVahedeKamiyooneJoft = parseInt(form.fields.GeymateVahedeKamiyooneJoft.value, 10) * parseInt($(".lblGeymateVahedeKamiyooneJoftP").html(), 10);
+}
+
+if (ctlGeymateTreylereKafiyeMamooli != undefined && form.fields.GeymateTreylereKafiyeMamooli.value != '') {
+    GeymateTreylereKafiyeMamooli = parseInt(form.fields.GeymateTreylereKafiyeMamooli.value, 10) * parseInt($(".lblGeymateTreylereKafiyeMamooliP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeBedoneScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeBedoneScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeBedoneScortP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeTakScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeTakScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeTakScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeJoftScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeJoftScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeJoftScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareMamooli != undefined && form.fields.GeymateKamarShekane5MehvareMamooli.value != '') {
+    GeymateKamarShekane5MehvareMamooli = parseInt(form.fields.GeymateKamarShekane5MehvareMamooli.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareMamooliP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeBedooneScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeBedooneScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeBedooneScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeJoftScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeJoftScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeJoftScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeJoftScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeJoftScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeJoftScortP").html(), 10);
+}
+form.fields.GeymateKol.value = GeymateVahedeKhavar +
+    GeymateVahedeKamiyooneTak +
+    GeymateVahedeKamiyooneJoft +
+    GeymateTreylereKafiyeMamooli +
+    GeymateTreylereKafiyeTeraficiyeBedoneScort +
+    GeymateTreylereKafiyeTeraficiyeTakScort +
+    GeymateTreylereKafiyeTeraficiyeJoftScort +
+    GeymateKamarShekane5MehvareMamooli +
+    GeymateKamarShekane5MehvareTeraficiyeBedooneScort +
+    GeymateKamarShekane5MehvareTeraficiyeTakScort +
+    GeymateKamarShekane5MehvareTeraficiyeJoftScort +
+    GeymateKamarShekane7MehvareTeraficiyeTakScort +
+    GeymateKamarShekane7MehvareTeraficiyeJoftScort;]]></BindOnChange>
+      <InputType>open-text</InputType>
+      <InputData>{"Value":"","AutocompleteUrl":"","Mask":"","SaveToReport":true,"Readonly":false}</InputData>
+      <AutocompleteUrl />
+      <Mask />
+      <SaveToReport>True</SaveToReport>
+      <Readonly>False</Readonly>
+      <Value><![CDATA[]]></Value>
+      <IsRequired>True</IsRequired>
+      <IsActive>True</IsActive>
+      <IsEnabled>True</IsEnabled>
+      <CssClass><![CDATA[ctlEHaml , ctlGeymateTreylereKafiyeMamooliP]]></CssClass>
+      <CssStyles><![CDATA[]]></CssStyles>
+      <LabelCssClass><![CDATA[lblEHaml , lblGeymateTreylereKafiyeMamooliP]]></LabelCssClass>
+      <LabelCssStyles><![CDATA[]]></LabelCssStyles>
+      <CustomValidator1>Positive Integer Number</CustomValidator1>
+      <CustomValidator1JsName>numberPositive6678</CustomValidator1JsName>
+      <CustomValidator2 />
+      <ValidationGroup />
+      <GroupValidator />
+      <SaveToUserProfile>False</SaveToUserProfile>
+      <DisableAutocomplete>False</DisableAutocomplete>
+      <ViewOrder>3</ViewOrder>
+      <RowIndex>3</RowIndex>
+      <ColSpan>5</ColSpan>
+      <ColOffset>7</ColOffset>
+    </Field>
+    <Field>
+      <Id><![CDATA[1414]]></Id>
+      <Title><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="تریلرکفی ترافیکی بدون اسکورت")] دستگاه تریلرکفی ترافیکی بدون اسکورت- قیمت واحد:]]></Title>
+      <TitleTokenized><![CDATA[ دستگاه تریلرکفی ترافیکی بدون اسکورت- قیمت واحد:]]></TitleTokenized>
+      <ShortDescTokenized><![CDATA[]]></ShortDescTokenized>
+      <OverrideName>GeymateTreylereKafiyeTeraficiyeBedoneScort</OverrideName>
+      <Name>GeymateTreylereKafiyeTeraficiyeBedoneScort</Name>
+      <ShortDesc><![CDATA[]]></ShortDesc>
+      <HelpText><![CDATA[]]></HelpText>
+      <ShowCondition><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="تریلرکفی ترافیکی بدون اسکورت")] > 0]]></ShowCondition>
+      <ValidationCondition><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="تریلرکفی ترافیکی بدون اسکورت")] > 0]]></ValidationCondition>
+      <CanValidate><![CDATA[False]]></CanValidate>
+      <BindShow><![CDATA[]]></BindShow>
+      <BindPreserveLayout><![CDATA[False]]></BindPreserveLayout>
+      <BindValue><![CDATA[]]></BindValue>
+      <BindOnChange><![CDATA[var GeymateVahedeKhavar = 0;
+var GeymateVahedeKamiyooneTak = 0;
+var GeymateVahedeKamiyooneJoft = 0;
+var GeymateTreylereKafiyeMamooli = 0;
+var GeymateTreylereKafiyeTeraficiyeBedoneScort = 0;
+var GeymateTreylereKafiyeTeraficiyeTakScort = 0;
+var GeymateTreylereKafiyeTeraficiyeJoftScort = 0;
+var GeymateKamarShekane5MehvareMamooli = 0;
+var GeymateKamarShekane5MehvareTeraficiyeBedooneScort = 0;
+var GeymateKamarShekane5MehvareTeraficiyeTakScort = 0;
+var GeymateKamarShekane5MehvareTeraficiyeJoftScort = 0;
+var GeymateKamarShekane7MehvareTeraficiyeTakScort = 0;
+var GeymateKamarShekane7MehvareTeraficiyeJoftScort = 0;
+
+var ctlGeymateVahedeKhavar = form.fields.GeymateVahedeKhavar;
+var ctlGeymateVahedeKamiyooneTak = form.fields.GeymateVahedeKamiyooneTak;
+var ctlGeymateVahedeKamiyooneJoft = form.fields.GeymateVahedeKamiyooneJoft;
+var ctlGeymateTreylereKafiyeMamooli = form.fields.GeymateTreylereKafiyeMamooli;
+var ctlGeymateTreylereKafiyeTeraficiyeBedoneScort = form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort;
+var ctlGeymateTreylereKafiyeTeraficiyeTakScort = form.fields.GeymateTreylereKafiyeTeraficiyeTakScort;
+var ctlGeymateTreylereKafiyeTeraficiyeJoftScort = form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort;
+var ctlGeymateKamarShekane5MehvareMamooli = form.fields.GeymateKamarShekane5MehvareMamooli;
+var ctlGeymateKamarShekane5MehvareTeraficiyeBedooneScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort;
+var ctlGeymateKamarShekane5MehvareTeraficiyeTakScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort;
+var ctlGeymateKamarShekane5MehvareTeraficiyeJoftScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort;
+var ctlGeymateKamarShekane7MehvareTeraficiyeTakScort = form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort;
+var ctlGeymateKamarShekane7MehvareTeraficiyeJoftScort = form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort;
+
+if (ctlGeymateVahedeKhavar != undefined && form.fields.GeymateVahedeKhavar.value != '') {
+    GeymateVahedeKhavar = parseInt(form.fields.GeymateVahedeKhavar.value, 10) * parseInt($(".lblGeymateVahedKhavarP").html(), 10);
+}
+
+if (ctlGeymateVahedeKamiyooneTak != undefined && form.fields.GeymateVahedeKamiyooneTak.value != '') {
+    GeymateVahedeKamiyooneTak = parseInt(form.fields.GeymateVahedeKamiyooneTak.value, 10) * parseInt($(".lblGeymateVahedeKamiyooneTakP").html(), 10);
+}
+if (ctlGeymateVahedeKamiyooneJoft != undefined && form.fields.GeymateVahedeKamiyooneJoft.value != '') {
+    GeymateVahedeKamiyooneJoft = parseInt(form.fields.GeymateVahedeKamiyooneJoft.value, 10) * parseInt($(".lblGeymateVahedeKamiyooneJoftP").html(), 10);
+}
+
+if (ctlGeymateTreylereKafiyeMamooli != undefined && form.fields.GeymateTreylereKafiyeMamooli.value != '') {
+    GeymateTreylereKafiyeMamooli = parseInt(form.fields.GeymateTreylereKafiyeMamooli.value, 10) * parseInt($(".lblGeymateTreylereKafiyeMamooliP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeBedoneScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeBedoneScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeBedoneScortP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeTakScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeTakScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeTakScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeJoftScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeJoftScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeJoftScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareMamooli != undefined && form.fields.GeymateKamarShekane5MehvareMamooli.value != '') {
+    GeymateKamarShekane5MehvareMamooli = parseInt(form.fields.GeymateKamarShekane5MehvareMamooli.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareMamooliP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeBedooneScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeBedooneScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeBedooneScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeJoftScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeJoftScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeJoftScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeJoftScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeJoftScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeJoftScortP").html(), 10);
+}
+form.fields.GeymateKol.value = GeymateVahedeKhavar +
+    GeymateVahedeKamiyooneTak +
+    GeymateVahedeKamiyooneJoft +
+    GeymateTreylereKafiyeMamooli +
+    GeymateTreylereKafiyeTeraficiyeBedoneScort +
+    GeymateTreylereKafiyeTeraficiyeTakScort +
+    GeymateTreylereKafiyeTeraficiyeJoftScort +
+    GeymateKamarShekane5MehvareMamooli +
+    GeymateKamarShekane5MehvareTeraficiyeBedooneScort +
+    GeymateKamarShekane5MehvareTeraficiyeTakScort +
+    GeymateKamarShekane5MehvareTeraficiyeJoftScort +
+    GeymateKamarShekane7MehvareTeraficiyeTakScort +
+    GeymateKamarShekane7MehvareTeraficiyeJoftScort;]]></BindOnChange>
+      <InputType>open-text</InputType>
+      <InputData>{"Value":"","AutocompleteUrl":"","Mask":"","SaveToReport":true,"Readonly":false}</InputData>
+      <AutocompleteUrl />
+      <Mask />
+      <SaveToReport>True</SaveToReport>
+      <Readonly>False</Readonly>
+      <Value><![CDATA[]]></Value>
+      <IsRequired>True</IsRequired>
+      <IsActive>True</IsActive>
+      <IsEnabled>True</IsEnabled>
+      <CssClass><![CDATA[ctlEHaml , ctlGeymateTreylereKafiyeTeraficiyeBedoneScortP]]></CssClass>
+      <CssStyles><![CDATA[]]></CssStyles>
+      <LabelCssClass><![CDATA[lblEHaml , lblGeymateTreylereKafiyeTeraficiyeBedoneScortP]]></LabelCssClass>
+      <LabelCssStyles><![CDATA[]]></LabelCssStyles>
+      <CustomValidator1>Positive Integer Number</CustomValidator1>
+      <CustomValidator1JsName>numberPositive6678</CustomValidator1JsName>
+      <CustomValidator2 />
+      <ValidationGroup />
+      <GroupValidator />
+      <SaveToUserProfile>False</SaveToUserProfile>
+      <DisableAutocomplete>False</DisableAutocomplete>
+      <ViewOrder>4</ViewOrder>
+      <RowIndex>4</RowIndex>
+      <ColSpan>5</ColSpan>
+      <ColOffset>7</ColOffset>
+    </Field>
+    <Field>
+      <Id><![CDATA[1415]]></Id>
+      <Title><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="تریلرکفی ترافیکی تک اسکورت")] دستگاه تریلرکفی ترافیکی تک اسکورت- قیمت واحد:]]></Title>
+      <TitleTokenized><![CDATA[ دستگاه تریلرکفی ترافیکی تک اسکورت- قیمت واحد:]]></TitleTokenized>
+      <ShortDescTokenized><![CDATA[]]></ShortDescTokenized>
+      <OverrideName>GeymateTreylereKafiyeTeraficiyeTakScort</OverrideName>
+      <Name>GeymateTreylereKafiyeTeraficiyeTakScort</Name>
+      <ShortDesc><![CDATA[]]></ShortDesc>
+      <HelpText><![CDATA[]]></HelpText>
+      <ShowCondition><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="تریلرکفی ترافیکی تک اسکورت")] > 0]]></ShowCondition>
+      <ValidationCondition><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="تریلرکفی ترافیکی تک اسکورت")] > 0]]></ValidationCondition>
+      <CanValidate><![CDATA[False]]></CanValidate>
+      <BindShow><![CDATA[]]></BindShow>
+      <BindPreserveLayout><![CDATA[False]]></BindPreserveLayout>
+      <BindValue><![CDATA[]]></BindValue>
+      <BindOnChange><![CDATA[var GeymateVahedeKhavar = 0;
+var GeymateVahedeKamiyooneTak = 0;
+var GeymateVahedeKamiyooneJoft = 0;
+var GeymateTreylereKafiyeMamooli = 0;
+var GeymateTreylereKafiyeTeraficiyeBedoneScort = 0;
+var GeymateTreylereKafiyeTeraficiyeTakScort = 0;
+var GeymateTreylereKafiyeTeraficiyeJoftScort = 0;
+var GeymateKamarShekane5MehvareMamooli = 0;
+var GeymateKamarShekane5MehvareTeraficiyeBedooneScort = 0;
+var GeymateKamarShekane5MehvareTeraficiyeTakScort = 0;
+var GeymateKamarShekane5MehvareTeraficiyeJoftScort = 0;
+var GeymateKamarShekane7MehvareTeraficiyeTakScort = 0;
+var GeymateKamarShekane7MehvareTeraficiyeJoftScort = 0;
+
+var ctlGeymateVahedeKhavar = form.fields.GeymateVahedeKhavar;
+var ctlGeymateVahedeKamiyooneTak = form.fields.GeymateVahedeKamiyooneTak;
+var ctlGeymateVahedeKamiyooneJoft = form.fields.GeymateVahedeKamiyooneJoft;
+var ctlGeymateTreylereKafiyeMamooli = form.fields.GeymateTreylereKafiyeMamooli;
+var ctlGeymateTreylereKafiyeTeraficiyeBedoneScort = form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort;
+var ctlGeymateTreylereKafiyeTeraficiyeTakScort = form.fields.GeymateTreylereKafiyeTeraficiyeTakScort;
+var ctlGeymateTreylereKafiyeTeraficiyeJoftScort = form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort;
+var ctlGeymateKamarShekane5MehvareMamooli = form.fields.GeymateKamarShekane5MehvareMamooli;
+var ctlGeymateKamarShekane5MehvareTeraficiyeBedooneScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort;
+var ctlGeymateKamarShekane5MehvareTeraficiyeTakScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort;
+var ctlGeymateKamarShekane5MehvareTeraficiyeJoftScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort;
+var ctlGeymateKamarShekane7MehvareTeraficiyeTakScort = form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort;
+var ctlGeymateKamarShekane7MehvareTeraficiyeJoftScort = form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort;
+
+if (ctlGeymateVahedeKhavar != undefined && form.fields.GeymateVahedeKhavar.value != '') {
+    GeymateVahedeKhavar = parseInt(form.fields.GeymateVahedeKhavar.value, 10) * parseInt($(".lblGeymateVahedKhavarP").html(), 10);
+}
+
+if (ctlGeymateVahedeKamiyooneTak != undefined && form.fields.GeymateVahedeKamiyooneTak.value != '') {
+    GeymateVahedeKamiyooneTak = parseInt(form.fields.GeymateVahedeKamiyooneTak.value, 10) * parseInt($(".lblGeymateVahedeKamiyooneTakP").html(), 10);
+}
+if (ctlGeymateVahedeKamiyooneJoft != undefined && form.fields.GeymateVahedeKamiyooneJoft.value != '') {
+    GeymateVahedeKamiyooneJoft = parseInt(form.fields.GeymateVahedeKamiyooneJoft.value, 10) * parseInt($(".lblGeymateVahedeKamiyooneJoftP").html(), 10);
+}
+
+if (ctlGeymateTreylereKafiyeMamooli != undefined && form.fields.GeymateTreylereKafiyeMamooli.value != '') {
+    GeymateTreylereKafiyeMamooli = parseInt(form.fields.GeymateTreylereKafiyeMamooli.value, 10) * parseInt($(".lblGeymateTreylereKafiyeMamooliP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeBedoneScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeBedoneScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeBedoneScortP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeTakScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeTakScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeTakScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeJoftScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeJoftScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeJoftScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareMamooli != undefined && form.fields.GeymateKamarShekane5MehvareMamooli.value != '') {
+    GeymateKamarShekane5MehvareMamooli = parseInt(form.fields.GeymateKamarShekane5MehvareMamooli.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareMamooliP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeBedooneScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeBedooneScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeBedooneScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeJoftScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeJoftScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeJoftScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeJoftScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeJoftScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeJoftScortP").html(), 10);
+}
+form.fields.GeymateKol.value = GeymateVahedeKhavar +
+    GeymateVahedeKamiyooneTak +
+    GeymateVahedeKamiyooneJoft +
+    GeymateTreylereKafiyeMamooli +
+    GeymateTreylereKafiyeTeraficiyeBedoneScort +
+    GeymateTreylereKafiyeTeraficiyeTakScort +
+    GeymateTreylereKafiyeTeraficiyeJoftScort +
+    GeymateKamarShekane5MehvareMamooli +
+    GeymateKamarShekane5MehvareTeraficiyeBedooneScort +
+    GeymateKamarShekane5MehvareTeraficiyeTakScort +
+    GeymateKamarShekane5MehvareTeraficiyeJoftScort +
+    GeymateKamarShekane7MehvareTeraficiyeTakScort +
+    GeymateKamarShekane7MehvareTeraficiyeJoftScort;]]></BindOnChange>
+      <InputType>open-text</InputType>
+      <InputData>{"Value":"","AutocompleteUrl":"","Mask":"","SaveToReport":true,"Readonly":false}</InputData>
+      <AutocompleteUrl />
+      <Mask />
+      <SaveToReport>True</SaveToReport>
+      <Readonly>False</Readonly>
+      <Value><![CDATA[]]></Value>
+      <IsRequired>True</IsRequired>
+      <IsActive>True</IsActive>
+      <IsEnabled>True</IsEnabled>
+      <CssClass><![CDATA[ctlEHaml , ctlGeymateTreylereKafiyeTeraficiyeTakScortP]]></CssClass>
+      <CssStyles><![CDATA[]]></CssStyles>
+      <LabelCssClass><![CDATA[lblEHaml , lblGeymateTreylereKafiyeTeraficiyeTakScortP]]></LabelCssClass>
+      <LabelCssStyles><![CDATA[]]></LabelCssStyles>
+      <CustomValidator1>Positive Integer Number</CustomValidator1>
+      <CustomValidator1JsName>numberPositive6678</CustomValidator1JsName>
+      <CustomValidator2 />
+      <ValidationGroup />
+      <GroupValidator />
+      <SaveToUserProfile>False</SaveToUserProfile>
+      <DisableAutocomplete>False</DisableAutocomplete>
+      <ViewOrder>5</ViewOrder>
+      <RowIndex>5</RowIndex>
+      <ColSpan>5</ColSpan>
+      <ColOffset>7</ColOffset>
+    </Field>
+    <Field>
+      <Id><![CDATA[1416]]></Id>
+      <Title><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="تریلرکفی ترافیکی جفت اسکورت")] دستگاه تریلرکفی ترافیکی جفت اسکورت- قیمت واحد:]]></Title>
+      <TitleTokenized><![CDATA[ دستگاه تریلرکفی ترافیکی جفت اسکورت- قیمت واحد:]]></TitleTokenized>
+      <ShortDescTokenized><![CDATA[]]></ShortDescTokenized>
+      <OverrideName>GeymateTreylereKafiyeTeraficiyeJoftScort</OverrideName>
+      <Name>GeymateTreylereKafiyeTeraficiyeJoftScort</Name>
+      <ShortDesc><![CDATA[]]></ShortDesc>
+      <HelpText><![CDATA[]]></HelpText>
+      <ShowCondition><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="تریلرکفی ترافیکی جفت اسکورت")] > 0]]></ShowCondition>
+      <ValidationCondition><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="تریلرکفی ترافیکی جفت اسکورت")] > 0]]></ValidationCondition>
+      <CanValidate><![CDATA[False]]></CanValidate>
+      <BindShow><![CDATA[]]></BindShow>
+      <BindPreserveLayout><![CDATA[False]]></BindPreserveLayout>
+      <BindValue><![CDATA[]]></BindValue>
+      <BindOnChange><![CDATA[var GeymateVahedeKhavar = 0;
+var GeymateVahedeKamiyooneTak = 0;
+var GeymateVahedeKamiyooneJoft = 0;
+var GeymateTreylereKafiyeMamooli = 0;
+var GeymateTreylereKafiyeTeraficiyeBedoneScort = 0;
+var GeymateTreylereKafiyeTeraficiyeTakScort = 0;
+var GeymateTreylereKafiyeTeraficiyeJoftScort = 0;
+var GeymateKamarShekane5MehvareMamooli = 0;
+var GeymateKamarShekane5MehvareTeraficiyeBedooneScort = 0;
+var GeymateKamarShekane5MehvareTeraficiyeTakScort = 0;
+var GeymateKamarShekane5MehvareTeraficiyeJoftScort = 0;
+var GeymateKamarShekane7MehvareTeraficiyeTakScort = 0;
+var GeymateKamarShekane7MehvareTeraficiyeJoftScort = 0;
+
+var ctlGeymateVahedeKhavar = form.fields.GeymateVahedeKhavar;
+var ctlGeymateVahedeKamiyooneTak = form.fields.GeymateVahedeKamiyooneTak;
+var ctlGeymateVahedeKamiyooneJoft = form.fields.GeymateVahedeKamiyooneJoft;
+var ctlGeymateTreylereKafiyeMamooli = form.fields.GeymateTreylereKafiyeMamooli;
+var ctlGeymateTreylereKafiyeTeraficiyeBedoneScort = form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort;
+var ctlGeymateTreylereKafiyeTeraficiyeTakScort = form.fields.GeymateTreylereKafiyeTeraficiyeTakScort;
+var ctlGeymateTreylereKafiyeTeraficiyeJoftScort = form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort;
+var ctlGeymateKamarShekane5MehvareMamooli = form.fields.GeymateKamarShekane5MehvareMamooli;
+var ctlGeymateKamarShekane5MehvareTeraficiyeBedooneScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort;
+var ctlGeymateKamarShekane5MehvareTeraficiyeTakScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort;
+var ctlGeymateKamarShekane5MehvareTeraficiyeJoftScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort;
+var ctlGeymateKamarShekane7MehvareTeraficiyeTakScort = form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort;
+var ctlGeymateKamarShekane7MehvareTeraficiyeJoftScort = form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort;
+
+if (ctlGeymateVahedeKhavar != undefined && form.fields.GeymateVahedeKhavar.value != '') {
+    GeymateVahedeKhavar = parseInt(form.fields.GeymateVahedeKhavar.value, 10) * parseInt($(".lblGeymateVahedKhavarP").html(), 10);
+}
+
+if (ctlGeymateVahedeKamiyooneTak != undefined && form.fields.GeymateVahedeKamiyooneTak.value != '') {
+    GeymateVahedeKamiyooneTak = parseInt(form.fields.GeymateVahedeKamiyooneTak.value, 10) * parseInt($(".lblGeymateVahedeKamiyooneTakP").html(), 10);
+}
+if (ctlGeymateVahedeKamiyooneJoft != undefined && form.fields.GeymateVahedeKamiyooneJoft.value != '') {
+    GeymateVahedeKamiyooneJoft = parseInt(form.fields.GeymateVahedeKamiyooneJoft.value, 10) * parseInt($(".lblGeymateVahedeKamiyooneJoftP").html(), 10);
+}
+
+if (ctlGeymateTreylereKafiyeMamooli != undefined && form.fields.GeymateTreylereKafiyeMamooli.value != '') {
+    GeymateTreylereKafiyeMamooli = parseInt(form.fields.GeymateTreylereKafiyeMamooli.value, 10) * parseInt($(".lblGeymateTreylereKafiyeMamooliP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeBedoneScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeBedoneScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeBedoneScortP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeTakScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeTakScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeTakScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeJoftScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeJoftScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeJoftScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareMamooli != undefined && form.fields.GeymateKamarShekane5MehvareMamooli.value != '') {
+    GeymateKamarShekane5MehvareMamooli = parseInt(form.fields.GeymateKamarShekane5MehvareMamooli.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareMamooliP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeBedooneScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeBedooneScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeBedooneScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeJoftScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeJoftScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeJoftScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeJoftScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeJoftScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeJoftScortP").html(), 10);
+}
+form.fields.GeymateKol.value = GeymateVahedeKhavar +
+    GeymateVahedeKamiyooneTak +
+    GeymateVahedeKamiyooneJoft +
+    GeymateTreylereKafiyeMamooli +
+    GeymateTreylereKafiyeTeraficiyeBedoneScort +
+    GeymateTreylereKafiyeTeraficiyeTakScort +
+    GeymateTreylereKafiyeTeraficiyeJoftScort +
+    GeymateKamarShekane5MehvareMamooli +
+    GeymateKamarShekane5MehvareTeraficiyeBedooneScort +
+    GeymateKamarShekane5MehvareTeraficiyeTakScort +
+    GeymateKamarShekane5MehvareTeraficiyeJoftScort +
+    GeymateKamarShekane7MehvareTeraficiyeTakScort +
+    GeymateKamarShekane7MehvareTeraficiyeJoftScort;]]></BindOnChange>
+      <InputType>open-text</InputType>
+      <InputData>{"Value":"","AutocompleteUrl":"","Mask":"","SaveToReport":true,"Readonly":false}</InputData>
+      <AutocompleteUrl />
+      <Mask />
+      <SaveToReport>True</SaveToReport>
+      <Readonly>False</Readonly>
+      <Value><![CDATA[]]></Value>
+      <IsRequired>True</IsRequired>
+      <IsActive>True</IsActive>
+      <IsEnabled>True</IsEnabled>
+      <CssClass><![CDATA[ctlEHaml , ctlGeymateTreylereKafiyeTeraficiyeJoftScortP]]></CssClass>
+      <CssStyles><![CDATA[]]></CssStyles>
+      <LabelCssClass><![CDATA[lblEHaml , lblGeymateTreylereKafiyeTeraficiyeJoftScortP]]></LabelCssClass>
+      <LabelCssStyles><![CDATA[]]></LabelCssStyles>
+      <CustomValidator1>Positive Integer Number</CustomValidator1>
+      <CustomValidator1JsName>numberPositive6678</CustomValidator1JsName>
+      <CustomValidator2 />
+      <ValidationGroup />
+      <GroupValidator />
+      <SaveToUserProfile>False</SaveToUserProfile>
+      <DisableAutocomplete>False</DisableAutocomplete>
+      <ViewOrder>6</ViewOrder>
+      <RowIndex>6</RowIndex>
+      <ColSpan>5</ColSpan>
+      <ColOffset>7</ColOffset>
+    </Field>
+    <Field>
+      <Id><![CDATA[1417]]></Id>
+      <Title><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کمرشکن 5 محور معمولی")] دستگاه کمرشکن 5 محور معمولی- قیمت واحد:]]></Title>
+      <TitleTokenized><![CDATA[ دستگاه کمرشکن 5 محور معمولی- قیمت واحد:]]></TitleTokenized>
+      <ShortDescTokenized><![CDATA[]]></ShortDescTokenized>
+      <OverrideName>GeymateKamarShekane5MehvareMamooli</OverrideName>
+      <Name>GeymateKamarShekane5MehvareMamooli</Name>
+      <ShortDesc><![CDATA[]]></ShortDesc>
+      <HelpText><![CDATA[]]></HelpText>
+      <ShowCondition><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کمرشکن 5 محور معمولی")] > 0]]></ShowCondition>
+      <ValidationCondition><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کمرشکن 5 محور معمولی")] > 0]]></ValidationCondition>
+      <CanValidate><![CDATA[False]]></CanValidate>
+      <BindShow><![CDATA[]]></BindShow>
+      <BindPreserveLayout><![CDATA[False]]></BindPreserveLayout>
+      <BindValue><![CDATA[]]></BindValue>
+      <BindOnChange><![CDATA[var GeymateVahedeKhavar = 0;
+var GeymateVahedeKamiyooneTak = 0;
+var GeymateVahedeKamiyooneJoft = 0;
+var GeymateTreylereKafiyeMamooli = 0;
+var GeymateTreylereKafiyeTeraficiyeBedoneScort = 0;
+var GeymateTreylereKafiyeTeraficiyeTakScort = 0;
+var GeymateTreylereKafiyeTeraficiyeJoftScort = 0;
+var GeymateKamarShekane5MehvareMamooli = 0;
+var GeymateKamarShekane5MehvareTeraficiyeBedooneScort = 0;
+var GeymateKamarShekane5MehvareTeraficiyeTakScort = 0;
+var GeymateKamarShekane5MehvareTeraficiyeJoftScort = 0;
+var GeymateKamarShekane7MehvareTeraficiyeTakScort = 0;
+var GeymateKamarShekane7MehvareTeraficiyeJoftScort = 0;
+
+var ctlGeymateVahedeKhavar = form.fields.GeymateVahedeKhavar;
+var ctlGeymateVahedeKamiyooneTak = form.fields.GeymateVahedeKamiyooneTak;
+var ctlGeymateVahedeKamiyooneJoft = form.fields.GeymateVahedeKamiyooneJoft;
+var ctlGeymateTreylereKafiyeMamooli = form.fields.GeymateTreylereKafiyeMamooli;
+var ctlGeymateTreylereKafiyeTeraficiyeBedoneScort = form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort;
+var ctlGeymateTreylereKafiyeTeraficiyeTakScort = form.fields.GeymateTreylereKafiyeTeraficiyeTakScort;
+var ctlGeymateTreylereKafiyeTeraficiyeJoftScort = form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort;
+var ctlGeymateKamarShekane5MehvareMamooli = form.fields.GeymateKamarShekane5MehvareMamooli;
+var ctlGeymateKamarShekane5MehvareTeraficiyeBedooneScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort;
+var ctlGeymateKamarShekane5MehvareTeraficiyeTakScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort;
+var ctlGeymateKamarShekane5MehvareTeraficiyeJoftScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort;
+var ctlGeymateKamarShekane7MehvareTeraficiyeTakScort = form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort;
+var ctlGeymateKamarShekane7MehvareTeraficiyeJoftScort = form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort;
+
+if (ctlGeymateVahedeKhavar != undefined && form.fields.GeymateVahedeKhavar.value != '') {
+    GeymateVahedeKhavar = parseInt(form.fields.GeymateVahedeKhavar.value, 10) * parseInt($(".lblGeymateVahedKhavarP").html(), 10);
+}
+
+if (ctlGeymateVahedeKamiyooneTak != undefined && form.fields.GeymateVahedeKamiyooneTak.value != '') {
+    GeymateVahedeKamiyooneTak = parseInt(form.fields.GeymateVahedeKamiyooneTak.value, 10) * parseInt($(".lblGeymateVahedeKamiyooneTakP").html(), 10);
+}
+if (ctlGeymateVahedeKamiyooneJoft != undefined && form.fields.GeymateVahedeKamiyooneJoft.value != '') {
+    GeymateVahedeKamiyooneJoft = parseInt(form.fields.GeymateVahedeKamiyooneJoft.value, 10) * parseInt($(".lblGeymateVahedeKamiyooneJoftP").html(), 10);
+}
+
+if (ctlGeymateTreylereKafiyeMamooli != undefined && form.fields.GeymateTreylereKafiyeMamooli.value != '') {
+    GeymateTreylereKafiyeMamooli = parseInt(form.fields.GeymateTreylereKafiyeMamooli.value, 10) * parseInt($(".lblGeymateTreylereKafiyeMamooliP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeBedoneScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeBedoneScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeBedoneScortP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeTakScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeTakScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeTakScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeJoftScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeJoftScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeJoftScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareMamooli != undefined && form.fields.GeymateKamarShekane5MehvareMamooli.value != '') {
+    GeymateKamarShekane5MehvareMamooli = parseInt(form.fields.GeymateKamarShekane5MehvareMamooli.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareMamooliP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeBedooneScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeBedooneScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeBedooneScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeJoftScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeJoftScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeJoftScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeJoftScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeJoftScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeJoftScortP").html(), 10);
+}
+form.fields.GeymateKol.value = GeymateVahedeKhavar +
+    GeymateVahedeKamiyooneTak +
+    GeymateVahedeKamiyooneJoft +
+    GeymateTreylereKafiyeMamooli +
+    GeymateTreylereKafiyeTeraficiyeBedoneScort +
+    GeymateTreylereKafiyeTeraficiyeTakScort +
+    GeymateTreylereKafiyeTeraficiyeJoftScort +
+    GeymateKamarShekane5MehvareMamooli +
+    GeymateKamarShekane5MehvareTeraficiyeBedooneScort +
+    GeymateKamarShekane5MehvareTeraficiyeTakScort +
+    GeymateKamarShekane5MehvareTeraficiyeJoftScort +
+    GeymateKamarShekane7MehvareTeraficiyeTakScort +
+    GeymateKamarShekane7MehvareTeraficiyeJoftScort;]]></BindOnChange>
+      <InputType>open-text</InputType>
+      <InputData>{"Value":"","AutocompleteUrl":"","Mask":"","SaveToReport":true,"Readonly":false}</InputData>
+      <AutocompleteUrl />
+      <Mask />
+      <SaveToReport>True</SaveToReport>
+      <Readonly>False</Readonly>
+      <Value><![CDATA[]]></Value>
+      <IsRequired>True</IsRequired>
+      <IsActive>True</IsActive>
+      <IsEnabled>True</IsEnabled>
+      <CssClass><![CDATA[ctlEHaml , ctlGeymateKamarShekane5MehvareMamooliP]]></CssClass>
+      <CssStyles><![CDATA[]]></CssStyles>
+      <LabelCssClass><![CDATA[lblEHaml , lblGeymateKamarShekane5MehvareMamooliP]]></LabelCssClass>
+      <LabelCssStyles><![CDATA[]]></LabelCssStyles>
+      <CustomValidator1>Positive Integer Number</CustomValidator1>
+      <CustomValidator1JsName>numberPositive6678</CustomValidator1JsName>
+      <CustomValidator2 />
+      <ValidationGroup />
+      <GroupValidator />
+      <SaveToUserProfile>False</SaveToUserProfile>
+      <DisableAutocomplete>False</DisableAutocomplete>
+      <ViewOrder>7</ViewOrder>
+      <RowIndex>7</RowIndex>
+      <ColSpan>5</ColSpan>
+      <ColOffset>7</ColOffset>
+    </Field>
+    <Field>
+      <Id><![CDATA[1418]]></Id>
+      <Title><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کمرشکن 5 محور ترافیکی بدون اسکورت")] دستگاه کمرشکن 5 محور ترافیکی بدون اسکورت- قیمت واحد:]]></Title>
+      <TitleTokenized><![CDATA[ دستگاه کمرشکن 5 محور ترافیکی بدون اسکورت- قیمت واحد:]]></TitleTokenized>
+      <ShortDescTokenized><![CDATA[]]></ShortDescTokenized>
+      <OverrideName>GeymateKamarShekane5MehvareTeraficiyeBedooneScort</OverrideName>
+      <Name>GeymateKamarShekane5MehvareTeraficiyeBedooneScort</Name>
+      <ShortDesc><![CDATA[]]></ShortDesc>
+      <HelpText><![CDATA[]]></HelpText>
+      <ShowCondition><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کمرشکن 5 محور ترافیکی بدون اسکورت")] > 0]]></ShowCondition>
+      <ValidationCondition><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کمرشکن 5 محور ترافیکی بدون اسکورت")] > 0]]></ValidationCondition>
+      <CanValidate><![CDATA[False]]></CanValidate>
+      <BindShow><![CDATA[]]></BindShow>
+      <BindPreserveLayout><![CDATA[False]]></BindPreserveLayout>
+      <BindValue><![CDATA[]]></BindValue>
+      <BindOnChange><![CDATA[var GeymateVahedeKhavar = 0;
+var GeymateVahedeKamiyooneTak = 0;
+var GeymateVahedeKamiyooneJoft = 0;
+var GeymateTreylereKafiyeMamooli = 0;
+var GeymateTreylereKafiyeTeraficiyeBedoneScort = 0;
+var GeymateTreylereKafiyeTeraficiyeTakScort = 0;
+var GeymateTreylereKafiyeTeraficiyeJoftScort = 0;
+var GeymateKamarShekane5MehvareMamooli = 0;
+var GeymateKamarShekane5MehvareTeraficiyeBedooneScort = 0;
+var GeymateKamarShekane5MehvareTeraficiyeTakScort = 0;
+var GeymateKamarShekane5MehvareTeraficiyeJoftScort = 0;
+var GeymateKamarShekane7MehvareTeraficiyeTakScort = 0;
+var GeymateKamarShekane7MehvareTeraficiyeJoftScort = 0;
+
+var ctlGeymateVahedeKhavar = form.fields.GeymateVahedeKhavar;
+var ctlGeymateVahedeKamiyooneTak = form.fields.GeymateVahedeKamiyooneTak;
+var ctlGeymateVahedeKamiyooneJoft = form.fields.GeymateVahedeKamiyooneJoft;
+var ctlGeymateTreylereKafiyeMamooli = form.fields.GeymateTreylereKafiyeMamooli;
+var ctlGeymateTreylereKafiyeTeraficiyeBedoneScort = form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort;
+var ctlGeymateTreylereKafiyeTeraficiyeTakScort = form.fields.GeymateTreylereKafiyeTeraficiyeTakScort;
+var ctlGeymateTreylereKafiyeTeraficiyeJoftScort = form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort;
+var ctlGeymateKamarShekane5MehvareMamooli = form.fields.GeymateKamarShekane5MehvareMamooli;
+var ctlGeymateKamarShekane5MehvareTeraficiyeBedooneScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort;
+var ctlGeymateKamarShekane5MehvareTeraficiyeTakScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort;
+var ctlGeymateKamarShekane5MehvareTeraficiyeJoftScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort;
+var ctlGeymateKamarShekane7MehvareTeraficiyeTakScort = form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort;
+var ctlGeymateKamarShekane7MehvareTeraficiyeJoftScort = form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort;
+
+if (ctlGeymateVahedeKhavar != undefined && form.fields.GeymateVahedeKhavar.value != '') {
+    GeymateVahedeKhavar = parseInt(form.fields.GeymateVahedeKhavar.value, 10) * parseInt($(".lblGeymateVahedKhavarP").html(), 10);
+}
+
+if (ctlGeymateVahedeKamiyooneTak != undefined && form.fields.GeymateVahedeKamiyooneTak.value != '') {
+    GeymateVahedeKamiyooneTak = parseInt(form.fields.GeymateVahedeKamiyooneTak.value, 10) * parseInt($(".lblGeymateVahedeKamiyooneTakP").html(), 10);
+}
+if (ctlGeymateVahedeKamiyooneJoft != undefined && form.fields.GeymateVahedeKamiyooneJoft.value != '') {
+    GeymateVahedeKamiyooneJoft = parseInt(form.fields.GeymateVahedeKamiyooneJoft.value, 10) * parseInt($(".lblGeymateVahedeKamiyooneJoftP").html(), 10);
+}
+
+if (ctlGeymateTreylereKafiyeMamooli != undefined && form.fields.GeymateTreylereKafiyeMamooli.value != '') {
+    GeymateTreylereKafiyeMamooli = parseInt(form.fields.GeymateTreylereKafiyeMamooli.value, 10) * parseInt($(".lblGeymateTreylereKafiyeMamooliP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeBedoneScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeBedoneScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeBedoneScortP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeTakScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeTakScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeTakScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeJoftScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeJoftScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeJoftScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareMamooli != undefined && form.fields.GeymateKamarShekane5MehvareMamooli.value != '') {
+    GeymateKamarShekane5MehvareMamooli = parseInt(form.fields.GeymateKamarShekane5MehvareMamooli.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareMamooliP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeBedooneScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeBedooneScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeBedooneScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeJoftScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeJoftScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeJoftScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeJoftScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeJoftScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeJoftScortP").html(), 10);
+}
+form.fields.GeymateKol.value = GeymateVahedeKhavar +
+    GeymateVahedeKamiyooneTak +
+    GeymateVahedeKamiyooneJoft +
+    GeymateTreylereKafiyeMamooli +
+    GeymateTreylereKafiyeTeraficiyeBedoneScort +
+    GeymateTreylereKafiyeTeraficiyeTakScort +
+    GeymateTreylereKafiyeTeraficiyeJoftScort +
+    GeymateKamarShekane5MehvareMamooli +
+    GeymateKamarShekane5MehvareTeraficiyeBedooneScort +
+    GeymateKamarShekane5MehvareTeraficiyeTakScort +
+    GeymateKamarShekane5MehvareTeraficiyeJoftScort +
+    GeymateKamarShekane7MehvareTeraficiyeTakScort +
+    GeymateKamarShekane7MehvareTeraficiyeJoftScort;]]></BindOnChange>
+      <InputType>open-text</InputType>
+      <InputData>{"Value":"","AutocompleteUrl":"","Mask":"","SaveToReport":true,"Readonly":false}</InputData>
+      <AutocompleteUrl />
+      <Mask />
+      <SaveToReport>True</SaveToReport>
+      <Readonly>False</Readonly>
+      <Value><![CDATA[]]></Value>
+      <IsRequired>True</IsRequired>
+      <IsActive>True</IsActive>
+      <IsEnabled>True</IsEnabled>
+      <CssClass><![CDATA[ctlEHaml , ctlGeymateKamarShekane5MehvareTeraficiyeBedooneScortP]]></CssClass>
+      <CssStyles><![CDATA[]]></CssStyles>
+      <LabelCssClass><![CDATA[lblEHaml , lblGeymateKamarShekane5MehvareTeraficiyeBedooneScortP]]></LabelCssClass>
+      <LabelCssStyles><![CDATA[]]></LabelCssStyles>
+      <CustomValidator1>Positive Integer Number</CustomValidator1>
+      <CustomValidator1JsName>numberPositive6678</CustomValidator1JsName>
+      <CustomValidator2 />
+      <ValidationGroup />
+      <GroupValidator />
+      <SaveToUserProfile>False</SaveToUserProfile>
+      <DisableAutocomplete>False</DisableAutocomplete>
+      <ViewOrder>8</ViewOrder>
+      <RowIndex>8</RowIndex>
+      <ColSpan>5</ColSpan>
+      <ColOffset>7</ColOffset>
+    </Field>
+    <Field>
+      <Id><![CDATA[1419]]></Id>
+      <Title><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کمرشکن 5 محور ترافیکی تک اسکورت")] دستگاه کمرشکن 5 محور ترافیکی تک اسکورت- قیمت واحد:]]></Title>
+      <TitleTokenized><![CDATA[ دستگاه کمرشکن 5 محور ترافیکی تک اسکورت- قیمت واحد:]]></TitleTokenized>
+      <ShortDescTokenized><![CDATA[]]></ShortDescTokenized>
+      <OverrideName>GeymateKamarShekane5MehvareTeraficiyeTakScort</OverrideName>
+      <Name>GeymateKamarShekane5MehvareTeraficiyeTakScort</Name>
+      <ShortDesc><![CDATA[]]></ShortDesc>
+      <HelpText><![CDATA[]]></HelpText>
+      <ShowCondition><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کمرشکن 5 محور ترافیکی تک اسکورت")] > 0]]></ShowCondition>
+      <ValidationCondition><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کمرشکن 5 محور ترافیکی تک اسکورت")] > 0]]></ValidationCondition>
+      <CanValidate><![CDATA[False]]></CanValidate>
+      <BindShow><![CDATA[]]></BindShow>
+      <BindPreserveLayout><![CDATA[False]]></BindPreserveLayout>
+      <BindValue><![CDATA[]]></BindValue>
+      <BindOnChange><![CDATA[var GeymateVahedeKhavar = 0;
+var GeymateVahedeKamiyooneTak = 0;
+var GeymateVahedeKamiyooneJoft = 0;
+var GeymateTreylereKafiyeMamooli = 0;
+var GeymateTreylereKafiyeTeraficiyeBedoneScort = 0;
+var GeymateTreylereKafiyeTeraficiyeTakScort = 0;
+var GeymateTreylereKafiyeTeraficiyeJoftScort = 0;
+var GeymateKamarShekane5MehvareMamooli = 0;
+var GeymateKamarShekane5MehvareTeraficiyeBedooneScort = 0;
+var GeymateKamarShekane5MehvareTeraficiyeTakScort = 0;
+var GeymateKamarShekane5MehvareTeraficiyeJoftScort = 0;
+var GeymateKamarShekane7MehvareTeraficiyeTakScort = 0;
+var GeymateKamarShekane7MehvareTeraficiyeJoftScort = 0;
+
+var ctlGeymateVahedeKhavar = form.fields.GeymateVahedeKhavar;
+var ctlGeymateVahedeKamiyooneTak = form.fields.GeymateVahedeKamiyooneTak;
+var ctlGeymateVahedeKamiyooneJoft = form.fields.GeymateVahedeKamiyooneJoft;
+var ctlGeymateTreylereKafiyeMamooli = form.fields.GeymateTreylereKafiyeMamooli;
+var ctlGeymateTreylereKafiyeTeraficiyeBedoneScort = form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort;
+var ctlGeymateTreylereKafiyeTeraficiyeTakScort = form.fields.GeymateTreylereKafiyeTeraficiyeTakScort;
+var ctlGeymateTreylereKafiyeTeraficiyeJoftScort = form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort;
+var ctlGeymateKamarShekane5MehvareMamooli = form.fields.GeymateKamarShekane5MehvareMamooli;
+var ctlGeymateKamarShekane5MehvareTeraficiyeBedooneScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort;
+var ctlGeymateKamarShekane5MehvareTeraficiyeTakScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort;
+var ctlGeymateKamarShekane5MehvareTeraficiyeJoftScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort;
+var ctlGeymateKamarShekane7MehvareTeraficiyeTakScort = form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort;
+var ctlGeymateKamarShekane7MehvareTeraficiyeJoftScort = form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort;
+
+if (ctlGeymateVahedeKhavar != undefined && form.fields.GeymateVahedeKhavar.value != '') {
+    GeymateVahedeKhavar = parseInt(form.fields.GeymateVahedeKhavar.value, 10) * parseInt($(".lblGeymateVahedKhavarP").html(), 10);
+}
+
+if (ctlGeymateVahedeKamiyooneTak != undefined && form.fields.GeymateVahedeKamiyooneTak.value != '') {
+    GeymateVahedeKamiyooneTak = parseInt(form.fields.GeymateVahedeKamiyooneTak.value, 10) * parseInt($(".lblGeymateVahedeKamiyooneTakP").html(), 10);
+}
+if (ctlGeymateVahedeKamiyooneJoft != undefined && form.fields.GeymateVahedeKamiyooneJoft.value != '') {
+    GeymateVahedeKamiyooneJoft = parseInt(form.fields.GeymateVahedeKamiyooneJoft.value, 10) * parseInt($(".lblGeymateVahedeKamiyooneJoftP").html(), 10);
+}
+
+if (ctlGeymateTreylereKafiyeMamooli != undefined && form.fields.GeymateTreylereKafiyeMamooli.value != '') {
+    GeymateTreylereKafiyeMamooli = parseInt(form.fields.GeymateTreylereKafiyeMamooli.value, 10) * parseInt($(".lblGeymateTreylereKafiyeMamooliP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeBedoneScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeBedoneScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeBedoneScortP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeTakScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeTakScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeTakScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeJoftScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeJoftScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeJoftScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareMamooli != undefined && form.fields.GeymateKamarShekane5MehvareMamooli.value != '') {
+    GeymateKamarShekane5MehvareMamooli = parseInt(form.fields.GeymateKamarShekane5MehvareMamooli.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareMamooliP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeBedooneScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeBedooneScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeBedooneScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeJoftScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeJoftScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeJoftScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeJoftScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeJoftScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeJoftScortP").html(), 10);
+}
+form.fields.GeymateKol.value = GeymateVahedeKhavar +
+    GeymateVahedeKamiyooneTak +
+    GeymateVahedeKamiyooneJoft +
+    GeymateTreylereKafiyeMamooli +
+    GeymateTreylereKafiyeTeraficiyeBedoneScort +
+    GeymateTreylereKafiyeTeraficiyeTakScort +
+    GeymateTreylereKafiyeTeraficiyeJoftScort +
+    GeymateKamarShekane5MehvareMamooli +
+    GeymateKamarShekane5MehvareTeraficiyeBedooneScort +
+    GeymateKamarShekane5MehvareTeraficiyeTakScort +
+    GeymateKamarShekane5MehvareTeraficiyeJoftScort +
+    GeymateKamarShekane7MehvareTeraficiyeTakScort +
+    GeymateKamarShekane7MehvareTeraficiyeJoftScort;]]></BindOnChange>
+      <InputType>open-text</InputType>
+      <InputData>{"Value":"","AutocompleteUrl":"","Mask":"","SaveToReport":true,"Readonly":false}</InputData>
+      <AutocompleteUrl />
+      <Mask />
+      <SaveToReport>True</SaveToReport>
+      <Readonly>False</Readonly>
+      <Value><![CDATA[]]></Value>
+      <IsRequired>True</IsRequired>
+      <IsActive>True</IsActive>
+      <IsEnabled>True</IsEnabled>
+      <CssClass><![CDATA[ctlEHaml , ctlGeymateKamarShekane5MehvareTeraficiyeTakScortP]]></CssClass>
+      <CssStyles><![CDATA[]]></CssStyles>
+      <LabelCssClass><![CDATA[lblEHaml , lblGeymateKamarShekane5MehvareTeraficiyeTakScortP]]></LabelCssClass>
+      <LabelCssStyles><![CDATA[]]></LabelCssStyles>
+      <CustomValidator1>Positive Integer Number</CustomValidator1>
+      <CustomValidator1JsName>numberPositive6678</CustomValidator1JsName>
+      <CustomValidator2 />
+      <ValidationGroup />
+      <GroupValidator />
+      <SaveToUserProfile>False</SaveToUserProfile>
+      <DisableAutocomplete>False</DisableAutocomplete>
+      <ViewOrder>9</ViewOrder>
+      <RowIndex>9</RowIndex>
+      <ColSpan>5</ColSpan>
+      <ColOffset>7</ColOffset>
+    </Field>
+    <Field>
+      <Id><![CDATA[1420]]></Id>
+      <Title><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کمرشکن 5 محور ترافیکی جفت اسکورت")] دستگاه کمرشکن 5 محور ترافیکی جفت اسکورت- قیمت واحد:]]></Title>
+      <TitleTokenized><![CDATA[ دستگاه کمرشکن 5 محور ترافیکی جفت اسکورت- قیمت واحد:]]></TitleTokenized>
+      <ShortDescTokenized><![CDATA[]]></ShortDescTokenized>
+      <OverrideName>GeymateKamarShekane5MehvareTeraficiyeJoftScort</OverrideName>
+      <Name>GeymateKamarShekane5MehvareTeraficiyeJoftScort</Name>
+      <ShortDesc><![CDATA[]]></ShortDesc>
+      <HelpText><![CDATA[]]></HelpText>
+      <ShowCondition><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کمرشکن 5 محور ترافیکی جفت اسکورت")] > 0]]></ShowCondition>
+      <ValidationCondition><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کمرشکن 5 محور ترافیکی جفت اسکورت")] > 0]]></ValidationCondition>
+      <CanValidate><![CDATA[False]]></CanValidate>
+      <BindShow><![CDATA[]]></BindShow>
+      <BindPreserveLayout><![CDATA[False]]></BindPreserveLayout>
+      <BindValue><![CDATA[]]></BindValue>
+      <BindOnChange><![CDATA[var GeymateVahedeKhavar = 0;
+var GeymateVahedeKamiyooneTak = 0;
+var GeymateVahedeKamiyooneJoft = 0;
+var GeymateTreylereKafiyeMamooli = 0;
+var GeymateTreylereKafiyeTeraficiyeBedoneScort = 0;
+var GeymateTreylereKafiyeTeraficiyeTakScort = 0;
+var GeymateTreylereKafiyeTeraficiyeJoftScort = 0;
+var GeymateKamarShekane5MehvareMamooli = 0;
+var GeymateKamarShekane5MehvareTeraficiyeBedooneScort = 0;
+var GeymateKamarShekane5MehvareTeraficiyeTakScort = 0;
+var GeymateKamarShekane5MehvareTeraficiyeJoftScort = 0;
+var GeymateKamarShekane7MehvareTeraficiyeTakScort = 0;
+var GeymateKamarShekane7MehvareTeraficiyeJoftScort = 0;
+
+var ctlGeymateVahedeKhavar = form.fields.GeymateVahedeKhavar;
+var ctlGeymateVahedeKamiyooneTak = form.fields.GeymateVahedeKamiyooneTak;
+var ctlGeymateVahedeKamiyooneJoft = form.fields.GeymateVahedeKamiyooneJoft;
+var ctlGeymateTreylereKafiyeMamooli = form.fields.GeymateTreylereKafiyeMamooli;
+var ctlGeymateTreylereKafiyeTeraficiyeBedoneScort = form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort;
+var ctlGeymateTreylereKafiyeTeraficiyeTakScort = form.fields.GeymateTreylereKafiyeTeraficiyeTakScort;
+var ctlGeymateTreylereKafiyeTeraficiyeJoftScort = form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort;
+var ctlGeymateKamarShekane5MehvareMamooli = form.fields.GeymateKamarShekane5MehvareMamooli;
+var ctlGeymateKamarShekane5MehvareTeraficiyeBedooneScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort;
+var ctlGeymateKamarShekane5MehvareTeraficiyeTakScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort;
+var ctlGeymateKamarShekane5MehvareTeraficiyeJoftScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort;
+var ctlGeymateKamarShekane7MehvareTeraficiyeTakScort = form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort;
+var ctlGeymateKamarShekane7MehvareTeraficiyeJoftScort = form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort;
+
+if (ctlGeymateVahedeKhavar != undefined && form.fields.GeymateVahedeKhavar.value != '') {
+    GeymateVahedeKhavar = parseInt(form.fields.GeymateVahedeKhavar.value, 10) * parseInt($(".lblGeymateVahedKhavarP").html(), 10);
+}
+
+if (ctlGeymateVahedeKamiyooneTak != undefined && form.fields.GeymateVahedeKamiyooneTak.value != '') {
+    GeymateVahedeKamiyooneTak = parseInt(form.fields.GeymateVahedeKamiyooneTak.value, 10) * parseInt($(".lblGeymateVahedeKamiyooneTakP").html(), 10);
+}
+if (ctlGeymateVahedeKamiyooneJoft != undefined && form.fields.GeymateVahedeKamiyooneJoft.value != '') {
+    GeymateVahedeKamiyooneJoft = parseInt(form.fields.GeymateVahedeKamiyooneJoft.value, 10) * parseInt($(".lblGeymateVahedeKamiyooneJoftP").html(), 10);
+}
+
+if (ctlGeymateTreylereKafiyeMamooli != undefined && form.fields.GeymateTreylereKafiyeMamooli.value != '') {
+    GeymateTreylereKafiyeMamooli = parseInt(form.fields.GeymateTreylereKafiyeMamooli.value, 10) * parseInt($(".lblGeymateTreylereKafiyeMamooliP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeBedoneScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeBedoneScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeBedoneScortP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeTakScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeTakScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeTakScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeJoftScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeJoftScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeJoftScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareMamooli != undefined && form.fields.GeymateKamarShekane5MehvareMamooli.value != '') {
+    GeymateKamarShekane5MehvareMamooli = parseInt(form.fields.GeymateKamarShekane5MehvareMamooli.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareMamooliP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeBedooneScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeBedooneScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeBedooneScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeJoftScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeJoftScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeJoftScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeJoftScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeJoftScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeJoftScortP").html(), 10);
+}
+form.fields.GeymateKol.value = GeymateVahedeKhavar +
+    GeymateVahedeKamiyooneTak +
+    GeymateVahedeKamiyooneJoft +
+    GeymateTreylereKafiyeMamooli +
+    GeymateTreylereKafiyeTeraficiyeBedoneScort +
+    GeymateTreylereKafiyeTeraficiyeTakScort +
+    GeymateTreylereKafiyeTeraficiyeJoftScort +
+    GeymateKamarShekane5MehvareMamooli +
+    GeymateKamarShekane5MehvareTeraficiyeBedooneScort +
+    GeymateKamarShekane5MehvareTeraficiyeTakScort +
+    GeymateKamarShekane5MehvareTeraficiyeJoftScort +
+    GeymateKamarShekane7MehvareTeraficiyeTakScort +
+    GeymateKamarShekane7MehvareTeraficiyeJoftScort;]]></BindOnChange>
+      <InputType>open-text</InputType>
+      <InputData>{"Value":"","AutocompleteUrl":"","Mask":"","SaveToReport":true,"Readonly":false}</InputData>
+      <AutocompleteUrl />
+      <Mask />
+      <SaveToReport>True</SaveToReport>
+      <Readonly>False</Readonly>
+      <Value><![CDATA[]]></Value>
+      <IsRequired>True</IsRequired>
+      <IsActive>True</IsActive>
+      <IsEnabled>True</IsEnabled>
+      <CssClass><![CDATA[ctlEHaml , ctlGeymateKamarShekane5MehvareTeraficiyeJoftScortP]]></CssClass>
+      <CssStyles><![CDATA[]]></CssStyles>
+      <LabelCssClass><![CDATA[lblEHaml , lblGeymateKamarShekane5MehvareTeraficiyeJoftScortP]]></LabelCssClass>
+      <LabelCssStyles><![CDATA[]]></LabelCssStyles>
+      <CustomValidator1>Positive Integer Number</CustomValidator1>
+      <CustomValidator1JsName>numberPositive6678</CustomValidator1JsName>
+      <CustomValidator2 />
+      <ValidationGroup />
+      <GroupValidator />
+      <SaveToUserProfile>False</SaveToUserProfile>
+      <DisableAutocomplete>False</DisableAutocomplete>
+      <ViewOrder>10</ViewOrder>
+      <RowIndex>10</RowIndex>
+      <ColSpan>5</ColSpan>
+      <ColOffset>7</ColOffset>
+    </Field>
+    <Field>
+      <Id><![CDATA[1421]]></Id>
+      <Title><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کمر شکن 7 محور ترافیکی تک اسکورت")] دستگاه کمر شکن 7 محور ترافیکی تک اسکورت- قیمت واحد:]]></Title>
+      <TitleTokenized><![CDATA[ دستگاه کمر شکن 7 محور ترافیکی تک اسکورت- قیمت واحد:]]></TitleTokenized>
+      <ShortDescTokenized><![CDATA[]]></ShortDescTokenized>
+      <OverrideName>GeymateKamarShekane7MehvareTeraficiyeTakScort</OverrideName>
+      <Name>GeymateKamarShekane7MehvareTeraficiyeTakScort</Name>
+      <ShortDesc><![CDATA[]]></ShortDesc>
+      <HelpText><![CDATA[]]></HelpText>
+      <ShowCondition><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کمر شکن 7 محور ترافیکی تک اسکورت")] > 0]]></ShowCondition>
+      <ValidationCondition><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کمر شکن 7 محور ترافیکی تک اسکورت")] > 0]]></ValidationCondition>
+      <CanValidate><![CDATA[False]]></CanValidate>
+      <BindShow><![CDATA[]]></BindShow>
+      <BindPreserveLayout><![CDATA[False]]></BindPreserveLayout>
+      <BindValue><![CDATA[]]></BindValue>
+      <BindOnChange><![CDATA[var GeymateVahedeKhavar = 0;
+var GeymateVahedeKamiyooneTak = 0;
+var GeymateVahedeKamiyooneJoft = 0;
+var GeymateTreylereKafiyeMamooli = 0;
+var GeymateTreylereKafiyeTeraficiyeBedoneScort = 0;
+var GeymateTreylereKafiyeTeraficiyeTakScort = 0;
+var GeymateTreylereKafiyeTeraficiyeJoftScort = 0;
+var GeymateKamarShekane5MehvareMamooli = 0;
+var GeymateKamarShekane5MehvareTeraficiyeBedooneScort = 0;
+var GeymateKamarShekane5MehvareTeraficiyeTakScort = 0;
+var GeymateKamarShekane5MehvareTeraficiyeJoftScort = 0;
+var GeymateKamarShekane7MehvareTeraficiyeTakScort = 0;
+var GeymateKamarShekane7MehvareTeraficiyeJoftScort = 0;
+
+var ctlGeymateVahedeKhavar = form.fields.GeymateVahedeKhavar;
+var ctlGeymateVahedeKamiyooneTak = form.fields.GeymateVahedeKamiyooneTak;
+var ctlGeymateVahedeKamiyooneJoft = form.fields.GeymateVahedeKamiyooneJoft;
+var ctlGeymateTreylereKafiyeMamooli = form.fields.GeymateTreylereKafiyeMamooli;
+var ctlGeymateTreylereKafiyeTeraficiyeBedoneScort = form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort;
+var ctlGeymateTreylereKafiyeTeraficiyeTakScort = form.fields.GeymateTreylereKafiyeTeraficiyeTakScort;
+var ctlGeymateTreylereKafiyeTeraficiyeJoftScort = form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort;
+var ctlGeymateKamarShekane5MehvareMamooli = form.fields.GeymateKamarShekane5MehvareMamooli;
+var ctlGeymateKamarShekane5MehvareTeraficiyeBedooneScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort;
+var ctlGeymateKamarShekane5MehvareTeraficiyeTakScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort;
+var ctlGeymateKamarShekane5MehvareTeraficiyeJoftScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort;
+var ctlGeymateKamarShekane7MehvareTeraficiyeTakScort = form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort;
+var ctlGeymateKamarShekane7MehvareTeraficiyeJoftScort = form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort;
+
+if (ctlGeymateVahedeKhavar != undefined && form.fields.GeymateVahedeKhavar.value != '') {
+    GeymateVahedeKhavar = parseInt(form.fields.GeymateVahedeKhavar.value, 10) * parseInt($(".lblGeymateVahedKhavarP").html(), 10);
+}
+
+if (ctlGeymateVahedeKamiyooneTak != undefined && form.fields.GeymateVahedeKamiyooneTak.value != '') {
+    GeymateVahedeKamiyooneTak = parseInt(form.fields.GeymateVahedeKamiyooneTak.value, 10) * parseInt($(".lblGeymateVahedeKamiyooneTakP").html(), 10);
+}
+if (ctlGeymateVahedeKamiyooneJoft != undefined && form.fields.GeymateVahedeKamiyooneJoft.value != '') {
+    GeymateVahedeKamiyooneJoft = parseInt(form.fields.GeymateVahedeKamiyooneJoft.value, 10) * parseInt($(".lblGeymateVahedeKamiyooneJoftP").html(), 10);
+}
+
+if (ctlGeymateTreylereKafiyeMamooli != undefined && form.fields.GeymateTreylereKafiyeMamooli.value != '') {
+    GeymateTreylereKafiyeMamooli = parseInt(form.fields.GeymateTreylereKafiyeMamooli.value, 10) * parseInt($(".lblGeymateTreylereKafiyeMamooliP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeBedoneScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeBedoneScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeBedoneScortP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeTakScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeTakScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeTakScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeJoftScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeJoftScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeJoftScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareMamooli != undefined && form.fields.GeymateKamarShekane5MehvareMamooli.value != '') {
+    GeymateKamarShekane5MehvareMamooli = parseInt(form.fields.GeymateKamarShekane5MehvareMamooli.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareMamooliP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeBedooneScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeBedooneScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeBedooneScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeJoftScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeJoftScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeJoftScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeJoftScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeJoftScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeJoftScortP").html(), 10);
+}
+form.fields.GeymateKol.value = GeymateVahedeKhavar +
+    GeymateVahedeKamiyooneTak +
+    GeymateVahedeKamiyooneJoft +
+    GeymateTreylereKafiyeMamooli +
+    GeymateTreylereKafiyeTeraficiyeBedoneScort +
+    GeymateTreylereKafiyeTeraficiyeTakScort +
+    GeymateTreylereKafiyeTeraficiyeJoftScort +
+    GeymateKamarShekane5MehvareMamooli +
+    GeymateKamarShekane5MehvareTeraficiyeBedooneScort +
+    GeymateKamarShekane5MehvareTeraficiyeTakScort +
+    GeymateKamarShekane5MehvareTeraficiyeJoftScort +
+    GeymateKamarShekane7MehvareTeraficiyeTakScort +
+    GeymateKamarShekane7MehvareTeraficiyeJoftScort;]]></BindOnChange>
+      <InputType>open-text</InputType>
+      <InputData>{"Value":"","AutocompleteUrl":"","Mask":"","SaveToReport":true,"Readonly":false}</InputData>
+      <AutocompleteUrl />
+      <Mask />
+      <SaveToReport>True</SaveToReport>
+      <Readonly>False</Readonly>
+      <Value><![CDATA[]]></Value>
+      <IsRequired>True</IsRequired>
+      <IsActive>True</IsActive>
+      <IsEnabled>True</IsEnabled>
+      <CssClass><![CDATA[ctlEHaml , ctlGeymateKamarShekane7MehvareTeraficiyeTakScortP]]></CssClass>
+      <CssStyles><![CDATA[]]></CssStyles>
+      <LabelCssClass><![CDATA[lblEHaml , lblGeymateKamarShekane7MehvareTeraficiyeTakScortP]]></LabelCssClass>
+      <LabelCssStyles><![CDATA[]]></LabelCssStyles>
+      <CustomValidator1>Positive Integer Number</CustomValidator1>
+      <CustomValidator1JsName>numberPositive6678</CustomValidator1JsName>
+      <CustomValidator2 />
+      <ValidationGroup />
+      <GroupValidator />
+      <SaveToUserProfile>False</SaveToUserProfile>
+      <DisableAutocomplete>False</DisableAutocomplete>
+      <ViewOrder>11</ViewOrder>
+      <RowIndex>11</RowIndex>
+      <ColSpan>5</ColSpan>
+      <ColOffset>7</ColOffset>
+    </Field>
+    <Field>
+      <Id><![CDATA[1422]]></Id>
+      <Title><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کمر شکن 7 محور ترافیکی جفت اسکورت")] دستگاه کمر شکن 7 محور ترافیکی جفت اسکورت- قیمت واحد:]]></Title>
+      <TitleTokenized><![CDATA[ دستگاه کمر شکن 7 محور ترافیکی جفت اسکورت- قیمت واحد:]]></TitleTokenized>
+      <ShortDescTokenized><![CDATA[]]></ShortDescTokenized>
+      <OverrideName>GeymateKamarShekane7MehvareTeraficiyeJoftScort</OverrideName>
+      <Name>GeymateKamarShekane7MehvareTeraficiyeJoftScort</Name>
+      <ShortDesc><![CDATA[]]></ShortDesc>
+      <HelpText><![CDATA[]]></HelpText>
+      <ShowCondition><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کمر شکن 7 محور ترافیکی جفت اسکورت")] > 0]]></ShowCondition>
+      <ValidationCondition><![CDATA[[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کمر شکن 7 محور ترافیکی جفت اسکورت")] > 0]]></ValidationCondition>
+      <CanValidate><![CDATA[False]]></CanValidate>
+      <BindShow><![CDATA[]]></BindShow>
+      <BindPreserveLayout><![CDATA[False]]></BindPreserveLayout>
+      <BindValue><![CDATA[]]></BindValue>
+      <BindOnChange><![CDATA[var GeymateVahedeKhavar = 0;
+var GeymateVahedeKamiyooneTak = 0;
+var GeymateVahedeKamiyooneJoft = 0;
+var GeymateTreylereKafiyeMamooli = 0;
+var GeymateTreylereKafiyeTeraficiyeBedoneScort = 0;
+var GeymateTreylereKafiyeTeraficiyeTakScort = 0;
+var GeymateTreylereKafiyeTeraficiyeJoftScort = 0;
+var GeymateKamarShekane5MehvareMamooli = 0;
+var GeymateKamarShekane5MehvareTeraficiyeBedooneScort = 0;
+var GeymateKamarShekane5MehvareTeraficiyeTakScort = 0;
+var GeymateKamarShekane5MehvareTeraficiyeJoftScort = 0;
+var GeymateKamarShekane7MehvareTeraficiyeTakScort = 0;
+var GeymateKamarShekane7MehvareTeraficiyeJoftScort = 0;
+
+var ctlGeymateVahedeKhavar = form.fields.GeymateVahedeKhavar;
+var ctlGeymateVahedeKamiyooneTak = form.fields.GeymateVahedeKamiyooneTak;
+var ctlGeymateVahedeKamiyooneJoft = form.fields.GeymateVahedeKamiyooneJoft;
+var ctlGeymateTreylereKafiyeMamooli = form.fields.GeymateTreylereKafiyeMamooli;
+var ctlGeymateTreylereKafiyeTeraficiyeBedoneScort = form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort;
+var ctlGeymateTreylereKafiyeTeraficiyeTakScort = form.fields.GeymateTreylereKafiyeTeraficiyeTakScort;
+var ctlGeymateTreylereKafiyeTeraficiyeJoftScort = form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort;
+var ctlGeymateKamarShekane5MehvareMamooli = form.fields.GeymateKamarShekane5MehvareMamooli;
+var ctlGeymateKamarShekane5MehvareTeraficiyeBedooneScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort;
+var ctlGeymateKamarShekane5MehvareTeraficiyeTakScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort;
+var ctlGeymateKamarShekane5MehvareTeraficiyeJoftScort = form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort;
+var ctlGeymateKamarShekane7MehvareTeraficiyeTakScort = form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort;
+var ctlGeymateKamarShekane7MehvareTeraficiyeJoftScort = form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort;
+
+if (ctlGeymateVahedeKhavar != undefined && form.fields.GeymateVahedeKhavar.value != '') {
+    GeymateVahedeKhavar = parseInt(form.fields.GeymateVahedeKhavar.value, 10) * parseInt($(".lblGeymateVahedKhavarP").html(), 10);
+}
+
+if (ctlGeymateVahedeKamiyooneTak != undefined && form.fields.GeymateVahedeKamiyooneTak.value != '') {
+    GeymateVahedeKamiyooneTak = parseInt(form.fields.GeymateVahedeKamiyooneTak.value, 10) * parseInt($(".lblGeymateVahedeKamiyooneTakP").html(), 10);
+}
+if (ctlGeymateVahedeKamiyooneJoft != undefined && form.fields.GeymateVahedeKamiyooneJoft.value != '') {
+    GeymateVahedeKamiyooneJoft = parseInt(form.fields.GeymateVahedeKamiyooneJoft.value, 10) * parseInt($(".lblGeymateVahedeKamiyooneJoftP").html(), 10);
+}
+
+if (ctlGeymateTreylereKafiyeMamooli != undefined && form.fields.GeymateTreylereKafiyeMamooli.value != '') {
+    GeymateTreylereKafiyeMamooli = parseInt(form.fields.GeymateTreylereKafiyeMamooli.value, 10) * parseInt($(".lblGeymateTreylereKafiyeMamooliP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeBedoneScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeBedoneScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeBedoneScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeBedoneScortP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeTakScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeTakScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeTakScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateTreylereKafiyeTeraficiyeJoftScort != undefined && form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort.value != '') {
+    GeymateTreylereKafiyeTeraficiyeJoftScort = parseInt(form.fields.GeymateTreylereKafiyeTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateTreylereKafiyeTeraficiyeJoftScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareMamooli != undefined && form.fields.GeymateKamarShekane5MehvareMamooli.value != '') {
+    GeymateKamarShekane5MehvareMamooli = parseInt(form.fields.GeymateKamarShekane5MehvareMamooli.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareMamooliP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeBedooneScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeBedooneScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeBedooneScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeBedooneScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane5MehvareTeraficiyeJoftScort != undefined && form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort.value != '') {
+    GeymateKamarShekane5MehvareTeraficiyeJoftScort = parseInt(form.fields.GeymateKamarShekane5MehvareTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateKamarShekane5MehvareTeraficiyeJoftScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeTakScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeTakScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeTakScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeTakScortP").html(), 10);
+}
+if (ctlGeymateKamarShekane7MehvareTeraficiyeJoftScort != undefined && form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort.value != '') {
+    GeymateKamarShekane7MehvareTeraficiyeJoftScort = parseInt(form.fields.GeymateKamarShekane7MehvareTeraficiyeJoftScort.value, 10) * parseInt($(".lblGeymateKamarShekane7MehvareTeraficiyeJoftScortP").html(), 10);
+}
+form.fields.GeymateKol.value = GeymateVahedeKhavar +
+    GeymateVahedeKamiyooneTak +
+    GeymateVahedeKamiyooneJoft +
+    GeymateTreylereKafiyeMamooli +
+    GeymateTreylereKafiyeTeraficiyeBedoneScort +
+    GeymateTreylereKafiyeTeraficiyeTakScort +
+    GeymateTreylereKafiyeTeraficiyeJoftScort +
+    GeymateKamarShekane5MehvareMamooli +
+    GeymateKamarShekane5MehvareTeraficiyeBedooneScort +
+    GeymateKamarShekane5MehvareTeraficiyeTakScort +
+    GeymateKamarShekane5MehvareTeraficiyeJoftScort +
+    GeymateKamarShekane7MehvareTeraficiyeTakScort +
+    GeymateKamarShekane7MehvareTeraficiyeJoftScort;]]></BindOnChange>
+      <InputType>open-text</InputType>
+      <InputData>{"Value":"","AutocompleteUrl":"","Mask":"","SaveToReport":true,"Readonly":false}</InputData>
+      <AutocompleteUrl />
+      <Mask />
+      <SaveToReport>True</SaveToReport>
+      <Readonly>False</Readonly>
+      <Value><![CDATA[]]></Value>
+      <IsRequired>True</IsRequired>
+      <IsActive>True</IsActive>
+      <IsEnabled>True</IsEnabled>
+      <CssClass><![CDATA[ctlEHaml , ctlGeymateKamarShekane7MehvareTeraficiyeJoftScortP]]></CssClass>
+      <CssStyles><![CDATA[]]></CssStyles>
+      <LabelCssClass><![CDATA[lblEHaml , lblGeymateKamarShekane7MehvareTeraficiyeJoftScortP]]></LabelCssClass>
+      <LabelCssStyles><![CDATA[]]></LabelCssStyles>
+      <CustomValidator1>Positive Integer Number</CustomValidator1>
+      <CustomValidator1JsName>numberPositive6678</CustomValidator1JsName>
+      <CustomValidator2 />
+      <ValidationGroup />
+      <GroupValidator />
+      <SaveToUserProfile>False</SaveToUserProfile>
+      <DisableAutocomplete>False</DisableAutocomplete>
+      <ViewOrder>12</ViewOrder>
+      <RowIndex>12</RowIndex>
+      <ColSpan>5</ColSpan>
+      <ColOffset>7</ColOffset>
+    </Field>
+    <Field>
+      <Id><![CDATA[1423]]></Id>
+      <Title><![CDATA[کل مدت زمان حمل(روز):]]></Title>
+      <TitleTokenized><![CDATA[کل مدت زمان حمل(روز):]]></TitleTokenized>
+      <ShortDescTokenized><![CDATA[]]></ShortDescTokenized>
+      <OverrideName>KoleModatZamaneHaml</OverrideName>
+      <Name>KoleModatZamaneHaml</Name>
+      <ShortDesc><![CDATA[]]></ShortDesc>
+      <HelpText><![CDATA[]]></HelpText>
+      <ShowCondition><![CDATA[]]></ShowCondition>
+      <ValidationCondition><![CDATA[]]></ValidationCondition>
+      <CanValidate><![CDATA[True]]></CanValidate>
+      <BindShow><![CDATA[]]></BindShow>
+      <BindPreserveLayout><![CDATA[False]]></BindPreserveLayout>
+      <BindValue><![CDATA[]]></BindValue>
+      <BindOnChange><![CDATA[]]></BindOnChange>
+      <InputType>open-text</InputType>
+      <InputData>{"Value":"","AutocompleteUrl":"","Mask":"","SaveToReport":true,"Readonly":false}</InputData>
+      <AutocompleteUrl />
+      <Mask />
+      <SaveToReport>True</SaveToReport>
+      <Readonly>False</Readonly>
+      <Value><![CDATA[]]></Value>
+      <IsRequired>True</IsRequired>
+      <IsActive>True</IsActive>
+      <IsEnabled>True</IsEnabled>
+      <CssClass><![CDATA[ctlEHaml , ctlKoleModatZamaneHamlP]]></CssClass>
+      <CssStyles><![CDATA[]]></CssStyles>
+      <LabelCssClass><![CDATA[lblEHaml , lblKoleModatZamaneHamlP]]></LabelCssClass>
+      <LabelCssStyles><![CDATA[]]></LabelCssStyles>
+      <CustomValidator1>Positive Integer Number</CustomValidator1>
+      <CustomValidator1JsName>numberPositive6678</CustomValidator1JsName>
+      <CustomValidator2 />
+      <ValidationGroup />
+      <GroupValidator />
+      <SaveToUserProfile>False</SaveToUserProfile>
+      <DisableAutocomplete>False</DisableAutocomplete>
+      <ViewOrder>13</ViewOrder>
+      <RowIndex>13</RowIndex>
+      <ColSpan>5</ColSpan>
+      <ColOffset>7</ColOffset>
+    </Field>
+    <Field>
+      <Id><![CDATA[1424]]></Id>
+      <Title><![CDATA[زمان آمادگی برای شروع عملیات:]]></Title>
+      <TitleTokenized><![CDATA[زمان آمادگی برای شروع عملیات:]]></TitleTokenized>
+      <ShortDescTokenized><![CDATA[مثال: 1393/07/12]]></ShortDescTokenized>
+      <OverrideName>ZamaneAmadegiBarayeShoorooeAmaliyat</OverrideName>
+      <Name>ZamaneAmadegiBarayeShoorooeAmaliyat</Name>
+      <ShortDesc><![CDATA[مثال: 1393/07/12]]></ShortDesc>
+      <HelpText><![CDATA[]]></HelpText>
+      <ShowCondition><![CDATA[]]></ShowCondition>
+      <ValidationCondition><![CDATA[]]></ValidationCondition>
+      <CanValidate><![CDATA[True]]></CanValidate>
+      <BindShow><![CDATA[]]></BindShow>
+      <BindPreserveLayout><![CDATA[False]]></BindPreserveLayout>
+      <BindValue><![CDATA[]]></BindValue>
+      <BindOnChange><![CDATA[]]></BindOnChange>
+      <InputType>open-text</InputType>
+      <InputData>{"Value":"","AutocompleteUrl":"","Mask":"9999/99/99","SaveToReport":true,"Readonly":false}</InputData>
+      <AutocompleteUrl />
+      <Mask>9999/99/99</Mask>
+      <SaveToReport>True</SaveToReport>
+      <Readonly>False</Readonly>
+      <Value><![CDATA[]]></Value>
+      <IsRequired>True</IsRequired>
+      <IsActive>True</IsActive>
+      <IsEnabled>True</IsEnabled>
+      <CssClass><![CDATA[ctlEHaml , ctlZamaneAmadegiBarayeShoorooeAmaliyatP]]></CssClass>
+      <CssStyles><![CDATA[]]></CssStyles>
+      <LabelCssClass><![CDATA[lblEHaml , lblZamaneAmadegiBarayeShoorooeAmaliyatP]]></LabelCssClass>
+      <LabelCssStyles><![CDATA[]]></LabelCssStyles>
+      <CustomValidator1 />
+      <CustomValidator2 />
+      <ValidationGroup />
+      <GroupValidator />
+      <SaveToUserProfile>False</SaveToUserProfile>
+      <DisableAutocomplete>False</DisableAutocomplete>
+      <ViewOrder>14</ViewOrder>
+      <RowIndex>14</RowIndex>
+      <ColSpan>5</ColSpan>
+      <ColOffset>7</ColOffset>
+    </Field>
+    <Field>
+      <Id><![CDATA[1425]]></Id>
+      <Title><![CDATA[پیش بینی:]]></Title>
+      <TitleTokenized><![CDATA[پیش بینی:]]></TitleTokenized>
+      <ShortDescTokenized><![CDATA[]]></ShortDescTokenized>
+      <OverrideName>PishbiniEmkanPaziriyeAmaliyat</OverrideName>
+      <Name>PishbiniEmkanPaziriyeAmaliyat</Name>
+      <ShortDesc><![CDATA[]]></ShortDesc>
+      <HelpText><![CDATA[]]></HelpText>
+      <ShowCondition><![CDATA[]]></ShowCondition>
+      <ValidationCondition><![CDATA[]]></ValidationCondition>
+      <CanValidate><![CDATA[True]]></CanValidate>
+      <BindShow><![CDATA[]]></BindShow>
+      <BindPreserveLayout><![CDATA[False]]></BindPreserveLayout>
+      <BindValue><![CDATA[]]></BindValue>
+      <BindOnChange><![CDATA[]]></BindOnChange>
+      <InputType>closed-multiple-dropdown</InputType>
+      <InputData>{"LinkTo":"","Empty":"--لطفآ انتخاب نمایید--","DataSource":"","Values":"مطلوب\nکند\nبسیارکند","Value":"","Other":"","SaveToReport":true}</InputData>
+      <LinkTo />
+      <Empty>--لطفآ انتخاب نمایید--</Empty>
+      <DataSource />
+      <Values>مطلوب
+کند
+بسیارکند</Values>
+      <Other />
+      <SaveToReport>True</SaveToReport>
+      <Option value="مطلوب">مطلوب</Option>
+      <Option value="کند">کند</Option>
+      <Option value="بسیارکند">بسیارکند</Option>
+      <Flag>dropdown</Flag>
+      <Value><![CDATA[]]></Value>
+      <IsRequired>True</IsRequired>
+      <IsActive>True</IsActive>
+      <IsEnabled>True</IsEnabled>
+      <CssClass><![CDATA[ctlEHaml , ctlPishbiniP]]></CssClass>
+      <CssStyles><![CDATA[]]></CssStyles>
+      <LabelCssClass><![CDATA[lblEHaml , lblPishbiniP]]></LabelCssClass>
+      <LabelCssStyles><![CDATA[]]></LabelCssStyles>
+      <CustomValidator1 />
+      <CustomValidator2 />
+      <ValidationGroup />
+      <GroupValidator />
+      <SaveToUserProfile>False</SaveToUserProfile>
+      <DisableAutocomplete>False</DisableAutocomplete>
+      <ViewOrder>15</ViewOrder>
+      <RowIndex>15</RowIndex>
+      <ColSpan>5</ColSpan>
+      <ColOffset>7</ColOffset>
+    </Field>
+    <Field>
+      <Id><![CDATA[1426]]></Id>
+      <Title><![CDATA[قیمت کل:]]></Title>
+      <TitleTokenized><![CDATA[قیمت کل:]]></TitleTokenized>
+      <ShortDescTokenized><![CDATA[]]></ShortDescTokenized>
+      <OverrideName>GeymateKol</OverrideName>
+      <Name>GeymateKol</Name>
+      <ShortDesc><![CDATA[]]></ShortDesc>
+      <HelpText><![CDATA[]]></HelpText>
+      <ShowCondition><![CDATA[]]></ShowCondition>
+      <ValidationCondition><![CDATA[]]></ValidationCondition>
+      <CanValidate><![CDATA[True]]></CanValidate>
+      <BindShow><![CDATA[]]></BindShow>
+      <BindPreserveLayout><![CDATA[False]]></BindPreserveLayout>
+      <BindValue><![CDATA[]]></BindValue>
+      <BindOnChange><![CDATA[]]></BindOnChange>
+      <InputType>open-text</InputType>
+      <InputData>{"Value":"","AutocompleteUrl":"","Mask":"","SaveToReport":true,"Readonly":false}</InputData>
+      <AutocompleteUrl />
+      <Mask />
+      <SaveToReport>True</SaveToReport>
+      <Readonly>False</Readonly>
+      <Value><![CDATA[]]></Value>
+      <IsRequired>False</IsRequired>
+      <IsActive>True</IsActive>
+      <IsEnabled>False</IsEnabled>
+      <CssClass><![CDATA[ctlEHaml , ctlGeymateKolP]]></CssClass>
+      <CssStyles><![CDATA[]]></CssStyles>
+      <LabelCssClass><![CDATA[lblEHaml , lblGeymateKolP]]></LabelCssClass>
+      <LabelCssStyles><![CDATA[]]></LabelCssStyles>
+      <CustomValidator1 />
+      <CustomValidator2 />
+      <ValidationGroup />
+      <GroupValidator />
+      <SaveToUserProfile>False</SaveToUserProfile>
+      <DisableAutocomplete>False</DisableAutocomplete>
+      <ViewOrder>16</ViewOrder>
+      <RowIndex>16</RowIndex>
+      <ColSpan>5</ColSpan>
+      <ColOffset>7</ColOffset>
+    </Field>
+    <Field>
+      <Id><![CDATA[1427]]></Id>
+      <Title><![CDATA[ارسال]]></Title>
+      <TitleTokenized><![CDATA[ارسال]]></TitleTokenized>
+      <ShortDescTokenized><![CDATA[]]></ShortDescTokenized>
+      <OverrideName>Submit</OverrideName>
+      <Name>Submit</Name>
+      <ShortDesc><![CDATA[]]></ShortDesc>
+      <HelpText><![CDATA[]]></HelpText>
+      <ShowCondition><![CDATA[]]></ShowCondition>
+      <ValidationCondition><![CDATA[]]></ValidationCondition>
+      <CanValidate><![CDATA[True]]></CanValidate>
+      <BindShow><![CDATA[]]></BindShow>
+      <BindPreserveLayout><![CDATA[False]]></BindPreserveLayout>
+      <BindValue><![CDATA[]]></BindValue>
+      <BindOnChange><![CDATA[]]></BindOnChange>
+      <InputType>button</InputType>
+      <InputData>{"CausesValidation":true,"IsDefaultButton":true,"ButtonSize":"btn-normal","ButtonType":"btn-info","ButtonAlign":"block","Actions":[]}</InputData>
+      <CausesValidation>True</CausesValidation>
+      <IsDefaultButton>True</IsDefaultButton>
+      <ButtonSize>btn-normal</ButtonSize>
+      <ButtonType>btn-info</ButtonType>
+      <ButtonAlign>block</ButtonAlign>
+      <Actions />
+      <Value><![CDATA[]]></Value>
+      <IsRequired>False</IsRequired>
+      <IsActive>True</IsActive>
+      <IsEnabled>True</IsEnabled>
+      <CssClass><![CDATA[ctlEHaml , ctlSubmitP]]></CssClass>
+      <CssStyles><![CDATA[]]></CssStyles>
+      <LabelCssClass><![CDATA[lblEHaml , lblSubmitP]]></LabelCssClass>
+      <LabelCssStyles><![CDATA[]]></LabelCssStyles>
+      <CustomValidator1 />
+      <CustomValidator2 />
+      <ValidationGroup />
+      <GroupValidator />
+      <SaveToUserProfile>False</SaveToUserProfile>
+      <DisableAutocomplete>False</DisableAutocomplete>
+      <ViewOrder>17</ViewOrder>
+      <RowIndex>17</RowIndex>
+      <ColSpan>2</ColSpan>
+      <ColOffset>10</ColOffset>
+    </Field>
+    <Field>
+      <Id><![CDATA[1428]]></Id>
+      <Title><![CDATA[بله،ارسال کن]]></Title>
+      <TitleTokenized><![CDATA[بله،ارسال کن]]></TitleTokenized>
+      <ShortDescTokenized><![CDATA[]]></ShortDescTokenized>
+      <OverrideName>YesSubmit</OverrideName>
+      <Name>YesSubmit</Name>
+      <ShortDesc><![CDATA[]]></ShortDesc>
+      <HelpText><![CDATA[]]></HelpText>
+      <ShowCondition><![CDATA[]]></ShowCondition>
+      <ValidationCondition><![CDATA[]]></ValidationCondition>
+      <CanValidate><![CDATA[True]]></CanValidate>
+      <BindShow><![CDATA[]]></BindShow>
+      <BindPreserveLayout><![CDATA[False]]></BindPreserveLayout>
+      <BindValue><![CDATA[]]></BindValue>
+      <BindOnChange><![CDATA[]]></BindOnChange>
+      <InputType>button</InputType>
+      <InputData>{"CausesValidation":true,"IsDefaultButton":true,"ButtonSize":"btn-normal","ButtonType":"btn-success","ButtonAlign":"right","Actions":[]}</InputData>
+      <CausesValidation>True</CausesValidation>
+      <IsDefaultButton>True</IsDefaultButton>
+      <ButtonSize>btn-normal</ButtonSize>
+      <ButtonType>btn-success</ButtonType>
+      <ButtonAlign>right</ButtonAlign>
+      <Actions />
+      <Value><![CDATA[]]></Value>
+      <IsRequired>False</IsRequired>
+      <IsActive>True</IsActive>
+      <IsEnabled>True</IsEnabled>
+      <CssClass><![CDATA[]]></CssClass>
+      <CssStyles><![CDATA[]]></CssStyles>
+      <LabelCssClass><![CDATA[]]></LabelCssClass>
+      <LabelCssStyles><![CDATA[]]></LabelCssStyles>
+      <CustomValidator1 />
+      <CustomValidator2 />
+      <ValidationGroup />
+      <GroupValidator />
+      <SaveToUserProfile>False</SaveToUserProfile>
+      <DisableAutocomplete>False</DisableAutocomplete>
+      <ViewOrder>18</ViewOrder>
+      <RowIndex>18</RowIndex>
+      <ColSpan>2</ColSpan>
+      <ColOffset>10</ColOffset>
+    </Field>
+    <Field>
+      <Id><![CDATA[1429]]></Id>
+      <Title><![CDATA[نه،نیاز به اصلاح دارد]]></Title>
+      <TitleTokenized><![CDATA[نه،نیاز به اصلاح دارد]]></TitleTokenized>
+      <ShortDescTokenized><![CDATA[]]></ShortDescTokenized>
+      <OverrideName>NoBack</OverrideName>
+      <Name>NoBack</Name>
+      <ShortDesc><![CDATA[]]></ShortDesc>
+      <HelpText><![CDATA[]]></HelpText>
+      <ShowCondition><![CDATA[]]></ShowCondition>
+      <ValidationCondition><![CDATA[]]></ValidationCondition>
+      <CanValidate><![CDATA[True]]></CanValidate>
+      <BindShow><![CDATA[]]></BindShow>
+      <BindPreserveLayout><![CDATA[False]]></BindPreserveLayout>
+      <BindValue><![CDATA[]]></BindValue>
+      <BindOnChange><![CDATA[]]></BindOnChange>
+      <InputType>button</InputType>
+      <InputData>{"CausesValidation":true,"IsDefaultButton":true,"ButtonSize":"btn-normal","ButtonType":"btn-warning","ButtonAlign":"right","Actions":[]}</InputData>
+      <CausesValidation>True</CausesValidation>
+      <IsDefaultButton>True</IsDefaultButton>
+      <ButtonSize>btn-normal</ButtonSize>
+      <ButtonType>btn-warning</ButtonType>
+      <ButtonAlign>right</ButtonAlign>
+      <Actions />
+      <Value><![CDATA[]]></Value>
+      <IsRequired>False</IsRequired>
+      <IsActive>True</IsActive>
+      <IsEnabled>True</IsEnabled>
+      <CssClass><![CDATA[]]></CssClass>
+      <CssStyles><![CDATA[]]></CssStyles>
+      <LabelCssClass><![CDATA[]]></LabelCssClass>
+      <LabelCssStyles><![CDATA[]]></LabelCssStyles>
+      <CustomValidator1 />
+      <CustomValidator2 />
+      <ValidationGroup />
+      <GroupValidator />
+      <SaveToUserProfile>False</SaveToUserProfile>
+      <DisableAutocomplete>False</DisableAutocomplete>
+      <ViewOrder>19</ViewOrder>
+      <RowIndex>19</RowIndex>
+      <ColSpan>2</ColSpan>
+      <ColOffset>10</ColOffset>
+    </Field>
+    <Field>
+      <Id><![CDATA[1430]]></Id>
+      <Title><![CDATA[InquiryType]]></Title>
+      <TitleTokenized><![CDATA[InquiryType]]></TitleTokenized>
+      <ShortDescTokenized><![CDATA[]]></ShortDescTokenized>
+      <OverrideName />
+      <Name>InquiryType</Name>
+      <ShortDesc><![CDATA[]]></ShortDesc>
+      <HelpText><![CDATA[]]></HelpText>
+      <ShowCondition><![CDATA[]]></ShowCondition>
+      <ValidationCondition><![CDATA[]]></ValidationCondition>
+      <CanValidate><![CDATA[True]]></CanValidate>
+      <BindShow><![CDATA[]]></BindShow>
+      <BindPreserveLayout><![CDATA[False]]></BindPreserveLayout>
+      <BindValue><![CDATA[]]></BindValue>
+      <BindOnChange><![CDATA[]]></BindOnChange>
+      <InputType>hiden-constant</InputType>
+      <InputData>{"Value":"Zadghan","SaveToReport":true}</InputData>
+      <SaveToReport>True</SaveToReport>
+      <Value><![CDATA[Zadghan]]></Value>
+      <IsRequired>False</IsRequired>
+      <IsActive>True</IsActive>
+      <IsEnabled>True</IsEnabled>
+      <CssClass><![CDATA[]]></CssClass>
+      <CssStyles><![CDATA[]]></CssStyles>
+      <LabelCssClass><![CDATA[]]></LabelCssClass>
+      <LabelCssStyles><![CDATA[]]></LabelCssStyles>
+      <CustomValidator1 />
+      <CustomValidator2 />
+      <ValidationGroup />
+      <GroupValidator />
+      <SaveToUserProfile>False</SaveToUserProfile>
+      <DisableAutocomplete>False</DisableAutocomplete>
+      <ViewOrder>20</ViewOrder>
+      <RowIndex>20</RowIndex>
+      <ColSpan>12</ColSpan>
+      <ColOffset>0</ColOffset>
+    </Field>
+  </Fields>
+  <Actions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ActionInfo>
+      <ModuleId>6678</ModuleId>
+      <Description>Insert Inquiry In DataBase When !IsEdit</Description>
+      <FieldName>YesSubmit</FieldName>
+      <EventName>click</EventName>
+      <ActionType>RunSql</ActionType>
+      <OrderIndex>0</OrderIndex>
+      <Condition />
+      <IsDeleted>false</IsDeleted>
+      <LastModified>2014-11-13T12:43:39.503</LastModified>
+      <LastModifiedBy>1044</LastModifiedBy>
+      <ActionData>{"ConnectionString":"","SqlQuery":"INSERT dbo.Asaei_EHaml_ReplyToInquiry\n        ( InquiryId ,\n          InquiryType ,\n          ServentUserId ,\n          KoleModatZamaneHaml ,\n          ZamaneAmadegiBarayShoorooeAmaliyatShamsi ,\n          ZamaneAmadegiBarayShoorooAmaliyatMiladi ,\n          GozaresheAmaliyateRoozane ,\n          PishbiniEmkanPaziriyeAmaliyat ,\n          GeymateKol ,\n          Vaziyat ,\n          CreateDateShamsi ,\n          CreateDateMiladi\n        ) Output Inserted.Id\nVALUES  ( [Get:InquiryId] , -- InquiryId - bigint\n          N\u0027[InquiryType]\u0027 , -- InquiryType - nvarchar(1000)\n          [User:UserId] , -- ServentUserId - bigint\n          N\u0027[KoleModatZamaneHaml]\u0027 , -- KoleModatZamaneHaml - nvarchar(1000)\n          N\u0027[ZamaneAmadegiBarayeShoorooeAmaliyat]\u0027 , -- ZamaneAmadegiBarayShoorooeAmaliyatShamsi - nvarchar(1000)\n          dbo.PersianToGregorian(CONVERT(VARCHAR, \u0027[ZamaneAmadegiBarayeShoorooeAmaliyat]\u0027, 120)) , -- ZamaneAmadegiBarayShoorooAmaliyatMiladi - date\n          N\u0027خیر\u0027 , -- GozaresheAmaliyateRoozane - nvarchar(1000)\n          N\u0027[PishbiniEmkanPaziriyeAmaliyat]\u0027 , -- PishbiniEmkanPaziriyeAmaliyat - nvarchar(1000)\n          N\u0027[GeymateKol]\u0027 , -- GeymateKol - nvarchar(1000)\n          N\u0027در حال بررسی\u0027 , -- Vaziyat - nvarchar(1000)\n          dbo.GregorianToPersian(CONVERT(VARCHAR, GETDATE(), 120)) , -- CreateDateShamsi - nvarchar(1000)\n          GETDATE()  -- CreateDateMiladi - date\n        )","OutputTokenName":"OutputedReplyToInquiryId","ExtractColumns":"","ShowErrors":""}</ActionData>
+    </ActionInfo>
+    <ActionInfo>
+      <ModuleId>6678</ModuleId>
+      <Description />
+      <FieldName>NoBack</FieldName>
+      <EventName>click</EventName>
+      <ActionType>RedirectToUrl</ActionType>
+      <OrderIndex>0</OrderIndex>
+      <Condition />
+      <IsDeleted>false</IsDeleted>
+      <LastModified>2014-11-13T12:43:39.507</LastModified>
+      <LastModifiedBy>1044</LastModifiedBy>
+      <ActionData>{"Url":"/ReplyToInquiry-Zadghan/InquiryId/[Get:InquiryId]/Correction/True"}</ActionData>
+    </ActionInfo>
+    <ActionInfo>
+      <ModuleId>6678</ModuleId>
+      <Description>Save ReplyToInquiry Zadghan State</Description>
+      <FieldName>Submit</FieldName>
+      <EventName>click</EventName>
+      <ActionType>SaveState</ActionType>
+      <OrderIndex>0</OrderIndex>
+      <Condition />
+      <IsDeleted>false</IsDeleted>
+      <LastModified>2014-11-13T12:43:39.507</LastModified>
+      <LastModifiedBy>1044</LastModifiedBy>
+      <ActionData>{"Key":"ReplyToInquiry_Zadghan","SaveLocation":"Session"}</ActionData>
+    </ActionInfo>
+    <ActionInfo>
+      <ModuleId>6678</ModuleId>
+      <Description>Load ReplyToInquiry_Zadghan State</Description>
+      <EventName>preinit</EventName>
+      <ActionType>LoadState</ActionType>
+      <OrderIndex>0</OrderIndex>
+      <Condition />
+      <IsDeleted>false</IsDeleted>
+      <LastModified>2014-11-13T12:43:39.507</LastModified>
+      <LastModifiedBy>1044</LastModifiedBy>
+      <ActionData>{"Key":"ReplyToInquiry_Zadghan"}</ActionData>
+    </ActionInfo>
+    <ActionInfo>
+      <ModuleId>6678</ModuleId>
+      <Description />
+      <FieldName>Submit</FieldName>
+      <EventName>click</EventName>
+      <ActionType>ShowMessage</ActionType>
+      <OrderIndex>1</OrderIndex>
+      <Condition />
+      <IsDeleted>false</IsDeleted>
+      <LastModified>2014-11-13T12:43:39.543</LastModified>
+      <LastModifiedBy>1044</LastModifiedBy>
+      <ActionData>{"Message":"\u003cdiv style=\"direction:rtl\"\u003e\u003cdiv style=\"text-align: right;\"\u003eInquiryType: [InquiryType]\u003c/div\u003e\u003cdiv style=\"text-align: right;\"\u003e[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName=\"خاور\")] دستگاه خاور- قیمت واحد:: [GeymateVahedeKhavar]\u003c/div\u003e\u003cdiv style=\"text-align: right;\"\u003e[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName=\"کامیون تک\")] دستگاه کامیون تک- قیمت واحد:: [GeymateVahedeKamiyooneTak]\u003c/div\u003e\u003cdiv style=\"text-align: right;\"\u003e[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName=\"کامیون جفت\")] دستگاه کامیون جفت- قیمت واحد:: [GeymateVahedeKamiyooneJoft]\u003c/div\u003e\u003cdiv style=\"text-align: right;\"\u003e[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName=\"تریلرکفی معمولی\")] دستگاه تریلرکفی معمولی- قیمت واحد:: [GeymateTreylereKafiyeMamooli]\u003c/div\u003e\u003cdiv style=\"text-align: right;\"\u003e[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName=\"تریلرکفی ترافیکی بدون اسکورت\")] دستگاه تریلرکفی ترافیکی بدون اسکورت- قیمت واحد:: [GeymateTreylereKafiyeTeraficiyeBedoneScort]\u003c/div\u003e\u003cdiv style=\"text-align: right;\"\u003e[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName=\"تریلرکفی ترافیکی تک اسکورت\")] دستگاه تریلرکفی ترافیکی تک اسکورت- قیمت واحد:: [GeymateTreylereKafiyeTeraficiyeTakScort]\u003c/div\u003e\u003cdiv style=\"text-align: right;\"\u003e[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName=\"تریلرکفی ترافیکی جفت اسکورت\")] دستگاه تریلرکفی ترافیکی جفت اسکورت- قیمت واحد:: [GeymateTreylereKafiyeTeraficiyeJoftScort]\u003c/div\u003e\u003cdiv style=\"text-align: right;\"\u003e[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName=\"کمرشکن 5 محور معمولی\")] دستگاه کمرشکن 5 محور معمولی- قیمت واحد:: [GeymateKamarShekane5MehvareMamooli]\u003c/div\u003e\u003cdiv style=\"text-align: right;\"\u003e[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName=\"کمرشکن 5 محور ترافیکی بدون اسکورت\")] دستگاه کمرشکن 5 محور ترافیکی بدون اسکورت- قیمت واحد:: [GeymateKamarShekane5MehvareTeraficiyeBedooneScort]\u003c/div\u003e\u003cdiv style=\"text-align: right;\"\u003e[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName=\"کمرشکن 5 محور ترافیکی تک اسکورت\")] دستگاه کمرشکن 5 محور ترافیکی تک اسکورت- قیمت واحد:: [GeymateKamarShekane5MehvareTeraficiyeTakScort]\u003c/div\u003e\u003cdiv style=\"text-align: right;\"\u003e[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName=\"کمرشکن 5 محور ترافیکی جفت اسکورت\")] دستگاه کمرشکن 5 محور ترافیکی جفت اسکورت- قیمت واحد:: [GeymateKamarShekane5MehvareTeraficiyeJoftScort]\u003c/div\u003e\u003cdiv style=\"text-align: right;\"\u003e[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName=\"کمر شکن 7 محور ترافیکی تک اسکورت\")] دستگاه کمر شکن 7 محور ترافیکی تک اسکورت- قیمت واحد:: [GeymateKamarShekane7MehvareTeraficiyeTakScort]\u003c/div\u003e\u003cdiv style=\"text-align: right;\"\u003e[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName=\"کمر شکن 7 محور ترافیکی جفت اسکورت\")] دستگاه کمر شکن 7 محور ترافیکی جفت اسکورت- قیمت واحد:: [GeymateKamarShekane7MehvareTeraficiyeJoftScort]\u003c/div\u003e\u003cdiv style=\"text-align: right;\"\u003eکل مدت زمان حمل(روز):: [KoleModatZamaneHaml]\u003c/div\u003e\u003cdiv style=\"text-align: right;\"\u003eزمان آمادگی برای شروع عملیات:: [ZamaneAmadegiBarayeShoorooeAmaliyat]\u003c/div\u003e\u003cdiv style=\"text-align: right;\"\u003eپیش بینی:: [PishbiniEmkanPaziriyeAmaliyat]\u003c/div\u003e\u003cdiv style=\"text-align: right;\"\u003eقیمت کل:: [GeymateKol]\u003c/div\u003e\u003c/div\u003e","ButtonsList":["YesSubmit","NoBack"]}</ActionData>
+    </ActionInfo>
+    <ActionInfo>
+      <ModuleId>6678</ModuleId>
+      <Description>Run SQL Query (Insert خاور In DataBase)</Description>
+      <FieldName>YesSubmit</FieldName>
+      <EventName>click</EventName>
+      <ActionType>RunSql</ActionType>
+      <OrderIndex>1</OrderIndex>
+      <Condition>[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="خاور")] &gt; 0</Condition>
+      <IsDeleted>false</IsDeleted>
+      <LastModified>2014-11-13T12:43:39.543</LastModified>
+      <LastModifiedBy>1044</LastModifiedBy>
+      <ActionData>{"ConnectionString":"","SqlQuery":"INSERT  dbo.Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz\n        ( ReplyToInquiryId ,\n          InquiryId ,\n          InquiryType ,\n          VasileName ,\n          VahedePool ,\n          GeymateVahed\n        )\nVALUES  ( [OutputedReplyToInquiryId] , -- ReplyToInquiryId - bigint\n          [Get:InquiryId] , -- InquiryId - bigint\n          N\u0027Zadghan\u0027 , -- InquiryType - nvarchar(1000)\n          N\u0027خاور\u0027 , -- VasileName - nvarchar(1000)\n          N\u0027ریال\u0027 , -- VahedePool - nvarchar(1000)\n          [GeymateVahedeKhavar]  -- GeymateVahed - money\n        )","OutputTokenName":"","ExtractColumns":"","ShowErrors":""}</ActionData>
+    </ActionInfo>
+    <ActionInfo>
+      <ModuleId>6678</ModuleId>
+      <Description>Run SQL Query (Insert کامیون تک In DataBase)</Description>
+      <FieldName>YesSubmit</FieldName>
+      <EventName>click</EventName>
+      <ActionType>RunSql</ActionType>
+      <OrderIndex>2</OrderIndex>
+      <Condition>[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کامیون تک")] &gt; 0</Condition>
+      <IsDeleted>false</IsDeleted>
+      <LastModified>2014-11-13T12:43:39.543</LastModified>
+      <LastModifiedBy>1044</LastModifiedBy>
+      <ActionData>{"ConnectionString":"","SqlQuery":"INSERT  dbo.Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz\n        ( ReplyToInquiryId ,\n          InquiryId ,\n          InquiryType ,\n          VasileName ,\n          VahedePool ,\n          GeymateVahed\n        )\nVALUES  ( [OutputedReplyToInquiryId] , -- ReplyToInquiryId - bigint\n          [Get:InquiryId] , -- InquiryId - bigint\n          N\u0027Zadghan\u0027 , -- InquiryType - nvarchar(1000)\n          N\u0027کامیون تک\u0027 , -- VasileName - nvarchar(1000)\n          N\u0027ریال\u0027 , -- VahedePool - nvarchar(1000)\n          [GeymateVahedeKamiyooneTak]  -- GeymateVahed - money\n        )","OutputTokenName":"","ExtractColumns":"","ShowErrors":""}</ActionData>
+    </ActionInfo>
+    <ActionInfo>
+      <ModuleId>6678</ModuleId>
+      <Description>Run SQL Query (Insert کامیون جفت In DataBase)</Description>
+      <FieldName>YesSubmit</FieldName>
+      <EventName>click</EventName>
+      <ActionType>RunSql</ActionType>
+      <OrderIndex>3</OrderIndex>
+      <Condition>[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کامیون جفت")] &gt; 0</Condition>
+      <IsDeleted>false</IsDeleted>
+      <LastModified>2014-11-13T12:43:39.547</LastModified>
+      <LastModifiedBy>1044</LastModifiedBy>
+      <ActionData>{"ConnectionString":"","SqlQuery":"INSERT  dbo.Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz\n        ( ReplyToInquiryId ,\n          InquiryId ,\n          InquiryType ,\n          VasileName ,\n          VahedePool ,\n          GeymateVahed\n        )\nVALUES  ( [OutputedReplyToInquiryId] , -- ReplyToInquiryId - bigint\n          [Get:InquiryId] , -- InquiryId - bigint\n          N\u0027Zadghan\u0027 , -- InquiryType - nvarchar(1000)\n          N\u0027کامیون جفت\u0027 , -- VasileName - nvarchar(1000)\n          N\u0027ریال\u0027 , -- VahedePool - nvarchar(1000)\n          [GeymateVahedeKamiyooneJoft]  -- GeymateVahed - money\n        )","OutputTokenName":"","ExtractColumns":"","ShowErrors":""}</ActionData>
+    </ActionInfo>
+    <ActionInfo>
+      <ModuleId>6678</ModuleId>
+      <Description>Run SQL Query (Insert تریلرکفی معمولی In DataBase)</Description>
+      <FieldName>YesSubmit</FieldName>
+      <EventName>click</EventName>
+      <ActionType>RunSql</ActionType>
+      <OrderIndex>4</OrderIndex>
+      <Condition>[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="تریلرکفی معمولی")] &gt; 0</Condition>
+      <IsDeleted>false</IsDeleted>
+      <LastModified>2014-11-13T12:43:39.547</LastModified>
+      <LastModifiedBy>1044</LastModifiedBy>
+      <ActionData>{"ConnectionString":"","SqlQuery":"INSERT  dbo.Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz\n        ( ReplyToInquiryId ,\n          InquiryId ,\n          InquiryType ,\n          VasileName ,\n          VahedePool ,\n          GeymateVahed\n        )\nVALUES  ( [OutputedReplyToInquiryId] , -- ReplyToInquiryId - bigint\n          [Get:InquiryId] , -- InquiryId - bigint\n          N\u0027Zadghan\u0027 , -- InquiryType - nvarchar(1000)\n          N\u0027تریلرکفی معمولی\u0027 , -- VasileName - nvarchar(1000)\n          N\u0027ریال\u0027 , -- VahedePool - nvarchar(1000)\n          [GeymateTreylereKafiyeMamooli]  -- GeymateVahed - money\n        )","OutputTokenName":"","ExtractColumns":"","ShowErrors":""}</ActionData>
+    </ActionInfo>
+    <ActionInfo>
+      <ModuleId>6678</ModuleId>
+      <Description>Run SQL Query (Insert تریلرکفی ترافیکی بدون اسکورت In DataBase)</Description>
+      <FieldName>YesSubmit</FieldName>
+      <EventName>click</EventName>
+      <ActionType>RunSql</ActionType>
+      <OrderIndex>5</OrderIndex>
+      <Condition>[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="تریلرکفی ترافیکی بدون اسکورت")] &gt; 0</Condition>
+      <IsDeleted>false</IsDeleted>
+      <LastModified>2014-11-13T12:43:39.547</LastModified>
+      <LastModifiedBy>1044</LastModifiedBy>
+      <ActionData>{"ConnectionString":"","SqlQuery":"INSERT  dbo.Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz\n        ( ReplyToInquiryId ,\n          InquiryId ,\n          InquiryType ,\n          VasileName ,\n          VahedePool ,\n          GeymateVahed\n        )\nVALUES  ( [OutputedReplyToInquiryId] , -- ReplyToInquiryId - bigint\n          [Get:InquiryId] , -- InquiryId - bigint\n          N\u0027Zadghan\u0027 , -- InquiryType - nvarchar(1000)\n          N\u0027تریلرکفی ترافیکی بدون اسکورت\u0027 , -- VasileName - nvarchar(1000)\n          N\u0027ریال\u0027 , -- VahedePool - nvarchar(1000)\n          [GeymateTreylereKafiyeTeraficiyeBedoneScort]  -- GeymateVahed - money\n        )","OutputTokenName":"","ExtractColumns":"","ShowErrors":""}</ActionData>
+    </ActionInfo>
+    <ActionInfo>
+      <ModuleId>6678</ModuleId>
+      <Description>Run SQL Query (Insert تریلرکفی ترافیکی تک اسکورت In DataBase)</Description>
+      <FieldName>YesSubmit</FieldName>
+      <EventName>click</EventName>
+      <ActionType>RunSql</ActionType>
+      <OrderIndex>6</OrderIndex>
+      <Condition>[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="تریلرکفی ترافیکی تک اسکورت")] &gt; 0</Condition>
+      <IsDeleted>false</IsDeleted>
+      <LastModified>2014-11-13T12:43:39.55</LastModified>
+      <LastModifiedBy>1044</LastModifiedBy>
+      <ActionData>{"ConnectionString":"","SqlQuery":"INSERT  dbo.Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz\n        ( ReplyToInquiryId ,\n          InquiryId ,\n          InquiryType ,\n          VasileName ,\n          VahedePool ,\n          GeymateVahed\n        )\nVALUES  ( [OutputedReplyToInquiryId] , -- ReplyToInquiryId - bigint\n          [Get:InquiryId] , -- InquiryId - bigint\n          N\u0027Zadghan\u0027 , -- InquiryType - nvarchar(1000)\n          N\u0027تریلرکفی ترافیکی تک اسکورت\u0027 , -- VasileName - nvarchar(1000)\n          N\u0027ریال\u0027 , -- VahedePool - nvarchar(1000)\n          [GeymateTreylereKafiyeTeraficiyeTakScort]  -- GeymateVahed - money\n        )","OutputTokenName":"","ExtractColumns":"","ShowErrors":""}</ActionData>
+    </ActionInfo>
+    <ActionInfo>
+      <ModuleId>6678</ModuleId>
+      <Description>Run SQL Query (Insert تریلرکفی ترافیکی جفت اسکورت In DataBase)</Description>
+      <FieldName>YesSubmit</FieldName>
+      <EventName>click</EventName>
+      <ActionType>RunSql</ActionType>
+      <OrderIndex>7</OrderIndex>
+      <Condition>[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="تریلرکفی ترافیکی جفت اسکورت")] &gt; 0</Condition>
+      <IsDeleted>false</IsDeleted>
+      <LastModified>2014-11-13T12:43:39.55</LastModified>
+      <LastModifiedBy>1044</LastModifiedBy>
+      <ActionData>{"ConnectionString":"","SqlQuery":"INSERT  dbo.Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz\n        ( ReplyToInquiryId ,\n          InquiryId ,\n          InquiryType ,\n          VasileName ,\n          VahedePool ,\n          GeymateVahed\n        )\nVALUES  ( [OutputedReplyToInquiryId] , -- ReplyToInquiryId - bigint\n          [Get:InquiryId] , -- InquiryId - bigint\n          N\u0027Zadghan\u0027 , -- InquiryType - nvarchar(1000)\n          N\u0027تریلرکفی ترافیکی جفت اسکورت\u0027 , -- VasileName - nvarchar(1000)\n          N\u0027ریال\u0027 , -- VahedePool - nvarchar(1000)\n          [GeymateTreylereKafiyeTeraficiyeJoftScort]  -- GeymateVahed - money\n        )","OutputTokenName":"","ExtractColumns":"","ShowErrors":""}</ActionData>
+    </ActionInfo>
+    <ActionInfo>
+      <ModuleId>6678</ModuleId>
+      <Description>Run SQL Query (Insert کمرشکن 5 محور معمولی In DataBase)</Description>
+      <FieldName>YesSubmit</FieldName>
+      <EventName>click</EventName>
+      <ActionType>RunSql</ActionType>
+      <OrderIndex>8</OrderIndex>
+      <Condition>[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کمرشکن 5 محور معمولی")] &gt; 0</Condition>
+      <IsDeleted>false</IsDeleted>
+      <LastModified>2014-11-13T12:43:39.55</LastModified>
+      <LastModifiedBy>1044</LastModifiedBy>
+      <ActionData>{"ConnectionString":"","SqlQuery":"INSERT  dbo.Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz\n        ( ReplyToInquiryId ,\n          InquiryId ,\n          InquiryType ,\n          VasileName ,\n          VahedePool ,\n          GeymateVahed\n        )\nVALUES  ( [OutputedReplyToInquiryId] , -- ReplyToInquiryId - bigint\n          [Get:InquiryId] , -- InquiryId - bigint\n          N\u0027Zadghan\u0027 , -- InquiryType - nvarchar(1000)\n          N\u0027کمرشکن 5 محور معمولی\u0027 , -- VasileName - nvarchar(1000)\n          N\u0027ریال\u0027 , -- VahedePool - nvarchar(1000)\n          [GeymateKamarShekane5MehvareMamooli]  -- GeymateVahed - money\n        )","OutputTokenName":"","ExtractColumns":"","ShowErrors":""}</ActionData>
+    </ActionInfo>
+    <ActionInfo>
+      <ModuleId>6678</ModuleId>
+      <Description>Run SQL Query (Insert کمرشکن 5 محور ترافیکی بدون اسکورت In DataBase)</Description>
+      <FieldName>YesSubmit</FieldName>
+      <EventName>click</EventName>
+      <ActionType>RunSql</ActionType>
+      <OrderIndex>9</OrderIndex>
+      <Condition>[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کمرشکن 5 محور ترافیکی بدون اسکورت")] &gt; 0</Condition>
+      <IsDeleted>false</IsDeleted>
+      <LastModified>2014-11-13T12:43:39.553</LastModified>
+      <LastModifiedBy>1044</LastModifiedBy>
+      <ActionData>{"ConnectionString":"","SqlQuery":"INSERT  dbo.Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz\n        ( ReplyToInquiryId ,\n          InquiryId ,\n          InquiryType ,\n          VasileName ,\n          VahedePool ,\n          GeymateVahed\n        )\nVALUES  ( [OutputedReplyToInquiryId] , -- ReplyToInquiryId - bigint\n          [Get:InquiryId] , -- InquiryId - bigint\n          N\u0027Zadghan\u0027 , -- InquiryType - nvarchar(1000)\n          N\u0027کمرشکن 5 محور ترافیکی بدون اسکورت\u0027 , -- VasileName - nvarchar(1000)\n          N\u0027ریال\u0027 , -- VahedePool - nvarchar(1000)\n          [GeymateKamarShekane5MehvareTeraficiyeBedooneScort]  -- GeymateVahed - money\n        )","OutputTokenName":"","ExtractColumns":"","ShowErrors":""}</ActionData>
+    </ActionInfo>
+    <ActionInfo>
+      <ModuleId>6678</ModuleId>
+      <Description>Run SQL Query (Insert کمرشکن 5 محور ترافیکی تک اسکورت In DataBase)</Description>
+      <FieldName>YesSubmit</FieldName>
+      <EventName>click</EventName>
+      <ActionType>RunSql</ActionType>
+      <OrderIndex>10</OrderIndex>
+      <Condition>[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کمرشکن 5 محور ترافیکی تک اسکورت")] &gt; 0</Condition>
+      <IsDeleted>false</IsDeleted>
+      <LastModified>2014-11-13T12:43:39.553</LastModified>
+      <LastModifiedBy>1044</LastModifiedBy>
+      <ActionData>{"ConnectionString":"","SqlQuery":"INSERT  dbo.Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz\n        ( ReplyToInquiryId ,\n          InquiryId ,\n          InquiryType ,\n          VasileName ,\n          VahedePool ,\n          GeymateVahed\n        )\nVALUES  ( [OutputedReplyToInquiryId] , -- ReplyToInquiryId - bigint\n          [Get:InquiryId] , -- InquiryId - bigint\n          N\u0027Zadghan\u0027 , -- InquiryType - nvarchar(1000)\n          N\u0027کمرشکن 5 محور ترافیکی تک اسکورت\u0027 , -- VasileName - nvarchar(1000)\n          N\u0027ریال\u0027 , -- VahedePool - nvarchar(1000)\n          [GeymateKamarShekane5MehvareTeraficiyeTakScort]  -- GeymateVahed - money\n        )","OutputTokenName":"","ExtractColumns":"","ShowErrors":""}</ActionData>
+    </ActionInfo>
+    <ActionInfo>
+      <ModuleId>6678</ModuleId>
+      <Description>Run SQL Query (Insert کمرشکن 5 محور ترافیکی جفت اسکورت In DataBase)</Description>
+      <FieldName>YesSubmit</FieldName>
+      <EventName>click</EventName>
+      <ActionType>RunSql</ActionType>
+      <OrderIndex>11</OrderIndex>
+      <Condition>[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کمرشکن 5 محور ترافیکی جفت اسکورت")] &gt; 0</Condition>
+      <IsDeleted>false</IsDeleted>
+      <LastModified>2014-11-13T12:43:39.553</LastModified>
+      <LastModifiedBy>1044</LastModifiedBy>
+      <ActionData>{"ConnectionString":"","SqlQuery":"INSERT  dbo.Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz\n        ( ReplyToInquiryId ,\n          InquiryId ,\n          InquiryType ,\n          VasileName ,\n          VahedePool ,\n          GeymateVahed\n        )\nVALUES  ( [OutputedReplyToInquiryId] , -- ReplyToInquiryId - bigint\n          [Get:InquiryId] , -- InquiryId - bigint\n          N\u0027Zadghan\u0027 , -- InquiryType - nvarchar(1000)\n          N\u0027کمرشکن 5 محور ترافیکی جفت اسکورت\u0027 , -- VasileName - nvarchar(1000)\n          N\u0027ریال\u0027 , -- VahedePool - nvarchar(1000)\n          [GeymateKamarShekane5MehvareTeraficiyeJoftScort]  -- GeymateVahed - money\n        )","OutputTokenName":"","ExtractColumns":"","ShowErrors":""}</ActionData>
+    </ActionInfo>
+    <ActionInfo>
+      <ModuleId>6678</ModuleId>
+      <Description>Run SQL Query (Insert کمر شکن 7 محور ترافیکی تک اسکورت In DataBase)</Description>
+      <FieldName>YesSubmit</FieldName>
+      <EventName>click</EventName>
+      <ActionType>RunSql</ActionType>
+      <OrderIndex>12</OrderIndex>
+      <Condition>[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کمر شکن 7 محور ترافیکی تک اسکورت")] &gt; 0</Condition>
+      <IsDeleted>false</IsDeleted>
+      <LastModified>2014-11-13T12:43:39.557</LastModified>
+      <LastModifiedBy>1044</LastModifiedBy>
+      <ActionData>{"ConnectionString":"","SqlQuery":"INSERT  dbo.Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz\n        ( ReplyToInquiryId ,\n          InquiryId ,\n          InquiryType ,\n          VasileName ,\n          VahedePool ,\n          GeymateVahed\n        )\nVALUES  ( [OutputedReplyToInquiryId] , -- ReplyToInquiryId - bigint\n          [Get:InquiryId] , -- InquiryId - bigint\n          N\u0027Zadghan\u0027 , -- InquiryType - nvarchar(1000)\n          N\u0027کمر شکن 7 محور ترافیکی تک اسکورت\u0027 , -- VasileName - nvarchar(1000)\n          N\u0027ریال\u0027 , -- VahedePool - nvarchar(1000)\n          [GeymateKamarShekane7MehvareTeraficiyeTakScort]  -- GeymateVahed - money\n        )","OutputTokenName":"","ExtractColumns":"","ShowErrors":""}</ActionData>
+    </ActionInfo>
+    <ActionInfo>
+      <ModuleId>6678</ModuleId>
+      <Description>Run SQL Query (Insert کمر شکن 7 محور ترافیکی جفت اسکورت In DataBase)</Description>
+      <FieldName>YesSubmit</FieldName>
+      <EventName>click</EventName>
+      <ActionType>RunSql</ActionType>
+      <OrderIndex>13</OrderIndex>
+      <Condition>[EHaml:NoVaTedadeVasileyeMoredeNiyazByVasileName(InquiryId=[Get:InquiryId],VasileName="کمر شکن 7 محور ترافیکی جفت اسکورت")] &gt; 0</Condition>
+      <IsDeleted>false</IsDeleted>
+      <LastModified>2014-11-13T12:43:39.557</LastModified>
+      <LastModifiedBy>1044</LastModifiedBy>
+      <ActionData>{"ConnectionString":"","SqlQuery":"INSERT  dbo.Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz\n        ( ReplyToInquiryId ,\n          InquiryId ,\n          InquiryType ,\n          VasileName ,\n          VahedePool ,\n          GeymateVahed\n        )\nVALUES  ( [OutputedReplyToInquiryId] , -- ReplyToInquiryId - bigint\n          [Get:InquiryId] , -- InquiryId - bigint\n          N\u0027Zadghan\u0027 , -- InquiryType - nvarchar(1000)\n          N\u0027کمر شکن 7 محور ترافیکی جفت اسکورت\u0027 , -- VasileName - nvarchar(1000)\n          N\u0027ریال\u0027 , -- VahedePool - nvarchar(1000)\n          [GeymateKamarShekane7MehvareTeraficiyeJoftScort]  -- GeymateVahed - money\n        )","OutputTokenName":"","ExtractColumns":"","ShowErrors":""}</ActionData>
+    </ActionInfo>
+    <ActionInfo>
+      <ModuleId>6678</ModuleId>
+      <Description />
+      <FieldName>YesSubmit</FieldName>
+      <EventName>click</EventName>
+      <ActionType>ShowMessage</ActionType>
+      <OrderIndex>14</OrderIndex>
+      <Condition />
+      <IsDeleted>false</IsDeleted>
+      <LastModified>2014-11-13T12:43:39.557</LastModified>
+      <LastModifiedBy>1044</LastModifiedBy>
+      <ActionData>{"Message":"\u003cp style=\"text-align: center;direction:rtl;\"\u003eپاسخ به استعلام شما با موفقیت ثبت شد.\u003c/p\u003e","ButtonsList":[]}</ActionData>
+    </ActionInfo>
+  </Actions>
+</ActionForm></content>

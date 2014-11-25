@@ -1,0 +1,36 @@
+12:11:18.742 | Errors | a3a37efd |  #7675 | There was an error evaluating conditional expression "خاور".indexOf("خاور") > -1
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+Member not found: String.indexOf
+   at DnnSharp.Common.ExpressionEvaluator.Operators.OperatorCustomExpressions.MemberAccess(Expression le, String membername, List`1 args)
+   at DnnSharp.Common.ExpressionEvaluator.Operators.OpFuncServiceProviders.MethodOperatorFunc(OpFuncArgs args)
+   at DnnSharp.Common.ExpressionEvaluator.Parser.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.CompiledExpression.Compile()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+
+12:11:58.108 | Errors | 263a233d |  #7675 | There was an error evaluating conditional expression "خاور".indexOf("خاور") > -1
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+Member not found: String.indexOf
+   at DnnSharp.Common.ExpressionEvaluator.Operators.OperatorCustomExpressions.MemberAccess(Expression le, String membername, List`1 args)
+   at DnnSharp.Common.ExpressionEvaluator.Operators.OpFuncServiceProviders.MethodOperatorFunc(OpFuncArgs args)
+   at DnnSharp.Common.ExpressionEvaluator.Parser.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.CompiledExpression.Compile()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+
+12:11:17.436 | Errors | 893566ab |  #7675 | There was an error evaluating conditional expression "خاور".indexOf("خاور") > -1
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Actions.ActionInfo.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+Member not found: String.indexOf
+   at DnnSharp.Common.ExpressionEvaluator.Operators.OperatorCustomExpressions.MemberAccess(Expression le, String membername, List`1 args)
+   at DnnSharp.Common.ExpressionEvaluator.Operators.OpFuncServiceProviders.MethodOperatorFunc(OpFuncArgs args)
+   at DnnSharp.Common.ExpressionEvaluator.Parser.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.BuildTree()
+   at DnnSharp.Common.ExpressionEvaluator.CompiledExpression.Compile()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+

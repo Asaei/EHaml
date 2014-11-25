@@ -1,0 +1,243 @@
+12:11:15.432 | Debug | 67c29f88 |  | Exeute reader SQL query: SELECT  
+        '' AS BaEhtesabeBimeyeMasooliyat ,
+        '' AS BaEhtesabeHazineyeTakhliyeDarMagsad ,
+        '' AS CreateDateShamsi ,
+        '' AS FormePakingList ,
+        '' AS FormeVorodeArzeshBarAsaseListeAdlBandi ,
+        '' AS HadafeShomaAzEstelam ,
+        '' AS ListeKalahayeKhatarnak ,
+        '' AS MantageyeMabda ,
+        '' AS MantageyeMagsad ,
+        '' AS MogeiyateTahvilDadaneMahmooleBePeymankareHaml ,
+        '' AS NoeBasteBandi ,
+        '' AS NoeMahmoole ,
+        '' AS OstaneMabda ,
+        '' AS OstaneMagsad ,
+        '' AS ShahreMabda ,
+        '' AS ShahreMagsad ,
+        '' AS TarikheAgazeAmaliyatShamsi ,
+        '' AS TarikheEtebareEstelamShamsi,
+        '' AS Id,
+        'No' AS IsEdit
+FROM dbo.Asaei_EHaml_Inquiry
+12:11:15.432 | Debug | 67c29f88 |  | Done executing sql.
+12:11:17.935 | Debug | c83e9fe1 |  | Exeute scalar SQL query: INSERT INTO dbo.Asaei_EHaml_Inquiry
+        ( UserId, 
+          HadafeShomaAzEstelam ,
+          NoeMahmoole ,
+          ListeKalahayeKhatarnak ,
+          NoeBasteBandi ,
+          BaEhtesabeBimeyeMasooliyat ,
+          FormeVorodeArzeshBarAsaseListeAdlBandi,
+          FormePakingList ,
+          OstaneMabda ,
+          MantageyeMabda ,
+          ShahreMabda ,
+          OstaneMagsad ,
+          MantageyeMagsad ,
+          ShahreMagsad ,
+          MogeiyateTahvilDadaneMahmooleBePeymankareHaml ,
+          BaEhtesabeHazineyeTakhliyeDarMagsad ,
+          TarikheAgazeAmaliyatShamsi ,
+          TarikheEtebareEstelamShamsi ,
+          TarikheAgazeAmaliyatMiladi ,
+          TarikheEtebareEstelamMiladi ,
+          InquiryType ,
+          CreateDateShamsi ,
+          CreateDateMiladi
+        ) Output Inserted.Id
+VALUES  ( 
+          1044,
+          N'صرفا برای اطلاع از قیمت نیست و نیاز به این خدمات دارم' , -- HadafeShomaAzEstelam - nvarchar(1000)
+          N'ماشین آلات' , -- NoeMahmoole - nvarchar(1000)
+          N'' , -- ListeKalahayeKhatarnak - nvarchar(1000)
+          N'قابل بارچینی روی هم' , -- NoeBasteBandi - nvarchar(1000)
+          N'بله' , -- BaEhtesabeBimeyeMasooliyat - nvarchar(1000)
+          N'http://localhost:100/Portals/0/EHaml/Uploads/Inquiry_Zadghal/V_A_B_A_L_A-983296762.xlsx' , -- FormeVorodeArzeshBarAsaseListeAdlBandi- nvarchar(1000)
+          N'http://localhost:100/Portals/0/EHaml/Uploads/Inquiry_Zadghal/V_P_L-21507121.xlsx' , -- FormePakingList - nvarchar(1000)
+          N'چهار محال و بختياري' , -- OstaneMabda - nvarchar(1000)
+          N'aaa' , -- MantageyeMabda - nvarchar(1000)
+          N'فارسان' , -- ShahreMabda - nvarchar(1000)
+          N'زنجان' , -- OstaneMagsad - nvarchar(1000)
+          N'zzz' , -- MantageyeMagsad - nvarchar(1000)
+          N'زنجان' , -- ShahreMagsad - nvarchar(1000)
+          N'در کنار وسیله حمل' , -- MogeiyateTahvilDadaneMahmooleBePeymankareHaml - nvarchar(1000)
+          N'بله' , -- BaEhtesabeHazineyeTakhliyeDarMagsad - nvarchar(1000)
+          N'1393/08/28' , -- TarikheAgazeAmaliyatShamsi - nvarchar(1000)
+          N'1393/08/27' , -- TarikheEtebareEstelamShamsi - nvarchar(1000)
+          dbo.PersianToGregorian(CONVERT(VARCHAR, '1393/08/28', 120)) , -- TarikheAgazeAmaliyatMiladi - date
+          dbo.PersianToGregorian(CONVERT(VARCHAR, '1393/08/27', 120)) , -- TarikheEtebareEstelamMiladi - date
+          N'Inquiry_Zadghal' , -- InquaryType - nvarchar(1000)
+          dbo.GregorianToPersian(CONVERT(VARCHAR, GETDATE(), 120)) , -- CreateDateShamsi - nvarchar(1000)
+          GETDATE()  -- CreateDateMiladi - date
+        )
+12:11:18.007 | Debug | c83e9fe1 |  | Done executing sql.
+16:11:08.432 | Debug | 721d1151 |  | Exeute reader SQL query: SELECT  
+        '' AS BaEhtesabeBimeyeMasooliyat ,
+        '' AS BaEhtesabeHazineyeTakhliyeDarMagsad ,
+        '' AS CreateDateShamsi ,
+        '' AS FormeVooroodeArzeshBarAsaseVasileyeHaml ,
+        '' AS HadafeShomaAzEstelam ,
+        '' AS ListeKalahayeKhatarnak ,
+        '' AS MantageyeMabda ,
+        '' AS MantageyeMagsad ,
+        '' AS NoeMahmoole ,
+        '' AS NoeVasileyeMoredeNiyaz ,
+        '' AS OstaneMabda ,
+        '' AS OstaneMagsad ,
+        '' AS ShahreMabda ,
+        '' AS ShahreMagsad ,
+        '' AS TarikheAgazeAmaliyatShamsi ,
+        '' AS TarikheEtebareEstelamShamsi,
+        '' AS Id,
+        'No' AS IsEdit
+FROM dbo.Asaei_EHaml_Inquiry
+16:11:08.432 | Debug | 721d1151 |  | Done executing sql.
+16:11:08.448 | Debug | 721d1151 |  | Exeute reader SQL query: SELECT
+ '' as TedadeKhavar,
+ '' as TedadeKamiyoneTak,
+ '' as TedadeKamiyoneJoft,
+ '' as TedadeTreylereKafiyeMamooli,
+ '' as TedadeTreylereKafiyeTeraficyeBedooneScort,
+ '' as TedadeTreylereKafiyeTeraficyTakScort,
+ '' as TedadeTreylereKafiyeTeraficyJoftScort ,
+ '' as TedadeKamarShekane5MehvareMamooli,
+ '' as TedadeKamarShekane5MehvarTeraficyBedooneScort,
+ '' as TedadeKamarShekane5MehvarTeraficyTakScort,
+ '' as TedadeKamarShekane5MehvarTeraficyJoftScort,
+ '' as TedadeKamarShekane7MehvarTeraficyTakScort,
+ '' as TedadeKamarShekane7MehvarTeraficyJoftScort
+  FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+16:11:08.448 | Debug | 721d1151 |  | Done executing sql.
+16:11:11.647 | Debug | 42a142a7 |  | Exeute scalar SQL query: INSERT INTO dbo.Asaei_EHaml_Inquiry
+        ( UserId, 
+          HadafeShomaAzEstelam ,
+	  NoeVasileyeMoredeNiyaz ,
+          NoeMahmoole ,
+          BaEhtesabeBimeyeMasooliyat ,
+          FormeVooroodeArzeshBarAsaseVasileyeHaml ,
+          OstaneMabda ,
+          MantageyeMabda ,
+          ShahreMabda ,
+          OstaneMagsad ,
+          MantageyeMagsad ,
+          ShahreMagsad ,
+          BaEhtesabeHazineyeTakhliyeDarMagsad ,
+          TarikheAgazeAmaliyatShamsi ,
+          TarikheEtebareEstelamShamsi ,
+          TarikheAgazeAmaliyatMiladi ,
+          TarikheEtebareEstelamMiladi ,
+          InquiryType ,
+          CreateDateShamsi ,
+          CreateDateMiladi
+        ) Output Inserted.Id
+VALUES  ( 
+          ,
+          N'صرفآ برای اطلاع از قیمت استعلام می کنم' , -- HadafeShomaAzEstelam - nvarchar(1000)
+          N'خاور' , -- NoVaTedadeVasileyeMoredeNiyaz - nvarchar(1000)
+          N'ماشین آلات' , -- NoeMahmoole - nvarchar(1000)
+          N'خیر' , -- BaEhtesabeBimeyeMasooliyat - nvarchar(1000)
+          N'' , -- FormeVooroodeArzeshBarAsaseVasileyeHaml - nvarchar(1000)
+          N'خراسان رضوي' , -- OstaneMabda - nvarchar(1000)
+          N'aaa' , -- MantageyeMabda - nvarchar(1000)
+          N'رشتخوار' , -- ShahreMabda - nvarchar(1000)
+          N'خراسان شمالي' , -- OstaneMagsad - nvarchar(1000)
+          N'zzz' , -- MantageyeMagsad - nvarchar(1000)
+          N'مانه و سملقان' , -- ShahreMagsad - nvarchar(1000)
+          N'خیر' , -- BaEhtesabeHazineyeTakhliyeDarMagsad - nvarchar(1000)
+          N'1393/08/28' , -- TarikheAgazeAmaliyatShamsi - nvarchar(1000)
+          N'1393/08/27' , -- TarikheEtebareEstelamShamsi - nvarchar(1000)
+          dbo.PersianToGregorian(CONVERT(VARCHAR, '1393/08/28', 120)) , -- TarikheAgazeAmaliyatMiladi - date
+          dbo.PersianToGregorian(CONVERT(VARCHAR, '1393/08/27', 120)) , -- TarikheEtebareEstelamMiladi - date
+          N'Inquiry_Zadghan' , -- InquaryType - nvarchar(1000)
+          dbo.GregorianToPersian(CONVERT(VARCHAR, GETDATE(), 120)) , -- CreateDateShamsi - nvarchar(1000)
+          GETDATE()  -- CreateDateMiladi - date
+        )
+16:11:15.131 | Debug | 66886567 |  | Exeute scalar SQL query: INSERT INTO dbo.Asaei_EHaml_Inquiry
+        ( UserId, 
+          HadafeShomaAzEstelam ,
+	  NoeVasileyeMoredeNiyaz ,
+          NoeMahmoole ,
+          BaEhtesabeBimeyeMasooliyat ,
+          FormeVooroodeArzeshBarAsaseVasileyeHaml ,
+          OstaneMabda ,
+          MantageyeMabda ,
+          ShahreMabda ,
+          OstaneMagsad ,
+          MantageyeMagsad ,
+          ShahreMagsad ,
+          BaEhtesabeHazineyeTakhliyeDarMagsad ,
+          TarikheAgazeAmaliyatShamsi ,
+          TarikheEtebareEstelamShamsi ,
+          TarikheAgazeAmaliyatMiladi ,
+          TarikheEtebareEstelamMiladi ,
+          InquiryType ,
+          CreateDateShamsi ,
+          CreateDateMiladi
+        ) Output Inserted.Id
+VALUES  ( 
+          ,
+          N'صرفآ برای اطلاع از قیمت استعلام می کنم' , -- HadafeShomaAzEstelam - nvarchar(1000)
+          N'خاور' , -- NoVaTedadeVasileyeMoredeNiyaz - nvarchar(1000)
+          N'ماشین آلات' , -- NoeMahmoole - nvarchar(1000)
+          N'خیر' , -- BaEhtesabeBimeyeMasooliyat - nvarchar(1000)
+          N'' , -- FormeVooroodeArzeshBarAsaseVasileyeHaml - nvarchar(1000)
+          N'خراسان رضوي' , -- OstaneMabda - nvarchar(1000)
+          N'aaa' , -- MantageyeMabda - nvarchar(1000)
+          N'رشتخوار' , -- ShahreMabda - nvarchar(1000)
+          N'خراسان شمالي' , -- OstaneMagsad - nvarchar(1000)
+          N'zzz' , -- MantageyeMagsad - nvarchar(1000)
+          N'مانه و سملقان' , -- ShahreMagsad - nvarchar(1000)
+          N'خیر' , -- BaEhtesabeHazineyeTakhliyeDarMagsad - nvarchar(1000)
+          N'1393/08/28' , -- TarikheAgazeAmaliyatShamsi - nvarchar(1000)
+          N'1393/08/27' , -- TarikheEtebareEstelamShamsi - nvarchar(1000)
+          dbo.PersianToGregorian(CONVERT(VARCHAR, '1393/08/28', 120)) , -- TarikheAgazeAmaliyatMiladi - date
+          dbo.PersianToGregorian(CONVERT(VARCHAR, '1393/08/27', 120)) , -- TarikheEtebareEstelamMiladi - date
+          N'Inquiry_Zadghan' , -- InquaryType - nvarchar(1000)
+          dbo.GregorianToPersian(CONVERT(VARCHAR, GETDATE(), 120)) , -- CreateDateShamsi - nvarchar(1000)
+          GETDATE()  -- CreateDateMiladi - date
+        )
+16:11:16.160 | Debug | cec82c13 |  | Exeute scalar SQL query: INSERT INTO dbo.Asaei_EHaml_Inquiry
+        ( UserId, 
+          HadafeShomaAzEstelam ,
+	  NoeVasileyeMoredeNiyaz ,
+          NoeMahmoole ,
+          BaEhtesabeBimeyeMasooliyat ,
+          FormeVooroodeArzeshBarAsaseVasileyeHaml ,
+          OstaneMabda ,
+          MantageyeMabda ,
+          ShahreMabda ,
+          OstaneMagsad ,
+          MantageyeMagsad ,
+          ShahreMagsad ,
+          BaEhtesabeHazineyeTakhliyeDarMagsad ,
+          TarikheAgazeAmaliyatShamsi ,
+          TarikheEtebareEstelamShamsi ,
+          TarikheAgazeAmaliyatMiladi ,
+          TarikheEtebareEstelamMiladi ,
+          InquiryType ,
+          CreateDateShamsi ,
+          CreateDateMiladi
+        ) Output Inserted.Id
+VALUES  ( 
+          ,
+          N'صرفآ برای اطلاع از قیمت استعلام می کنم' , -- HadafeShomaAzEstelam - nvarchar(1000)
+          N'خاور' , -- NoVaTedadeVasileyeMoredeNiyaz - nvarchar(1000)
+          N'ماشین آلات' , -- NoeMahmoole - nvarchar(1000)
+          N'خیر' , -- BaEhtesabeBimeyeMasooliyat - nvarchar(1000)
+          N'' , -- FormeVooroodeArzeshBarAsaseVasileyeHaml - nvarchar(1000)
+          N'خراسان رضوي' , -- OstaneMabda - nvarchar(1000)
+          N'aaa' , -- MantageyeMabda - nvarchar(1000)
+          N'رشتخوار' , -- ShahreMabda - nvarchar(1000)
+          N'خراسان شمالي' , -- OstaneMagsad - nvarchar(1000)
+          N'zzz' , -- MantageyeMagsad - nvarchar(1000)
+          N'مانه و سملقان' , -- ShahreMagsad - nvarchar(1000)
+          N'خیر' , -- BaEhtesabeHazineyeTakhliyeDarMagsad - nvarchar(1000)
+          N'1393/08/28' , -- TarikheAgazeAmaliyatShamsi - nvarchar(1000)
+          N'1393/08/27' , -- TarikheEtebareEstelamShamsi - nvarchar(1000)
+          dbo.PersianToGregorian(CONVERT(VARCHAR, '1393/08/28', 120)) , -- TarikheAgazeAmaliyatMiladi - date
+          dbo.PersianToGregorian(CONVERT(VARCHAR, '1393/08/27', 120)) , -- TarikheEtebareEstelamMiladi - date
+          N'Inquiry_Zadghan' , -- InquaryType - nvarchar(1000)
+          dbo.GregorianToPersian(CONVERT(VARCHAR, GETDATE(), 120)) , -- CreateDateShamsi - nvarchar(1000)
+          GETDATE()  -- CreateDateMiladi - date
+        )

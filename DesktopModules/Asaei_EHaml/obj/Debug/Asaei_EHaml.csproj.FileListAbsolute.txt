@@ -60,3 +60,4 @@ D:\GitHub\EHaml\DesktopModules\Asaei_EHaml\bin\dotnetnuke.log4net.dll
 D:\GitHub\EHaml\DesktopModules\Asaei_EHaml\bin\System.Web.Http.xml
 D:\GitHub\EHaml\DesktopModules\Asaei_EHaml\obj\Debug\Asaei_EHaml.dll
 D:\GitHub\EHaml\DesktopModules\Asaei_EHaml\obj\Debug\Asaei_EHaml.pdb
+D:\GitHub\EHaml\DesktopModules\Asaei_EHaml\bin\System.Net.Http.Formatting.xml

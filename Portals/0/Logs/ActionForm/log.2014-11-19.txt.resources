@@ -1,0 +1,22 @@
+11:11:54.025 | Errors | 73a6818f |  #7677 | System.UnauthorizedAccessException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Access denied!
+   at DnnSharp.Common.Api.ApiContext.Execute(IHttpHandler handler, HttpContext httpContext, Action`2 log)
+
+14:11:03.608 | Errors | 498fda06 | استعلام حمل زمینی(داخلی) محمولات سنگین(بیش از 40 تن) و غیر متعارف – بر اساس لیست عدلبندی کالا(پکینگ لیست) #5662 | Incorrect syntax near ','.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+
+16:11:16.357 | Errors | 65dba9ae |  #7680 | System.UnauthorizedAccessException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Access denied!
+   at DnnSharp.Common.Api.ApiContext.Execute(IHttpHandler handler, HttpContext httpContext, Action`2 log)
+

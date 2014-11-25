@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="EHamlDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Asaei_EHaml_Inquiry">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserId" Type="bigint" />
+          <Property Name="HadafeShomaAzEstelam" Type="nvarchar" MaxLength="1000" />
+          <Property Name="NoeVasileyeMoredeNiyaz" Type="nvarchar" MaxLength="1000" />
+          <Property Name="NoeHaml" Type="nvarchar" MaxLength="1000" />
+          <Property Name="NoeMahmoole" Type="nvarchar" MaxLength="1000" />
+          <Property Name="NoeMahmoole2" Type="nvarchar" MaxLength="1000" />
+          <Property Name="YekAksAzMahmoole" Type="nvarchar" MaxLength="1000" />
+          <Property Name="CodeHsMahmoole" Type="nvarchar" MaxLength="1000" />
+          <Property Name="VazneMahmooleKiloGeram" Type="nvarchar" MaxLength="1000" />
+          <Property Name="ListeKalahayeKhatarnak" Type="nvarchar" MaxLength="1000" />
+          <Property Name="NoeBasteBandi" Type="nvarchar" MaxLength="1000" />
+          <Property Name="BaEhtesabeBimeyeMasooliyat" Type="nvarchar" MaxLength="1000" />
+          <Property Name="FormeVooroodeArzeshBarAsaseVasileyeHaml" Type="nvarchar" MaxLength="1000" />
+          <Property Name="FormeVorodeArzeshBarAsaseListeAdlBandi" Type="nvarchar" MaxLength="1000" />
+          <Property Name="FormePakingList" Type="nvarchar" MaxLength="1000" />
+          <Property Name="BaEhtesabeHazineyeBarGiriDarMabda" Type="nvarchar" MaxLength="1000" />
+          <Property Name="EstelamBarAsase" Type="nvarchar" MaxLength="1000" />
+          <Property Name="OstaneMabda" Type="nvarchar" MaxLength="1000" />
+          <Property Name="MantageyeMabda" Type="nvarchar" MaxLength="1000" />
+          <Property Name="ShahreMabda" Type="nvarchar" MaxLength="1000" />
+          <Property Name="MogeiyateTahvilDadaneMahmooleBePeymankareHaml" Type="nvarchar" MaxLength="1000" />
+          <Property Name="OstaneMagsad" Type="nvarchar" MaxLength="1000" />
+          <Property Name="MantageyeMagsad" Type="nvarchar" MaxLength="1000" />
+          <Property Name="ShahreMagsad" Type="nvarchar" MaxLength="1000" />
+          <Property Name="BaEhtesabeHazineyeTakhliyeDarMagsad" Type="nvarchar" MaxLength="1000" />
+          <Property Name="TarikheAgazeAmaliyatShamsi" Type="nvarchar" MaxLength="1000" />
+          <Property Name="TarikheEtebareEstelamShamsi" Type="nvarchar" MaxLength="1000" />
+          <Property Name="TarikheAgazeAmaliyatMiladi" Type="date" />
+          <Property Name="TarikheEtebareEstelamMiladi" Type="date" />
+          <Property Name="InquiryType" Type="nvarchar" MaxLength="1000" />
+          <Property Name="CreateDateShamsi" Type="nvarchar" MaxLength="1000" />
+          <Property Name="CreateDateMiladi" Type="date" />
+          <Property Name="Tedad" Type="nvarchar" MaxLength="1000" />
+          <Property Name="HadeAxareVazneMahmoole" Type="nvarchar" MaxLength="1000" />
+          <Property Name="NoeVasileyeMoredeNiyaz2" Type="nvarchar" MaxLength="1000" />
+          <Property Name="VazneHarVahedeMahmooleKiloGeram" Type="nvarchar" MaxLength="1000" />
+          <Property Name="BaEhtesabeHazineyeOdateKantinereKhali" Type="nvarchar" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="Asaei_EHaml_ListeKalahayeKhatarnak">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="1000" />
+          <Property Name="ShomareyeTartib" Type="float" />
+        </EntityType>
+        <EntityType Name="Asaei_EHaml_NoeVasileyeHaml">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="NameVasile" Type="nvarchar" MaxLength="1000" />
+          <Property Name="ShomareyeTartib" Type="int" />
+        </EntityType>
+        <EntityType Name="Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="InquiryID" Type="bigint" />
+          <Property Name="InquiryType" Type="nvarchar" MaxLength="1000" />
+          <Property Name="VasileName" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Tedad" Type="smallint" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'EHamlDB.dbo.Asaei_EHaml_OstanVaShahr' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Asaei_EHaml_OstanVaShahr">
+          <Property Name="Id" Type="float" />
+          <Property Name="Shahrestan" Type="nvarchar" MaxLength="1000" />
+          <Property Name="MarkazeShahrestan" Type="nvarchar" MaxLength="1000" />
+          <Property Name="TarikheTasis" Type="float" />
+          <Property Name="CodeTagsimat" Type="float" />
+          <Property Name="Ostan" Type="nvarchar" MaxLength="1000" />
+          <Property Name="GozaresheTojihi" Type="nvarchar" MaxLength="1000" />
+        </EntityType>-->
+        <EntityType Name="Asaei_EHaml_ReplyToInquiry">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="InquiryId" Type="bigint" />
+          <Property Name="InquiryType" Type="nvarchar" MaxLength="1000" />
+          <Property Name="ServentUserId" Type="bigint" />
+          <Property Name="KoleModatZamaneHaml" Type="nvarchar" MaxLength="1000" />
+          <Property Name="ZamaneAmadegiBarayShoorooeAmaliyatShamsi" Type="nvarchar" MaxLength="1000" />
+          <Property Name="ZamaneAmadegiBarayShoorooAmaliyatMiladi" Type="date" />
+          <Property Name="GozaresheAmaliyateRoozane" Type="nvarchar" MaxLength="1000" />
+          <Property Name="PishbiniEmkanPaziriyeAmaliyat" Type="nvarchar" MaxLength="1000" />
+          <Property Name="GeymateKol" Type="nvarchar" MaxLength="1000" />
+          <Property Name="GeymateVahed" Type="nvarchar" MaxLength="1000" />
+          <Property Name="GeymateKolBarAsaseListeAdlBandi" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Vaziyat" Type="nvarchar" MaxLength="1000" />
+          <Property Name="MogeiyateTahvilDadaneMahmooleBePeymankareHaml" Type="nvarchar" MaxLength="1000" />
+          <Property Name="PasokhGooyiBarAsase" Type="nvarchar" MaxLength="1000" />
+          <Property Name="PasokhGooyiBarAsaseVasileyeHaml" Type="nvarchar" MaxLength="1000" />
+          <Property Name="GeymatBeEzayeHarTon" Type="nvarchar" MaxLength="1000" />
+          <Property Name="FormePasokheGeymateHamleSangin" Type="nvarchar" MaxLength="1000" />
+          <Property Name="BaEhtesabeHazineyeOdateCantinereKhali" Type="nvarchar" MaxLength="1000" />
+          <Property Name="CreateDateShamsi" Type="nvarchar" MaxLength="1000" />
+          <Property Name="CreateDateMiladi" Type="date" />
+        </EntityType>
+        <EntityType Name="Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ReplyToInquiryId" Type="bigint" />
+          <Property Name="InquiryId" Type="bigint" />
+          <Property Name="InquiryType" Type="nvarchar" MaxLength="1000" />
+          <Property Name="VasileName" Type="nvarchar" MaxLength="1000" />
+          <Property Name="VahedePool" Type="nvarchar" MaxLength="1000" />
+          <Property Name="GeymateVahed" Type="money" />
+          <Property Name="Tedad" Type="int" />
+        </EntityType>
+        <EntityContainer Name="EHamlDBModelStoreContainer">
+          <EntitySet Name="Asaei_EHaml_Inquiry" EntityType="Self.Asaei_EHaml_Inquiry" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Asaei_EHaml_ListeKalahayeKhatarnak" EntityType="Self.Asaei_EHaml_ListeKalahayeKhatarnak" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Asaei_EHaml_NoeVasileyeHaml" EntityType="Self.Asaei_EHaml_NoeVasileyeHaml" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz" EntityType="Self.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Asaei_EHaml_ReplyToInquiry" EntityType="Self.Asaei_EHaml_ReplyToInquiry" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz" EntityType="Self.Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="EHamlDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Asaei_EHaml_Inquiry">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="Int64" />
+          <Property Name="HadafeShomaAzEstelam" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="NoeVasileyeMoredeNiyaz" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="NoeHaml" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="NoeMahmoole" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="NoeMahmoole2" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="YekAksAzMahmoole" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="CodeHsMahmoole" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="VazneMahmooleKiloGeram" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="ListeKalahayeKhatarnak" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="NoeBasteBandi" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="BaEhtesabeBimeyeMasooliyat" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="FormeVooroodeArzeshBarAsaseVasileyeHaml" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="FormeVorodeArzeshBarAsaseListeAdlBandi" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="FormePakingList" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="BaEhtesabeHazineyeBarGiriDarMabda" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="EstelamBarAsase" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="OstaneMabda" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="MantageyeMabda" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="ShahreMabda" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="MogeiyateTahvilDadaneMahmooleBePeymankareHaml" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="OstaneMagsad" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="MantageyeMagsad" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="ShahreMagsad" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="BaEhtesabeHazineyeTakhliyeDarMagsad" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="TarikheAgazeAmaliyatShamsi" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="TarikheEtebareEstelamShamsi" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="TarikheAgazeAmaliyatMiladi" Type="DateTime" Precision="0" />
+          <Property Name="TarikheEtebareEstelamMiladi" Type="DateTime" Precision="0" />
+          <Property Name="InquiryType" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="CreateDateShamsi" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="CreateDateMiladi" Type="DateTime" Precision="0" />
+          <Property Name="Tedad" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="HadeAxareVazneMahmoole" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="NoeVasileyeMoredeNiyaz2" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="VazneHarVahedeMahmooleKiloGeram" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="BaEhtesabeHazineyeOdateKantinereKhali" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Asaei_EHaml_ListeKalahayeKhatarnak">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="ShomareyeTartib" Type="Double" />
+        </EntityType>
+        <EntityType Name="Asaei_EHaml_NoeVasileyeHaml">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="NameVasile" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="ShomareyeTartib" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="InquiryID" Type="Int64" />
+          <Property Name="InquiryType" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="VasileName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="Tedad" Type="Int16" />
+        </EntityType>
+        <EntityType Name="Asaei_EHaml_ReplyToInquiry">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="InquiryId" Type="Int64" />
+          <Property Name="InquiryType" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="ServentUserId" Type="Int64" />
+          <Property Name="KoleModatZamaneHaml" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="ZamaneAmadegiBarayShoorooeAmaliyatShamsi" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="ZamaneAmadegiBarayShoorooAmaliyatMiladi" Type="DateTime" Precision="0" />
+          <Property Name="GozaresheAmaliyateRoozane" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="PishbiniEmkanPaziriyeAmaliyat" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="GeymateKol" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="GeymateVahed" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="GeymateKolBarAsaseListeAdlBandi" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="Vaziyat" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="MogeiyateTahvilDadaneMahmooleBePeymankareHaml" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="PasokhGooyiBarAsase" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="PasokhGooyiBarAsaseVasileyeHaml" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="GeymatBeEzayeHarTon" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="FormePasokheGeymateHamleSangin" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="BaEhtesabeHazineyeOdateCantinereKhali" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="CreateDateShamsi" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="CreateDateMiladi" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ReplyToInquiryId" Type="Int64" />
+          <Property Name="InquiryId" Type="Int64" />
+          <Property Name="InquiryType" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="VasileName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="VahedePool" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="GeymateVahed" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="Tedad" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="EHamlDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Asaei_EHaml_Inquiry" EntityType="Self.Asaei_EHaml_Inquiry" />
+          <EntitySet Name="Asaei_EHaml_ListeKalahayeKhatarnak" EntityType="Self.Asaei_EHaml_ListeKalahayeKhatarnak" />
+          <EntitySet Name="Asaei_EHaml_NoeVasileyeHaml" EntityType="Self.Asaei_EHaml_NoeVasileyeHaml" />
+          <EntitySet Name="Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz" EntityType="Self.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz" />
+          <EntitySet Name="Asaei_EHaml_ReplyToInquiry" EntityType="Self.Asaei_EHaml_ReplyToInquiry" />
+          <EntitySet Name="Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz" EntityType="Self.Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="EHamlDBModelStoreContainer" CdmEntityContainer="EHamlDBEntities">
+          <EntitySetMapping Name="Asaei_EHaml_Inquiry">
+            <EntityTypeMapping TypeName="EHamlDBModel.Asaei_EHaml_Inquiry">
+              <MappingFragment StoreEntitySet="Asaei_EHaml_Inquiry">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="HadafeShomaAzEstelam" ColumnName="HadafeShomaAzEstelam" />
+                <ScalarProperty Name="NoeVasileyeMoredeNiyaz" ColumnName="NoeVasileyeMoredeNiyaz" />
+                <ScalarProperty Name="NoeHaml" ColumnName="NoeHaml" />
+                <ScalarProperty Name="NoeMahmoole" ColumnName="NoeMahmoole" />
+                <ScalarProperty Name="NoeMahmoole2" ColumnName="NoeMahmoole2" />
+                <ScalarProperty Name="YekAksAzMahmoole" ColumnName="YekAksAzMahmoole" />
+                <ScalarProperty Name="CodeHsMahmoole" ColumnName="CodeHsMahmoole" />
+                <ScalarProperty Name="VazneMahmooleKiloGeram" ColumnName="VazneMahmooleKiloGeram" />
+                <ScalarProperty Name="ListeKalahayeKhatarnak" ColumnName="ListeKalahayeKhatarnak" />
+                <ScalarProperty Name="NoeBasteBandi" ColumnName="NoeBasteBandi" />
+                <ScalarProperty Name="BaEhtesabeBimeyeMasooliyat" ColumnName="BaEhtesabeBimeyeMasooliyat" />
+                <ScalarProperty Name="FormeVooroodeArzeshBarAsaseVasileyeHaml" ColumnName="FormeVooroodeArzeshBarAsaseVasileyeHaml" />
+                <ScalarProperty Name="FormeVorodeArzeshBarAsaseListeAdlBandi" ColumnName="FormeVorodeArzeshBarAsaseListeAdlBandi" />
+                <ScalarProperty Name="FormePakingList" ColumnName="FormePakingList" />
+                <ScalarProperty Name="BaEhtesabeHazineyeBarGiriDarMabda" ColumnName="BaEhtesabeHazineyeBarGiriDarMabda" />
+                <ScalarProperty Name="EstelamBarAsase" ColumnName="EstelamBarAsase" />
+                <ScalarProperty Name="OstaneMabda" ColumnName="OstaneMabda" />
+                <ScalarProperty Name="MantageyeMabda" ColumnName="MantageyeMabda" />
+                <ScalarProperty Name="ShahreMabda" ColumnName="ShahreMabda" />
+                <ScalarProperty Name="MogeiyateTahvilDadaneMahmooleBePeymankareHaml" ColumnName="MogeiyateTahvilDadaneMahmooleBePeymankareHaml" />
+                <ScalarProperty Name="OstaneMagsad" ColumnName="OstaneMagsad" />
+                <ScalarProperty Name="MantageyeMagsad" ColumnName="MantageyeMagsad" />
+                <ScalarProperty Name="ShahreMagsad" ColumnName="ShahreMagsad" />
+                <ScalarProperty Name="BaEhtesabeHazineyeTakhliyeDarMagsad" ColumnName="BaEhtesabeHazineyeTakhliyeDarMagsad" />
+                <ScalarProperty Name="TarikheAgazeAmaliyatShamsi" ColumnName="TarikheAgazeAmaliyatShamsi" />
+                <ScalarProperty Name="TarikheEtebareEstelamShamsi" ColumnName="TarikheEtebareEstelamShamsi" />
+                <ScalarProperty Name="TarikheAgazeAmaliyatMiladi" ColumnName="TarikheAgazeAmaliyatMiladi" />
+                <ScalarProperty Name="TarikheEtebareEstelamMiladi" ColumnName="TarikheEtebareEstelamMiladi" />
+                <ScalarProperty Name="InquiryType" ColumnName="InquiryType" />
+                <ScalarProperty Name="CreateDateShamsi" ColumnName="CreateDateShamsi" />
+                <ScalarProperty Name="CreateDateMiladi" ColumnName="CreateDateMiladi" />
+                <ScalarProperty Name="Tedad" ColumnName="Tedad" />
+                <ScalarProperty Name="HadeAxareVazneMahmoole" ColumnName="HadeAxareVazneMahmoole" />
+                <ScalarProperty Name="NoeVasileyeMoredeNiyaz2" ColumnName="NoeVasileyeMoredeNiyaz2" />
+                <ScalarProperty Name="VazneHarVahedeMahmooleKiloGeram" ColumnName="VazneHarVahedeMahmooleKiloGeram" />
+                <ScalarProperty Name="BaEhtesabeHazineyeOdateKantinereKhali" ColumnName="BaEhtesabeHazineyeOdateKantinereKhali" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Asaei_EHaml_ListeKalahayeKhatarnak">
+            <EntityTypeMapping TypeName="EHamlDBModel.Asaei_EHaml_ListeKalahayeKhatarnak">
+              <MappingFragment StoreEntitySet="Asaei_EHaml_ListeKalahayeKhatarnak">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ShomareyeTartib" ColumnName="ShomareyeTartib" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Asaei_EHaml_NoeVasileyeHaml">
+            <EntityTypeMapping TypeName="EHamlDBModel.Asaei_EHaml_NoeVasileyeHaml">
+              <MappingFragment StoreEntitySet="Asaei_EHaml_NoeVasileyeHaml">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="NameVasile" ColumnName="NameVasile" />
+                <ScalarProperty Name="ShomareyeTartib" ColumnName="ShomareyeTartib" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz">
+            <EntityTypeMapping TypeName="EHamlDBModel.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz">
+              <MappingFragment StoreEntitySet="Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="InquiryID" ColumnName="InquiryID" />
+                <ScalarProperty Name="InquiryType" ColumnName="InquiryType" />
+                <ScalarProperty Name="VasileName" ColumnName="VasileName" />
+                <ScalarProperty Name="Tedad" ColumnName="Tedad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Asaei_EHaml_ReplyToInquiry">
+            <EntityTypeMapping TypeName="EHamlDBModel.Asaei_EHaml_ReplyToInquiry">
+              <MappingFragment StoreEntitySet="Asaei_EHaml_ReplyToInquiry">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="InquiryId" ColumnName="InquiryId" />
+                <ScalarProperty Name="InquiryType" ColumnName="InquiryType" />
+                <ScalarProperty Name="ServentUserId" ColumnName="ServentUserId" />
+                <ScalarProperty Name="KoleModatZamaneHaml" ColumnName="KoleModatZamaneHaml" />
+                <ScalarProperty Name="ZamaneAmadegiBarayShoorooeAmaliyatShamsi" ColumnName="ZamaneAmadegiBarayShoorooeAmaliyatShamsi" />
+                <ScalarProperty Name="ZamaneAmadegiBarayShoorooAmaliyatMiladi" ColumnName="ZamaneAmadegiBarayShoorooAmaliyatMiladi" />
+                <ScalarProperty Name="GozaresheAmaliyateRoozane" ColumnName="GozaresheAmaliyateRoozane" />
+                <ScalarProperty Name="PishbiniEmkanPaziriyeAmaliyat" ColumnName="PishbiniEmkanPaziriyeAmaliyat" />
+                <ScalarProperty Name="GeymateKol" ColumnName="GeymateKol" />
+                <ScalarProperty Name="GeymateVahed" ColumnName="GeymateVahed" />
+                <ScalarProperty Name="GeymateKolBarAsaseListeAdlBandi" ColumnName="GeymateKolBarAsaseListeAdlBandi" />
+                <ScalarProperty Name="Vaziyat" ColumnName="Vaziyat" />
+                <ScalarProperty Name="MogeiyateTahvilDadaneMahmooleBePeymankareHaml" ColumnName="MogeiyateTahvilDadaneMahmooleBePeymankareHaml" />
+                <ScalarProperty Name="PasokhGooyiBarAsase" ColumnName="PasokhGooyiBarAsase" />
+                <ScalarProperty Name="PasokhGooyiBarAsaseVasileyeHaml" ColumnName="PasokhGooyiBarAsaseVasileyeHaml" />
+                <ScalarProperty Name="GeymatBeEzayeHarTon" ColumnName="GeymatBeEzayeHarTon" />
+                <ScalarProperty Name="FormePasokheGeymateHamleSangin" ColumnName="FormePasokheGeymateHamleSangin" />
+                <ScalarProperty Name="BaEhtesabeHazineyeOdateCantinereKhali" ColumnName="BaEhtesabeHazineyeOdateCantinereKhali" />
+                <ScalarProperty Name="CreateDateShamsi" ColumnName="CreateDateShamsi" />
+                <ScalarProperty Name="CreateDateMiladi" ColumnName="CreateDateMiladi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz">
+            <EntityTypeMapping TypeName="EHamlDBModel.Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz">
+              <MappingFragment StoreEntitySet="Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ReplyToInquiryId" ColumnName="ReplyToInquiryId" />
+                <ScalarProperty Name="InquiryId" ColumnName="InquiryId" />
+                <ScalarProperty Name="InquiryType" ColumnName="InquiryType" />
+                <ScalarProperty Name="VasileName" ColumnName="VasileName" />
+                <ScalarProperty Name="VahedePool" ColumnName="VahedePool" />
+                <ScalarProperty Name="GeymateVahed" ColumnName="GeymateVahed" />
+                <ScalarProperty Name="Tedad" ColumnName="Tedad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

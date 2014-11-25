@@ -39,16 +39,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ClientDependency.Core">
-      <HintPath>..\..\..\..\..\Work\DNN\Potals\EHaml\Portal\Vagti Action\Primary\bin\ClientDependency.Core.dll</HintPath>
+      <HintPath>..\..\bin\ClientDependency.Core.dll</HintPath>
     </Reference>
     <Reference Include="DotNetNuke">
-      <HintPath>..\..\..\..\..\Work\DNN\Potals\EHaml\Portal\Vagti Action\Primary\bin\DotNetNuke.dll</HintPath>
+      <HintPath>..\..\bin\DotNetNuke.dll</HintPath>
     </Reference>
     <Reference Include="DotNetNuke.Web">
-      <HintPath>..\..\..\..\..\Work\DNN\Potals\EHaml\Portal\Vagti Action\Primary\bin\DotNetNuke.Web.dll</HintPath>
+      <HintPath>..\..\bin\DotNetNuke.Web.dll</HintPath>
     </Reference>
     <Reference Include="DotNetNuke.Web.Client">
-      <HintPath>..\..\..\..\..\Work\DNN\Potals\EHaml\Portal\Vagti Action\Primary\bin\DotNetNuke.Web.Client.dll</HintPath>
+      <HintPath>..\..\bin\DotNetNuke.Web.Client.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
@@ -82,7 +82,7 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="Telerik.Web.UI">
-      <HintPath>..\..\..\..\..\Work\DNN\Potals\EHaml\Portal\Vagti Action\Primary\bin\Telerik.Web.UI.dll</HintPath>
+      <HintPath>..\..\bin\Telerik.Web.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

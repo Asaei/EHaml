@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EHamlDBModelStoreContainer" CdmEntityContainer="EHamlDBEntities">
+    <EntitySetMapping Name="Asaei_EHaml_Inquiry">
+      <EntityTypeMapping TypeName="EHamlDBModel.Asaei_EHaml_Inquiry">
+        <MappingFragment StoreEntitySet="Asaei_EHaml_Inquiry">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="HadafeShomaAzEstelam" ColumnName="HadafeShomaAzEstelam" />
+          <ScalarProperty Name="NoeVasileyeMoredeNiyaz" ColumnName="NoeVasileyeMoredeNiyaz" />
+          <ScalarProperty Name="NoeHaml" ColumnName="NoeHaml" />
+          <ScalarProperty Name="NoeMahmoole" ColumnName="NoeMahmoole" />
+          <ScalarProperty Name="NoeMahmoole2" ColumnName="NoeMahmoole2" />
+          <ScalarProperty Name="YekAksAzMahmoole" ColumnName="YekAksAzMahmoole" />
+          <ScalarProperty Name="CodeHsMahmoole" ColumnName="CodeHsMahmoole" />
+          <ScalarProperty Name="VazneMahmooleKiloGeram" ColumnName="VazneMahmooleKiloGeram" />
+          <ScalarProperty Name="ListeKalahayeKhatarnak" ColumnName="ListeKalahayeKhatarnak" />
+          <ScalarProperty Name="NoeBasteBandi" ColumnName="NoeBasteBandi" />
+          <ScalarProperty Name="BaEhtesabeBimeyeMasooliyat" ColumnName="BaEhtesabeBimeyeMasooliyat" />
+          <ScalarProperty Name="FormeVooroodeArzeshBarAsaseVasileyeHaml" ColumnName="FormeVooroodeArzeshBarAsaseVasileyeHaml" />
+          <ScalarProperty Name="FormeVorodeArzeshBarAsaseListeAdlBandi" ColumnName="FormeVorodeArzeshBarAsaseListeAdlBandi" />
+          <ScalarProperty Name="FormePakingList" ColumnName="FormePakingList" />
+          <ScalarProperty Name="BaEhtesabeHazineyeBarGiriDarMabda" ColumnName="BaEhtesabeHazineyeBarGiriDarMabda" />
+          <ScalarProperty Name="EstelamBarAsase" ColumnName="EstelamBarAsase" />
+          <ScalarProperty Name="OstaneMabda" ColumnName="OstaneMabda" />
+          <ScalarProperty Name="MantageyeMabda" ColumnName="MantageyeMabda" />
+          <ScalarProperty Name="ShahreMabda" ColumnName="ShahreMabda" />
+          <ScalarProperty Name="MogeiyateTahvilDadaneMahmooleBePeymankareHaml" ColumnName="MogeiyateTahvilDadaneMahmooleBePeymankareHaml" />
+          <ScalarProperty Name="OstaneMagsad" ColumnName="OstaneMagsad" />
+          <ScalarProperty Name="MantageyeMagsad" ColumnName="MantageyeMagsad" />
+          <ScalarProperty Name="ShahreMagsad" ColumnName="ShahreMagsad" />
+          <ScalarProperty Name="BaEhtesabeHazineyeTakhliyeDarMagsad" ColumnName="BaEhtesabeHazineyeTakhliyeDarMagsad" />
+          <ScalarProperty Name="TarikheAgazeAmaliyatShamsi" ColumnName="TarikheAgazeAmaliyatShamsi" />
+          <ScalarProperty Name="TarikheEtebareEstelamShamsi" ColumnName="TarikheEtebareEstelamShamsi" />
+          <ScalarProperty Name="TarikheAgazeAmaliyatMiladi" ColumnName="TarikheAgazeAmaliyatMiladi" />
+          <ScalarProperty Name="TarikheEtebareEstelamMiladi" ColumnName="TarikheEtebareEstelamMiladi" />
+          <ScalarProperty Name="InquiryType" ColumnName="InquiryType" />
+          <ScalarProperty Name="CreateDateShamsi" ColumnName="CreateDateShamsi" />
+          <ScalarProperty Name="CreateDateMiladi" ColumnName="CreateDateMiladi" />
+          <ScalarProperty Name="Tedad" ColumnName="Tedad" />
+          <ScalarProperty Name="HadeAxareVazneMahmoole" ColumnName="HadeAxareVazneMahmoole" />
+          <ScalarProperty Name="NoeVasileyeMoredeNiyaz2" ColumnName="NoeVasileyeMoredeNiyaz2" />
+          <ScalarProperty Name="VazneHarVahedeMahmooleKiloGeram" ColumnName="VazneHarVahedeMahmooleKiloGeram" />
+          <ScalarProperty Name="BaEhtesabeHazineyeOdateKantinereKhali" ColumnName="BaEhtesabeHazineyeOdateKantinereKhali" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Asaei_EHaml_ListeKalahayeKhatarnak">
+      <EntityTypeMapping TypeName="EHamlDBModel.Asaei_EHaml_ListeKalahayeKhatarnak">
+        <MappingFragment StoreEntitySet="Asaei_EHaml_ListeKalahayeKhatarnak">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ShomareyeTartib" ColumnName="ShomareyeTartib" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Asaei_EHaml_NoeVasileyeHaml">
+      <EntityTypeMapping TypeName="EHamlDBModel.Asaei_EHaml_NoeVasileyeHaml">
+        <MappingFragment StoreEntitySet="Asaei_EHaml_NoeVasileyeHaml">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NameVasile" ColumnName="NameVasile" />
+          <ScalarProperty Name="ShomareyeTartib" ColumnName="ShomareyeTartib" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz">
+      <EntityTypeMapping TypeName="EHamlDBModel.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz">
+        <MappingFragment StoreEntitySet="Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="InquiryID" ColumnName="InquiryID" />
+          <ScalarProperty Name="InquiryType" ColumnName="InquiryType" />
+          <ScalarProperty Name="VasileName" ColumnName="VasileName" />
+          <ScalarProperty Name="Tedad" ColumnName="Tedad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Asaei_EHaml_ReplyToInquiry">
+      <EntityTypeMapping TypeName="EHamlDBModel.Asaei_EHaml_ReplyToInquiry">
+        <MappingFragment StoreEntitySet="Asaei_EHaml_ReplyToInquiry">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="InquiryId" ColumnName="InquiryId" />
+          <ScalarProperty Name="InquiryType" ColumnName="InquiryType" />
+          <ScalarProperty Name="ServentUserId" ColumnName="ServentUserId" />
+          <ScalarProperty Name="KoleModatZamaneHaml" ColumnName="KoleModatZamaneHaml" />
+          <ScalarProperty Name="ZamaneAmadegiBarayShoorooeAmaliyatShamsi" ColumnName="ZamaneAmadegiBarayShoorooeAmaliyatShamsi" />
+          <ScalarProperty Name="ZamaneAmadegiBarayShoorooAmaliyatMiladi" ColumnName="ZamaneAmadegiBarayShoorooAmaliyatMiladi" />
+          <ScalarProperty Name="GozaresheAmaliyateRoozane" ColumnName="GozaresheAmaliyateRoozane" />
+          <ScalarProperty Name="PishbiniEmkanPaziriyeAmaliyat" ColumnName="PishbiniEmkanPaziriyeAmaliyat" />
+          <ScalarProperty Name="GeymateKol" ColumnName="GeymateKol" />
+          <ScalarProperty Name="GeymateVahed" ColumnName="GeymateVahed" />
+          <ScalarProperty Name="GeymateKolBarAsaseListeAdlBandi" ColumnName="GeymateKolBarAsaseListeAdlBandi" />
+          <ScalarProperty Name="Vaziyat" ColumnName="Vaziyat" />
+          <ScalarProperty Name="MogeiyateTahvilDadaneMahmooleBePeymankareHaml" ColumnName="MogeiyateTahvilDadaneMahmooleBePeymankareHaml" />
+          <ScalarProperty Name="PasokhGooyiBarAsase" ColumnName="PasokhGooyiBarAsase" />
+          <ScalarProperty Name="PasokhGooyiBarAsaseVasileyeHaml" ColumnName="PasokhGooyiBarAsaseVasileyeHaml" />
+          <ScalarProperty Name="GeymatBeEzayeHarTon" ColumnName="GeymatBeEzayeHarTon" />
+          <ScalarProperty Name="FormePasokheGeymateHamleSangin" ColumnName="FormePasokheGeymateHamleSangin" />
+          <ScalarProperty Name="BaEhtesabeHazineyeOdateCantinereKhali" ColumnName="BaEhtesabeHazineyeOdateCantinereKhali" />
+          <ScalarProperty Name="CreateDateShamsi" ColumnName="CreateDateShamsi" />
+          <ScalarProperty Name="CreateDateMiladi" ColumnName="CreateDateMiladi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz">
+      <EntityTypeMapping TypeName="EHamlDBModel.Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz">
+        <MappingFragment StoreEntitySet="Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ReplyToInquiryId" ColumnName="ReplyToInquiryId" />
+          <ScalarProperty Name="InquiryId" ColumnName="InquiryId" />
+          <ScalarProperty Name="InquiryType" ColumnName="InquiryType" />
+          <ScalarProperty Name="VasileName" ColumnName="VasileName" />
+          <ScalarProperty Name="VahedePool" ColumnName="VahedePool" />
+          <ScalarProperty Name="GeymateVahed" ColumnName="GeymateVahed" />
+          <ScalarProperty Name="Tedad" ColumnName="Tedad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

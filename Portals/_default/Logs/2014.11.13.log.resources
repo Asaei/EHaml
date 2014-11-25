@@ -1,0 +1,305 @@
+2014-11-13 10:56:25,749 [Laptop][Thread:40][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 10:56:25,832 [Laptop][Thread:40][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 10:57:31,382 [Laptop][Thread:34][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 10:57:31,386 [Laptop][Thread:34][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 11:01:29,555 [Laptop][Thread:34][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 11:01:29,566 [Laptop][Thread:34][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 11:01:52,173 [Laptop][Thread:40][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 11:01:52,178 [Laptop][Thread:40][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 11:01:53,742 [Laptop][Thread:36][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 11:01:53,747 [Laptop][Thread:36][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 11:04:34,309 [Laptop][Thread:39][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 11:04:34,348 [Laptop][Thread:39][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 11:05:34,790 [Laptop][Thread:39][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 11:05:34,795 [Laptop][Thread:39][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 11:05:38,070 [Laptop][Thread:37][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 11:05:38,075 [Laptop][Thread:37][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 11:05:41,363 [Laptop][Thread:39][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 11:05:41,369 [Laptop][Thread:39][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 11:05:45,808 [Laptop][Thread:37][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 11:05:45,839 [Laptop][Thread:37][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 12:38:16,059 [Laptop][Thread:21][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 12:38:16,120 [Laptop][Thread:21][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 12:39:36,791 [Laptop][Thread:32][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Exception: Invalid token property listekalahayekhatarnak!
+   at avt.MyTokens.Core.Objects.BaseDynamicObject.GetValue(String propertyName, String strFormat, CultureInfo formatProvider, UserInfo user)
+   at avt.MyTokens.Core.Objects.BaseDynamicObjectList.TryGetMember(GetMemberBinder binder, Object& result)
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 12:39:36,813 [Laptop][Thread:32][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Exception: Invalid token property listekalahayekhatarnak!
+   at avt.MyTokens.Core.Objects.BaseDynamicObject.GetValue(String propertyName, String strFormat, CultureInfo formatProvider, UserInfo user)
+   at avt.MyTokens.Core.Objects.BaseDynamicObjectList.TryGetMember(GetMemberBinder binder, Object& result)
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 13:11:29,336 [Laptop][Thread:42][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 13:11:29,442 [Laptop][Thread:42][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 13:11:30,779 [Laptop][Thread:28][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 13:11:30,785 [Laptop][Thread:28][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 13:12:04,311 [Laptop][Thread:40][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 13:12:04,316 [Laptop][Thread:40][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 13:12:08,777 [Laptop][Thread:64][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 13:12:08,781 [Laptop][Thread:64][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 13:12:22,940 [Laptop][Thread:25][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 13:12:22,945 [Laptop][Thread:25][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 13:12:24,326 [Laptop][Thread:40][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 13:12:24,331 [Laptop][Thread:40][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 13:13:10,171 [Laptop][Thread:40][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 13:13:10,215 [Laptop][Thread:40][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 13:51:05,807 [Laptop][Thread:85][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 13:51:05,855 [Laptop][Thread:85][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 13:51:56,470 [Laptop][Thread:87][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 13:51:56,475 [Laptop][Thread:87][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 16:00:11,647 [Laptop][Thread:13][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near ','.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+ClientConnectionId:9f152484-9a1e-4e5c-a499-bdc05eec35ea
+Error Number:102,State:1,Class:15
+2014-11-13 16:00:15,131 [Laptop][Thread:21][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near ','.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+ClientConnectionId:9f152484-9a1e-4e5c-a499-bdc05eec35ea
+Error Number:102,State:1,Class:15
+2014-11-13 16:00:16,160 [Laptop][Thread:26][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near ','.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at avt.ActionForm.Core.Actions.ExecuteSql.Execute(ActionFormSettings settings, FormData data, eActionContext context)
+   at avt.ActionForm.ActionFormSettings.ExecuteActions(IList`1 actions, FormData data, eActionContext context)
+ClientConnectionId:9f152484-9a1e-4e5c-a499-bdc05eec35ea
+Error Number:102,State:1,Class:15
+2014-11-13 16:14:55,049 [Laptop][Thread:62][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 16:14:55,057 [Laptop][Thread:62][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 16:14:56,771 [Laptop][Thread:72][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 16:14:56,835 [Laptop][Thread:72][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 16:28:20,441 [Laptop][Thread:38][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 16:28:20,482 [Laptop][Thread:38][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 16:28:20,725 [Laptop][Thread:38][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression ÎÇæÑ ---> System.Exception: Parser error at position 0: Unexpected token 'Î' ---> System.Exception: Unexpected token 'Î'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   --- End of inner exception stack trace ---
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Fields.FormField.IsVisibile(FormData data)
+   at avt.ActionForm.Core.Form.FormData.ToJson(Boolean serializeResponse)
+   at avt.ActionForm.ActionFormSettings.Serialize(XmlWriter writer, FormData InitData, Boolean evaluateShowCondition, Boolean includeFields, eSerializeContext context)
+   at avt.ActionForm.ActionFormSettings.SerializeToXmlStr(FormData InitData, Boolean evaluateShowCondition, Boolean includeFields, eSerializeContext context)
+   at avt.ActionForm.Templating.XslTemplate.Render(Control inControl)
+   at avt.ActionForm.Main.BindData()
+   at avt.ActionForm.Main.Page_Load(Object sender, EventArgs e)
+2014-11-13 16:30:42,659 [Laptop][Thread:36][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 16:30:42,689 [Laptop][Thread:36][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 16:30:42,953 [Laptop][Thread:36][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression ÎÇæÑ ---> System.Exception: Parser error at position 0: Unexpected token 'Î' ---> System.Exception: Unexpected token 'Î'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   --- End of inner exception stack trace ---
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Fields.FormField.IsVisibile(FormData data)
+   at avt.ActionForm.Core.Form.FormData.ToJson(Boolean serializeResponse)
+   at avt.ActionForm.ActionFormSettings.Serialize(XmlWriter writer, FormData InitData, Boolean evaluateShowCondition, Boolean includeFields, eSerializeContext context)
+   at avt.ActionForm.ActionFormSettings.SerializeToXmlStr(FormData InitData, Boolean evaluateShowCondition, Boolean includeFields, eSerializeContext context)
+   at avt.ActionForm.Templating.XslTemplate.Render(Control inControl)
+   at avt.ActionForm.Main.BindData()
+   at avt.ActionForm.Main.Page_Load(Object sender, EventArgs e)
+2014-11-13 16:39:44,677 [Laptop][Thread:46][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 16:39:44,704 [Laptop][Thread:46][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 16:39:44,965 [Laptop][Thread:46][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression ÎÇæÑ ---> System.Exception: Parser error at position 0: Unexpected token 'Î' ---> System.Exception: Unexpected token 'Î'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   --- End of inner exception stack trace ---
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Fields.FormField.IsVisibile(FormData data)
+   at avt.ActionForm.Core.Form.FormData.ToJson(Boolean serializeResponse)
+   at avt.ActionForm.ActionFormSettings.Serialize(XmlWriter writer, FormData InitData, Boolean evaluateShowCondition, Boolean includeFields, eSerializeContext context)
+   at avt.ActionForm.ActionFormSettings.SerializeToXmlStr(FormData InitData, Boolean evaluateShowCondition, Boolean includeFields, eSerializeContext context)
+   at avt.ActionForm.Templating.XslTemplate.Render(Control inControl)
+   at avt.ActionForm.Main.BindData()
+   at avt.ActionForm.Main.Page_Load(Object sender, EventArgs e)
+2014-11-13 16:39:52,363 [Laptop][Thread:36][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 16:39:52,368 [Laptop][Thread:36][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 16:39:52,629 [Laptop][Thread:36][ERROR] DotNetNuke.Services.Exceptions.Exceptions - avt.ActionForm.Core.FormException: There was an error evaluating conditional expression ÎÇæÑ ---> System.Exception: Parser error at position 0: Unexpected token 'Î' ---> System.Exception: Unexpected token 'Î'
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   --- End of inner exception stack trace ---
+   at DnnSharp.Common.ExpressionEvaluator.Parser.Parse()
+   at DnnSharp.Common.ExpressionEvaluator.ExpressionCompiler.Parse()
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   --- End of inner exception stack trace ---
+   at avt.ActionForm.Core.Form.FormData.ApplyAllTokensAsBool(String input, ModuleInfo module)
+   at avt.ActionForm.Core.Fields.FormField.IsVisibile(FormData data)
+   at avt.ActionForm.Core.Form.FormData.ToJson(Boolean serializeResponse)
+   at avt.ActionForm.ActionFormSettings.Serialize(XmlWriter writer, FormData InitData, Boolean evaluateShowCondition, Boolean includeFields, eSerializeContext context)
+   at avt.ActionForm.ActionFormSettings.SerializeToXmlStr(FormData InitData, Boolean evaluateShowCondition, Boolean includeFields, eSerializeContext context)
+   at avt.ActionForm.Templating.XslTemplate.Render(Control inControl)
+   at avt.ActionForm.Main.BindData()
+   at avt.ActionForm.Main.Page_Load(Object sender, EventArgs e)
+2014-11-13 16:41:14,871 [Laptop][Thread:52][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 16:41:14,875 [Laptop][Thread:52][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 16:43:21,842 [Laptop][Thread:37][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 16:43:21,847 [Laptop][Thread:37][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 17:35:08,089 [Laptop][Thread:10][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 17:35:08,212 [Laptop][Thread:10][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 17:37:22,430 [Laptop][Thread:11][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 17:37:22,436 [Laptop][Thread:11][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 17:41:12,017 [Laptop][Thread:28][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)
+2014-11-13 17:41:12,069 [Laptop][Thread:28][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RazorOutput.Template.Execute()
+   at avt.MyTokens.Core.ParsingEngine.RazorParser.ExecuteTemplate(String scriptKey, String template, eCodeLang lang, PortalSettings portalSettings, TabInfo tabInfo, ModuleInfo moduleInfo, UserInfo userInfo, MyTokensReplacer replacer)

@@ -1,0 +1,245 @@
+13:08:40.203 | Debug | 15fed1b3 |  | Exeute reader SQL query: SELECT  
+        '' AS BaEhtesabeBimeyeMasooliyat ,
+        '' AS BaEhtesabeHazineyeTakhliyeDarMagsad ,
+        '' AS CreateDateShamsi ,
+        '' AS FormeVooroodeArzeshBarAsaseVasileyeHaml ,
+        '' AS HadafeShomaAzEstelam ,
+        '' AS ListeKalahayeKhatarnak ,
+        '' AS MantageyeMabda ,
+        '' AS MantageyeMagsad ,
+        '' AS NoeMahmoole ,
+        '' AS NoeVasileyeMoredeNiyaz ,
+        '' AS OstaneMabda ,
+        '' AS OstaneMagsad ,
+        '' AS ShahreMabda ,
+        '' AS ShahreMagsad ,
+        '' AS TarikheAgazeAmaliyatShamsi ,
+        '' AS TarikheEtebareEstelamShamsi,
+        '' AS Id,
+        'No' AS IsEdit
+FROM dbo.Asaei_EHaml_Inquiry
+13:08:40.231 | Debug | 15fed1b3 |  | Done executing sql.
+13:08:40.237 | Debug | 15fed1b3 |  | Exeute reader SQL query: SELECT
+ '' as TedadeKhavar,
+ '' as TedadeKamiyoneTak,
+ '' as TedadeKamiyoneJoft,
+ '' as TedadeTreylereKafiyeMamooli,
+ '' as TedadeTreylereKafiyeTeraficyeBedooneScort,
+ '' as TedadeTreylereKafiyeTeraficyTakScort,
+ '' as TedadeTreylereKafiyeTeraficyJoftScort ,
+ '' as TedadeKamarShekane5MehvareMamooli,
+ '' as TedadeKamarShekane5MehvarTeraficyBedooneScort,
+ '' as TedadeKamarShekane5MehvarTeraficyTakScort,
+ '' as TedadeKamarShekane5MehvarTeraficyJoftScort,
+ '' as TedadeKamarShekane7MehvarTeraficyTakScort,
+ '' as TedadeKamarShekane7MehvarTeraficyJoftScort
+  FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+13:08:40.265 | Debug | 15fed1b3 |  | Done executing sql.
+13:08:41.256 | Debug | 803de2b0 |  | Exeute reader SQL query: SELECT  
+        '' AS BaEhtesabeBimeyeMasooliyat ,
+        '' AS BaEhtesabeHazineyeTakhliyeDarMagsad ,
+        '' AS CreateDateShamsi ,
+        '' AS FormeVooroodeArzeshBarAsaseVasileyeHaml ,
+        '' AS HadafeShomaAzEstelam ,
+        '' AS ListeKalahayeKhatarnak ,
+        '' AS MantageyeMabda ,
+        '' AS MantageyeMagsad ,
+        '' AS NoeMahmoole ,
+        '' AS NoeVasileyeMoredeNiyaz ,
+        '' AS OstaneMabda ,
+        '' AS OstaneMagsad ,
+        '' AS ShahreMabda ,
+        '' AS ShahreMagsad ,
+        '' AS TarikheAgazeAmaliyatShamsi ,
+        '' AS TarikheEtebareEstelamShamsi,
+        '' AS Id,
+        'No' AS IsEdit
+FROM dbo.Asaei_EHaml_Inquiry
+13:08:41.256 | Debug | 803de2b0 |  | Done executing sql.
+13:08:41.259 | Debug | 803de2b0 |  | Exeute reader SQL query: SELECT
+ '' as TedadeKhavar,
+ '' as TedadeKamiyoneTak,
+ '' as TedadeKamiyoneJoft,
+ '' as TedadeTreylereKafiyeMamooli,
+ '' as TedadeTreylereKafiyeTeraficyeBedooneScort,
+ '' as TedadeTreylereKafiyeTeraficyTakScort,
+ '' as TedadeTreylereKafiyeTeraficyJoftScort ,
+ '' as TedadeKamarShekane5MehvareMamooli,
+ '' as TedadeKamarShekane5MehvarTeraficyBedooneScort,
+ '' as TedadeKamarShekane5MehvarTeraficyTakScort,
+ '' as TedadeKamarShekane5MehvarTeraficyJoftScort,
+ '' as TedadeKamarShekane7MehvarTeraficyTakScort,
+ '' as TedadeKamarShekane7MehvarTeraficyJoftScort
+  FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+13:08:41.260 | Debug | 803de2b0 |  | Done executing sql.
+13:08:29.632 | Debug | 0fed479a |  | Exeute reader SQL query: SELECT  
+        '' AS BaEhtesabeBimeyeMasooliyat ,
+        '' AS BaEhtesabeHazineyeTakhliyeDarMagsad ,
+        '' AS CreateDateShamsi ,
+        '' AS FormeVooroodeArzeshBarAsaseVasileyeHaml ,
+        '' AS HadafeShomaAzEstelam ,
+        '' AS ListeKalahayeKhatarnak ,
+        '' AS MantageyeMabda ,
+        '' AS MantageyeMagsad ,
+        '' AS NoeMahmoole ,
+        '' AS NoeVasileyeMoredeNiyaz ,
+        '' AS OstaneMabda ,
+        '' AS OstaneMagsad ,
+        '' AS ShahreMabda ,
+        '' AS ShahreMagsad ,
+        '' AS TarikheAgazeAmaliyatShamsi ,
+        '' AS TarikheEtebareEstelamShamsi,
+        '' AS Id,
+        'No' AS IsEdit
+FROM dbo.Asaei_EHaml_Inquiry
+13:08:29.633 | Debug | 0fed479a |  | Done executing sql.
+13:08:29.636 | Debug | 0fed479a |  | Exeute reader SQL query: SELECT
+ '' as TedadeKhavar,
+ '' as TedadeKamiyoneTak,
+ '' as TedadeKamiyoneJoft,
+ '' as TedadeTreylereKafiyeMamooli,
+ '' as TedadeTreylereKafiyeTeraficyeBedooneScort,
+ '' as TedadeTreylereKafiyeTeraficyTakScort,
+ '' as TedadeTreylereKafiyeTeraficyJoftScort ,
+ '' as TedadeKamarShekane5MehvareMamooli,
+ '' as TedadeKamarShekane5MehvarTeraficyBedooneScort,
+ '' as TedadeKamarShekane5MehvarTeraficyTakScort,
+ '' as TedadeKamarShekane5MehvarTeraficyJoftScort,
+ '' as TedadeKamarShekane7MehvarTeraficyTakScort,
+ '' as TedadeKamarShekane7MehvarTeraficyJoftScort
+  FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+13:08:29.637 | Debug | 0fed479a |  | Done executing sql.
+13:08:07.674 | Debug | c6d659a3 |  | Exeute reader SQL query: SELECT  
+        '' AS BaEhtesabeBimeyeMasooliyat ,
+        '' AS BaEhtesabeHazineyeTakhliyeDarMagsad ,
+        '' AS CreateDateShamsi ,
+        '' AS FormeVooroodeArzeshBarAsaseVasileyeHaml ,
+        '' AS HadafeShomaAzEstelam ,
+        '' AS ListeKalahayeKhatarnak ,
+        '' AS MantageyeMabda ,
+        '' AS MantageyeMagsad ,
+        '' AS NoeMahmoole ,
+        '' AS NoeVasileyeMoredeNiyaz ,
+        '' AS OstaneMabda ,
+        '' AS OstaneMagsad ,
+        '' AS ShahreMabda ,
+        '' AS ShahreMagsad ,
+        '' AS TarikheAgazeAmaliyatShamsi ,
+        '' AS TarikheEtebareEstelamShamsi,
+        '' AS Id,
+        'No' AS IsEdit
+FROM dbo.Asaei_EHaml_Inquiry
+13:08:07.675 | Debug | c6d659a3 |  | Done executing sql.
+13:08:07.678 | Debug | c6d659a3 |  | Exeute reader SQL query: SELECT
+ '' as TedadeKhavar,
+ '' as TedadeKamiyoneTak,
+ '' as TedadeKamiyoneJoft,
+ '' as TedadeTreylereKafiyeMamooli,
+ '' as TedadeTreylereKafiyeTeraficyeBedooneScort,
+ '' as TedadeTreylereKafiyeTeraficyTakScort,
+ '' as TedadeTreylereKafiyeTeraficyJoftScort ,
+ '' as TedadeKamarShekane5MehvareMamooli,
+ '' as TedadeKamarShekane5MehvarTeraficyBedooneScort,
+ '' as TedadeKamarShekane5MehvarTeraficyTakScort,
+ '' as TedadeKamarShekane5MehvarTeraficyJoftScort,
+ '' as TedadeKamarShekane7MehvarTeraficyTakScort,
+ '' as TedadeKamarShekane7MehvarTeraficyJoftScort
+  FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+13:08:07.679 | Debug | c6d659a3 |  | Done executing sql.
+14:08:52.889 | Debug | ce93de72 |  | Exeute reader SQL query: SELECT  
+        '' AS BaEhtesabeBimeyeMasooliyat ,
+        '' AS BaEhtesabeHazineyeTakhliyeDarMagsad ,
+        '' AS CreateDateShamsi ,
+        '' AS FormeVooroodeArzeshBarAsaseVasileyeHaml ,
+        '' AS HadafeShomaAzEstelam ,
+        '' AS ListeKalahayeKhatarnak ,
+        '' AS MantageyeMabda ,
+        '' AS MantageyeMagsad ,
+        '' AS NoeMahmoole ,
+        '' AS NoeVasileyeMoredeNiyaz ,
+        '' AS OstaneMabda ,
+        '' AS OstaneMagsad ,
+        '' AS ShahreMabda ,
+        '' AS ShahreMagsad ,
+        '' AS TarikheAgazeAmaliyatShamsi ,
+        '' AS TarikheEtebareEstelamShamsi,
+        '' AS Id,
+        'No' AS IsEdit
+FROM dbo.Asaei_EHaml_Inquiry
+14:08:52.892 | Debug | ce93de72 |  | Done executing sql.
+14:08:52.898 | Debug | ce93de72 |  | Exeute reader SQL query: SELECT
+ '' as TedadeKhavar,
+ '' as TedadeKamiyoneTak,
+ '' as TedadeKamiyoneJoft,
+ '' as TedadeTreylereKafiyeMamooli,
+ '' as TedadeTreylereKafiyeTeraficyeBedooneScort,
+ '' as TedadeTreylereKafiyeTeraficyTakScort,
+ '' as TedadeTreylereKafiyeTeraficyJoftScort ,
+ '' as TedadeKamarShekane5MehvareMamooli,
+ '' as TedadeKamarShekane5MehvarTeraficyBedooneScort,
+ '' as TedadeKamarShekane5MehvarTeraficyTakScort,
+ '' as TedadeKamarShekane5MehvarTeraficyJoftScort,
+ '' as TedadeKamarShekane7MehvarTeraficyTakScort,
+ '' as TedadeKamarShekane7MehvarTeraficyJoftScort
+  FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+14:08:52.899 | Debug | ce93de72 |  | Done executing sql.
+16:08:04.284 | Debug | 7a4b3c98 |  | Exeute reader SQL query: SELECT  
+        '' AS BaEhtesabeBimeyeMasooliyat ,
+        '' AS BaEhtesabeHazineyeTakhliyeDarMagsad ,
+        '' AS CreateDateShamsi ,
+        '' AS FormePakingList ,
+        '' AS FormeVorodeArzeshBarAsaseListeAdlBandi ,
+        '' AS HadafeShomaAzEstelam ,
+        '' AS ListeKalahayeKhatarnak ,
+        '' AS MantageyeMabda ,
+        '' AS MantageyeMagsad ,
+        '' AS MogeiyateTahvilDadaneMahmooleBePeymankareHaml ,
+        '' AS NoeBasteBandi ,
+        '' AS NoeMahmoole ,
+        '' AS OstaneMabda ,
+        '' AS OstaneMagsad ,
+        '' AS ShahreMabda ,
+        '' AS ShahreMagsad ,
+        '' AS TarikheAgazeAmaliyatShamsi ,
+        '' AS TarikheEtebareEstelamShamsi,
+        '' AS Id,
+        'No' AS IsEdit
+FROM dbo.Asaei_EHaml_Inquiry
+16:08:04.288 | Debug | 7a4b3c98 |  | Done executing sql.
+16:08:41.607 | Debug | cebb3403 |  | Exeute reader SQL query: SELECT  
+        '' AS BaEhtesabeBimeyeMasooliyat ,
+        '' AS BaEhtesabeHazineyeTakhliyeDarMagsad ,
+        '' AS CreateDateShamsi ,
+        '' AS FormeVooroodeArzeshBarAsaseVasileyeHaml ,
+        '' AS HadafeShomaAzEstelam ,
+        '' AS ListeKalahayeKhatarnak ,
+        '' AS MantageyeMabda ,
+        '' AS MantageyeMagsad ,
+        '' AS NoeMahmoole ,
+        '' AS NoeVasileyeMoredeNiyaz ,
+        '' AS OstaneMabda ,
+        '' AS OstaneMagsad ,
+        '' AS ShahreMabda ,
+        '' AS ShahreMagsad ,
+        '' AS TarikheAgazeAmaliyatShamsi ,
+        '' AS TarikheEtebareEstelamShamsi,
+        '' AS Id,
+        'No' AS IsEdit
+FROM dbo.Asaei_EHaml_Inquiry
+16:08:41.607 | Debug | cebb3403 |  | Done executing sql.
+16:08:41.611 | Debug | cebb3403 |  | Exeute reader SQL query: SELECT
+ '' as TedadeKhavar,
+ '' as TedadeKamiyoneTak,
+ '' as TedadeKamiyoneJoft,
+ '' as TedadeTreylereKafiyeMamooli,
+ '' as TedadeTreylereKafiyeTeraficyeBedooneScort,
+ '' as TedadeTreylereKafiyeTeraficyTakScort,
+ '' as TedadeTreylereKafiyeTeraficyJoftScort ,
+ '' as TedadeKamarShekane5MehvareMamooli,
+ '' as TedadeKamarShekane5MehvarTeraficyBedooneScort,
+ '' as TedadeKamarShekane5MehvarTeraficyTakScort,
+ '' as TedadeKamarShekane5MehvarTeraficyJoftScort,
+ '' as TedadeKamarShekane7MehvarTeraficyTakScort,
+ '' as TedadeKamarShekane7MehvarTeraficyJoftScort
+  FROM dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz
+16:08:41.612 | Debug | cebb3403 |  | Done executing sql.

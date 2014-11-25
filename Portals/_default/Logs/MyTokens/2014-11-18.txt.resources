@@ -1,0 +1,18 @@
+15:25:11 | Errors | Column 'id' does not belong to table Table.
+   at System.Data.DataRow.get_Item(String columnName)
+   at avt.MyTokens.Core.Sources.TknSrc_Database.Get(MyTokensReplacer tknReplacer, String itemKey, Object defaultValue)
+   at avt.MyTokens.TokenInfo.Run(MyTokensReplacer tknReplacer, String itemKey, Object defaultValue, Boolean bSkipParsing, Boolean clearCache)
+   at avt.MyTokens.TokenNamespaceAccess.GetProperty(String strPropertyName, String strFormat, CultureInfo formatProvider, UserInfo AccessingUser, Scope currentScope, Boolean& PropertyNotFound)
+   at avt.MyTokens.MyTokensReplacer.ReplaceSingleToken(String strSourceText, Boolean bEscapeQuotes)
+   at avt.MyTokens.Core.Replacement.DnnTokenPart.Compile(MyTokensReplacer replacer, Boolean bEscapeQuotes)
+   at avt.MyTokens.Core.Replacement.ParsedString.Compile(MyTokensReplacer replacer, Boolean bEscapeQuotes)
+   at avt.MyTokens.MyTokensReplacer.ReplaceTokensAll(String strSourceText, UserInfo cUser, Boolean dbgMsg, ModuleInfo module, Boolean bEscapeQuotes, Boolean bSkipParsing)
+15:27:32 | Errors | Column 'id' does not belong to table Table.
+   at System.Data.DataRow.get_Item(String columnName)
+   at avt.MyTokens.Core.Sources.TknSrc_Database.Get(MyTokensReplacer tknReplacer, String itemKey, Object defaultValue)
+   at avt.MyTokens.TokenInfo.Run(MyTokensReplacer tknReplacer, String itemKey, Object defaultValue, Boolean bSkipParsing, Boolean clearCache)
+   at avt.MyTokens.TokenNamespaceAccess.GetProperty(String strPropertyName, String strFormat, CultureInfo formatProvider, UserInfo AccessingUser, Scope currentScope, Boolean& PropertyNotFound)
+   at avt.MyTokens.MyTokensReplacer.ReplaceSingleToken(String strSourceText, Boolean bEscapeQuotes)
+   at avt.MyTokens.Core.Replacement.DnnTokenPart.Compile(MyTokensReplacer replacer, Boolean bEscapeQuotes)
+   at avt.MyTokens.Core.Replacement.ParsedString.Compile(MyTokensReplacer replacer, Boolean bEscapeQuotes)
+   at avt.MyTokens.MyTokensReplacer.ReplaceTokensAll(String strSourceText, UserInfo cUser, Boolean dbgMsg, ModuleInfo module, Boolean bEscapeQuotes, Boolean bSkipParsing)
