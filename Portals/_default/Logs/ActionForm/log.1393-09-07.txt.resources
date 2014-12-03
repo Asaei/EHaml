@@ -1,0 +1,105 @@
+14:09:55.380 | Debug | 0fd4503c |  | Exeute reader SQL query: SELECT  
+        '' AS BaEhtesabeBimeyeMasooliyat ,
+        '' AS BaEhtesabeHazineyeTakhliyeDarMagsad ,
+        '' AS CreateDateShamsi ,
+        '' AS FormeVorodeArzeshBarAsaseListeAdlBandi,
+        '' AS BaEhtesabeHazineyeBarGiriDarMabda,
+        '' AS HadafeShomaAzEstelam ,
+        '' AS FormePakingList,
+        '' AS YekAksAzMahmoole,
+        '' AS MantageyeMabda ,
+        '' AS MantageyeMagsad ,
+        '' AS OstaneMabda ,
+        '' AS OstaneMagsad ,
+        '' AS ShahreMabda ,
+        '' AS ShahreMagsad ,
+        '' AS TarikheAgazeAmaliyatShamsi ,
+        '' AS TarikheEtebareEstelamShamsi,
+        '' AS Id,
+        'No' AS IsEdit
+FROM dbo.Asaei_EHaml_Inquiry
+14:09:55.384 | Debug | 0fd4503c |  | Done executing sql.
+15:09:59.856 | Debug | 2f6dc292 |  | Exeute reader SQL query: SELECT  
+        '' AS BaEhtesabeBimeyeMasooliyat ,
+        '' AS BaEhtesabeHazineyeTakhliyeDarMagsad ,
+        '' AS CreateDateShamsi ,
+        '' AS FormeVorodeArzeshBarAsaseListeAdlBandi,
+        '' AS BaEhtesabeHazineyeBarGiriDarMabda,
+        '' AS HadafeShomaAzEstelam ,
+        '' AS FormePakingList,
+        '' AS YekAksAzMahmoole,
+        '' AS MantageyeMabda ,
+        '' AS MantageyeMagsad ,
+        '' AS OstaneMabda ,
+        '' AS OstaneMagsad ,
+        '' AS ShahreMabda ,
+        '' AS ShahreMagsad ,
+        '' AS TarikheAgazeAmaliyatShamsi ,
+        '' AS TarikheEtebareEstelamShamsi,
+        '' AS Id,
+        'No' AS IsEdit
+FROM dbo.Asaei_EHaml_Inquiry
+15:09:59.858 | Debug | 2f6dc292 |  | Done executing sql.
+15:09:22.297 | Debug | 8f53d517 |  | Exeute reader SQL query: SELECT  
+        '' AS BaEhtesabeBimeyeMasooliyat ,
+        '' AS BaEhtesabeHazineyeTakhliyeDarMagsad ,
+        '' AS CreateDateShamsi ,
+        '' AS FormeVorodeArzeshBarAsaseListeAdlBandi,
+        '' AS BaEhtesabeHazineyeBarGiriDarMabda,
+        '' AS HadafeShomaAzEstelam ,
+        '' AS FormePakingList,
+        '' AS YekAksAzMahmoole,
+        '' AS MantageyeMabda ,
+        '' AS MantageyeMagsad ,
+        '' AS OstaneMabda ,
+        '' AS OstaneMagsad ,
+        '' AS ShahreMabda ,
+        '' AS ShahreMagsad ,
+        '' AS TarikheAgazeAmaliyatShamsi ,
+        '' AS TarikheEtebareEstelamShamsi,
+        '' AS Id,
+        'No' AS IsEdit
+FROM dbo.Asaei_EHaml_Inquiry
+15:09:22.297 | Debug | 8f53d517 |  | Done executing sql.
+15:09:00.102 | Debug | 895c0cc6 |  | Exeute reader SQL query: SELECT  
+        '' AS BaEhtesabeBimeyeMasooliyat ,
+        '' AS BaEhtesabeHazineyeTakhliyeDarMagsad ,
+        '' AS CreateDateShamsi ,
+        '' AS FormeVorodeArzeshBarAsaseListeAdlBandi,
+        '' AS BaEhtesabeHazineyeBarGiriDarMabda,
+        '' AS HadafeShomaAzEstelam ,
+        '' AS FormePakingList,
+        '' AS YekAksAzMahmoole,
+        '' AS MantageyeMabda ,
+        '' AS MantageyeMagsad ,
+        '' AS OstaneMabda ,
+        '' AS OstaneMagsad ,
+        '' AS ShahreMabda ,
+        '' AS ShahreMagsad ,
+        '' AS TarikheAgazeAmaliyatShamsi ,
+        '' AS TarikheEtebareEstelamShamsi,
+        '' AS Id,
+        'No' AS IsEdit
+FROM dbo.Asaei_EHaml_Inquiry
+15:09:00.103 | Debug | 895c0cc6 |  | Done executing sql.
+15:09:06.113 | Debug | 8ab4c30e |  | Exeute reader SQL query: SELECT  
+        '' AS BaEhtesabeBimeyeMasooliyat ,
+        '' AS BaEhtesabeHazineyeTakhliyeDarMagsad ,
+        '' AS CreateDateShamsi ,
+        '' AS FormeVorodeArzeshBarAsaseListeAdlBandi,
+        '' AS BaEhtesabeHazineyeBarGiriDarMabda,
+        '' AS HadafeShomaAzEstelam ,
+        '' AS FormePakingList,
+        '' AS YekAksAzMahmoole,
+        '' AS MantageyeMabda ,
+        '' AS MantageyeMagsad ,
+        '' AS OstaneMabda ,
+        '' AS OstaneMagsad ,
+        '' AS ShahreMabda ,
+        '' AS ShahreMagsad ,
+        '' AS TarikheAgazeAmaliyatShamsi ,
+        '' AS TarikheEtebareEstelamShamsi,
+        '' AS Id,
+        'No' AS IsEdit
+FROM dbo.Asaei_EHaml_Inquiry
+15:09:06.114 | Debug | 8ab4c30e |  | Done executing sql.

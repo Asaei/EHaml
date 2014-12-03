@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EHamlDB" Class="EHamlDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.;Initial Catalog=EHamlDB;Persist Security Info=True;User ID=ehamlDBUser;MultipleActiveResultSets=True;Application Name=EntityFramework" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="EHamlDBConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Asaei_EHaml_Inquiry" Member="Asaei_EHaml_Inquiries">
+    <Type Name="Asaei_EHaml_Inquiry">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HadafeShomaAzEstelam" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="NoeVasileyeMoredeNiyaz" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="NoeHaml" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="NoeMahmoole" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="NoeMahmoole2" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="YekAksAzMahmoole" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="CodeHsMahmoole" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="VazneMahmooleKiloGeram" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="ListeKalahayeKhatarnak" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="NoeBasteBandi" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="BaEhtesabeBimeyeMasooliyat" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="FormeVooroodeArzeshBarAsaseVasileyeHaml" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="FormeVorodeArzeshBarAsaseListeAdlBandi" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="FormePakingList" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="BaEhtesabeHazineyeBarGiriDarMabda" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="EstelamBarAsase" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="OstaneMabda" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="MantageyeMabda" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="ShahreMabda" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="MogeiyateTahvilDadaneMahmooleBePeymankareHaml" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="OstaneMagsad" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="MantageyeMagsad" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="ShahreMagsad" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="BaEhtesabeHazineyeTakhliyeDarMagsad" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="TarikheAgazeAmaliyatShamsi" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="TarikheEtebareEstelamShamsi" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="TarikheAgazeAmaliyatMiladi" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TarikheEtebareEstelamMiladi" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="InquiryType" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="CreateDateShamsi" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="CreateDateMiladi" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Tedad" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="HadeAxareVazneMahmoole" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="NoeVasileyeMoredeNiyaz2" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="VazneHarVahedeMahmooleKiloGeram" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="BaEhtesabeHazineyeOdateKantinereKhali" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Association Name="Asaei_EHaml_Inquiry_Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz" Member="Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyazs" ThisKey="Id" OtherKey="InquiryID" Type="Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz" />
+      <Association Name="Asaei_EHaml_Inquiry_Asaei_EHaml_ReplyToInquiry" Member="Asaei_EHaml_ReplyToInquiries" ThisKey="Id" OtherKey="InquiryId" Type="Asaei_EHaml_ReplyToInquiry" />
+      <Association Name="Asaei_EHaml_Inquiry_Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz" Member="Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyazs" ThisKey="Id" OtherKey="InquiryId" Type="Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Asaei_EHaml_ListeKalahayeKhatarnak" Member="Asaei_EHaml_ListeKalahayeKhatarnaks">
+    <Type Name="Asaei_EHaml_ListeKalahayeKhatarnak">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="ShomareyeTartib" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Asaei_EHaml_NoeVasileyeHaml" Member="Asaei_EHaml_NoeVasileyeHamls">
+    <Type Name="Asaei_EHaml_NoeVasileyeHaml">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NameVasile" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="ShomareyeTartib" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz" Member="Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyazs">
+    <Type Name="Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InquiryID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="InquiryType" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="VasileName" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Tedad" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Association Name="Asaei_EHaml_Inquiry_Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz" Member="Asaei_EHaml_Inquiry" ThisKey="InquiryID" OtherKey="Id" Type="Asaei_EHaml_Inquiry" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Asaei_EHaml_OstanVaShahr" Member="Asaei_EHaml_OstanVaShahrs">
+    <Type Name="Asaei_EHaml_OstanVaShahr">
+      <Column Name="Id" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Shahrestan" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="MarkazeShahrestan" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="TarikheTasis" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CodeTagsimat" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Ostan" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="GozaresheTojihi" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Asaei_EHaml_ReplyToInquiry" Member="Asaei_EHaml_ReplyToInquiries">
+    <Type Name="Asaei_EHaml_ReplyToInquiry">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InquiryId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="InquiryType" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="ServentUserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="KoleModatZamaneHaml" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="ZamaneAmadegiBarayShoorooeAmaliyatShamsi" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="ZamaneAmadegiBarayShoorooAmaliyatMiladi" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="GozaresheAmaliyateRoozane" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="PishbiniEmkanPaziriyeAmaliyat" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="GeymateKol" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="GeymateVahed" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="GeymateKolBarAsaseListeAdlBandi" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Vaziyat" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="MogeiyateTahvilDadaneMahmooleBePeymankareHaml" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="PasokhGooyiBarAsase" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="PasokhGooyiBarAsaseVasileyeHaml" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="GeymatBeEzayeHarTon" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="FormePasokheGeymateHamleSangin" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="BaEhtesabeHazineyeOdateCantinereKhali" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="CreateDateShamsi" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="CreateDateMiladi" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="Asaei_EHaml_ReplyToInquiry_Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz" Member="Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyazs" ThisKey="Id" OtherKey="ReplyToInquiryId" Type="Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz" />
+      <Association Name="Asaei_EHaml_Inquiry_Asaei_EHaml_ReplyToInquiry" Member="Asaei_EHaml_Inquiry" ThisKey="InquiryId" OtherKey="Id" Type="Asaei_EHaml_Inquiry" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz" Member="Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyazs">
+    <Type Name="Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ReplyToInquiryId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="InquiryId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="InquiryType" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="VasileName" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="VahedePool" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="GeymateVahed" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Tedad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Asaei_EHaml_Inquiry_Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz" Member="Asaei_EHaml_Inquiry" ThisKey="InquiryId" OtherKey="Id" Type="Asaei_EHaml_Inquiry" IsForeignKey="true" />
+      <Association Name="Asaei_EHaml_ReplyToInquiry_Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz" Member="Asaei_EHaml_ReplyToInquiry" ThisKey="ReplyToInquiryId" OtherKey="Id" Type="Asaei_EHaml_ReplyToInquiry" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+</Database>
