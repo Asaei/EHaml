@@ -1,75 +1,95 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9.75" name="EHamlDataClasses">
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.5, 15.125" name="EHamlDataClasses">
   <DataContextMoniker Name="/EHamlDataClassesDataContext" />
   <nestedChildShapes>
-    <classShape Id="4fa0bf66-55fd-4e3d-a9d4-e830677ea606" absoluteBounds="0.75, 1.25, 2, 8.1168440755208326">
+    <classShape Id="52fcfb3f-503e-4784-a343-9c68b16d78a0" absoluteBounds="6.25, 7.5, 2, 2.9247054036458318">
+      <DataClassMoniker Name="/EHamlDataClassesDataContext/Asaei_EHaml_Bank" />
+      <nestedChildShapes>
+        <elementListCompartment Id="02639b40-af58-439a-948f-50df8983f20b" absoluteBounds="6.265, 7.96, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6664bdd2-30f1-4256-8673-a5a4577bc3fd" absoluteBounds="0.75, 3.125, 2, 8.1168440755208326">
       <DataClassMoniker Name="/EHamlDataClassesDataContext/Asaei_EHaml_Inquiry" />
       <nestedChildShapes>
-        <elementListCompartment Id="47a95a7f-1b85-4580-9c15-bef12644b012" absoluteBounds="0.765, 1.71, 1.9700000000000002, 7.556844075520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="2d47c3f1-088c-4d27-8b25-459c110847ed" absoluteBounds="0.765, 3.585, 1.9700000000000002, 7.556844075520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="b907cb38-7b0a-42fd-b305-b4988beab91e" absoluteBounds="6.75, 0.75, 2, 1.3862939453125003">
+    <classShape Id="2c93cbe2-f7a6-4859-96b0-72dcf972e52d" absoluteBounds="0.75, 0.75, 2, 1.3862939453125">
       <DataClassMoniker Name="/EHamlDataClassesDataContext/Asaei_EHaml_ListeKalahayeKhatarnak" />
       <nestedChildShapes>
-        <elementListCompartment Id="9b51dcf8-eaa7-4a80-bbd7-7c3ad90a8924" absoluteBounds="6.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="76507bbb-d66f-4d0d-8866-e3d121f6406f" absoluteBounds="0.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="1049e271-656a-4929-842f-d47ea8ef9413" absoluteBounds="6.75, 7.75, 2, 1.3862939453124996">
+    <classShape Id="9f228a96-c243-42d5-8fcb-d036b6465067" absoluteBounds="3.75, 0.75, 2, 1.3862939453125">
       <DataClassMoniker Name="/EHamlDataClassesDataContext/Asaei_EHaml_NoeVasileyeHaml" />
       <nestedChildShapes>
-        <elementListCompartment Id="eb068005-b95c-4da0-917a-704998c7b0e5" absoluteBounds="6.765, 8.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="2a7eae1f-c6e1-4fb9-a476-fadf372faf36" absoluteBounds="3.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="1b3ba03d-ad92-4477-aef9-0f905eb6efbe" absoluteBounds="3.5, 1.625, 2, 1.7708968098958329">
+    <classShape Id="f80073ae-1d85-498e-8023-da9c81541a12" absoluteBounds="3.5, 3.25, 2, 1.7708968098958327">
       <DataClassMoniker Name="/EHamlDataClassesDataContext/Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz" />
       <nestedChildShapes>
-        <elementListCompartment Id="93651ca8-2b0e-48e6-b78e-75636ac9e8d6" absoluteBounds="3.515, 2.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="a4cb03fe-9380-4ee8-a17f-fb0593cb5df0" absoluteBounds="3.515, 3.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="d7186849-b7b6-4581-a04b-7944465ccfc1" absoluteBounds="8.75, 3.75, 2, 2.1554996744791666">
+    <classShape Id="8ad9ef03-06ef-4dbf-af63-1dd0eddfda0c" absoluteBounds="6.75, 0.75, 2, 2.1554996744791666">
       <DataClassMoniker Name="/EHamlDataClassesDataContext/Asaei_EHaml_OstanVaShahr" />
       <nestedChildShapes>
-        <elementListCompartment Id="34f53347-be81-4de6-a7c5-d431e0235fb6" absoluteBounds="8.765, 4.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="2fca5c18-3ccb-440b-add2-dc081d319011" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="844a6422-4b7e-48e1-80af-f4ec4937ddfe" absoluteBounds="3.5, 4.125, 2, 4.8477197265624987">
+    <classShape Id="1da4e18c-e836-424a-822e-ab3b5ff2d5e0" absoluteBounds="3.5, 9.5, 2, 5.4246240234374987">
       <DataClassMoniker Name="/EHamlDataClassesDataContext/Asaei_EHaml_ReplyToInquiry" />
       <nestedChildShapes>
-        <elementListCompartment Id="4b353fac-00f7-4a07-bb53-423ffd4e32fb" absoluteBounds="3.515, 4.585, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="7148aa9a-c11b-4b6b-9b2d-bc1ce6859e9c" absoluteBounds="3.515, 9.96, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="79348763-6e91-47ac-93c8-04cb5d5e8b0d" absoluteBounds="6.25, 4.125, 2, 2.3478011067708326">
+    <classShape Id="f9207aaf-7ed8-481d-96b7-ea118a5504eb" absoluteBounds="9.25, 7.875, 2, 2.1554996744791666">
       <DataClassMoniker Name="/EHamlDataClassesDataContext/Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz" />
       <nestedChildShapes>
-        <elementListCompartment Id="cb3cbfc9-f72a-495c-aa7d-5c7034137e47" absoluteBounds="6.265, 4.585, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="263baeab-ed6e-4317-9f79-2fee904b011f" absoluteBounds="9.265, 8.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(2.75 : 2.51044840494792); (3.5 : 2.51044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 8.46875); (6.25 : 8.46875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EHamlDataClassesDataContext/Asaei_EHaml_Inquiry/Asaei_EHaml_Inquiry_Asaei_EHaml_Bank" />
+      <nodes>
+        <classShapeMoniker Id="6664bdd2-30f1-4256-8673-a5a4577bc3fd" />
+        <classShapeMoniker Id="52fcfb3f-503e-4784-a343-9c68b16d78a0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.13544840494792); (3.5 : 4.13544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/EHamlDataClassesDataContext/Asaei_EHaml_Inquiry/Asaei_EHaml_Inquiry_Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz" />
       <nodes>
-        <classShapeMoniker Id="4fa0bf66-55fd-4e3d-a9d4-e830677ea606" />
-        <classShapeMoniker Id="1b3ba03d-ad92-4477-aef9-0f905eb6efbe" />
+        <classShapeMoniker Id="6664bdd2-30f1-4256-8673-a5a4577bc3fd" />
+        <classShapeMoniker Id="f80073ae-1d85-498e-8023-da9c81541a12" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 6.54885986328125); (3.5 : 6.54885986328125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.5 : 9.96235270182292); (6.25 : 9.96235270182292)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EHamlDataClassesDataContext/Asaei_EHaml_ReplyToInquiry/Asaei_EHaml_ReplyToInquiry_Asaei_EHaml_Bank" />
+      <nodes>
+        <classShapeMoniker Id="1da4e18c-e836-424a-822e-ab3b5ff2d5e0" />
+        <classShapeMoniker Id="52fcfb3f-503e-4784-a343-9c68b16d78a0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 10.3709220377604); (3.5 : 10.3709220377604)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/EHamlDataClassesDataContext/Asaei_EHaml_Inquiry/Asaei_EHaml_Inquiry_Asaei_EHaml_ReplyToInquiry" />
       <nodes>
-        <classShapeMoniker Id="4fa0bf66-55fd-4e3d-a9d4-e830677ea606" />
-        <classShapeMoniker Id="844a6422-4b7e-48e1-80af-f4ec4937ddfe" />
+        <classShapeMoniker Id="6664bdd2-30f1-4256-8673-a5a4577bc3fd" />
+        <classShapeMoniker Id="1da4e18c-e836-424a-822e-ab3b5ff2d5e0" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 9.28281901041667); (6.46875 : 9.28281901041667); (6.46875 : 6.47280110677083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 6.26044840494792); (10.25 : 6.26044840494792); (10.25 : 7.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/EHamlDataClassesDataContext/Asaei_EHaml_Inquiry/Asaei_EHaml_Inquiry_Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz" />
       <nodes>
-        <classShapeMoniker Id="4fa0bf66-55fd-4e3d-a9d4-e830677ea606" />
-        <classShapeMoniker Id="79348763-6e91-47ac-93c8-04cb5d5e8b0d" />
+        <classShapeMoniker Id="6664bdd2-30f1-4256-8673-a5a4577bc3fd" />
+        <classShapeMoniker Id="f9207aaf-7ed8-481d-96b7-ea118a5504eb" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 5.29890055338542); (6.25 : 5.29890055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.5 : 12.7059147135417); (10.25 : 12.7059147135417); (10.25 : 10.0304996744792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/EHamlDataClassesDataContext/Asaei_EHaml_ReplyToInquiry/Asaei_EHaml_ReplyToInquiry_Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz" />
       <nodes>
-        <classShapeMoniker Id="844a6422-4b7e-48e1-80af-f4ec4937ddfe" />
-        <classShapeMoniker Id="79348763-6e91-47ac-93c8-04cb5d5e8b0d" />
+        <classShapeMoniker Id="1da4e18c-e836-424a-822e-ab3b5ff2d5e0" />
+        <classShapeMoniker Id="f9207aaf-7ed8-481d-96b7-ea118a5504eb" />
       </nodes>
     </associationConnector>
   </nestedChildShapes>

@@ -30,6 +30,9 @@ namespace EHamlLibrary
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
+    partial void InsertAsaei_EHaml_Bank(Asaei_EHaml_Bank instance);
+    partial void UpdateAsaei_EHaml_Bank(Asaei_EHaml_Bank instance);
+    partial void DeleteAsaei_EHaml_Bank(Asaei_EHaml_Bank instance);
     partial void InsertAsaei_EHaml_Inquiry(Asaei_EHaml_Inquiry instance);
     partial void UpdateAsaei_EHaml_Inquiry(Asaei_EHaml_Inquiry instance);
     partial void DeleteAsaei_EHaml_Inquiry(Asaei_EHaml_Inquiry instance);
@@ -51,7 +54,7 @@ namespace EHamlLibrary
     #endregion
 		
 		public EHamlDataClassesDataContext() : 
-				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["EHamlDBConnectionString1"].ConnectionString, mappingSource)
+				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["EHamlDBConnectionString"].ConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -78,6 +81,14 @@ namespace EHamlLibrary
 				base(connection, mappingSource)
 		{
 			OnCreated();
+		}
+		
+		public System.Data.Linq.Table<Asaei_EHaml_Bank> Asaei_EHaml_Banks
+		{
+			get
+			{
+				return this.GetTable<Asaei_EHaml_Bank>();
+			}
 		}
 		
 		public System.Data.Linq.Table<Asaei_EHaml_Inquiry> Asaei_EHaml_Inquiries
@@ -137,13 +148,397 @@ namespace EHamlLibrary
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Asaei_EHaml_Bank")]
+	public partial class Asaei_EHaml_Bank : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private long _Id;
+		
+		private int _UserId;
+		
+		private System.Nullable<int> _InquiryId;
+		
+		private System.Nullable<int> _ReplyToInquiryId;
+		
+		private System.Nullable<int> _ElamiyeId;
+		
+		private System.Nullable<int> _ReplyToElamiyeId;
+		
+		private System.Nullable<decimal> _MablagheBedehkari;
+		
+		private System.Nullable<System.DateTime> _CreateDateMiladi;
+		
+		private string _CreateDateShamsi;
+		
+		private string _Vaziyat;
+		
+		private string _TasfiyeShode;
+		
+		private EntityRef<Asaei_EHaml_Inquiry> _Asaei_EHaml_Inquiry;
+		
+		private EntityRef<Asaei_EHaml_ReplyToInquiry> _Asaei_EHaml_ReplyToInquiry;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(long value);
+    partial void OnIdChanged();
+    partial void OnUserIdChanging(int value);
+    partial void OnUserIdChanged();
+    partial void OnInquiryIdChanging(System.Nullable<int> value);
+    partial void OnInquiryIdChanged();
+    partial void OnReplyToInquiryIdChanging(System.Nullable<int> value);
+    partial void OnReplyToInquiryIdChanged();
+    partial void OnElamiyeIdChanging(System.Nullable<int> value);
+    partial void OnElamiyeIdChanged();
+    partial void OnReplyToElamiyeIdChanging(System.Nullable<int> value);
+    partial void OnReplyToElamiyeIdChanged();
+    partial void OnMablagheBedehkariChanging(System.Nullable<decimal> value);
+    partial void OnMablagheBedehkariChanged();
+    partial void OnCreateDateMiladiChanging(System.Nullable<System.DateTime> value);
+    partial void OnCreateDateMiladiChanged();
+    partial void OnCreateDateShamsiChanging(string value);
+    partial void OnCreateDateShamsiChanged();
+    partial void OnVaziyatChanging(string value);
+    partial void OnVaziyatChanged();
+    partial void OnTasfiyeShodeChanging(string value);
+    partial void OnTasfiyeShodeChanged();
+    #endregion
+		
+		public Asaei_EHaml_Bank()
+		{
+			this._Asaei_EHaml_Inquiry = default(EntityRef<Asaei_EHaml_Inquiry>);
+			this._Asaei_EHaml_ReplyToInquiry = default(EntityRef<Asaei_EHaml_ReplyToInquiry>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="BigInt NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public long Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this.OnIdChanging(value);
+					this.SendPropertyChanging();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserId", DbType="Int NOT NULL")]
+		public int UserId
+		{
+			get
+			{
+				return this._UserId;
+			}
+			set
+			{
+				if ((this._UserId != value))
+				{
+					this.OnUserIdChanging(value);
+					this.SendPropertyChanging();
+					this._UserId = value;
+					this.SendPropertyChanged("UserId");
+					this.OnUserIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_InquiryId", DbType="Int")]
+		public System.Nullable<int> InquiryId
+		{
+			get
+			{
+				return this._InquiryId;
+			}
+			set
+			{
+				if ((this._InquiryId != value))
+				{
+					if (this._Asaei_EHaml_Inquiry.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnInquiryIdChanging(value);
+					this.SendPropertyChanging();
+					this._InquiryId = value;
+					this.SendPropertyChanged("InquiryId");
+					this.OnInquiryIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ReplyToInquiryId", DbType="Int")]
+		public System.Nullable<int> ReplyToInquiryId
+		{
+			get
+			{
+				return this._ReplyToInquiryId;
+			}
+			set
+			{
+				if ((this._ReplyToInquiryId != value))
+				{
+					if (this._Asaei_EHaml_ReplyToInquiry.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnReplyToInquiryIdChanging(value);
+					this.SendPropertyChanging();
+					this._ReplyToInquiryId = value;
+					this.SendPropertyChanged("ReplyToInquiryId");
+					this.OnReplyToInquiryIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ElamiyeId", DbType="Int")]
+		public System.Nullable<int> ElamiyeId
+		{
+			get
+			{
+				return this._ElamiyeId;
+			}
+			set
+			{
+				if ((this._ElamiyeId != value))
+				{
+					this.OnElamiyeIdChanging(value);
+					this.SendPropertyChanging();
+					this._ElamiyeId = value;
+					this.SendPropertyChanged("ElamiyeId");
+					this.OnElamiyeIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ReplyToElamiyeId", DbType="Int")]
+		public System.Nullable<int> ReplyToElamiyeId
+		{
+			get
+			{
+				return this._ReplyToElamiyeId;
+			}
+			set
+			{
+				if ((this._ReplyToElamiyeId != value))
+				{
+					this.OnReplyToElamiyeIdChanging(value);
+					this.SendPropertyChanging();
+					this._ReplyToElamiyeId = value;
+					this.SendPropertyChanged("ReplyToElamiyeId");
+					this.OnReplyToElamiyeIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MablagheBedehkari", DbType="Money")]
+		public System.Nullable<decimal> MablagheBedehkari
+		{
+			get
+			{
+				return this._MablagheBedehkari;
+			}
+			set
+			{
+				if ((this._MablagheBedehkari != value))
+				{
+					this.OnMablagheBedehkariChanging(value);
+					this.SendPropertyChanging();
+					this._MablagheBedehkari = value;
+					this.SendPropertyChanged("MablagheBedehkari");
+					this.OnMablagheBedehkariChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreateDateMiladi", DbType="Date")]
+		public System.Nullable<System.DateTime> CreateDateMiladi
+		{
+			get
+			{
+				return this._CreateDateMiladi;
+			}
+			set
+			{
+				if ((this._CreateDateMiladi != value))
+				{
+					this.OnCreateDateMiladiChanging(value);
+					this.SendPropertyChanging();
+					this._CreateDateMiladi = value;
+					this.SendPropertyChanged("CreateDateMiladi");
+					this.OnCreateDateMiladiChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreateDateShamsi", DbType="NVarChar(100)")]
+		public string CreateDateShamsi
+		{
+			get
+			{
+				return this._CreateDateShamsi;
+			}
+			set
+			{
+				if ((this._CreateDateShamsi != value))
+				{
+					this.OnCreateDateShamsiChanging(value);
+					this.SendPropertyChanging();
+					this._CreateDateShamsi = value;
+					this.SendPropertyChanged("CreateDateShamsi");
+					this.OnCreateDateShamsiChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Vaziyat", DbType="NVarChar(100)")]
+		public string Vaziyat
+		{
+			get
+			{
+				return this._Vaziyat;
+			}
+			set
+			{
+				if ((this._Vaziyat != value))
+				{
+					this.OnVaziyatChanging(value);
+					this.SendPropertyChanging();
+					this._Vaziyat = value;
+					this.SendPropertyChanged("Vaziyat");
+					this.OnVaziyatChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TasfiyeShode", DbType="NVarChar(100)")]
+		public string TasfiyeShode
+		{
+			get
+			{
+				return this._TasfiyeShode;
+			}
+			set
+			{
+				if ((this._TasfiyeShode != value))
+				{
+					this.OnTasfiyeShodeChanging(value);
+					this.SendPropertyChanging();
+					this._TasfiyeShode = value;
+					this.SendPropertyChanged("TasfiyeShode");
+					this.OnTasfiyeShodeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Asaei_EHaml_Inquiry_Asaei_EHaml_Bank", Storage="_Asaei_EHaml_Inquiry", ThisKey="InquiryId", OtherKey="Id", IsForeignKey=true)]
+		public Asaei_EHaml_Inquiry Asaei_EHaml_Inquiry
+		{
+			get
+			{
+				return this._Asaei_EHaml_Inquiry.Entity;
+			}
+			set
+			{
+				Asaei_EHaml_Inquiry previousValue = this._Asaei_EHaml_Inquiry.Entity;
+				if (((previousValue != value) 
+							|| (this._Asaei_EHaml_Inquiry.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Asaei_EHaml_Inquiry.Entity = null;
+						previousValue.Asaei_EHaml_Banks.Remove(this);
+					}
+					this._Asaei_EHaml_Inquiry.Entity = value;
+					if ((value != null))
+					{
+						value.Asaei_EHaml_Banks.Add(this);
+						this._InquiryId = value.Id;
+					}
+					else
+					{
+						this._InquiryId = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("Asaei_EHaml_Inquiry");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Asaei_EHaml_ReplyToInquiry_Asaei_EHaml_Bank", Storage="_Asaei_EHaml_ReplyToInquiry", ThisKey="ReplyToInquiryId", OtherKey="Id", IsForeignKey=true)]
+		public Asaei_EHaml_ReplyToInquiry Asaei_EHaml_ReplyToInquiry
+		{
+			get
+			{
+				return this._Asaei_EHaml_ReplyToInquiry.Entity;
+			}
+			set
+			{
+				Asaei_EHaml_ReplyToInquiry previousValue = this._Asaei_EHaml_ReplyToInquiry.Entity;
+				if (((previousValue != value) 
+							|| (this._Asaei_EHaml_ReplyToInquiry.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Asaei_EHaml_ReplyToInquiry.Entity = null;
+						previousValue.Asaei_EHaml_Banks.Remove(this);
+					}
+					this._Asaei_EHaml_ReplyToInquiry.Entity = value;
+					if ((value != null))
+					{
+						value.Asaei_EHaml_Banks.Add(this);
+						this._ReplyToInquiryId = value.Id;
+					}
+					else
+					{
+						this._ReplyToInquiryId = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("Asaei_EHaml_ReplyToInquiry");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Asaei_EHaml_Inquiry")]
 	public partial class Asaei_EHaml_Inquiry : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private long _Id;
+		private int _Id;
 		
 		private System.Nullable<int> _UserId;
 		
@@ -219,6 +614,8 @@ namespace EHamlLibrary
 		
 		private string _BaEhtesabeHazineyeOdateKantinereKhali;
 		
+		private EntitySet<Asaei_EHaml_Bank> _Asaei_EHaml_Banks;
+		
 		private EntitySet<Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz> _Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyazs;
 		
 		private EntitySet<Asaei_EHaml_ReplyToInquiry> _Asaei_EHaml_ReplyToInquiries;
@@ -229,7 +626,7 @@ namespace EHamlLibrary
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnIdChanging(long value);
+    partial void OnIdChanging(int value);
     partial void OnIdChanged();
     partial void OnUserIdChanging(System.Nullable<int> value);
     partial void OnUserIdChanged();
@@ -309,14 +706,15 @@ namespace EHamlLibrary
 		
 		public Asaei_EHaml_Inquiry()
 		{
+			this._Asaei_EHaml_Banks = new EntitySet<Asaei_EHaml_Bank>(new Action<Asaei_EHaml_Bank>(this.attach_Asaei_EHaml_Banks), new Action<Asaei_EHaml_Bank>(this.detach_Asaei_EHaml_Banks));
 			this._Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyazs = new EntitySet<Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz>(new Action<Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz>(this.attach_Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyazs), new Action<Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz>(this.detach_Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyazs));
 			this._Asaei_EHaml_ReplyToInquiries = new EntitySet<Asaei_EHaml_ReplyToInquiry>(new Action<Asaei_EHaml_ReplyToInquiry>(this.attach_Asaei_EHaml_ReplyToInquiries), new Action<Asaei_EHaml_ReplyToInquiry>(this.detach_Asaei_EHaml_ReplyToInquiries));
 			this._Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyazs = new EntitySet<Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz>(new Action<Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz>(this.attach_Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyazs), new Action<Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz>(this.detach_Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyazs));
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="BigInt NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public long Id
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Id
 		{
 			get
 			{
@@ -1075,6 +1473,19 @@ namespace EHamlLibrary
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Asaei_EHaml_Inquiry_Asaei_EHaml_Bank", Storage="_Asaei_EHaml_Banks", ThisKey="Id", OtherKey="InquiryId")]
+		public EntitySet<Asaei_EHaml_Bank> Asaei_EHaml_Banks
+		{
+			get
+			{
+				return this._Asaei_EHaml_Banks;
+			}
+			set
+			{
+				this._Asaei_EHaml_Banks.Assign(value);
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Asaei_EHaml_Inquiry_Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz", Storage="_Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyazs", ThisKey="Id", OtherKey="InquiryID")]
 		public EntitySet<Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz> Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyazs
 		{
@@ -1132,6 +1543,18 @@ namespace EHamlLibrary
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
+		}
+		
+		private void attach_Asaei_EHaml_Banks(Asaei_EHaml_Bank entity)
+		{
+			this.SendPropertyChanging();
+			entity.Asaei_EHaml_Inquiry = this;
+		}
+		
+		private void detach_Asaei_EHaml_Banks(Asaei_EHaml_Bank entity)
+		{
+			this.SendPropertyChanging();
+			entity.Asaei_EHaml_Inquiry = null;
 		}
 		
 		private void attach_Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyazs(Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz entity)
@@ -1397,9 +1820,9 @@ namespace EHamlLibrary
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private long _Id;
+		private int _Id;
 		
-		private System.Nullable<long> _InquiryID;
+		private System.Nullable<int> _InquiryID;
 		
 		private string _InquiryType;
 		
@@ -1413,9 +1836,9 @@ namespace EHamlLibrary
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnIdChanging(long value);
+    partial void OnIdChanging(int value);
     partial void OnIdChanged();
-    partial void OnInquiryIDChanging(System.Nullable<long> value);
+    partial void OnInquiryIDChanging(System.Nullable<int> value);
     partial void OnInquiryIDChanged();
     partial void OnInquiryTypeChanging(string value);
     partial void OnInquiryTypeChanged();
@@ -1431,8 +1854,8 @@ namespace EHamlLibrary
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="BigInt NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public long Id
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Id
 		{
 			get
 			{
@@ -1451,8 +1874,8 @@ namespace EHamlLibrary
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_InquiryID", DbType="BigInt")]
-		public System.Nullable<long> InquiryID
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_InquiryID", DbType="Int")]
+		public System.Nullable<int> InquiryID
 		{
 			get
 			{
@@ -1562,7 +1985,7 @@ namespace EHamlLibrary
 					}
 					else
 					{
-						this._InquiryID = default(Nullable<long>);
+						this._InquiryID = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("Asaei_EHaml_Inquiry");
 				}
@@ -1731,13 +2154,13 @@ namespace EHamlLibrary
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private long _Id;
+		private int _Id;
 		
-		private System.Nullable<long> _InquiryId;
+		private System.Nullable<int> _InquiryId;
 		
 		private string _InquiryType;
 		
-		private int _ServentUserId;
+		private System.Nullable<int> _ServentUserId;
 		
 		private string _KoleModatZamaneHaml;
 		
@@ -1773,6 +2196,14 @@ namespace EHamlLibrary
 		
 		private System.Nullable<System.DateTime> _CreateDateMiladi;
 		
+		private string _AcceptDateShamsi;
+		
+		private System.Nullable<System.DateTime> _AcceptDateMiladi;
+		
+		private string _VahedePool;
+		
+		private EntitySet<Asaei_EHaml_Bank> _Asaei_EHaml_Banks;
+		
 		private EntitySet<Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz> _Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyazs;
 		
 		private EntityRef<Asaei_EHaml_Inquiry> _Asaei_EHaml_Inquiry;
@@ -1781,13 +2212,13 @@ namespace EHamlLibrary
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnIdChanging(long value);
+    partial void OnIdChanging(int value);
     partial void OnIdChanged();
-    partial void OnInquiryIdChanging(System.Nullable<long> value);
+    partial void OnInquiryIdChanging(System.Nullable<int> value);
     partial void OnInquiryIdChanged();
     partial void OnInquiryTypeChanging(string value);
     partial void OnInquiryTypeChanged();
-    partial void OnServentUserIdChanging(int value);
+    partial void OnServentUserIdChanging(System.Nullable<int> value);
     partial void OnServentUserIdChanged();
     partial void OnKoleModatZamaneHamlChanging(string value);
     partial void OnKoleModatZamaneHamlChanged();
@@ -1823,17 +2254,24 @@ namespace EHamlLibrary
     partial void OnCreateDateShamsiChanged();
     partial void OnCreateDateMiladiChanging(System.Nullable<System.DateTime> value);
     partial void OnCreateDateMiladiChanged();
+    partial void OnAcceptDateShamsiChanging(string value);
+    partial void OnAcceptDateShamsiChanged();
+    partial void OnAcceptDateMiladiChanging(System.Nullable<System.DateTime> value);
+    partial void OnAcceptDateMiladiChanged();
+    partial void OnVahedePoolChanging(string value);
+    partial void OnVahedePoolChanged();
     #endregion
 		
 		public Asaei_EHaml_ReplyToInquiry()
 		{
+			this._Asaei_EHaml_Banks = new EntitySet<Asaei_EHaml_Bank>(new Action<Asaei_EHaml_Bank>(this.attach_Asaei_EHaml_Banks), new Action<Asaei_EHaml_Bank>(this.detach_Asaei_EHaml_Banks));
 			this._Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyazs = new EntitySet<Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz>(new Action<Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz>(this.attach_Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyazs), new Action<Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz>(this.detach_Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyazs));
 			this._Asaei_EHaml_Inquiry = default(EntityRef<Asaei_EHaml_Inquiry>);
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="BigInt NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public long Id
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Id
 		{
 			get
 			{
@@ -1852,8 +2290,8 @@ namespace EHamlLibrary
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_InquiryId", DbType="BigInt")]
-		public System.Nullable<long> InquiryId
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_InquiryId", DbType="Int")]
+		public System.Nullable<int> InquiryId
 		{
 			get
 			{
@@ -1896,8 +2334,8 @@ namespace EHamlLibrary
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ServentUserId", DbType="Int NOT NULL")]
-		public int ServentUserId
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ServentUserId", DbType="Int")]
+		public System.Nullable<int> ServentUserId
 		{
 			get
 			{
@@ -2256,6 +2694,79 @@ namespace EHamlLibrary
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AcceptDateShamsi", DbType="NVarChar(100)")]
+		public string AcceptDateShamsi
+		{
+			get
+			{
+				return this._AcceptDateShamsi;
+			}
+			set
+			{
+				if ((this._AcceptDateShamsi != value))
+				{
+					this.OnAcceptDateShamsiChanging(value);
+					this.SendPropertyChanging();
+					this._AcceptDateShamsi = value;
+					this.SendPropertyChanged("AcceptDateShamsi");
+					this.OnAcceptDateShamsiChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AcceptDateMiladi", DbType="Date")]
+		public System.Nullable<System.DateTime> AcceptDateMiladi
+		{
+			get
+			{
+				return this._AcceptDateMiladi;
+			}
+			set
+			{
+				if ((this._AcceptDateMiladi != value))
+				{
+					this.OnAcceptDateMiladiChanging(value);
+					this.SendPropertyChanging();
+					this._AcceptDateMiladi = value;
+					this.SendPropertyChanged("AcceptDateMiladi");
+					this.OnAcceptDateMiladiChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VahedePool", DbType="NVarChar(100)")]
+		public string VahedePool
+		{
+			get
+			{
+				return this._VahedePool;
+			}
+			set
+			{
+				if ((this._VahedePool != value))
+				{
+					this.OnVahedePoolChanging(value);
+					this.SendPropertyChanging();
+					this._VahedePool = value;
+					this.SendPropertyChanged("VahedePool");
+					this.OnVahedePoolChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Asaei_EHaml_ReplyToInquiry_Asaei_EHaml_Bank", Storage="_Asaei_EHaml_Banks", ThisKey="Id", OtherKey="ReplyToInquiryId")]
+		public EntitySet<Asaei_EHaml_Bank> Asaei_EHaml_Banks
+		{
+			get
+			{
+				return this._Asaei_EHaml_Banks;
+			}
+			set
+			{
+				this._Asaei_EHaml_Banks.Assign(value);
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Asaei_EHaml_ReplyToInquiry_Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz", Storage="_Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyazs", ThisKey="Id", OtherKey="ReplyToInquiryId")]
 		public EntitySet<Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz> Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyazs
 		{
@@ -2296,7 +2807,7 @@ namespace EHamlLibrary
 					}
 					else
 					{
-						this._InquiryId = default(Nullable<long>);
+						this._InquiryId = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("Asaei_EHaml_Inquiry");
 				}
@@ -2323,6 +2834,18 @@ namespace EHamlLibrary
 			}
 		}
 		
+		private void attach_Asaei_EHaml_Banks(Asaei_EHaml_Bank entity)
+		{
+			this.SendPropertyChanging();
+			entity.Asaei_EHaml_ReplyToInquiry = this;
+		}
+		
+		private void detach_Asaei_EHaml_Banks(Asaei_EHaml_Bank entity)
+		{
+			this.SendPropertyChanging();
+			entity.Asaei_EHaml_ReplyToInquiry = null;
+		}
+		
 		private void attach_Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyazs(Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz entity)
 		{
 			this.SendPropertyChanging();
@@ -2342,17 +2865,15 @@ namespace EHamlLibrary
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private long _Id;
+		private int _Id;
 		
-		private System.Nullable<long> _ReplyToInquiryId;
+		private System.Nullable<int> _ReplyToInquiryId;
 		
-		private System.Nullable<long> _InquiryId;
+		private System.Nullable<int> _InquiryId;
 		
 		private string _InquiryType;
 		
 		private string _VasileName;
-		
-		private string _VahedePool;
 		
 		private System.Nullable<decimal> _GeymateVahed;
 		
@@ -2366,18 +2887,16 @@ namespace EHamlLibrary
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnIdChanging(long value);
+    partial void OnIdChanging(int value);
     partial void OnIdChanged();
-    partial void OnReplyToInquiryIdChanging(System.Nullable<long> value);
+    partial void OnReplyToInquiryIdChanging(System.Nullable<int> value);
     partial void OnReplyToInquiryIdChanged();
-    partial void OnInquiryIdChanging(System.Nullable<long> value);
+    partial void OnInquiryIdChanging(System.Nullable<int> value);
     partial void OnInquiryIdChanged();
     partial void OnInquiryTypeChanging(string value);
     partial void OnInquiryTypeChanged();
     partial void OnVasileNameChanging(string value);
     partial void OnVasileNameChanged();
-    partial void OnVahedePoolChanging(string value);
-    partial void OnVahedePoolChanged();
     partial void OnGeymateVahedChanging(System.Nullable<decimal> value);
     partial void OnGeymateVahedChanged();
     partial void OnTedadChanging(System.Nullable<int> value);
@@ -2391,8 +2910,8 @@ namespace EHamlLibrary
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="BigInt NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public long Id
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Id
 		{
 			get
 			{
@@ -2411,8 +2930,8 @@ namespace EHamlLibrary
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ReplyToInquiryId", DbType="BigInt")]
-		public System.Nullable<long> ReplyToInquiryId
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ReplyToInquiryId", DbType="Int")]
+		public System.Nullable<int> ReplyToInquiryId
 		{
 			get
 			{
@@ -2435,8 +2954,8 @@ namespace EHamlLibrary
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_InquiryId", DbType="BigInt")]
-		public System.Nullable<long> InquiryId
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_InquiryId", DbType="Int")]
+		public System.Nullable<int> InquiryId
 		{
 			get
 			{
@@ -2495,26 +3014,6 @@ namespace EHamlLibrary
 					this._VasileName = value;
 					this.SendPropertyChanged("VasileName");
 					this.OnVasileNameChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VahedePool", DbType="NVarChar(1000)")]
-		public string VahedePool
-		{
-			get
-			{
-				return this._VahedePool;
-			}
-			set
-			{
-				if ((this._VahedePool != value))
-				{
-					this.OnVahedePoolChanging(value);
-					this.SendPropertyChanging();
-					this._VahedePool = value;
-					this.SendPropertyChanged("VahedePool");
-					this.OnVahedePoolChanged();
 				}
 			}
 		}
@@ -2586,7 +3085,7 @@ namespace EHamlLibrary
 					}
 					else
 					{
-						this._InquiryId = default(Nullable<long>);
+						this._InquiryId = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("Asaei_EHaml_Inquiry");
 				}
@@ -2620,7 +3119,7 @@ namespace EHamlLibrary
 					}
 					else
 					{
-						this._ReplyToInquiryId = default(Nullable<long>);
+						this._ReplyToInquiryId = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("Asaei_EHaml_ReplyToInquiry");
 				}

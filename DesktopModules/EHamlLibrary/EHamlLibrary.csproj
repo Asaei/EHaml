@@ -70,9 +70,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DTOs\Inquiry.cs">
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
+    <Compile Include="DTOs\Inquiry.cs" />
     <Compile Include="DTOs\ReplyToInquiry.cs" />
     <Compile Include="EHamlDataClasses.designer.cs">
       <AutoGen>True</AutoGen>
@@ -85,6 +83,8 @@
     <Compile Include="Services\DashboardController.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Utility\Mali.cs" />
+    <Compile Include="Utility\Notification.cs" />
     <Compile Include="Utility\Utility.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RouteMapper.cs" />
@@ -126,6 +126,13 @@
   <ItemGroup>
     <None Include="EHamlDataClasses.dbml.layout">
       <DependentUpon>EHamlDataClasses.dbml</DependentUpon>
+    </None>
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup />

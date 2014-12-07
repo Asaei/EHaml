@@ -1,8 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EHamlDB" Class="EHamlDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="WebSettings" ConnectionString="Data Source=.;Initial Catalog=EHamlDB;Persist Security Info=True;User ID=ehamlDBUser;MultipleActiveResultSets=True;Application Name=EntityFramework" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="EHamlDBConnectionString1" Provider="System.Data.SqlClient" />
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.;Initial Catalog=EHamlDB;Persist Security Info=True;User ID=ehamlDBUser;MultipleActiveResultSets=True;Application Name=EntityFramework" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="EHamlDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Asaei_EHaml_Bank" Member="Asaei_EHaml_Banks">
+    <Type Name="Asaei_EHaml_Bank">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="InquiryId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReplyToInquiryId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ElamiyeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReplyToElamiyeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MablagheBedehkari" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CreateDateMiladi" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="CreateDateShamsi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Vaziyat" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TasfiyeShode" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="Asaei_EHaml_Inquiry_Asaei_EHaml_Bank" Member="Asaei_EHaml_Inquiry" ThisKey="InquiryId" OtherKey="Id" Type="Asaei_EHaml_Inquiry" IsForeignKey="true" />
+      <Association Name="Asaei_EHaml_ReplyToInquiry_Asaei_EHaml_Bank" Member="Asaei_EHaml_ReplyToInquiry" ThisKey="ReplyToInquiryId" OtherKey="Id" Type="Asaei_EHaml_ReplyToInquiry" IsForeignKey="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.Asaei_EHaml_Inquiry" Member="Asaei_EHaml_Inquiries">
     <Type Name="Asaei_EHaml_Inquiry">
-      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="HadafeShomaAzEstelam" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
       <Column Name="NoeVasileyeMoredeNiyaz" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
@@ -40,6 +57,7 @@
       <Column Name="NoeVasileyeMoredeNiyaz2" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
       <Column Name="VazneHarVahedeMahmooleKiloGeram" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
       <Column Name="BaEhtesabeHazineyeOdateKantinereKhali" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Association Name="Asaei_EHaml_Inquiry_Asaei_EHaml_Bank" Member="Asaei_EHaml_Banks" ThisKey="Id" OtherKey="InquiryId" Type="Asaei_EHaml_Bank" />
       <Association Name="Asaei_EHaml_Inquiry_Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz" Member="Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyazs" ThisKey="Id" OtherKey="InquiryID" Type="Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz" />
       <Association Name="Asaei_EHaml_Inquiry_Asaei_EHaml_ReplyToInquiry" Member="Asaei_EHaml_ReplyToInquiries" ThisKey="Id" OtherKey="InquiryId" Type="Asaei_EHaml_ReplyToInquiry" />
       <Association Name="Asaei_EHaml_Inquiry_Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz" Member="Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyazs" ThisKey="Id" OtherKey="InquiryId" Type="Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz" />
@@ -61,8 +79,8 @@
   </Table>
   <Table Name="dbo.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz" Member="Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyazs">
     <Type Name="Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyaz">
-      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="InquiryID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InquiryID" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="InquiryType" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
       <Column Name="VasileName" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
       <Column Name="Tedad" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
@@ -82,10 +100,10 @@
   </Table>
   <Table Name="dbo.Asaei_EHaml_ReplyToInquiry" Member="Asaei_EHaml_ReplyToInquiries">
     <Type Name="Asaei_EHaml_ReplyToInquiry">
-      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="InquiryId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InquiryId" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="InquiryType" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
-      <Column Name="ServentUserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ServentUserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="KoleModatZamaneHaml" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
       <Column Name="ZamaneAmadegiBarayShoorooeAmaliyatShamsi" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
       <Column Name="ZamaneAmadegiBarayShoorooAmaliyatMiladi" Type="System.DateTime" DbType="Date" CanBeNull="true" />
@@ -103,18 +121,21 @@
       <Column Name="BaEhtesabeHazineyeOdateCantinereKhali" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
       <Column Name="CreateDateShamsi" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
       <Column Name="CreateDateMiladi" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="AcceptDateShamsi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="AcceptDateMiladi" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="VahedePool" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="Asaei_EHaml_ReplyToInquiry_Asaei_EHaml_Bank" Member="Asaei_EHaml_Banks" ThisKey="Id" OtherKey="ReplyToInquiryId" Type="Asaei_EHaml_Bank" />
       <Association Name="Asaei_EHaml_ReplyToInquiry_Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz" Member="Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyazs" ThisKey="Id" OtherKey="ReplyToInquiryId" Type="Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz" />
       <Association Name="Asaei_EHaml_Inquiry_Asaei_EHaml_ReplyToInquiry" Member="Asaei_EHaml_Inquiry" ThisKey="InquiryId" OtherKey="Id" Type="Asaei_EHaml_Inquiry" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz" Member="Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyazs">
     <Type Name="Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz">
-      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="ReplyToInquiryId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="InquiryId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ReplyToInquiryId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InquiryId" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="InquiryType" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
       <Column Name="VasileName" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
-      <Column Name="VahedePool" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
       <Column Name="GeymateVahed" Type="System.Decimal" DbType="Money" CanBeNull="true" />
       <Column Name="Tedad" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Association Name="Asaei_EHaml_Inquiry_Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyaz" Member="Asaei_EHaml_Inquiry" ThisKey="InquiryId" OtherKey="Id" Type="Asaei_EHaml_Inquiry" IsForeignKey="true" />

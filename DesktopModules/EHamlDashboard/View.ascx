@@ -404,10 +404,10 @@
                         function(dataItem) {
                             if (dataItem.VaziyatePaziresh == "پذیرفته شده") {
                                 return "<div><span class='NameKhedmatresan amaliyat'>" + dataItem.NameKhedmatresan + "</span><span class='MoshahedeyeEtelaateTamas'><a class='k-button k-button-icontext' href='javascript:void(0)' onclick='UserInfoDetail(" + dataItem.Id + ',' + 0 + ")'>اطلاعات تماس</a></span></div>";
-                            } else if (dataItem.VaziyatePaziresh == "پاسخ داده نشده") {
-                                return "<div><span class='BaPishnahadMovafegam amaliyat'><a class='k-button k-button-icontext' <a href='javascript:void(0)' onclick='BaPishnahadMovafeghamS(" + dataItem.Id + ',' + dataItem.inqId + ")'>با این پیشنهاد موافقم</a></span></div>";
+                            } else if (dataItem.VaziyatePaziresh == "در حال بررسی") {
+                                return "<div><span class='BaPishnahadMovafegam amaliyat'><a class='k-button k-button-icontext' <a href='javascript:void(0)' onclick='BaPishnahadMovafeghamS(" + dataItem.InquiryId + ',' + dataItem.ReplyToInquiryId + ")'>با این پیشنهاد موافقم</a></span></div>";
                             } else {
-                                return "<div><span class='GablanPasohkeManfi amaliyat'>قبلآ به این پیشنهاد پاسخ منفی داده اید</span></div>"
+                                return "<div><span class='GablanPasohkeManfi amaliyat'>قبلآ به این پیشنهاد پاسخ منفی داده اید</span></div>";
                             }
                         }
                 }
@@ -496,11 +496,11 @@
                             if (dataItem.VaziyatePaziresh == "1") {
                                 return "<div><span class='NameKhedmatresan amaliyat'>" + dataItem.NameKhedmatresan + "</span><span class='MoshahedeyeEtelaateTamas'><a class='k-button k-button-icontext' href='javascript:void(0)' onclick='UserInfoDetail(" + dataItem.Id + ',' + 0 + ")'>اطلاعات تماس</a></span></div>"
                             } else if (dataItem.VaziyatePaziresh == "0") {
-                                return "<div><span class='GablanPasohkeManfi amaliyat'>قبلآ به این پیشنهاد پاسخ منفی داده اید</span></div>"
+                                return "<div><span class='GablanPasohkeManfi amaliyat'>قبلآ به این پیشنهاد پاسخ منفی داده اید</span></div>";
                             } else if (dataItem.VaziyatePaziresh == "2") {
                                 return "<div><span class='BaPishnahadMovafegamTarikhGozashte amaliyat'><a class='k-button k-button-icontext' <a href='javascript:void(0)' onclick='BaPishnahadMovafeghamS(" + dataItem.Id + ',' + dataItem.inqId + ")'>با این پیشنهاد موافقم</a></span></div>";
                             } else {
-                                return "<div><span class='GablanPasohkeManfi amaliyat'>قبلآ به این پیشنهاد پاسخ منفی داده اید</span></div>"
+                                return "<div><span class='GablanPasohkeManfi amaliyat'>قبلآ به این پیشنهاد پاسخ منفی داده اید</span></div>";
                             }
                         }
                 }
@@ -575,21 +575,19 @@
         dnnModal.show(modulePath, false, 550, 960, false, '');
     }
 
-    function BaPishnahadMovafeghamS(irti, iId) {
+    function BaPishnahadMovafeghamS(inquiryId, replyToInquiryId) {
         var sf = $.ServicesFramework(<%= ModuleId %>);
-        var inqId = iId;
-        var irtiId = irti;
         $(".ajax-load").fadeIn(100);
         $.ajax({
             type: "GET",
-            url: sf.getServiceRoot('MyDnn_EHaml_Inquiries') + "Dashboard/BaPishnahadMovafegamPasEmalKon",
-            data: { "irti": irtiId },
+            url: sf.getServiceRoot('EHamlLibrary') + "Dashboard/AcceptTheReplyToInquiry",
+            data: { "inquiryId": inquiryId , "replyToInquiryId": replyToInquiryId },
             <%--            url: sf.getServiceRoot('MyDnn_EHaml_Inquiries') + "Dashboard/MyinquirysReplyList",--%>
             <%--            data: { "inquiryID": inqId },--%>
             beforeSend: sf.setModuleHeaders
         }).done(function(result) {
 
-            bindMyInquiryReplyListStep1S(inqId);
+            bindMyInquiryReplyListStep1S(inquiryId);
             $(".ajax-load").fadeOut(200);
 
         }).fail(function(xhr, status, error) {

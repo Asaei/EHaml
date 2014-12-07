@@ -64,4 +64,5 @@ D:\GitHub\EHaml\DesktopModules\EHamlLibrary\bin\System.Net.Http.Formatting.xml
 D:\GitHub\EHaml\DesktopModules\EHamlLibrary\bin\System.Web.Http.xml
 D:\GitHub\EHaml\DesktopModules\EHamlLibrary\obj\Debug\EHamlLibrary.dll
 D:\GitHub\EHaml\DesktopModules\EHamlLibrary\obj\Debug\EHamlLibrary.pdb
+D:\GitHub\EHaml\DesktopModules\EHamlLibrary\bin\EHamlLibrary.dll.config
 D:\GitHub\EHaml\DesktopModules\EHamlLibrary\obj\Debug\EHamlLibrary.csprojResolveAssemblyReference.cache

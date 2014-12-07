@@ -1,10 +1,22 @@
-﻿using System.Linq;
+﻿using System;
+using System.Globalization;
+using System.Linq;
 
 namespace EHamlLibrary.Utility
 {
     public class Utility
     {
-        public int GetTedadePasohkhaForInquiry(long inquiryId, EHamlDataClassesDataContext context)
+        public string ConvertToPersian(DateTime dt)
+        {
+            var pc = new PersianCalendar();
+
+            return string.Format("{0}/{1}/{2}",
+                pc.GetYear(dt),
+                pc.GetMonth(dt),
+                pc.GetDayOfMonth(dt));
+        }
+
+        public int GetTedadePasohkhaForInquiry(int inquiryId, EHamlDataClassesDataContext context)
         {
             int result = 0;
 
@@ -25,7 +37,7 @@ namespace EHamlLibrary.Utility
             return 10;
         }
 
-        public string GetTedadeVasileyeHamleMoredeNiyaz(long id, EHamlDataClassesDataContext context)
+        public string GetTedadeVasileyeHamleMoredeNiyaz(int id, EHamlDataClassesDataContext context)
         {
             string result = string.Empty;
             var vasileyeHamleMoredeNiyaz = (from i in context.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyazs
@@ -43,7 +55,7 @@ namespace EHamlLibrary.Utility
             return result;
         }
 
-        public string GetNoVaTedadeVasileyeHamlForInquiry(long id, EHamlDataClassesDataContext context)
+        public string GetNoVaTedadeVasileyeHamlForInquiry(int id, EHamlDataClassesDataContext context)
         {
             string result = string.Empty;
 
@@ -64,25 +76,25 @@ namespace EHamlLibrary.Utility
             return result;
         }
 
-        public string GetLinkeJoziyateInquiry(string inquiryType, long id)
+        public string GetLinkeJoziyateInquiry(string inquiryType, int id)
         {
             string result = string.Empty;
             switch (inquiryType)
             {
                 case "Inquiry_Zadghan":
-                    result = string.Format("/default.aspx?tabid=2172&InquiryId={0}&ForView=Yes" , id);
+                    result = string.Format("/default.aspx?tabid=2172&InquiryId={0}&ForView=Yes", id);
                     break;
                 case "Inquiry_Zadghal":
-                    result = string.Format("/default.aspx?tabid=2173&InquiryId={0}&ForView=Yes" , id);
+                    result = string.Format("/default.aspx?tabid=2173&InquiryId={0}&ForView=Yes", id);
                     break;
                 case "Inquiry_ZDF":
-                    result = string.Format("/default.aspx?tabid=2174&InquiryId={0}&ForView=Yes" , id);
+                    result = string.Format("/default.aspx?tabid=2174&InquiryId={0}&ForView=Yes", id);
                     break;
                 case "Inquiry_HS":
-                    result = string.Format("/default.aspx?tabid=2175&InquiryId={0}&ForView=Yes" , id);
+                    result = string.Format("/default.aspx?tabid=2175&InquiryId={0}&ForView=Yes", id);
                     break;
                 case "Inquiry_Zaban":
-                    result = string.Format("/default.aspx?tabid=2176&InquiryId={0}&ForView=Yes" , id);
+                    result = string.Format("/default.aspx?tabid=2176&InquiryId={0}&ForView=Yes", id);
                     break;
             }
             return result;

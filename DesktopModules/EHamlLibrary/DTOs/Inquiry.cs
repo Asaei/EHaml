@@ -9,14 +9,6 @@ namespace EHamlLibrary.DTOs
     
     public class InquiryListDTO
     {
-
-        Dictionary<string,string> _dictionary = new Dictionary<string, string>();
-
-        public void dsadas()
-        {
-            _dictionary.Add("خاور","5");
-        }
-
         public int TedadePasokhha { get; set; }
         public int NazareKoliyeKhoob { get; set; }
         public int NazareKoliyeBad { get; set; }

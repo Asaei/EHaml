@@ -29,4 +29,3 @@ D:\GitHub\EHaml\DesktopModules\EHamlDashboard\bin\System.Web.Http.xml
 D:\GitHub\EHaml\DesktopModules\EHamlDashboard\bin\System.Net.Http.xml
 D:\GitHub\EHaml\DesktopModules\EHamlDashboard\obj\Debug\EHamlDashboard.dll
 D:\GitHub\EHaml\DesktopModules\EHamlDashboard\obj\Debug\EHamlDashboard.pdb
-D:\GitHub\EHaml\DesktopModules\EHamlDashboard\obj\Debug\EHamlDashboard.csprojResolveAssemblyReference.cache

@@ -12,6 +12,7 @@ using DotNetNuke.Entities.Users;
 using DotNetNuke.Security;
 using DotNetNuke.Web.Api;
 using EHamlLibrary.DTOs;
+using EHamlLibrary.Utility;
 
 namespace EHamlLibrary.Services
 
@@ -19,8 +20,10 @@ namespace EHamlLibrary.Services
     [DnnModuleAuthorize(AccessLevel = SecurityAccessLevel.View)]
     public class DashboardController : DnnApiController
     {
-        Utility.Utility _utility = new Utility.Utility();
-        
+        private readonly Utility.Utility _utility = new Utility.Utility();
+        private readonly Notification _notification = new Notification();
+        private readonly Mali _mali = new Mali();
+
         [HttpGet]
         [AllowAnonymous]
         public HttpResponseMessage GetSelectedGridForDashboardeSahebBar()
@@ -62,8 +65,8 @@ namespace EHamlLibrary.Services
             result.AddRange(inquiry.GetMyInquiryList(userId, minDateTime, maxDateTime, result));
 
             return Request.CreateResponse(HttpStatusCode.OK, result);
-        } 
-        
+        }
+
         [HttpGet]
         [AllowAnonymous]
         public HttpResponseMessage MyInquiryReplyList(int userId, int inquiryId)
@@ -79,9 +82,10 @@ namespace EHamlLibrary.Services
                         InquiryId = i.InquiryId,
                         ReplyToInquiryId = i.Id,
                         StatusPerson = "خوب",
-                        DisplayName =   UserController.GetUserById(this.PortalSettings.PortalId,i.ServentUserId).DisplayName,
-                        GeymateKol = i.GeymateKol,
-                        ZamaneAmadegiBarayeShooroo =i.ZamaneAmadegiBarayShoorooeAmaliyatShamsi,
+                        DisplayName =
+                            UserController.GetUserById(this.PortalSettings.PortalId, (int) i.ServentUserId).DisplayName,
+                        GeymateKol =string.Format("{0:C2}",i.GeymateKol),
+                        ZamaneAmadegiBarayeShooroo = i.ZamaneAmadegiBarayShoorooeAmaliyatShamsi,
                         Status = i.Vaziyat,
                         CreateDate = i.CreateDateShamsi,
                         ModateAnjameAmaliyat = i.KoleModatZamaneHaml,
@@ -90,8 +94,9 @@ namespace EHamlLibrary.Services
                         Rank = 10,
                         NazareKoliKhoob = 20,
                         NazareKoliBad = 10,
-                        VaziyatePaziresh = "پاسخ داده نشده",
-                        NameKhedmatresan = UserController.GetUserById(this.PortalSettings.PortalId, i.ServentUserId).DisplayName,
+                        VaziyatePaziresh = i.Vaziyat,
+                        NameKhedmatresan =
+                            UserController.GetUserById(this.PortalSettings.PortalId, (int) i.ServentUserId).DisplayName,
                         NazarSanji = "No",
                         InquiryType = i.InquiryType
                     }).ToList();
@@ -100,5 +105,34 @@ namespace EHamlLibrary.Services
             return Request.CreateResponse(HttpStatusCode.OK, result);
         }
 
+        [HttpGet]
+        [AllowAnonymous]
+        public HttpResponseMessage AcceptTheReplyToInquiry(int inquiryId, int replyToInquiryId)
+        {
+            using (EHamlDataClassesDataContext context = new EHamlDataClassesDataContext(Config.GetConnectionString()))
+            {
+                Asaei_EHaml_ReplyToInquiry replyToInquiry = (from i in context.Asaei_EHaml_ReplyToInquiries
+                    where i.Id == replyToInquiryId
+                    select i).Single();
+
+                replyToInquiry.Vaziyat = "پذیرفته شده";
+                replyToInquiry.AcceptDateMiladi = DateTime.Now;
+                replyToInquiry.AcceptDateShamsi = _utility.ConvertToPersian(DateTime.Now);
+                context.SubmitChanges();
+
+                // AmaliyateBanki
+                _mali.DoSuccessInquiry(context,replyToInquiry.InquiryType,(int) replyToInquiry.ServentUserId,replyToInquiry.VahedePool, replyToInquiry.InquiryId, replyToInquiry.Id,replyToInquiry.GeymateKol,
+                    replyToInquiry.AcceptDateMiladi, replyToInquiry.AcceptDateShamsi);
+
+                // Etelaresaniha
+                _notification.DoSuccessInquiry(replyToInquiry.InquiryType, replyToInquiry.InquiryId, replyToInquiry.Id);
+
+
+
+            }
+
+
+            return Request.CreateResponse(HttpStatusCode.OK, 1);
+        }
     }
 }
