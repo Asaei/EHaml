@@ -77,6 +77,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServantSettings.ascx.cs">
+      <DependentUpon>ServantSettings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServantSettings.ascx.designer.cs">
+      <DependentUpon>ServantSettings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ServantView.ascx.cs">
+      <DependentUpon>ServantView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServantView.ascx.designer.cs">
+      <DependentUpon>ServantView.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Settings.ascx.cs">
       <DependentUpon>Settings.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -93,10 +107,28 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\accept.png" />
+    <Content Include="Images\BNdO1.png" />
+    <Content Include="Images\danger.png" />
+    <Content Include="Images\deny.png" />
+    <Content Include="Images\felesh.png" />
+    <Content Include="Images\info.png" />
+    <Content Include="Images\loading.gif" />
+    <Content Include="Images\pic1.png" />
+    <Content Include="Images\star_0.png" />
+    <Content Include="Images\star_1.png" />
+    <Content Include="Images\star_2.png" />
+    <Content Include="Images\star_3.png" />
+    <Content Include="Images\star_4.png" />
+    <Content Include="Images\star_5.png" />
+    <Content Include="Images\star_Nan.png" />
     <Content Include="module.css" />
+    <Content Include="ServantSettings.ascx" />
+    <Content Include="ServantView.ascx" />
     <Content Include="Settings.ascx" />
     <Content Include="View.ascx" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

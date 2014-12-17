@@ -57,4 +57,3 @@ D:\GitHub\EHaml\DesktopModules\EHamlInquiryList\bin\System.Net.Http.xml
 D:\GitHub\EHaml\DesktopModules\EHamlInquiryList\bin\System.Net.Http.Formatting.xml
 D:\GitHub\EHaml\DesktopModules\EHamlInquiryList\obj\Debug\EHamlInquiryList.dll
 D:\GitHub\EHaml\DesktopModules\EHamlInquiryList\obj\Debug\EHamlInquiryList.pdb
-D:\GitHub\EHaml\DesktopModules\EHamlInquiryList\obj\Debug\EHamlInquiryList.csprojResolveAssemblyReference.cache

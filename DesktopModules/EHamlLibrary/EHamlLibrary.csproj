@@ -71,15 +71,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DTOs\Inquiry.cs" />
-    <Compile Include="DTOs\ReplyToInquiry.cs" />
+    <Compile Include="DTOs\ReplyToInquiryListDTO.cs" />
     <Compile Include="EHamlDataClasses.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EHamlDataClasses.dbml</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\IListableForDashboardMyInquiryList.cs" />
+    <Compile Include="Interfaces\IListableForDashboardMyReplyToInquiryList.cs" />
+    <Compile Include="Interfaces\IListableForDashboardMySucsessInquiryList.cs" />
     <Compile Include="Interfaces\IListableForViewInquiryList.cs" />
     <Compile Include="Partials\Asaei_EHaml_Inquiry.cs" />
+    <Compile Include="Partials\Asaei_EHaml_ReplyToInquiry.cs" />
     <Compile Include="Services\DashboardController.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -135,7 +138,9 @@
       <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

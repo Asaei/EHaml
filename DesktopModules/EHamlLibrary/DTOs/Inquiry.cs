@@ -35,5 +35,7 @@ namespace EHamlLibrary.DTOs
         public string ReplyUrl { get; set; }
         public string JoziyatLink { get; set; }
         public string Company { get; set; }
+        public int ReplyToInquiryId { get; set; }
+        public string VaziyateNazarSanji { get; set; }
     }
 }

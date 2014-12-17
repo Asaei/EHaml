@@ -34,12 +34,5 @@ namespace EHamlLibrary.Services
 
             return Request.CreateResponse(HttpStatusCode.OK, result);
         }
-
-        [HttpGet]
-        [AllowAnonymous]
-        public HttpResponseMessage Test()
-        {
-            return Request.CreateResponse(HttpStatusCode.OK, "SAdasdasdasd");
-        }
     }
 }

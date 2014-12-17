@@ -75,26 +75,28 @@
             }).fail(function(xhr, status, error) {
                 alert(error);
             });
-        } else if (type == 'استعلامات قبلی') {
+        } else if (type == 'معاملات موفق/نظرسنجی') {
             $(".MyInquirysReplyd").fadeOut();
             $(".MyInquirysReplydTarikhGozashte").fadeOut();
 
             $(".ajax-load").fadeIn(100);
             var sf1 = $.ServicesFramework(<%= ModuleId %>);
             var value1 = '<%= this.UserId %>';
+            var tabModulei55 = '<%= TabModuleId %>';
             $.ajax({
                 type: "GET",
-                url: sf1.getServiceRoot('EHamlLibrary') + "Dashboard/GetMyInquiryListSuc",
-                data: { "UserId": value1 },
+                url: sf1.getServiceRoot('EHamlLibrary') + "Dashboard/GetMySucsessInquiryList",
+                data: { "UserId": value1, "ModuleId": tabModulei55 },
                 beforeSend: sf1.setModuleHeaders
-            }).done(function(result) {
+        }).done(function(result) {
                 bindGrdMyInquirysSucS(result);
                 $(".ajax-load").fadeOut(300);
             }).fail(function(xhr, status, error) {
                 //alert(error);
             });
-        } else if (type == 'معاملات موفق/نظرسنجی') {
+        } else if (type == 'استعلامات قبلی') {
             $(".MyInquirysReplyd").fadeOut();
+            $(".grdMySucInquirys").fadeOut();
             //TarikhGozashteha
             $(".ajax-load").fadeIn(100);
             var sf00 = $.ServicesFramework(<%= ModuleId %>);
@@ -148,7 +150,7 @@
                     field: "Power",
                     width: "60px",
                     template:
-                        function(dataItem) { return "<div><div class='col1'><span class='titleKhadamatresan'>خدمات رسان منتخب شما: </span><span class='NameKhadamatResan'>" + dataItem.NameKhedmatresan + "</span></div><div class='col2'><span class='EtelaateSherkat'><a class='k-button k-button-icontext' href='javascript:void(0)' onclick='UserInfoDetail(" + dataItem.irti + ',' + 0 + ")'>اطلاعات خدمات رسان</a></span><span class='joziyatePishnahadSuc'><a href='javascript:void(0)' class='k-button k-button-icontext' onclick='JoziyatePishnahadeBeEstelamEstelamS(" + dataItem.irti + ")'>جزئیات پیشنهاد</a></span></div><div class='col3'><span class='qualitySuc'>" + dataItem.Rank + "</span><span class='Power'>" + dataItem.Power + "</span><span class='NazareKhoob'>مثبت: " + dataItem.NazareKoliyeKhoob + "</span><span class='NazareBad'>منفی: " + dataItem.NazareKoliyeBad + "</span><span class='JoziyateNazarSanji'><a class='k-button k-button-icontext' href='javascript:void(0)' onclick='UserInfoDetail(" + dataItem.irti + ',' + 0 + ")'>جزئیات نظرسنجی</a></span></div></div>" }
+                        function (dataItem) { return "<div><div class='col1'><span class='titleKhadamatresan'>خدمات رسان منتخب شما: </span><span class='NameKhadamatResan'>" + dataItem.DisplayName + "</span></div><div class='col2'><span class='EtelaateSherkat'><a class='k-button k-button-icontext' href='javascript:void(0)' onclick='UserInfoDetail(" + dataItem.ReplyToInquiryId + ")'>اطلاعات خدمات رسان</a></span><span class='joziyatePishnahadSuc'><a href='javascript:void(0)' class='k-button k-button-icontext' onclick='JoziyatePishnahadeBeEstelamEstelamS(" + dataItem.ReplyToInquiryId + ")'>جزئیات پیشنهاد</a></span></div><div class='col3'><span class='qualitySuc'>" + dataItem.Rank + "</span><span class='Power'>" + dataItem.Power + "</span><span class='NazareKhoob'>مثبت: " + dataItem.NazareKoliyeKhoob + "</span><span class='NazareBad'>منفی: " + dataItem.NazareKoliyeBad + "</span><span class='JoziyateNazarSanji'><a class='k-button k-button-icontext' href='javascript:void(0)' onclick='UserInfoDetail(" + dataItem.ReplyToInquiryId + ")'>جزئیات نظرسنجی</a></span></div></div>" }
                 },
                 {
                     title: "عملیات",
@@ -156,10 +158,10 @@
                     width: "20px",
                     template:
                         function(dataItem) {
-                            if (dataItem.NazarSanjiVaziyat == 0) {
-                                return "<span class='ShomaGablanSherkatKadeed'><a href='javascript:void(0)' onclick='NazarSanjiSahebBeKhadamatView(" + dataItem.irti + ")' class='k-button k-button-icontext'>مشاهده نظر شما</a></span>";
-                            } else if (dataItem.NazarSanjiVaziyat == 1) {
-                                return "<span class='ShomaGablanSherkatKadeed'><a href='javascript:void(0)' onclick='NazarSanjiSahebBeKhadamat(" + dataItem.irti + ")' class='k-button k-button-icontext'>شرکت در نظر سنجی</a></span>";
+                            if (dataItem.NazarSanjiVaziyat == "انجام شده") {
+                                return "<span class='ShomaGablanSherkatKadeed'><a href='javascript:void(0)' onclick='NazarSanjiSahebBeKhadamatView(" + dataItem.ReplyToInquiryId + ")' class='k-button k-button-icontext'>مشاهده نظر شما</a></span>";
+                            } else if (dataItem.NazarSanjiVaziyat == "قابل انجام") {
+                                return "<span class='ShomaGablanSherkatKadeed'><a href='javascript:void(0)' onclick='NazarSanjiSahebBeKhadamat(" + dataItem.ReplyToInquiryId + ")' class='k-button k-button-icontext'>شرکت در نظر سنجی</a></span>";
                             } else {
                                 return "<span class='ShomaGablanSherkatKadeed'>زمان شرکت در نظر سنجی فرا نرسیده</span>";
                             }
@@ -171,15 +173,15 @@
         $(".qualitySuc").each(function() {
             $(this).html("<img src='/desktopmodules/mydnn_ehaml/mydnn_ehaml_inquiries/images/star_" + Math.round($(this).text()) + ".png' />");
         });
-        $(".CreateDateSuc").each(function() {
-            var dt = $(this).html();
-            var dt2 = dt.substr(13, 10);
-            var myDate = Date.parse(dt2);
-            //var year = dt2.substr(0, 4);
-            //var month = dt2.substr(5, 2);
-            //var day = dt2.substr(7, 2);
-            $(this).text("تاریخ تایید: " + (ToPersianDate(myDate)));
-        });
+        //$(".CreateDateSuc").each(function() {
+        //    var dt = $(this).html();
+        //    var dt2 = dt.substr(13, 10);
+        //    var myDate = Date.parse(dt2);
+        //    //var year = dt2.substr(0, 4);
+        //    //var month = dt2.substr(5, 2);
+        //    //var day = dt2.substr(7, 2);
+        //    $(this).text("تاریخ تایید: " + (ToPersianDate(myDate)));
+        //});
 
     }
 
@@ -211,8 +213,8 @@
                 input: true,
                 numeric: true
             },
-            change: function(arg) {
-                var selected = $.map(this.select(), function(item) {
+            change: function (arg) {
+                var selected = $.map(this.select(), function (item) {
                     return $(item).find('td').first().text();
                 });
                 bindMyInquiryReplyListTarikhGozashteStep1S(selected);
@@ -224,7 +226,7 @@
                     field: "CreateDate",
                     width: "45px",
                     template:
-                        function(dataItem) {
+                        function (dataItem) {
                             var myDate = Date.parse(dataItem.CreateDate);
                             return ToPersianDate(myDate);
                         }
@@ -237,7 +239,7 @@
                     field: "ExpireDate",
                     width: "35px",
                     template:
-                        function(dataItem) {
+                        function (dataItem) {
                             return _diffDays(dataItem.ExpireDate);
                         }
                 },
@@ -247,7 +249,7 @@
                     field: "Id",
                     width: "55px",
                     template:
-                        function(dataItem) {
+                        function (dataItem) {
                             return "<span class='JoziyateEstelamS'><a href='javascript:void(0)' class='k-button k-button-icontext' onclick='JoziyateEstelamS(\"" + dataItem.JoziyatLink + "\")'>مشاهده</a></span>";
                         }
                 },
@@ -328,7 +330,7 @@
 
         $.ajax({
             type: "GET",
-            url: sf.getServiceRoot('EHamlLibrary') + "Dashboard/MyInquiryReplyList",
+            url: sf.getServiceRoot('EHamlLibrary') + "Dashboard/GetMyInquiryReplyList",
             data: { "userId":userId,"inquiryId": inquiryId },
             beforeSend: sf.setModuleHeaders
         }).done(function(result) {
@@ -341,14 +343,15 @@
 
     function bindMyInquiryReplyListTarikhGozashteStep1S(arg) {
         var sf = $.ServicesFramework(<%= ModuleId %>);
-        var inqId = arg;
+        var inquiryId = arg;
+        var userId = '<%= this.UserId %>';
 
         $.ajax({
             type: "GET",
-            url: sf.getServiceRoot('MyDnn_EHaml_Inquiries') + "Dashboard/MyinquirysReplyList",
-            data: { "inquiryID": inqId },
+            url: sf.getServiceRoot('EHamlLibrary') + "Dashboard/GetMyInquiryReplyList",
+            data: { "userId": userId, "inquiryId": inquiryId },
             beforeSend: sf.setModuleHeaders
-        }).done(function(result) {
+        }).done(function (result) {
             bindMyInquiryReplyListTarikhGozashteStep2S(result);
         }).fail(function(xhr, status, error) {
             //alert(error);
@@ -493,12 +496,12 @@
                     width: "17px",
                     template:
                         function(dataItem) {
-                            if (dataItem.VaziyatePaziresh == "1") {
+                            if (dataItem.VaziyatePaziresh == "پذیرفته شده") {
                                 return "<div><span class='NameKhedmatresan amaliyat'>" + dataItem.NameKhedmatresan + "</span><span class='MoshahedeyeEtelaateTamas'><a class='k-button k-button-icontext' href='javascript:void(0)' onclick='UserInfoDetail(" + dataItem.Id + ',' + 0 + ")'>اطلاعات تماس</a></span></div>"
-                            } else if (dataItem.VaziyatePaziresh == "0") {
+                            } else if (dataItem.VaziyatePaziresh == "در حال بررسی") {
+                                return "<div><span class='GablanPasohkeManfi amaliyat'>تاریخ اعتبار استعلام گذشته است</span></div>";
+                            } else if (dataItem.VaziyatePaziresh == "پذیرفته نشده") {
                                 return "<div><span class='GablanPasohkeManfi amaliyat'>قبلآ به این پیشنهاد پاسخ منفی داده اید</span></div>";
-                            } else if (dataItem.VaziyatePaziresh == "2") {
-                                return "<div><span class='BaPishnahadMovafegamTarikhGozashte amaliyat'><a class='k-button k-button-icontext' <a href='javascript:void(0)' onclick='BaPishnahadMovafeghamS(" + dataItem.Id + ',' + dataItem.inqId + ")'>با این پیشنهاد موافقم</a></span></div>";
                             } else {
                                 return "<div><span class='GablanPasohkeManfi amaliyat'>قبلآ به این پیشنهاد پاسخ منفی داده اید</span></div>";
                             }
@@ -580,7 +583,7 @@
         $(".ajax-load").fadeIn(100);
         $.ajax({
             type: "GET",
-            url: sf.getServiceRoot('EHamlLibrary') + "Dashboard/AcceptTheReplyToInquiry",
+            url: sf.getServiceRoot('EHamlLibrary') + "Dashboard/SetAcceptTheReplyToInquiry",
             data: { "inquiryId": inquiryId , "replyToInquiryId": replyToInquiryId },
             <%--            url: sf.getServiceRoot('MyDnn_EHaml_Inquiries') + "Dashboard/MyinquirysReplyList",--%>
             <%--            data: { "inquiryID": inqId },--%>

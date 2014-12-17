@@ -55,13 +55,14 @@ namespace EHamlLibrary.Utility
             return result;
         }
 
-        public string GetNoVaTedadeVasileyeHamlForInquiry(int id, EHamlDataClassesDataContext context)
+        public string GetNoVaTedadeVasileyeHamlForInquiry(int inquiryId, EHamlDataClassesDataContext context)
         {
             string result = string.Empty;
 
             var noVaTedadeVasileyeHamlList = from i in context.Asaei_EHaml_Inquiries
                 join j in context.Asaei_EHaml_NoVaTedadeVasileyeMoredeNiyazs
                     on i.Id equals j.InquiryID
+                    where i.Id == inquiryId
                 select new
                 {
                     NoeVasileyeHaml = j.VasileName,
@@ -110,6 +111,38 @@ namespace EHamlLibrary.Utility
             }
 
             return result;
+        }
+
+        public string GetVaziyateNazarSanjiyeSahebBarBeKhadamatResan(int id)
+        {
+            return "زمان آن نرسیده";
+        }
+
+        public string GetNoVaTedadeVasileyeHamlForReplyToInquiry(int replyToinquiry,EHamlDataClassesDataContext context)
+        {
+            string result = string.Empty;
+
+            var noVaTedadeVasileyeHamlList = from i in context.Asaei_EHaml_ReplyToInquiries
+                                             join j in context.Asaei_EHaml_ReplyToNoVaTedadeVasileyeMoredeNiyazs
+                                                 on i.Id equals j.ReplyToInquiryId
+                                                 where i.Id == replyToinquiry
+                                             select new
+                                             {
+                                                 NoeVasileyeHaml = j.VasileName,
+                                                 TedadeVasileyeHaml = j.Tedad
+                                             };
+
+            foreach (var item in noVaTedadeVasileyeHamlList)
+            {
+                result += item.NoeVasileyeHaml + "(دستگاه " + item.TedadeVasileyeHaml + ")";
+            }
+
+            return result;
+        }
+
+        public string GetVaziyateNazarSanjiyeKhadamatResanBeSahebBar()
+        {
+            return "زمان آن نرسیده";
         }
     }
 }

@@ -62,29 +62,29 @@ namespace EHamlLibrary.Services
 
             Asaei_EHaml_Inquiry inquiry = new Asaei_EHaml_Inquiry();
 
-            result.AddRange(inquiry.GetMyInquiryList(userId, minDateTime, maxDateTime, result));
+            inquiry.GetMyInquiryList(userId, minDateTime, maxDateTime, result);
 
             return Request.CreateResponse(HttpStatusCode.OK, result);
         }
 
         [HttpGet]
         [AllowAnonymous]
-        public HttpResponseMessage MyInquiryReplyList(int userId, int inquiryId)
+        public HttpResponseMessage GetMyInquiryReplyList(int userId, int inquiryId)
         {
-            List<ReplyToInquiry> result = new List<ReplyToInquiry>();
+            List<ReplyToInquiryListDTO> result = new List<ReplyToInquiryListDTO>();
 
             using (EHamlDataClassesDataContext context = new EHamlDataClassesDataContext(Config.GetConnectionString()))
             {
                 result = (from i in context.Asaei_EHaml_ReplyToInquiries
                     where i.InquiryId == inquiryId
-                    select new ReplyToInquiry()
+                    select new ReplyToInquiryListDTO()
                     {
                         InquiryId = i.InquiryId,
                         ReplyToInquiryId = i.Id,
                         StatusPerson = "خوب",
                         DisplayName =
                             UserController.GetUserById(this.PortalSettings.PortalId, (int) i.ServentUserId).DisplayName,
-                        GeymateKol =string.Format("{0:C2}",i.GeymateKol),
+                        GeymateKol = string.Format("{0:C2}", i.GeymateKol),
                         ZamaneAmadegiBarayeShooroo = i.ZamaneAmadegiBarayShoorooeAmaliyatShamsi,
                         Status = i.Vaziyat,
                         CreateDate = i.CreateDateShamsi,
@@ -107,7 +107,7 @@ namespace EHamlLibrary.Services
 
         [HttpGet]
         [AllowAnonymous]
-        public HttpResponseMessage AcceptTheReplyToInquiry(int inquiryId, int replyToInquiryId)
+        public HttpResponseMessage SetAcceptTheReplyToInquiry(int inquiryId, int replyToInquiryId)
         {
             using (EHamlDataClassesDataContext context = new EHamlDataClassesDataContext(Config.GetConnectionString()))
             {
@@ -121,18 +121,138 @@ namespace EHamlLibrary.Services
                 context.SubmitChanges();
 
                 // AmaliyateBanki
-                _mali.DoSuccessInquiry(context,replyToInquiry.InquiryType,(int) replyToInquiry.ServentUserId,replyToInquiry.VahedePool, replyToInquiry.InquiryId, replyToInquiry.Id,replyToInquiry.GeymateKol,
+                _mali.DoSuccessInquiry(context, replyToInquiry.InquiryType, (int) replyToInquiry.ServentUserId,
+                    replyToInquiry.VahedePool, replyToInquiry.InquiryId, replyToInquiry.Id, replyToInquiry.GeymateKol,
                     replyToInquiry.AcceptDateMiladi, replyToInquiry.AcceptDateShamsi);
 
                 // Etelaresaniha
                 _notification.DoSuccessInquiry(replyToInquiry.InquiryType, replyToInquiry.InquiryId, replyToInquiry.Id);
-
-
-
             }
 
 
             return Request.CreateResponse(HttpStatusCode.OK, 1);
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public HttpResponseMessage GetMySucsessInquiryList(int userId)
+        {
+            Asaei_EHaml_Inquiry inquiry = new Asaei_EHaml_Inquiry();
+            List<InquiryListDTO> sucsessInquiryList = new List<InquiryListDTO>();
+            sucsessInquiryList = inquiry.GetMySucsessInquiryList(userId, sucsessInquiryList);
+
+
+            return Request.CreateResponse(HttpStatusCode.OK, sucsessInquiryList);
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public HttpResponseMessage GetGrideMoredeNazarVaseDashboardServant()
+        {
+            string result =
+                this.ActiveModule.TabModuleSettings["GetSelectedGridForDashboardeServant"].ToString();
+
+            return Request.CreateResponse(HttpStatusCode.OK, result);
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public HttpResponseMessage GetMyReplyToInquiryList(int userId, int moduleId)
+        {
+            ModuleController controller = new ModuleController();
+            var setting = controller.GetTabModuleSettings(moduleId);
+            string value = setting["GetSelectedGridForDashboardeServant"].ToString();
+
+            DateTime minDateTime;
+            DateTime maxDateTime;
+
+            if (value == "پاسخ به استعلامات قبلی")
+            {
+                minDateTime = DateTime.Today.AddYears(-100).Date;
+                maxDateTime = DateTime.Today.Date;
+            }
+            else
+            {
+                minDateTime = DateTime.Today.Date.Date;
+                maxDateTime = DateTime.Today.AddYears(100).Date;
+            }
+
+            List<ReplyToInquiryListDTO> result = new List<ReplyToInquiryListDTO>();
+
+
+            Asaei_EHaml_ReplyToInquiry replyToInquiry = new Asaei_EHaml_ReplyToInquiry();
+
+            replyToInquiry.GetMyReplyToInquiryList(userId, minDateTime, maxDateTime, result);
+
+            return Request.CreateResponse(HttpStatusCode.OK, result);
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public HttpResponseMessage GetMyReplyToInquiryDetail(int myReplyToInquiryId)
+        {
+            var replyToInquiryListDto = new List<ReplyToInquiryListDTO>();
+
+            using (EHamlDataClassesDataContext context = new EHamlDataClassesDataContext(Config.GetConnectionString()))
+            {
+                replyToInquiryListDto = (from i in context.Asaei_EHaml_ReplyToInquiries
+                    where i.Id == myReplyToInquiryId
+                    select new ReplyToInquiryListDTO()
+                    {
+                        ReplyToInquiryId = i.Id,
+                        Status = i.Vaziyat,
+                        ReplyToInquiryCreateDate = i.CreateDateShamsi,
+                        ZamaneAmadegiBarayeShooroo = i.ZamaneAmadegiBarayShoorooeAmaliyatShamsi,
+                        GeymateKol = i.GeymateKol,
+                        Pishbini = i.PishbiniEmkanPaziriyeAmaliyat,
+                        ModateAnjameAmaliyat = i.KoleModatZamaneHaml,
+                        DisplayName = UserController.GetUserById(PortalController.GetCurrentPortalSettings().PortalId,
+                            (int) i.ServentUserId).DisplayName,
+                        InquiryId = i.InquiryId,
+                    }).ToList();
+            }
+
+            return Request.CreateResponse(HttpStatusCode.OK, replyToInquiryListDto);
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public HttpResponseMessage GetMyReplyToInquiryListThatAccepted(int userId)
+        {
+            var replyToInquiryListDto = new List<ReplyToInquiryListDTO>();
+
+            using (EHamlDataClassesDataContext context = new EHamlDataClassesDataContext(Config.GetConnectionString()))
+            {
+                replyToInquiryListDto = (from i in context.Asaei_EHaml_ReplyToInquiries
+                                         join j in context.Asaei_EHaml_Inquiries on i.InquiryId equals j.Id
+                                         where i.ServentUserId == userId && i.Vaziyat == "پذیرفته شده"
+                    select new ReplyToInquiryListDTO()
+                    {
+                        ReplyToInquiryId = i.Id,
+                        Status = i.Vaziyat,
+                        ReplyToInquiryCreateDate = i.CreateDateShamsi,
+                        ZamaneAmadegiBarayeShooroo = i.ZamaneAmadegiBarayShoorooeAmaliyatShamsi,
+                        GeymateKol = i.GeymateKol,
+                        Pishbini = i.PishbiniEmkanPaziriyeAmaliyat,
+                        ModateAnjameAmaliyat = i.KoleModatZamaneHaml,
+                        DisplayName = UserController.GetUserById(PortalController.GetCurrentPortalSettings().PortalId,
+                            (int) i.ServentUserId).DisplayName,
+                        InquiryId = i.InquiryId,
+                        CreateDate = j.CreateDateShamsi,
+                        StartingPoint = j.OstaneMabda,
+                        Destination = j.OstaneMagsad,
+                        JoziyatLink = _utility.GetLinkeJoziyateInquiry(j.InquiryType,j.Id),
+                        Rank = 20,
+                        Power = 20,
+                        NameSahebBar = UserController.GetUserById(PortalController.GetCurrentPortalSettings().PortalId,
+                            (int)j.UserId).DisplayName,
+                            NazareKoliKhoob = 20,
+                            NazareKoliBad = 10,
+                            NazarSanji = _utility.GetVaziyateNazarSanjiyeKhadamatResanBeSahebBar(),
+                    }).ToList();
+            }
+
+            return Request.CreateResponse(HttpStatusCode.OK, replyToInquiryListDto);
         }
     }
 }

@@ -1,0 +1,76 @@
+2014-12-10 14:18:38,101 [Laptop][Thread:9][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+See http://go.microsoft.com/fwlink/?LinkID=314055 for more information. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: ::1
+	Port: 10655
+	Referer: http://localhost:100/User-Dashboard-MyInquiries
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36
+	ViewState: xo3YB5Wj7W3n3wNK/15QvDp7Yf29kgr1npDCuWQJJ5b02ard2VZKzcy4i7BKdbaxgtY+Or35q+Xm9LCdZiYrpiIX3OB4mIZ1n0zkYjYJBhPOC/7VzUxnZCa+RHnPHZeS3hvmGP8FntRUOgoNSoyFJiRIXpmBIIt57B0GLpveovloFbRZaEwVKfQmKwiTDKTZN6QOTsz34J7deyputqfSk0hdZpaJhqoW3rGR+aMuXgRFRYC3nHjwnxgcffBgPPWPzjN8+1yZEbIofPhWvUk5R3ysEeNv7Gnnf7lBHqswN89xViq0Omg/E0EVRrLkAPXPwSlLyCqN8a8ts/zXtu8CaUNANlrn99SKdS5esi1Q9NdrxULiydCZovcr2WgBSDQeCdjoT1l4cYfLIXC7RTNCrgtqcW82h1kgFIyrko/IgF1rNRK/iEOZBIRO+FvsVQfLXv+sksIKQBUbxvXdCZJpIPNQylrjQzMUX4mEPFdDo1DDDs4jugq5CnzAneo52Z0IC4c8N7kmtsnBFObTdWXBOq5Os/vfQBuWDizeExikX7A8AvHQHeR48cIBKf1noIDpfIHTRTgpFQIzGp3M1ZNsdbB5pDyvmcb3g6b3mSOsKhHQ1KMV2M7q0SziMWRHk7M6pswg44AePC+FrMYkaLipL8p/Kj/Ek1YKq36XbCOYBmShOyEoxm4wU8X7XG03xhnUI+8DjYk/Wh8i/3g5z1ZzgOLWfykMVU8ni6+NBqA6sm85xdo126jRWvtqET4izQd6ZdQ2...
+   at System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-12-10 14:18:38,192 [Laptop][Thread:9][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=5174&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): Validation of viewstate MAC failed. If this application is hosted by a Web Farm or cluster, ensure that <machineKey> configuration specifies the same validationKey and validation algorithm. AutoGenerate cannot be used in a cluster.
+
+See http://go.microsoft.com/fwlink/?LinkID=314055 for more information. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: ::1
+	Port: 10655
+	Referer: http://localhost:100/User-Dashboard-MyInquiries
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36
+	ViewState: xo3YB5Wj7W3n3wNK/15QvDp7Yf29kgr1npDCuWQJJ5b02ard2VZKzcy4i7BKdbaxgtY+Or35q+Xm9LCdZiYrpiIX3OB4mIZ1n0zkYjYJBhPOC/7VzUxnZCa+RHnPHZeS3hvmGP8FntRUOgoNSoyFJiRIXpmBIIt57B0GLpveovloFbRZaEwVKfQmKwiTDKTZN6QOTsz34J7deyputqfSk0hdZpaJhqoW3rGR+aMuXgRFRYC3nHjwnxgcffBgPPWPzjN8+1yZEbIofPhWvUk5R3ysEeNv7Gnnf7lBHqswN89xViq0Omg/E0EVRrLkAPXPwSlLyCqN8a8ts/zXtu8CaUNANlrn99SKdS5esi1Q9NdrxULiydCZovcr2WgBSDQeCdjoT1l4cYfLIXC7RTNCrgtqcW82h1kgFIyrko/IgF1rNRK/iEOZBIRO+FvsVQfLXv+sksIKQBUbxvXdCZJpIPNQylrjQzMUX4mEPFdDo1DDDs4jugq5CnzAneo52Z0IC4c8N7kmtsnBFObTdWXBOq5Os/vfQBuWDizeExikX7A8AvHQHeR48cIBKf1noIDpfIHTRTgpFQIzGp3M1ZNsdbB5pDyvmcb3g6b3mSOsKhHQ1KMV2M7q0SziMWRHk7M6pswg44AePC+FrMYkaLipL8p/Kj/Ek1YKq36XbCOYBmShOyEoxm4wU8X7XG03xhnUI+8DjYk/Wh8i/3g5z1ZzgOLWfykMVU8ni6+NBqA6sm85xdo126jRWvtqET4izQd6ZdQ2...
+   at System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-12-10 16:20:24,728 [Laptop][Thread:61][ERROR] DotNetNuke.Entities.Urls.UrlRewriterUtils - System.Web.HttpException (0x80004005): Maximum request length exceeded.
+   at System.Web.HttpRequest.GetEntireRawContent()
+   at System.Web.HttpRequest.GetMultipartContent()
+   at System.Web.HttpRequest.FillInFormCollection()
+   at System.Web.HttpRequest.EnsureForm()
+   at System.Web.HttpRequest.get_Form()
+   at System.Web.HttpRequest.get_Item(String key)
+   at DotNetNuke.Services.ClientCapability.ClientCapabilityProvider.GetClientCapability(HttpRequest httpRequest)
+   at DotNetNuke.Entities.Urls.FriendlyUrlController.IsMobileClient()
+   at DotNetNuke.Entities.Urls.FriendlyUrlController.GetBrowserType(HttpRequest request, HttpResponse response, FriendlyUrlSettings settings)
+   at DotNetNuke.Entities.Urls.UrlAction.SetBrowserType(HttpRequest request, HttpResponse response, FriendlyUrlSettings settings)
+   at DotNetNuke.Entities.Urls.AdvancedUrlRewriter.ProcessRequest(HttpContext context, Uri requestUri, Boolean useFriendlyUrls, UrlAction result, FriendlyUrlSettings settings, Boolean allowSettingsChange, Guid parentTraceId)
+2014-12-10 19:52:59,009 [Laptop][Thread:8][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Web.HttpException (0x80004005): The client disconnected. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: ::1
+	Port: 14688
+	Referer: http://localhost:100/User-Dashboard-MyInquiries
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36
+	ViewState: t4gvaZQ/QxbbweDRHqo5fPS8MUWVprflpPLMupTbCm5PdtwlZg0LhOumZUiPn0hz+r47sDdT08Pif2BiLQubTAAvlh/7i+xxP7M15qAlqNDkr3Bt3i2gl3ALM59iiIZUdNLocES5IjVgZfQf0wEOF/KK4XGY1il2PVfA28FgfgvEDqy60mZE9ZUtLsfazTAKjn7GSGRrKFeL7JxYV1THikc/RnlC/pettQx9tMV69PjbTjoMjqHug+GN3wfxu1njyJaTszbPPsMvyIb7tRsU01UOr60x2pgJ4VKy6NijysfWUz7Duggk13heiwuiHRxjaa9MAseDz9zDNPrUubKHOL9jJxjdwfZfZK8sF+52dZsHK+ZD8R6BCggUFC2jDI48Naw73cZswPMfgXP6B3xV0uYLbcsyrQU99MEUAEYWbr+xQFAc2Vss8EkDBACtL+flbJ8EiDjdz5DL6wJrzWeWwc7EKORBuQI2O9cun+vfwox6hffBh9ES7AcMclGxCf7AJptFoXIZXtyATUPxc+HTiIiZbYMNbSoHGCXDMjbgOvybh0587/5ALLrpPi56fd7k8pdUT2Kj42ttL5GLAniVjU8ZVytHYlLQq6oW0u0tTNLbvxcMMqu99SBfB7LP20/Ri6GZQxjCyQZCN2wqCEG1VORtSTfu6qL42Yjcpt0bPeBcDzikYmRZx+YDKemRWN4hSJcTrVJ6ZuNINmQx64DAhXmJYiaXNVg7kmc/lnIghxGeOQeePpVfLPqEBlzOqDrOWVoX...
+   at System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2014-12-10 19:52:59,096 [Laptop][Thread:8][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=5174&error=An unexpected error has occurred&content=0
+System.Web.HttpException (0x80004005): The client disconnected. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: ::1
+	Port: 14688
+	Referer: http://localhost:100/User-Dashboard-MyInquiries
+	Path: /Default.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36
+	ViewState: t4gvaZQ/QxbbweDRHqo5fPS8MUWVprflpPLMupTbCm5PdtwlZg0LhOumZUiPn0hz+r47sDdT08Pif2BiLQubTAAvlh/7i+xxP7M15qAlqNDkr3Bt3i2gl3ALM59iiIZUdNLocES5IjVgZfQf0wEOF/KK4XGY1il2PVfA28FgfgvEDqy60mZE9ZUtLsfazTAKjn7GSGRrKFeL7JxYV1THikc/RnlC/pettQx9tMV69PjbTjoMjqHug+GN3wfxu1njyJaTszbPPsMvyIb7tRsU01UOr60x2pgJ4VKy6NijysfWUz7Duggk13heiwuiHRxjaa9MAseDz9zDNPrUubKHOL9jJxjdwfZfZK8sF+52dZsHK+ZD8R6BCggUFC2jDI48Naw73cZswPMfgXP6B3xV0uYLbcsyrQU99MEUAEYWbr+xQFAc2Vss8EkDBACtL+flbJ8EiDjdz5DL6wJrzWeWwc7EKORBuQI2O9cun+vfwox6hffBh9ES7AcMclGxCf7AJptFoXIZXtyATUPxc+HTiIiZbYMNbSoHGCXDMjbgOvybh0587/5ALLrpPi56fd7k8pdUT2Kj42ttL5GLAniVjU8ZVytHYlLQq6oW0u0tTNLbvxcMMqu99SBfB7LP20/Ri6GZQxjCyQZCN2wqCEG1VORtSTfu6qL42Yjcpt0bPeBcDzikYmRZx+YDKemRWN4hSJcTrVJ6ZuNINmQx64DAhXmJYiaXNVg7kmc/lnIghxGeOQeePpVfLPqEBlzOqDrOWVoX...
+   at System.Web.UI.ViewStateException.ThrowMacValidationError(Exception inner, String persistedState)
+   at System.Web.UI.ObjectStateFormatter.Deserialize(String inputString, Purpose purpose)
+   at System.Web.UI.Util.DeserializeWithAssert(IStateFormatter2 formatter, String serializedState, Purpose purpose)
+   at System.Web.UI.HiddenFieldPageStatePersister.Load()
+   at System.Web.UI.Page.LoadPageStateFromPersistenceMedium()
+   at System.Web.UI.Page.LoadAllState()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

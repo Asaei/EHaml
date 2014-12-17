@@ -25,6 +25,7 @@ namespace EHamlLibrary.Utility
 
         private decimal? CalculateMablagheBedehkari(string inquiryType, string vahedePool, int serventUserId, DateTime? acceptDateMiladi, decimal geymateKol)
         {
+            // TODO
             return geymateKol*(decimal) .03;
         }
     }

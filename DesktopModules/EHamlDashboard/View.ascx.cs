@@ -12,6 +12,7 @@ namespace EHamlDashboard
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
         }
 
         //private string GeTypeInFarsi(string inquiryType)

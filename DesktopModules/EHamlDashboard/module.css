@@ -39,7 +39,7 @@
 }
 
 .right-panel .r-img {
-    background: url("images/pic1.png") no-repeat scroll 0 -640px rgba(0, 0, 0, 0);
+    background: url("Images/pic1.png") no-repeat scroll 0 -640px rgba(0, 0, 0, 0);
     height: 83px;
     margin: 35px 5px 10px 10px;
     width: 140px;
@@ -224,7 +224,7 @@
 .MoshahedeyeEtelaateTamas > a { color: #1f9f1f !important; }
 
 .ajax-load {
-    background: url("images/loading.gif") no-repeat scroll center center #f8f5f5;
+    background: url("Images/loading.gif") no-repeat scroll center center #f8f5f5;
     height: 800px;
     left: 0;
     opacity: 0.6;
